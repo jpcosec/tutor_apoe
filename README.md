@@ -6,18 +6,22 @@ Repositorio de trabajo para extraer, organizar y consultar conocimiento sobre AP
 
 - `sources/` — fuentes primarias, por ejemplo el PDF base.
 - `desk/` — superficies operativas de Deskops.
-  - `desk/atoms/` — átomos de conocimiento extraídos.
   - `desk/tasks/` — board y tasks activas.
   - `desk/contexts/` — pills/contexto reusable.
   - `desk/rituals/` — ejecución, testing y cierre.
+- `knowledge/` — base de conocimiento estructurada sobre SLDB.
+  - `knowledge/source-notes/` — notas pegadas a fragmentos fuente con localización precisa.
+  - `knowledge/atoms/` — átomos de conocimiento destilados.
+- `knowledge_models/` — modelos locales SLDB para notas fuente y átomos.
 - `.sldb/` — store/index de SLDB.
-- `docs/diagrams/` — diagramas auxiliares, por ejemplo la taxonomía de átomos.
+- `docs/` — diagramas y documentación de arquitectura.
 
 ## Qué hay aquí hoy
 
 - Un desk inicializado con Deskops.
 - Un árbol taxonómico para átomos APOS.
-- Átomos iniciales extraídos desde la fuente en `sources/`.
+- Un conjunto inicial de átomos en `desk/atoms/` heredado de la fase operativa.
+- Una nueva capa de conocimiento en `knowledge/` respaldada por modelos locales de SLDB.
 - Un store `.sldb` listo para búsqueda e indexación.
 
 ## Requisitos
@@ -76,6 +80,15 @@ deskops advance task <task-id> --root .
 deskops next <task-id> --root .
 ```
 
+## Arquitectura recomendada
+
+- Usa **Deskops** para gestionar el trabajo operativo.
+- Usa **SLDB + modelos locales** para construir la base de conocimiento.
+
+Documento de referencia:
+
+- `docs/knowledge-architecture.md`
+
 ## Uso básico con átomos en Deskops
 
 ### Listar átomos
@@ -102,6 +115,11 @@ deskops add atom --root . \
 ## Uso básico con SLDB
 
 SLDB sirve para **trackear, indexar, buscar y validar** los documentos estructurados del repo.
+
+En este repo, el uso recomendado es:
+
+- `SourceNoteDoc` para notas ancladas a párrafos fuente
+- `KnowledgeAtomDoc` para átomos con `provenance` estructurado en frontmatter
 
 ### Verificar el store
 
@@ -142,6 +160,31 @@ sldb find topic:schema --in semantic --store .sldb --pythonpath .
 
 ```bash
 sldb docs show atom-apos-is-a-constructivist-theory-of-learning-mathematics --store .sldb
+```
+
+### Ver modelos locales
+
+```bash
+sldb models show SourceNoteDoc --store .sldb --pythonpath .
+sldb models show KnowledgeAtomDoc --store .sldb --pythonpath .
+```
+
+### Crear una nota fuente
+
+```bash
+sldb docs create --model SourceNoteDoc \
+  -o knowledge/source-notes/apos/note-ejemplo.md \
+  '{"id":"note-ejemplo","title":"Nota ejemplo","source_path":"sources/archivo.pdf","source_title":"Archivo","chapter":"1","section":"1.1","page_start":1,"page_end":1,"anchor_text":"Texto ancla","excerpt":"Cita breve","note":"Observación estructurada","tags":["system:apos","topic:example","layer:source","domain:mathematics-education"]}' \
+  --store .sldb --pythonpath .
+```
+
+### Crear un átomo con provenance en frontmatter
+
+```bash
+sldb docs create --model KnowledgeAtomDoc \
+  -o knowledge/atoms/apos/atom-ejemplo.md \
+  '{"id":"atom-ejemplo","title":"Átomo ejemplo","question":"what","answer":"Respuesta breve.","provenance":[{"source_path":"sources/archivo.pdf","source_title":"Archivo","chapter":"1","section":"1.1","page_start":1,"page_end":1,"anchor_text":"Texto ancla","excerpt":"Cita breve"}],"tags":["system:apos","topic:example","layer:theory","domain:mathematics-education"]}' \
+  --store .sldb --pythonpath .
 ```
 
 ## Flujo recomendado para trabajar con este repo
