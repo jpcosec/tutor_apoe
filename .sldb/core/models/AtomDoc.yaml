@@ -1,0 +1,13 @@
+name: AtomDoc
+model_ref: deskops.models:AtomDoc
+path: /home/jp/proyectos/hum-ecosystem/tools/deskops/deskops/models/atom.py
+documents_index: .sldb/core/documents/AtomDoc.yaml
+sections_index: .sldb/runtime/sections/AtomDoc.yaml
+hash_b: ecf1479333357732c176c38b9ebfda0a603d02499fb7ac8f3b15504298df6aa5
+version: 1
+canonical: false
+family: null
+semantics:
+- type.knowledge.atom
+- workspace.desk.atoms
+base_models: []

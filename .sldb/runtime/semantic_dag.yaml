@@ -1,0 +1,18 @@
+nodes:
+- id: type
+  parents: []
+- id: type.knowledge
+  parents:
+  - type
+- id: type.knowledge.atom
+  parents:
+  - type.knowledge
+- id: workspace
+  parents: []
+- id: workspace.desk
+  parents:
+  - workspace
+- id: workspace.desk.atoms
+  parents:
+  - workspace.desk
+equivalences: {}

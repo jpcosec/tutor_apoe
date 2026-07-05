@@ -1,0 +1,1657 @@
+tags:
+  domain:mathematics-education:
+  - atom-a-stage-cannot-be-skipped-without-loss-of-coherence
+  - atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting
+  - atom-ace-cycle-is-the-main-apos-instructional-pattern
+  - atom-action-is-a-core-mental-structure-in-apos
+  - atom-action-requires-explicit-step-by-step-external-guidance
+  - atom-annotated-bibliography-materializes-the-breadth-of-apos-research
+  - atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi
+  - atom-apos-book-derives-from-collaborative-authorship
+  - atom-apos-book-is-not-the-last-word-on-apos
+  - atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis
+  - atom-apos-book-presents-framework-for-research-and-curriculum-development
+  - atom-apos-book-targets-researchers-teachers-and-graduate-students
+  - atom-apos-defines-four-core-mental-structures
+  - atom-apos-developed-through-recognizable-historical-periods
+  - atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  - atom-apos-interviews-use-prompting-to-probe-construction-in-progress
+  - atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  - atom-apos-is-a-living-and-revisable-body-of-ideas
+  - atom-apos-is-demonstrated-through-multiple-mathematical-domains
+  - atom-apos-is-rooted-in-piagets-work
+  - atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  - atom-apos-research-relies-on-collaborative-triangulation
+  - atom-apos-research-uses-multiple-data-collection-modes
+  - atom-apos-uses-specific-mechanisms-to-explain-construction
+  - atom-classroom-discussion-helps-students-reflect-on-activity-work
+  - atom-cognitive-path-and-genetic-decomposition-are-not-the-same
+  - atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  - atom-computer-activities-support-interiorization-by-generalizing-specific-actions
+  - atom-coordination-combines-processes-to-build-new-objects-or-processes
+  - atom-de-encapsulation-recovers-the-underlying-process-of-an-object
+  - atom-early-group-activities-develop-set-as-process
+  - atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  - atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms
+  - atom-encapsulation-treats-a-process-as-a-static-entity
+  - atom-exercises-reinforce-constructions-from-activities-and-discussion
+  - atom-function-genetic-decomposition-begins-with-actions-on-elements
+  - atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  - atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences
+  - atom-genetic-decomposition-begins-as-a-preliminary-hypothesis
+  - atom-genetic-decomposition-does-not-imply-linear-learning
+  - atom-genetic-decomposition-guides-both-research-and-teaching
+  - atom-genetic-decomposition-is-a-central-tool-in-apos
+  - atom-genetic-decomposition-may-include-prerequisites-and-performance-differences
+  - atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  - atom-genetic-decompositions-are-not-unique
+  - atom-genetic-decompositions-can-also-emerge-from-student-data
+  - atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms
+  - atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  - atom-historical-development-can-inform-genetic-decomposition-design
+  - atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization
+  - atom-induction-genetic-decomposition-requires-function-and-logic-schemas
+  - atom-infinite-processes-make-the-process-to-object-transition-especially-difficult
+  - atom-interiorization-translates-material-actions-into-processes
+  - atom-interviews-are-the-primary-data-source-in-apos-research
+  - atom-isetl-can-treat-certain-data-types-as-first-class-objects
+  - atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction
+  - atom-isetl-supports-function-as-input-output-and-transformable-entity
+  - atom-isetl-syntax-stays-close-to-standard-mathematical-notation
+  - atom-levels-are-content-specific-while-stages-are-general
+  - atom-levels-may-appear-or-not-appear-in-observable-data
+  - atom-mental-construction-in-apos-is-spiral-and-enriching
+  - atom-object-is-a-core-mental-structure-in-apos
+  - atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone
+  - atom-process-allows-mental-control-without-executing-each-step
+  - atom-process-is-a-core-mental-structure-in-apos
+  - atom-process-language-about-repeating-decimals-can-block-object-construction
+  - atom-reflective-abstraction-has-reflection-and-reorganization-components
+  - atom-reflective-abstraction-is-a-foundational-idea-for-apos
+  - atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  - atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  - atom-research-cycle-centers-on-two-evaluative-questions
+  - atom-reversal-is-central-for-inverses-and-related-constructions
+  - atom-rumec-was-a-major-community-in-apos-development
+  - atom-schema-coherence-determines-what-falls-within-its-scope
+  - atom-schema-development-in-apos-uses-the-intra-inter-trans-triad
+  - atom-schema-is-a-coherent-framework-of-linked-structures
+  - atom-schema-is-a-core-mental-structure-in-apos
+  - atom-schemas-can-develop-interact-and-be-thematized
+  - atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects
+  - atom-span-construction-starts-from-actions-on-linear-combinations
+  - atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set
+  - atom-stages-and-levels-organize-developmental-analysis-in-apos
+  - atom-textbook-analysis-can-inform-preliminary-genetic-decompositions
+  - atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis
+  - atom-thematization-turns-a-schema-into-an-object
+  - atom-theoretical-models-increase-reliability-of-data-analysis
+  - atom-totality-is-proposed-to-explain-difficulties-between-process-and-object
+  - atom-totality-is-treated-as-a-possible-additional-stage
+  - atom-transforming-computer-procedures-can-help-students-move-from-process-to-object
+  - atom-writing-computer-procedures-can-help-students-move-from-action-to-process
+  layer:applications:
+  - atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi
+  - atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  - atom-apos-is-demonstrated-through-multiple-mathematical-domains
+  - atom-early-group-activities-develop-set-as-process
+  - atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  - atom-function-genetic-decomposition-begins-with-actions-on-elements
+  - atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  - atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms
+  - atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  - atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization
+  - atom-induction-genetic-decomposition-requires-function-and-logic-schemas
+  - atom-infinite-processes-make-the-process-to-object-transition-especially-difficult
+  - atom-process-language-about-repeating-decimals-can-block-object-construction
+  - atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  - atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects
+  - atom-span-construction-starts-from-actions-on-linear-combinations
+  - atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set
+  layer:pedagogy:
+  - atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting
+  - atom-ace-cycle-is-the-main-apos-instructional-pattern
+  - atom-classroom-discussion-helps-students-reflect-on-activity-work
+  - atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  - atom-computer-activities-support-interiorization-by-generalizing-specific-actions
+  - atom-exercises-reinforce-constructions-from-activities-and-discussion
+  - atom-isetl-can-treat-certain-data-types-as-first-class-objects
+  - atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction
+  - atom-isetl-supports-function-as-input-output-and-transformable-entity
+  - atom-isetl-syntax-stays-close-to-standard-mathematical-notation
+  - atom-transforming-computer-procedures-can-help-students-move-from-process-to-object
+  - atom-writing-computer-procedures-can-help-students-move-from-action-to-process
+  layer:research:
+  - atom-apos-interviews-use-prompting-to-probe-construction-in-progress
+  - atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  - atom-apos-research-relies-on-collaborative-triangulation
+  - atom-apos-research-uses-multiple-data-collection-modes
+  - atom-cognitive-path-and-genetic-decomposition-are-not-the-same
+  - atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences
+  - atom-genetic-decomposition-begins-as-a-preliminary-hypothesis
+  - atom-genetic-decomposition-does-not-imply-linear-learning
+  - atom-genetic-decomposition-guides-both-research-and-teaching
+  - atom-genetic-decomposition-is-a-central-tool-in-apos
+  - atom-genetic-decomposition-may-include-prerequisites-and-performance-differences
+  - atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  - atom-genetic-decompositions-are-not-unique
+  - atom-genetic-decompositions-can-also-emerge-from-student-data
+  - atom-historical-development-can-inform-genetic-decomposition-design
+  - atom-interviews-are-the-primary-data-source-in-apos-research
+  - atom-research-cycle-centers-on-two-evaluative-questions
+  - atom-textbook-analysis-can-inform-preliminary-genetic-decompositions
+  - atom-theoretical-models-increase-reliability-of-data-analysis
+  layer:theory:
+  - atom-a-stage-cannot-be-skipped-without-loss-of-coherence
+  - atom-action-is-a-core-mental-structure-in-apos
+  - atom-action-requires-explicit-step-by-step-external-guidance
+  - atom-annotated-bibliography-materializes-the-breadth-of-apos-research
+  - atom-apos-book-derives-from-collaborative-authorship
+  - atom-apos-book-is-not-the-last-word-on-apos
+  - atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis
+  - atom-apos-book-presents-framework-for-research-and-curriculum-development
+  - atom-apos-book-targets-researchers-teachers-and-graduate-students
+  - atom-apos-defines-four-core-mental-structures
+  - atom-apos-developed-through-recognizable-historical-periods
+  - atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  - atom-apos-is-a-living-and-revisable-body-of-ideas
+  - atom-apos-is-rooted-in-piagets-work
+  - atom-apos-uses-specific-mechanisms-to-explain-construction
+  - atom-coordination-combines-processes-to-build-new-objects-or-processes
+  - atom-de-encapsulation-recovers-the-underlying-process-of-an-object
+  - atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms
+  - atom-encapsulation-treats-a-process-as-a-static-entity
+  - atom-interiorization-translates-material-actions-into-processes
+  - atom-levels-are-content-specific-while-stages-are-general
+  - atom-levels-may-appear-or-not-appear-in-observable-data
+  - atom-mental-construction-in-apos-is-spiral-and-enriching
+  - atom-object-is-a-core-mental-structure-in-apos
+  - atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone
+  - atom-process-allows-mental-control-without-executing-each-step
+  - atom-process-is-a-core-mental-structure-in-apos
+  - atom-reflective-abstraction-has-reflection-and-reorganization-components
+  - atom-reflective-abstraction-is-a-foundational-idea-for-apos
+  - atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  - atom-reversal-is-central-for-inverses-and-related-constructions
+  - atom-rumec-was-a-major-community-in-apos-development
+  - atom-schema-coherence-determines-what-falls-within-its-scope
+  - atom-schema-development-in-apos-uses-the-intra-inter-trans-triad
+  - atom-schema-is-a-coherent-framework-of-linked-structures
+  - atom-schema-is-a-core-mental-structure-in-apos
+  - atom-schemas-can-develop-interact-and-be-thematized
+  - atom-stages-and-levels-organize-developmental-analysis-in-apos
+  - atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis
+  - atom-thematization-turns-a-schema-into-an-object
+  - atom-totality-is-proposed-to-explain-difficulties-between-process-and-object
+  - atom-totality-is-treated-as-a-possible-additional-stage
+  system:apos:
+  - atom-a-stage-cannot-be-skipped-without-loss-of-coherence
+  - atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting
+  - atom-ace-cycle-is-the-main-apos-instructional-pattern
+  - atom-action-is-a-core-mental-structure-in-apos
+  - atom-action-requires-explicit-step-by-step-external-guidance
+  - atom-annotated-bibliography-materializes-the-breadth-of-apos-research
+  - atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi
+  - atom-apos-book-derives-from-collaborative-authorship
+  - atom-apos-book-is-not-the-last-word-on-apos
+  - atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis
+  - atom-apos-book-presents-framework-for-research-and-curriculum-development
+  - atom-apos-book-targets-researchers-teachers-and-graduate-students
+  - atom-apos-defines-four-core-mental-structures
+  - atom-apos-developed-through-recognizable-historical-periods
+  - atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  - atom-apos-interviews-use-prompting-to-probe-construction-in-progress
+  - atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  - atom-apos-is-a-living-and-revisable-body-of-ideas
+  - atom-apos-is-demonstrated-through-multiple-mathematical-domains
+  - atom-apos-is-rooted-in-piagets-work
+  - atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  - atom-apos-research-relies-on-collaborative-triangulation
+  - atom-apos-research-uses-multiple-data-collection-modes
+  - atom-apos-uses-specific-mechanisms-to-explain-construction
+  - atom-classroom-discussion-helps-students-reflect-on-activity-work
+  - atom-cognitive-path-and-genetic-decomposition-are-not-the-same
+  - atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  - atom-computer-activities-support-interiorization-by-generalizing-specific-actions
+  - atom-coordination-combines-processes-to-build-new-objects-or-processes
+  - atom-de-encapsulation-recovers-the-underlying-process-of-an-object
+  - atom-early-group-activities-develop-set-as-process
+  - atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  - atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms
+  - atom-encapsulation-treats-a-process-as-a-static-entity
+  - atom-exercises-reinforce-constructions-from-activities-and-discussion
+  - atom-function-genetic-decomposition-begins-with-actions-on-elements
+  - atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  - atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences
+  - atom-genetic-decomposition-begins-as-a-preliminary-hypothesis
+  - atom-genetic-decomposition-does-not-imply-linear-learning
+  - atom-genetic-decomposition-guides-both-research-and-teaching
+  - atom-genetic-decomposition-is-a-central-tool-in-apos
+  - atom-genetic-decomposition-may-include-prerequisites-and-performance-differences
+  - atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  - atom-genetic-decompositions-are-not-unique
+  - atom-genetic-decompositions-can-also-emerge-from-student-data
+  - atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms
+  - atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  - atom-historical-development-can-inform-genetic-decomposition-design
+  - atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization
+  - atom-induction-genetic-decomposition-requires-function-and-logic-schemas
+  - atom-infinite-processes-make-the-process-to-object-transition-especially-difficult
+  - atom-interiorization-translates-material-actions-into-processes
+  - atom-interviews-are-the-primary-data-source-in-apos-research
+  - atom-isetl-can-treat-certain-data-types-as-first-class-objects
+  - atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction
+  - atom-isetl-supports-function-as-input-output-and-transformable-entity
+  - atom-isetl-syntax-stays-close-to-standard-mathematical-notation
+  - atom-levels-are-content-specific-while-stages-are-general
+  - atom-levels-may-appear-or-not-appear-in-observable-data
+  - atom-mental-construction-in-apos-is-spiral-and-enriching
+  - atom-object-is-a-core-mental-structure-in-apos
+  - atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone
+  - atom-process-allows-mental-control-without-executing-each-step
+  - atom-process-is-a-core-mental-structure-in-apos
+  - atom-process-language-about-repeating-decimals-can-block-object-construction
+  - atom-reflective-abstraction-has-reflection-and-reorganization-components
+  - atom-reflective-abstraction-is-a-foundational-idea-for-apos
+  - atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  - atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  - atom-research-cycle-centers-on-two-evaluative-questions
+  - atom-reversal-is-central-for-inverses-and-related-constructions
+  - atom-rumec-was-a-major-community-in-apos-development
+  - atom-schema-coherence-determines-what-falls-within-its-scope
+  - atom-schema-development-in-apos-uses-the-intra-inter-trans-triad
+  - atom-schema-is-a-coherent-framework-of-linked-structures
+  - atom-schema-is-a-core-mental-structure-in-apos
+  - atom-schemas-can-develop-interact-and-be-thematized
+  - atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects
+  - atom-span-construction-starts-from-actions-on-linear-combinations
+  - atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set
+  - atom-stages-and-levels-organize-developmental-analysis-in-apos
+  - atom-textbook-analysis-can-inform-preliminary-genetic-decompositions
+  - atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis
+  - atom-thematization-turns-a-schema-into-an-object
+  - atom-theoretical-models-increase-reliability-of-data-analysis
+  - atom-totality-is-proposed-to-explain-difficulties-between-process-and-object
+  - atom-totality-is-treated-as-a-possible-additional-stage
+  - atom-transforming-computer-procedures-can-help-students-move-from-process-to-object
+  - atom-writing-computer-procedures-can-help-students-move-from-action-to-process
+  topic:ace-cycle:
+  - atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting
+  - atom-ace-cycle-is-the-main-apos-instructional-pattern
+  - atom-classroom-discussion-helps-students-reflect-on-activity-work
+  - atom-exercises-reinforce-constructions-from-activities-and-discussion
+  topic:action:
+  - atom-action-is-a-core-mental-structure-in-apos
+  - atom-action-requires-explicit-step-by-step-external-guidance
+  topic:action-to-process:
+  - atom-writing-computer-procedures-can-help-students-move-from-action-to-process
+  topic:activities:
+  - atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting
+  - atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  - atom-computer-activities-support-interiorization-by-generalizing-specific-actions
+  - atom-transforming-computer-procedures-can-help-students-move-from-process-to-object
+  - atom-writing-computer-procedures-can-help-students-move-from-action-to-process
+  topic:apos:
+  - atom-apos-defines-four-core-mental-structures
+  topic:audience:
+  - atom-apos-book-targets-researchers-teachers-and-graduate-students
+  topic:authorship:
+  - atom-apos-book-derives-from-collaborative-authorship
+  topic:axioms:
+  - atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms
+  topic:bibliography:
+  - atom-annotated-bibliography-materializes-the-breadth-of-apos-research
+  topic:book-structure:
+  - atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis
+  topic:class-discussion:
+  - atom-classroom-discussion-helps-students-reflect-on-activity-work
+  topic:cognitive-path:
+  - atom-cognitive-path-and-genetic-decomposition-are-not-the-same
+  topic:coherence:
+  - atom-a-stage-cannot-be-skipped-without-loss-of-coherence
+  - atom-schema-coherence-determines-what-falls-within-its-scope
+  topic:concrete-operations:
+  - atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  topic:constructivism:
+  - atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  - atom-mental-construction-in-apos-is-spiral-and-enriching
+  topic:coordination:
+  - atom-coordination-combines-processes-to-build-new-objects-or-processes
+  topic:core-structures:
+  - atom-apos-defines-four-core-mental-structures
+  topic:data-analysis:
+  - atom-genetic-decompositions-can-also-emerge-from-student-data
+  topic:data-collection:
+  - atom-apos-research-relies-on-collaborative-triangulation
+  - atom-apos-research-uses-multiple-data-collection-modes
+  - atom-interviews-are-the-primary-data-source-in-apos-research
+  topic:data-types:
+  - atom-isetl-can-treat-certain-data-types-as-first-class-objects
+  topic:de-encapsulation:
+  - atom-de-encapsulation-recovers-the-underlying-process-of-an-object
+  topic:elementary-math:
+  - atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi
+  - atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  - atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization
+  topic:encapsulation:
+  - atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  - atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms
+  - atom-encapsulation-treats-a-process-as-a-static-entity
+  topic:exercises:
+  - atom-exercises-reinforce-constructions-from-activities-and-discussion
+  topic:faq:
+  - atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis
+  topic:fractions:
+  - atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi
+  topic:framework:
+  - atom-apos-book-presents-framework-for-research-and-curriculum-development
+  topic:functions:
+  - atom-function-genetic-decomposition-begins-with-actions-on-elements
+  - atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  - atom-isetl-supports-function-as-input-output-and-transformable-entity
+  topic:generic-student:
+  - atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  topic:genetic-decomposition:
+  - atom-cognitive-path-and-genetic-decomposition-are-not-the-same
+  - atom-function-genetic-decomposition-begins-with-actions-on-elements
+  - atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences
+  - atom-genetic-decomposition-begins-as-a-preliminary-hypothesis
+  - atom-genetic-decomposition-does-not-imply-linear-learning
+  - atom-genetic-decomposition-guides-both-research-and-teaching
+  - atom-genetic-decomposition-is-a-central-tool-in-apos
+  - atom-genetic-decomposition-may-include-prerequisites-and-performance-differences
+  - atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  - atom-genetic-decompositions-are-not-unique
+  - atom-genetic-decompositions-can-also-emerge-from-student-data
+  - atom-historical-development-can-inform-genetic-decomposition-design
+  - atom-induction-genetic-decomposition-requires-function-and-logic-schemas
+  - atom-textbook-analysis-can-inform-preliminary-genetic-decompositions
+  topic:groups:
+  - atom-early-group-activities-develop-set-as-process
+  - atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms
+  - atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  topic:history:
+  - atom-apos-developed-through-recognizable-historical-periods
+  - atom-historical-development-can-inform-genetic-decomposition-design
+  topic:hypothesis:
+  - atom-genetic-decomposition-begins-as-a-preliminary-hypothesis
+  topic:imagination:
+  - atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization
+  topic:induction:
+  - atom-induction-genetic-decomposition-requires-function-and-logic-schemas
+  topic:infinity:
+  - atom-infinite-processes-make-the-process-to-object-transition-especially-difficult
+  - atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  - atom-totality-is-treated-as-a-possible-additional-stage
+  topic:instruction:
+  - atom-ace-cycle-is-the-main-apos-instructional-pattern
+  - atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction
+  topic:interiorization:
+  - atom-computer-activities-support-interiorization-by-generalizing-specific-actions
+  - atom-interiorization-translates-material-actions-into-processes
+  topic:interviews:
+  - atom-apos-interviews-use-prompting-to-probe-construction-in-progress
+  - atom-interviews-are-the-primary-data-source-in-apos-research
+  topic:isetl:
+  - atom-isetl-can-treat-certain-data-types-as-first-class-objects
+  - atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction
+  - atom-isetl-supports-function-as-input-output-and-transformable-entity
+  - atom-isetl-syntax-stays-close-to-standard-mathematical-notation
+  topic:learning-theory:
+  - atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  topic:learning-trajectories:
+  - atom-genetic-decomposition-does-not-imply-linear-learning
+  topic:levels:
+  - atom-levels-are-content-specific-while-stages-are-general
+  - atom-levels-may-appear-or-not-appear-in-observable-data
+  - atom-stages-and-levels-organize-developmental-analysis-in-apos
+  topic:linear-combination:
+  - atom-span-construction-starts-from-actions-on-linear-combinations
+  topic:mathematical-domains:
+  - atom-apos-is-demonstrated-through-multiple-mathematical-domains
+  topic:mechanisms:
+  - atom-apos-uses-specific-mechanisms-to-explain-construction
+  topic:mental-construction:
+  - atom-mental-construction-in-apos-is-spiral-and-enriching
+  topic:non-uniqueness:
+  - atom-genetic-decompositions-are-not-unique
+  topic:notation:
+  - atom-isetl-syntax-stays-close-to-standard-mathematical-notation
+  topic:object:
+  - atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  - atom-object-is-a-core-mental-structure-in-apos
+  - atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects
+  topic:performance-differences:
+  - atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences
+  topic:piaget:
+  - atom-apos-is-rooted-in-piagets-work
+  - atom-interiorization-translates-material-actions-into-processes
+  - atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone
+  - atom-reflective-abstraction-is-a-foundational-idea-for-apos
+  - atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  topic:prerequisites:
+  - atom-genetic-decomposition-may-include-prerequisites-and-performance-differences
+  - atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set
+  topic:process:
+  - atom-process-allows-mental-control-without-executing-each-step
+  - atom-process-is-a-core-mental-structure-in-apos
+  topic:process-language:
+  - atom-process-language-about-repeating-decimals-can-block-object-construction
+  topic:process-to-object:
+  - atom-infinite-processes-make-the-process-to-object-transition-especially-difficult
+  - atom-totality-is-proposed-to-explain-difficulties-between-process-and-object
+  - atom-transforming-computer-procedures-can-help-students-move-from-process-to-object
+  topic:prompting:
+  - atom-apos-interviews-use-prompting-to-probe-construction-in-progress
+  topic:reflective-abstraction:
+  - atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone
+  - atom-reflective-abstraction-has-reflection-and-reorganization-components
+  - atom-reflective-abstraction-is-a-foundational-idea-for-apos
+  - atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  topic:reliability:
+  - atom-theoretical-models-increase-reliability-of-data-analysis
+  topic:repeating-decimals:
+  - atom-process-language-about-repeating-decimals-can-block-object-construction
+  - atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  topic:research-cycle:
+  - atom-research-cycle-centers-on-two-evaluative-questions
+  topic:research-paradigm:
+  - atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  - atom-theoretical-models-increase-reliability-of-data-analysis
+  topic:reversal:
+  - atom-reversal-is-central-for-inverses-and-related-constructions
+  topic:rumec:
+  - atom-rumec-was-a-major-community-in-apos-development
+  topic:schema:
+  - atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  - atom-schema-coherence-determines-what-falls-within-its-scope
+  - atom-schema-is-a-coherent-framework-of-linked-structures
+  - atom-schema-is-a-core-mental-structure-in-apos
+  - atom-thematization-turns-a-schema-into-an-object
+  topic:schema-development:
+  - atom-schema-development-in-apos-uses-the-intra-inter-trans-triad
+  - atom-schemas-can-develop-interact-and-be-thematized
+  topic:school-levels:
+  - atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  topic:sets:
+  - atom-early-group-activities-develop-set-as-process
+  topic:source-book:
+  - atom-apos-book-derives-from-collaborative-authorship
+  - atom-apos-book-is-not-the-last-word-on-apos
+  - atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis
+  - atom-apos-book-presents-framework-for-research-and-curriculum-development
+  - atom-apos-book-targets-researchers-teachers-and-graduate-students
+  topic:spanning-set-and-span:
+  - atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects
+  - atom-span-construction-starts-from-actions-on-linear-combinations
+  - atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set
+  topic:stages:
+  - atom-a-stage-cannot-be-skipped-without-loss-of-coherence
+  - atom-levels-are-content-specific-while-stages-are-general
+  - atom-stages-and-levels-organize-developmental-analysis-in-apos
+  topic:synthesis:
+  - atom-annotated-bibliography-materializes-the-breadth-of-apos-research
+  - atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis
+  topic:teaching-design:
+  - atom-genetic-decomposition-guides-both-research-and-teaching
+  topic:textbook-analysis:
+  - atom-textbook-analysis-can-inform-preliminary-genetic-decompositions
+  topic:thematization:
+  - atom-thematization-turns-a-schema-into-an-object
+  topic:theory-evolution:
+  - atom-apos-book-is-not-the-last-word-on-apos
+  - atom-apos-is-a-living-and-revisable-body-of-ideas
+  topic:totality:
+  - atom-totality-is-proposed-to-explain-difficulties-between-process-and-object
+  - atom-totality-is-treated-as-a-possible-additional-stage
+  topic:triad:
+  - atom-schema-development-in-apos-uses-the-intra-inter-trans-triad
+  topic:triangulation:
+  - atom-apos-research-relies-on-collaborative-triangulation
+  type.knowledge.atom:
+  - atom-a-stage-cannot-be-skipped-without-loss-of-coherence
+  - atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting
+  - atom-ace-cycle-is-the-main-apos-instructional-pattern
+  - atom-action-is-a-core-mental-structure-in-apos
+  - atom-action-requires-explicit-step-by-step-external-guidance
+  - atom-annotated-bibliography-materializes-the-breadth-of-apos-research
+  - atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi
+  - atom-apos-book-derives-from-collaborative-authorship
+  - atom-apos-book-is-not-the-last-word-on-apos
+  - atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis
+  - atom-apos-book-presents-framework-for-research-and-curriculum-development
+  - atom-apos-book-targets-researchers-teachers-and-graduate-students
+  - atom-apos-defines-four-core-mental-structures
+  - atom-apos-developed-through-recognizable-historical-periods
+  - atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  - atom-apos-interviews-use-prompting-to-probe-construction-in-progress
+  - atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  - atom-apos-is-a-living-and-revisable-body-of-ideas
+  - atom-apos-is-demonstrated-through-multiple-mathematical-domains
+  - atom-apos-is-rooted-in-piagets-work
+  - atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  - atom-apos-research-relies-on-collaborative-triangulation
+  - atom-apos-research-uses-multiple-data-collection-modes
+  - atom-apos-uses-specific-mechanisms-to-explain-construction
+  - atom-classroom-discussion-helps-students-reflect-on-activity-work
+  - atom-cognitive-path-and-genetic-decomposition-are-not-the-same
+  - atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  - atom-computer-activities-support-interiorization-by-generalizing-specific-actions
+  - atom-coordination-combines-processes-to-build-new-objects-or-processes
+  - atom-de-encapsulation-recovers-the-underlying-process-of-an-object
+  - atom-early-group-activities-develop-set-as-process
+  - atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  - atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms
+  - atom-encapsulation-treats-a-process-as-a-static-entity
+  - atom-exercises-reinforce-constructions-from-activities-and-discussion
+  - atom-function-genetic-decomposition-begins-with-actions-on-elements
+  - atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  - atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences
+  - atom-genetic-decomposition-begins-as-a-preliminary-hypothesis
+  - atom-genetic-decomposition-does-not-imply-linear-learning
+  - atom-genetic-decomposition-guides-both-research-and-teaching
+  - atom-genetic-decomposition-is-a-central-tool-in-apos
+  - atom-genetic-decomposition-may-include-prerequisites-and-performance-differences
+  - atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  - atom-genetic-decompositions-are-not-unique
+  - atom-genetic-decompositions-can-also-emerge-from-student-data
+  - atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms
+  - atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  - atom-historical-development-can-inform-genetic-decomposition-design
+  - atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization
+  - atom-induction-genetic-decomposition-requires-function-and-logic-schemas
+  - atom-infinite-processes-make-the-process-to-object-transition-especially-difficult
+  - atom-interiorization-translates-material-actions-into-processes
+  - atom-interviews-are-the-primary-data-source-in-apos-research
+  - atom-isetl-can-treat-certain-data-types-as-first-class-objects
+  - atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction
+  - atom-isetl-supports-function-as-input-output-and-transformable-entity
+  - atom-isetl-syntax-stays-close-to-standard-mathematical-notation
+  - atom-levels-are-content-specific-while-stages-are-general
+  - atom-levels-may-appear-or-not-appear-in-observable-data
+  - atom-mental-construction-in-apos-is-spiral-and-enriching
+  - atom-object-is-a-core-mental-structure-in-apos
+  - atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone
+  - atom-process-allows-mental-control-without-executing-each-step
+  - atom-process-is-a-core-mental-structure-in-apos
+  - atom-process-language-about-repeating-decimals-can-block-object-construction
+  - atom-reflective-abstraction-has-reflection-and-reorganization-components
+  - atom-reflective-abstraction-is-a-foundational-idea-for-apos
+  - atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  - atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  - atom-research-cycle-centers-on-two-evaluative-questions
+  - atom-reversal-is-central-for-inverses-and-related-constructions
+  - atom-rumec-was-a-major-community-in-apos-development
+  - atom-schema-coherence-determines-what-falls-within-its-scope
+  - atom-schema-development-in-apos-uses-the-intra-inter-trans-triad
+  - atom-schema-is-a-coherent-framework-of-linked-structures
+  - atom-schema-is-a-core-mental-structure-in-apos
+  - atom-schemas-can-develop-interact-and-be-thematized
+  - atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects
+  - atom-span-construction-starts-from-actions-on-linear-combinations
+  - atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set
+  - atom-stages-and-levels-organize-developmental-analysis-in-apos
+  - atom-textbook-analysis-can-inform-preliminary-genetic-decompositions
+  - atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis
+  - atom-thematization-turns-a-schema-into-an-object
+  - atom-theoretical-models-increase-reliability-of-data-analysis
+  - atom-totality-is-proposed-to-explain-difficulties-between-process-and-object
+  - atom-totality-is-treated-as-a-possible-additional-stage
+  - atom-transforming-computer-procedures-can-help-students-move-from-process-to-object
+  - atom-writing-computer-procedures-can-help-students-move-from-action-to-process
+  workspace.desk.atoms:
+  - atom-a-stage-cannot-be-skipped-without-loss-of-coherence
+  - atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting
+  - atom-ace-cycle-is-the-main-apos-instructional-pattern
+  - atom-action-is-a-core-mental-structure-in-apos
+  - atom-action-requires-explicit-step-by-step-external-guidance
+  - atom-annotated-bibliography-materializes-the-breadth-of-apos-research
+  - atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi
+  - atom-apos-book-derives-from-collaborative-authorship
+  - atom-apos-book-is-not-the-last-word-on-apos
+  - atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis
+  - atom-apos-book-presents-framework-for-research-and-curriculum-development
+  - atom-apos-book-targets-researchers-teachers-and-graduate-students
+  - atom-apos-defines-four-core-mental-structures
+  - atom-apos-developed-through-recognizable-historical-periods
+  - atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  - atom-apos-interviews-use-prompting-to-probe-construction-in-progress
+  - atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  - atom-apos-is-a-living-and-revisable-body-of-ideas
+  - atom-apos-is-demonstrated-through-multiple-mathematical-domains
+  - atom-apos-is-rooted-in-piagets-work
+  - atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  - atom-apos-research-relies-on-collaborative-triangulation
+  - atom-apos-research-uses-multiple-data-collection-modes
+  - atom-apos-uses-specific-mechanisms-to-explain-construction
+  - atom-classroom-discussion-helps-students-reflect-on-activity-work
+  - atom-cognitive-path-and-genetic-decomposition-are-not-the-same
+  - atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  - atom-computer-activities-support-interiorization-by-generalizing-specific-actions
+  - atom-coordination-combines-processes-to-build-new-objects-or-processes
+  - atom-de-encapsulation-recovers-the-underlying-process-of-an-object
+  - atom-early-group-activities-develop-set-as-process
+  - atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  - atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms
+  - atom-encapsulation-treats-a-process-as-a-static-entity
+  - atom-exercises-reinforce-constructions-from-activities-and-discussion
+  - atom-function-genetic-decomposition-begins-with-actions-on-elements
+  - atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  - atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences
+  - atom-genetic-decomposition-begins-as-a-preliminary-hypothesis
+  - atom-genetic-decomposition-does-not-imply-linear-learning
+  - atom-genetic-decomposition-guides-both-research-and-teaching
+  - atom-genetic-decomposition-is-a-central-tool-in-apos
+  - atom-genetic-decomposition-may-include-prerequisites-and-performance-differences
+  - atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  - atom-genetic-decompositions-are-not-unique
+  - atom-genetic-decompositions-can-also-emerge-from-student-data
+  - atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms
+  - atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  - atom-historical-development-can-inform-genetic-decomposition-design
+  - atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization
+  - atom-induction-genetic-decomposition-requires-function-and-logic-schemas
+  - atom-infinite-processes-make-the-process-to-object-transition-especially-difficult
+  - atom-interiorization-translates-material-actions-into-processes
+  - atom-interviews-are-the-primary-data-source-in-apos-research
+  - atom-isetl-can-treat-certain-data-types-as-first-class-objects
+  - atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction
+  - atom-isetl-supports-function-as-input-output-and-transformable-entity
+  - atom-isetl-syntax-stays-close-to-standard-mathematical-notation
+  - atom-levels-are-content-specific-while-stages-are-general
+  - atom-levels-may-appear-or-not-appear-in-observable-data
+  - atom-mental-construction-in-apos-is-spiral-and-enriching
+  - atom-object-is-a-core-mental-structure-in-apos
+  - atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone
+  - atom-process-allows-mental-control-without-executing-each-step
+  - atom-process-is-a-core-mental-structure-in-apos
+  - atom-process-language-about-repeating-decimals-can-block-object-construction
+  - atom-reflective-abstraction-has-reflection-and-reorganization-components
+  - atom-reflective-abstraction-is-a-foundational-idea-for-apos
+  - atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  - atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  - atom-research-cycle-centers-on-two-evaluative-questions
+  - atom-reversal-is-central-for-inverses-and-related-constructions
+  - atom-rumec-was-a-major-community-in-apos-development
+  - atom-schema-coherence-determines-what-falls-within-its-scope
+  - atom-schema-development-in-apos-uses-the-intra-inter-trans-triad
+  - atom-schema-is-a-coherent-framework-of-linked-structures
+  - atom-schema-is-a-core-mental-structure-in-apos
+  - atom-schemas-can-develop-interact-and-be-thematized
+  - atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects
+  - atom-span-construction-starts-from-actions-on-linear-combinations
+  - atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set
+  - atom-stages-and-levels-organize-developmental-analysis-in-apos
+  - atom-textbook-analysis-can-inform-preliminary-genetic-decompositions
+  - atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis
+  - atom-thematization-turns-a-schema-into-an-object
+  - atom-theoretical-models-increase-reliability-of-data-analysis
+  - atom-totality-is-proposed-to-explain-difficulties-between-process-and-object
+  - atom-totality-is-treated-as-a-possible-additional-stage
+  - atom-transforming-computer-procedures-can-help-students-move-from-process-to-object
+  - atom-writing-computer-procedures-can-help-students-move-from-action-to-process
+documents:
+  atom-apos-book-presents-framework-for-research-and-curriculum-development:
+    model: AtomDoc
+    path: desk/atoms/sources/apos-theory-book/purpose/atom-apos-book-presents-framework-for-research-and-curriculum-development.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:framework
+    - topic:source-book
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-book-targets-researchers-teachers-and-graduate-students:
+    model: AtomDoc
+    path: desk/atoms/sources/apos-theory-book/scope/atom-apos-book-targets-researchers-teachers-and-graduate-students.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:audience
+    - topic:source-book
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-book-derives-from-collaborative-authorship:
+    model: AtomDoc
+    path: desk/atoms/sources/apos-theory-book/authorship/atom-apos-book-derives-from-collaborative-authorship.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:authorship
+    - topic:source-book
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis:
+    model: AtomDoc
+    path: desk/atoms/sources/apos-theory-book/structure/atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:book-structure
+    - topic:source-book
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-is-a-constructivist-theory-of-learning-mathematics:
+    model: AtomDoc
+    path: desk/atoms/apos/foundations/constructivism/atom-apos-is-a-constructivist-theory-of-learning-mathematics.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-is-rooted-in-piagets-work:
+    model: AtomDoc
+    path: desk/atoms/apos/foundations/piaget/atom-apos-is-rooted-in-piagets-work.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:piaget
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-reflective-abstraction-is-a-foundational-idea-for-apos:
+    model: AtomDoc
+    path: desk/atoms/apos/foundations/reflective-abstraction/atom-reflective-abstraction-is-a-foundational-idea-for-apos.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-developed-through-recognizable-historical-periods:
+    model: AtomDoc
+    path: desk/atoms/apos/foundations/historical-development/atom-apos-developed-through-recognizable-historical-periods.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:history
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-rumec-was-a-major-community-in-apos-development:
+    model: AtomDoc
+    path: desk/atoms/apos/foundations/rumec/atom-rumec-was-a-major-community-in-apos-development.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:rumec
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-defines-four-core-mental-structures:
+    model: AtomDoc
+    path: desk/atoms/apos/core-structures/action/atom-apos-defines-four-core-mental-structures.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:apos
+    - topic:core-structures
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-action-is-a-core-mental-structure-in-apos:
+    model: AtomDoc
+    path: desk/atoms/apos/core-structures/action/atom-action-is-a-core-mental-structure-in-apos.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:action
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-process-is-a-core-mental-structure-in-apos:
+    model: AtomDoc
+    path: desk/atoms/apos/core-structures/process/atom-process-is-a-core-mental-structure-in-apos.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:process
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-object-is-a-core-mental-structure-in-apos:
+    model: AtomDoc
+    path: desk/atoms/apos/core-structures/object/atom-object-is-a-core-mental-structure-in-apos.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-schema-is-a-core-mental-structure-in-apos:
+    model: AtomDoc
+    path: desk/atoms/apos/core-structures/schema/atom-schema-is-a-core-mental-structure-in-apos.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-uses-specific-mechanisms-to-explain-construction:
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/interiorization/atom-apos-uses-specific-mechanisms-to-explain-construction.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:mechanisms
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-totality-is-treated-as-a-possible-additional-stage:
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/totality/atom-totality-is-treated-as-a-possible-additional-stage.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:infinity
+    - topic:totality
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-stages-and-levels-organize-developmental-analysis-in-apos:
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/stages/atom-stages-and-levels-organize-developmental-analysis-in-apos.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:levels
+    - topic:stages
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-genetic-decomposition-is-a-central-tool-in-apos:
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/definition/atom-genetic-decomposition-is-a-central-tool-in-apos.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-genetic-decomposition-guides-both-research-and-teaching:
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/role-in-teaching/atom-genetic-decomposition-guides-both-research-and-teaching.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-genetic-decompositions-are-not-unique:
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/non-uniqueness/atom-genetic-decompositions-are-not-unique.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:non-uniqueness
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-ace-cycle-is-the-main-apos-instructional-pattern:
+    model: AtomDoc
+    path: desk/atoms/apos/pedagogy/ace-cycle/atom-ace-cycle-is-the-main-apos-instructional-pattern.md
+    tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - system:apos
+    - topic:ace-cycle
+    - topic:instruction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction:
+    model: AtomDoc
+    path: desk/atoms/apos/pedagogy/isetl/atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction.md
+    tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - system:apos
+    - topic:instruction
+    - topic:isetl
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm:
+    model: AtomDoc
+    path: desk/atoms/apos/research/paradigm/atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-research-uses-multiple-data-collection-modes:
+    model: AtomDoc
+    path: desk/atoms/apos/research/data-collection/atom-apos-research-uses-multiple-data-collection-modes.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:data-collection
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-schemas-can-develop-interact-and-be-thematized:
+    model: AtomDoc
+    path: desk/atoms/apos/schema-development/schema-growth/atom-schemas-can-develop-interact-and-be-thematized.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:schema-development
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-is-demonstrated-through-multiple-mathematical-domains:
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/functions/atom-apos-is-demonstrated-through-multiple-mathematical-domains.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:mathematical-domains
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-repeating-decimals-and-infinity-are-key-sites-for-totality:
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/repeating-decimals/atom-repeating-decimals-and-infinity-are-key-sites-for-totality.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-has-applications-in-elementary-and-postsecondary-mathematics:
+    model: AtomDoc
+    path: desk/atoms/apos/applications/elementary-math/atom-apos-has-applications-in-elementary-and-postsecondary-mathematics.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis:
+    model: AtomDoc
+    path: desk/atoms/apos/synthesis/faq/atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:faq
+    - topic:synthesis
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-is-a-living-and-revisable-body-of-ideas:
+    model: AtomDoc
+    path: desk/atoms/apos/foundations/historical-development/atom-apos-is-a-living-and-revisable-body-of-ideas.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:theory-evolution
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-book-is-not-the-last-word-on-apos:
+    model: AtomDoc
+    path: desk/atoms/sources/apos-theory-book/scope/atom-apos-book-is-not-the-last-word-on-apos.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:source-book
+    - topic:theory-evolution
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures:
+    model: AtomDoc
+    path: desk/atoms/apos/foundations/reflective-abstraction/atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-reflective-abstraction-has-reflection-and-reorganization-components:
+    model: AtomDoc
+    path: desk/atoms/apos/foundations/reflective-abstraction/atom-reflective-abstraction-has-reflection-and-reorganization-components.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone:
+    model: AtomDoc
+    path: desk/atoms/apos/foundations/piaget/atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-interiorization-translates-material-actions-into-processes:
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/interiorization/atom-interiorization-translates-material-actions-into-processes.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:interiorization
+    - topic:piaget
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-action-requires-explicit-step-by-step-external-guidance:
+    model: AtomDoc
+    path: desk/atoms/apos/core-structures/action/atom-action-requires-explicit-step-by-step-external-guidance.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:action
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-process-allows-mental-control-without-executing-each-step:
+    model: AtomDoc
+    path: desk/atoms/apos/core-structures/process/atom-process-allows-mental-control-without-executing-each-step.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:process
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-encapsulation-treats-a-process-as-a-static-entity:
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/encapsulation/atom-encapsulation-treats-a-process-as-a-static-entity.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms:
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/encapsulation/atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-de-encapsulation-recovers-the-underlying-process-of-an-object:
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/de-encapsulation/atom-de-encapsulation-recovers-the-underlying-process-of-an-object.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:de-encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-coordination-combines-processes-to-build-new-objects-or-processes:
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/coordination/atom-coordination-combines-processes-to-build-new-objects-or-processes.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:coordination
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-reversal-is-central-for-inverses-and-related-constructions:
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/reversal/atom-reversal-is-central-for-inverses-and-related-constructions.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:reversal
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-thematization-turns-a-schema-into-an-object:
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/thematization/atom-thematization-turns-a-schema-into-an-object.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:schema
+    - topic:thematization
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-mental-construction-in-apos-is-spiral-and-enriching:
+    model: AtomDoc
+    path: desk/atoms/apos/foundations/constructivism/atom-mental-construction-in-apos-is-spiral-and-enriching.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:constructivism
+    - topic:mental-construction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-genetic-decomposition-begins-as-a-preliminary-hypothesis:
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/definition/atom-genetic-decomposition-begins-as-a-preliminary-hypothesis.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:hypothesis
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-genetic-decomposition-may-include-prerequisites-and-performance-differences:
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-may-include-prerequisites-and-performance-differences.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:prerequisites
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one:
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-genetic-decomposition-does-not-imply-linear-learning:
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-does-not-imply-linear-learning.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:learning-trajectories
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-cognitive-path-and-genetic-decomposition-are-not-the-same:
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/non-uniqueness/atom-cognitive-path-and-genetic-decomposition-are-not-the-same.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:cognitive-path
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-function-genetic-decomposition-begins-with-actions-on-elements:
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/functions/atom-function-genetic-decomposition-begins-with-actions-on-elements.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:functions
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-function-object-conception-supports-sets-operations-and-limits-of-functions:
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/functions/atom-function-object-conception-supports-sets-operations-and-limits-of-functions.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-induction-genetic-decomposition-requires-function-and-logic-schemas:
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/induction/atom-induction-genetic-decomposition-requires-function-and-logic-schemas.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:induction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting:
+    model: AtomDoc
+    path: desk/atoms/apos/pedagogy/activities/atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting.md
+    tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - system:apos
+    - topic:ace-cycle
+    - topic:activities
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-classroom-discussion-helps-students-reflect-on-activity-work:
+    model: AtomDoc
+    path: desk/atoms/apos/pedagogy/class-discussion/atom-classroom-discussion-helps-students-reflect-on-activity-work.md
+    tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - system:apos
+    - topic:ace-cycle
+    - topic:class-discussion
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-exercises-reinforce-constructions-from-activities-and-discussion:
+    model: AtomDoc
+    path: desk/atoms/apos/pedagogy/exercises/atom-exercises-reinforce-constructions-from-activities-and-discussion.md
+    tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - system:apos
+    - topic:ace-cycle
+    - topic:exercises
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-isetl-syntax-stays-close-to-standard-mathematical-notation:
+    model: AtomDoc
+    path: desk/atoms/apos/pedagogy/isetl/atom-isetl-syntax-stays-close-to-standard-mathematical-notation.md
+    tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - system:apos
+    - topic:isetl
+    - topic:notation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-research-cycle-centers-on-two-evaluative-questions:
+    model: AtomDoc
+    path: desk/atoms/apos/research/research-cycle/atom-research-cycle-centers-on-two-evaluative-questions.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:research-cycle
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-interviews-are-the-primary-data-source-in-apos-research:
+    model: AtomDoc
+    path: desk/atoms/apos/research/data-collection/atom-interviews-are-the-primary-data-source-in-apos-research.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:data-collection
+    - topic:interviews
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-interviews-use-prompting-to-probe-construction-in-progress:
+    model: AtomDoc
+    path: desk/atoms/apos/research/data-collection/atom-apos-interviews-use-prompting-to-probe-construction-in-progress.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:interviews
+    - topic:prompting
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-research-relies-on-collaborative-triangulation:
+    model: AtomDoc
+    path: desk/atoms/apos/research/data-collection/atom-apos-research-relies-on-collaborative-triangulation.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:data-collection
+    - topic:triangulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-schema-is-a-coherent-framework-of-linked-structures:
+    model: AtomDoc
+    path: desk/atoms/apos/core-structures/schema/atom-schema-is-a-coherent-framework-of-linked-structures.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-schema-coherence-determines-what-falls-within-its-scope:
+    model: AtomDoc
+    path: desk/atoms/apos/schema-development/schema-interaction/atom-schema-coherence-determines-what-falls-within-its-scope.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-schema-development-in-apos-uses-the-intra-inter-trans-triad:
+    model: AtomDoc
+    path: desk/atoms/apos/schema-development/schema-growth/atom-schema-development-in-apos-uses-the-intra-inter-trans-triad.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:schema-development
+    - topic:triad
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-historical-development-can-inform-genetic-decomposition-design:
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/design/atom-historical-development-can-inform-genetic-decomposition-design.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:history
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-textbook-analysis-can-inform-preliminary-genetic-decompositions:
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/design/atom-textbook-analysis-can-inform-preliminary-genetic-decompositions.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:textbook-analysis
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-genetic-decompositions-can-also-emerge-from-student-data:
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decompositions-can-also-emerge-from-student-data.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:data-analysis
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set:
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/spanning-set-and-span/atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:prerequisites
+    - topic:spanning-set-and-span
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-span-construction-starts-from-actions-on-linear-combinations:
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/spanning-set-and-span/atom-span-construction-starts-from-actions-on-linear-combinations.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:linear-combination
+    - topic:spanning-set-and-span
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects:
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/spanning-set-and-span/atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:object
+    - topic:spanning-set-and-span
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences:
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/role-in-research/atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:performance-differences
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-theoretical-models-increase-reliability-of-data-analysis:
+    model: AtomDoc
+    path: desk/atoms/apos/research/paradigm/atom-theoretical-models-increase-reliability-of-data-analysis.md
+    tags:
+    - domain:mathematics-education
+    - layer:research
+    - system:apos
+    - topic:reliability
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-isetl-can-treat-certain-data-types-as-first-class-objects:
+    model: AtomDoc
+    path: desk/atoms/apos/pedagogy/isetl/atom-isetl-can-treat-certain-data-types-as-first-class-objects.md
+    tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - system:apos
+    - topic:data-types
+    - topic:isetl
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-isetl-supports-function-as-input-output-and-transformable-entity:
+    model: AtomDoc
+    path: desk/atoms/apos/pedagogy/isetl/atom-isetl-supports-function-as-input-output-and-transformable-entity.md
+    tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - system:apos
+    - topic:functions
+    - topic:isetl
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-computer-activities-support-interiorization-by-generalizing-specific-actions:
+    model: AtomDoc
+    path: desk/atoms/apos/pedagogy/activities/atom-computer-activities-support-interiorization-by-generalizing-specific-actions.md
+    tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - system:apos
+    - topic:activities
+    - topic:interiorization
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs:
+    model: AtomDoc
+    path: desk/atoms/apos/pedagogy/activities/atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs.md
+    tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - system:apos
+    - topic:activities
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas:
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/groups/atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:groups
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms:
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/groups/atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:axioms
+    - topic:groups
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-early-group-activities-develop-set-as-process:
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/groups/atom-early-group-activities-develop-set-as-process.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:groups
+    - topic:sets
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-levels-are-content-specific-while-stages-are-general:
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/levels/atom-levels-are-content-specific-while-stages-are-general.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:levels
+    - topic:stages
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-a-stage-cannot-be-skipped-without-loss-of-coherence:
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/stages/atom-a-stage-cannot-be-skipped-without-loss-of-coherence.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:coherence
+    - topic:stages
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-levels-may-appear-or-not-appear-in-observable-data:
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/levels/atom-levels-may-appear-or-not-appear-in-observable-data.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-writing-computer-procedures-can-help-students-move-from-action-to-process:
+    model: AtomDoc
+    path: desk/atoms/apos/pedagogy/activities/atom-writing-computer-procedures-can-help-students-move-from-action-to-process.md
+    tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - system:apos
+    - topic:action-to-process
+    - topic:activities
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-transforming-computer-procedures-can-help-students-move-from-process-to-object:
+    model: AtomDoc
+    path: desk/atoms/apos/pedagogy/activities/atom-transforming-computer-procedures-can-help-students-move-from-process-to-object.md
+    tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - system:apos
+    - topic:activities
+    - topic:process-to-object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-totality-is-proposed-to-explain-difficulties-between-process-and-object:
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/totality/atom-totality-is-proposed-to-explain-difficulties-between-process-and-object.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:process-to-object
+    - topic:totality
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-infinite-processes-make-the-process-to-object-transition-especially-difficult:
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/infinity/atom-infinite-processes-make-the-process-to-object-transition-especially-difficult.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:infinity
+    - topic:process-to-object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-process-language-about-repeating-decimals-can-block-object-construction:
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/repeating-decimals/atom-process-language-about-repeating-decimals-can-block-object-construction.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:process-language
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-elementary-school-apos-work-relies-on-concrete-objects-for-action:
+    model: AtomDoc
+    path: desk/atoms/apos/applications/elementary-math/atom-elementary-school-apos-work-relies-on-concrete-objects-for-action.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:concrete-operations
+    - topic:elementary-math
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization:
+    model: AtomDoc
+    path: desk/atoms/apos/applications/elementary-math/atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:elementary-math
+    - topic:imagination
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi:
+    model: AtomDoc
+    path: desk/atoms/apos/applications/elementary-math/atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi.md
+    tags:
+    - domain:mathematics-education
+    - layer:applications
+    - system:apos
+    - topic:elementary-math
+    - topic:fractions
+    - type.knowledge.atom
+    - workspace.desk.atoms
+  atom-annotated-bibliography-materializes-the-breadth-of-apos-research:
+    model: AtomDoc
+    path: desk/atoms/apos/synthesis/conclusions/atom-annotated-bibliography-materializes-the-breadth-of-apos-research.md
+    tags:
+    - domain:mathematics-education
+    - layer:theory
+    - system:apos
+    - topic:bibliography
+    - topic:synthesis
+    - type.knowledge.atom
+    - workspace.desk.atoms
