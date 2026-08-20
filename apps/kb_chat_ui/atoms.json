@@ -1,0 +1,1419 @@
+{
+  "count": 90,
+  "atoms": [
+    {
+      "id": "atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi",
+      "title": "La instrucción basada en APOS en escuela elemental puede apoyar conceptos abstractos fuera del currículo regular",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:elementary-math",
+        "topic:fractions",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "La introducción al capítulo de escuela elemental afirma que el uso de representaciones concretas guiadas por principios APOS permitió a estudiantes de quinto grado aprender conceptos abstractos que estaban fuera del currículo habitual.",
+      "provenance": "Fuente principal: Capítulo 1, presentación del Capítulo 9, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/applications/elementary-math/atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi.md"
+    },
+    {
+      "id": "atom-apos-has-applications-in-elementary-and-postsecondary-mathematics",
+      "title": "APOS tiene aplicaciones en matemática escolar y postsecundaria",
+      "question": "where",
+      "tags": [
+        "system:apos",
+        "topic:school-levels",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "La introducción afirma que, aunque gran parte del trabajo basado en APOS se ha concentrado en secundaria y educación postsecundaria, el libro también presenta aplicaciones en contextos de escuela elemental y media.",
+      "provenance": "Fuente principal: Capítulos 1 y 9 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/applications/elementary-math/atom-apos-has-applications-in-elementary-and-postsecondary-mathematics.md"
+    },
+    {
+      "id": "atom-elementary-school-apos-work-relies-on-concrete-objects-for-action",
+      "title": "El trabajo APOS en escuela elemental se apoya en objetos concretos para la acción",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:elementary-math",
+        "topic:concrete-operations",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "La introducción del capítulo sobre escuela elemental subraya que, en esos niveles, las acciones suelen recaer sobre objetos concretos perceptibles por los sentidos, como bloques, recortes o dibujos.",
+      "provenance": "Fuente principal: Capítulo 1, pasaje introductorio sobre el Capítulo 9, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/applications/elementary-math/atom-elementary-school-apos-work-relies-on-concrete-objects-for-action.md"
+    },
+    {
+      "id": "atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization",
+      "title": "La imaginación juega un papel importante en la interiorización de niños pequeños",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:elementary-math",
+        "topic:imagination",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "El libro anticipa que en contextos de infancia la imaginación cumple un papel sustantivo en la interiorización de acciones, permitiendo operar mentalmente con objetos concretos que ya no están físicamente presentes.",
+      "provenance": "Fuente principal: Capítulo 1, presentación del Capítulo 9, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/applications/elementary-math/atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization.md"
+    },
+    {
+      "id": "atom-action-is-a-core-mental-structure-in-apos",
+      "title": "La Acción es una estructura mental central en APOS",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:action",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "APOS incluye la Acción como una de sus estructuras mentales centrales para describir transformaciones iniciales o guiadas externamente en el aprendizaje de conceptos matemáticos.",
+      "provenance": "Fuente principal: Capítulo 3, sección 3.2.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/core-structures/action/atom-action-is-a-core-mental-structure-in-apos.md"
+    },
+    {
+      "id": "atom-action-requires-explicit-step-by-step-external-guidance",
+      "title": "Una Acción requiere guía externa explícita y ejecución paso a paso",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:action",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "En APOS, una Acción es una transformación dirigida externamente en la que cada paso debe ejecutarse explícitamente, con apoyo de indicaciones externas, y todavía no puede imaginarse ni saltarse con control interno.",
+      "provenance": "Fuente principal: Capítulo 3, sección 3.2.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/core-structures/action/atom-action-requires-explicit-step-by-step-external-guidance.md"
+    },
+    {
+      "id": "atom-apos-defines-four-core-mental-structures",
+      "title": "APOS define cuatro estructuras mentales centrales",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:core-structures",
+        "topic:apos",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El acrónimo APOS significa Acción, Proceso, Objeto y Esquema, y el libro presenta estas cuatro entidades como las estructuras mentales centrales para modelar la construcción del conocimiento matemático.",
+      "provenance": "Fuente principal: Capítulos 1 y 3 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/core-structures/action/atom-apos-defines-four-core-mental-structures.md"
+    },
+    {
+      "id": "atom-object-is-a-core-mental-structure-in-apos",
+      "title": "El Objeto es una estructura mental central en APOS",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:object",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "APOS incluye el Objeto como una estructura mental que permite tratar un proceso matemático como una entidad sobre la cual pueden aplicarse nuevas acciones y razonamientos.",
+      "provenance": "Fuente principal: Capítulo 3, sección 3.2.3, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/core-structures/object/atom-object-is-a-core-mental-structure-in-apos.md"
+    },
+    {
+      "id": "atom-process-allows-mental-control-without-executing-each-step",
+      "title": "Un Proceso permite control mental sin ejecutar cada paso explícitamente",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:process",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "En APOS, un Proceso es una estructura mental que realiza la misma transformación que una Acción, pero enteramente en la mente, permitiendo imaginar pasos, omitirlos e incluso revertirlos.",
+      "provenance": "Fuente principal: Capítulo 3, sección 3.2.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/core-structures/process/atom-process-allows-mental-control-without-executing-each-step.md"
+    },
+    {
+      "id": "atom-process-is-a-core-mental-structure-in-apos",
+      "title": "El Proceso es una estructura mental central en APOS",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:process",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "APOS incluye el Proceso como una estructura mental central que representa una transformación internalizada, controlable mentalmente y más rica que una Acción.",
+      "provenance": "Fuente principal: Capítulo 3, sección 3.2.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/core-structures/process/atom-process-is-a-core-mental-structure-in-apos.md"
+    },
+    {
+      "id": "atom-schema-is-a-coherent-framework-of-linked-structures",
+      "title": "Un esquema es un marco coherente de estructuras enlazadas",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:schema",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El libro describe un esquema como una colección de acciones, procesos, objetos y otros esquemas unidos por principios o relaciones generales que permiten enfrentar situaciones matemáticas relacionadas con un concepto.",
+      "provenance": "Fuente principal: Capítulo 7, secciones 7.1 y 7.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/core-structures/schema/atom-schema-is-a-coherent-framework-of-linked-structures.md"
+    },
+    {
+      "id": "atom-schema-is-a-core-mental-structure-in-apos",
+      "title": "El Esquema es una estructura mental central en APOS",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:schema",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "APOS incluye el Esquema como una estructura mental que organiza acciones, procesos, objetos y otros esquemas relacionados con un concepto o dominio matemático.",
+      "provenance": "Fuente principal: Capítulos 3 y 7 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/core-structures/schema/atom-schema-is-a-core-mental-structure-in-apos.md"
+    },
+    {
+      "id": "atom-apos-is-a-constructivist-theory-of-learning-mathematics",
+      "title": "APOS es una teoría constructivista del aprendizaje de las matemáticas",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:constructivism",
+        "topic:learning-theory",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La introducción define la Teoría APOS como una teoría constructivista que modela lo que podría estar ocurriendo en la mente de una persona que aprende conceptos matemáticos y usa esos modelos para diseñar instrucción y analizar comprensión estudiantil.",
+      "provenance": "Fuente principal: Capítulo 1, Introducción, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/foundations/constructivism/atom-apos-is-a-constructivist-theory-of-learning-mathematics.md"
+    },
+    {
+      "id": "atom-mental-construction-in-apos-is-spiral-and-enriching",
+      "title": "La construcción mental en APOS tiene carácter espiral y enriquecedor",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:constructivism",
+        "topic:mental-construction",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El libro describe la construcción del conocimiento matemático como un proceso espiral en el que nuevas estructuras se construyen actuando sobre estructuras previas, sin perder las construcciones anteriores, sino enriqueciéndolas.",
+      "provenance": "Fuente principal: cierre del Capítulo 3, especialmente la sección 3.3, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/foundations/constructivism/atom-mental-construction-in-apos-is-spiral-and-enriching.md"
+    },
+    {
+      "id": "atom-apos-developed-through-recognizable-historical-periods",
+      "title": "APOS se desarrolló a través de períodos históricos reconocibles",
+      "question": "when",
+      "tags": [
+        "system:apos",
+        "topic:history",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La introducción indica que la historia de APOS se presenta mediante pensamientos iniciales en los años 1980, el período de RUMEC y el trabajo posterior de equipos más pequeños que continuaron la investigación de manera independiente.",
+      "provenance": "Fuente principal: Capítulos 1 y 2 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/foundations/historical-development/atom-apos-developed-through-recognizable-historical-periods.md"
+    },
+    {
+      "id": "atom-apos-is-a-living-and-revisable-body-of-ideas",
+      "title": "APOS se presenta como un cuerpo vivo y revisable de ideas",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:theory-evolution",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El libro sostiene que APOS no debe entenderse como una doctrina cerrada, sino como un cuerpo vivo de ideas que se revisa a la luz de nuevos estudios, nuevas interpretaciones y nuevos datos empíricos.",
+      "provenance": "Fuente principal: final del Capítulo 1 e inicio del Capítulo 2, en el texto extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/foundations/historical-development/atom-apos-is-a-living-and-revisable-body-of-ideas.md"
+    },
+    {
+      "id": "atom-apos-is-rooted-in-piagets-work",
+      "title": "APOS está arraigada en la obra de Piaget",
+      "question": "why",
+      "tags": [
+        "system:apos",
+        "topic:piaget",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La introducción y la organización del libro sitúan explícitamente a APOS como una teoría arraigada en la obra de Jean Piaget, especialmente en sus ideas sobre cómo los individuos construyen conocimiento matemático.",
+      "provenance": "Fuente principal: Capítulos 1 y 2 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/foundations/piaget/atom-apos-is-rooted-in-piagets-work.md"
+    },
+    {
+      "id": "atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone",
+      "title": "Piaget sitúa las propiedades en las acciones sobre los objetos, no en los objetos por sí solos",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:piaget",
+        "topic:reflective-abstraction",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "Según la lectura que el libro hace de Piaget, las propiedades matemáticas no residen simplemente en los objetos, sino en las acciones y operaciones que un sujeto realiza sobre ellos.",
+      "provenance": "Fuente principal: Capítulo 2, sección 2.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/foundations/piaget/atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone.md"
+    },
+    {
+      "id": "atom-reflective-abstraction-has-reflection-and-reorganization-components",
+      "title": "La abstracción reflexiva tiene un componente de reflexión y otro de reorganización",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:reflective-abstraction",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La explicación del libro divide la abstracción reflexiva en dos momentos: la reflexión sobre contenidos y operaciones, y la reconstrucción o reorganización de esos contenidos y operaciones en un nivel cognitivo superior.",
+      "provenance": "Fuente principal: Capítulo 2, sección 2.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/foundations/reflective-abstraction/atom-reflective-abstraction-has-reflection-and-reorganization-components.md"
+    },
+    {
+      "id": "atom-reflective-abstraction-is-a-foundational-idea-for-apos",
+      "title": "La abstracción reflexiva es una idea fundacional para APOS",
+      "question": "why",
+      "tags": [
+        "system:apos",
+        "topic:reflective-abstraction",
+        "topic:piaget",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El libro trata la noción piagetiana de abstracción reflexiva como una base central para el desarrollo de la Teoría APOS y para explicar cómo surgen las construcciones matemáticas en la mente.",
+      "provenance": "Fuente principal: Capítulo 2, secciones 2.1 y 2.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/foundations/reflective-abstraction/atom-reflective-abstraction-is-a-foundational-idea-for-apos.md"
+    },
+    {
+      "id": "atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures",
+      "title": "La abstracción reflexiva es el mecanismo principal de Piaget para las estructuras lógico-matemáticas",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:reflective-abstraction",
+        "topic:piaget",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El libro atribuye a Piaget la idea de que la abstracción reflexiva es el mecanismo mental mediante el cual se desarrollan el pensamiento y las estructuras lógico-matemáticas en la mente del individuo.",
+      "provenance": "Fuente principal: Capítulo 2, sección 2.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/foundations/reflective-abstraction/atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures.md"
+    },
+    {
+      "id": "atom-rumec-was-a-major-community-in-apos-development",
+      "title": "RUMEC fue una comunidad decisiva en el desarrollo de APOS",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:rumec",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El libro identifica a la Research in Undergraduate Mathematics Education Community como una fase colectiva importante en el desarrollo histórico, la coordinación y la difusión de la Teoría APOS.",
+      "provenance": "Fuente principal: Capítulo 2, sección 2.5, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/foundations/rumec/atom-rumec-was-a-major-community-in-apos-development.md"
+    },
+    {
+      "id": "atom-genetic-decomposition-begins-as-a-preliminary-hypothesis",
+      "title": "La descomposición genética comienza como una hipótesis preliminar",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:genetic-decomposition",
+        "topic:hypothesis",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El libro afirma que una descomposición genética comienza como un modelo hipotético preliminar, construido a partir de experiencia docente, conocimiento matemático, teoría APOS, investigaciones previas e historia del concepto.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/genetic-decomposition/definition/atom-genetic-decomposition-begins-as-a-preliminary-hypothesis.md"
+    },
+    {
+      "id": "atom-genetic-decomposition-is-a-central-tool-in-apos",
+      "title": "La descomposición genética es una herramienta central en APOS",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:genetic-decomposition",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El libro presenta la descomposición genética como una herramienta mayor de APOS: un modelo hipotético de las construcciones mentales que un estudiante podría necesitar para aprender un concepto matemático.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/genetic-decomposition/definition/atom-genetic-decomposition-is-a-central-tool-in-apos.md"
+    },
+    {
+      "id": "atom-genetic-decomposition-does-not-imply-linear-learning",
+      "title": "La descomposición genética no implica un aprendizaje lineal",
+      "question": "how_not",
+      "tags": [
+        "system:apos",
+        "topic:genetic-decomposition",
+        "topic:learning-trajectories",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El libro advierte que, aunque una descomposición genética se describa linealmente, el aprendizaje real no tiene por qué ser lineal, ya que puede incluir trayectorias con avances, retrocesos, interrupciones y reconfiguraciones.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-does-not-imply-linear-learning.md"
+    },
+    {
+      "id": "atom-genetic-decomposition-may-include-prerequisites-and-performance-differences",
+      "title": "La descomposición genética puede incluir prerrequisitos y diferencias de desempeño",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:genetic-decomposition",
+        "topic:prerequisites",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "Además de describir cómo podría construirse un concepto, una descomposición genética puede incluir estructuras prerrequisito y diferencias esperadas en el desarrollo de los estudiantes que ayuden a explicar variaciones de desempeño.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-may-include-prerequisites-and-performance-differences.md"
+    },
+    {
+      "id": "atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one",
+      "title": "La descomposición genética se formula para un estudiante genérico y no para uno específico",
+      "question": "for_whom",
+      "tags": [
+        "system:apos",
+        "topic:genetic-decomposition",
+        "topic:generic-student",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "Cuando APOS habla de lo que un estudiante necesita construir, el libro aclara que no se refiere a un individuo concreto, sino a un estudiante genérico representativo del conjunto que aprende ese concepto.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one.md"
+    },
+    {
+      "id": "atom-genetic-decompositions-can-also-emerge-from-student-data",
+      "title": "Las descomposiciones genéticas también pueden emerger a partir de datos de estudiantes",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:genetic-decomposition",
+        "topic:data-analysis",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El libro explica que, además de diseñarse teóricamente, una descomposición genética puede surgir del análisis detallado de entrevistas y desempeños de estudiantes, organizando las construcciones mentales sugeridas por los datos.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/genetic-decomposition/design/atom-genetic-decompositions-can-also-emerge-from-student-data.md"
+    },
+    {
+      "id": "atom-historical-development-can-inform-genetic-decomposition-design",
+      "title": "El desarrollo histórico de un concepto puede informar el diseño de una descomposición genética",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:genetic-decomposition",
+        "topic:history",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El libro sostiene que el estudio del desarrollo histórico de un concepto puede sugerir construcciones mentales plausibles y, por tanto, orientar el diseño de una descomposición genética preliminar.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/genetic-decomposition/design/atom-historical-development-can-inform-genetic-decomposition-design.md"
+    },
+    {
+      "id": "atom-textbook-analysis-can-inform-preliminary-genetic-decompositions",
+      "title": "El análisis de textos puede informar descomposiciones genéticas preliminares",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:genetic-decomposition",
+        "topic:textbook-analysis",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El libro indica que el análisis del enfoque didáctico presente en textos de enseñanza puede ayudar a anticipar cómo podrían llegar los estudiantes a comprender un concepto y qué estructuras mentales necesitarían construir.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/genetic-decomposition/design/atom-textbook-analysis-can-inform-preliminary-genetic-decompositions.md"
+    },
+    {
+      "id": "atom-cognitive-path-and-genetic-decomposition-are-not-the-same",
+      "title": "El camino cognitivo y la descomposición genética no son lo mismo",
+      "question": "how_not",
+      "tags": [
+        "system:apos",
+        "topic:genetic-decomposition",
+        "topic:cognitive-path",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El libro distingue la descomposición genética del concepto de camino cognitivo: este último sugiere progresiones más lineales centradas en aspectos matemáticos, mientras que APOS describe estructuras mentales y mecanismos de construcción.",
+      "provenance": "Fuente principal: nota al pie y discusión de la sección 4.1 del Capítulo 4, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/genetic-decomposition/non-uniqueness/atom-cognitive-path-and-genetic-decomposition-are-not-the-same.md"
+    },
+    {
+      "id": "atom-genetic-decompositions-are-not-unique",
+      "title": "Las descomposiciones genéticas no son únicas",
+      "question": "how_not",
+      "tags": [
+        "system:apos",
+        "topic:genetic-decomposition",
+        "topic:non-uniqueness",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El libro rechaza explícitamente la idea de que un concepto tenga una sola descomposición genética válida y discute la no unicidad y el refinamiento como rasgos propios del trabajo con APOS.",
+      "provenance": "Fuente principal: Capítulo 4, secciones 4.1 y 4.4, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/genetic-decomposition/non-uniqueness/atom-genetic-decompositions-are-not-unique.md"
+    },
+    {
+      "id": "atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences",
+      "title": "La descomposición genética actúa como lente para explicar diferencias de desempeño",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:genetic-decomposition",
+        "topic:performance-differences",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El libro describe la descomposición genética como una lente teórica que permite interpretar por qué distintos estudiantes resuelven, avanzan parcialmente o fracasan frente a una misma tarea matemática.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.3, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/genetic-decomposition/role-in-research/atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences.md"
+    },
+    {
+      "id": "atom-genetic-decomposition-guides-both-research-and-teaching",
+      "title": "La descomposición genética orienta tanto la investigación como la enseñanza",
+      "question": "why",
+      "tags": [
+        "system:apos",
+        "topic:genetic-decomposition",
+        "topic:teaching-design",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "La introducción y el capítulo sobre descomposición genética indican que esta herramienta se usa no solo para analizar aprendizaje y refinar hipótesis de investigación, sino también para diseñar actividades de enseñanza que favorezcan las construcciones mentales buscadas.",
+      "provenance": "Fuente principal: Capítulos 1, 4 y 5 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/genetic-decomposition/role-in-teaching/atom-genetic-decomposition-guides-both-research-and-teaching.md"
+    },
+    {
+      "id": "atom-apos-is-demonstrated-through-multiple-mathematical-domains",
+      "title": "APOS se muestra en múltiples dominios matemáticos",
+      "question": "where",
+      "tags": [
+        "system:apos",
+        "topic:mathematical-domains",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "El libro aplica APOS a múltiples dominios matemáticos, entre ellos funciones, inducción, conjuntos generadores, transformaciones lineales, espacios vectoriales, grupos, decimales periódicos, infinito, fracciones y graficación en cálculo.",
+      "provenance": "Fuente principal: tabla de contenidos y capítulos 4, 5, 7, 8 y 9 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mathematical-domains/functions/atom-apos-is-demonstrated-through-multiple-mathematical-domains.md"
+    },
+    {
+      "id": "atom-function-genetic-decomposition-begins-with-actions-on-elements",
+      "title": "La descomposición genética de función comienza con acciones sobre elementos",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:functions",
+        "topic:genetic-decomposition",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "En el ejemplo del libro, la construcción del concepto de función comienza con acciones sobre elementos de un conjunto, aplicando reglas explícitas que asignan a cada entrada un elemento único en otro conjunto.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.1.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mathematical-domains/functions/atom-function-genetic-decomposition-begins-with-actions-on-elements.md"
+    },
+    {
+      "id": "atom-function-object-conception-supports-sets-operations-and-limits-of-functions",
+      "title": "La concepción de función como objeto permite conjuntos, operaciones y límites de funciones",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:functions",
+        "topic:object",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "El libro usa el ejemplo de función para mostrar que una concepción de objeto se evidencia cuando el estudiante puede tratar funciones como elementos de conjuntos, entradas de operaciones o límites de secuencias de funciones.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.1.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mathematical-domains/functions/atom-function-object-conception-supports-sets-operations-and-limits-of-functions.md"
+    },
+    {
+      "id": "atom-early-group-activities-develop-set-as-process",
+      "title": "Las actividades iniciales sobre grupos desarrollan el conjunto como proceso",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:groups",
+        "topic:sets",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "En el curso de álgebra abstracta descrito en el libro, las primeras actividades buscan que el estudiante desarrolle el concepto de conjunto como proceso, por ejemplo mediante notación de comprensión en ISETL.",
+      "provenance": "Fuente principal: Capítulo 5, sección 5.3.1.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mathematical-domains/groups/atom-early-group-activities-develop-set-as-process.md"
+    },
+    {
+      "id": "atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms",
+      "title": "Verificar axiomas de grupo coordina el chequeo general de propiedades con axiomas específicos",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:groups",
+        "topic:axioms",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "La descripción del libro sostiene que chequear un axioma de grupo implica coordinar la idea general de verificar una propiedad con el proceso específico correspondiente a cada axioma particular.",
+      "provenance": "Fuente principal: Capítulo 5, sección 5.3, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mathematical-domains/groups/atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms.md"
+    },
+    {
+      "id": "atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas",
+      "title": "El concepto de grupo se modela como coordinación de los esquemas de conjunto, operación binaria y axioma",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:groups",
+        "topic:schema",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "El libro presenta el concepto de grupo como un esquema compuesto por los esquemas de conjunto, operación binaria y axioma, cuya coordinación hace posible verificar y comprender la estructura grupal.",
+      "provenance": "Fuente principal: Capítulo 5, sección 5.3, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mathematical-domains/groups/atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas.md"
+    },
+    {
+      "id": "atom-induction-genetic-decomposition-requires-function-and-logic-schemas",
+      "title": "La descomposición genética de inducción requiere esquemas de función y lógica",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:induction",
+        "topic:genetic-decomposition",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "El ejemplo de inducción del libro supone como prerrequisitos un esquema de función y un esquema de lógica, incluyendo proposiciones, implicación, necesidad lógica y modus ponens.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.1.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mathematical-domains/induction/atom-induction-genetic-decomposition-requires-function-and-logic-schemas.md"
+    },
+    {
+      "id": "atom-infinite-processes-make-the-process-to-object-transition-especially-difficult",
+      "title": "Los procesos infinitos vuelven especialmente difícil la transición de Proceso a Objeto",
+      "question": "why",
+      "tags": [
+        "system:apos",
+        "topic:infinity",
+        "topic:process-to-object",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "El libro sugiere que la dificultad de pasar de proceso a objeto se intensifica en el caso de procesos infinitos, donde el objeto resultante puede ser transcendente respecto de los elementos del proceso.",
+      "provenance": "Fuente principal: Capítulo 8, sección 8.3, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mathematical-domains/infinity/atom-infinite-processes-make-the-process-to-object-transition-especially-difficult.md"
+    },
+    {
+      "id": "atom-process-language-about-repeating-decimals-can-block-object-construction",
+      "title": "El lenguaje de proceso sobre decimales periódicos puede bloquear la construcción de objeto",
+      "question": "why",
+      "tags": [
+        "system:apos",
+        "topic:repeating-decimals",
+        "topic:process-language",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "Los ejemplos de entrevistas del libro muestran que describir 0,9 periódico solo como algo que sigue y sigue puede sostener una concepción de proceso sin llegar a construirlo como número u objeto matemático.",
+      "provenance": "Fuente principal: Capítulo 8, sección 8.3.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mathematical-domains/repeating-decimals/atom-process-language-about-repeating-decimals-can-block-object-construction.md"
+    },
+    {
+      "id": "atom-repeating-decimals-and-infinity-are-key-sites-for-totality",
+      "title": "Los decimales periódicos y el infinito son casos clave para estudiar Totality",
+      "question": "where",
+      "tags": [
+        "system:apos",
+        "topic:repeating-decimals",
+        "topic:infinity",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "La introducción y la tabla de contenidos indican que los estudios sobre decimales periódicos e infinito son especialmente importantes para la discusión del libro sobre Totality como posible nueva etapa de APOS.",
+      "provenance": "Fuente principal: Capítulos 1, 8 y 9 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mathematical-domains/repeating-decimals/atom-repeating-decimals-and-infinity-are-key-sites-for-totality.md"
+    },
+    {
+      "id": "atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects",
+      "title": "Span y conjunto generador deben diferenciarse como objetos distintos",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:spanning-set-and-span",
+        "topic:object",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "El libro subraya que una parte importante de la construcción conceptual consiste en diferenciar el conjunto generador de su espacio generado, es decir, distinguir spanning set de span.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.2.3, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mathematical-domains/spanning-set-and-span/atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects.md"
+    },
+    {
+      "id": "atom-span-construction-starts-from-actions-on-linear-combinations",
+      "title": "La construcción de span comienza con acciones sobre combinaciones lineales",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:spanning-set-and-span",
+        "topic:linear-combination",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "En la descomposición genética del libro, la construcción de spanning set y span parte de acciones de formar combinaciones lineales, que luego se interiorizan y se coordinan con reversión y resolución de sistemas.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.2.3, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mathematical-domains/spanning-set-and-span/atom-span-construction-starts-from-actions-on-linear-combinations.md"
+    },
+    {
+      "id": "atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set",
+      "title": "Los conceptos de conjunto generador y span requieren prerrequisitos sobre espacio vectorial, variable y conjunto solución",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:spanning-set-and-span",
+        "topic:prerequisites",
+        "domain:mathematics-education",
+        "layer:applications"
+      ],
+      "provenance_field": null,
+      "answer": "El ejemplo del libro sobre spanning set y span supone como prerrequisitos la construcción de los conceptos de espacio vectorial, variable y conjunto solución de un sistema de ecuaciones lineales.",
+      "provenance": "Fuente principal: Capítulo 4, secciones 4.2.1 y 4.2.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mathematical-domains/spanning-set-and-span/atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set.md"
+    },
+    {
+      "id": "atom-coordination-combines-processes-to-build-new-objects-or-processes",
+      "title": "La coordinación combina procesos para construir nuevos procesos u objetos",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:coordination",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La coordinación es indispensable para ciertas construcciones porque permite desencapsular objetos, coordinar sus procesos y, a partir de ello, producir nuevos procesos y nuevos objetos cognitivos.",
+      "provenance": "Fuente principal: Capítulo 3, sección 3.2.4, especialmente el ejemplo de composición de funciones, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mechanisms/coordination/atom-coordination-combines-processes-to-build-new-objects-or-processes.md"
+    },
+    {
+      "id": "atom-de-encapsulation-recovers-the-underlying-process-of-an-object",
+      "title": "La desencapsulación recupera el proceso subyacente de un objeto",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:de-encapsulation",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La desencapsulación es el mecanismo por el cual un individuo puede volver desde un objeto cognitivo al proceso que le dio origen cuando la situación matemática lo requiere.",
+      "provenance": "Fuente principal: Capítulo 3, sección 3.2.4, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mechanisms/de-encapsulation/atom-de-encapsulation-recovers-the-underlying-process-of-an-object.md"
+    },
+    {
+      "id": "atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms",
+      "title": "La encapsulación se reporta como uno de los mecanismos más difíciles",
+      "question": "why",
+      "tags": [
+        "system:apos",
+        "topic:encapsulation",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El libro reporta que la encapsulación suele ser especialmente difícil para los estudiantes porque exige pasar de ver una construcción como procedimiento a verla como entidad sobre la cual pueden operarse nuevas acciones.",
+      "provenance": "Fuente principal: Capítulo 3, sección 3.2.3, incluyendo los ejemplos sobre media y funciones de dos variables, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mechanisms/encapsulation/atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms.md"
+    },
+    {
+      "id": "atom-encapsulation-treats-a-process-as-a-static-entity",
+      "title": "La encapsulación permite tratar un proceso como una entidad estática",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:encapsulation",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La encapsulación ocurre cuando el individuo llega a ver un proceso como una totalidad sobre la que pueden aplicarse transformaciones, convirtiéndolo en un objeto cognitivo.",
+      "provenance": "Fuente principal: Capítulo 3, sección 3.2.3, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mechanisms/encapsulation/atom-encapsulation-treats-a-process-as-a-static-entity.md"
+    },
+    {
+      "id": "atom-apos-uses-specific-mechanisms-to-explain-construction",
+      "title": "APOS usa mecanismos específicos para explicar la construcción del conocimiento",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:mechanisms",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "Además de las cuatro estructuras mentales, el libro identifica mecanismos como interiorización, encapsulación, coordinación, reversión, desencapsulación y tematización para explicar cómo se construye y reorganiza el conocimiento matemático.",
+      "provenance": "Fuente principal: Capítulo 3, sección 3.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mechanisms/interiorization/atom-apos-uses-specific-mechanisms-to-explain-construction.md"
+    },
+    {
+      "id": "atom-interiorization-translates-material-actions-into-processes",
+      "title": "La interiorización traduce acciones materiales en procesos mentales",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:interiorization",
+        "topic:piaget",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La interiorización se presenta como el mecanismo por el cual una acción externa o material se reconstruye internamente como un proceso mental que realiza la misma transformación dentro de la mente.",
+      "provenance": "Fuente principal: Capítulos 2 y 3 del libro de Arnon et al. (2014), especialmente la discusión de acciones materiales e interiorized operations, extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mechanisms/interiorization/atom-interiorization-translates-material-actions-into-processes.md"
+    },
+    {
+      "id": "atom-levels-are-content-specific-while-stages-are-general",
+      "title": "Los niveles son específicos del contenido mientras que las etapas son generales",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:levels",
+        "topic:stages",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El libro distingue niveles y etapas afirmando que las etapas forman parte de la teoría general, mientras que los niveles dependen del contenido estudiado y de la evidencia empírica obtenida en entrevistas.",
+      "provenance": "Fuente principal: Capítulo 8, sección 8.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mechanisms/levels/atom-levels-are-content-specific-while-stages-are-general.md"
+    },
+    {
+      "id": "atom-levels-may-appear-or-not-appear-in-observable-data",
+      "title": "Los niveles pueden aparecer o no aparecer en los datos observables",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:levels",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El libro indica que un nivel puede o no verse reflejado en los datos de un sujeto, ya que el paso por ese nivel puede ser rápido, difícil de observar o quedar absorbido en una etapa superior ya alcanzada.",
+      "provenance": "Fuente principal: Capítulo 8, sección 8.2.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mechanisms/levels/atom-levels-may-appear-or-not-appear-in-observable-data.md"
+    },
+    {
+      "id": "atom-reversal-is-central-for-inverses-and-related-constructions",
+      "title": "La reversión es central para inversas y construcciones relacionadas",
+      "question": "why",
+      "tags": [
+        "system:apos",
+        "topic:reversal",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La reversión de procesos cumple un papel central en APOS porque permite explicar construcciones como la función inversa, ciertos problemas de composición y la idea de antiderivación en cálculo.",
+      "provenance": "Fuente principal: Capítulo 3, sección 3.2.4, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mechanisms/reversal/atom-reversal-is-central-for-inverses-and-related-constructions.md"
+    },
+    {
+      "id": "atom-a-stage-cannot-be-skipped-without-loss-of-coherence",
+      "title": "Una etapa no puede saltarse sin pérdida de coherencia",
+      "question": "how_not",
+      "tags": [
+        "system:apos",
+        "topic:stages",
+        "topic:coherence",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La discusión del libro sobre Piaget sostiene que una etapa no puede omitirse sin que la comprensión del concepto pierda coherencia, porque cada etapa es necesaria para el desarrollo de la siguiente.",
+      "provenance": "Fuente principal: Capítulo 8, sección 8.2.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mechanisms/stages/atom-a-stage-cannot-be-skipped-without-loss-of-coherence.md"
+    },
+    {
+      "id": "atom-stages-and-levels-organize-developmental-analysis-in-apos",
+      "title": "Las etapas y los niveles organizan el análisis del desarrollo en APOS",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:stages",
+        "topic:levels",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El libro dedica atención sostenida a las etapas y los niveles como un modo de describir la progresión de la comprensión matemática y de vincular la investigación APOS con ideas piagetianas del desarrollo.",
+      "provenance": "Fuente principal: Capítulos 1, 8 y 9 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mechanisms/stages/atom-stages-and-levels-organize-developmental-analysis-in-apos.md"
+    },
+    {
+      "id": "atom-thematization-turns-a-schema-into-an-object",
+      "title": "La tematización convierte un esquema en un objeto cognitivo",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:thematization",
+        "topic:schema",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La tematización es el mecanismo mediante el cual un esquema coherente puede convertirse en un objeto cognitivo sobre el que luego se aplican acciones y procesos.",
+      "provenance": "Fuente principal: Capítulo 3, sección 3.2.5, y Capítulo 7 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mechanisms/thematization/atom-thematization-turns-a-schema-into-an-object.md"
+    },
+    {
+      "id": "atom-totality-is-proposed-to-explain-difficulties-between-process-and-object",
+      "title": "Totality se propone para explicar dificultades entre Proceso y Objeto",
+      "question": "why",
+      "tags": [
+        "system:apos",
+        "topic:totality",
+        "topic:process-to-object",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El libro propone la etapa de Totality para interpretar mejor ciertas diferencias observadas en estudiantes que alcanzan una concepción de proceso pero no logran todavía una concepción de objeto, especialmente en contextos infinitos.",
+      "provenance": "Fuente principal: Capítulo 8, sección 8.3, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mechanisms/totality/atom-totality-is-proposed-to-explain-difficulties-between-process-and-object.md"
+    },
+    {
+      "id": "atom-totality-is-treated-as-a-possible-additional-stage",
+      "title": "Totality se trata como una posible etapa adicional en APOS",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:totality",
+        "topic:infinity",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La tabla de contenidos y la introducción muestran que el libro trata Totality como una posible etapa nueva, especialmente en relación con investigaciones sobre infinito y decimales periódicos, subrayando al mismo tiempo su carácter tentativo.",
+      "provenance": "Fuente principal: Capítulos 1, 8 y 9 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/mechanisms/totality/atom-totality-is-treated-as-a-possible-additional-stage.md"
+    },
+    {
+      "id": "atom-ace-cycle-is-the-main-apos-instructional-pattern",
+      "title": "El ciclo ACE es el patrón instruccional principal de APOS",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:ace-cycle",
+        "topic:instruction",
+        "domain:mathematics-education",
+        "layer:pedagogy"
+      ],
+      "provenance_field": null,
+      "answer": "El libro identifica el ciclo de Actividades, Discusión en clase y Ejercicios como el patrón usual de implementación para la instrucción basada en APOS.",
+      "provenance": "Fuente principal: Capítulo 5, sección 5.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/pedagogy/ace-cycle/atom-ace-cycle-is-the-main-apos-instructional-pattern.md"
+    },
+    {
+      "id": "atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting",
+      "title": "Las actividades del ciclo ACE priorizan la abstracción reflexiva por sobre solo obtener respuestas",
+      "question": "why",
+      "tags": [
+        "system:apos",
+        "topic:ace-cycle",
+        "topic:activities",
+        "domain:mathematics-education",
+        "layer:pedagogy"
+      ],
+      "provenance_field": null,
+      "answer": "El libro explica que las actividades del ciclo ACE se diseñan para promover abstracción reflexiva y construcción mental, no solo para llegar a respuestas correctas de manera procedimental.",
+      "provenance": "Fuente principal: Capítulo 5, sección 5.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/pedagogy/activities/atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting.md"
+    },
+    {
+      "id": "atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs",
+      "title": "Las actividades computacionales apoyan la encapsulación cuando los procesos pasan a ser entradas o salidas de programas",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:activities",
+        "topic:encapsulation",
+        "domain:mathematics-education",
+        "layer:pedagogy"
+      ],
+      "provenance_field": null,
+      "answer": "Desde la perspectiva instruccional del libro, la encapsulación puede verse favorecida cuando un proceso se usa como entrada, salida o subrutina dentro de un programa más elaborado.",
+      "provenance": "Fuente principal: Capítulo 5, sección 5.2.5, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/pedagogy/activities/atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs.md"
+    },
+    {
+      "id": "atom-computer-activities-support-interiorization-by-generalizing-specific-actions",
+      "title": "Las actividades computacionales apoyan la interiorización al generalizar acciones específicas",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:activities",
+        "topic:interiorization",
+        "domain:mathematics-education",
+        "layer:pedagogy"
+      ],
+      "provenance_field": null,
+      "answer": "El libro explica que una forma de apoyar la interiorización consiste en reemplazar cálculos específicos por programas cortos que realicen el mismo procedimiento para valores no especificados.",
+      "provenance": "Fuente principal: Capítulo 5, sección 5.2.5, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/pedagogy/activities/atom-computer-activities-support-interiorization-by-generalizing-specific-actions.md"
+    },
+    {
+      "id": "atom-transforming-computer-procedures-can-help-students-move-from-process-to-object",
+      "title": "Transformar procedimientos computacionales puede ayudar a pasar de Proceso a Objeto",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:activities",
+        "topic:process-to-object",
+        "domain:mathematics-education",
+        "layer:pedagogy"
+      ],
+      "provenance_field": null,
+      "answer": "El libro sostiene que, una vez representado un proceso como procedimiento computacional, pedir al estudiante que lo transforme de distintas maneras puede favorecer la encapsulación y el paso hacia una concepción de Objeto.",
+      "provenance": "Fuente principal: Capítulo 8, sección 8.1, con referencia a las estrategias descritas en el Capítulo 5, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/pedagogy/activities/atom-transforming-computer-procedures-can-help-students-move-from-process-to-object.md"
+    },
+    {
+      "id": "atom-writing-computer-procedures-can-help-students-move-from-action-to-process",
+      "title": "Escribir procedimientos computacionales puede ayudar a pasar de Acción a Proceso",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:activities",
+        "topic:action-to-process",
+        "domain:mathematics-education",
+        "layer:pedagogy"
+      ],
+      "provenance_field": null,
+      "answer": "El libro reporta que hacer que los estudiantes representen una acción como un procedimiento computacional puede ayudarlos a interiorizarla y avanzar desde una concepción de Acción hacia una de Proceso.",
+      "provenance": "Fuente principal: Capítulo 8, sección 8.1, con referencia a los resultados discutidos en el Capítulo 5, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/pedagogy/activities/atom-writing-computer-procedures-can-help-students-move-from-action-to-process.md"
+    },
+    {
+      "id": "atom-classroom-discussion-helps-students-reflect-on-activity-work",
+      "title": "La discusión en clase ayuda a los estudiantes a reflexionar sobre el trabajo de actividades",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:class-discussion",
+        "topic:ace-cycle",
+        "domain:mathematics-education",
+        "layer:pedagogy"
+      ],
+      "provenance_field": null,
+      "answer": "En el ciclo ACE, la discusión en clase ofrece un espacio para que los estudiantes reflexionen sobre lo hecho en actividades, articulen definiciones, escuchen síntesis del docente y conecten ideas matemáticas.",
+      "provenance": "Fuente principal: Capítulo 5, sección 5.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/pedagogy/class-discussion/atom-classroom-discussion-helps-students-reflect-on-activity-work.md"
+    },
+    {
+      "id": "atom-exercises-reinforce-constructions-from-activities-and-discussion",
+      "title": "Los ejercicios refuerzan las construcciones iniciadas en actividades y discusión",
+      "question": "why",
+      "tags": [
+        "system:apos",
+        "topic:exercises",
+        "topic:ace-cycle",
+        "domain:mathematics-education",
+        "layer:pedagogy"
+      ],
+      "provenance_field": null,
+      "answer": "El libro atribuye a los ejercicios la función de reforzar las construcciones mentales impulsadas por las actividades y la discusión en clase, además de extenderlas a ideas relacionadas.",
+      "provenance": "Fuente principal: Capítulo 5, sección 5.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/pedagogy/exercises/atom-exercises-reinforce-constructions-from-activities-and-discussion.md"
+    },
+    {
+      "id": "atom-isetl-can-treat-certain-data-types-as-first-class-objects",
+      "title": "ISETL puede tratar ciertos tipos de datos como objetos de primera clase",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:isetl",
+        "topic:data-types",
+        "domain:mathematics-education",
+        "layer:pedagogy"
+      ],
+      "provenance_field": null,
+      "answer": "El libro destaca que ISETL es potente porque puede operar sobre tipos de datos como funcs y tratarlos como objetos de primera clase, incluso devolviendo funciones como resultados.",
+      "provenance": "Fuente principal: Capítulo 5, sección 5.2.4, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/pedagogy/isetl/atom-isetl-can-treat-certain-data-types-as-first-class-objects.md"
+    },
+    {
+      "id": "atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction",
+      "title": "ISETL funciona como una herramienta pedagógica en la instrucción APOS",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:isetl",
+        "topic:instruction",
+        "domain:mathematics-education",
+        "layer:pedagogy"
+      ],
+      "provenance_field": null,
+      "answer": "El libro presenta ISETL como un lenguaje de programación matemática usado en actividades basadas en APOS para ayudar a los estudiantes a ejecutar y reflexionar sobre construcciones matemáticas.",
+      "provenance": "Fuente principal: Capítulo 5, sección 5.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/pedagogy/isetl/atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction.md"
+    },
+    {
+      "id": "atom-isetl-supports-function-as-input-output-and-transformable-entity",
+      "title": "ISETL soporta la función como entrada, salida y entidad transformable",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:isetl",
+        "topic:functions",
+        "domain:mathematics-education",
+        "layer:pedagogy"
+      ],
+      "provenance_field": null,
+      "answer": "Los ejemplos del libro muestran que ISETL permite tratar funciones como entradas y salidas de programas, lo que lo vuelve especialmente adecuado para apoyar interiorización y encapsulación en contextos matemáticos.",
+      "provenance": "Fuente principal: Capítulo 5, secciones 5.2.4 y 5.2.5, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/pedagogy/isetl/atom-isetl-supports-function-as-input-output-and-transformable-entity.md"
+    },
+    {
+      "id": "atom-isetl-syntax-stays-close-to-standard-mathematical-notation",
+      "title": "La sintaxis de ISETL se mantiene cercana a la notación matemática estándar",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:isetl",
+        "topic:notation",
+        "domain:mathematics-education",
+        "layer:pedagogy"
+      ],
+      "provenance_field": null,
+      "answer": "El libro destaca que ISETL se parece mucho a la notación matemática estándar, especialmente en construcción de conjuntos, tuplas, variables, operadores y cuantificadores.",
+      "provenance": "Fuente principal: Capítulo 5, sección 5.2.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/pedagogy/isetl/atom-isetl-syntax-stays-close-to-standard-mathematical-notation.md"
+    },
+    {
+      "id": "atom-apos-interviews-use-prompting-to-probe-construction-in-progress",
+      "title": "Las entrevistas APOS usan prompting para indagar construcciones en progreso",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:interviews",
+        "topic:prompting",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El libro explica que las entrevistas semiestructuradas pueden incluir preguntas de seguimiento e incluso pistas o prompting para observar cómo se despliega la construcción de comprensión en el estudiante.",
+      "provenance": "Fuente principal: Capítulo 6, sección 6.2.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/research/data-collection/atom-apos-interviews-use-prompting-to-probe-construction-in-progress.md"
+    },
+    {
+      "id": "atom-apos-research-relies-on-collaborative-triangulation",
+      "title": "La investigación APOS se apoya en triangulación colaborativa",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:triangulation",
+        "topic:data-collection",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El libro presenta la triangulación colaborativa como práctica metodológica central: varios investigadores analizan los datos por separado y luego negocian interpretaciones hasta llegar a consenso.",
+      "provenance": "Fuente principal: Capítulo 6, sección 6.2.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/research/data-collection/atom-apos-research-relies-on-collaborative-triangulation.md"
+    },
+    {
+      "id": "atom-apos-research-uses-multiple-data-collection-modes",
+      "title": "La investigación APOS usa múltiples modos de recolección de datos",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:data-collection",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El libro muestra que la investigación basada en APOS puede usar entrevistas, cuestionarios escritos, observaciones de aula, análisis de textos y análisis históricos o epistemológicos.",
+      "provenance": "Fuente principal: Capítulo 6, sección 6.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/research/data-collection/atom-apos-research-uses-multiple-data-collection-modes.md"
+    },
+    {
+      "id": "atom-interviews-are-the-primary-data-source-in-apos-research",
+      "title": "Las entrevistas son la fuente principal de datos en la investigación APOS",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:interviews",
+        "topic:data-collection",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El libro afirma que las entrevistas son el medio más importante de recolección de datos en investigación basada en APOS porque permiten indagar si los estudiantes realizaron las construcciones mentales previstas.",
+      "provenance": "Fuente principal: Capítulo 6, sección 6.2.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/research/data-collection/atom-interviews-are-the-primary-data-source-in-apos-research.md"
+    },
+    {
+      "id": "atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm",
+      "title": "APOS articula teoría, metodología y pedagogía como un paradigma",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:research-paradigm",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El capítulo de investigación presenta APOS no solo como una teoría, sino también como un paradigma cuyos componentes teóricos, metodológicos y pedagógicos están estrechamente ligados.",
+      "provenance": "Fuente principal: Capítulo 6, sección 6.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/research/paradigm/atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm.md"
+    },
+    {
+      "id": "atom-theoretical-models-increase-reliability-of-data-analysis",
+      "title": "Los modelos teóricos aumentan la confiabilidad del análisis de datos",
+      "question": "why",
+      "tags": [
+        "system:apos",
+        "topic:research-paradigm",
+        "topic:reliability",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El libro sostiene que basar el análisis en un modelo teórico como la descomposición genética aumenta la confiabilidad, facilita la negociación interpretativa entre investigadores y fortalece el valor diagnóstico y predictivo del estudio.",
+      "provenance": "Fuente principal: Capítulo 4, sección 4.3, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/research/paradigm/atom-theoretical-models-increase-reliability-of-data-analysis.md"
+    },
+    {
+      "id": "atom-research-cycle-centers-on-two-evaluative-questions",
+      "title": "El ciclo de investigación se centra en dos preguntas evaluativas",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:research-cycle",
+        "domain:mathematics-education",
+        "layer:research"
+      ],
+      "provenance_field": null,
+      "answer": "El paradigma APOS formula el análisis de datos alrededor de dos preguntas: si los estudiantes hicieron las construcciones mentales previstas y qué tan bien aprendieron el contenido matemático.",
+      "provenance": "Fuente principal: Capítulo 6, secciones 6.1 y 6.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/research/research-cycle/atom-research-cycle-centers-on-two-evaluative-questions.md"
+    },
+    {
+      "id": "atom-schema-development-in-apos-uses-the-intra-inter-trans-triad",
+      "title": "El desarrollo de esquemas en APOS usa la tríada Intra-Inter-Trans",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:schema-development",
+        "topic:triad",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "APOS adopta de Piaget y García la tríada Intra-, Inter- y Trans- para describir el desarrollo de esquemas, pasando desde un foco en componentes aislados hasta una estructura coherente capaz de justificar su propio alcance.",
+      "provenance": "Fuente principal: Capítulo 7, sección 7.3, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/schema-development/schema-growth/atom-schema-development-in-apos-uses-the-intra-inter-trans-triad.md"
+    },
+    {
+      "id": "atom-schemas-can-develop-interact-and-be-thematized",
+      "title": "Los esquemas pueden desarrollarse, interactuar y tematizarse",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:schema-development",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El capítulo sobre esquemas está organizado alrededor de cómo los esquemas crecen en la mente de un individuo, interactúan entre sí, asimilan nuevas construcciones y pueden convertirse ellos mismos en objetos mediante tematización.",
+      "provenance": "Fuente principal: Capítulo 7 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/schema-development/schema-growth/atom-schemas-can-develop-interact-and-be-thematized.md"
+    },
+    {
+      "id": "atom-schema-coherence-determines-what-falls-within-its-scope",
+      "title": "La coherencia del esquema determina qué cae dentro de su alcance",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:schema",
+        "topic:coherence",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La coherencia de un esquema consiste en que el individuo dispone, explícita o implícitamente, de un medio para decidir qué fenómenos entran dentro del alcance del esquema y cuáles no.",
+      "provenance": "Fuente principal: Capítulos 2, 3 y 7 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/schema-development/schema-interaction/atom-schema-coherence-determines-what-falls-within-its-scope.md"
+    },
+    {
+      "id": "atom-annotated-bibliography-materializes-the-breadth-of-apos-research",
+      "title": "La bibliografía anotada materializa la amplitud de la investigación APOS",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:bibliography",
+        "topic:synthesis",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La presencia de una bibliografía anotada extensa en el libro funciona como evidencia de la amplitud temática y geográfica del trabajo de investigación desarrollado dentro del marco APOS.",
+      "provenance": "Fuente principal: cierre del Capítulo 1 y tabla de contenidos del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/synthesis/conclusions/atom-annotated-bibliography-materializes-the-breadth-of-apos-research.md"
+    },
+    {
+      "id": "atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis",
+      "title": "El libro cierra con preguntas frecuentes, conclusiones y síntesis bibliográfica",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:synthesis",
+        "topic:faq",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "Los capítulos finales consolidan APOS mediante una sección de preguntas frecuentes, una síntesis de conclusiones, una bibliografía anotada, referencias y una mirada al futuro de la teoría.",
+      "provenance": "Fuente principal: tabla de contenidos y Capítulo 11 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/apos/synthesis/faq/atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis.md"
+    },
+    {
+      "id": "atom-apos-book-derives-from-collaborative-authorship",
+      "title": "El libro de APOS es una síntesis colaborativa de varios investigadores",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:source-book",
+        "topic:authorship",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El prefacio presenta el libro como un producto cooperativo de investigadores de APOS, incluyendo a Ed Dubinsky y a colaboradores de distintas generaciones, que escribieron, revisaron y corrigieron conjuntamente todos los capítulos.",
+      "provenance": "Fuente principal: prefacio del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/sources/apos-theory-book/authorship/atom-apos-book-derives-from-collaborative-authorship.md"
+    },
+    {
+      "id": "atom-apos-book-presents-framework-for-research-and-curriculum-development",
+      "title": "El libro de APOS presenta un marco para investigación y desarrollo curricular",
+      "question": "what",
+      "tags": [
+        "system:apos",
+        "topic:source-book",
+        "topic:framework",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El libro presenta la Teoría APOS como un marco para comprender cómo pueden aprenderse los conceptos matemáticos y para orientar tanto la investigación como el desarrollo curricular en educación matemática.",
+      "provenance": "Fuente principal: prefacio, tabla de contenidos e introducción del libro de Arnon et al. (2014), extraído desde el PDF ubicado en `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/sources/apos-theory-book/purpose/atom-apos-book-presents-framework-for-research-and-curriculum-development.md"
+    },
+    {
+      "id": "atom-apos-book-is-not-the-last-word-on-apos",
+      "title": "El libro no pretende ser la última palabra sobre APOS",
+      "question": "how_not",
+      "tags": [
+        "system:apos",
+        "topic:source-book",
+        "topic:theory-evolution",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "Los autores afirman que el libro no debe considerarse la última palabra sobre APOS, porque futuras investigaciones pueden exigir nuevas revisiones, cambios conceptuales y reformulaciones del marco.",
+      "provenance": "Fuente principal: cierre del Capítulo 1 del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/sources/apos-theory-book/scope/atom-apos-book-is-not-the-last-word-on-apos.md"
+    },
+    {
+      "id": "atom-apos-book-targets-researchers-teachers-and-graduate-students",
+      "title": "El libro de APOS está dirigido a investigadores, docentes y estudiantes de posgrado",
+      "question": "for_whom",
+      "tags": [
+        "system:apos",
+        "topic:source-book",
+        "topic:audience",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "El prefacio indica que el libro fue escrito para apoyar a estudiantes de posgrado, investigadores jóvenes, docentes, educadores y tomadores de decisión que necesitan una entrada didáctica y amplia a la Teoría APOS.",
+      "provenance": "Fuente principal: prefacio del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/sources/apos-theory-book/scope/atom-apos-book-targets-researchers-teachers-and-graduate-students.md"
+    },
+    {
+      "id": "atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis",
+      "title": "El libro de APOS se organiza alrededor de teoría, investigación, pedagogía y síntesis",
+      "question": "how",
+      "tags": [
+        "system:apos",
+        "topic:source-book",
+        "topic:book-structure",
+        "domain:mathematics-education",
+        "layer:theory"
+      ],
+      "provenance_field": null,
+      "answer": "La tabla de contenidos y la introducción organizan el libro en fundamentos, estructuras mentales, descomposición genética, pedagogía, metodología de investigación, desarrollo de esquemas, totality, aplicaciones escolares, preguntas frecuentes, conclusiones y bibliografía anotada.",
+      "provenance": "Fuente principal: tabla de contenidos e introducción del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.",
+      "path": "desk/atoms/sources/apos-theory-book/structure/atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis.md"
+    }
+  ]
+}
