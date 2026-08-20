@@ -1,0 +1,25 @@
+graph TD
+    subgraph Runtime ["KB Agent Runtime (reusable core)"]
+        ChatApp["FastAPI Chat App"]
+        MesaCompiler["Mesa Compiler (deterministic context)"]
+        Responder["Gemini Responder"]
+        Storage["SQLite Persistence"]
+        PackLoader["Knowledge Pack Loader"]
+    end
+    subgraph KnowledgePack ["Knowledge Pack (per KB)"]
+        AtomsInventory["atoms.json inventory"]
+        PackConfig["pack config (tags, labels, limits)"]
+        PromptPolicy["prompt policy"]
+        ExpansionRules["tag inference and expansion rules"]
+    end
+    SLDB["SLDB store (.sldb)"]
+    Deskops["Deskops workflow harness"]
+    Gemini["Gemini / Vertex AI"]
+    ChatApp -->|compile mesa| MesaCompiler
+    MesaCompiler -->|rules + inventory| PackLoader
+    PackLoader -->|load pack| KnowledgePack
+    MesaCompiler -->|prompt_mesa| Responder
+    Responder -->|generate| Gemini
+    ChatApp -->|turns/mesas| Storage
+    AtomsInventory -->|exported from store| SLDB
+    KnowledgePack -->|workflow + build| Deskops

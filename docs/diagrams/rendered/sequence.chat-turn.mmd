@@ -1,0 +1,19 @@
+sequenceDiagram
+    actor User
+    participant ChatApp
+    participant Storage
+    participant MesaCompiler
+    participant Pack
+    participant Responder
+    participant Gemini
+    User->>ChatApp: POST /api/chat (message, user_id, conversation_id)
+    ChatApp->>Storage: ensure_user / ensure_conversation
+    ChatApp->>Storage: get_conversation_turns (previous turn)
+    ChatApp->>MesaCompiler: compile(query, previous_turn)
+    MesaCompiler->>Pack: load atoms + rules
+    MesaCompiler->>ChatApp: mesa + prompt_mesa
+    ChatApp->>Responder: build_prompt(prompt_mesa)
+    Responder->>Gemini: generate_content(gemini-2.5-flash)
+    Gemini->>Responder: answer text
+    ChatApp->>Storage: save_turn(mesa, answer)
+    ChatApp->>User: turn (turn_id, mesa, assistant_message)

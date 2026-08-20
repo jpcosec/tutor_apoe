@@ -1,0 +1,18 @@
+graph TD
+    subgraph browser ["Browser (anonymous user)"]
+        chat_ui["Chat UI (index.html)"]
+    end
+    subgraph modal ["Modal App (tutor-apoe-kb-chat-ui)"]
+        chat_api["FastAPI app (main.py)"]
+        mesa_compiler["Mesa Compiler (table_compiler.py)"]
+        pack_bundle["Knowledge pack (atoms.json + config)"]
+    end
+    subgraph volume ["Modal Volume"]
+        sqlite_db["kb_chat_ui.db"]
+    end
+    subgraph vertex ["Google Vertex AI"]
+        gemini_model["gemini-2.5-flash"]
+    end
+    chat_ui -->|HTTPS| chat_api
+    chat_api -->|file| sqlite_db
+    chat_api -->|HTTPS| gemini_model

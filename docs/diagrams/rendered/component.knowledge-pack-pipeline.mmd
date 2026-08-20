@@ -1,0 +1,15 @@
+graph TD
+    Sources["Source documents (PDF, notes)"]
+    StructuredDocs["Structured Markdown atoms (desk/atoms)"]
+    SLDB["SLDB store (.sldb)"]
+    Exporter["Pack exporter (adapter)"]
+    AtomsInventory["atoms.json inventory"]
+    PackConfig["pack config + rules + prompt policy"]
+    Runtime["KB Agent Runtime"]
+    Sources -->|extract atoms| StructuredDocs
+    StructuredDocs -->|parse/validate/index| SLDB
+    SLDB -->|find + docs show| Exporter
+    Exporter -->|export inventory| AtomsInventory
+    PackConfig -->|pack bundle| AtomsInventory
+    AtomsInventory -->|load pack| Runtime
+    PackConfig -->|load config| Runtime
