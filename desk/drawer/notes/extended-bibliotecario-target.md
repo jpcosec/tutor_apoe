@@ -18,6 +18,10 @@ tags:
 
 Direction captured from the current chat about the richer retrieval path we want to recover and strengthen.
 
+Scope decision: this is deferred. The current iteration only packages the runtime + APOS pack and validates against a second ready-made atoms KB. The extended bibliotecario below is a later task.
+
+Core future goal: replace the fixed `max_atoms` cap with a bibliotecario that decides which atoms stay and which leave per turn, instead of a hard top-k.
+
 ## What the current version already has
 
 - Deterministic mesa compilation from local atom inventory.

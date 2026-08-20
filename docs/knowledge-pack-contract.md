@@ -91,6 +91,41 @@ Optional atom fields:
 
 The `id` must be stable and match the `atom-...` reference convention used in answers.
 
+### relations (optional)
+
+Explicit typed edges to other atoms, used later by the extended bibliotecario for multi-hop expansion. The current runtime does not require it.
+
+```json
+"relations": [
+  { "type": "leads_to", "target": "atom-..." },
+  { "type": "contrasts_with", "target": "atom-..." },
+  { "type": "prerequisite_of", "target": "atom-..." }
+]
+```
+
+- `type`: free string, but recommended vocabulary: `leads_to`, `prerequisite_of`, `contrasts_with`, `example_of`, `part_of`, `supports`.
+- `target`: an existing atom `id` in the same inventory.
+- Unknown `type` values are tolerated and ignored by the current runtime.
+
+### kb_roles (optional)
+
+Declares what role an atom tends to play in a contexto conversacional. Advisory only for the current runtime; the extended bibliotecario will use it for support-role balancing.
+
+```json
+"kb_roles": ["definition", "mechanism"]
+```
+
+Recommended vocabulary:
+
+- `definition`
+- `difficulty`
+- `mechanism`
+- `pedagogy`
+- `example`
+- `context`
+
+Multiple roles allowed. Unknown roles are tolerated and ignored now.
+
 ## expansion_rules.json
 
 Domain rules the compiler consumes instead of hardcoded Python dictionaries.
@@ -158,11 +193,20 @@ Swappable per KB:
 The runtime selects a pack by id.
 
 ```
-KB_PACK=apos
-KB_PACK_DIR=packs/apos
+KB_PACK=apos            # pack id; must equal packs/<KB_PACK>/pack.json pack_id
+KB_PACK_DIR=packs       # base dir holding pack folders (optional)
 ```
 
-If unset, the runtime falls back to the bundled reference pack (`apos`).
+Resolution rules:
+
+- Effective pack directory is `${KB_PACK_DIR:-packs}/${KB_PACK}`.
+- `pack.json` `pack_id` must equal the directory name; mismatch is a load error.
+- If `KB_PACK` is unset, the runtime falls back to the bundled reference pack (`apos`).
+- A missing or malformed pack (bad `pack.json`, unreadable `atoms.json`) fails fast at startup with a clear error, not at request time.
+
+## Incoming-KB assumption (this iteration)
+
+For now the runtime assumes each new KB arrives as a **ready atoms inventory** (already distilled) that satisfies this contract. Producing `atoms.json` from raw sources / `.sldb` export is intentionally out of scope for this iteration and is tracked as a separate future concern. See `docs/reusable-agent-architecture.md` (Deferred / annotated for later).
 
 ## Migration target vs current code
 
