@@ -1,0 +1,26 @@
+{
+  "aliases": {
+    "suite": ["topic:suites"],
+    "franquicia": ["topic:franchise"],
+    "inversion": ["topic:investment"],
+    "proyecto": ["topic:projects"],
+    "concepto": ["topic:concept"],
+    "seguridad": ["topic:safety"],
+    "bienestar": ["topic:wellness"],
+    "chile": ["location:chile"],
+    "colombia": ["location:colombia"],
+    "mexico": ["location:mexico"]
+  },
+  "expansions": {
+    "topic:investment": ["topic:franchise", "topic:projects"],
+    "topic:suites": ["topic:amenities", "topic:safety"]
+  },
+  "followup_markers": ["mas", "más", "ahonda", "detalle", "eso", "sigue"],
+  "scoring": {
+    "exact_tag": 100,
+    "expanded_tag": 30,
+    "lexical_overlap": 8,
+    "retained_from_previous": 18,
+    "theory_bonus": 5
+  }
+}

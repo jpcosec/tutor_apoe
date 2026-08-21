@@ -1,0 +1,8 @@
+$ python3 -c "from apps.kb_agent.runtime.pack_loader import load_pack; p=load_pack('vitali'); print(p.pack_id, len(p.atoms_data['atoms']), len(p.expansion_rules['aliases']))"
+vitali 7 10
+
+$ python3 -c "from apps.kb_agent.runtime.compiler import MesaCompiler; from apps.kb_agent.runtime.pack_loader import load_pack; c=MesaCompiler(load_pack('vitali')); r=c.compile('¿Qué ofrece Vitali?'); print(r['mesa']['atom_ids'])"
+['atom-vitali-expansion-latam', 'atom-vitali-franchise-model', 'atom-vitali-investment-model', 'atom-vitali-redefines-retirement-living', 'atom-vitali-management-team']
+
+$ sldb stores check --store .sldb
+PASS: store integrity

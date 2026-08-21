@@ -1,0 +1,18 @@
+{
+  "pack_id": "vitali",
+  "title": "Vitali Suites",
+  "language": "es",
+  "brand": {
+    "app_name": "Vitali Suites",
+    "subtitle": "Senior Living de lujo."
+  },
+  "default_tags": [
+    "system:vitali"
+  ],
+  "max_atoms": 5,
+  "responder": {
+    "model": "gemini-2.5-flash",
+    "max_words": 140,
+    "max_bullets": 5
+  }
+}

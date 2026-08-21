@@ -1,0 +1,10 @@
+Board: board-001
+Title: Tutor APOE Board
+status: 
+summary: 
+scope: desk
+purpose: 
+tasks: desk/tasks/task-package-kb-agent-as-reusable-runtime-plus-pack.md
+pills: desk/contexts/pills.md
+rituals: desk/rituals/execution.md, desk/rituals/testing.md, desk/rituals/closeout.md
+notes: - Package KB agent as reusable runtime plus pack [active] - Triage and resolve the inbox message promoted from `desk/inbox/20260820-185005-suggestion-package-kb-agent-as-reusable-runtime-plus-pack.md`.
