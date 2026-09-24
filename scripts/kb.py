@@ -37,6 +37,8 @@ class Atom:
     tags: list[str]
     answer: str
     provenance: str
+    node_type: str
+    parent_id: str
     path: str
 
 
@@ -93,6 +95,8 @@ def read_atom(path: Path) -> Atom:
         tags=_tags(meta),
         answer=_section(body, ("Respuesta", "Answer")),
         provenance=_section(body, ("Procedencia", "Provenance")),
+        node_type=_field(meta, "node_type") or "knowledge",
+        parent_id=_field(meta, "parent_id"),
         path=str(path.relative_to(ROOT)),
     )
 
@@ -126,6 +130,8 @@ def atom_payload(atom: Atom) -> dict[str, object]:
         "tags": atom.tags,
         "answer": atom.answer,
         "provenance": atom.provenance,
+        "node_type": atom.node_type,
+        "parent_id": atom.parent_id,
         "path": atom.path,
     }
 
@@ -158,8 +164,10 @@ def update_atom(atom_id: str, data: dict[str, object]) -> Atom:
     question = data.get("question")
     answer = data.get("answer")
     provenance = data.get("provenance")
+    node_type = data.get("node_type")
+    parent_id = data.get("parent_id")
     tags = data.get("tags")
-    if not all(isinstance(value, str) for value in (title, question, answer, provenance)):
+    if not all(isinstance(value, str) for value in (title, question, answer, provenance, node_type, parent_id)):
         raise ValueError("Título, pregunta, respuesta y procedencia deben ser texto.")
     if question not in {"what", "why", "how", "how_not", "when", "where", "for_whom"}:
         raise ValueError("La pregunta debe ser una de las opciones 5WH1+.")
@@ -170,6 +178,8 @@ def update_atom(atom_id: str, data: dict[str, object]) -> Atom:
     meta = _replace_field(meta, "title", title.strip())
     meta = _replace_field(meta, "five_wh_one_plus", question)
     meta = _replace_tags(meta, tags)
+    meta = _replace_field(meta, "node_type", node_type.strip()) if "node_type:" in meta else meta.rstrip() + f"\nnode_type: {json.dumps(node_type.strip())}\n"
+    meta = _replace_field(meta, "parent_id", parent_id.strip()) if "parent_id:" in meta else meta.rstrip() + f"\nparent_id: {json.dumps(parent_id.strip())}\n"
     body = _replace_section(body, "Respuesta", answer)
     body = _replace_section(body, "Procedencia", provenance)
     path.write_text(f"---\n{meta}---\n{body}", encoding="utf-8")
@@ -179,6 +189,36 @@ def update_atom(atom_id: str, data: dict[str, object]) -> Atom:
     )
     if refreshed.returncode:
         raise RuntimeError("El átomo se guardó, pero SLDB no pudo reindexar: " + (refreshed.stderr.strip() or refreshed.stdout.strip()))
+    return read_atom(path)
+
+
+def create_child(parent_id: str, data: dict[str, object]) -> Atom:
+    parent = atoms_by_id().get(parent_id)
+    if parent is None:
+        raise KeyError("Átomo padre no encontrado.")
+    title = data.get("title")
+    node_type = data.get("node_type", "knowledge")
+    if not isinstance(title, str) or not title.strip() or not isinstance(node_type, str) or not node_type.strip():
+        raise ValueError("El hijo necesita título y tipo de nodo.")
+    normal = title.lower().translate(str.maketrans("áéíóúüñ", "aeiouun"))
+    slug = re.sub(r"[^a-z0-9]+", "-", normal).strip("-")
+    atom_id = f"atom-{slug}"
+    if atom_id in atoms_by_id():
+        raise ValueError("Ya existe un átomo con ese título.")
+    path = ATOMS / "custom" / f"{atom_id}.md"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    content = "\n".join((
+        "---", f"id: {atom_id}", f"title: {json.dumps(title.strip(), ensure_ascii=False)}",
+        "five_wh_one_plus: what", "tags:", "  - system:apos", "  - topic:pending",
+        "  - layer:theory", f"node_type: {json.dumps(node_type.strip())}",
+        f"parent_id: {parent_id}", "---", "", f"# {title.strip()}", "",
+        "## Respuesta", "", "Pendiente de redactar.", "", "## Procedencia", "",
+        "Pendiente de documentar.", "",
+    ))
+    path.write_text(content, encoding="utf-8")
+    refreshed = subprocess.run(["sldb", "stores", "update", "--store", str(STORE), "--pythonpath", str(ROOT)], cwd=ROOT, text=True, capture_output=True)
+    if refreshed.returncode:
+        raise RuntimeError("El hijo se creó, pero SLDB no pudo reindexar.")
     return read_atom(path)
 
 
@@ -251,6 +291,19 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:  # noqa: N802 - API de BaseHTTPRequestHandler
         parsed = urlparse(self.path)
+        if parsed.path.endswith("/children") and parsed.path.startswith("/api/atoms/"):
+            try:
+                size = int(self.headers.get("Content-Length", "0"))
+                payload = json.loads(self.rfile.read(size))
+                parent_id = unquote(parsed.path.removeprefix("/api/atoms/").removesuffix("/children").rstrip("/"))
+                self._json({"atom": atom_payload(create_child(parent_id, payload))}, HTTPStatus.CREATED)
+            except KeyError as error:
+                self._json({"detail": str(error)}, HTTPStatus.NOT_FOUND)
+            except (ValueError, json.JSONDecodeError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
+            except RuntimeError as error:
+                self._json({"detail": str(error)}, HTTPStatus.INTERNAL_SERVER_ERROR)
+            return
         if not parsed.path.startswith("/api/atoms/"):
             self._json({"detail": "Ruta no encontrada."}, HTTPStatus.NOT_FOUND)
             return

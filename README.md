@@ -19,6 +19,10 @@ vuelve a la Terminal y presiona `Control + C`.
 Selecciona una tarjeta de átomo para abrir el editor a la derecha. Al guardar,
 se actualiza el archivo Markdown y se reindexa SLDB automáticamente.
 
+Los átomos pueden declarar `node_type` (texto libre, por ejemplo `branch`,
+`example` o `definition`) y `parent_id`. Usa **Add child** en el editor para
+crear un átomo hijo enlazado a la tarjeta actual.
+
 También hay una interfaz de comandos respaldada por **SLDB**:
 
 ```bash
