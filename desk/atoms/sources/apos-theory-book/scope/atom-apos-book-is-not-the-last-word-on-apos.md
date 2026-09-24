@@ -12,6 +12,8 @@ tags:
   - topic:theory-evolution
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-sources-apos-theory-book-scope
 ---
 
 # El libro no pretende ser la última palabra sobre APOS

@@ -11,6 +11,8 @@ tags:
   - topic:school-levels
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-applications-elementary-math
 ---
 
 # APOS tiene aplicaciones en matemática escolar y postsecundaria

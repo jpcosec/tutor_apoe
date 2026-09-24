@@ -12,6 +12,8 @@ tags:
   - topic:audience
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-sources-apos-theory-book-scope
 ---
 
 # El libro de APOS está dirigido a investigadores, docentes y estudiantes de posgrado

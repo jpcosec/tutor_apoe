@@ -8,6 +8,8 @@ tags:
   - topic:axioms
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-mathematical-domains-groups
 ---
 
 # Verificar axiomas de grupo coordina el chequeo general de propiedades con axiomas específicos

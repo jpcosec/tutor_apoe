@@ -11,6 +11,8 @@ tags:
   - topic:reversal
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-mechanisms-reversal
 ---
 
 # La reversión es central para inversas y construcciones relacionadas

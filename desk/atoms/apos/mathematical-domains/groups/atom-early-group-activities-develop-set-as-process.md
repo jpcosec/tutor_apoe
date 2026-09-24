@@ -8,6 +8,8 @@ tags:
   - topic:sets
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-mathematical-domains-groups
 ---
 
 # Las actividades iniciales sobre grupos desarrollan el conjunto como proceso

@@ -11,6 +11,8 @@ tags:
   - topic:schema-development
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-schema-development-schema-growth
 ---
 
 # Los esquemas pueden desarrollarse, interactuar y tematizarse

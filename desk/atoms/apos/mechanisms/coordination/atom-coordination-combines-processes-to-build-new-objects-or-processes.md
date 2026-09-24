@@ -11,6 +11,8 @@ tags:
   - topic:coordination
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-mechanisms-coordination
 ---
 
 # La coordinación combina procesos para construir nuevos procesos u objetos

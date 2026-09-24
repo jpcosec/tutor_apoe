@@ -12,6 +12,8 @@ tags:
   - topic:coherence
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-schema-development-schema-interaction
 ---
 
 # La coherencia del esquema determina qué cae dentro de su alcance

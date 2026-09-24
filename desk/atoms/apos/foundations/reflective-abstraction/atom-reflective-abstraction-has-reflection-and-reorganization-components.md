@@ -11,6 +11,8 @@ tags:
   - topic:reflective-abstraction
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-foundations-reflective-abstraction
 ---
 
 # La abstracción reflexiva tiene un componente de reflexión y otro de reorganización

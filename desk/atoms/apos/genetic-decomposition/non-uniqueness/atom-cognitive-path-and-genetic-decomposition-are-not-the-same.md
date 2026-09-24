@@ -12,6 +12,8 @@ tags:
   - topic:cognitive-path
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-genetic-decomposition-non-uniqueness
 ---
 
 # El camino cognitivo y la descomposición genética no son lo mismo

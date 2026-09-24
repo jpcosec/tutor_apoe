@@ -8,6 +8,8 @@ tags:
   - topic:textbook-analysis
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-genetic-decomposition-design
 ---
 
 # El análisis de textos puede informar descomposiciones genéticas preliminares

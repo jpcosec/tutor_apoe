@@ -10,6 +10,8 @@ tags:
   - topic:kernel
   - domain:linear-algebra
   - layer:examples
+node_type: knowledge
+parent_id: branch-apos-mathematical-domains-linear-homogeneous-equations
 ---
 
 # Una ELH puede ejemplificar desencapsulacion de forma lineal y reversion parcial

@@ -12,6 +12,8 @@ tags:
   - topic:triad
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-schema-development-schema-growth
 ---
 
 # El desarrollo de esquemas en APOS usa la tríada Intra-Inter-Trans

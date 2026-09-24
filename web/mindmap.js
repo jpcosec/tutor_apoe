@@ -7,12 +7,6 @@ import dagre from 'dagre';
 const html = htm.bind(React.createElement);
 const COLORS = ['#4fc3d9', '#e6a85c', '#7cba7c', '#c97db9', '#9b7fd4', '#ff6b6b'];
 
-function hierarchy(atom) {
-  const pieces = atom.path.split('/');
-  const apos = pieces.indexOf('apos');
-  return apos >= 0 ? ['apos', ...pieces.slice(apos + 1, -1)] : ['fuentes', ...pieces.slice(3, -1)];
-}
-
 function colour(name) {
   let total = 0;
   for (const letter of name) total += letter.charCodeAt(0);
@@ -21,7 +15,7 @@ function colour(name) {
 
 function Node({data, selected}) {
   const root = data.kind === 'root';
-  const branch = data.kind === 'branch';
+  const branch = data.node_type === 'branch';
   return html`<div className=${`node ${root ? 'node-root' : ''} ${branch ? 'node-branch' : ''} ${selected ? 'selected' : ''}`}
       style=${{ '--node-colour': data.colour }}>
     <${Handle} type="target" position=${Position.Left}/>
@@ -39,35 +33,21 @@ function buildGraph(atoms, direction, showAtoms) {
   const nodes = [{id: 'root', type: 'knowledge', data: {kind: 'root', label: 'Teoría APOS', colour: '#d4a574'}, position: {x: 0, y: 0}}];
   const edges = [];
   graph.setNode('root', {width: 150, height: 48});
-  const branches = new Map([['', 'root']]);
-  const ids = new Set(atoms.map(atom => atom.id));
-  atoms.forEach(atom => {
-    let parent = 'root'; let key = '';
-    hierarchy(atom).forEach((part, level) => {
-      if (!showAtoms && level > 1) return;
-      key += `/${part}`;
-      if (!branches.has(key)) {
-        const id = `branch:${key}`; const tone = colour(hierarchy(atom)[0]);
-        branches.set(key, id);
-        nodes.push({id, type: 'knowledge', data: {kind: 'branch', label: part.replaceAll('-', ' '), colour: tone}, position: {x: 0, y: 0}});
-        edges.push({id: `${parent}-${id}`, source: parent, target: id, style: {stroke: tone, strokeWidth: level === 0 ? 2 : 1.3}});
-        graph.setNode(id, {width: 116, height: 40}); graph.setEdge(parent, id);
-      }
-      parent = branches.get(key);
-    });
-    if (showAtoms) {
-      const id = `atom:${atom.id}`; const tone = colour(hierarchy(atom)[0]);
-      nodes.push({id, type: 'knowledge', data: {...atom, kind: 'atom', label: atom.title, colour: tone}, position: {x: 0, y: 0}});
-      const actualParent = atom.parent_id && ids.has(atom.parent_id) ? `atom:${atom.parent_id}` : parent;
-      edges.push({id: `${actualParent}-${id}`, source: actualParent, target: id, style: {stroke: `${tone}99`, strokeWidth: 1}});
-      graph.setNode(id, {width: 165, height: 42}); graph.setEdge(actualParent, id);
-    }
+  const visible = atoms.filter(atom => showAtoms || atom.node_type === 'branch');
+  const ids = new Set(visible.map(atom => atom.id));
+  visible.forEach(atom => {
+    const id = `atom:${atom.id}`; const tone = colour(atom.node_type || 'knowledge');
+    const isBranch = atom.node_type === 'branch';
+    nodes.push({id, type: 'knowledge', data: {...atom, kind: 'atom', label: atom.title, colour: tone}, position: {x: 0, y: 0}});
+    const parent = atom.parent_id && ids.has(atom.parent_id) ? `atom:${atom.parent_id}` : 'root';
+    edges.push({id: `${parent}-${id}`, source: parent, target: id, style: {stroke: `${tone}aa`, strokeWidth: isBranch ? 1.8 : 1}});
+    graph.setNode(id, {width: isBranch ? 116 : 165, height: isBranch ? 40 : 42}); graph.setEdge(parent, id);
   });
   dagre.layout(graph);
   return {
     nodes: nodes.map(node => {
       const pos = graph.node(node.id);
-      const width = node.data.kind === 'atom' ? 165 : node.data.kind === 'root' ? 150 : 116;
+      const width = node.data.kind === 'root' ? 150 : node.data.node_type === 'branch' ? 116 : 165;
       return {...node, position: {x: pos.x - width / 2, y: pos.y - 21}};
     }), edges,
   };

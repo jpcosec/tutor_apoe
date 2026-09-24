@@ -11,6 +11,8 @@ tags:
   - topic:mathematical-domains
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-mathematical-domains-functions
 ---
 
 # APOS se muestra en múltiples dominios matemáticos

@@ -8,6 +8,8 @@ tags:
   - topic:data-analysis
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-genetic-decomposition-design
 ---
 
 # Las descomposiciones genéticas también pueden emerger a partir de datos de estudiantes

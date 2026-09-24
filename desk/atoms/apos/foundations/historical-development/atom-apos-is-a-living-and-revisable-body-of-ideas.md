@@ -11,6 +11,8 @@ tags:
   - topic:theory-evolution
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-foundations-historical-development
 ---
 
 # APOS se presenta como un cuerpo vivo y revisable de ideas

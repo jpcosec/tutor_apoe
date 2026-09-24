@@ -12,6 +12,8 @@ tags:
   - topic:teaching-design
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-genetic-decomposition-role-in-teaching
 ---
 
 # La descomposición genética orienta tanto la investigación como la enseñanza

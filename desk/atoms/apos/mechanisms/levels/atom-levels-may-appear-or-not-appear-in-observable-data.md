@@ -7,6 +7,8 @@ tags:
   - topic:levels
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-mechanisms-levels
 ---
 
 # Los niveles pueden aparecer o no aparecer en los datos observables

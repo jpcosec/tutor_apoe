@@ -8,6 +8,8 @@ tags:
   - topic:encapsulation
   - domain:mathematics-education
   - layer:pedagogy
+node_type: knowledge
+parent_id: branch-apos-pedagogy-activities
 ---
 
 # Las actividades computacionales apoyan la encapsulación cuando los procesos pasan a ser entradas o salidas de programas

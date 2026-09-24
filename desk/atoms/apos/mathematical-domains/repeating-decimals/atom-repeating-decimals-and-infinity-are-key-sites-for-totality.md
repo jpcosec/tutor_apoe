@@ -12,6 +12,8 @@ tags:
   - topic:infinity
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-mathematical-domains-repeating-decimals
 ---
 
 # Los decimales periódicos y el infinito son casos clave para estudiar Totality

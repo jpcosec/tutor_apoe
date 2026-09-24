@@ -12,6 +12,8 @@ tags:
   - topic:non-uniqueness
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-genetic-decomposition-non-uniqueness
 ---
 
 # Las descomposiciones genéticas no son únicas

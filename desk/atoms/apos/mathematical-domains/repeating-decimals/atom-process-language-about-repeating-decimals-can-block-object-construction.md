@@ -8,6 +8,8 @@ tags:
   - topic:process-language
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-mathematical-domains-repeating-decimals
 ---
 
 # El lenguaje de proceso sobre decimales periódicos puede bloquear la construcción de objeto

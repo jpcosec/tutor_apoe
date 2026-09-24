@@ -11,6 +11,8 @@ tags:
   - topic:action
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-core-structures-action
 ---
 
 # Una Acción requiere guía externa explícita y ejecución paso a paso

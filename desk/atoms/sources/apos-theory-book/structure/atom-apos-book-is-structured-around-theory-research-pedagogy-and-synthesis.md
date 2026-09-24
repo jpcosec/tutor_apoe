@@ -12,6 +12,8 @@ tags:
   - topic:book-structure
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-sources-apos-theory-book-structure
 ---
 
 # El libro de APOS se organiza alrededor de teoría, investigación, pedagogía y síntesis

@@ -11,6 +11,8 @@ tags:
   - topic:genetic-decomposition
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-genetic-decomposition-definition
 ---
 
 # La descomposición genética es una herramienta central en APOS

@@ -11,6 +11,8 @@ tags:
   - topic:schema
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-core-structures-schema
 ---
 
 # El Esquema es una estructura mental central en APOS

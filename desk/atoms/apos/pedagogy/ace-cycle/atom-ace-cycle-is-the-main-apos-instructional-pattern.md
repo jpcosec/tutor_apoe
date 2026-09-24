@@ -12,6 +12,8 @@ tags:
   - topic:instruction
   - domain:mathematics-education
   - layer:pedagogy
+node_type: knowledge
+parent_id: branch-apos-pedagogy-ace-cycle
 ---
 
 # El ciclo ACE es el patrón instruccional principal de APOS

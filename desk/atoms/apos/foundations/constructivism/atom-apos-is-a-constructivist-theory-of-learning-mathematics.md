@@ -12,6 +12,8 @@ tags:
   - topic:learning-theory
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-foundations-constructivism
 ---
 
 # APOS es una teoría constructivista del aprendizaje de las matemáticas

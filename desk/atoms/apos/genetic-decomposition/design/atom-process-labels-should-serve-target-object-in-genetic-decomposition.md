@@ -9,6 +9,8 @@ tags:
   - topic:object
   - domain:mathematics-education
   - layer:methodology
+node_type: knowledge
+parent_id: branch-apos-genetic-decomposition-design
 ---
 
 # Los rotulos de procesos en una descomposicion genetica deben vincularse con el objeto matematico buscado

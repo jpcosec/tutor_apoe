@@ -9,6 +9,8 @@ tags:
   - topic:reflective-abstraction
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-mechanisms-reversal
 ---
 
 # La reversion puede operar sobre procesos recuperados por desencapsulacion

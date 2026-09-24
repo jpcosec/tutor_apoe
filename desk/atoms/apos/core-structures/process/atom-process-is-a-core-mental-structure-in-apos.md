@@ -11,6 +11,8 @@ tags:
   - topic:process
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-core-structures-process
 ---
 
 # El Proceso es una estructura mental central en APOS

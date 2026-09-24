@@ -8,6 +8,8 @@ tags:
   - topic:fractions
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-applications-elementary-math
 ---
 
 # La instrucción basada en APOS en escuela elemental puede apoyar conceptos abstractos fuera del currículo regular

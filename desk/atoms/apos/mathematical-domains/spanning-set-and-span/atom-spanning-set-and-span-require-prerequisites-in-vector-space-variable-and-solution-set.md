@@ -8,6 +8,8 @@ tags:
   - topic:prerequisites
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-mathematical-domains-spanning-set-and-span
 ---
 
 # Los conceptos de conjunto generador y span requieren prerrequisitos sobre espacio vectorial, variable y conjunto solución

@@ -12,6 +12,8 @@ tags:
   - topic:hypothesis
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-genetic-decomposition-definition
 ---
 
 # La descomposición genética comienza como una hipótesis preliminar

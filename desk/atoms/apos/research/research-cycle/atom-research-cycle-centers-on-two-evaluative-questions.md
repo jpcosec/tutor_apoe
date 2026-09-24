@@ -11,6 +11,8 @@ tags:
   - topic:research-cycle
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-research-research-cycle
 ---
 
 # El ciclo de investigación se centra en dos preguntas evaluativas

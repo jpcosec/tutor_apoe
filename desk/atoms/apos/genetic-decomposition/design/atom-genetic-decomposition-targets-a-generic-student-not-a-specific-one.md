@@ -12,6 +12,8 @@ tags:
   - topic:generic-student
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-genetic-decomposition-design
 ---
 
 # La descomposición genética se formula para un estudiante genérico y no para uno específico

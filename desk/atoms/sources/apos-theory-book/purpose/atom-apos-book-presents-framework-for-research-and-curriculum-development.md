@@ -12,6 +12,8 @@ tags:
   - topic:framework
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-sources-apos-theory-book-purpose
 ---
 
 # El libro de APOS presenta un marco para investigación y desarrollo curricular

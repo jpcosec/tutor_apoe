@@ -8,6 +8,8 @@ tags:
   - topic:interiorization
   - domain:mathematics-education
   - layer:pedagogy
+node_type: knowledge
+parent_id: branch-apos-pedagogy-activities
 ---
 
 # Las actividades computacionales apoyan la interiorización al generalizar acciones específicas

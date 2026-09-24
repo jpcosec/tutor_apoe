@@ -12,6 +12,8 @@ tags:
   - topic:learning-trajectories
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-genetic-decomposition-design
 ---
 
 # La descomposición genética no implica un aprendizaje lineal

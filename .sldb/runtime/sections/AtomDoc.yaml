@@ -129,8 +129,8 @@ documents:
     - workspace.desk.atoms
     slug: el-libro-de-apos-presenta-un-marco-para-investigaci-n-y-desarrollo-curricular
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: el-libro-de-apos-presenta-un-marco-para-investigaci-n-y-desarrollo-curricular/respuesta
     title: Respuesta
     breadcrumbs:
@@ -158,8 +158,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: el-libro-de-apos-presenta-un-marco-para-investigaci-n-y-desarrollo-curricular/procedencia
     title: Procedencia
     breadcrumbs:
@@ -187,8 +187,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-apos-book-targets-researchers-teachers-and-graduate-students
   sections:
   - path: atom-xxx-unique-identifier
@@ -320,8 +320,8 @@ documents:
     - workspace.desk.atoms
     slug: el-libro-de-apos-est-dirigido-a-investigadores-docentes-y-estudiantes-de-posgrado
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: el-libro-de-apos-est-dirigido-a-investigadores-docentes-y-estudiantes-de-posgrado/respuesta
     title: Respuesta
     breadcrumbs:
@@ -349,8 +349,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: el-libro-de-apos-est-dirigido-a-investigadores-docentes-y-estudiantes-de-posgrado/procedencia
     title: Procedencia
     breadcrumbs:
@@ -378,8 +378,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-apos-book-derives-from-collaborative-authorship
   sections:
   - path: atom-xxx-unique-identifier
@@ -510,8 +510,8 @@ documents:
     - workspace.desk.atoms
     slug: el-libro-de-apos-es-una-s-ntesis-colaborativa-de-varios-investigadores
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: el-libro-de-apos-es-una-s-ntesis-colaborativa-de-varios-investigadores/respuesta
     title: Respuesta
     breadcrumbs:
@@ -539,8 +539,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: el-libro-de-apos-es-una-s-ntesis-colaborativa-de-varios-investigadores/procedencia
     title: Procedencia
     breadcrumbs:
@@ -568,8 +568,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis
   sections:
   - path: atom-xxx-unique-identifier
@@ -704,8 +704,8 @@ documents:
     - workspace.desk.atoms
     slug: el-libro-de-apos-se-organiza-alrededor-de-teor-a-investigaci-n-pedagog-a-y-s-ntesis
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: el-libro-de-apos-se-organiza-alrededor-de-teor-a-investigaci-n-pedagog-a-y-s-ntesis/respuesta
     title: Respuesta
     breadcrumbs:
@@ -736,8 +736,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: el-libro-de-apos-se-organiza-alrededor-de-teor-a-investigaci-n-pedagog-a-y-s-ntesis/procedencia
     title: Procedencia
     breadcrumbs:
@@ -768,8 +768,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-apos-is-a-constructivist-theory-of-learning-mathematics
   sections:
   - path: atom-xxx-unique-identifier
@@ -900,8 +900,8 @@ documents:
     - workspace.desk.atoms
     slug: apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/respuesta
     title: Respuesta
     breadcrumbs:
@@ -929,8 +929,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/procedencia
     title: Procedencia
     breadcrumbs:
@@ -958,8 +958,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-apos-is-rooted-in-piagets-work
   sections:
   - path: atom-xxx-unique-identifier
@@ -1080,8 +1080,8 @@ documents:
     - workspace.desk.atoms
     slug: apos-est-arraigada-en-la-obra-de-piaget
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: apos-est-arraigada-en-la-obra-de-piaget/respuesta
     title: Respuesta
     breadcrumbs:
@@ -1107,8 +1107,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: apos-est-arraigada-en-la-obra-de-piaget/procedencia
     title: Procedencia
     breadcrumbs:
@@ -1134,8 +1134,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-reflective-abstraction-is-a-foundational-idea-for-apos
   sections:
   - path: atom-xxx-unique-identifier
@@ -1266,8 +1266,8 @@ documents:
     - workspace.desk.atoms
     slug: la-abstracci-n-reflexiva-es-una-idea-fundacional-para-apos
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-abstracci-n-reflexiva-es-una-idea-fundacional-para-apos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -1295,8 +1295,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-abstracci-n-reflexiva-es-una-idea-fundacional-para-apos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -1324,8 +1324,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-apos-developed-through-recognizable-historical-periods
   sections:
   - path: atom-xxx-unique-identifier
@@ -1446,8 +1446,8 @@ documents:
     - workspace.desk.atoms
     slug: apos-se-desarroll-a-trav-s-de-per-odos-hist-ricos-reconocibles
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: apos-se-desarroll-a-trav-s-de-per-odos-hist-ricos-reconocibles/respuesta
     title: Respuesta
     breadcrumbs:
@@ -1473,8 +1473,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: apos-se-desarroll-a-trav-s-de-per-odos-hist-ricos-reconocibles/procedencia
     title: Procedencia
     breadcrumbs:
@@ -1500,8 +1500,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-rumec-was-a-major-community-in-apos-development
   sections:
   - path: atom-xxx-unique-identifier
@@ -1622,8 +1622,8 @@ documents:
     - workspace.desk.atoms
     slug: rumec-fue-una-comunidad-decisiva-en-el-desarrollo-de-apos
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: rumec-fue-una-comunidad-decisiva-en-el-desarrollo-de-apos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -1649,8 +1649,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: rumec-fue-una-comunidad-decisiva-en-el-desarrollo-de-apos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -1676,8 +1676,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-apos-defines-four-core-mental-structures
   sections:
   - path: atom-xxx-unique-identifier
@@ -1808,8 +1808,8 @@ documents:
     - workspace.desk.atoms
     slug: apos-define-cuatro-estructuras-mentales-centrales
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: apos-define-cuatro-estructuras-mentales-centrales/respuesta
     title: Respuesta
     breadcrumbs:
@@ -1837,8 +1837,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: apos-define-cuatro-estructuras-mentales-centrales/procedencia
     title: Procedencia
     breadcrumbs:
@@ -1866,8 +1866,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-action-is-a-core-mental-structure-in-apos
   sections:
   - path: atom-xxx-unique-identifier
@@ -1988,8 +1988,8 @@ documents:
     - workspace.desk.atoms
     slug: la-acci-n-es-una-estructura-mental-central-en-apos
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: la-acci-n-es-una-estructura-mental-central-en-apos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -2015,8 +2015,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: la-acci-n-es-una-estructura-mental-central-en-apos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -2042,8 +2042,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-process-is-a-core-mental-structure-in-apos
   sections:
   - path: atom-xxx-unique-identifier
@@ -2164,8 +2164,8 @@ documents:
     - workspace.desk.atoms
     slug: el-proceso-es-una-estructura-mental-central-en-apos
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: el-proceso-es-una-estructura-mental-central-en-apos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -2191,8 +2191,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: el-proceso-es-una-estructura-mental-central-en-apos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -2218,8 +2218,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-object-is-a-core-mental-structure-in-apos
   sections:
   - path: atom-xxx-unique-identifier
@@ -2340,8 +2340,8 @@ documents:
     - workspace.desk.atoms
     slug: el-objeto-es-una-estructura-mental-central-en-apos
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: el-objeto-es-una-estructura-mental-central-en-apos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -2367,8 +2367,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: el-objeto-es-una-estructura-mental-central-en-apos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -2394,8 +2394,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-schema-is-a-core-mental-structure-in-apos
   sections:
   - path: atom-xxx-unique-identifier
@@ -2516,8 +2516,8 @@ documents:
     - workspace.desk.atoms
     slug: el-esquema-es-una-estructura-mental-central-en-apos
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: el-esquema-es-una-estructura-mental-central-en-apos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -2543,8 +2543,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: el-esquema-es-una-estructura-mental-central-en-apos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -2570,8 +2570,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-apos-uses-specific-mechanisms-to-explain-construction
   sections:
   - path: atom-xxx-unique-identifier
@@ -2692,8 +2692,8 @@ documents:
     - workspace.desk.atoms
     slug: apos-usa-mecanismos-espec-ficos-para-explicar-la-construcci-n-del-conocimiento
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: apos-usa-mecanismos-espec-ficos-para-explicar-la-construcci-n-del-conocimiento/respuesta
     title: Respuesta
     breadcrumbs:
@@ -2719,8 +2719,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: apos-usa-mecanismos-espec-ficos-para-explicar-la-construcci-n-del-conocimiento/procedencia
     title: Procedencia
     breadcrumbs:
@@ -2746,8 +2746,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-totality-is-treated-as-a-possible-additional-stage
   sections:
   - path: atom-xxx-unique-identifier
@@ -2878,8 +2878,8 @@ documents:
     - workspace.desk.atoms
     slug: totality-se-trata-como-una-posible-etapa-adicional-en-apos
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: totality-se-trata-como-una-posible-etapa-adicional-en-apos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -2907,8 +2907,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: totality-se-trata-como-una-posible-etapa-adicional-en-apos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -2936,8 +2936,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-stages-and-levels-organize-developmental-analysis-in-apos
   sections:
   - path: atom-xxx-unique-identifier
@@ -3068,8 +3068,8 @@ documents:
     - workspace.desk.atoms
     slug: las-etapas-y-los-niveles-organizan-el-an-lisis-del-desarrollo-en-apos
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: las-etapas-y-los-niveles-organizan-el-an-lisis-del-desarrollo-en-apos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -3097,8 +3097,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: las-etapas-y-los-niveles-organizan-el-an-lisis-del-desarrollo-en-apos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -3126,8 +3126,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-genetic-decomposition-is-a-central-tool-in-apos
   sections:
   - path: atom-xxx-unique-identifier
@@ -3248,8 +3248,8 @@ documents:
     - workspace.desk.atoms
     slug: la-descomposici-n-gen-tica-es-una-herramienta-central-en-apos
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: la-descomposici-n-gen-tica-es-una-herramienta-central-en-apos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -3275,8 +3275,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: la-descomposici-n-gen-tica-es-una-herramienta-central-en-apos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -3302,8 +3302,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-genetic-decomposition-guides-both-research-and-teaching
   sections:
   - path: atom-xxx-unique-identifier
@@ -3434,8 +3434,8 @@ documents:
     - workspace.desk.atoms
     slug: la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/respuesta
     title: Respuesta
     breadcrumbs:
@@ -3463,8 +3463,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/procedencia
     title: Procedencia
     breadcrumbs:
@@ -3492,8 +3492,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-genetic-decompositions-are-not-unique
   sections:
   - path: atom-xxx-unique-identifier
@@ -3624,8 +3624,8 @@ documents:
     - workspace.desk.atoms
     slug: las-descomposiciones-gen-ticas-no-son-nicas
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: las-descomposiciones-gen-ticas-no-son-nicas/respuesta
     title: Respuesta
     breadcrumbs:
@@ -3653,8 +3653,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: las-descomposiciones-gen-ticas-no-son-nicas/procedencia
     title: Procedencia
     breadcrumbs:
@@ -3682,8 +3682,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-ace-cycle-is-the-main-apos-instructional-pattern
   sections:
   - path: atom-xxx-unique-identifier
@@ -3814,8 +3814,8 @@ documents:
     - workspace.desk.atoms
     slug: el-ciclo-ace-es-el-patr-n-instruccional-principal-de-apos
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: el-ciclo-ace-es-el-patr-n-instruccional-principal-de-apos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -3843,8 +3843,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: el-ciclo-ace-es-el-patr-n-instruccional-principal-de-apos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -3872,8 +3872,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction
   sections:
   - path: atom-xxx-unique-identifier
@@ -4004,8 +4004,8 @@ documents:
     - workspace.desk.atoms
     slug: isetl-funciona-como-una-herramienta-pedag-gica-en-la-instrucci-n-apos
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: isetl-funciona-como-una-herramienta-pedag-gica-en-la-instrucci-n-apos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -4033,8 +4033,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: isetl-funciona-como-una-herramienta-pedag-gica-en-la-instrucci-n-apos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -4062,8 +4062,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
   sections:
   - path: atom-xxx-unique-identifier
@@ -4184,8 +4184,8 @@ documents:
     - workspace.desk.atoms
     slug: apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/respuesta
     title: Respuesta
     breadcrumbs:
@@ -4211,8 +4211,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/procedencia
     title: Procedencia
     breadcrumbs:
@@ -4238,8 +4238,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-apos-research-uses-multiple-data-collection-modes
   sections:
   - path: atom-xxx-unique-identifier
@@ -4360,8 +4360,8 @@ documents:
     - workspace.desk.atoms
     slug: la-investigaci-n-apos-usa-m-ltiples-modos-de-recolecci-n-de-datos
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: la-investigaci-n-apos-usa-m-ltiples-modos-de-recolecci-n-de-datos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -4387,8 +4387,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: la-investigaci-n-apos-usa-m-ltiples-modos-de-recolecci-n-de-datos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -4414,8 +4414,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-schemas-can-develop-interact-and-be-thematized
   sections:
   - path: atom-xxx-unique-identifier
@@ -4536,8 +4536,8 @@ documents:
     - workspace.desk.atoms
     slug: los-esquemas-pueden-desarrollarse-interactuar-y-tematizarse
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: los-esquemas-pueden-desarrollarse-interactuar-y-tematizarse/respuesta
     title: Respuesta
     breadcrumbs:
@@ -4563,8 +4563,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: los-esquemas-pueden-desarrollarse-interactuar-y-tematizarse/procedencia
     title: Procedencia
     breadcrumbs:
@@ -4590,8 +4590,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-apos-is-demonstrated-through-multiple-mathematical-domains
   sections:
   - path: atom-xxx-unique-identifier
@@ -4712,8 +4712,8 @@ documents:
     - workspace.desk.atoms
     slug: apos-se-muestra-en-m-ltiples-dominios-matem-ticos
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: apos-se-muestra-en-m-ltiples-dominios-matem-ticos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -4739,8 +4739,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: apos-se-muestra-en-m-ltiples-dominios-matem-ticos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -4766,8 +4766,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-repeating-decimals-and-infinity-are-key-sites-for-totality
   sections:
   - path: atom-xxx-unique-identifier
@@ -4898,8 +4898,8 @@ documents:
     - workspace.desk.atoms
     slug: los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/respuesta
     title: Respuesta
     breadcrumbs:
@@ -4927,8 +4927,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/procedencia
     title: Procedencia
     breadcrumbs:
@@ -4956,8 +4956,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
   sections:
   - path: atom-xxx-unique-identifier
@@ -5078,8 +5078,8 @@ documents:
     - workspace.desk.atoms
     slug: apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/respuesta
     title: Respuesta
     breadcrumbs:
@@ -5105,8 +5105,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/procedencia
     title: Procedencia
     breadcrumbs:
@@ -5132,8 +5132,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis
   sections:
   - path: atom-xxx-unique-identifier
@@ -5264,8 +5264,8 @@ documents:
     - workspace.desk.atoms
     slug: el-libro-cierra-con-preguntas-frecuentes-conclusiones-y-s-ntesis-bibliogr-fica
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: el-libro-cierra-con-preguntas-frecuentes-conclusiones-y-s-ntesis-bibliogr-fica/respuesta
     title: Respuesta
     breadcrumbs:
@@ -5293,8 +5293,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: el-libro-cierra-con-preguntas-frecuentes-conclusiones-y-s-ntesis-bibliogr-fica/procedencia
     title: Procedencia
     breadcrumbs:
@@ -5322,8 +5322,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-apos-is-a-living-and-revisable-body-of-ideas
   sections:
   - path: atom-xxx-unique-identifier
@@ -5444,8 +5444,8 @@ documents:
     - workspace.desk.atoms
     slug: apos-se-presenta-como-un-cuerpo-vivo-y-revisable-de-ideas
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: apos-se-presenta-como-un-cuerpo-vivo-y-revisable-de-ideas/respuesta
     title: Respuesta
     breadcrumbs:
@@ -5471,8 +5471,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: apos-se-presenta-como-un-cuerpo-vivo-y-revisable-de-ideas/procedencia
     title: Procedencia
     breadcrumbs:
@@ -5498,8 +5498,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-apos-book-is-not-the-last-word-on-apos
   sections:
   - path: atom-xxx-unique-identifier
@@ -5630,8 +5630,8 @@ documents:
     - workspace.desk.atoms
     slug: el-libro-no-pretende-ser-la-ltima-palabra-sobre-apos
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: el-libro-no-pretende-ser-la-ltima-palabra-sobre-apos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -5659,8 +5659,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: el-libro-no-pretende-ser-la-ltima-palabra-sobre-apos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -5688,8 +5688,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
   sections:
   - path: atom-xxx-unique-identifier
@@ -5824,8 +5824,8 @@ documents:
     - workspace.desk.atoms
     slug: la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/respuesta
     title: Respuesta
     breadcrumbs:
@@ -5856,8 +5856,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/procedencia
     title: Procedencia
     breadcrumbs:
@@ -5888,8 +5888,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-reflective-abstraction-has-reflection-and-reorganization-components
   sections:
   - path: atom-xxx-unique-identifier
@@ -6011,8 +6011,8 @@ documents:
     - workspace.desk.atoms
     slug: la-abstracci-n-reflexiva-tiene-un-componente-de-reflexi-n-y-otro-de-reorganizaci-n
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: la-abstracci-n-reflexiva-tiene-un-componente-de-reflexi-n-y-otro-de-reorganizaci-n/respuesta
     title: Respuesta
     breadcrumbs:
@@ -6039,8 +6039,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: la-abstracci-n-reflexiva-tiene-un-componente-de-reflexi-n-y-otro-de-reorganizaci-n/procedencia
     title: Procedencia
     breadcrumbs:
@@ -6067,8 +6067,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone
   sections:
   - path: atom-xxx-unique-identifier
@@ -6203,8 +6203,8 @@ documents:
     - workspace.desk.atoms
     slug: piaget-sit-a-las-propiedades-en-las-acciones-sobre-los-objetos-no-en-los-objetos-por-s-solos
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: piaget-sit-a-las-propiedades-en-las-acciones-sobre-los-objetos-no-en-los-objetos-por-s-solos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -6235,8 +6235,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: piaget-sit-a-las-propiedades-en-las-acciones-sobre-los-objetos-no-en-los-objetos-por-s-solos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -6267,8 +6267,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-interiorization-translates-material-actions-into-processes
   sections:
   - path: atom-xxx-unique-identifier
@@ -6399,8 +6399,8 @@ documents:
     - workspace.desk.atoms
     slug: la-interiorizaci-n-traduce-acciones-materiales-en-procesos-mentales
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-interiorizaci-n-traduce-acciones-materiales-en-procesos-mentales/respuesta
     title: Respuesta
     breadcrumbs:
@@ -6428,8 +6428,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-interiorizaci-n-traduce-acciones-materiales-en-procesos-mentales/procedencia
     title: Procedencia
     breadcrumbs:
@@ -6457,8 +6457,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-action-requires-explicit-step-by-step-external-guidance
   sections:
   - path: atom-xxx-unique-identifier
@@ -6579,8 +6579,8 @@ documents:
     - workspace.desk.atoms
     slug: una-acci-n-requiere-gu-a-externa-expl-cita-y-ejecuci-n-paso-a-paso
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: una-acci-n-requiere-gu-a-externa-expl-cita-y-ejecuci-n-paso-a-paso/respuesta
     title: Respuesta
     breadcrumbs:
@@ -6606,8 +6606,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: una-acci-n-requiere-gu-a-externa-expl-cita-y-ejecuci-n-paso-a-paso/procedencia
     title: Procedencia
     breadcrumbs:
@@ -6633,8 +6633,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-process-allows-mental-control-without-executing-each-step
   sections:
   - path: atom-xxx-unique-identifier
@@ -6755,8 +6755,8 @@ documents:
     - workspace.desk.atoms
     slug: un-proceso-permite-control-mental-sin-ejecutar-cada-paso-expl-citamente
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: un-proceso-permite-control-mental-sin-ejecutar-cada-paso-expl-citamente/respuesta
     title: Respuesta
     breadcrumbs:
@@ -6782,8 +6782,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: un-proceso-permite-control-mental-sin-ejecutar-cada-paso-expl-citamente/procedencia
     title: Procedencia
     breadcrumbs:
@@ -6809,8 +6809,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-encapsulation-treats-a-process-as-a-static-entity
   sections:
   - path: atom-xxx-unique-identifier
@@ -6931,8 +6931,8 @@ documents:
     - workspace.desk.atoms
     slug: la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/respuesta
     title: Respuesta
     breadcrumbs:
@@ -6958,8 +6958,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/procedencia
     title: Procedencia
     breadcrumbs:
@@ -6985,8 +6985,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms
   sections:
   - path: atom-xxx-unique-identifier
@@ -7107,8 +7107,8 @@ documents:
     - workspace.desk.atoms
     slug: la-encapsulaci-n-se-reporta-como-uno-de-los-mecanismos-m-s-dif-ciles
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: la-encapsulaci-n-se-reporta-como-uno-de-los-mecanismos-m-s-dif-ciles/respuesta
     title: Respuesta
     breadcrumbs:
@@ -7134,8 +7134,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: la-encapsulaci-n-se-reporta-como-uno-de-los-mecanismos-m-s-dif-ciles/procedencia
     title: Procedencia
     breadcrumbs:
@@ -7161,8 +7161,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-de-encapsulation-recovers-the-underlying-process-of-an-object
   sections:
   - path: atom-xxx-unique-identifier
@@ -7283,8 +7283,8 @@ documents:
     - workspace.desk.atoms
     slug: la-desencapsulaci-n-recupera-el-proceso-subyacente-de-un-objeto
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: la-desencapsulaci-n-recupera-el-proceso-subyacente-de-un-objeto/respuesta
     title: Respuesta
     breadcrumbs:
@@ -7310,8 +7310,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: la-desencapsulaci-n-recupera-el-proceso-subyacente-de-un-objeto/procedencia
     title: Procedencia
     breadcrumbs:
@@ -7337,8 +7337,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-coordination-combines-processes-to-build-new-objects-or-processes
   sections:
   - path: atom-xxx-unique-identifier
@@ -7459,8 +7459,8 @@ documents:
     - workspace.desk.atoms
     slug: la-coordinaci-n-combina-procesos-para-construir-nuevos-procesos-u-objetos
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: la-coordinaci-n-combina-procesos-para-construir-nuevos-procesos-u-objetos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -7486,8 +7486,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: la-coordinaci-n-combina-procesos-para-construir-nuevos-procesos-u-objetos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -7513,8 +7513,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-reversal-is-central-for-inverses-and-related-constructions
   sections:
   - path: atom-xxx-unique-identifier
@@ -7635,8 +7635,8 @@ documents:
     - workspace.desk.atoms
     slug: la-reversi-n-es-central-para-inversas-y-construcciones-relacionadas
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: la-reversi-n-es-central-para-inversas-y-construcciones-relacionadas/respuesta
     title: Respuesta
     breadcrumbs:
@@ -7662,8 +7662,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: la-reversi-n-es-central-para-inversas-y-construcciones-relacionadas/procedencia
     title: Procedencia
     breadcrumbs:
@@ -7689,8 +7689,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-thematization-turns-a-schema-into-an-object
   sections:
   - path: atom-xxx-unique-identifier
@@ -7821,8 +7821,8 @@ documents:
     - workspace.desk.atoms
     slug: la-tematizaci-n-convierte-un-esquema-en-un-objeto-cognitivo
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-tematizaci-n-convierte-un-esquema-en-un-objeto-cognitivo/respuesta
     title: Respuesta
     breadcrumbs:
@@ -7850,8 +7850,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-tematizaci-n-convierte-un-esquema-en-un-objeto-cognitivo/procedencia
     title: Procedencia
     breadcrumbs:
@@ -7879,8 +7879,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-mental-construction-in-apos-is-spiral-and-enriching
   sections:
   - path: atom-xxx-unique-identifier
@@ -8011,8 +8011,8 @@ documents:
     - workspace.desk.atoms
     slug: la-construcci-n-mental-en-apos-tiene-car-cter-espiral-y-enriquecedor
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-construcci-n-mental-en-apos-tiene-car-cter-espiral-y-enriquecedor/respuesta
     title: Respuesta
     breadcrumbs:
@@ -8040,8 +8040,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-construcci-n-mental-en-apos-tiene-car-cter-espiral-y-enriquecedor/procedencia
     title: Procedencia
     breadcrumbs:
@@ -8069,8 +8069,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-genetic-decomposition-begins-as-a-preliminary-hypothesis
   sections:
   - path: atom-xxx-unique-identifier
@@ -8201,8 +8201,8 @@ documents:
     - workspace.desk.atoms
     slug: la-descomposici-n-gen-tica-comienza-como-una-hip-tesis-preliminar
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-descomposici-n-gen-tica-comienza-como-una-hip-tesis-preliminar/respuesta
     title: Respuesta
     breadcrumbs:
@@ -8230,8 +8230,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-descomposici-n-gen-tica-comienza-como-una-hip-tesis-preliminar/procedencia
     title: Procedencia
     breadcrumbs:
@@ -8259,8 +8259,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-genetic-decomposition-may-include-prerequisites-and-performance-differences
   sections:
   - path: atom-xxx-unique-identifier
@@ -8393,8 +8393,8 @@ documents:
     - workspace.desk.atoms
     slug: la-descomposici-n-gen-tica-puede-incluir-prerrequisitos-y-diferencias-de-desempe-o
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-descomposici-n-gen-tica-puede-incluir-prerrequisitos-y-diferencias-de-desempe-o/respuesta
     title: Respuesta
     breadcrumbs:
@@ -8423,8 +8423,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-descomposici-n-gen-tica-puede-incluir-prerrequisitos-y-diferencias-de-desempe-o/procedencia
     title: Procedencia
     breadcrumbs:
@@ -8453,8 +8453,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
   sections:
   - path: atom-xxx-unique-identifier
@@ -8589,8 +8589,8 @@ documents:
     - workspace.desk.atoms
     slug: la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
     title: Respuesta
     breadcrumbs:
@@ -8621,8 +8621,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
     title: Procedencia
     breadcrumbs:
@@ -8653,8 +8653,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-genetic-decomposition-does-not-imply-linear-learning
   sections:
   - path: atom-xxx-unique-identifier
@@ -8785,8 +8785,8 @@ documents:
     - workspace.desk.atoms
     slug: la-descomposici-n-gen-tica-no-implica-un-aprendizaje-lineal
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-descomposici-n-gen-tica-no-implica-un-aprendizaje-lineal/respuesta
     title: Respuesta
     breadcrumbs:
@@ -8814,8 +8814,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-descomposici-n-gen-tica-no-implica-un-aprendizaje-lineal/procedencia
     title: Procedencia
     breadcrumbs:
@@ -8843,8 +8843,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-cognitive-path-and-genetic-decomposition-are-not-the-same
   sections:
   - path: atom-xxx-unique-identifier
@@ -8975,8 +8975,8 @@ documents:
     - workspace.desk.atoms
     slug: el-camino-cognitivo-y-la-descomposici-n-gen-tica-no-son-lo-mismo
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: el-camino-cognitivo-y-la-descomposici-n-gen-tica-no-son-lo-mismo/respuesta
     title: Respuesta
     breadcrumbs:
@@ -9004,8 +9004,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: el-camino-cognitivo-y-la-descomposici-n-gen-tica-no-son-lo-mismo/procedencia
     title: Procedencia
     breadcrumbs:
@@ -9033,8 +9033,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-function-genetic-decomposition-begins-with-actions-on-elements
   sections:
   - path: atom-xxx-unique-identifier
@@ -9165,8 +9165,8 @@ documents:
     - workspace.desk.atoms
     slug: la-descomposici-n-gen-tica-de-funci-n-comienza-con-acciones-sobre-elementos
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-descomposici-n-gen-tica-de-funci-n-comienza-con-acciones-sobre-elementos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -9194,8 +9194,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-descomposici-n-gen-tica-de-funci-n-comienza-con-acciones-sobre-elementos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -9223,8 +9223,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-function-object-conception-supports-sets-operations-and-limits-of-functions
   sections:
   - path: atom-xxx-unique-identifier
@@ -9359,8 +9359,8 @@ documents:
     - workspace.desk.atoms
     slug: la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/respuesta
     title: Respuesta
     breadcrumbs:
@@ -9391,8 +9391,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/procedencia
     title: Procedencia
     breadcrumbs:
@@ -9423,8 +9423,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-induction-genetic-decomposition-requires-function-and-logic-schemas
   sections:
   - path: atom-xxx-unique-identifier
@@ -9556,8 +9556,8 @@ documents:
     - workspace.desk.atoms
     slug: la-descomposici-n-gen-tica-de-inducci-n-requiere-esquemas-de-funci-n-y-l-gica
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-descomposici-n-gen-tica-de-inducci-n-requiere-esquemas-de-funci-n-y-l-gica/respuesta
     title: Respuesta
     breadcrumbs:
@@ -9585,8 +9585,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-descomposici-n-gen-tica-de-inducci-n-requiere-esquemas-de-funci-n-y-l-gica/procedencia
     title: Procedencia
     breadcrumbs:
@@ -9614,8 +9614,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting
   sections:
   - path: atom-xxx-unique-identifier
@@ -9750,8 +9750,8 @@ documents:
     - workspace.desk.atoms
     slug: las-actividades-del-ciclo-ace-priorizan-la-abstracci-n-reflexiva-por-sobre-solo-obtener-respuestas
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: las-actividades-del-ciclo-ace-priorizan-la-abstracci-n-reflexiva-por-sobre-solo-obtener-respuestas/respuesta
     title: Respuesta
     breadcrumbs:
@@ -9782,8 +9782,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: las-actividades-del-ciclo-ace-priorizan-la-abstracci-n-reflexiva-por-sobre-solo-obtener-respuestas/procedencia
     title: Procedencia
     breadcrumbs:
@@ -9814,8 +9814,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-classroom-discussion-helps-students-reflect-on-activity-work
   sections:
   - path: atom-xxx-unique-identifier
@@ -9950,8 +9950,8 @@ documents:
     - workspace.desk.atoms
     slug: la-discusi-n-en-clase-ayuda-a-los-estudiantes-a-reflexionar-sobre-el-trabajo-de-actividades
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-discusi-n-en-clase-ayuda-a-los-estudiantes-a-reflexionar-sobre-el-trabajo-de-actividades/respuesta
     title: Respuesta
     breadcrumbs:
@@ -9982,8 +9982,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-discusi-n-en-clase-ayuda-a-los-estudiantes-a-reflexionar-sobre-el-trabajo-de-actividades/procedencia
     title: Procedencia
     breadcrumbs:
@@ -10014,8 +10014,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-exercises-reinforce-constructions-from-activities-and-discussion
   sections:
   - path: atom-xxx-unique-identifier
@@ -10148,8 +10148,8 @@ documents:
     - workspace.desk.atoms
     slug: los-ejercicios-refuerzan-las-construcciones-iniciadas-en-actividades-y-discusi-n
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: los-ejercicios-refuerzan-las-construcciones-iniciadas-en-actividades-y-discusi-n/respuesta
     title: Respuesta
     breadcrumbs:
@@ -10178,8 +10178,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: los-ejercicios-refuerzan-las-construcciones-iniciadas-en-actividades-y-discusi-n/procedencia
     title: Procedencia
     breadcrumbs:
@@ -10208,8 +10208,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-isetl-syntax-stays-close-to-standard-mathematical-notation
   sections:
   - path: atom-xxx-unique-identifier
@@ -10340,8 +10340,8 @@ documents:
     - workspace.desk.atoms
     slug: la-sintaxis-de-isetl-se-mantiene-cercana-a-la-notaci-n-matem-tica-est-ndar
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-sintaxis-de-isetl-se-mantiene-cercana-a-la-notaci-n-matem-tica-est-ndar/respuesta
     title: Respuesta
     breadcrumbs:
@@ -10369,8 +10369,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-sintaxis-de-isetl-se-mantiene-cercana-a-la-notaci-n-matem-tica-est-ndar/procedencia
     title: Procedencia
     breadcrumbs:
@@ -10398,8 +10398,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-research-cycle-centers-on-two-evaluative-questions
   sections:
   - path: atom-xxx-unique-identifier
@@ -10520,8 +10520,8 @@ documents:
     - workspace.desk.atoms
     slug: el-ciclo-de-investigaci-n-se-centra-en-dos-preguntas-evaluativas
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: el-ciclo-de-investigaci-n-se-centra-en-dos-preguntas-evaluativas/respuesta
     title: Respuesta
     breadcrumbs:
@@ -10547,8 +10547,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: el-ciclo-de-investigaci-n-se-centra-en-dos-preguntas-evaluativas/procedencia
     title: Procedencia
     breadcrumbs:
@@ -10574,8 +10574,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-interviews-are-the-primary-data-source-in-apos-research
   sections:
   - path: atom-xxx-unique-identifier
@@ -10706,8 +10706,8 @@ documents:
     - workspace.desk.atoms
     slug: las-entrevistas-son-la-fuente-principal-de-datos-en-la-investigaci-n-apos
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: las-entrevistas-son-la-fuente-principal-de-datos-en-la-investigaci-n-apos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -10735,8 +10735,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: las-entrevistas-son-la-fuente-principal-de-datos-en-la-investigaci-n-apos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -10764,8 +10764,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-apos-interviews-use-prompting-to-probe-construction-in-progress
   sections:
   - path: atom-xxx-unique-identifier
@@ -10896,8 +10896,8 @@ documents:
     - workspace.desk.atoms
     slug: las-entrevistas-apos-usan-prompting-para-indagar-construcciones-en-progreso
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: las-entrevistas-apos-usan-prompting-para-indagar-construcciones-en-progreso/respuesta
     title: Respuesta
     breadcrumbs:
@@ -10925,8 +10925,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: las-entrevistas-apos-usan-prompting-para-indagar-construcciones-en-progreso/procedencia
     title: Procedencia
     breadcrumbs:
@@ -10954,8 +10954,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-apos-research-relies-on-collaborative-triangulation
   sections:
   - path: atom-xxx-unique-identifier
@@ -11086,8 +11086,8 @@ documents:
     - workspace.desk.atoms
     slug: la-investigaci-n-apos-se-apoya-en-triangulaci-n-colaborativa
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-investigaci-n-apos-se-apoya-en-triangulaci-n-colaborativa/respuesta
     title: Respuesta
     breadcrumbs:
@@ -11115,8 +11115,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-investigaci-n-apos-se-apoya-en-triangulaci-n-colaborativa/procedencia
     title: Procedencia
     breadcrumbs:
@@ -11144,8 +11144,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-schema-is-a-coherent-framework-of-linked-structures
   sections:
   - path: atom-xxx-unique-identifier
@@ -11266,8 +11266,8 @@ documents:
     - workspace.desk.atoms
     slug: un-esquema-es-un-marco-coherente-de-estructuras-enlazadas
     level: 1
-    line_start: 16
-    line_end: 17
+    line_start: 18
+    line_end: 19
   - path: un-esquema-es-un-marco-coherente-de-estructuras-enlazadas/respuesta
     title: Respuesta
     breadcrumbs:
@@ -11293,8 +11293,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
   - path: un-esquema-es-un-marco-coherente-de-estructuras-enlazadas/procedencia
     title: Procedencia
     breadcrumbs:
@@ -11320,8 +11320,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 22
-    line_end: 23
+    line_start: 24
+    line_end: 25
 - doc_name: atom-schema-coherence-determines-what-falls-within-its-scope
   sections:
   - path: atom-xxx-unique-identifier
@@ -11452,8 +11452,8 @@ documents:
     - workspace.desk.atoms
     slug: la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
     title: Respuesta
     breadcrumbs:
@@ -11481,8 +11481,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
     title: Procedencia
     breadcrumbs:
@@ -11510,8 +11510,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-schema-development-in-apos-uses-the-intra-inter-trans-triad
   sections:
   - path: atom-xxx-unique-identifier
@@ -11642,8 +11642,8 @@ documents:
     - workspace.desk.atoms
     slug: el-desarrollo-de-esquemas-en-apos-usa-la-tr-ada-intra-inter-trans
     level: 1
-    line_start: 17
-    line_end: 18
+    line_start: 19
+    line_end: 20
   - path: el-desarrollo-de-esquemas-en-apos-usa-la-tr-ada-intra-inter-trans/respuesta
     title: Respuesta
     breadcrumbs:
@@ -11671,8 +11671,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
   - path: el-desarrollo-de-esquemas-en-apos-usa-la-tr-ada-intra-inter-trans/procedencia
     title: Procedencia
     breadcrumbs:
@@ -11700,8 +11700,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 23
-    line_end: 24
+    line_start: 25
+    line_end: 26
 - doc_name: atom-historical-development-can-inform-genetic-decomposition-design
   sections:
   - path: el-desarrollo-hist-rico-de-un-concepto-puede-informar-el-dise-o-de-una-descomposici-n-gen-tica
@@ -11732,8 +11732,8 @@ documents:
     - workspace.desk.atoms
     slug: el-desarrollo-hist-rico-de-un-concepto-puede-informar-el-dise-o-de-una-descomposici-n-gen-tica
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: el-desarrollo-hist-rico-de-un-concepto-puede-informar-el-dise-o-de-una-descomposici-n-gen-tica/respuesta
     title: Respuesta
     breadcrumbs:
@@ -11764,8 +11764,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: el-desarrollo-hist-rico-de-un-concepto-puede-informar-el-dise-o-de-una-descomposici-n-gen-tica/procedencia
     title: Procedencia
     breadcrumbs:
@@ -11796,8 +11796,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-textbook-analysis-can-inform-preliminary-genetic-decompositions
   sections:
   - path: el-an-lisis-de-textos-puede-informar-descomposiciones-gen-ticas-preliminares
@@ -11824,8 +11824,8 @@ documents:
     - workspace.desk.atoms
     slug: el-an-lisis-de-textos-puede-informar-descomposiciones-gen-ticas-preliminares
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: el-an-lisis-de-textos-puede-informar-descomposiciones-gen-ticas-preliminares/respuesta
     title: Respuesta
     breadcrumbs:
@@ -11853,8 +11853,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: el-an-lisis-de-textos-puede-informar-descomposiciones-gen-ticas-preliminares/procedencia
     title: Procedencia
     breadcrumbs:
@@ -11882,8 +11882,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-genetic-decompositions-can-also-emerge-from-student-data
   sections:
   - path: las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
@@ -11911,8 +11911,8 @@ documents:
     - workspace.desk.atoms
     slug: las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/respuesta
     title: Respuesta
     breadcrumbs:
@@ -11940,8 +11940,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/procedencia
     title: Procedencia
     breadcrumbs:
@@ -11969,8 +11969,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set
   sections:
   - path: los-conceptos-de-conjunto-generador-y-span-requieren-prerrequisitos-sobre-espacio-vectorial-variable-y-conjunto-soluci-n
@@ -12001,8 +12001,8 @@ documents:
     - workspace.desk.atoms
     slug: los-conceptos-de-conjunto-generador-y-span-requieren-prerrequisitos-sobre-espacio-vectorial-variable-y-conjunto-soluci-n
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: los-conceptos-de-conjunto-generador-y-span-requieren-prerrequisitos-sobre-espacio-vectorial-variable-y-conjunto-soluci-n/respuesta
     title: Respuesta
     breadcrumbs:
@@ -12033,8 +12033,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: los-conceptos-de-conjunto-generador-y-span-requieren-prerrequisitos-sobre-espacio-vectorial-variable-y-conjunto-soluci-n/procedencia
     title: Procedencia
     breadcrumbs:
@@ -12065,8 +12065,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-span-construction-starts-from-actions-on-linear-combinations
   sections:
   - path: la-construcci-n-de-span-comienza-con-acciones-sobre-combinaciones-lineales
@@ -12093,8 +12093,8 @@ documents:
     - workspace.desk.atoms
     slug: la-construcci-n-de-span-comienza-con-acciones-sobre-combinaciones-lineales
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: la-construcci-n-de-span-comienza-con-acciones-sobre-combinaciones-lineales/respuesta
     title: Respuesta
     breadcrumbs:
@@ -12122,8 +12122,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: la-construcci-n-de-span-comienza-con-acciones-sobre-combinaciones-lineales/procedencia
     title: Procedencia
     breadcrumbs:
@@ -12151,8 +12151,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects
   sections:
   - path: span-y-conjunto-generador-deben-diferenciarse-como-objetos-distintos
@@ -12179,8 +12179,8 @@ documents:
     - workspace.desk.atoms
     slug: span-y-conjunto-generador-deben-diferenciarse-como-objetos-distintos
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: span-y-conjunto-generador-deben-diferenciarse-como-objetos-distintos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -12208,8 +12208,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: span-y-conjunto-generador-deben-diferenciarse-como-objetos-distintos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -12237,8 +12237,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences
   sections:
   - path: la-descomposici-n-gen-tica-act-a-como-lente-para-explicar-diferencias-de-desempe-o
@@ -12267,8 +12267,8 @@ documents:
     - workspace.desk.atoms
     slug: la-descomposici-n-gen-tica-act-a-como-lente-para-explicar-diferencias-de-desempe-o
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: la-descomposici-n-gen-tica-act-a-como-lente-para-explicar-diferencias-de-desempe-o/respuesta
     title: Respuesta
     breadcrumbs:
@@ -12297,8 +12297,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: la-descomposici-n-gen-tica-act-a-como-lente-para-explicar-diferencias-de-desempe-o/procedencia
     title: Procedencia
     breadcrumbs:
@@ -12327,8 +12327,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-theoretical-models-increase-reliability-of-data-analysis
   sections:
   - path: los-modelos-te-ricos-aumentan-la-confiabilidad-del-an-lisis-de-datos
@@ -12355,8 +12355,8 @@ documents:
     - workspace.desk.atoms
     slug: los-modelos-te-ricos-aumentan-la-confiabilidad-del-an-lisis-de-datos
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: los-modelos-te-ricos-aumentan-la-confiabilidad-del-an-lisis-de-datos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -12384,8 +12384,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: los-modelos-te-ricos-aumentan-la-confiabilidad-del-an-lisis-de-datos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -12413,8 +12413,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-isetl-can-treat-certain-data-types-as-first-class-objects
   sections:
   - path: isetl-puede-tratar-ciertos-tipos-de-datos-como-objetos-de-primera-clase
@@ -12441,8 +12441,8 @@ documents:
     - workspace.desk.atoms
     slug: isetl-puede-tratar-ciertos-tipos-de-datos-como-objetos-de-primera-clase
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: isetl-puede-tratar-ciertos-tipos-de-datos-como-objetos-de-primera-clase/respuesta
     title: Respuesta
     breadcrumbs:
@@ -12470,8 +12470,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: isetl-puede-tratar-ciertos-tipos-de-datos-como-objetos-de-primera-clase/procedencia
     title: Procedencia
     breadcrumbs:
@@ -12499,8 +12499,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-isetl-supports-function-as-input-output-and-transformable-entity
   sections:
   - path: isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
@@ -12527,8 +12527,8 @@ documents:
     - workspace.desk.atoms
     slug: isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
     title: Respuesta
     breadcrumbs:
@@ -12556,8 +12556,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
     title: Procedencia
     breadcrumbs:
@@ -12585,8 +12585,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-computer-activities-support-interiorization-by-generalizing-specific-actions
   sections:
   - path: las-actividades-computacionales-apoyan-la-interiorizaci-n-al-generalizar-acciones-espec-ficas
@@ -12617,8 +12617,8 @@ documents:
     - workspace.desk.atoms
     slug: las-actividades-computacionales-apoyan-la-interiorizaci-n-al-generalizar-acciones-espec-ficas
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: las-actividades-computacionales-apoyan-la-interiorizaci-n-al-generalizar-acciones-espec-ficas/respuesta
     title: Respuesta
     breadcrumbs:
@@ -12649,8 +12649,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: las-actividades-computacionales-apoyan-la-interiorizaci-n-al-generalizar-acciones-espec-ficas/procedencia
     title: Procedencia
     breadcrumbs:
@@ -12681,8 +12681,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
   sections:
   - path: las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
@@ -12713,8 +12713,8 @@ documents:
     - workspace.desk.atoms
     slug: las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
     title: Respuesta
     breadcrumbs:
@@ -12745,8 +12745,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
     title: Procedencia
     breadcrumbs:
@@ -12777,8 +12777,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
   sections:
   - path: el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
@@ -12809,8 +12809,8 @@ documents:
     - workspace.desk.atoms
     slug: el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
     title: Respuesta
     breadcrumbs:
@@ -12841,8 +12841,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
     title: Procedencia
     breadcrumbs:
@@ -12873,8 +12873,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms
   sections:
   - path: verificar-axiomas-de-grupo-coordina-el-chequeo-general-de-propiedades-con-axiomas-espec-ficos
@@ -12905,8 +12905,8 @@ documents:
     - workspace.desk.atoms
     slug: verificar-axiomas-de-grupo-coordina-el-chequeo-general-de-propiedades-con-axiomas-espec-ficos
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: verificar-axiomas-de-grupo-coordina-el-chequeo-general-de-propiedades-con-axiomas-espec-ficos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -12937,8 +12937,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: verificar-axiomas-de-grupo-coordina-el-chequeo-general-de-propiedades-con-axiomas-espec-ficos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -12969,8 +12969,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-early-group-activities-develop-set-as-process
   sections:
   - path: las-actividades-iniciales-sobre-grupos-desarrollan-el-conjunto-como-proceso
@@ -12997,8 +12997,8 @@ documents:
     - workspace.desk.atoms
     slug: las-actividades-iniciales-sobre-grupos-desarrollan-el-conjunto-como-proceso
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: las-actividades-iniciales-sobre-grupos-desarrollan-el-conjunto-como-proceso/respuesta
     title: Respuesta
     breadcrumbs:
@@ -13026,8 +13026,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: las-actividades-iniciales-sobre-grupos-desarrollan-el-conjunto-como-proceso/procedencia
     title: Procedencia
     breadcrumbs:
@@ -13055,8 +13055,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-levels-are-content-specific-while-stages-are-general
   sections:
   - path: los-niveles-son-espec-ficos-del-contenido-mientras-que-las-etapas-son-generales
@@ -13083,8 +13083,8 @@ documents:
     - workspace.desk.atoms
     slug: los-niveles-son-espec-ficos-del-contenido-mientras-que-las-etapas-son-generales
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: los-niveles-son-espec-ficos-del-contenido-mientras-que-las-etapas-son-generales/respuesta
     title: Respuesta
     breadcrumbs:
@@ -13112,8 +13112,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: los-niveles-son-espec-ficos-del-contenido-mientras-que-las-etapas-son-generales/procedencia
     title: Procedencia
     breadcrumbs:
@@ -13141,8 +13141,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-a-stage-cannot-be-skipped-without-loss-of-coherence
   sections:
   - path: una-etapa-no-puede-saltarse-sin-p-rdida-de-coherencia
@@ -13169,8 +13169,8 @@ documents:
     - workspace.desk.atoms
     slug: una-etapa-no-puede-saltarse-sin-p-rdida-de-coherencia
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: una-etapa-no-puede-saltarse-sin-p-rdida-de-coherencia/respuesta
     title: Respuesta
     breadcrumbs:
@@ -13198,8 +13198,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: una-etapa-no-puede-saltarse-sin-p-rdida-de-coherencia/procedencia
     title: Procedencia
     breadcrumbs:
@@ -13227,8 +13227,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-levels-may-appear-or-not-appear-in-observable-data
   sections:
   - path: los-niveles-pueden-aparecer-o-no-aparecer-en-los-datos-observables
@@ -13253,8 +13253,8 @@ documents:
     - workspace.desk.atoms
     slug: los-niveles-pueden-aparecer-o-no-aparecer-en-los-datos-observables
     level: 1
-    line_start: 12
-    line_end: 13
+    line_start: 14
+    line_end: 15
   - path: los-niveles-pueden-aparecer-o-no-aparecer-en-los-datos-observables/respuesta
     title: Respuesta
     breadcrumbs:
@@ -13280,8 +13280,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 14
-    line_end: 15
+    line_start: 16
+    line_end: 17
   - path: los-niveles-pueden-aparecer-o-no-aparecer-en-los-datos-observables/procedencia
     title: Procedencia
     breadcrumbs:
@@ -13307,8 +13307,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 18
-    line_end: 19
+    line_start: 20
+    line_end: 21
 - doc_name: atom-writing-computer-procedures-can-help-students-move-from-action-to-process
   sections:
   - path: escribir-procedimientos-computacionales-puede-ayudar-a-pasar-de-acci-n-a-proceso
@@ -13336,8 +13336,8 @@ documents:
     - workspace.desk.atoms
     slug: escribir-procedimientos-computacionales-puede-ayudar-a-pasar-de-acci-n-a-proceso
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: escribir-procedimientos-computacionales-puede-ayudar-a-pasar-de-acci-n-a-proceso/respuesta
     title: Respuesta
     breadcrumbs:
@@ -13365,8 +13365,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: escribir-procedimientos-computacionales-puede-ayudar-a-pasar-de-acci-n-a-proceso/procedencia
     title: Procedencia
     breadcrumbs:
@@ -13394,8 +13394,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-transforming-computer-procedures-can-help-students-move-from-process-to-object
   sections:
   - path: transformar-procedimientos-computacionales-puede-ayudar-a-pasar-de-proceso-a-objeto
@@ -13426,8 +13426,8 @@ documents:
     - workspace.desk.atoms
     slug: transformar-procedimientos-computacionales-puede-ayudar-a-pasar-de-proceso-a-objeto
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: transformar-procedimientos-computacionales-puede-ayudar-a-pasar-de-proceso-a-objeto/respuesta
     title: Respuesta
     breadcrumbs:
@@ -13458,8 +13458,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: transformar-procedimientos-computacionales-puede-ayudar-a-pasar-de-proceso-a-objeto/procedencia
     title: Procedencia
     breadcrumbs:
@@ -13490,8 +13490,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-totality-is-proposed-to-explain-difficulties-between-process-and-object
   sections:
   - path: totality-se-propone-para-explicar-dificultades-entre-proceso-y-objeto
@@ -13518,8 +13518,8 @@ documents:
     - workspace.desk.atoms
     slug: totality-se-propone-para-explicar-dificultades-entre-proceso-y-objeto
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: totality-se-propone-para-explicar-dificultades-entre-proceso-y-objeto/respuesta
     title: Respuesta
     breadcrumbs:
@@ -13547,8 +13547,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: totality-se-propone-para-explicar-dificultades-entre-proceso-y-objeto/procedencia
     title: Procedencia
     breadcrumbs:
@@ -13576,8 +13576,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-infinite-processes-make-the-process-to-object-transition-especially-difficult
   sections:
   - path: los-procesos-infinitos-vuelven-especialmente-dif-cil-la-transici-n-de-proceso-a-objeto
@@ -13608,8 +13608,8 @@ documents:
     - workspace.desk.atoms
     slug: los-procesos-infinitos-vuelven-especialmente-dif-cil-la-transici-n-de-proceso-a-objeto
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: los-procesos-infinitos-vuelven-especialmente-dif-cil-la-transici-n-de-proceso-a-objeto/respuesta
     title: Respuesta
     breadcrumbs:
@@ -13640,8 +13640,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: los-procesos-infinitos-vuelven-especialmente-dif-cil-la-transici-n-de-proceso-a-objeto/procedencia
     title: Procedencia
     breadcrumbs:
@@ -13672,8 +13672,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-process-language-about-repeating-decimals-can-block-object-construction
   sections:
   - path: el-lenguaje-de-proceso-sobre-decimales-peri-dicos-puede-bloquear-la-construcci-n-de-objeto
@@ -13704,8 +13704,8 @@ documents:
     - workspace.desk.atoms
     slug: el-lenguaje-de-proceso-sobre-decimales-peri-dicos-puede-bloquear-la-construcci-n-de-objeto
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: el-lenguaje-de-proceso-sobre-decimales-peri-dicos-puede-bloquear-la-construcci-n-de-objeto/respuesta
     title: Respuesta
     breadcrumbs:
@@ -13736,8 +13736,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: el-lenguaje-de-proceso-sobre-decimales-peri-dicos-puede-bloquear-la-construcci-n-de-objeto/procedencia
     title: Procedencia
     breadcrumbs:
@@ -13768,8 +13768,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
   sections:
   - path: el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
@@ -13798,8 +13798,8 @@ documents:
     - workspace.desk.atoms
     slug: el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/respuesta
     title: Respuesta
     breadcrumbs:
@@ -13828,8 +13828,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/procedencia
     title: Procedencia
     breadcrumbs:
@@ -13858,8 +13858,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization
   sections:
   - path: la-imaginaci-n-juega-un-papel-importante-en-la-interiorizaci-n-de-ni-os-peque-os
@@ -13888,8 +13888,8 @@ documents:
     - workspace.desk.atoms
     slug: la-imaginaci-n-juega-un-papel-importante-en-la-interiorizaci-n-de-ni-os-peque-os
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: la-imaginaci-n-juega-un-papel-importante-en-la-interiorizaci-n-de-ni-os-peque-os/respuesta
     title: Respuesta
     breadcrumbs:
@@ -13918,8 +13918,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: la-imaginaci-n-juega-un-papel-importante-en-la-interiorizaci-n-de-ni-os-peque-os/procedencia
     title: Procedencia
     breadcrumbs:
@@ -13948,8 +13948,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi
   sections:
   - path: la-instrucci-n-basada-en-apos-en-escuela-elemental-puede-apoyar-conceptos-abstractos-fuera-del-curr-culo-regular
@@ -13980,8 +13980,8 @@ documents:
     - workspace.desk.atoms
     slug: la-instrucci-n-basada-en-apos-en-escuela-elemental-puede-apoyar-conceptos-abstractos-fuera-del-curr-culo-regular
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: la-instrucci-n-basada-en-apos-en-escuela-elemental-puede-apoyar-conceptos-abstractos-fuera-del-curr-culo-regular/respuesta
     title: Respuesta
     breadcrumbs:
@@ -14012,8 +14012,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: la-instrucci-n-basada-en-apos-en-escuela-elemental-puede-apoyar-conceptos-abstractos-fuera-del-curr-culo-regular/procedencia
     title: Procedencia
     breadcrumbs:
@@ -14044,8 +14044,8 @@ documents:
     - workspace.desk.atoms
     slug: procedencia
     level: 2
-    line_start: 19
-    line_end: 20
+    line_start: 21
+    line_end: 22
 - doc_name: atom-annotated-bibliography-materializes-the-breadth-of-apos-research
   sections:
   - path: la-bibliograf-a-anotada-materializa-la-amplitud-de-la-investigaci-n-apos
@@ -14072,8 +14072,8 @@ documents:
     - workspace.desk.atoms
     slug: la-bibliograf-a-anotada-materializa-la-amplitud-de-la-investigaci-n-apos
     level: 1
-    line_start: 13
-    line_end: 14
+    line_start: 15
+    line_end: 16
   - path: la-bibliograf-a-anotada-materializa-la-amplitud-de-la-investigaci-n-apos/respuesta
     title: Respuesta
     breadcrumbs:
@@ -14101,8 +14101,8 @@ documents:
     - workspace.desk.atoms
     slug: respuesta
     level: 2
-    line_start: 15
-    line_end: 16
+    line_start: 17
+    line_end: 18
   - path: la-bibliograf-a-anotada-materializa-la-amplitud-de-la-investigaci-n-apos/procedencia
     title: Procedencia
     breadcrumbs:
@@ -14126,6 +14126,3484 @@ documents:
     - system:apos
     - topic:bibliography
     - topic:synthesis
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 21
+    line_end: 22
+- doc_name: atom-branch-sources-apos-theory-book-purpose
+  sections:
+  - path: purpose
+    title: Purpose
+    breadcrumbs:
+    - Purpose
+    about:
+    - Purpose
+    - purpose
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: purpose
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: purpose/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Purpose
+    - Respuesta
+    about:
+    - Purpose
+    - purpose
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: purpose/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Purpose
+    - Procedencia
+    about:
+    - Purpose
+    - purpose
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mathematical-domains-spanning-set-and-span
+  sections:
+  - path: spanning-set-and-span
+    title: Spanning Set And Span
+    breadcrumbs:
+    - Spanning Set And Span
+    about:
+    - Spanning Set And Span
+    - spanning set and span
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: spanning-set-and-span
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: spanning-set-and-span/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Spanning Set And Span
+    - Respuesta
+    about:
+    - Spanning Set And Span
+    - spanning set and span
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: spanning-set-and-span/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Spanning Set And Span
+    - Procedencia
+    about:
+    - Spanning Set And Span
+    - spanning set and span
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-pedagogy-class-discussion
+  sections:
+  - path: class-discussion
+    title: Class Discussion
+    breadcrumbs:
+    - Class Discussion
+    about:
+    - Class Discussion
+    - class discussion
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: class-discussion
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: class-discussion/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Class Discussion
+    - Respuesta
+    about:
+    - Class Discussion
+    - class discussion
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: class-discussion/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Class Discussion
+    - Procedencia
+    about:
+    - Class Discussion
+    - class discussion
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-genetic-decomposition-definition
+  sections:
+  - path: definition
+    title: Definition
+    breadcrumbs:
+    - Definition
+    about:
+    - Definition
+    - definition
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: definition
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: definition/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Definition
+    - Respuesta
+    about:
+    - Definition
+    - definition
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: definition/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Definition
+    - Procedencia
+    about:
+    - Definition
+    - definition
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-sources-apos-theory-book-authorship
+  sections:
+  - path: authorship
+    title: Authorship
+    breadcrumbs:
+    - Authorship
+    about:
+    - Authorship
+    - authorship
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: authorship
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: authorship/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Authorship
+    - Respuesta
+    about:
+    - Authorship
+    - authorship
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: authorship/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Authorship
+    - Procedencia
+    about:
+    - Authorship
+    - authorship
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-core-structures-action
+  sections:
+  - path: action
+    title: Action
+    breadcrumbs:
+    - Action
+    about:
+    - Action
+    - action
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: action
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: action/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Action
+    - Respuesta
+    about:
+    - Action
+    - action
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: action/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Action
+    - Procedencia
+    about:
+    - Action
+    - action
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mechanisms-coordination
+  sections:
+  - path: coordination
+    title: Coordination
+    breadcrumbs:
+    - Coordination
+    about:
+    - Coordination
+    - coordination
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: coordination
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: coordination/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Coordination
+    - Respuesta
+    about:
+    - Coordination
+    - coordination
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: coordination/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Coordination
+    - Procedencia
+    about:
+    - Coordination
+    - coordination
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-schema-development-schema-growth
+  sections:
+  - path: schema-growth
+    title: Schema Growth
+    breadcrumbs:
+    - Schema Growth
+    about:
+    - Schema Growth
+    - schema growth
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: schema-growth
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: schema-growth/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Schema Growth
+    - Respuesta
+    about:
+    - Schema Growth
+    - schema growth
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: schema-growth/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Schema Growth
+    - Procedencia
+    about:
+    - Schema Growth
+    - schema growth
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mechanisms-de-encapsulation
+  sections:
+  - path: de-encapsulation
+    title: De Encapsulation
+    breadcrumbs:
+    - De Encapsulation
+    about:
+    - De Encapsulation
+    - de encapsulation
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: de-encapsulation
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: de-encapsulation/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - De Encapsulation
+    - Respuesta
+    about:
+    - De Encapsulation
+    - de encapsulation
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: de-encapsulation/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - De Encapsulation
+    - Procedencia
+    about:
+    - De Encapsulation
+    - de encapsulation
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-pedagogy-activities
+  sections:
+  - path: activities
+    title: Activities
+    breadcrumbs:
+    - Activities
+    about:
+    - Activities
+    - activities
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: activities
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: activities/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Activities
+    - Respuesta
+    about:
+    - Activities
+    - activities
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: activities/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Activities
+    - Procedencia
+    about:
+    - Activities
+    - activities
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-foundations-historical-development
+  sections:
+  - path: historical-development
+    title: Historical Development
+    breadcrumbs:
+    - Historical Development
+    about:
+    - Historical Development
+    - historical development
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: historical-development
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: historical-development/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Historical Development
+    - Respuesta
+    about:
+    - Historical Development
+    - historical development
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: historical-development/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Historical Development
+    - Procedencia
+    about:
+    - Historical Development
+    - historical development
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mechanisms-thematization
+  sections:
+  - path: thematization
+    title: Thematization
+    breadcrumbs:
+    - Thematization
+    about:
+    - Thematization
+    - thematization
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: thematization
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: thematization/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Thematization
+    - Respuesta
+    about:
+    - Thematization
+    - thematization
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: thematization/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Thematization
+    - Procedencia
+    about:
+    - Thematization
+    - thematization
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-foundations-reflective-abstraction
+  sections:
+  - path: reflective-abstraction
+    title: Reflective Abstraction
+    breadcrumbs:
+    - Reflective Abstraction
+    about:
+    - Reflective Abstraction
+    - reflective abstraction
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: reflective-abstraction
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: reflective-abstraction/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Reflective Abstraction
+    - Respuesta
+    about:
+    - Reflective Abstraction
+    - reflective abstraction
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: reflective-abstraction/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Reflective Abstraction
+    - Procedencia
+    about:
+    - Reflective Abstraction
+    - reflective abstraction
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mathematical-domains-groups
+  sections:
+  - path: groups
+    title: Groups
+    breadcrumbs:
+    - Groups
+    about:
+    - Groups
+    - groups
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: groups
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: groups/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Groups
+    - Respuesta
+    about:
+    - Groups
+    - groups
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: groups/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Groups
+    - Procedencia
+    about:
+    - Groups
+    - groups
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-core-structures-object
+  sections:
+  - path: object
+    title: Object
+    breadcrumbs:
+    - Object
+    about:
+    - Object
+    - object
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: object
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: object/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Object
+    - Respuesta
+    about:
+    - Object
+    - object
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: object/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Object
+    - Procedencia
+    about:
+    - Object
+    - object
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mathematical-domains-linear-homogeneous-equations
+  sections:
+  - path: linear-homogeneous-equations
+    title: Linear Homogeneous Equations
+    breadcrumbs:
+    - Linear Homogeneous Equations
+    about:
+    - Linear Homogeneous Equations
+    - linear homogeneous equations
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: linear-homogeneous-equations
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: linear-homogeneous-equations/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Linear Homogeneous Equations
+    - Respuesta
+    about:
+    - Linear Homogeneous Equations
+    - linear homogeneous equations
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: linear-homogeneous-equations/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Linear Homogeneous Equations
+    - Procedencia
+    about:
+    - Linear Homogeneous Equations
+    - linear homogeneous equations
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-foundations-piaget
+  sections:
+  - path: piaget
+    title: Piaget
+    breadcrumbs:
+    - Piaget
+    about:
+    - Piaget
+    - piaget
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: piaget
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: piaget/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Piaget
+    - Respuesta
+    about:
+    - Piaget
+    - piaget
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: piaget/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Piaget
+    - Procedencia
+    about:
+    - Piaget
+    - piaget
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-synthesis-conclusions
+  sections:
+  - path: conclusions
+    title: Conclusions
+    breadcrumbs:
+    - Conclusions
+    about:
+    - Conclusions
+    - conclusions
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: conclusions
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: conclusions/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Conclusions
+    - Respuesta
+    about:
+    - Conclusions
+    - conclusions
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: conclusions/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Conclusions
+    - Procedencia
+    about:
+    - Conclusions
+    - conclusions
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-sources-apos-theory-book-structure
+  sections:
+  - path: structure
+    title: Structure
+    breadcrumbs:
+    - Structure
+    about:
+    - Structure
+    - structure
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: structure
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: structure/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Structure
+    - Respuesta
+    about:
+    - Structure
+    - structure
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: structure/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Structure
+    - Procedencia
+    about:
+    - Structure
+    - structure
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-genetic-decomposition-non-uniqueness
+  sections:
+  - path: non-uniqueness
+    title: Non Uniqueness
+    breadcrumbs:
+    - Non Uniqueness
+    about:
+    - Non Uniqueness
+    - non uniqueness
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: non-uniqueness
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: non-uniqueness/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Non Uniqueness
+    - Respuesta
+    about:
+    - Non Uniqueness
+    - non uniqueness
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: non-uniqueness/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Non Uniqueness
+    - Procedencia
+    about:
+    - Non Uniqueness
+    - non uniqueness
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mathematical-domains-infinity
+  sections:
+  - path: infinity
+    title: Infinity
+    breadcrumbs:
+    - Infinity
+    about:
+    - Infinity
+    - infinity
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: infinity
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: infinity/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Infinity
+    - Respuesta
+    about:
+    - Infinity
+    - infinity
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: infinity/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Infinity
+    - Procedencia
+    about:
+    - Infinity
+    - infinity
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-schema-development-schema-interaction
+  sections:
+  - path: schema-interaction
+    title: Schema Interaction
+    breadcrumbs:
+    - Schema Interaction
+    about:
+    - Schema Interaction
+    - schema interaction
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: schema-interaction
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: schema-interaction/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Schema Interaction
+    - Respuesta
+    about:
+    - Schema Interaction
+    - schema interaction
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: schema-interaction/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Schema Interaction
+    - Procedencia
+    about:
+    - Schema Interaction
+    - schema interaction
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-pedagogy-ace-cycle
+  sections:
+  - path: ace-cycle
+    title: Ace Cycle
+    breadcrumbs:
+    - Ace Cycle
+    about:
+    - Ace Cycle
+    - ace cycle
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: ace-cycle
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: ace-cycle/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Ace Cycle
+    - Respuesta
+    about:
+    - Ace Cycle
+    - ace cycle
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: ace-cycle/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Ace Cycle
+    - Procedencia
+    about:
+    - Ace Cycle
+    - ace cycle
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-genetic-decomposition-design
+  sections:
+  - path: design
+    title: Design
+    breadcrumbs:
+    - Design
+    about:
+    - Design
+    - design
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: design
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: design/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Design
+    - Respuesta
+    about:
+    - Design
+    - design
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: design/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Design
+    - Procedencia
+    about:
+    - Design
+    - design
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-genetic-decomposition-role-in-research
+  sections:
+  - path: role-in-research
+    title: Role In Research
+    breadcrumbs:
+    - Role In Research
+    about:
+    - Role In Research
+    - role in research
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: role-in-research
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: role-in-research/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Role In Research
+    - Respuesta
+    about:
+    - Role In Research
+    - role in research
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: role-in-research/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Role In Research
+    - Procedencia
+    about:
+    - Role In Research
+    - role in research
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-core-structures-schema
+  sections:
+  - path: schema
+    title: Schema
+    breadcrumbs:
+    - Schema
+    about:
+    - Schema
+    - schema
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: schema
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: schema/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Schema
+    - Respuesta
+    about:
+    - Schema
+    - schema
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: schema/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Schema
+    - Procedencia
+    about:
+    - Schema
+    - schema
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-genetic-decomposition-role-in-teaching
+  sections:
+  - path: role-in-teaching
+    title: Role In Teaching
+    breadcrumbs:
+    - Role In Teaching
+    about:
+    - Role In Teaching
+    - role in teaching
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: role-in-teaching
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: role-in-teaching/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Role In Teaching
+    - Respuesta
+    about:
+    - Role In Teaching
+    - role in teaching
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: role-in-teaching/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Role In Teaching
+    - Procedencia
+    about:
+    - Role In Teaching
+    - role in teaching
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-sources-apos-theory-book-scope
+  sections:
+  - path: scope
+    title: Scope
+    breadcrumbs:
+    - Scope
+    about:
+    - Scope
+    - scope
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: scope
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: scope/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Scope
+    - Respuesta
+    about:
+    - Scope
+    - scope
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: scope/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Scope
+    - Procedencia
+    about:
+    - Scope
+    - scope
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mechanisms-stages
+  sections:
+  - path: stages
+    title: Stages
+    breadcrumbs:
+    - Stages
+    about:
+    - Stages
+    - stages
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: stages
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: stages/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Stages
+    - Respuesta
+    about:
+    - Stages
+    - stages
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: stages/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Stages
+    - Procedencia
+    about:
+    - Stages
+    - stages
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-foundations-rumec
+  sections:
+  - path: rumec
+    title: Rumec
+    breadcrumbs:
+    - Rumec
+    about:
+    - Rumec
+    - rumec
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: rumec
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: rumec/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Rumec
+    - Respuesta
+    about:
+    - Rumec
+    - rumec
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: rumec/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Rumec
+    - Procedencia
+    about:
+    - Rumec
+    - rumec
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mechanisms-reversal
+  sections:
+  - path: reversal
+    title: Reversal
+    breadcrumbs:
+    - Reversal
+    about:
+    - Reversal
+    - reversal
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: reversal
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: reversal/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Reversal
+    - Respuesta
+    about:
+    - Reversal
+    - reversal
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: reversal/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Reversal
+    - Procedencia
+    about:
+    - Reversal
+    - reversal
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mathematical-domains-repeating-decimals
+  sections:
+  - path: repeating-decimals
+    title: Repeating Decimals
+    breadcrumbs:
+    - Repeating Decimals
+    about:
+    - Repeating Decimals
+    - repeating decimals
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: repeating-decimals
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: repeating-decimals/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Repeating Decimals
+    - Respuesta
+    about:
+    - Repeating Decimals
+    - repeating decimals
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: repeating-decimals/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Repeating Decimals
+    - Procedencia
+    about:
+    - Repeating Decimals
+    - repeating decimals
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mechanisms-interiorization
+  sections:
+  - path: interiorization
+    title: Interiorization
+    breadcrumbs:
+    - Interiorization
+    about:
+    - Interiorization
+    - interiorization
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: interiorization
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: interiorization/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Interiorization
+    - Respuesta
+    about:
+    - Interiorization
+    - interiorization
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: interiorization/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Interiorization
+    - Procedencia
+    about:
+    - Interiorization
+    - interiorization
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-applications-elementary-math
+  sections:
+  - path: elementary-math
+    title: Elementary Math
+    breadcrumbs:
+    - Elementary Math
+    about:
+    - Elementary Math
+    - elementary math
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: elementary-math
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: elementary-math/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Elementary Math
+    - Respuesta
+    about:
+    - Elementary Math
+    - elementary math
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: elementary-math/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Elementary Math
+    - Procedencia
+    about:
+    - Elementary Math
+    - elementary math
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mathematical-domains-functions
+  sections:
+  - path: functions
+    title: Functions
+    breadcrumbs:
+    - Functions
+    about:
+    - Functions
+    - functions
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: functions
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: functions/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Functions
+    - Respuesta
+    about:
+    - Functions
+    - functions
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: functions/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Functions
+    - Procedencia
+    about:
+    - Functions
+    - functions
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-pedagogy-exercises
+  sections:
+  - path: exercises
+    title: Exercises
+    breadcrumbs:
+    - Exercises
+    about:
+    - Exercises
+    - exercises
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: exercises
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: exercises/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Exercises
+    - Respuesta
+    about:
+    - Exercises
+    - exercises
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: exercises/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Exercises
+    - Procedencia
+    about:
+    - Exercises
+    - exercises
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mechanisms-totality
+  sections:
+  - path: totality
+    title: Totality
+    breadcrumbs:
+    - Totality
+    about:
+    - Totality
+    - totality
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: totality
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: totality/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Totality
+    - Respuesta
+    about:
+    - Totality
+    - totality
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: totality/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Totality
+    - Procedencia
+    about:
+    - Totality
+    - totality
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mechanisms-encapsulation
+  sections:
+  - path: encapsulation
+    title: Encapsulation
+    breadcrumbs:
+    - Encapsulation
+    about:
+    - Encapsulation
+    - encapsulation
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: encapsulation
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: encapsulation/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Encapsulation
+    - Respuesta
+    about:
+    - Encapsulation
+    - encapsulation
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: encapsulation/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Encapsulation
+    - Procedencia
+    about:
+    - Encapsulation
+    - encapsulation
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mathematical-domains-induction
+  sections:
+  - path: induction
+    title: Induction
+    breadcrumbs:
+    - Induction
+    about:
+    - Induction
+    - induction
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: induction
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: induction/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Induction
+    - Respuesta
+    about:
+    - Induction
+    - induction
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: induction/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Induction
+    - Procedencia
+    about:
+    - Induction
+    - induction
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-synthesis-faq
+  sections:
+  - path: faq
+    title: Faq
+    breadcrumbs:
+    - Faq
+    about:
+    - Faq
+    - faq
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: faq
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: faq/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Faq
+    - Respuesta
+    about:
+    - Faq
+    - faq
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: faq/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Faq
+    - Procedencia
+    about:
+    - Faq
+    - faq
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-pedagogy-isetl
+  sections:
+  - path: isetl
+    title: Isetl
+    breadcrumbs:
+    - Isetl
+    about:
+    - Isetl
+    - isetl
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: isetl
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: isetl/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Isetl
+    - Respuesta
+    about:
+    - Isetl
+    - isetl
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: isetl/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Isetl
+    - Procedencia
+    about:
+    - Isetl
+    - isetl
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-research-paradigm
+  sections:
+  - path: paradigm
+    title: Paradigm
+    breadcrumbs:
+    - Paradigm
+    about:
+    - Paradigm
+    - paradigm
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: paradigm
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: paradigm/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Paradigm
+    - Respuesta
+    about:
+    - Paradigm
+    - paradigm
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: paradigm/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Paradigm
+    - Procedencia
+    about:
+    - Paradigm
+    - paradigm
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-research-research-cycle
+  sections:
+  - path: research-cycle
+    title: Research Cycle
+    breadcrumbs:
+    - Research Cycle
+    about:
+    - Research Cycle
+    - research cycle
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: research-cycle
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: research-cycle/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Research Cycle
+    - Respuesta
+    about:
+    - Research Cycle
+    - research cycle
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: research-cycle/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Research Cycle
+    - Procedencia
+    about:
+    - Research Cycle
+    - research cycle
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-foundations-constructivism
+  sections:
+  - path: constructivism
+    title: Constructivism
+    breadcrumbs:
+    - Constructivism
+    about:
+    - Constructivism
+    - constructivism
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: constructivism
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: constructivism/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Constructivism
+    - Respuesta
+    about:
+    - Constructivism
+    - constructivism
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: constructivism/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Constructivism
+    - Procedencia
+    about:
+    - Constructivism
+    - constructivism
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-mechanisms-levels
+  sections:
+  - path: levels
+    title: Levels
+    breadcrumbs:
+    - Levels
+    about:
+    - Levels
+    - levels
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: levels
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: levels/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Levels
+    - Respuesta
+    about:
+    - Levels
+    - levels
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: levels/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Levels
+    - Procedencia
+    about:
+    - Levels
+    - levels
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-research-data-collection
+  sections:
+  - path: data-collection
+    title: Data Collection
+    breadcrumbs:
+    - Data Collection
+    about:
+    - Data Collection
+    - data collection
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: data-collection
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: data-collection/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Data Collection
+    - Respuesta
+    about:
+    - Data Collection
+    - data collection
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: data-collection/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Data Collection
+    - Procedencia
+    about:
+    - Data Collection
+    - data collection
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 20
+- doc_name: atom-branch-apos-core-structures-process
+  sections:
+  - path: process
+    title: Process
+    breadcrumbs:
+    - Process
+    about:
+    - Process
+    - process
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: process
+    level: 1
+    line_start: 13
+    line_end: 14
+  - path: process/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Process
+    - Respuesta
+    about:
+    - Process
+    - process
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 16
+  - path: process/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Process
+    - Procedencia
+    about:
+    - Process
+    - process
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - system:apos
     - type.knowledge.atom
     - workspace.desk.atoms
     slug: procedencia

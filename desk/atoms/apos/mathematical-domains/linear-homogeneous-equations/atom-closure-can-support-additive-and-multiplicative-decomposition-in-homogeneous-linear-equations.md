@@ -9,6 +9,8 @@ tags:
   - topic:vector-space
   - domain:linear-algebra
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-mathematical-domains-linear-homogeneous-equations
 ---
 
 # La clausura puede sustentar la descomposicion aditiva y multiplicativa en una ELH

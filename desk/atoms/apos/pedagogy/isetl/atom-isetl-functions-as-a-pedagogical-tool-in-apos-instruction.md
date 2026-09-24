@@ -12,6 +12,8 @@ tags:
   - topic:instruction
   - domain:mathematics-education
   - layer:pedagogy
+node_type: knowledge
+parent_id: branch-apos-pedagogy-isetl
 ---
 
 # ISETL funciona como una herramienta pedagógica en la instrucción APOS

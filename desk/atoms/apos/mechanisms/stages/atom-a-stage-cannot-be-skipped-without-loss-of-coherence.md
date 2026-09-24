@@ -8,6 +8,8 @@ tags:
   - topic:coherence
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-mechanisms-stages
 ---
 
 # Una etapa no puede saltarse sin pérdida de coherencia

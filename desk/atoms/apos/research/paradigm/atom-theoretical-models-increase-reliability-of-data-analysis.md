@@ -8,6 +8,8 @@ tags:
   - topic:reliability
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-research-paradigm
 ---
 
 # Los modelos teóricos aumentan la confiabilidad del análisis de datos
