@@ -11,8 +11,10 @@ cd /Users/investigacion/proyectos/tutor_apoe
 python scripts/kb.py serve
 ```
 
-Luego abre <http://127.0.0.1:8000>. El visor permite buscar y leer átomos de
-la base. Para detenerlo, vuelve a la Terminal y presiona `Control + C`.
+Luego abre <http://127.0.0.1:8000>. El visor muestra un mapa interactivo de la
+KB con React Flow: árbol horizontal o vertical, zoom, minimapa, filtros por
+tema y un panel con la respuesta y procedencia de cada átomo. Para detenerlo,
+vuelve a la Terminal y presiona `Control + C`.
 
 También hay una interfaz de comandos respaldada por **SLDB**:
 

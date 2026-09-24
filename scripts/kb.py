@@ -25,6 +25,7 @@ from urllib.parse import parse_qs, unquote, urlparse
 ROOT = Path(__file__).resolve().parents[1]
 STORE = ROOT / ".sldb"
 ATOMS = ROOT / "desk" / "atoms"
+WEB = ROOT / "web"
 
 
 @dataclass(frozen=True)
@@ -158,13 +159,24 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:  # noqa: N802 - API de BaseHTTPRequestHandler
         parsed = urlparse(self.path)
         if parsed.path == "/":
-            data = PAGE.encode()
+            data = (WEB / "index.html").read_bytes()
             self.send_response(HTTPStatus.OK)
             self.send_header("Content-Type", "text/html; charset=utf-8")
             self.send_header("Content-Length", str(len(data)))
             self.end_headers()
             self.wfile.write(data)
             return
+        if parsed.path.startswith("/web/"):
+            filename = parsed.path.removeprefix("/web/")
+            content_types = {"mindmap.js": "text/javascript; charset=utf-8", "mindmap.css": "text/css; charset=utf-8"}
+            if filename in content_types:
+                data = (WEB / filename).read_bytes()
+                self.send_response(HTTPStatus.OK)
+                self.send_header("Content-Type", content_types[filename])
+                self.send_header("Content-Length", str(len(data)))
+                self.end_headers()
+                self.wfile.write(data)
+                return
         if parsed.path == "/api/search":
             term = parse_qs(parsed.query).get("q", [""])[0].strip()
             docs = atoms_by_id()
