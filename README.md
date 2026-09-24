@@ -16,6 +16,9 @@ KB con React Flow: árbol horizontal o vertical, zoom, minimapa, filtros por
 tema y un panel con la respuesta y procedencia de cada átomo. Para detenerlo,
 vuelve a la Terminal y presiona `Control + C`.
 
+Selecciona una tarjeta de átomo para abrir el editor a la derecha. Al guardar,
+se actualiza el archivo Markdown y se reindexa SLDB automáticamente.
+
 También hay una interfaz de comandos respaldada por **SLDB**:
 
 ```bash

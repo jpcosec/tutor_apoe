@@ -1,16 +1,16 @@
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import {createRoot} from 'react-dom/client';
-import {Background, Controls, Handle, MiniMap, Position, ReactFlow, ReactFlowProvider, useEdgesState, useNodesState, useReactFlow} from '@xyflow/react';
+import {Background, Controls, Handle, MiniMap, Position, ReactFlow, ReactFlowProvider, useEdgesState, useNodesInitialized, useNodesState, useReactFlow} from '@xyflow/react';
 import htm from 'htm';
 import dagre from 'dagre';
 
 const html = htm.bind(React.createElement);
 const COLORS = ['#4fc3d9', '#e6a85c', '#7cba7c', '#c97db9', '#9b7fd4', '#ff6b6b'];
 
-function family(atom) {
+function hierarchy(atom) {
   const pieces = atom.path.split('/');
   const apos = pieces.indexOf('apos');
-  return apos >= 0 ? (pieces[apos + 1] || 'fuentes') : 'fuentes';
+  return apos >= 0 ? ['apos', ...pieces.slice(apos + 1, -1)] : ['fuentes', ...pieces.slice(3, -1)];
 }
 
 function colour(name) {
@@ -25,44 +25,48 @@ function Node({data, selected}) {
   return html`<div className=${`node ${root ? 'node-root' : ''} ${branch ? 'node-branch' : ''} ${selected ? 'selected' : ''}`}
       style=${{ '--node-colour': data.colour }}>
     <${Handle} type="target" position=${Position.Left}/>
-    <div className="node-kicker">${root ? 'BASE DE CONOCIMIENTO' : branch ? 'TEMA' : data.question || 'átomo'}</div>
+    <div className="node-kicker">${root ? 'BASE DE CONOCIMIENTO' : branch ? 'CATEGORÍA' : data.question || 'átomo'}</div>
     <div className="node-title">${data.label}</div>
-    ${!root && !branch && html`<div className="node-tags">${data.tags.slice(0, 3).map(tag => html`<span key=${tag}>${tag}</span>`)}</div>`}
     <${Handle} type="source" position=${Position.Right}/>
   </div>`;
 }
 const nodeTypes = {knowledge: Node};
 
-function buildGraph(atoms, direction) {
+function buildGraph(atoms, direction, showAtoms) {
   const graph = new dagre.graphlib.Graph();
   graph.setDefaultEdgeLabel(() => ({}));
-  graph.setGraph({rankdir: direction, ranksep: 100, nodesep: 28, marginx: 40, marginy: 40});
+  graph.setGraph({rankdir: direction, ranksep: 72, nodesep: 18, marginx: 40, marginy: 40});
   const nodes = [{id: 'root', type: 'knowledge', data: {kind: 'root', label: 'Teoría APOS', colour: '#d4a574'}, position: {x: 0, y: 0}}];
   const edges = [];
-  graph.setNode('root', {width: 190, height: 64});
-  const byFamily = new Map();
+  graph.setNode('root', {width: 150, height: 48});
+  const branches = new Map([['', 'root']]);
   atoms.forEach(atom => {
-    const key = family(atom);
-    byFamily.set(key, [...(byFamily.get(key) || []), atom]);
-  });
-  [...byFamily.entries()].sort().forEach(([name, members]) => {
-    const branchId = `family:${name}`;
-    const tone = colour(name);
-    nodes.push({id: branchId, type: 'knowledge', data: {kind: 'branch', label: name.replaceAll('-', ' '), colour: tone}, position: {x: 0, y: 0}});
-    edges.push({id: `root-${branchId}`, source: 'root', target: branchId, style: {stroke: tone, strokeWidth: 2}});
-    graph.setNode(branchId, {width: 150, height: 58}); graph.setEdge('root', branchId);
-    members.forEach(atom => {
-      const id = `atom:${atom.id}`;
-      nodes.push({id, type: 'knowledge', data: {...atom, kind: 'atom', label: atom.title, colour: tone}, position: {x: 0, y: 0}});
-      edges.push({id: `${branchId}-${id}`, source: branchId, target: id, style: {stroke: `${tone}99`, strokeWidth: 1.4}});
-      graph.setNode(id, {width: 245, height: 76}); graph.setEdge(branchId, id);
+    let parent = 'root'; let key = '';
+    hierarchy(atom).forEach((part, level) => {
+      if (!showAtoms && level > 1) return;
+      key += `/${part}`;
+      if (!branches.has(key)) {
+        const id = `branch:${key}`; const tone = colour(hierarchy(atom)[0]);
+        branches.set(key, id);
+        nodes.push({id, type: 'knowledge', data: {kind: 'branch', label: part.replaceAll('-', ' '), colour: tone}, position: {x: 0, y: 0}});
+        edges.push({id: `${parent}-${id}`, source: parent, target: id, style: {stroke: tone, strokeWidth: level === 0 ? 2 : 1.3}});
+        graph.setNode(id, {width: 116, height: 40}); graph.setEdge(parent, id);
+      }
+      parent = branches.get(key);
     });
+    if (showAtoms) {
+      const id = `atom:${atom.id}`; const tone = colour(hierarchy(atom)[0]);
+      nodes.push({id, type: 'knowledge', data: {...atom, kind: 'atom', label: atom.title, colour: tone}, position: {x: 0, y: 0}});
+      edges.push({id: `${parent}-${id}`, source: parent, target: id, style: {stroke: `${tone}99`, strokeWidth: 1}});
+      graph.setNode(id, {width: 165, height: 42}); graph.setEdge(parent, id);
+    }
   });
   dagre.layout(graph);
   return {
     nodes: nodes.map(node => {
       const pos = graph.node(node.id);
-      return {...node, position: {x: pos.x - (node.data.kind === 'atom' ? 122 : 75), y: pos.y - 30}};
+      const width = node.data.kind === 'atom' ? 165 : node.data.kind === 'root' ? 150 : 116;
+      return {...node, position: {x: pos.x - width / 2, y: pos.y - 21}};
     }), edges,
   };
 }
@@ -72,15 +76,18 @@ function App() {
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [term, setTerm] = useState('');
-  const [direction, setDirection] = useState('LR');
+  const [direction, setDirection] = useState('TB');
+  const [showAtoms, setShowAtoms] = useState(false);
   const [selected, setSelected] = useState(null);
+  const [draft, setDraft] = useState(null);
   const [status, setStatus] = useState('Cargando la base de conocimiento…');
   const {fitView} = useReactFlow();
+  const nodesReady = useNodesInitialized();
 
-  const draw = useCallback((items, layout) => {
-    const next = buildGraph(items, layout);
+  const draw = useCallback((items, layout, leaves) => {
+    const next = buildGraph(items, layout, leaves);
     setNodes(next.nodes); setEdges(next.edges);
-    setTimeout(() => fitView({padding: .14, duration: 300}), 80);
+    setTimeout(() => fitView({padding: .14, duration: 300}), 350);
   }, [fitView, setEdges, setNodes]);
 
   const search = useCallback(async (value = '') => {
@@ -88,23 +95,37 @@ function App() {
     const response = await fetch(`/api/search?q=${encodeURIComponent(value)}`);
     const data = await response.json();
     if (!response.ok) { setStatus(data.detail || 'No se pudo consultar SLDB.'); return; }
-    setAtoms(data.atoms); setSelected(data.atoms[0] || null); draw(data.atoms, direction);
+    const leaves = Boolean(value) || showAtoms;
+    if (value) setShowAtoms(true);
+    setAtoms(data.atoms); setSelected(null); setDraft(null); draw(data.atoms, direction, leaves);
     setStatus(`${data.atoms.length} átomos · ${value ? `resultado para “${value}”` : 'vista completa'}`);
-  }, [direction, draw]);
+  }, [direction, draw, showAtoms]);
 
   useEffect(() => { search(); }, []);
-  useEffect(() => { if (atoms.length) draw(atoms, direction); }, [direction]);
+  useEffect(() => { if (atoms.length) draw(atoms, direction, showAtoms); }, [direction, showAtoms]);
+  useEffect(() => { if (nodesReady) fitView({padding: .14, duration: 250}); }, [nodesReady, nodes, fitView]);
   const topics = useMemo(() => [...new Set(atoms.flatMap(atom => atom.tags.filter(tag => tag.startsWith('topic:'))))].sort(), [atoms]);
-  const onNodeClick = (_, node) => { if (node.data.kind === 'atom') setSelected(node.data); };
+  const select = atom => { setSelected(atom); setDraft({...atom, tags: [...atom.tags]}); };
+  const onNodeClick = (_, node) => { if (node.data.kind === 'atom') select(node.data); };
+  const save = async event => {
+    event.preventDefault();
+    if (!draft) return;
+    setStatus('Guardando y reindexando SLDB…');
+    const response = await fetch(`/api/atoms/${encodeURIComponent(draft.id)}`, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({...draft, tags: draft.tags})});
+    const data = await response.json();
+    if (!response.ok) { setStatus(data.detail || 'No se pudo guardar el átomo.'); return; }
+    const updated = data.atom; const next = atoms.map(atom => atom.id === updated.id ? updated : atom);
+    setAtoms(next); select(updated); draw(next, direction, showAtoms); setStatus(`Guardado: ${updated.title}`);
+  };
 
   return html`<main className="shell">
     <header><div><p className="eyebrow">VISOR DE CONOCIMIENTO · SLDB</p><h1>Tutor APOE</h1><p className="subtitle">Teoría APOS, sin chatbot ni modelo generativo.</p></div>
-      <div className="help">${status}<br/><span>La KB se edita en archivos Markdown; esta vista es solo de lectura.</span></div></header>
+      <div className="help">${status}<br/><span>Selecciona un átomo para editar su fuente Markdown.</span></div></header>
     <section className="toolbar"><form onSubmit=${event => {event.preventDefault(); search(term)}}><input value=${term} onInput=${event => setTerm(event.target.value)} placeholder="Buscar texto o tag: topic:schema"/><button>Buscar</button><button type="button" className="secondary" onClick=${() => {setTerm(''); search('')}}>Limpiar</button></form>
-      <div className="layouts"><button className=${direction === 'LR' ? 'active' : ''} onClick=${() => setDirection('LR')}>Árbol</button><button className=${direction === 'TB' ? 'active' : ''} onClick=${() => setDirection('TB')}>Vertical</button></div></section>
+      <div className="layouts"><button className=${direction === 'TB' ? 'active' : ''} onClick=${() => setDirection('TB')}>Ancho</button><button className=${direction === 'LR' ? 'active' : ''} onClick=${() => setDirection('LR')}>Alto</button><button className=${showAtoms ? 'active' : ''} onClick=${() => setShowAtoms(!showAtoms)}>${showAtoms ? 'Ocultar átomos' : 'Ver átomos'}</button></div></section>
     <section className="topics"><span>Temas visibles</span>${topics.slice(0, 14).map(tag => html`<button key=${tag} onClick=${() => {setTerm(tag); search(tag)}}>${tag.replace('topic:', '')}</button>`)}</section>
-    <section className="workspace"><div className="canvas"><${ReactFlow} nodes=${nodes} edges=${edges} nodeTypes=${nodeTypes} onNodesChange=${onNodesChange} onEdgesChange=${onEdgesChange} onNodeClick=${onNodeClick} fitView proOptions=${{hideAttribution: true}} minZoom=${.08} maxZoom=${1.8}><${Background} gap=${24} color="rgba(212,165,116,.14)"/><${Controls}/><${MiniMap} nodeColor=${node => node.data.colour} maskColor="rgba(7, 11, 18, .75)"/></${ReactFlow}></div>
-      <aside className="detail"><p className="eyebrow">ÁTOMO SELECCIONADO</p>${selected ? html`<h2>${selected.title}</h2><div className="chips">${selected.tags.map(tag => html`<span key=${tag}>${tag}</span>`)}</div><h3>Respuesta</h3><p>${selected.answer || 'Sin respuesta.'}</p>${selected.provenance ? html`<h3>Procedencia</h3><p>${selected.provenance}</p>` : null}<footer>${selected.path}</footer>` : html`<p>Selecciona un átomo en el mapa.</p>`}</aside>
+    <section className=${`workspace ${selected ? 'with-detail' : ''}`}><div className="canvas"><${ReactFlow} nodes=${nodes} edges=${edges} nodeTypes=${nodeTypes} onNodesChange=${onNodesChange} onEdgesChange=${onEdgesChange} onNodeClick=${onNodeClick} fitView proOptions=${{hideAttribution: true}} minZoom=${.08} maxZoom=${1.8}><${Background} gap=${24} color="rgba(212,165,116,.14)"/><${Controls}/><${MiniMap} nodeColor=${node => node.data.colour} maskColor="rgba(7, 11, 18, .75)"/></${ReactFlow}></div>
+      ${selected && draft && html`<aside className="detail"><p className="eyebrow">EDITAR ÁTOMO</p><form className="editor" onSubmit=${save}><label>Título<input value=${draft.title} onInput=${e => setDraft({...draft, title: e.target.value})}/></label><label>Pregunta<select value=${draft.question} onChange=${e => setDraft({...draft, question: e.target.value})}>${['what','why','how','how_not','when','where','for_whom'].map(option => html`<option key=${option}>${option}</option>`)}</select></label><label>Tags <small>separados por coma</small><input value=${draft.tags.join(', ')} onInput=${e => setDraft({...draft, tags: e.target.value.split(',').map(tag => tag.trim()).filter(Boolean)})}/></label><label>Respuesta<textarea rows="7" value=${draft.answer} onInput=${e => setDraft({...draft, answer: e.target.value})}/></label><label>Procedencia<textarea rows="5" value=${draft.provenance} onInput=${e => setDraft({...draft, provenance: e.target.value})}/></label><button>Guardar átomo</button><footer>${selected.path}</footer></form></aside>`}
     </section>
   </main>`;
 }

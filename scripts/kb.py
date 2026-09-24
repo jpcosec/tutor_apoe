@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import subprocess
 from dataclasses import dataclass
 from http import HTTPStatus
@@ -129,6 +130,58 @@ def atom_payload(atom: Atom) -> dict[str, object]:
     }
 
 
+def _replace_field(meta: str, name: str, value: str) -> str:
+    line = f"{name}: {json.dumps(value, ensure_ascii=False)}"
+    return re.sub(rf"^{re.escape(name)}:.*$", line, meta, flags=re.MULTILINE)
+
+
+def _replace_tags(meta: str, tags: list[str]) -> str:
+    block = "tags:\n" + "".join(f"  - {tag}\n" for tag in tags)
+    pattern = r"^tags:\n(?:[ \t-].*\n)*"
+    return re.sub(pattern, block, meta, flags=re.MULTILINE)
+
+
+def _replace_section(body: str, title: str, value: str) -> str:
+    replacement = f"## {title}\n\n{value.strip()}\n"
+    pattern = rf"^## {re.escape(title)}\n.*?(?=^## |\Z)"
+    updated, count = re.subn(pattern, replacement, body, count=1, flags=re.MULTILINE | re.DOTALL)
+    return updated if count else body.rstrip() + "\n\n" + replacement
+
+
+def update_atom(atom_id: str, data: dict[str, object]) -> Atom:
+    """Actualiza campos editables de un átomo y refresca el índice SLDB."""
+    atoms = atoms_by_id()
+    atom = atoms.get(atom_id)
+    if atom is None:
+        raise KeyError("Átomo no encontrado.")
+    title = data.get("title")
+    question = data.get("question")
+    answer = data.get("answer")
+    provenance = data.get("provenance")
+    tags = data.get("tags")
+    if not all(isinstance(value, str) for value in (title, question, answer, provenance)):
+        raise ValueError("Título, pregunta, respuesta y procedencia deben ser texto.")
+    if question not in {"what", "why", "how", "how_not", "when", "where", "for_whom"}:
+        raise ValueError("La pregunta debe ser una de las opciones 5WH1+.")
+    if not isinstance(tags, list) or not all(isinstance(tag, str) and re.fullmatch(r"[a-z][a-z0-9_]*:[a-z][a-z0-9_-]*", tag) for tag in tags):
+        raise ValueError("Cada tag debe tener el formato namespace:valor.")
+    path = ROOT / atom.path
+    meta, body = _frontmatter(path.read_text(encoding="utf-8"))
+    meta = _replace_field(meta, "title", title.strip())
+    meta = _replace_field(meta, "five_wh_one_plus", question)
+    meta = _replace_tags(meta, tags)
+    body = _replace_section(body, "Respuesta", answer)
+    body = _replace_section(body, "Procedencia", provenance)
+    path.write_text(f"---\n{meta}---\n{body}", encoding="utf-8")
+    refreshed = subprocess.run(
+        ["sldb", "stores", "update", "--store", str(STORE), "--pythonpath", str(ROOT)],
+        cwd=ROOT, text=True, capture_output=True,
+    )
+    if refreshed.returncode:
+        raise RuntimeError("El átomo se guardó, pero SLDB no pudo reindexar: " + (refreshed.stderr.strip() or refreshed.stdout.strip()))
+    return read_atom(path)
+
+
 PAGE = """<!doctype html>
 <html lang=\"es\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">
 <title>Tutor APOE · Base de conocimiento</title>
@@ -195,6 +248,30 @@ class Handler(BaseHTTPRequestHandler):
                 self._json(atom_payload(atom))
             return
         self._json({"detail": "Ruta no encontrada."}, HTTPStatus.NOT_FOUND)
+
+    def do_POST(self) -> None:  # noqa: N802 - API de BaseHTTPRequestHandler
+        parsed = urlparse(self.path)
+        if not parsed.path.startswith("/api/atoms/"):
+            self._json({"detail": "Ruta no encontrada."}, HTTPStatus.NOT_FOUND)
+            return
+        try:
+            size = int(self.headers.get("Content-Length", "0"))
+            if size > 200_000:
+                raise ValueError("El cambio es demasiado grande.")
+            payload = json.loads(self.rfile.read(size))
+            if not isinstance(payload, dict):
+                raise ValueError("El cuerpo debe ser un objeto JSON.")
+            atom = update_atom(unquote(parsed.path.rsplit("/", 1)[-1]), payload)
+        except KeyError as error:
+            self._json({"detail": str(error)}, HTTPStatus.NOT_FOUND)
+            return
+        except (ValueError, json.JSONDecodeError) as error:
+            self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
+            return
+        except RuntimeError as error:
+            self._json({"detail": str(error)}, HTTPStatus.INTERNAL_SERVER_ERROR)
+            return
+        self._json({"atom": atom_payload(atom)})
 
     def log_message(self, format: str, *args: object) -> None:
         print(f"[kb] {format % args}")

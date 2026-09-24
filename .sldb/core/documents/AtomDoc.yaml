@@ -2,7 +2,7 @@ documents:
 - name: atom-apos-book-presents-framework-for-research-and-curriculum-development
   path: desk/atoms/sources/apos-theory-book/purpose/atom-apos-book-presents-framework-for-research-and-curriculum-development.md
   hash_c: 81bfe9faf27cb3263da3e2ca82aca208d9a8d7c84601d973b538bb00d5e3d0c6
-  hash_d: de9afc451ec75c127862263ef16696176790eeff96aee03e307f40f00d87a12e
+  hash_d: 533ff9bb92ff1736e4e3412b9bfc856378ebed7f19b70c3b16a90efb092c3744
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -14,7 +14,7 @@ documents:
 - name: atom-apos-book-targets-researchers-teachers-and-graduate-students
   path: desk/atoms/sources/apos-theory-book/scope/atom-apos-book-targets-researchers-teachers-and-graduate-students.md
   hash_c: 1ecbd404564854c6116169e08f196b308dbd5169e5aa5bd7a97781b6c9f1502e
-  hash_d: 91bb55f46c44d1b845086dc22810d59101c21e8aee0c3c7a752251f37b3cf17a
+  hash_d: 2d4c90c3f515973392269ed558a2e8fb0a74644abbb2b2acd66cf1e8b392d9fc
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -26,7 +26,7 @@ documents:
 - name: atom-apos-book-derives-from-collaborative-authorship
   path: desk/atoms/sources/apos-theory-book/authorship/atom-apos-book-derives-from-collaborative-authorship.md
   hash_c: 6558ff0e33fad9fbd58330ef1aa9846fec3673dee69501c8c81c21f21c8bfcd3
-  hash_d: a145ed3ac5b0770037a4fe5ba87df9b22f09660b3ca85d8c7c2725e6d96ac250
+  hash_d: 0c24a6c03c3cb6b1a1011f7d4683c5d72e5d34db494e332395766340215f2c94
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -38,7 +38,7 @@ documents:
 - name: atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis
   path: desk/atoms/sources/apos-theory-book/structure/atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis.md
   hash_c: 561c0fc4384c6f260c21efdd819982d3cd1c40f8121ead9056645a7be6b5632a
-  hash_d: 71cb4f8df4d57fafd0397576a3955daf1ec9d53ae9499c5b8825d0750e9f63ac
+  hash_d: f7930b0969d36a011ba64e465b9244f2cbe066bfe30b2a1a874b5e982724335b
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -50,7 +50,7 @@ documents:
 - name: atom-apos-is-a-constructivist-theory-of-learning-mathematics
   path: desk/atoms/apos/foundations/constructivism/atom-apos-is-a-constructivist-theory-of-learning-mathematics.md
   hash_c: 8a433f8882020b925c90b3b7fe1ca141d1c45f9f7216ca531f437bc2cda8600f
-  hash_d: 0a706c77c9c97705f4691b0320e109dccc021745e7894abb6a274a4f849a3270
+  hash_d: e65e859e6f3b4e0e76555d047ad21eaefb0e83e4f22215ac9e437d2b03683158
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -62,7 +62,7 @@ documents:
 - name: atom-apos-is-rooted-in-piagets-work
   path: desk/atoms/apos/foundations/piaget/atom-apos-is-rooted-in-piagets-work.md
   hash_c: 37c9ecb7c2ccb005e5b18aeeb03e0ce89c78ccc1eb5f23a07a7aff7e5df46117
-  hash_d: d367efdaa1f1f2180e5ff21d7bcdb494641ef1fa01e7421e1fc52dd386a44c6f
+  hash_d: 67910ec3e2e072d60a84cc6c1bf50330bf3821075f26cc726cdeb1ff8e8c4a47
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -73,7 +73,7 @@ documents:
 - name: atom-reflective-abstraction-is-a-foundational-idea-for-apos
   path: desk/atoms/apos/foundations/reflective-abstraction/atom-reflective-abstraction-is-a-foundational-idea-for-apos.md
   hash_c: 0fab9f7f92e4f807773fe3492ede344ae045e981fa4ad1612ee7e1b807b086ce
-  hash_d: 006bc114ec4d60319ca2a5f9322161e6c9f1093c960b30bc70f9a7138a629328
+  hash_d: fcedfc82a4641bafed4d25d731e125e75dc57e05cdfb558e06c8c28106f14d6e
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -85,7 +85,7 @@ documents:
 - name: atom-apos-developed-through-recognizable-historical-periods
   path: desk/atoms/apos/foundations/historical-development/atom-apos-developed-through-recognizable-historical-periods.md
   hash_c: 6c7b1730cdf23c07c4c906fe1c577b50ab1ad04c818906e1a987f967c7a1e4f3
-  hash_d: 4f75ce33360cd4344dd3a35f03534ffb7833594fbd3f76d199f78ceb089388ab
+  hash_d: e95963d14ec2e0d83806a8703f9161c94de963d3b8f6907c66bad74851bf7482
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -96,7 +96,7 @@ documents:
 - name: atom-rumec-was-a-major-community-in-apos-development
   path: desk/atoms/apos/foundations/rumec/atom-rumec-was-a-major-community-in-apos-development.md
   hash_c: c0c3a8cfa340ba4de991fc193edce6f0732819e032a4f242d88cc980ca401437
-  hash_d: ba198ab2d1b15bb535906685f95f51d734c2f1b72c438d899203fab9510ca9e5
+  hash_d: ab6211afc816c50b7585c73d412dbf15b264352409f1c541f092b61eead8c880
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -107,7 +107,7 @@ documents:
 - name: atom-apos-defines-four-core-mental-structures
   path: desk/atoms/apos/core-structures/action/atom-apos-defines-four-core-mental-structures.md
   hash_c: 47b7fffcba7348d53c00510262141d1ff48ebb948a56f53df880467d881116aa
-  hash_d: 024b97f95657f3b6d4a043c4dc5eca6fdb243faa8fea6481956ccf59e41adb7c
+  hash_d: eb30595f3f9febf23138ff92846ffc5784fb54447b9f07cb999f2ebf7fe607a9
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -119,7 +119,7 @@ documents:
 - name: atom-action-is-a-core-mental-structure-in-apos
   path: desk/atoms/apos/core-structures/action/atom-action-is-a-core-mental-structure-in-apos.md
   hash_c: 8d8f2bdf554a3550e5c316fe2fe80474eef326f30c4e105468e69a3e527e0efa
-  hash_d: ea677cb81b9a5f7f3ab590fe6d826718ca17fbe87be6fdb0561efa948777acd5
+  hash_d: cc4f6011b522989eda7819f65a4cb41c5ea3430beff95f696014163c0401165a
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -130,7 +130,7 @@ documents:
 - name: atom-process-is-a-core-mental-structure-in-apos
   path: desk/atoms/apos/core-structures/process/atom-process-is-a-core-mental-structure-in-apos.md
   hash_c: 33a06e5ef0da88e431a0310376adf6b98a68d0247747468d6af7cea2f3c8f90a
-  hash_d: 98e8f5c7fd98cfcf9d7abc57924a3644647d8662de4e3cc83e80e7d8bb7df6dc
+  hash_d: 4365f740ceb948b2dabcb0d2f4ef8ac77192fbe4316020b9f0dd781c43dfb8f2
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -141,7 +141,7 @@ documents:
 - name: atom-object-is-a-core-mental-structure-in-apos
   path: desk/atoms/apos/core-structures/object/atom-object-is-a-core-mental-structure-in-apos.md
   hash_c: 5e8b27c9be546b3ebae0e2276681a44713d25cb679004530e5585814d892f353
-  hash_d: 9c456d6805363e83d0dd9019520fe00d4d690777041465504958eca5a63eb1fc
+  hash_d: 5b4d07fe8b82d0ac441ff327776fc96960c162b6696a970fc306adf61dd033da
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -152,7 +152,7 @@ documents:
 - name: atom-schema-is-a-core-mental-structure-in-apos
   path: desk/atoms/apos/core-structures/schema/atom-schema-is-a-core-mental-structure-in-apos.md
   hash_c: 7b452fedef1a066465155c1d74f6e36fe98d41d55533254c3e2eddc410dcbe18
-  hash_d: 2f24ed4f9062e5f363e62eb4809abf88aaf80e916d30388fc862a0a1f3e25bb1
+  hash_d: d9b11611d7c882b16c9740af7a1918e675aa1662edb7e042e50ff9682769552e
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -163,7 +163,7 @@ documents:
 - name: atom-apos-uses-specific-mechanisms-to-explain-construction
   path: desk/atoms/apos/mechanisms/interiorization/atom-apos-uses-specific-mechanisms-to-explain-construction.md
   hash_c: 5b0257fccf6cf237c3e987a2c4c71d158af12360bec1425d303f8cd88c31f6ec
-  hash_d: 72d81170df6ce7094603133af2441014f04eed613a5a503fc574c5d9f59bf918
+  hash_d: 189c91c750a03a2a494bf781c64fac706c5dc3f308db15b821672cf2b2e66d08
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -174,7 +174,7 @@ documents:
 - name: atom-totality-is-treated-as-a-possible-additional-stage
   path: desk/atoms/apos/mechanisms/totality/atom-totality-is-treated-as-a-possible-additional-stage.md
   hash_c: 8668078c8c994ef8d12755c149f88b05537efb14b65b55f20c05cb4cc07b6184
-  hash_d: 607e21b4e538078d4515657672f51780b5693fccf4f83a43c210fab7620fe98b
+  hash_d: dcb0b2a529838116b84de33e1e76f50a14c6b7ee4f43f2555c20b09d3ee3b71d
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -186,7 +186,7 @@ documents:
 - name: atom-stages-and-levels-organize-developmental-analysis-in-apos
   path: desk/atoms/apos/mechanisms/stages/atom-stages-and-levels-organize-developmental-analysis-in-apos.md
   hash_c: 5c568396b65eb551a43d81d7c61fadee7bd88c2ffb1e374f306d5ec5e31f4e56
-  hash_d: 30c8147d067b1441c2c40d2b96cb200d76e87d639eddc2cfbe2fa38447f6d24f
+  hash_d: 1af3c5e1f0f1673d6d3828888efceba0d7551f98c16da7e2a97610c08d5f661a
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -198,7 +198,7 @@ documents:
 - name: atom-genetic-decomposition-is-a-central-tool-in-apos
   path: desk/atoms/apos/genetic-decomposition/definition/atom-genetic-decomposition-is-a-central-tool-in-apos.md
   hash_c: 97df71db317700f53b6c77a2335d7a02ce0d23185fc5b32b8d11b76379a667a6
-  hash_d: c5b6aae384714a894ed7ec2513cc55a2ab71ca31cb5e1e9ef54d70b4167de258
+  hash_d: 56a68dce7039a575d764ce9b631d21d3fd3c2d3b53e69b774463dcbd93a81d9e
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -209,7 +209,7 @@ documents:
 - name: atom-genetic-decomposition-guides-both-research-and-teaching
   path: desk/atoms/apos/genetic-decomposition/role-in-teaching/atom-genetic-decomposition-guides-both-research-and-teaching.md
   hash_c: 7702d2f415df164c13b73caa1d1dc7743da3a5094a7b5245d74535a435f738fa
-  hash_d: 5a7e274e5d7263a48558dbc4ffbfe2b0f16b56dbd45efdf23c60d3e016ebde33
+  hash_d: d6a04fe99e33e8c85f503dd34705f26a754a1b6cfda4baf179b0ff6399348c5f
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -221,7 +221,7 @@ documents:
 - name: atom-genetic-decompositions-are-not-unique
   path: desk/atoms/apos/genetic-decomposition/non-uniqueness/atom-genetic-decompositions-are-not-unique.md
   hash_c: 374e81918b9b350edf1b505399b43430cd0eea4ec2ec138e4bd1bd852119d820
-  hash_d: d67ad1c3dd98e2e9dd63c3db1d2b03299340bca793eb5ebf31e46379a0c18844
+  hash_d: ce7d226948c9ba97e8faff08ceaafff6d127f46413425e69d43c70d9c4a41ea6
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -233,7 +233,7 @@ documents:
 - name: atom-ace-cycle-is-the-main-apos-instructional-pattern
   path: desk/atoms/apos/pedagogy/ace-cycle/atom-ace-cycle-is-the-main-apos-instructional-pattern.md
   hash_c: 0918f238ced9e11aa25755a85cfbf65bba22974a96035df87f8a60e0405eae8a
-  hash_d: 2b14d3186e25477aef05ee173cab6a550ff1aa91c5632904e4df3508e951b077
+  hash_d: 29541eaeecbdc5b7cf0ee3e18cf8bd73aa162e6216734cea9ca12df8a363941e
   semantic_tags:
   - domain:mathematics-education
   - layer:pedagogy
@@ -245,7 +245,7 @@ documents:
 - name: atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction
   path: desk/atoms/apos/pedagogy/isetl/atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction.md
   hash_c: 90be34406413ecd46af8fd989b73dc181a4a685a662cf642e413bb47ad114dbe
-  hash_d: 4958990b5692e8e4f1ff2a19dc8acaf922d1794ee1cbe4f9ea8fcbc720531e7b
+  hash_d: 4fc101229c866d0d77d763c577d28aaf1aca89cf90877038c18adcb3c1aae6dd
   semantic_tags:
   - domain:mathematics-education
   - layer:pedagogy
@@ -257,7 +257,7 @@ documents:
 - name: atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
   path: desk/atoms/apos/research/paradigm/atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm.md
   hash_c: 3d8a13bd3836723902dda4bf3852328a77f17cde6138e8a3205ff31310a49fb0
-  hash_d: 1b52d420b780ba312b6fa4d919fa2fa21de340901cf3658495f230c44894f07c
+  hash_d: 8458df57e6fa087ba5e0a11958148f28c2f2e18d599b6fe6189b80b66403f79a
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -268,7 +268,7 @@ documents:
 - name: atom-apos-research-uses-multiple-data-collection-modes
   path: desk/atoms/apos/research/data-collection/atom-apos-research-uses-multiple-data-collection-modes.md
   hash_c: 98655b81671598b83c7d3a207101b6478ce4256a6479228445122faf309dbbae
-  hash_d: 0faa721cb7dd8178e6f55ccc3c2818cfd151e0a083f80cdb240f83a56eb92fc8
+  hash_d: 6f277c1d29f199533ed1984d98cfd05177804f0311f784ec6bdcb97eed2d5e55
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -279,7 +279,7 @@ documents:
 - name: atom-schemas-can-develop-interact-and-be-thematized
   path: desk/atoms/apos/schema-development/schema-growth/atom-schemas-can-develop-interact-and-be-thematized.md
   hash_c: e5168e95f7b4bf7f30f5ef4868a738906a47efb75a04f136e72bd0edb89eeb4b
-  hash_d: 4226297e38e59508d52aecba7ca1d415b265cdc0a9fe5755483526aadc9af165
+  hash_d: 08040882968de90808b8bae34d0062cadac7efb9dbb9f870e6382934724dbaf3
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -290,7 +290,7 @@ documents:
 - name: atom-apos-is-demonstrated-through-multiple-mathematical-domains
   path: desk/atoms/apos/mathematical-domains/functions/atom-apos-is-demonstrated-through-multiple-mathematical-domains.md
   hash_c: dde0c9446144f37c9c278fc4662b22021c21ed8d0464a6d6615ffad8ec276b7c
-  hash_d: bca3ac8ac7d01489720580ae8a03cbe7b7e909ff1dba2f82bfa500a9c1283d24
+  hash_d: 69b50fb128e4bd17371c3e664f9a66ee848935f62424d3b00e0552e5a4c7a5f9
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -301,7 +301,7 @@ documents:
 - name: atom-repeating-decimals-and-infinity-are-key-sites-for-totality
   path: desk/atoms/apos/mathematical-domains/repeating-decimals/atom-repeating-decimals-and-infinity-are-key-sites-for-totality.md
   hash_c: 4640af2ab37a7e65b6650994a893e17b4a2a43e7200c7385d7a34cfa02c341b1
-  hash_d: 04a166df9c150d06143b540c3125b9b8f0481c0fb884b686bd5bd5784073090f
+  hash_d: 1e7acf0439922c197836d3bf69a06120eb076dfb52b3c90f96771119ab4f826e
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -313,7 +313,7 @@ documents:
 - name: atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
   path: desk/atoms/apos/applications/elementary-math/atom-apos-has-applications-in-elementary-and-postsecondary-mathematics.md
   hash_c: 205c0c1bcfb6b78c7cee7672d0ddbe5e956ef7251a1165ae47353c1e4004cd4b
-  hash_d: ec0e425366c7c2dd7f60dfcb406443727b4d5cd5f2ed3c8793d3febf18720382
+  hash_d: baef3b87185008a2af99d537c9247ccb8a7f71a8b24bd6de2761939a31a3a6fd
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -324,7 +324,7 @@ documents:
 - name: atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis
   path: desk/atoms/apos/synthesis/faq/atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis.md
   hash_c: 5c73236b1cacb8fc3c5f9bb81095975b40113ba34264af1dce1f47658810458b
-  hash_d: fd0f0332fd1320c238a47affb15ea0704c9818de8d3d17b321e6d343fa504101
+  hash_d: 15592b0c58e3979e44e6547bcb92660794931e6f0ad36fd8ba2c5b5d06e4d0e6
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -336,7 +336,7 @@ documents:
 - name: atom-apos-is-a-living-and-revisable-body-of-ideas
   path: desk/atoms/apos/foundations/historical-development/atom-apos-is-a-living-and-revisable-body-of-ideas.md
   hash_c: ab2022528c6957ed78e39a6258a595155de736804d2736c847519603c5caabb7
-  hash_d: b364f4a70c85e4abf50637a5ef700c9131b22e2b4afa9e380f9608866f3fd266
+  hash_d: ba644e3413075f15375f824b31d7762f6d0bdbae4e983339790af2b7f960f39d
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -347,7 +347,7 @@ documents:
 - name: atom-apos-book-is-not-the-last-word-on-apos
   path: desk/atoms/sources/apos-theory-book/scope/atom-apos-book-is-not-the-last-word-on-apos.md
   hash_c: 3c82ab6588421ff8f8d32d87c704decda550da5c1c85ef0ce5fc00eeb11e736f
-  hash_d: f61774d7a31cdaae29bd72a4570c18cd6b382a9dc2ac601a0df7b4e9f358d102
+  hash_d: 08c9018da910f0b6b4f804fb1d63f4759ec0bf07d2e9d8b72dfd4f734c1b07e4
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -359,7 +359,7 @@ documents:
 - name: atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
   path: desk/atoms/apos/foundations/reflective-abstraction/atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures.md
   hash_c: 57b664a705c488994bdfcbce545e1e2d967fca65072e75c8bd163b94b34dc0c3
-  hash_d: 97c2f94107c0ee9c809c9262e8107dc850bd20a6b475dbf453d171d40447af03
+  hash_d: c7f9a29c3d9d348906ad2ed1e8e25ec211c5686d6d6aab5851796e699d5b9a52
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -371,7 +371,7 @@ documents:
 - name: atom-reflective-abstraction-has-reflection-and-reorganization-components
   path: desk/atoms/apos/foundations/reflective-abstraction/atom-reflective-abstraction-has-reflection-and-reorganization-components.md
   hash_c: 1fe6e6ef9a2a23ecd3a597834d0431213a14eab1cd26cc5cc0739a60a930bfb9
-  hash_d: 58838bf40e93228e5c5fa934d4b280ac0b8114f770b69694e157a55e9efedf1d
+  hash_d: 04164fd4dd2948572fcee8adc267e05824930766be1eac6946c010360127e4bb
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -382,7 +382,7 @@ documents:
 - name: atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone
   path: desk/atoms/apos/foundations/piaget/atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone.md
   hash_c: 345b13ea5f29a2db116e02900b3713f4a914ecf43cb35e4c6d982b1b72584090
-  hash_d: 92a9476305d9effdb9aae78ec1284b969a9171369f57f5720c300b088a329955
+  hash_d: 417daacf699e52b28e186314befc085758c035a3f4b914ce4fd1bf3f10a59df0
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -394,7 +394,7 @@ documents:
 - name: atom-interiorization-translates-material-actions-into-processes
   path: desk/atoms/apos/mechanisms/interiorization/atom-interiorization-translates-material-actions-into-processes.md
   hash_c: 8ac5395e57e1054dddf7735797b0eb36dde987ae686ebcb4e4b4a267d7646283
-  hash_d: 157b68b16fabf17d7d18cfe09b6b142c57e7c7d31bd231d12b0a384e5deeca7e
+  hash_d: b0b112a56df0db2a3fe04c141ae6e217260efa702634c5e3a6d612d1f1b6a8b6
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -406,7 +406,7 @@ documents:
 - name: atom-action-requires-explicit-step-by-step-external-guidance
   path: desk/atoms/apos/core-structures/action/atom-action-requires-explicit-step-by-step-external-guidance.md
   hash_c: f9d518d9df448d0e1f0642f23a025148428df659b7d81e633ac7c6dfc9bc136d
-  hash_d: 26b5519bd71a3a4824c56f7a158cfa31b8a777efd9709480cd4bfda7ee896e83
+  hash_d: 4d35a03e7ef083fd7b049c469b2601a8b52b4a1d4cdbc28a41a1bb772b8dc7e0
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -417,7 +417,7 @@ documents:
 - name: atom-process-allows-mental-control-without-executing-each-step
   path: desk/atoms/apos/core-structures/process/atom-process-allows-mental-control-without-executing-each-step.md
   hash_c: 6c5ad84c9034df583620fc20ad00f470a3ad364f0804eb86886538a8b5343aea
-  hash_d: 5e7b48caf8b90172acc5a78b1ff975acf08b9ffdfeb1d0d4d469bfc0dcb95587
+  hash_d: 86ab9e074adc8ef771abc4ec3c0e3595fd00b4d879cb42ae96d94cfa218d9cd7
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -428,7 +428,7 @@ documents:
 - name: atom-encapsulation-treats-a-process-as-a-static-entity
   path: desk/atoms/apos/mechanisms/encapsulation/atom-encapsulation-treats-a-process-as-a-static-entity.md
   hash_c: a190ebd4448de9b8287ce7aa6d662eef7d47e363810b741929f7eeaeca19f159
-  hash_d: e6d98d0f59471bb73268dd2a045a10154842e6cbe0cd0c25be2bf2a8141b3e43
+  hash_d: 6c5e9607e30530cd218987c2357a39f0c085b39ab4d100557d32cc6ada8226f5
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -439,7 +439,7 @@ documents:
 - name: atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms
   path: desk/atoms/apos/mechanisms/encapsulation/atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms.md
   hash_c: 410bf3143fa5434b1c65c1829c27c458bed6c4bd6896732b4712a02e8b2386b4
-  hash_d: 118e6516d5982755a96d535ccb6d83007e36bd482ab2039ef487d5a9ce2ed530
+  hash_d: 8e106a3fd1addb13170bf4f928102721a38e765e86f3931c88536dd4fa2bc95d
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -450,7 +450,7 @@ documents:
 - name: atom-de-encapsulation-recovers-the-underlying-process-of-an-object
   path: desk/atoms/apos/mechanisms/de-encapsulation/atom-de-encapsulation-recovers-the-underlying-process-of-an-object.md
   hash_c: a5aba1555c6f522b4d5c94ecf2d6d8f529b090e3f520c7639f052580022a74ad
-  hash_d: 8637ffe4cb525868f1513a9aefd69bab365d267e041852445acf82d04f62c35b
+  hash_d: 8d54e56f046b4bd06cb588b9df53cb28f5eb338565893666247965153c9868db
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -461,7 +461,7 @@ documents:
 - name: atom-coordination-combines-processes-to-build-new-objects-or-processes
   path: desk/atoms/apos/mechanisms/coordination/atom-coordination-combines-processes-to-build-new-objects-or-processes.md
   hash_c: 0a338999133d8080a7cf70b4899cf93754a8435d11d315dbd382d50d62c70060
-  hash_d: e05e2d14ee5c64e5246a5b17ddf5d4fe5b71255381a7822035f19f66d6fb8b00
+  hash_d: ade8d79218c98dbccbc04315849494aa313ecc5b3a68bad520cbfa305fe154f9
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -472,7 +472,7 @@ documents:
 - name: atom-reversal-is-central-for-inverses-and-related-constructions
   path: desk/atoms/apos/mechanisms/reversal/atom-reversal-is-central-for-inverses-and-related-constructions.md
   hash_c: b30404c623fb6c20987ba0319b62a5038eeed04c9840e2fc9a2f21465f63ce3c
-  hash_d: a7538cb1a1303d430901afda9b9d985f5753bb717b9b1eadb538dfa279b89368
+  hash_d: 9923307921417bf9c18901f559678205f22f95ddf1e8c6542b490881211036ef
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -483,7 +483,7 @@ documents:
 - name: atom-thematization-turns-a-schema-into-an-object
   path: desk/atoms/apos/mechanisms/thematization/atom-thematization-turns-a-schema-into-an-object.md
   hash_c: 7b183a4d712f45b3a79a0bdd30bf73365c652d762cf1f44b18dcd2c88aa8a833
-  hash_d: ec8073af4bcf995ea0127910ee42c710dce81f6f4427ce0f646fa0e6a06739d4
+  hash_d: cb9f874410ec9541cbd796a92ef21153aa6325ae9800825d761c40f606ba9d1c
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -495,7 +495,7 @@ documents:
 - name: atom-mental-construction-in-apos-is-spiral-and-enriching
   path: desk/atoms/apos/foundations/constructivism/atom-mental-construction-in-apos-is-spiral-and-enriching.md
   hash_c: 1fb8f09457c93c39a0dc61cd668d512c984c70cb6daa9a6e99be10fbe5838259
-  hash_d: eb832a2d571fe41c24e55715fe372b8202f3ae65c53149fbdbf110ecdb032b10
+  hash_d: 51229a84e99a16d8f1e8989dc0f10bac2296e149e536a0317547a95edde3d1ea
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -507,7 +507,7 @@ documents:
 - name: atom-genetic-decomposition-begins-as-a-preliminary-hypothesis
   path: desk/atoms/apos/genetic-decomposition/definition/atom-genetic-decomposition-begins-as-a-preliminary-hypothesis.md
   hash_c: ae37bd161c5e1501b248d39e982a21ee68f3631df3c43fba784aef8286c12795
-  hash_d: 3c2e537f7aea8ba2bcf494bee8cfbd9069c3bb01559e1b1bde4c4b68af2c4393
+  hash_d: e31c28a3f49d233b9d7e0517a861c6641dd1571bb962596a9dc7529808d65815
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -519,7 +519,7 @@ documents:
 - name: atom-genetic-decomposition-may-include-prerequisites-and-performance-differences
   path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-may-include-prerequisites-and-performance-differences.md
   hash_c: 419f097220632e93738c24fb880d61477a6b9b81bd7ea5ba1062ab84a939e6df
-  hash_d: d5a653960a65a44146be2fba029ff3dc58432632429c313cdaefd24a82ad47b0
+  hash_d: e02c19156e29a37b7d53eb153f5e3e4def7ee20501bc543cd25b5dadaebc5528
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -531,7 +531,7 @@ documents:
 - name: atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
   path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one.md
   hash_c: 933495197ebf15f7f267e111ac505b7964ec7654660b81ba036bfcbbfb2593d7
-  hash_d: 96cdf1550ce07a306f9c238dff9b15bcb4567bef1c1c7f00e705d5260f0321ff
+  hash_d: e45bf96efa682fe19b3a1d2f8555f76c09d85a7e9578fb3690bc24ce37034c8b
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -543,7 +543,7 @@ documents:
 - name: atom-genetic-decomposition-does-not-imply-linear-learning
   path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-does-not-imply-linear-learning.md
   hash_c: bedf42c39fb24af9705b75f6de3022388bef2e19e9cb96a9c559061535a9e905
-  hash_d: 28487c3562fa8eb9ecf9c65b42596080f9247fde806e931fcc9a53859b0eefc4
+  hash_d: 00c94ac2ae1edcf50115aa774e70f335b93dc5f76f5f337df05712e64efcac08
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -555,7 +555,7 @@ documents:
 - name: atom-cognitive-path-and-genetic-decomposition-are-not-the-same
   path: desk/atoms/apos/genetic-decomposition/non-uniqueness/atom-cognitive-path-and-genetic-decomposition-are-not-the-same.md
   hash_c: ac555d8f332cb5741a34ea7a52f1a0020b22943c946b74066b7d39f576599e54
-  hash_d: 8b0cad9fd98af693928964bc426b68f1820b387476ed47c3f20ddbcd42406333
+  hash_d: a46d474aabdc842c808a2087fc8c4e7afe9510210f27325635ddc3a60e48de70
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -567,7 +567,7 @@ documents:
 - name: atom-function-genetic-decomposition-begins-with-actions-on-elements
   path: desk/atoms/apos/mathematical-domains/functions/atom-function-genetic-decomposition-begins-with-actions-on-elements.md
   hash_c: c965ae4586a86b7f199c30505fec98496e0dcae2a165b079cc2dbc260155e1eb
-  hash_d: 905b498e7c6e65d6e7fc96a237e967713a4ba2fb88acb6dc922a269da5862b1d
+  hash_d: 24d98802a5c06a04b8a8e5c5ce7ddad7061e772f5b788b40993dd4ed1d867bb8
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -579,7 +579,7 @@ documents:
 - name: atom-function-object-conception-supports-sets-operations-and-limits-of-functions
   path: desk/atoms/apos/mathematical-domains/functions/atom-function-object-conception-supports-sets-operations-and-limits-of-functions.md
   hash_c: 130c0ebd8d6b5cf6e4fc8a5c6743e5234b03ce8ac9486e9b24afbdd3afb53950
-  hash_d: 7895ae302567f8de434e507de4ff8097227c0ddc58d4988666be96add1e60af0
+  hash_d: 6a3525021ece5f5e73c608108c206384fbd70f3d0511f467fa045b600bbdc2b6
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -591,7 +591,7 @@ documents:
 - name: atom-induction-genetic-decomposition-requires-function-and-logic-schemas
   path: desk/atoms/apos/mathematical-domains/induction/atom-induction-genetic-decomposition-requires-function-and-logic-schemas.md
   hash_c: b8afd577cf52de26b63db704df30d38e09c4d5f08895876f520945170c456d53
-  hash_d: fa8be1bcdd21e519b75653747bfd92d09ca119e1165061e47ccda08d9d394e2f
+  hash_d: cc5ce5c219ef33f698e329a6e5bc65a316b8aa7489303dc81cc5f9d230ea0438
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -603,7 +603,7 @@ documents:
 - name: atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting
   path: desk/atoms/apos/pedagogy/activities/atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting.md
   hash_c: 26161573c75a995461764560e6244a101201ebc4854d7db890bcad137a8689b7
-  hash_d: ac9efdad6d8759b39fd588d36d0892476a0332666e9db4ed92fadab49bf0ebd1
+  hash_d: 46a9d38fe0177d67239e909bb0fabc60c0539e74f2eca309d5796f3131d20dc6
   semantic_tags:
   - domain:mathematics-education
   - layer:pedagogy
@@ -615,7 +615,7 @@ documents:
 - name: atom-classroom-discussion-helps-students-reflect-on-activity-work
   path: desk/atoms/apos/pedagogy/class-discussion/atom-classroom-discussion-helps-students-reflect-on-activity-work.md
   hash_c: 16c90f01ca6228547eae19d46874ef1c41dba39ac32e915245a5fd617023a710
-  hash_d: d72c49050ff843e166accd9ad170a86c20eb4f94d95ea2dd3c0ce738a603983f
+  hash_d: 241de9d3a7b1188375d1f91931ef891c6e10c89ace132777295ae3e08011385e
   semantic_tags:
   - domain:mathematics-education
   - layer:pedagogy
@@ -627,7 +627,7 @@ documents:
 - name: atom-exercises-reinforce-constructions-from-activities-and-discussion
   path: desk/atoms/apos/pedagogy/exercises/atom-exercises-reinforce-constructions-from-activities-and-discussion.md
   hash_c: 44d7886985a03eb0b6311ac1341f70c39307a46fd9e574d4211914ca6feb6494
-  hash_d: 8c4be8fde970d2804c6fdc6ada9f6a36360d23cc3ed7df2ec4079c039acac564
+  hash_d: 119ceb53f27459177d4282cc4fc31bba95af1a2845a0f192f51808bb03b96c9f
   semantic_tags:
   - domain:mathematics-education
   - layer:pedagogy
@@ -639,7 +639,7 @@ documents:
 - name: atom-isetl-syntax-stays-close-to-standard-mathematical-notation
   path: desk/atoms/apos/pedagogy/isetl/atom-isetl-syntax-stays-close-to-standard-mathematical-notation.md
   hash_c: 4479e312c5724b7e3b62eb02c98d9a54719fe53d78bb7aa1177af77a355f5537
-  hash_d: 0538781f8286136a1fc248bf062f87cdf341b104ced75095f5174362793ebd77
+  hash_d: cc5eda40e1a5dc04cc7879b9d8267c3ddee7b3482016d2cdafc98b0cc8110e09
   semantic_tags:
   - domain:mathematics-education
   - layer:pedagogy
@@ -651,7 +651,7 @@ documents:
 - name: atom-research-cycle-centers-on-two-evaluative-questions
   path: desk/atoms/apos/research/research-cycle/atom-research-cycle-centers-on-two-evaluative-questions.md
   hash_c: 3d7dd502975a05d11ade83b99c6a63a0e4ee5048ee248f7fdedecd5488778c90
-  hash_d: 978c39e9b361397e325be2abdf54629f7bfa4e15bb4ec66c076a82d1633db661
+  hash_d: d0151b72f28cd106f22a07ddaf6425f66236045c43057fea920ac5ac633db6da
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -662,7 +662,7 @@ documents:
 - name: atom-interviews-are-the-primary-data-source-in-apos-research
   path: desk/atoms/apos/research/data-collection/atom-interviews-are-the-primary-data-source-in-apos-research.md
   hash_c: 7d129d172446c1fc46ff9abde20c032d65db5a572075420257c6908c700296c0
-  hash_d: 6338356f0d261056547e1d6f6ad0422c0526f6a4a6a0029cd6c65483073dc442
+  hash_d: d3d23626641c5a3423ee97b1101df486f510588d10eb45e89753ea63c8bf337b
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -674,7 +674,7 @@ documents:
 - name: atom-apos-interviews-use-prompting-to-probe-construction-in-progress
   path: desk/atoms/apos/research/data-collection/atom-apos-interviews-use-prompting-to-probe-construction-in-progress.md
   hash_c: d12a5856baaf3245678192bd8ef54d2a43feba621250b8c652bc8263a511ba1d
-  hash_d: 1b41ebce6c3cdb30070f89eb9b59719c85ac8ac7466d13585a3c99848968d1dc
+  hash_d: e7a02f3b620eb31863dee64dc2a09ec71a2310b314acb9dbba5bb1d5521e8125
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -686,7 +686,7 @@ documents:
 - name: atom-apos-research-relies-on-collaborative-triangulation
   path: desk/atoms/apos/research/data-collection/atom-apos-research-relies-on-collaborative-triangulation.md
   hash_c: 20299fc36c9fa5c4036075991e0f6d11ae4dd3e3ab6c30e01f9e1b248fd59781
-  hash_d: 33d87740cfcc9c9e41304120617ddbbfa18c223e2bc357466885d02cabddee24
+  hash_d: 577a5f8781b464070f5ad739f4e80c4e2241e29c716fad8f0c86740d5d3dab64
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -698,7 +698,7 @@ documents:
 - name: atom-schema-is-a-coherent-framework-of-linked-structures
   path: desk/atoms/apos/core-structures/schema/atom-schema-is-a-coherent-framework-of-linked-structures.md
   hash_c: c575eaef45a7cda69e6fe0ec5945f18e06fcabce25b27222b7dbbb6d01c78b88
-  hash_d: 9c0e7cb49ff02d39cba14f91bb0d21052ec67bdc54db98f9efd95bc40099c573
+  hash_d: 7f27a15cec685224f44e059daf238e497fa22605a5850189ae4cde6b3280235b
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -709,7 +709,7 @@ documents:
 - name: atom-schema-coherence-determines-what-falls-within-its-scope
   path: desk/atoms/apos/schema-development/schema-interaction/atom-schema-coherence-determines-what-falls-within-its-scope.md
   hash_c: 630d1d486ba99782a69ea439c73c722a315875209ea647b08d47c67397eb2b92
-  hash_d: e8753b38d008e546fa4c3d9fed8a7c73820a7f1f8eddf786e4f066da504e842c
+  hash_d: d26c52f4a95413b0642a05078a05db810b28051395848e8665df24f9a67d9fc5
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -721,7 +721,7 @@ documents:
 - name: atom-schema-development-in-apos-uses-the-intra-inter-trans-triad
   path: desk/atoms/apos/schema-development/schema-growth/atom-schema-development-in-apos-uses-the-intra-inter-trans-triad.md
   hash_c: 754cd368df938dd2bbd22b375376091c5effab81c09b6afa839e258ff0dd8f50
-  hash_d: d6c27cf8493ff3e6fe63a333d4dc47e01e10161c2500671cefef0f2929617f35
+  hash_d: 719f4da2f1307db5ff7641ea614da06c6f88b120742d6e0749fe3b38f85a975a
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -733,7 +733,7 @@ documents:
 - name: atom-historical-development-can-inform-genetic-decomposition-design
   path: desk/atoms/apos/genetic-decomposition/design/atom-historical-development-can-inform-genetic-decomposition-design.md
   hash_c: b4ea70e4a12265f10f2ac551924c7598b443d2f6bff43373358b9f93106afd22
-  hash_d: 328ce9c2006db5bc9f91bd94cff48919235774c43a30463ab52923381f2591cd
+  hash_d: 68a4b877f6fb0b5481e0762618502190c0b4aeecbbff488fc5a7aa9976770b29
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -745,7 +745,7 @@ documents:
 - name: atom-textbook-analysis-can-inform-preliminary-genetic-decompositions
   path: desk/atoms/apos/genetic-decomposition/design/atom-textbook-analysis-can-inform-preliminary-genetic-decompositions.md
   hash_c: 7bb2040fd026a00cb8513c677c5fca64cb381d5bae8e3bbbb846e52b7f834eff
-  hash_d: 29cc1913274185cae1e5a9a62dee9600619b770aaaf6e99c567a49f277541ae1
+  hash_d: 8b4e56711906dbcae9478f1a512a1fb1ab7ff7404771f30787322e23cb0f47b1
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -757,7 +757,7 @@ documents:
 - name: atom-genetic-decompositions-can-also-emerge-from-student-data
   path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decompositions-can-also-emerge-from-student-data.md
   hash_c: f0293f947f18af54cf1b54f97466967670bab2858586f85da231b5375e9931fa
-  hash_d: 58bdb6694de753a8d2d2ab0bd9a004f5eb1cb1c554fd5915b37e51f305e98ff7
+  hash_d: fa2f0d6fc300b721ea3b31a2fd287e4f9e53ea4baf3a103834ae3064150c13c6
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -769,7 +769,7 @@ documents:
 - name: atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set
   path: desk/atoms/apos/mathematical-domains/spanning-set-and-span/atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set.md
   hash_c: 21770c3d6ff3cef3b2490a885df2fd7d419e1a6af5b171bf88054ab9b3dfe414
-  hash_d: bbffd395339c8ca375ff385bfd9021df5a3ba38979526bf661891c5ae9250fd9
+  hash_d: f929f44773ce7b7e877b50825fd6e2e777ec66acbb23fd930dd1ad340dce5410
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -781,7 +781,7 @@ documents:
 - name: atom-span-construction-starts-from-actions-on-linear-combinations
   path: desk/atoms/apos/mathematical-domains/spanning-set-and-span/atom-span-construction-starts-from-actions-on-linear-combinations.md
   hash_c: 63675f56b4358a1c193154675fb97147ea20a46b639b9842143fac8d726efe4f
-  hash_d: 61defd87dedf3f65b55902d0c0b08d2d3111ae3ced671e98ab834fa124becfdb
+  hash_d: c42956c7c3ee7625a9d5e009f3d42e8ad2d9b897bb69c87ba4e752c184986b62
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -793,7 +793,7 @@ documents:
 - name: atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects
   path: desk/atoms/apos/mathematical-domains/spanning-set-and-span/atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects.md
   hash_c: 72a1408c4f15fab9f79a6fbbe790c5d4a0f92936ad9ad62ff34fd2f42693f5ec
-  hash_d: f7315cb996d89d4297c9e9084ace0810c6d5ad0e82e5108503c92a5374ed8512
+  hash_d: d690fa22c2994ef8adab2d1a4d3a79499d55b6eb414f171ce2d8f100696cdd78
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -805,7 +805,7 @@ documents:
 - name: atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences
   path: desk/atoms/apos/genetic-decomposition/role-in-research/atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences.md
   hash_c: 2790f8453d8226cf96102d18de3ac4f7a57918be6d25877100c8f5739b511866
-  hash_d: b6b0591f6143834605945f634ac034723f4bc5f4f94034cb80d2ec9216ec4201
+  hash_d: 70d20e881f060bc08d04c38f7c868b1e632c94386fd6a0e4612981f1432bea35
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -817,7 +817,7 @@ documents:
 - name: atom-theoretical-models-increase-reliability-of-data-analysis
   path: desk/atoms/apos/research/paradigm/atom-theoretical-models-increase-reliability-of-data-analysis.md
   hash_c: c5e5d64f675ff1d6444b11a75079d0e0b4596aeba664a1692b0bda76c702631b
-  hash_d: 3c8d8cc286e1875f38a616c8eb749c0762b8d391b695422113f59507a5ac88de
+  hash_d: 16736833d08d3fc0de9b35247906c19b42d0a9b1dd0b3539ef2f85fb255f2460
   semantic_tags:
   - domain:mathematics-education
   - layer:research
@@ -829,7 +829,7 @@ documents:
 - name: atom-isetl-can-treat-certain-data-types-as-first-class-objects
   path: desk/atoms/apos/pedagogy/isetl/atom-isetl-can-treat-certain-data-types-as-first-class-objects.md
   hash_c: bbc4e18b90fcf85d259389c5e94b4f4d12606de1f69c6384fd6618fd14d49fb0
-  hash_d: 859addd3668e0da637e26d6df08658b8390944134b8da888ab6ab5f8b18b01a9
+  hash_d: f377ae5327bfc9eff60dfc3830131fbe156fdb269db859b9b86779f1d657ffe9
   semantic_tags:
   - domain:mathematics-education
   - layer:pedagogy
@@ -841,7 +841,7 @@ documents:
 - name: atom-isetl-supports-function-as-input-output-and-transformable-entity
   path: desk/atoms/apos/pedagogy/isetl/atom-isetl-supports-function-as-input-output-and-transformable-entity.md
   hash_c: f3c5d7031624362dc456dd5033df5167a57705a44aabe2cee69715cee35420db
-  hash_d: 49759f2098779a8a106fb4f84f794493f2220c1e9a4b2ed2ca388b0fa740eec3
+  hash_d: 3aa66f0654e42c0c3098a985029248de5b8867b0c23c8741aa2dda2cc73fb4d2
   semantic_tags:
   - domain:mathematics-education
   - layer:pedagogy
@@ -853,7 +853,7 @@ documents:
 - name: atom-computer-activities-support-interiorization-by-generalizing-specific-actions
   path: desk/atoms/apos/pedagogy/activities/atom-computer-activities-support-interiorization-by-generalizing-specific-actions.md
   hash_c: 0e33e0052e92cf93326357dab681fd1c82a6c94fdd20948655960cdbb9f84fd8
-  hash_d: 5f026cd42483cc8c708e215e28201d93f9d8b9ab48af2ae816295ee5cfd0212e
+  hash_d: 42cadb11bb6cc37f89fccce00238325620739cab6b251346ae4cf41e9f7ec0fa
   semantic_tags:
   - domain:mathematics-education
   - layer:pedagogy
@@ -865,7 +865,7 @@ documents:
 - name: atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
   path: desk/atoms/apos/pedagogy/activities/atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs.md
   hash_c: 777c87f4b3e016821e27b4d041530cd5304baaddfccc521cc4d684c9f6bc54cd
-  hash_d: 69ec7502c8b6d37c132ee4013d1ea57564fc6e296f9c931eec6f438b4d25bf6c
+  hash_d: e832a164a7334b6dd95a5a15d249580fb0c5b7c492c1c90c1dd97b763e7e3131
   semantic_tags:
   - domain:mathematics-education
   - layer:pedagogy
@@ -877,7 +877,7 @@ documents:
 - name: atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
   path: desk/atoms/apos/mathematical-domains/groups/atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas.md
   hash_c: 23d985672904c9f0b6b6396a81118c7995d215c82ff6df2f4e3685496a4030fb
-  hash_d: 0fdfa3fb948c0249733b56a3f580d8092f63a9bd203ef6e9dd346b991e617164
+  hash_d: 3c1f06cc3e8cb4e7addbe807ce1f4536252355f9d4fb75f3d26e0ee0d803de83
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -889,7 +889,7 @@ documents:
 - name: atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms
   path: desk/atoms/apos/mathematical-domains/groups/atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms.md
   hash_c: c4d9aac94beafb43b144dfe68147b3725cd912c2c39d80e3b7a7471a007843ba
-  hash_d: 9d1bc713a29a545e7ec945a8893069b12b8c262cdb347d1e99ab72c4327ac491
+  hash_d: c2afc36c8639c3080b8be90768be2bd79ce9efb99409eabe2fd9f5f549176620
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -901,7 +901,7 @@ documents:
 - name: atom-early-group-activities-develop-set-as-process
   path: desk/atoms/apos/mathematical-domains/groups/atom-early-group-activities-develop-set-as-process.md
   hash_c: c9bcbd1c04624f054eec6c30b08b755a89099c5de11defece6d35b24a6f6db05
-  hash_d: 276f141d4fbd51f3e6e7bf242f0e69768e42447ec0f110be0c22bb44cea98fdc
+  hash_d: 6efbdfb3d442a8d5a591831f9dd998351d57847691072e0182d724a890fb3c96
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -913,7 +913,7 @@ documents:
 - name: atom-levels-are-content-specific-while-stages-are-general
   path: desk/atoms/apos/mechanisms/levels/atom-levels-are-content-specific-while-stages-are-general.md
   hash_c: 6facdb94c902bf19b72ddcdfdf6b6a614814b8f22dc949becc8aeb33c306818e
-  hash_d: a589058c8c1e1854b8dcd3ef52d707101ce8e248d7eba12d2d7b2ac9fc263543
+  hash_d: ccf3c32e6632eaaf15afb45674c52a987514cfd8eecfd0d4f751b7936b7759ab
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -925,7 +925,7 @@ documents:
 - name: atom-a-stage-cannot-be-skipped-without-loss-of-coherence
   path: desk/atoms/apos/mechanisms/stages/atom-a-stage-cannot-be-skipped-without-loss-of-coherence.md
   hash_c: 18b88bf3e3c4a233b00de2f858a21b06b64a4d047bcb99a9d606907ab6946d1a
-  hash_d: e4b18162d8c626b73a2e431e80b862f77ee753bd2ce090f1e07745bafae93a5e
+  hash_d: 83a417fcebee5475e311389cf017f03f4797d4621894dcf4846af130c83b267c
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -937,7 +937,7 @@ documents:
 - name: atom-levels-may-appear-or-not-appear-in-observable-data
   path: desk/atoms/apos/mechanisms/levels/atom-levels-may-appear-or-not-appear-in-observable-data.md
   hash_c: b7d66acc648403f5c85ffcb6def76ecd30b2aa54107e1df19462cf85d3843f35
-  hash_d: 6f68bd621b97c06cd45fdf7e3504d518de2376c3b6c72612084304ed99dcd83e
+  hash_d: 0705cafb3b62c7a9bb4ccf27a48c4049183b9e35f18f0ecc3f81e207f80c25e0
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -948,7 +948,7 @@ documents:
 - name: atom-writing-computer-procedures-can-help-students-move-from-action-to-process
   path: desk/atoms/apos/pedagogy/activities/atom-writing-computer-procedures-can-help-students-move-from-action-to-process.md
   hash_c: f999e9e0a8630a1b4d9514d4b0a7091caf9c6b59d9bf4c647ab7ba744b23740c
-  hash_d: b5cd3e3ed0da1f8862f744484deada5b79aad78fed277f8c847fc1d8c67b2aac
+  hash_d: 7fd882f0383be1c8544b1fcc82f1076e226d27e3ce31ad3facc2c01e474915fd
   semantic_tags:
   - domain:mathematics-education
   - layer:pedagogy
@@ -960,7 +960,7 @@ documents:
 - name: atom-transforming-computer-procedures-can-help-students-move-from-process-to-object
   path: desk/atoms/apos/pedagogy/activities/atom-transforming-computer-procedures-can-help-students-move-from-process-to-object.md
   hash_c: 8039ec2e35cf5ec97ce0aaf01e15ccd936c5a44558417857008ac2a01532ede9
-  hash_d: f1b1404bfd9545d363e989a1177d437a8b88fcde1afc54567450bdc6be6f7dc4
+  hash_d: 9b119492b535b2e8c5cae4308cfc2b15b0e984380ef360b871f77e564d7b43ce
   semantic_tags:
   - domain:mathematics-education
   - layer:pedagogy
@@ -972,7 +972,7 @@ documents:
 - name: atom-totality-is-proposed-to-explain-difficulties-between-process-and-object
   path: desk/atoms/apos/mechanisms/totality/atom-totality-is-proposed-to-explain-difficulties-between-process-and-object.md
   hash_c: 66370fcc021fbe3cfd74bdcf01fbe75223523c5b1407ed60e72d9407357e6bdd
-  hash_d: 9b88312ef461fd1485faf59334bff7e296234ac1d30386d9fc5b06b5d4b32099
+  hash_d: fee166ec4f8aaac1607955cb8e9cddae407c3dce7820cf066016d5819d80bb85
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
@@ -984,7 +984,7 @@ documents:
 - name: atom-infinite-processes-make-the-process-to-object-transition-especially-difficult
   path: desk/atoms/apos/mathematical-domains/infinity/atom-infinite-processes-make-the-process-to-object-transition-especially-difficult.md
   hash_c: c230420b422ec9f52adbb641bb0220bcb00d10bf3da9ca7b2afe926e3b1ce0d7
-  hash_d: 56492bba470e397f8342679f3a717ede821349f4f76ef4d38626f1336425ce4f
+  hash_d: 4914622b5a3be5546ad65bc7c43c2b3f0f18c1c0d71352b7a540d71fa321947d
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -996,7 +996,7 @@ documents:
 - name: atom-process-language-about-repeating-decimals-can-block-object-construction
   path: desk/atoms/apos/mathematical-domains/repeating-decimals/atom-process-language-about-repeating-decimals-can-block-object-construction.md
   hash_c: a48f398d9329adcbd6cc88e3257d2f3fa840979e68c130853ed8f57f24bd57d0
-  hash_d: cdf12b1942a93e7e01b16d6eba7fa05fb1b6fb0bb6f6cd2d1b920fae2b0c8bf8
+  hash_d: ffe32b118ad9b47c99e0b694fa2d9c26dd6e81a3982bc9e9889a3188f62b953a
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -1008,7 +1008,7 @@ documents:
 - name: atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
   path: desk/atoms/apos/applications/elementary-math/atom-elementary-school-apos-work-relies-on-concrete-objects-for-action.md
   hash_c: b8b09c7c319ce0c78a04958cbdad2b4e4ec0628d74aa40f80764d5abd8bc3e92
-  hash_d: 2b7ed88833660dca9913a3793ef80461591fd4468183ecc77da12d6fdc456a75
+  hash_d: 83e65d16b17ab69d4e4dd39959312a11377d6c661cd8f4fe7432d4e58d436dfe
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -1020,7 +1020,7 @@ documents:
 - name: atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization
   path: desk/atoms/apos/applications/elementary-math/atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization.md
   hash_c: ddd693496b16ba184bfcc31ea9f90656f755259ab034ce28236cbefdbc2fe303
-  hash_d: 4aedc0e53c7ed253792fb59730fb00a76117c64b113c1630f1b6558f0641a719
+  hash_d: da28e61e452fffe84d8f3427ffadc36e0d1576a20f25f0fbaf342b6288a1501c
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -1032,7 +1032,7 @@ documents:
 - name: atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi
   path: desk/atoms/apos/applications/elementary-math/atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi.md
   hash_c: 70d8ebcbaae5e0b32c088470da3e3fe4d2c085b925c6af8b7f78255c8e6fb062
-  hash_d: dd7989b102f6371af39fdfcd8362e64cb4625c712bb978bf364f9f405f6f5dad
+  hash_d: cc22933f6adb169535f44eaf39c8e9829715140594b1c13788017302f226fca3
   semantic_tags:
   - domain:mathematics-education
   - layer:applications
@@ -1044,7 +1044,7 @@ documents:
 - name: atom-annotated-bibliography-materializes-the-breadth-of-apos-research
   path: desk/atoms/apos/synthesis/conclusions/atom-annotated-bibliography-materializes-the-breadth-of-apos-research.md
   hash_c: a49aabda46cbdc259d2d7fc6bb331de86f463ff27c439045d8e5b525dcd872ac
-  hash_d: 22bed31e62f723113f4cb007fd64c52189d939b692ef7230112e7f042502bcc3
+  hash_d: 90482e73932a2b8288d4a36049d075df564b27c5dce55c87bbd9dbf56ece43d9
   semantic_tags:
   - domain:mathematics-education
   - layer:theory
