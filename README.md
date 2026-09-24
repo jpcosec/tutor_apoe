@@ -2,6 +2,28 @@
 
 Repositorio de trabajo para extraer, organizar y consultar conocimiento sobre APOS/ APOE usando **Deskops** y **SLDB**.
 
+## Consulta simple de la KB
+
+No necesitas usar un chatbot ni configurar claves de IA. Desde la Terminal:
+
+```bash
+cd /Users/investigacion/proyectos/tutor_apoe
+python scripts/kb.py serve
+```
+
+Luego abre <http://127.0.0.1:8000>. El visor permite buscar y leer átomos de
+la base. Para detenerlo, vuelve a la Terminal y presiona `Control + C`.
+
+También hay una interfaz de comandos respaldada por **SLDB**:
+
+```bash
+python scripts/kb.py search topic:encapsulation
+python scripts/kb.py check
+```
+
+`search` delega la consulta a `sldb find`; por eso puede buscar texto y tags
+semánticos como `topic:schema` o `layer:pedagogy`.
+
 ## Estructura
 
 - `sources/` — fuentes primarias, por ejemplo el PDF base.
