@@ -1,0 +1,4 @@
+[submodule "agent"]
+	path = agent
+	url = https://github.com/jpcosec/conversational-agent-arch.git
+	branch = claude/tutor-example-chat-kb-a32u4y

@@ -255,6 +255,26 @@ find desk/atoms -type f -name 'atom-*.md' | wc -l
 sldb find topic:infinity --in semantic --store .sldb --pythonpath .
 ```
 
+## Agente conversacional
+
+`agent/` es un submódulo con el runtime conversacional
+([`conversational-agent-arch`](https://github.com/jpcosec/conversational-agent-arch))
+sirviendo estos átomos como tutor: un chat que responde solo desde la KB, con
+un inspector que muestra qué átomos usó cada respuesta, y un visor de la KB.
+
+```bash
+git clone --recurse-submodules https://github.com/jpcosec/tutor_apoe
+# (o, en un clone existente: git submodule update --init agent)
+
+./agent.sh kb       # regenera la KB del agente desde desk/atoms
+./agent.sh run      # servidor local: http://127.0.0.1:8000 (chat) y /mindmap (KB)
+./agent.sh deploy   # deploy a Modal con URL pública
+```
+
+`run` requiere el runtime instalado y credenciales de Gemini en `agent/.env`;
+`deploy` solo python, git y una cuenta de Modal. Detalle en
+`agent/docs/TUTOR-APOE.md`.
+
 ## Nota
 
 Deskops gestiona el **workflow** del repo.
