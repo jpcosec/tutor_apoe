@@ -10,193 +10,10 @@
       },
       "lists": {},
       "broadcasts": {},
-      "blocks": {
-        "flag": {
-          "opcode": "event_whenflagclicked",
-          "next": "sayIntro",
-          "parent": null,
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": true,
-          "x": 80,
-          "y": 80
-        },
-        "sayIntro": {
-          "opcode": "looks_sayforsecs",
-          "next": "askA",
-          "parent": "flag",
-          "inputs": {"MESSAGE": [1, [10, "Resolveremos una ecuación de la forma a × x + b = 0."]], "SECS": [1, [4, "3"]]},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "askA": {
-          "opcode": "sensing_askandwait",
-          "next": "setA",
-          "parent": "sayIntro",
-          "inputs": {"QUESTION": [1, [10, "Escribe el valor de a (debe ser distinto de 0):"]]},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "setA": {
-          "opcode": "data_setvariableto",
-          "next": "askB",
-          "parent": "askA",
-          "inputs": {"VALUE": [1, "answerA"]},
-          "fields": {"VARIABLE": ["a", "var_a"]},
-          "shadow": false,
-          "topLevel": false
-        },
-        "answerA": {
-          "opcode": "sensing_answer",
-          "next": null,
-          "parent": "setA",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "askB": {
-          "opcode": "sensing_askandwait",
-          "next": "setB",
-          "parent": "setA",
-          "inputs": {"QUESTION": [1, [10, "Escribe el valor de b:"]]},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "setB": {
-          "opcode": "data_setvariableto",
-          "next": "ifAZero",
-          "parent": "askB",
-          "inputs": {"VALUE": [1, "answerB"]},
-          "fields": {"VARIABLE": ["b", "var_b"]},
-          "shadow": false,
-          "topLevel": false
-        },
-        "answerB": {
-          "opcode": "sensing_answer",
-          "next": null,
-          "parent": "setB",
-          "inputs": {},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "ifAZero": {
-          "opcode": "control_if_else",
-          "next": null,
-          "parent": "setB",
-          "inputs": {"CONDITION": [2, "aEqualsZero"], "SUBSTACK": [2, "warnAZero"], "SUBSTACK2": [2, "setX"]},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "aEqualsZero": {
-          "opcode": "operator_equals",
-          "next": null,
-          "parent": "ifAZero",
-          "inputs": {"OPERAND1": [1, "getAForCheck"], "OPERAND2": [1, [4, "0"]]},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "getAForCheck": {
-          "opcode": "data_variable",
-          "next": null,
-          "parent": "aEqualsZero",
-          "inputs": {},
-          "fields": {"VARIABLE": ["a", "var_a"]},
-          "shadow": false,
-          "topLevel": false
-        },
-        "warnAZero": {
-          "opcode": "looks_sayforsecs",
-          "next": null,
-          "parent": "ifAZero",
-          "inputs": {"MESSAGE": [1, [10, "No se puede resolver como ecuación de primer grado: a debe ser distinto de 0."]], "SECS": [1, [4, "5"]]},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "setX": {
-          "opcode": "data_setvariableto",
-          "next": "sayAnswer",
-          "parent": "ifAZero",
-          "inputs": {"VALUE": [1, "divide"]},
-          "fields": {"VARIABLE": ["x", "var_x"]},
-          "shadow": false,
-          "topLevel": false
-        },
-        "divide": {
-          "opcode": "operator_divide",
-          "next": null,
-          "parent": "setX",
-          "inputs": {"NUM1": [1, "negateB"], "NUM2": [1, "getA"]},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "negateB": {
-          "opcode": "operator_subtract",
-          "next": null,
-          "parent": "divide",
-          "inputs": {"NUM1": [1, [4, "0"]], "NUM2": [1, "getB"]},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "getB": {
-          "opcode": "data_variable",
-          "next": null,
-          "parent": "negateB",
-          "inputs": {},
-          "fields": {"VARIABLE": ["b", "var_b"]},
-          "shadow": false,
-          "topLevel": false
-        },
-        "getA": {
-          "opcode": "data_variable",
-          "next": null,
-          "parent": "divide",
-          "inputs": {},
-          "fields": {"VARIABLE": ["a", "var_a"]},
-          "shadow": false,
-          "topLevel": false
-        },
-        "sayAnswer": {
-          "opcode": "looks_sayforsecs",
-          "next": null,
-          "parent": "setX",
-          "inputs": {"MESSAGE": [1, "joinAnswer"], "SECS": [1, [4, "6"]]},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "joinAnswer": {
-          "opcode": "operator_join",
-          "next": null,
-          "parent": "sayAnswer",
-          "inputs": {"STRING1": [1, [10, "La solución es x = "]], "STRING2": [1, "getX"]},
-          "fields": {},
-          "shadow": false,
-          "topLevel": false
-        },
-        "getX": {
-          "opcode": "data_variable",
-          "next": null,
-          "parent": "joinAnswer",
-          "inputs": {},
-          "fields": {"VARIABLE": ["x", "var_x"]},
-          "shadow": false,
-          "topLevel": false
-        }
-      },
+      "blocks": {},
       "comments": {},
       "currentCostume": 0,
-      "costumes": [],
+      "costumes": [{"assetId": "7523581199a5d1d9feea8bee706d6e47", "name": "escenario", "md5ext": "7523581199a5d1d9feea8bee706d6e47.svg", "dataFormat": "svg", "rotationCenterX": 240, "rotationCenterY": 180}],
       "sounds": [],
       "volume": 100,
       "layerOrder": 0,
@@ -204,9 +21,54 @@
       "videoTransparency": 50,
       "videoState": "on",
       "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "Tutor",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "flag": {"opcode": "event_whenflagclicked", "next": "askA", "parent": null, "inputs": {}, "fields": {}, "shadow": false, "topLevel": true, "x": 70, "y": 70},
+        "askA": {"opcode": "sensing_askandwait", "next": "setA", "parent": "flag", "inputs": {"QUESTION": [1, [10, "Ecuación: a × x + b = 0. Escribe a (distinto de 0):"]]}, "fields": {}, "shadow": false, "topLevel": false},
+        "setA": {"opcode": "data_setvariableto", "next": "askB", "parent": "askA", "inputs": {"VALUE": [3, "answerA", [10, ""]]}, "fields": {"VARIABLE": ["a", "var_a"]}, "shadow": false, "topLevel": false},
+        "answerA": {"opcode": "sensing_answer", "next": null, "parent": "setA", "inputs": {}, "fields": {}, "shadow": false, "topLevel": false},
+        "askB": {"opcode": "sensing_askandwait", "next": "setB", "parent": "setA", "inputs": {"QUESTION": [1, [10, "Escribe b:"]]}, "fields": {}, "shadow": false, "topLevel": false},
+        "setB": {"opcode": "data_setvariableto", "next": "ifAZero", "parent": "askB", "inputs": {"VALUE": [3, "answerB", [10, ""]]}, "fields": {"VARIABLE": ["b", "var_b"]}, "shadow": false, "topLevel": false},
+        "answerB": {"opcode": "sensing_answer", "next": null, "parent": "setB", "inputs": {}, "fields": {}, "shadow": false, "topLevel": false},
+        "ifAZero": {"opcode": "control_if_else", "next": null, "parent": "setB", "inputs": {"CONDITION": [2, "aEqualsZero"], "SUBSTACK": [2, "warnAZero"], "SUBSTACK2": [2, "setX"]}, "fields": {}, "shadow": false, "topLevel": false},
+        "aEqualsZero": {"opcode": "operator_equals", "next": null, "parent": "ifAZero", "inputs": {"OPERAND1": [3, "getAForCheck", [10, ""]], "OPERAND2": [1, [4, "0"]]}, "fields": {}, "shadow": false, "topLevel": false},
+        "getAForCheck": {"opcode": "data_variable", "next": null, "parent": "aEqualsZero", "inputs": {}, "fields": {"VARIABLE": ["a", "var_a"]}, "shadow": false, "topLevel": false},
+        "warnAZero": {"opcode": "looks_sayforsecs", "next": null, "parent": "ifAZero", "inputs": {"MESSAGE": [1, [10, "a no puede ser 0 para una ecuación de primer grado."]], "SECS": [1, [4, "5"]]}, "fields": {}, "shadow": false, "topLevel": false},
+        "setX": {"opcode": "data_setvariableto", "next": "sayAnswer", "parent": "ifAZero", "inputs": {"VALUE": [3, "divide", [10, ""]]}, "fields": {"VARIABLE": ["x", "var_x"]}, "shadow": false, "topLevel": false},
+        "divide": {"opcode": "operator_divide", "next": null, "parent": "setX", "inputs": {"NUM1": [3, "negateB", [10, ""]], "NUM2": [3, "getA", [10, ""]]}, "fields": {}, "shadow": false, "topLevel": false},
+        "negateB": {"opcode": "operator_subtract", "next": null, "parent": "divide", "inputs": {"NUM1": [1, [4, "0"]], "NUM2": [3, "getB", [10, ""]]}, "fields": {}, "shadow": false, "topLevel": false},
+        "getB": {"opcode": "data_variable", "next": null, "parent": "negateB", "inputs": {}, "fields": {"VARIABLE": ["b", "var_b"]}, "shadow": false, "topLevel": false},
+        "getA": {"opcode": "data_variable", "next": null, "parent": "divide", "inputs": {}, "fields": {"VARIABLE": ["a", "var_a"]}, "shadow": false, "topLevel": false},
+        "sayAnswer": {"opcode": "looks_sayforsecs", "next": null, "parent": "setX", "inputs": {"MESSAGE": [3, "joinAnswer", [10, ""]], "SECS": [1, [4, "6"]]}, "fields": {}, "shadow": false, "topLevel": false},
+        "joinAnswer": {"opcode": "operator_join", "next": null, "parent": "sayAnswer", "inputs": {"STRING1": [1, [10, "La solución es x = "]], "STRING2": [3, "getX", [10, ""]]}, "fields": {}, "shadow": false, "topLevel": false},
+        "getX": {"opcode": "data_variable", "next": null, "parent": "joinAnswer", "inputs": {}, "fields": {"VARIABLE": ["x", "var_x"]}, "shadow": false, "topLevel": false}
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [{"assetId": "9b954bfdc0db358b51ae757c5bf31ae2", "name": "tutor", "md5ext": "9b954bfdc0db358b51ae757c5bf31ae2.svg", "dataFormat": "svg", "rotationCenterX": 60, "rotationCenterY": 60}],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
     }
   ],
-  "monitors": [],
+  "monitors": [
+    {"id": "var_a", "mode": "default", "opcode": "data_variable", "params": {"VARIABLE": "a"}, "spriteName": null, "value": 0, "width": 0, "height": 0, "x": 5, "y": 5, "visible": true},
+    {"id": "var_b", "mode": "default", "opcode": "data_variable", "params": {"VARIABLE": "b"}, "spriteName": null, "value": 0, "width": 0, "height": 0, "x": 5, "y": 30, "visible": true},
+    {"id": "var_x", "mode": "default", "opcode": "data_variable", "params": {"VARIABLE": "x"}, "spriteName": null, "value": 0, "width": 0, "height": 0, "x": 5, "y": 55, "visible": true}
+  ],
   "extensions": [],
   "meta": {"semver": "3.0.0", "vm": "0.2.0", "agent": "Codex"}
 }
