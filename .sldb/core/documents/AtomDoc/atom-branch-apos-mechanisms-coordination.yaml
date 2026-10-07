@@ -1,0 +1,18 @@
+name: atom-branch-apos-mechanisms-coordination
+path: desk/atoms/branches/atom-branch-apos-mechanisms-coordination.md
+source_hash: 423e1f9b26716ff876d21f4f22b93ae03c2fdc4a79b8866e0a78332100f9b096
+content_hash: 90127237ccbd043f929c804b4162f870b51072f9b1b1b5d87ce9ec8e5b538bb8
+field_hashes:
+  id: 3ad85f598e1ffc44c54a2f71ac1901df0671e53a7d8d25d65dc082f6976b0d0f
+  title: 46ed35139b63b35b7cda4e83307b456491072a5d311ec82c8bc7bfaa4629e8cc
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

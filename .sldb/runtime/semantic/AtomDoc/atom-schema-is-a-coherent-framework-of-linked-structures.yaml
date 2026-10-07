@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/core-structures/schema/atom-schema-is-a-coherent-framework-of-linked-structures.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:schema
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: a30b2613dfa1b0df0822a07c12f8eff471238239eb383c422fef2b2d52ba4285

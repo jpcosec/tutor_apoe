@@ -8,6 +8,8 @@ tags:
   - topic:synthesis
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-synthesis-conclusions
 ---
 
 # La bibliografía anotada materializa la amplitud de la investigación APOS

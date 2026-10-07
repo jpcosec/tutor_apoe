@@ -1,0 +1,18 @@
+name: atom-branch-apos-pedagogy-ace-cycle
+path: desk/atoms/branches/atom-branch-apos-pedagogy-ace-cycle.md
+source_hash: f26f633dc61fa609605ad89481b64224c4d00772d6c516a7454659740e456324
+content_hash: e155d84364b2ff0257f8a081a40906cdaa729806a20fa3f69514ad02b9c6ddb3
+field_hashes:
+  id: 0c284f6f6da62e7ad282998c18d22222efa120083a46d4d9c78751857cc64024
+  title: f6e39c10510b9e406ce3d93af45fcc3cd9cb9d72aaa29c83bb25057675467b42
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

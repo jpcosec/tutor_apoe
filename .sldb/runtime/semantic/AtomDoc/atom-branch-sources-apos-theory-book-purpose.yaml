@@ -1,0 +1,11 @@
+model: AtomDoc
+path: desk/atoms/branches/atom-branch-sources-apos-theory-book-purpose.md
+tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 48bdf5d9c17e0a9a5f1cea99adf8a0071887ea01cd154ff3df040a4929121c33

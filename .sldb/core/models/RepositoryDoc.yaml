@@ -3,7 +3,10 @@ model_ref: deskops.models:RepositoryDoc
 path: /home/jp/proyectos/hum-ecosystem/tools/deskops/deskops/models/repository.py
 documents_index: .sldb/core/documents/RepositoryDoc.yaml
 sections_index: ''
-hash_b: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+model_hash: d9e11efc0c6a94cd47d6698fe77daa61f38ea4db866e4e1dedfa9ae4f61a4bea
+roster_hash: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+contract_hash: 4e3d7ee7a6c1475b5bd6a9cce0510dfc1b7d7e3ede1f63f68f797108a5a817cc
+documents_count: 0
 version: 1
 canonical: false
 family: null

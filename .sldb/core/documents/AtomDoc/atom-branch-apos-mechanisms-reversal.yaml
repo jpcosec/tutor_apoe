@@ -1,0 +1,18 @@
+name: atom-branch-apos-mechanisms-reversal
+path: desk/atoms/branches/atom-branch-apos-mechanisms-reversal.md
+source_hash: 7b1dacdaba3d0b0e26a7e049fe61ecc9f9fbd4198b3bc337c3737faa1e3aea9a
+content_hash: 279691af4ae2d789a24bf4633d27e44858bf8d5a865f3ee093e244aabe7a1d94
+field_hashes:
+  id: 61f0eb3958fa74a2ca7014e96a99eaa9113238deef72488cfb4e01c04ff35482
+  title: fa5ac48fc43133d380fb7852b8a720af1244560d7dd0338cd3dd05eb5ad8a843
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

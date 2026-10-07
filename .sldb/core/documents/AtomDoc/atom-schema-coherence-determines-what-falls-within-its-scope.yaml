@@ -1,0 +1,20 @@
+name: atom-schema-coherence-determines-what-falls-within-its-scope
+path: desk/atoms/apos/schema-development/schema-interaction/atom-schema-coherence-determines-what-falls-within-its-scope.md
+source_hash: 7bdca750b79da24ea9e6f51b6267aabf79548cf07a9185fc798eb665f2b3f333
+content_hash: 0463b7a5051ff7cefb324ad92e509995136ce72be708229cee8a44f8da405d58
+field_hashes:
+  id: dbd74e200ee2cb21396e1cd041e8175174bc792c2103bb4fc9f0d0a43f791659
+  title: 450ca492afc9a2e137adfd47c95af65070932f0d28c55d4e363fc0e38d90419f
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 493077c43eebb5905c36c98beffc76125012645fb86b6589df244a34350975cd
+  tags: d9c7ef0ab351bcf72d642b519cb82d9ac759bf34904d63785aa3f7a7a627e0b6
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:coherence
+- topic:schema
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,20 @@
+name: atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+path: desk/atoms/apos/applications/elementary-math/atom-elementary-school-apos-work-relies-on-concrete-objects-for-action.md
+source_hash: c73e049d0e32f3230cb314dba8d9c84a130177bfbb9f0a31361cef8291b759e0
+content_hash: d6ed38bf069f4c76ff45f70ec035e22007dfaeb3c99ab0e6e035bb36365804a2
+field_hashes:
+  id: c33e20d5fe59392eec94a1ee23ec1b57c3909e36fd33876fa9d851ce18826a0f
+  title: 17cdfbcb28085f29d250e4579802a1c5abfe7fd77c3da63d51bfac7b4dc603a4
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 4c889ce143c5b45d74d25de615b19807cb438deffa904da6222a75b1aa435b60
+  tags: 3798acc3301a1faf972b06317d658c29a5b858655bea7f7cfd43842890435844
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:concrete-operations
+- topic:elementary-math
+- type.knowledge.atom
+- workspace.desk.atoms

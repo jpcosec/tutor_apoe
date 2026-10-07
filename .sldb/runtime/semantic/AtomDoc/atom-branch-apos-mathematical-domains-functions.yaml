@@ -1,0 +1,11 @@
+model: AtomDoc
+path: desk/atoms/branches/atom-branch-apos-mathematical-domains-functions.md
+tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 9497754b7b9a09642d3acb7c0ca4899651cf7871cb6d659948a0eaa9aa7de8ae

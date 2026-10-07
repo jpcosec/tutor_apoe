@@ -1,0 +1,750 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+    name: atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/functions/atom-function-object-conception-supports-sets-operations-and-limits-of-functions.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: 5cc65c62bcbe146ecd22fae78e7ade6c238924e7818fdc687db4e00bb38e90aa
+    hash_d: b28170f7a4137de890f1e4e5c88d751caabc13b6dd7d557ff7ed742cf27a5028
+  facets: {}
+- id: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#atom-xxx-unique-identifier
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#atom-xxx-unique-identifier
+    document_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+    path: atom-xxx-unique-identifier
+    title: atom-xxx, unique identifier
+    breadcrumbs:
+    - atom-xxx, unique identifier
+    about:
+    - atom-xxx, unique identifier
+    - atom xxx unique identifier
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: atom-xxx-unique-identifier
+    level: 1
+    line_start: 2
+    line_end: 3
+  facets: {}
+- id: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#short-descriptive-title
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#short-descriptive-title
+    document_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+    path: short-descriptive-title
+    title: Short, descriptive title
+    breadcrumbs:
+    - Short, descriptive title
+    about:
+    - Short, descriptive title
+    - short descriptive title
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: short-descriptive-title
+    level: 1
+    line_start: 4
+    line_end: 5
+  facets: {}
+- id: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#what-why-how-how-not-when-where-for-whom
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#what-why-how-how-not-when-where-for-whom
+    document_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+    path: what-why-how-how-not-when-where-for-whom
+    title: what | why | how | how_not | when | where | for_whom
+    breadcrumbs:
+    - what | why | how | how_not | when | where | for_whom
+    about:
+    - what | why | how | how_not | when | where | for_whom
+    - what why how how not when where for whom
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: what-why-how-how-not-when-where-for-whom
+    level: 1
+    line_start: 6
+    line_end: 7
+  facets: {}
+- id: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#e-g-system-deskops-topic-templates
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#e-g-system-deskops-topic-templates
+    document_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+    path: e-g-system-deskops-topic-templates
+    title: e.g., system:deskops, topic:templates
+    breadcrumbs:
+    - e.g., system:deskops, topic:templates
+    about:
+    - e.g., system:deskops, topic:templates
+    - e g system deskops topic templates
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: e-g-system-deskops-topic-templates
+    level: 1
+    line_start: 8
+    line_end: 18
+  facets: {}
+- id: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
+    document_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+    path: la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
+    title: La concepción de función como objeto permite conjuntos, operaciones y límites
+      de funciones
+    breadcrumbs:
+    - La concepción de función como objeto permite conjuntos, operaciones y límites
+      de funciones
+    about:
+    - La concepción de función como objeto permite conjuntos, operaciones y límites
+      de funciones
+    - la concepci n de funci n como objeto permite conjuntos operaciones y l mites
+      de funciones
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
+    level: 1
+    line_start: 19
+    line_end: 27
+  facets: {}
+- id: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/respuesta
+    document_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+    path: la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - La concepción de función como objeto permite conjuntos, operaciones y límites
+      de funciones
+    - Respuesta
+    about:
+    - La concepción de función como objeto permite conjuntos, operaciones y límites
+      de funciones
+    - la concepci n de funci n como objeto permite conjuntos operaciones y l mites
+      de funciones
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 21
+    line_end: 24
+  facets: {}
+- id: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/procedencia
+    document_id: AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+    path: la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - La concepción de función como objeto permite conjuntos, operaciones y límites
+      de funciones
+    - Procedencia
+    about:
+    - La concepción de función como objeto permite conjuntos, operaciones y límites
+      de funciones
+    - la concepci n de funci n como objeto permite conjuntos operaciones y l mites
+      de funciones
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:object
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 25
+    line_end: 27
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:applications
+  node_type: semantic_tag
+  semantics:
+    tag: layer:applications
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:functions
+  node_type: semantic_tag
+  semantics:
+    tag: topic:functions
+  facets: {}
+- id: sldb://semantic_tag/topic:object
+  node_type: semantic_tag
+  semantics:
+    tag: topic:object
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#atom-xxx-unique-identifier
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#short-descriptive-title
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#what-why-how-how-not-when-where-for-whom
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#e-g-system-deskops-topic-templates
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://semantic_tag/topic:functions
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://semantic_tag/topic:object
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:functions
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:object
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#short-descriptive-title
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#short-descriptive-title
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#short-descriptive-title
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#short-descriptive-title
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#short-descriptive-title
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#short-descriptive-title
+  target: sldb://semantic_tag/topic:functions
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#short-descriptive-title
+  target: sldb://semantic_tag/topic:object
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#short-descriptive-title
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#short-descriptive-title
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:functions
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:object
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:functions
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:object
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
+  target: sldb://semantic_tag/topic:functions
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
+  target: sldb://semantic_tag/topic:object
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/respuesta
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/respuesta
+  target: sldb://semantic_tag/topic:functions
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/respuesta
+  target: sldb://semantic_tag/topic:object
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/procedencia
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/procedencia
+  target: sldb://semantic_tag/topic:functions
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/procedencia
+  target: sldb://semantic_tag/topic:object
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-function-object-conception-supports-sets-operations-and-limits-of-functions#la-concepci-n-de-funci-n-como-objeto-permite-conjuntos-operaciones-y-l-mites-de-funciones/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+model_name: AtomDoc
+source_hash: 5cc65c62bcbe146ecd22fae78e7ade6c238924e7818fdc687db4e00bb38e90aa
+content_hash: b28170f7a4137de890f1e4e5c88d751caabc13b6dd7d557ff7ed742cf27a5028
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:functions
+- topic:object
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -12,6 +12,8 @@ tags:
   - topic:prompting
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-research-data-collection
 ---
 
 # Las entrevistas APOS usan prompting para indagar construcciones en progreso

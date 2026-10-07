@@ -1,0 +1,11 @@
+model: AtomDoc
+path: desk/atoms/branches/atom-branch-apos-foundations-rumec.md
+tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 534139b04b21990f1dec1f0508a9dc672fe507e184e8f25ffaabe7a15c396e51

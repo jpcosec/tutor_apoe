@@ -12,6 +12,8 @@ tags:
   - topic:notation
   - domain:mathematics-education
   - layer:pedagogy
+node_type: knowledge
+parent_id: branch-apos-pedagogy-isetl
 ---
 
 # La sintaxis de ISETL se mantiene cercana a la notación matemática estándar

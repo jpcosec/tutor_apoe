@@ -1,0 +1,20 @@
+name: atom-apos-is-a-constructivist-theory-of-learning-mathematics
+path: desk/atoms/apos/foundations/constructivism/atom-apos-is-a-constructivist-theory-of-learning-mathematics.md
+source_hash: 0022b368d4d9a15a8a8a0524255961d603dd5cce9c337624a5cb8fcf1cb6debd
+content_hash: 95f646cdb28d10a6983eed65ca2c4a4b664d61bf2aa05d808b6cfd2a06e9b409
+field_hashes:
+  id: 3a12183e4b56528c87d1754b8fa23a7ca3b55eb5fc3ffbea6c381296b1c08372
+  title: 8cf2357e70256faca8b6a743c5a34ccc3b9ce9fb5bc4f3b90a3591b79ddbc740
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: cbd4a3c9a6efd3ea91d73ee57feb71e046a3c5133ce122b29cdcab8873be4485
+  tags: 212ae29e5401aa303b9517087528c5fb8c64e63412d616a4d48d2d041263b9ce
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:constructivism
+- topic:learning-theory
+- type.knowledge.atom
+- workspace.desk.atoms

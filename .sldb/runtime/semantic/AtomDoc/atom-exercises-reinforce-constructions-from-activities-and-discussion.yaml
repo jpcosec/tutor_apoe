@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/pedagogy/exercises/atom-exercises-reinforce-constructions-from-activities-and-discussion.md
+tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:ace-cycle
+- topic:exercises
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 6d6e3d44b042836952ba75d97629ac0444a7073dfc14951282ca55c5272a83da

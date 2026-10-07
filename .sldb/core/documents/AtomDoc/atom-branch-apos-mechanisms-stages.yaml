@@ -1,0 +1,18 @@
+name: atom-branch-apos-mechanisms-stages
+path: desk/atoms/branches/atom-branch-apos-mechanisms-stages.md
+source_hash: a8ffc9e52c237aa17de326563941bace83e977126c0c1051204cabd21f8181ae
+content_hash: 026d01cb415062345f6d9476b20753e92dad73b78e20beabcb783bbccf7cfd7c
+field_hashes:
+  id: a7e4c243d7ac914f9ea9d4f7cdb2e2edc12b43e6994681e85d5a440f36127ee5
+  title: 12207bddf83de35c03d6c73149589a4a65edc9f4a8019ff1da10167337ecd6b9
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

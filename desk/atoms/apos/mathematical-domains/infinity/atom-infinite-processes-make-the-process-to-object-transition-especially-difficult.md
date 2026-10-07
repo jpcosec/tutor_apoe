@@ -8,6 +8,8 @@ tags:
   - topic:process-to-object
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-mathematical-domains-infinity
 ---
 
 # Los procesos infinitos vuelven especialmente difícil la transición de Proceso a Objeto

@@ -1,0 +1,11 @@
+model: AtomDoc
+path: desk/atoms/branches/atom-branch-apos-mechanisms-totality.md
+tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 45a9e9ffbda8cc6c838519ee7ec543be27638b35e37313b0c71659756e717cf9

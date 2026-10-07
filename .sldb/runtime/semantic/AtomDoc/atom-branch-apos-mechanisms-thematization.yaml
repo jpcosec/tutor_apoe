@@ -1,0 +1,11 @@
+model: AtomDoc
+path: desk/atoms/branches/atom-branch-apos-mechanisms-thematization.md
+tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: a598c8239e992c73b179d69f1fa15221fcb08ddacc94b55fb233342ba55a6546

@@ -8,6 +8,8 @@ tags:
   - topic:history
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-genetic-decomposition-design
 ---
 
 # El desarrollo histórico de un concepto puede informar el diseño de una descomposición genética

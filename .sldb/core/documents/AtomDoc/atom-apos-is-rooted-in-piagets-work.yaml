@@ -1,0 +1,19 @@
+name: atom-apos-is-rooted-in-piagets-work
+path: desk/atoms/apos/foundations/piaget/atom-apos-is-rooted-in-piagets-work.md
+source_hash: 2c00f0d49c3ad5c0d6a423da6b424de1824403fe7e1b7d7235684bba2b5c6d99
+content_hash: c257877afaee63b6674f69aa97cb31a5e500e5618055818b7f4ef14a1a5904fa
+field_hashes:
+  id: 3914931ba215f4f8f80525952f8771035a62499bac9dc203e02d4c8880a9be9e
+  title: c022c8e75192a7e3e9b677886078f454ce6b40760a5b63e1228f30d1592db963
+  five_wh_one_plus: 1566d618b9ad05f5d6636ef68875b058a3311f288ab671709bb72d36b5dd1a5c
+  answer: b57d3b11cde65af3d26040bc68b3460d3f03157781039ea59e04cf4c41d5b410
+  tags: 52ea320d0a1aa59098774efdca2a975797b6043d7764482984733310e447ae60
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:piaget
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-research-research-cycle
+sections:
+- path: research-cycle
+  title: Research Cycle
+  breadcrumbs:
+  - Research Cycle
+  about:
+  - Research Cycle
+  - research cycle
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: research-cycle
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: research-cycle/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Research Cycle
+  - Respuesta
+  about:
+  - Research Cycle
+  - research cycle
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: research-cycle/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Research Cycle
+  - Procedencia
+  about:
+  - Research Cycle
+  - research cycle
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: 8996d5dd7edf72d37fd4ec76690e64b36371df1ee9c6691a879db98d363491db
+sections_version: '2'

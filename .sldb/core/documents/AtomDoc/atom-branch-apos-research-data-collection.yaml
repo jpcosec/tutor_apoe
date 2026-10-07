@@ -1,0 +1,18 @@
+name: atom-branch-apos-research-data-collection
+path: desk/atoms/branches/atom-branch-apos-research-data-collection.md
+source_hash: ba078a359c96bbcbc233a1e11d7429f03ce88b5dec8bea0480e89feccd59385b
+content_hash: 0f376aa1b4fcec27f02fc1285427443d1173d4579c279c8efb81e7ccc61e4d42
+field_hashes:
+  id: 0739e48b12204578fe331ed3126f484be6385ff77396eceb2af04ecc65a316c1
+  title: 24051613958ec74b452b5a401916030f5c37b4e039e20c499c2243a4fe9b5472
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

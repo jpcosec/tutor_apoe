@@ -11,6 +11,8 @@ tags:
   - topic:object
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-core-structures-object
 ---
 
 # El Objeto es una estructura mental central en APOS

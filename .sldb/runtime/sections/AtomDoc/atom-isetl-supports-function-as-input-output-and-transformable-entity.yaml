@@ -1,0 +1,100 @@
+doc_name: atom-isetl-supports-function-as-input-output-and-transformable-entity
+sections:
+- path: isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+  title: ISETL soporta la función como entrada, salida y entidad transformable
+  breadcrumbs:
+  - ISETL soporta la función como entrada, salida y entidad transformable
+  about:
+  - ISETL soporta la función como entrada, salida y entidad transformable
+  - isetl soporta la funci n como entrada salida y entidad transformable
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:functions
+  - topic:isetl
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:functions
+  - topic:isetl
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+  level: 1
+  line_start: 15
+  line_end: 23
+- path: isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - ISETL soporta la función como entrada, salida y entidad transformable
+  - Respuesta
+  about:
+  - ISETL soporta la función como entrada, salida y entidad transformable
+  - isetl soporta la funci n como entrada salida y entidad transformable
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:functions
+  - topic:isetl
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:functions
+  - topic:isetl
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 17
+  line_end: 20
+- path: isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - ISETL soporta la función como entrada, salida y entidad transformable
+  - Procedencia
+  about:
+  - ISETL soporta la función como entrada, salida y entidad transformable
+  - isetl soporta la funci n como entrada salida y entidad transformable
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:functions
+  - topic:isetl
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:functions
+  - topic:isetl
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 21
+  line_end: 23
+source_hash: 37472380dcdc7eb257a51cd2aba1213c888ce9c1326bbd95a8cf831fe6d671e6
+sections_version: '2'

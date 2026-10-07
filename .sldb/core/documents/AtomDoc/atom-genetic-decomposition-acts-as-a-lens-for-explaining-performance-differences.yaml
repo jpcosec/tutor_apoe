@@ -1,0 +1,20 @@
+name: atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences
+path: desk/atoms/apos/genetic-decomposition/role-in-research/atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences.md
+source_hash: b2db98972146aa6bf42f938575396989909287761026365246bea3fe8b60c5a6
+content_hash: 17a02ce4f1bd8833b4e8b7fd354c86fb01410caf6f0e7d63e29009f2dfbb33c1
+field_hashes:
+  id: da6ebcffc1381f109223758da937f484a0ad3f612afbe271a05c575b09a4c16b
+  title: 342607680498a7232ecc0a32079e5cad8c79f5f645589a926b0f767d18988a8e
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 40c6b55ad054cb3dd4e96f9618919c2adbcdb8abe66ab307f5ded4fb99c3f95d
+  tags: c6993eb30068f0ca78450da2db26e52b2b10ebdd7b869a58e4f09aa9079475b3
+semantic_tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:genetic-decomposition
+- topic:performance-differences
+- type.knowledge.atom
+- workspace.desk.atoms

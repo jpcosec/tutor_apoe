@@ -12,6 +12,8 @@ tags:
   - topic:faq
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-synthesis-faq
 ---
 
 # El libro cierra con preguntas frecuentes, conclusiones y síntesis bibliográfica

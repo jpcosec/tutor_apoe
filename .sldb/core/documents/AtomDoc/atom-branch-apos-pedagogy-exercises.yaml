@@ -1,0 +1,18 @@
+name: atom-branch-apos-pedagogy-exercises
+path: desk/atoms/branches/atom-branch-apos-pedagogy-exercises.md
+source_hash: e5f9b7811c14d1a9313ff0b49f76e369f2b90a44a3cc0a42bee86272f804be3a
+content_hash: 793e065fcaa0cf3da597665950ec8a654a8c88fd56e2260235f58d6243b01c9f
+field_hashes:
+  id: a61068227cff5c8b86b078a451fe673c69514a3e2307fc81ec790e03203fd7b1
+  title: 4dffe64b1f1a25e72d0e988b9e87d7da6963bac3f27f35ef7a96172a2e052df7
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

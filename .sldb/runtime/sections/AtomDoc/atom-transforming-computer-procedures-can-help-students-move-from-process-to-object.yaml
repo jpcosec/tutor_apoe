@@ -1,0 +1,101 @@
+doc_name: atom-transforming-computer-procedures-can-help-students-move-from-process-to-object
+sections:
+- path: transformar-procedimientos-computacionales-puede-ayudar-a-pasar-de-proceso-a-objeto
+  title: Transformar procedimientos computacionales puede ayudar a pasar de Proceso
+    a Objeto
+  breadcrumbs:
+  - Transformar procedimientos computacionales puede ayudar a pasar de Proceso a Objeto
+  about:
+  - Transformar procedimientos computacionales puede ayudar a pasar de Proceso a Objeto
+  - transformar procedimientos computacionales puede ayudar a pasar de proceso a objeto
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:process-to-object
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:process-to-object
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: transformar-procedimientos-computacionales-puede-ayudar-a-pasar-de-proceso-a-objeto
+  level: 1
+  line_start: 15
+  line_end: 23
+- path: transformar-procedimientos-computacionales-puede-ayudar-a-pasar-de-proceso-a-objeto/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Transformar procedimientos computacionales puede ayudar a pasar de Proceso a Objeto
+  - Respuesta
+  about:
+  - Transformar procedimientos computacionales puede ayudar a pasar de Proceso a Objeto
+  - transformar procedimientos computacionales puede ayudar a pasar de proceso a objeto
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:process-to-object
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:process-to-object
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 17
+  line_end: 20
+- path: transformar-procedimientos-computacionales-puede-ayudar-a-pasar-de-proceso-a-objeto/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Transformar procedimientos computacionales puede ayudar a pasar de Proceso a Objeto
+  - Procedencia
+  about:
+  - Transformar procedimientos computacionales puede ayudar a pasar de Proceso a Objeto
+  - transformar procedimientos computacionales puede ayudar a pasar de proceso a objeto
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:process-to-object
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:process-to-object
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 21
+  line_end: 23
+source_hash: 09110a7f1ac36524d9a066062a012d49bc05d31cf84b6897dc40033fbeb5a6b9
+sections_version: '2'

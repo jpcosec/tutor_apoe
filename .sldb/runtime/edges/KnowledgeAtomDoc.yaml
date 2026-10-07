@@ -1,0 +1,130 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://model/KnowledgeAtomDoc
+  node_type: sldb_model
+  semantics:
+    name: KnowledgeAtomDoc
+    model_ref: knowledge_models:KnowledgeAtomDoc
+    path: knowledge_models/docs.py
+    version: 1
+    canonical: false
+    family: null
+    semantic_tags:
+    - type.knowledge.atom
+    - workspace.knowledge.atoms
+    base_models: []
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.knowledge.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.knowledge.atoms
+  facets: {}
+- id: sldb://field/KnowledgeAtomDoc.id
+  node_type: sldb_field
+  semantics:
+    name: id
+    kind: string
+    required: true
+    model: KnowledgeAtomDoc
+    description: Identificador estable del átomo de conocimiento.
+  facets: {}
+- id: sldb://field/KnowledgeAtomDoc.title
+  node_type: sldb_field
+  semantics:
+    name: title
+    kind: string
+    required: true
+    model: KnowledgeAtomDoc
+    description: Título corto del átomo.
+  facets: {}
+- id: sldb://field/KnowledgeAtomDoc.question
+  node_type: sldb_field
+  semantics:
+    name: question
+    kind: enum
+    required: true
+    enum:
+    - what
+    - why
+    - how
+    - how_not
+    - when
+    - where
+    - for_whom
+    model: KnowledgeAtomDoc
+    description: La pregunta 5WH1+ que este átomo responde.
+  facets: {}
+- id: sldb://field/KnowledgeAtomDoc.answer
+  node_type: sldb_field
+  semantics:
+    name: answer
+    kind: string
+    required: true
+    model: KnowledgeAtomDoc
+    description: Respuesta atómica y durable.
+  facets: {}
+- id: sldb://field/KnowledgeAtomDoc.provenance
+  node_type: sldb_field
+  semantics:
+    name: provenance
+    kind: list
+    required: false
+    model: KnowledgeAtomDoc
+    description: Referencias precisas a los párrafos fuente que sostienen el átomo.
+  facets: {}
+- id: sldb://field/KnowledgeAtomDoc.tags
+  node_type: sldb_field
+  semantics:
+    name: tags
+    kind: list
+    required: false
+    model: KnowledgeAtomDoc
+    description: Etiquetas semánticas para agrupación y búsqueda.
+  facets: {}
+edges:
+- source: sldb://model/KnowledgeAtomDoc
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/KnowledgeAtomDoc
+  target: sldb://semantic_tag/workspace.knowledge.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/KnowledgeAtomDoc
+  target: sldb://field/KnowledgeAtomDoc.id
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/KnowledgeAtomDoc
+  target: sldb://field/KnowledgeAtomDoc.title
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/KnowledgeAtomDoc
+  target: sldb://field/KnowledgeAtomDoc.question
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/KnowledgeAtomDoc
+  target: sldb://field/KnowledgeAtomDoc.answer
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/KnowledgeAtomDoc
+  target: sldb://field/KnowledgeAtomDoc.provenance
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/KnowledgeAtomDoc
+  target: sldb://field/KnowledgeAtomDoc.tags
+  relation: has_field
+  metadata:
+    origin: schema
+model_name: KnowledgeAtomDoc

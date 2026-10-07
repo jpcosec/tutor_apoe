@@ -1,0 +1,740 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+    name: atom-schema-coherence-determines-what-falls-within-its-scope
+    model: AtomDoc
+    path: desk/atoms/apos/schema-development/schema-interaction/atom-schema-coherence-determines-what-falls-within-its-scope.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: 7bdca750b79da24ea9e6f51b6267aabf79548cf07a9185fc798eb665f2b3f333
+    hash_d: 0463b7a5051ff7cefb324ad92e509995136ce72be708229cee8a44f8da405d58
+  facets: {}
+- id: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#atom-xxx-unique-identifier
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#atom-xxx-unique-identifier
+    document_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+    path: atom-xxx-unique-identifier
+    title: atom-xxx, unique identifier
+    breadcrumbs:
+    - atom-xxx, unique identifier
+    about:
+    - atom-xxx, unique identifier
+    - atom xxx unique identifier
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: atom-xxx-unique-identifier
+    level: 1
+    line_start: 2
+    line_end: 3
+  facets: {}
+- id: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#short-descriptive-title
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#short-descriptive-title
+    document_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+    path: short-descriptive-title
+    title: Short, descriptive title
+    breadcrumbs:
+    - Short, descriptive title
+    about:
+    - Short, descriptive title
+    - short descriptive title
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: short-descriptive-title
+    level: 1
+    line_start: 4
+    line_end: 5
+  facets: {}
+- id: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#what-why-how-how-not-when-where-for-whom
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#what-why-how-how-not-when-where-for-whom
+    document_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+    path: what-why-how-how-not-when-where-for-whom
+    title: what | why | how | how_not | when | where | for_whom
+    breadcrumbs:
+    - what | why | how | how_not | when | where | for_whom
+    about:
+    - what | why | how | how_not | when | where | for_whom
+    - what why how how not when where for whom
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: what-why-how-how-not-when-where-for-whom
+    level: 1
+    line_start: 6
+    line_end: 7
+  facets: {}
+- id: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#e-g-system-deskops-topic-templates
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#e-g-system-deskops-topic-templates
+    document_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+    path: e-g-system-deskops-topic-templates
+    title: e.g., system:deskops, topic:templates
+    breadcrumbs:
+    - e.g., system:deskops, topic:templates
+    about:
+    - e.g., system:deskops, topic:templates
+    - e g system deskops topic templates
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: e-g-system-deskops-topic-templates
+    level: 1
+    line_start: 8
+    line_end: 18
+  facets: {}
+- id: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+    document_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+    path: la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+    title: La coherencia del esquema determina qué cae dentro de su alcance
+    breadcrumbs:
+    - La coherencia del esquema determina qué cae dentro de su alcance
+    about:
+    - La coherencia del esquema determina qué cae dentro de su alcance
+    - la coherencia del esquema determina qu cae dentro de su alcance
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+    level: 1
+    line_start: 19
+    line_end: 27
+  facets: {}
+- id: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
+    document_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+    path: la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - La coherencia del esquema determina qué cae dentro de su alcance
+    - Respuesta
+    about:
+    - La coherencia del esquema determina qué cae dentro de su alcance
+    - la coherencia del esquema determina qu cae dentro de su alcance
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 21
+    line_end: 24
+  facets: {}
+- id: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
+    document_id: AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+    path: la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - La coherencia del esquema determina qué cae dentro de su alcance
+    - Procedencia
+    about:
+    - La coherencia del esquema determina qué cae dentro de su alcance
+    - la coherencia del esquema determina qu cae dentro de su alcance
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:coherence
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 25
+    line_end: 27
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:theory
+  node_type: semantic_tag
+  semantics:
+    tag: layer:theory
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:coherence
+  node_type: semantic_tag
+  semantics:
+    tag: topic:coherence
+  facets: {}
+- id: sldb://semantic_tag/topic:schema
+  node_type: semantic_tag
+  semantics:
+    tag: topic:schema
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#atom-xxx-unique-identifier
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#short-descriptive-title
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#what-why-how-how-not-when-where-for-whom
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#e-g-system-deskops-topic-templates
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://semantic_tag/topic:coherence
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://semantic_tag/topic:schema
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:coherence
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:schema
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#short-descriptive-title
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#short-descriptive-title
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#short-descriptive-title
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#short-descriptive-title
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#short-descriptive-title
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#short-descriptive-title
+  target: sldb://semantic_tag/topic:coherence
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#short-descriptive-title
+  target: sldb://semantic_tag/topic:schema
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#short-descriptive-title
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#short-descriptive-title
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:coherence
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:schema
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:coherence
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:schema
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+  target: sldb://semantic_tag/topic:coherence
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+  target: sldb://semantic_tag/topic:schema
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
+  target: sldb://semantic_tag/topic:coherence
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
+  target: sldb://semantic_tag/topic:schema
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
+  target: sldb://semantic_tag/topic:coherence
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
+  target: sldb://semantic_tag/topic:schema
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-schema-coherence-determines-what-falls-within-its-scope#la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-schema-coherence-determines-what-falls-within-its-scope
+model_name: AtomDoc
+source_hash: 7bdca750b79da24ea9e6f51b6267aabf79548cf07a9185fc798eb665f2b3f333
+content_hash: 0463b7a5051ff7cefb324ad92e509995136ce72be708229cee8a44f8da405d58
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:coherence
+- topic:schema
+- type.knowledge.atom
+- workspace.desk.atoms

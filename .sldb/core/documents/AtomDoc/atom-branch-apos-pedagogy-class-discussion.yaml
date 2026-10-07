@@ -1,0 +1,18 @@
+name: atom-branch-apos-pedagogy-class-discussion
+path: desk/atoms/branches/atom-branch-apos-pedagogy-class-discussion.md
+source_hash: 6aab5f44de7d20d07735109419986ae1c5a4cbf22e7ff5828f895cbba488ea96
+content_hash: 048c4b989b00c5432201c2dffdb1ea3ee42a9f2c7f4b92bceda9be97586c549d
+field_hashes:
+  id: 12ae231073c8d75fa7d0374a97e144fa4507feb26646b65eca7f5343cf4c8982
+  title: a4dc93448066705c209e232fcf6baf41fe0f25feab8770cc3793140b8ed2ef5b
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

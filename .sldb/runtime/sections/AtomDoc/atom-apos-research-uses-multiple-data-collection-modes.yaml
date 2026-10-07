@@ -1,0 +1,206 @@
+doc_name: atom-apos-research-uses-multiple-data-collection-modes
+sections:
+- path: atom-xxx-unique-identifier
+  title: atom-xxx, unique identifier
+  breadcrumbs:
+  - atom-xxx, unique identifier
+  about:
+  - atom-xxx, unique identifier
+  - atom xxx unique identifier
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: atom-xxx-unique-identifier
+  level: 1
+  line_start: 2
+  line_end: 3
+- path: short-descriptive-title
+  title: Short, descriptive title
+  breadcrumbs:
+  - Short, descriptive title
+  about:
+  - Short, descriptive title
+  - short descriptive title
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: short-descriptive-title
+  level: 1
+  line_start: 4
+  line_end: 5
+- path: what-why-how-how-not-when-where-for-whom
+  title: what | why | how | how_not | when | where | for_whom
+  breadcrumbs:
+  - what | why | how | how_not | when | where | for_whom
+  about:
+  - what | why | how | how_not | when | where | for_whom
+  - what why how how not when where for whom
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: what-why-how-how-not-when-where-for-whom
+  level: 1
+  line_start: 6
+  line_end: 7
+- path: e-g-system-deskops-topic-templates
+  title: e.g., system:deskops, topic:templates
+  breadcrumbs:
+  - e.g., system:deskops, topic:templates
+  about:
+  - e.g., system:deskops, topic:templates
+  - e g system deskops topic templates
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: e-g-system-deskops-topic-templates
+  level: 1
+  line_start: 8
+  line_end: 17
+- path: la-investigaci-n-apos-usa-m-ltiples-modos-de-recolecci-n-de-datos
+  title: La investigación APOS usa múltiples modos de recolección de datos
+  breadcrumbs:
+  - La investigación APOS usa múltiples modos de recolección de datos
+  about:
+  - La investigación APOS usa múltiples modos de recolección de datos
+  - la investigaci n apos usa m ltiples modos de recolecci n de datos
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: la-investigaci-n-apos-usa-m-ltiples-modos-de-recolecci-n-de-datos
+  level: 1
+  line_start: 18
+  line_end: 26
+- path: la-investigaci-n-apos-usa-m-ltiples-modos-de-recolecci-n-de-datos/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - La investigación APOS usa múltiples modos de recolección de datos
+  - Respuesta
+  about:
+  - La investigación APOS usa múltiples modos de recolección de datos
+  - la investigaci n apos usa m ltiples modos de recolecci n de datos
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 20
+  line_end: 23
+- path: la-investigaci-n-apos-usa-m-ltiples-modos-de-recolecci-n-de-datos/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - La investigación APOS usa múltiples modos de recolección de datos
+  - Procedencia
+  about:
+  - La investigación APOS usa múltiples modos de recolección de datos
+  - la investigaci n apos usa m ltiples modos de recolecci n de datos
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 24
+  line_end: 26
+source_hash: e1441b5e27daa9805ca35ae0cf956d1d19ef3df33feeecba12d5458f0aa0a48a
+sections_version: '2'

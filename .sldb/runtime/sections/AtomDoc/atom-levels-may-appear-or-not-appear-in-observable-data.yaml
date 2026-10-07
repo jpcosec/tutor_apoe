@@ -1,0 +1,94 @@
+doc_name: atom-levels-may-appear-or-not-appear-in-observable-data
+sections:
+- path: los-niveles-pueden-aparecer-o-no-aparecer-en-los-datos-observables
+  title: Los niveles pueden aparecer o no aparecer en los datos observables
+  breadcrumbs:
+  - Los niveles pueden aparecer o no aparecer en los datos observables
+  about:
+  - Los niveles pueden aparecer o no aparecer en los datos observables
+  - los niveles pueden aparecer o no aparecer en los datos observables
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:levels
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:levels
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: los-niveles-pueden-aparecer-o-no-aparecer-en-los-datos-observables
+  level: 1
+  line_start: 14
+  line_end: 22
+- path: los-niveles-pueden-aparecer-o-no-aparecer-en-los-datos-observables/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Los niveles pueden aparecer o no aparecer en los datos observables
+  - Respuesta
+  about:
+  - Los niveles pueden aparecer o no aparecer en los datos observables
+  - los niveles pueden aparecer o no aparecer en los datos observables
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:levels
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:levels
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 16
+  line_end: 19
+- path: los-niveles-pueden-aparecer-o-no-aparecer-en-los-datos-observables/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Los niveles pueden aparecer o no aparecer en los datos observables
+  - Procedencia
+  about:
+  - Los niveles pueden aparecer o no aparecer en los datos observables
+  - los niveles pueden aparecer o no aparecer en los datos observables
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:levels
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:levels
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 20
+  line_end: 22
+source_hash: eab953f06d63f58f0624a23076fea868ac941a9969b2bca68ca38bd958726d23
+sections_version: '2'

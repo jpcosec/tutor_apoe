@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/synthesis/conclusions/atom-annotated-bibliography-materializes-the-breadth-of-apos-research.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:bibliography
+- topic:synthesis
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: b542f8d82cf1d1c02364fadb5a374638ee3e5f0fcbac2bd10245e74d90b9dbc6

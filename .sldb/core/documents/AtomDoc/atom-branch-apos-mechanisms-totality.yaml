@@ -1,0 +1,18 @@
+name: atom-branch-apos-mechanisms-totality
+path: desk/atoms/branches/atom-branch-apos-mechanisms-totality.md
+source_hash: 45a9e9ffbda8cc6c838519ee7ec543be27638b35e37313b0c71659756e717cf9
+content_hash: 21a41cb98add0b58be3f72c57779e2156962ad461ecb3cfd9994de8a07fa88f9
+field_hashes:
+  id: 8500d5b520f43e653aa915138e249e9f58f4a19a4802ecfb5ca1ec456fd680b7
+  title: 15dbb5a21250461fe7c522bea06c4f0a0e17ed6c6b2b45149c5f2b7ef5f00a8a
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

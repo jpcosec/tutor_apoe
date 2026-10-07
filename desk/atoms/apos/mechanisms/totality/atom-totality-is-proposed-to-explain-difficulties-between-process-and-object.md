@@ -8,6 +8,8 @@ tags:
   - topic:process-to-object
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-mechanisms-totality
 ---
 
 # Totality se propone para explicar dificultades entre Proceso y Objeto

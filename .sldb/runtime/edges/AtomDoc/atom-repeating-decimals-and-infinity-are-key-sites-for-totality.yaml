@@ -1,0 +1,740 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+    name: atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/repeating-decimals/atom-repeating-decimals-and-infinity-are-key-sites-for-totality.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: 1d6ce8eb538d4e1820d4ec6a1e2be9552776fe2a0a249e7d807aeb9e1c374ab5
+    hash_d: dbfc4b3e22fab7653ef6665c2df7b6469cbb7fcb52fdac78647fa53b7ec07d2b
+  facets: {}
+- id: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#atom-xxx-unique-identifier
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#atom-xxx-unique-identifier
+    document_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+    path: atom-xxx-unique-identifier
+    title: atom-xxx, unique identifier
+    breadcrumbs:
+    - atom-xxx, unique identifier
+    about:
+    - atom-xxx, unique identifier
+    - atom xxx unique identifier
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: atom-xxx-unique-identifier
+    level: 1
+    line_start: 2
+    line_end: 3
+  facets: {}
+- id: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#short-descriptive-title
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#short-descriptive-title
+    document_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+    path: short-descriptive-title
+    title: Short, descriptive title
+    breadcrumbs:
+    - Short, descriptive title
+    about:
+    - Short, descriptive title
+    - short descriptive title
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: short-descriptive-title
+    level: 1
+    line_start: 4
+    line_end: 5
+  facets: {}
+- id: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#what-why-how-how-not-when-where-for-whom
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#what-why-how-how-not-when-where-for-whom
+    document_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+    path: what-why-how-how-not-when-where-for-whom
+    title: what | why | how | how_not | when | where | for_whom
+    breadcrumbs:
+    - what | why | how | how_not | when | where | for_whom
+    about:
+    - what | why | how | how_not | when | where | for_whom
+    - what why how how not when where for whom
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: what-why-how-how-not-when-where-for-whom
+    level: 1
+    line_start: 6
+    line_end: 7
+  facets: {}
+- id: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#e-g-system-deskops-topic-templates
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#e-g-system-deskops-topic-templates
+    document_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+    path: e-g-system-deskops-topic-templates
+    title: e.g., system:deskops, topic:templates
+    breadcrumbs:
+    - e.g., system:deskops, topic:templates
+    about:
+    - e.g., system:deskops, topic:templates
+    - e g system deskops topic templates
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: e-g-system-deskops-topic-templates
+    level: 1
+    line_start: 8
+    line_end: 18
+  facets: {}
+- id: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
+    document_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+    path: los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
+    title: Los decimales periódicos y el infinito son casos clave para estudiar Totality
+    breadcrumbs:
+    - Los decimales periódicos y el infinito son casos clave para estudiar Totality
+    about:
+    - Los decimales periódicos y el infinito son casos clave para estudiar Totality
+    - los decimales peri dicos y el infinito son casos clave para estudiar totality
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
+    level: 1
+    line_start: 19
+    line_end: 27
+  facets: {}
+- id: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/respuesta
+    document_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+    path: los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Los decimales periódicos y el infinito son casos clave para estudiar Totality
+    - Respuesta
+    about:
+    - Los decimales periódicos y el infinito son casos clave para estudiar Totality
+    - los decimales peri dicos y el infinito son casos clave para estudiar totality
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 21
+    line_end: 24
+  facets: {}
+- id: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/procedencia
+    document_id: AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+    path: los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Los decimales periódicos y el infinito son casos clave para estudiar Totality
+    - Procedencia
+    about:
+    - Los decimales periódicos y el infinito son casos clave para estudiar Totality
+    - los decimales peri dicos y el infinito son casos clave para estudiar totality
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:infinity
+    - topic:repeating-decimals
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 25
+    line_end: 27
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:applications
+  node_type: semantic_tag
+  semantics:
+    tag: layer:applications
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:infinity
+  node_type: semantic_tag
+  semantics:
+    tag: topic:infinity
+  facets: {}
+- id: sldb://semantic_tag/topic:repeating-decimals
+  node_type: semantic_tag
+  semantics:
+    tag: topic:repeating-decimals
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#atom-xxx-unique-identifier
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#short-descriptive-title
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#what-why-how-how-not-when-where-for-whom
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#e-g-system-deskops-topic-templates
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://semantic_tag/topic:infinity
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://semantic_tag/topic:repeating-decimals
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:infinity
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:repeating-decimals
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#short-descriptive-title
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#short-descriptive-title
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#short-descriptive-title
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#short-descriptive-title
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#short-descriptive-title
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#short-descriptive-title
+  target: sldb://semantic_tag/topic:infinity
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#short-descriptive-title
+  target: sldb://semantic_tag/topic:repeating-decimals
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#short-descriptive-title
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#short-descriptive-title
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:infinity
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:repeating-decimals
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:infinity
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:repeating-decimals
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
+  target: sldb://semantic_tag/topic:infinity
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
+  target: sldb://semantic_tag/topic:repeating-decimals
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/respuesta
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/respuesta
+  target: sldb://semantic_tag/topic:infinity
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/respuesta
+  target: sldb://semantic_tag/topic:repeating-decimals
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/procedencia
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/procedencia
+  target: sldb://semantic_tag/topic:infinity
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/procedencia
+  target: sldb://semantic_tag/topic:repeating-decimals
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-repeating-decimals-and-infinity-are-key-sites-for-totality#los-decimales-peri-dicos-y-el-infinito-son-casos-clave-para-estudiar-totality/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+model_name: AtomDoc
+source_hash: 1d6ce8eb538d4e1820d4ec6a1e2be9552776fe2a0a249e7d807aeb9e1c374ab5
+content_hash: dbfc4b3e22fab7653ef6665c2df7b6469cbb7fcb52fdac78647fa53b7ec07d2b
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:infinity
+- topic:repeating-decimals
+- type.knowledge.atom
+- workspace.desk.atoms

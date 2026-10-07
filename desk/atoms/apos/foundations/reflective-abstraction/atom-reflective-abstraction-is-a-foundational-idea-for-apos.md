@@ -12,6 +12,8 @@ tags:
   - topic:piaget
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-foundations-reflective-abstraction
 ---
 
 # La abstracción reflexiva es una idea fundacional para APOS

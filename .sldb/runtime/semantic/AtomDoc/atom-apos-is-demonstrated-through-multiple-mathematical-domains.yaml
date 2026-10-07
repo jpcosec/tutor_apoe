@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/mathematical-domains/functions/atom-apos-is-demonstrated-through-multiple-mathematical-domains.md
+tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:mathematical-domains
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 434da693027ce17f22ee7d8b87e362ed9b2ce4c43b52100242c18aade122344c

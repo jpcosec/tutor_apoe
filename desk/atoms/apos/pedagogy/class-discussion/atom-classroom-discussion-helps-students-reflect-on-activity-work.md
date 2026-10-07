@@ -12,6 +12,8 @@ tags:
   - topic:ace-cycle
   - domain:mathematics-education
   - layer:pedagogy
+node_type: knowledge
+parent_id: branch-apos-pedagogy-class-discussion
 ---
 
 # La discusión en clase ayuda a los estudiantes a reflexionar sobre el trabajo de actividades

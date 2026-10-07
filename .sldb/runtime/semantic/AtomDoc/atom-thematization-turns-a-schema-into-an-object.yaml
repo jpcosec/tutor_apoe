@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/mechanisms/thematization/atom-thematization-turns-a-schema-into-an-object.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:schema
+- topic:thematization
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: a67f98ee409cf69797b9aab56e6698858451117195d137140b357f003a28be14

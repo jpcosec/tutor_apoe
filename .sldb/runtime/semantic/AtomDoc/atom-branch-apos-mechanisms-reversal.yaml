@@ -1,0 +1,11 @@
+model: AtomDoc
+path: desk/atoms/branches/atom-branch-apos-mechanisms-reversal.md
+tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 7b1dacdaba3d0b0e26a7e049fe61ecc9f9fbd4198b3bc337c3737faa1e3aea9a

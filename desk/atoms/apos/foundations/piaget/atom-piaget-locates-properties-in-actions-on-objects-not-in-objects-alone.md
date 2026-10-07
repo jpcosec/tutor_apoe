@@ -12,6 +12,8 @@ tags:
   - topic:reflective-abstraction
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-foundations-piaget
 ---
 
 # Piaget sitúa las propiedades en las acciones sobre los objetos, no en los objetos por sí solos

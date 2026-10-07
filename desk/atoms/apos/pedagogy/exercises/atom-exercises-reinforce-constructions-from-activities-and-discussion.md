@@ -12,6 +12,8 @@ tags:
   - topic:ace-cycle
   - domain:mathematics-education
   - layer:pedagogy
+node_type: knowledge
+parent_id: branch-apos-pedagogy-exercises
 ---
 
 # Los ejercicios refuerzan las construcciones iniciadas en actividades y discusión

@@ -11,6 +11,8 @@ tags:
   - topic:mechanisms
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-mechanisms-interiorization
 ---
 
 # APOS usa mecanismos específicos para explicar la construcción del conocimiento

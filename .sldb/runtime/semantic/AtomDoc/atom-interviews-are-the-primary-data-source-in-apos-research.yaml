@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/research/data-collection/atom-interviews-are-the-primary-data-source-in-apos-research.md
+tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:data-collection
+- topic:interviews
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 851b225d6c9cf42dfecfc9f69e58cbe80ff9634e03f23b85e32d3e3aadc813aa

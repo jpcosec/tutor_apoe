@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-mathematical-domains-spanning-set-and-span
+sections:
+- path: spanning-set-and-span
+  title: Spanning Set And Span
+  breadcrumbs:
+  - Spanning Set And Span
+  about:
+  - Spanning Set And Span
+  - spanning set and span
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: spanning-set-and-span
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: spanning-set-and-span/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Spanning Set And Span
+  - Respuesta
+  about:
+  - Spanning Set And Span
+  - spanning set and span
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: spanning-set-and-span/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Spanning Set And Span
+  - Procedencia
+  about:
+  - Spanning Set And Span
+  - spanning set and span
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: 60bf8478be0dcf8c22dbf402a8cad585683698b8f01228ed576a30bf2e52ee4f
+sections_version: '2'

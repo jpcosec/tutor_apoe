@@ -1,0 +1,18 @@
+name: atom-branch-apos-mechanisms-levels
+path: desk/atoms/branches/atom-branch-apos-mechanisms-levels.md
+source_hash: 685c292d7530f045a7b98b1e07fe98b3170e32ab7ef1469dc15ed38fdf07ba75
+content_hash: b450474426db2506ff069cfca9b1d4a5c9ac73a3a02e41b5e41adf2f604ce408
+field_hashes:
+  id: 3fac6362da8c308a0151edd885930606bf135bfdb9e6e1bea7f29a82b06d4a42
+  title: cc3d601d59e2e26c8f6b8aae649121faf4138b19f18b705ae41deea39e345b99
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

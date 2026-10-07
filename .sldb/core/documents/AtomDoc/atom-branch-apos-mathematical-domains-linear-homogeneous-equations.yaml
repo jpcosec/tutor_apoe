@@ -1,0 +1,18 @@
+name: atom-branch-apos-mathematical-domains-linear-homogeneous-equations
+path: desk/atoms/branches/atom-branch-apos-mathematical-domains-linear-homogeneous-equations.md
+source_hash: aa83c0c0a9b6e9d9581a3884628532d1ac92c7e150f996a675f8c052e0a8065f
+content_hash: 9c83a56d8780c9b66ad1c821179b5d23fd8a8f7e744c8176786f5c7c7d0d1276
+field_hashes:
+  id: 226528c3b7986352fa685b98c01d21ccc485e69a1d60fd0f4c077397a07ade3d
+  title: 64a9d05de8fa3cd36fbe1933259f17f4caf2e7e09de0e5b5818f9a7d489a2dc2
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

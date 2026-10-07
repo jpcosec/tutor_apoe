@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decompositions-can-also-emerge-from-student-data.md
+tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:data-analysis
+- topic:genetic-decomposition
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 56ee4e3005d91c477e8301142acf5f29be2f6a97f36b51633c75ec8ce4f3cc42

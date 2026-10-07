@@ -1,0 +1,221 @@
+doc_name: atom-apos-book-targets-researchers-teachers-and-graduate-students
+sections:
+- path: atom-xxx-unique-identifier
+  title: atom-xxx, unique identifier
+  breadcrumbs:
+  - atom-xxx, unique identifier
+  about:
+  - atom-xxx, unique identifier
+  - atom xxx unique identifier
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:audience
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:audience
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: atom-xxx-unique-identifier
+  level: 1
+  line_start: 2
+  line_end: 3
+- path: short-descriptive-title
+  title: Short, descriptive title
+  breadcrumbs:
+  - Short, descriptive title
+  about:
+  - Short, descriptive title
+  - short descriptive title
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:audience
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:audience
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: short-descriptive-title
+  level: 1
+  line_start: 4
+  line_end: 5
+- path: what-why-how-how-not-when-where-for-whom
+  title: what | why | how | how_not | when | where | for_whom
+  breadcrumbs:
+  - what | why | how | how_not | when | where | for_whom
+  about:
+  - what | why | how | how_not | when | where | for_whom
+  - what why how how not when where for whom
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:audience
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:audience
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: what-why-how-how-not-when-where-for-whom
+  level: 1
+  line_start: 6
+  line_end: 7
+- path: e-g-system-deskops-topic-templates
+  title: e.g., system:deskops, topic:templates
+  breadcrumbs:
+  - e.g., system:deskops, topic:templates
+  about:
+  - e.g., system:deskops, topic:templates
+  - e g system deskops topic templates
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:audience
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:audience
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: e-g-system-deskops-topic-templates
+  level: 1
+  line_start: 8
+  line_end: 18
+- path: el-libro-de-apos-est-dirigido-a-investigadores-docentes-y-estudiantes-de-posgrado
+  title: El libro de APOS está dirigido a investigadores, docentes y estudiantes de
+    posgrado
+  breadcrumbs:
+  - El libro de APOS está dirigido a investigadores, docentes y estudiantes de posgrado
+  about:
+  - El libro de APOS está dirigido a investigadores, docentes y estudiantes de posgrado
+  - el libro de apos est dirigido a investigadores docentes y estudiantes de posgrado
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:audience
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:audience
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: el-libro-de-apos-est-dirigido-a-investigadores-docentes-y-estudiantes-de-posgrado
+  level: 1
+  line_start: 19
+  line_end: 27
+- path: el-libro-de-apos-est-dirigido-a-investigadores-docentes-y-estudiantes-de-posgrado/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - El libro de APOS está dirigido a investigadores, docentes y estudiantes de posgrado
+  - Respuesta
+  about:
+  - El libro de APOS está dirigido a investigadores, docentes y estudiantes de posgrado
+  - el libro de apos est dirigido a investigadores docentes y estudiantes de posgrado
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:audience
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:audience
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 21
+  line_end: 24
+- path: el-libro-de-apos-est-dirigido-a-investigadores-docentes-y-estudiantes-de-posgrado/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - El libro de APOS está dirigido a investigadores, docentes y estudiantes de posgrado
+  - Procedencia
+  about:
+  - El libro de APOS está dirigido a investigadores, docentes y estudiantes de posgrado
+  - el libro de apos est dirigido a investigadores docentes y estudiantes de posgrado
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:audience
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:audience
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 25
+  line_end: 27
+source_hash: f68c55b169632b43eb9ae513120ec8bb43933c957d5d67f0a79a4b1fcbb2c59a
+sections_version: '2'

@@ -1,0 +1,19 @@
+name: atom-action-is-a-core-mental-structure-in-apos
+path: desk/atoms/apos/core-structures/action/atom-action-is-a-core-mental-structure-in-apos.md
+source_hash: 9a27c2aae81f01afcbace641c75d7682f3b3663f89305b4571a10772b201af2f
+content_hash: 72a0cc4cf9d96228174b74fc83238268487e8d2acb2a9c7f49ede521c4a5023d
+field_hashes:
+  id: 354f9f41486b2f6108303d424588352fb5faabd31ef039371e866d9bb5a984e1
+  title: 18b6d8887e2157c3d221af9989adcc2c4e5bc8f3dbfc4e3ce8e41596b0a263c9
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: f6ca8ab3cedd98586e2da46cde81343d9a8fc8397edebb4b3d1c6120543152ed
+  tags: 7ea2ef457dd1f0c39ae46e426cde12db083d62d14ecddbc0b65a71398562bf57
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:action
+- type.knowledge.atom
+- workspace.desk.atoms

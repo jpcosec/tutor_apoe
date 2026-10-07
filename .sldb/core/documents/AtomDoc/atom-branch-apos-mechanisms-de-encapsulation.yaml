@@ -1,0 +1,18 @@
+name: atom-branch-apos-mechanisms-de-encapsulation
+path: desk/atoms/branches/atom-branch-apos-mechanisms-de-encapsulation.md
+source_hash: c814b4d592f255bce2bf01cb47d1657b288391c2e0f297bbba0e060921f0dc09
+content_hash: b6ed47261f38b44910c67d647b49dffc2ea117b9f6724541333daad94df0c1d5
+field_hashes:
+  id: 21e75e2de45a9d6cab98b283788694a5319a8d24cffe36ad7ec568f726f95b59
+  title: d03d535c686046410a2c3dd898578edc0db654b03cbeef6aa7eb943c554b7e5e
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

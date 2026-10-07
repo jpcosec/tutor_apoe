@@ -1,0 +1,20 @@
+name: atom-early-group-activities-develop-set-as-process
+path: desk/atoms/apos/mathematical-domains/groups/atom-early-group-activities-develop-set-as-process.md
+source_hash: 2ab5cca51fc0c3ca4fdfc09b70e90dc677cee89ddcc1eff1f272c0ef826b800c
+content_hash: ce8ce98369bfa08b21650d926032b22d6e0d8848fc5d3899af18c2febe845354
+field_hashes:
+  id: da0afe687fcf30ca6a96f38b8e3288f7ecd7afd451fdc5bd141dfeba1326ea0a
+  title: 54efe2adaddf9cc099b7aec3fe7a1391a7057a5cf6944d20981024942dd40828
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 20b6e594a922ab4eb386f20e6de55f45838e48964fb69718b54a1d732161c573
+  tags: 3e240fafad00a8d16d279ac6ceb5003183f59221164bf98250d97e3b9aaa9997
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:groups
+- topic:sets
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,100 @@
+doc_name: atom-levels-are-content-specific-while-stages-are-general
+sections:
+- path: los-niveles-son-espec-ficos-del-contenido-mientras-que-las-etapas-son-generales
+  title: Los niveles son específicos del contenido mientras que las etapas son generales
+  breadcrumbs:
+  - Los niveles son específicos del contenido mientras que las etapas son generales
+  about:
+  - Los niveles son específicos del contenido mientras que las etapas son generales
+  - los niveles son espec ficos del contenido mientras que las etapas son generales
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:levels
+  - topic:stages
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:levels
+  - topic:stages
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: los-niveles-son-espec-ficos-del-contenido-mientras-que-las-etapas-son-generales
+  level: 1
+  line_start: 15
+  line_end: 23
+- path: los-niveles-son-espec-ficos-del-contenido-mientras-que-las-etapas-son-generales/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Los niveles son específicos del contenido mientras que las etapas son generales
+  - Respuesta
+  about:
+  - Los niveles son específicos del contenido mientras que las etapas son generales
+  - los niveles son espec ficos del contenido mientras que las etapas son generales
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:levels
+  - topic:stages
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:levels
+  - topic:stages
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 17
+  line_end: 20
+- path: los-niveles-son-espec-ficos-del-contenido-mientras-que-las-etapas-son-generales/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Los niveles son específicos del contenido mientras que las etapas son generales
+  - Procedencia
+  about:
+  - Los niveles son específicos del contenido mientras que las etapas son generales
+  - los niveles son espec ficos del contenido mientras que las etapas son generales
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:levels
+  - topic:stages
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:levels
+  - topic:stages
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 21
+  line_end: 23
+source_hash: f66f670ded3f6d3317d198d7fdf382837f4a4ad944eb9e36aa5b472ceba25a95
+sections_version: '2'

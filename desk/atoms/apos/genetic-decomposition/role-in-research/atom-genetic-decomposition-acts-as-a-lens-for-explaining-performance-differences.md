@@ -8,6 +8,8 @@ tags:
   - topic:performance-differences
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-genetic-decomposition-role-in-research
 ---
 
 # La descomposición genética actúa como lente para explicar diferencias de desempeño

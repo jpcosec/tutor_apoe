@@ -8,6 +8,8 @@ tags:
   - topic:action-to-process
   - domain:mathematics-education
   - layer:pedagogy
+node_type: knowledge
+parent_id: branch-apos-pedagogy-activities
 ---
 
 # Escribir procedimientos computacionales puede ayudar a pasar de Acción a Proceso

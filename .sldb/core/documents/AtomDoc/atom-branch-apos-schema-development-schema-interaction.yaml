@@ -1,0 +1,18 @@
+name: atom-branch-apos-schema-development-schema-interaction
+path: desk/atoms/branches/atom-branch-apos-schema-development-schema-interaction.md
+source_hash: b2fa13d057d0feda66f41573ac7838972ca3f1a76529dae95079969a3f01561e
+content_hash: 719fcf11cfffa9d8eb72270d790686bfb88b24dfaef77790d14d369edda8fd69
+field_hashes:
+  id: bf69cc990ede7ffa2e1c6245e5311f573decb53d26d6c1eade4bedc3b45aca29
+  title: 8ad418f4cf8662fb0feaeda42b7842699f0ffad1ab425b2f4e8389657e2362aa
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

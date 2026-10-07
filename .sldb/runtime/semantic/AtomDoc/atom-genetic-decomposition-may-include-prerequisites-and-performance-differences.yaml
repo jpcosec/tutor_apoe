@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-may-include-prerequisites-and-performance-differences.md
+tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:genetic-decomposition
+- topic:prerequisites
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 808e4c848738e45c60b7afda58576a516b44fc596d77d2a38a9733ee33592ffd

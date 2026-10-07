@@ -1,0 +1,20 @@
+name: atom-totality-is-treated-as-a-possible-additional-stage
+path: desk/atoms/apos/mechanisms/totality/atom-totality-is-treated-as-a-possible-additional-stage.md
+source_hash: 1eee8b605a7628f05ec6817ad155b4bc454cd564de9afe2bf15283fa8174823e
+content_hash: dd6c2a4fb42bcde296214241e877b60dc46572932604815179c840f66369e48c
+field_hashes:
+  id: 032c2b82bad96fee385051f3b162debafcd0f9a31106ceda61d2678b2a11925b
+  title: ee141bf0c3a729fd65bf38bc71d185368188ac5e241e9bf3dabfa12d4310961e
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 5a364ba13967937435df380d6ff47b0e3b233a0f88fdfd0f2e4ffb502cf05bf5
+  tags: 4ce70963ca213e64d58962543ebd3fdc7c881a2152146592fa14ed83cc136b0e
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:infinity
+- topic:totality
+- type.knowledge.atom
+- workspace.desk.atoms

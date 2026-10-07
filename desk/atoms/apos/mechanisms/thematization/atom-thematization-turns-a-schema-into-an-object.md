@@ -12,6 +12,8 @@ tags:
   - topic:schema
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-mechanisms-thematization
 ---
 
 # La tematización convierte un esquema en un objeto cognitivo

@@ -12,6 +12,8 @@ tags:
   - topic:apos
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-core-structures-action
 ---
 
 # APOS define cuatro estructuras mentales centrales

@@ -8,6 +8,8 @@ tags:
   - topic:functions
   - domain:mathematics-education
   - layer:pedagogy
+node_type: knowledge
+parent_id: branch-apos-pedagogy-isetl
 ---
 
 # ISETL soporta la función como entrada, salida y entidad transformable

@@ -1,0 +1,11 @@
+model: AtomDoc
+path: desk/atoms/branches/atom-branch-apos-mathematical-domains-linear-homogeneous-equations.md
+tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: aa83c0c0a9b6e9d9581a3884628532d1ac92c7e150f996a675f8c052e0a8065f

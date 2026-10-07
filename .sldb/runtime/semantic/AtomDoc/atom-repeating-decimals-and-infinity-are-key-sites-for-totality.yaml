@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/mathematical-domains/repeating-decimals/atom-repeating-decimals-and-infinity-are-key-sites-for-totality.md
+tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:infinity
+- topic:repeating-decimals
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 1d6ce8eb538d4e1820d4ec6a1e2be9552776fe2a0a249e7d807aeb9e1c374ab5

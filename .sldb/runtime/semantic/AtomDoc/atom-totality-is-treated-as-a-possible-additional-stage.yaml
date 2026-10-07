@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/mechanisms/totality/atom-totality-is-treated-as-a-possible-additional-stage.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:infinity
+- topic:totality
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 1eee8b605a7628f05ec6817ad155b4bc454cd564de9afe2bf15283fa8174823e

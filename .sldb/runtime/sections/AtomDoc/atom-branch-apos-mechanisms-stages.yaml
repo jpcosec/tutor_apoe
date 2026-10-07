@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-mechanisms-stages
+sections:
+- path: stages
+  title: Stages
+  breadcrumbs:
+  - Stages
+  about:
+  - Stages
+  - stages
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: stages
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: stages/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Stages
+  - Respuesta
+  about:
+  - Stages
+  - stages
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: stages/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Stages
+  - Procedencia
+  about:
+  - Stages
+  - stages
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: a8ffc9e52c237aa17de326563941bace83e977126c0c1051204cabd21f8181ae
+sections_version: '2'

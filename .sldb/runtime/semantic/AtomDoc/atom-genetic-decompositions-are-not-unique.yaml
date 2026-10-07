@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/genetic-decomposition/non-uniqueness/atom-genetic-decompositions-are-not-unique.md
+tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:genetic-decomposition
+- topic:non-uniqueness
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: ec440f75cf613a3af1eeb385ecbdc2e8fb217289c05d82454ef384beba8fe696

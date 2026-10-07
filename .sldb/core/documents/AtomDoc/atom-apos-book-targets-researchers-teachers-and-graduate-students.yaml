@@ -1,0 +1,20 @@
+name: atom-apos-book-targets-researchers-teachers-and-graduate-students
+path: desk/atoms/sources/apos-theory-book/scope/atom-apos-book-targets-researchers-teachers-and-graduate-students.md
+source_hash: f68c55b169632b43eb9ae513120ec8bb43933c957d5d67f0a79a4b1fcbb2c59a
+content_hash: d86689137d169b6f4d2d3acc02119a988eddda3176731f3ade74a20ef8bc1e4c
+field_hashes:
+  id: 163015bc573704c5a5117bed66b35b5f482c4d65dcb83aa95e3887beeb4dfc8c
+  title: 22d89a0c09443f89c379becaa2a597c80f4a63c022058beed4199446413a43a2
+  five_wh_one_plus: 8305e718bedf31054e243769182ea271c5448239cf1d4479bcbbc3dc97307915
+  answer: 2771ce7c0259ffcfde5927a0984dbdcbe6b91062ffa80836e4126e4310026d16
+  tags: 1232b3121d34feb3c614163b59d0b1d58beba869b17e66f2275c3ffd2c92d883
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:audience
+- topic:source-book
+- type.knowledge.atom
+- workspace.desk.atoms

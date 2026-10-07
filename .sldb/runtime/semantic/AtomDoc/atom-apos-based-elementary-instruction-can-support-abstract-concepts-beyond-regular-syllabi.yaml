@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/applications/elementary-math/atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi.md
+tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:elementary-math
+- topic:fractions
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 9bc46b738e85fdbdfbeec0440d755a542fc59adb2cd32918cabcfc59150031a1

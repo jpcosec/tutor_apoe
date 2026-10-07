@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/sources/apos-theory-book/scope/atom-apos-book-targets-researchers-teachers-and-graduate-students.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:audience
+- topic:source-book
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: f68c55b169632b43eb9ae513120ec8bb43933c957d5d67f0a79a4b1fcbb2c59a

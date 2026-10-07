@@ -1,0 +1,18 @@
+name: atom-branch-apos-genetic-decomposition-definition
+path: desk/atoms/branches/atom-branch-apos-genetic-decomposition-definition.md
+source_hash: c7152bc07b2a1db7ab3213b6efba0849ad9b07af0ab3cd8d80b669b350aa0989
+content_hash: ba4a4736ebda9da76e617f5b294b5bba9d1b7bbf8608265e7412c22bb1fa1ec8
+field_hashes:
+  id: 1e31cab69c5be8f928ef530e01196ec12bbac93976a25ce6c43d13497be27649
+  title: fb36d281cb801d912876ed3c38789ced6548de4ea3cad05bbe093335b8d8d015
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-mechanisms-coordination
+sections:
+- path: coordination
+  title: Coordination
+  breadcrumbs:
+  - Coordination
+  about:
+  - Coordination
+  - coordination
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: coordination
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: coordination/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Coordination
+  - Respuesta
+  about:
+  - Coordination
+  - coordination
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: coordination/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Coordination
+  - Procedencia
+  about:
+  - Coordination
+  - coordination
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: 423e1f9b26716ff876d21f4f22b93ae03c2fdc4a79b8866e0a78332100f9b096
+sections_version: '2'

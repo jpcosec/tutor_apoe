@@ -1,0 +1,330 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-branch-apos-research-paradigm
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-branch-apos-research-paradigm
+    name: atom-branch-apos-research-paradigm
+    model: AtomDoc
+    path: desk/atoms/branches/atom-branch-apos-research-paradigm.md
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: 14050a14e65a0a3bdf46e7f14b8aff5b17c8467dca70920953c83bbae801c8f9
+    hash_d: 622e3461ac19172e036b65ee26069f7310f9b6b7d6b9a2cbed9780b1e3b8487f
+  facets: {}
+- id: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-branch-apos-research-paradigm#paradigm
+    document_id: AtomDoc:atom-branch-apos-research-paradigm
+    path: paradigm
+    title: Paradigm
+    breadcrumbs:
+    - Paradigm
+    about:
+    - Paradigm
+    - paradigm
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: paradigm
+    level: 1
+    line_start: 13
+    line_end: 21
+  facets: {}
+- id: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-branch-apos-research-paradigm#paradigm/respuesta
+    document_id: AtomDoc:atom-branch-apos-research-paradigm
+    path: paradigm/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Paradigm
+    - Respuesta
+    about:
+    - Paradigm
+    - paradigm
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 18
+  facets: {}
+- id: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-branch-apos-research-paradigm#paradigm/procedencia
+    document_id: AtomDoc:atom-branch-apos-research-paradigm
+    path: paradigm/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Paradigm
+    - Procedencia
+    about:
+    - Paradigm
+    - paradigm
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 21
+  facets: {}
+- id: sldb://semantic_tag/layer:taxonomy
+  node_type: semantic_tag
+  semantics:
+    tag: layer:taxonomy
+  facets: {}
+- id: sldb://semantic_tag/node:branch
+  node_type: semantic_tag
+  semantics:
+    tag: node:branch
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-branch-apos-research-paradigm
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-research-paradigm
+  target: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-research-paradigm
+  target: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-research-paradigm
+  target: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-research-paradigm
+  target: sldb://semantic_tag/layer:taxonomy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-research-paradigm
+  target: sldb://semantic_tag/node:branch
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-research-paradigm
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-research-paradigm
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-research-paradigm
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-research-paradigm
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-research-paradigm
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm
+  target: sldb://semantic_tag/layer:taxonomy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm
+  target: sldb://semantic_tag/node:branch
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/respuesta
+  target: sldb://semantic_tag/layer:taxonomy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/respuesta
+  target: sldb://semantic_tag/node:branch
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/procedencia
+  target: sldb://semantic_tag/layer:taxonomy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/procedencia
+  target: sldb://semantic_tag/node:branch
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-research-paradigm#paradigm/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-branch-apos-research-paradigm
+model_name: AtomDoc
+source_hash: 14050a14e65a0a3bdf46e7f14b8aff5b17c8467dca70920953c83bbae801c8f9
+content_hash: 622e3461ac19172e036b65ee26069f7310f9b6b7d6b9a2cbed9780b1e3b8487f
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

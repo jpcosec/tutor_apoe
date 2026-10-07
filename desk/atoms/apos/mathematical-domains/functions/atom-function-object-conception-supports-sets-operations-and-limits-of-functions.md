@@ -12,6 +12,8 @@ tags:
   - topic:object
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-mathematical-domains-functions
 ---
 
 # La concepción de función como objeto permite conjuntos, operaciones y límites de funciones

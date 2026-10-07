@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/pedagogy/isetl/atom-isetl-supports-function-as-input-output-and-transformable-entity.md
+tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:functions
+- topic:isetl
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 37472380dcdc7eb257a51cd2aba1213c888ce9c1326bbd95a8cf831fe6d671e6

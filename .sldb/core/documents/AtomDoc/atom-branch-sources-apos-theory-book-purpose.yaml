@@ -1,0 +1,18 @@
+name: atom-branch-sources-apos-theory-book-purpose
+path: desk/atoms/branches/atom-branch-sources-apos-theory-book-purpose.md
+source_hash: 48bdf5d9c17e0a9a5f1cea99adf8a0071887ea01cd154ff3df040a4929121c33
+content_hash: f688741eabf2b9e2787bf0bb150305aad5381387e3f6f6beaf07c4cd7f60b2d2
+field_hashes:
+  id: d8a326c5c433fe993921328a76880d79b71dc414cecea83ddfaff1b181b433e4
+  title: 79e7ad429d54fc9d1fc86cf5d941cbb37f008fa12dc85827e34ffbebbdd960a7
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

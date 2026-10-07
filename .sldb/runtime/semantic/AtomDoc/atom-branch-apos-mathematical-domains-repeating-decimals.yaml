@@ -1,0 +1,11 @@
+model: AtomDoc
+path: desk/atoms/branches/atom-branch-apos-mathematical-domains-repeating-decimals.md
+tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: bb151ec6eae0c7e02f63b447fb0355e0f2c75a787202bbb0eaceac7bed8ebbc2

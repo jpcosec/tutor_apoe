@@ -2,6 +2,37 @@
 
 Repositorio de trabajo para extraer, organizar y consultar conocimiento sobre APOS/ APOE usando **Deskops** y **SLDB**.
 
+## Consulta simple de la KB
+
+No necesitas usar un chatbot ni configurar claves de IA. Desde la Terminal:
+
+```bash
+cd /Users/investigacion/proyectos/tutor_apoe
+python scripts/kb.py serve
+```
+
+Luego abre <http://127.0.0.1:8000>. El visor muestra un mapa interactivo de la
+KB con React Flow: árbol horizontal o vertical, zoom, minimapa, filtros por
+tema y un panel con la respuesta y procedencia de cada átomo. Para detenerlo,
+vuelve a la Terminal y presiona `Control + C`.
+
+Selecciona una tarjeta de átomo para abrir el editor a la derecha. Al guardar,
+se actualiza el archivo Markdown y se reindexa SLDB automáticamente.
+
+Los átomos pueden declarar `node_type` (texto libre, por ejemplo `branch`,
+`example` o `definition`) y `parent_id`. Usa **Add child** en el editor para
+crear un átomo hijo enlazado a la tarjeta actual.
+
+También hay una interfaz de comandos respaldada por **SLDB**:
+
+```bash
+python scripts/kb.py search topic:encapsulation
+python scripts/kb.py check
+```
+
+`search` delega la consulta a `sldb find`; por eso puede buscar texto y tags
+semánticos como `topic:schema` o `layer:pedagogy`.
+
 ## Estructura
 
 - `sources/` — fuentes primarias, por ejemplo el PDF base.

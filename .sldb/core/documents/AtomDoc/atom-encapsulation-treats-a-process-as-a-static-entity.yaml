@@ -1,0 +1,19 @@
+name: atom-encapsulation-treats-a-process-as-a-static-entity
+path: desk/atoms/apos/mechanisms/encapsulation/atom-encapsulation-treats-a-process-as-a-static-entity.md
+source_hash: 37ba1661036d55c7e7ccb2a5118ffcb32c85848b8cc0580ebf96800ef8ef1e74
+content_hash: 0961cec0ba508c3345b6c4efcd462a362e3183295b57a46113c33b5c2aef30fe
+field_hashes:
+  id: 34c5f2f9bfad5a882dbbd06fefc43779fb1307c37959f842bbf2e5ea802b960e
+  title: ed4a56d1a4a2a842022344d5d5e3e3f5f60db1e2571ce6775cf88e36bd83ed57
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 8db1e337cf8e0fcdca3974395c36b53453b9ef79fdb52e90eca6ee826407b8ed
+  tags: fa27f15b20b7a2608c48cf8667f981fad5ba576c04c803ff8d715f9ad6d4d392
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:encapsulation
+- type.knowledge.atom
+- workspace.desk.atoms

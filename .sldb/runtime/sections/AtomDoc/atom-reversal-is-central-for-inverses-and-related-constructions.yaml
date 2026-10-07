@@ -1,0 +1,206 @@
+doc_name: atom-reversal-is-central-for-inverses-and-related-constructions
+sections:
+- path: atom-xxx-unique-identifier
+  title: atom-xxx, unique identifier
+  breadcrumbs:
+  - atom-xxx, unique identifier
+  about:
+  - atom-xxx, unique identifier
+  - atom xxx unique identifier
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:reversal
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:reversal
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: atom-xxx-unique-identifier
+  level: 1
+  line_start: 2
+  line_end: 3
+- path: short-descriptive-title
+  title: Short, descriptive title
+  breadcrumbs:
+  - Short, descriptive title
+  about:
+  - Short, descriptive title
+  - short descriptive title
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:reversal
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:reversal
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: short-descriptive-title
+  level: 1
+  line_start: 4
+  line_end: 5
+- path: what-why-how-how-not-when-where-for-whom
+  title: what | why | how | how_not | when | where | for_whom
+  breadcrumbs:
+  - what | why | how | how_not | when | where | for_whom
+  about:
+  - what | why | how | how_not | when | where | for_whom
+  - what why how how not when where for whom
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:reversal
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:reversal
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: what-why-how-how-not-when-where-for-whom
+  level: 1
+  line_start: 6
+  line_end: 7
+- path: e-g-system-deskops-topic-templates
+  title: e.g., system:deskops, topic:templates
+  breadcrumbs:
+  - e.g., system:deskops, topic:templates
+  about:
+  - e.g., system:deskops, topic:templates
+  - e g system deskops topic templates
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:reversal
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:reversal
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: e-g-system-deskops-topic-templates
+  level: 1
+  line_start: 8
+  line_end: 17
+- path: la-reversi-n-es-central-para-inversas-y-construcciones-relacionadas
+  title: La reversión es central para inversas y construcciones relacionadas
+  breadcrumbs:
+  - La reversión es central para inversas y construcciones relacionadas
+  about:
+  - La reversión es central para inversas y construcciones relacionadas
+  - la reversi n es central para inversas y construcciones relacionadas
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:reversal
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:reversal
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: la-reversi-n-es-central-para-inversas-y-construcciones-relacionadas
+  level: 1
+  line_start: 18
+  line_end: 26
+- path: la-reversi-n-es-central-para-inversas-y-construcciones-relacionadas/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - La reversión es central para inversas y construcciones relacionadas
+  - Respuesta
+  about:
+  - La reversión es central para inversas y construcciones relacionadas
+  - la reversi n es central para inversas y construcciones relacionadas
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:reversal
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:reversal
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 20
+  line_end: 23
+- path: la-reversi-n-es-central-para-inversas-y-construcciones-relacionadas/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - La reversión es central para inversas y construcciones relacionadas
+  - Procedencia
+  about:
+  - La reversión es central para inversas y construcciones relacionadas
+  - la reversi n es central para inversas y construcciones relacionadas
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:reversal
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:reversal
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 24
+  line_end: 26
+source_hash: c43bd0db15a0e064d461cf6d17f0d330bc0dd8d34a5d51e09c27c45dde951fa3
+sections_version: '2'

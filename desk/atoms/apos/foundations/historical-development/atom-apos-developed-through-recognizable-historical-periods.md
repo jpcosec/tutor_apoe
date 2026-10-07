@@ -11,6 +11,8 @@ tags:
   - topic:history
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-foundations-historical-development
 ---
 
 # APOS se desarrolló a través de períodos históricos reconocibles

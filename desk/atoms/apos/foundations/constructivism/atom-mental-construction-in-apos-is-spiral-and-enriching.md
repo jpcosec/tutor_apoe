@@ -12,6 +12,8 @@ tags:
   - topic:mental-construction
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-foundations-constructivism
 ---
 
 # La construcción mental en APOS tiene carácter espiral y enriquecedor

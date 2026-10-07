@@ -1,0 +1,11 @@
+model: AtomDoc
+path: desk/atoms/branches/atom-branch-sources-apos-theory-book-authorship.md
+tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 939bbea9ea0f96b505422236af67b1d532a63eb75faaaeba66d72ae7ccce6642

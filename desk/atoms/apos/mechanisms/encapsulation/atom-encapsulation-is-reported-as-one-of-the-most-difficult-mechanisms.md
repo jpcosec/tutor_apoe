@@ -11,6 +11,8 @@ tags:
   - topic:encapsulation
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-mechanisms-encapsulation
 ---
 
 # La encapsulación se reporta como uno de los mecanismos más difíciles

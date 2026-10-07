@@ -1,0 +1,19 @@
+name: atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+path: desk/atoms/apos/research/paradigm/atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm.md
+source_hash: e2d0839d8c9e01b7fed37be52428d799be8ef1db9abf5ff26f07ea3aa64088f4
+content_hash: 9479e4ccbf06070c8b730dd4679ba333d26fadc01efcb91867d62233a641c6ed
+field_hashes:
+  id: 08ad80a5fd05ffa8d2ec5eaeeb89f3912ff8be49d235b0926d2db56281bf9912
+  title: ce58505a978c329dd0d78b2f8559aa633f2d132aeabda434e943c507db2012ed
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: f79b942ffe11be6592bc8af599c705963ee51b3742b016a73f3362d18c514122
+  tags: 91837d34c891988887685da99fc41beb01b2721f4eaa1dd12e82d90deba47325
+semantic_tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:research-paradigm
+- type.knowledge.atom
+- workspace.desk.atoms

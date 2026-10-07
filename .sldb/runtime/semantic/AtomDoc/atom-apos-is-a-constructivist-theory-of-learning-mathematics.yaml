@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/foundations/constructivism/atom-apos-is-a-constructivist-theory-of-learning-mathematics.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:constructivism
+- topic:learning-theory
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 0022b368d4d9a15a8a8a0524255961d603dd5cce9c337624a5cb8fcf1cb6debd

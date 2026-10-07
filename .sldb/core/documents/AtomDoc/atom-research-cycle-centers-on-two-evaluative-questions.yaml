@@ -1,0 +1,19 @@
+name: atom-research-cycle-centers-on-two-evaluative-questions
+path: desk/atoms/apos/research/research-cycle/atom-research-cycle-centers-on-two-evaluative-questions.md
+source_hash: da0abad31fceab01815d622c353b3ca672dbbb2dab58973069c0736afa4eef7f
+content_hash: 594d9b948b22ceed5f3b90b8b8eb78dcd6276ecc3380bc48ed23b3a818b157e1
+field_hashes:
+  id: 0310c9fe4d98a6212a56a9e93d41976560e0421076fa7612ef0fb2a8510f1a2b
+  title: 5cbab73a7d5bb5441b28084fccd4281351d11afdb1295a402cc69e49129bbbcc
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: c9a747010941e3942921456cced4ba8b59834b4eecf50dc3e0386d41499772e1
+  tags: daf6a89b46fa62a86760478ff61a5058bdb1e3b96a8bcb0d00e6c448df24ec3b
+semantic_tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:research-cycle
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,19 @@
+name: atom-coordination-combines-processes-to-build-new-objects-or-processes
+path: desk/atoms/apos/mechanisms/coordination/atom-coordination-combines-processes-to-build-new-objects-or-processes.md
+source_hash: 249831d75be6ebe300c9a8b40c2556393b196983dd6c6b82356f443269513a45
+content_hash: 3e72033187dfaebaaf53e99c53c83eba45fe46df5e2f6eba5742166760c4c6ad
+field_hashes:
+  id: 80e2b1c93552cfc1a61eeab6a40615a7910c7e9af738ebcd4e0789d96d79ffd3
+  title: 9508187acecabebb7bc39c6779780fe260b0c237382f22505e5b6eeeea91574d
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 90888e2d6234ba7ec904cb71a8deb9a07c1bd58ce7c352b95eba20dd532ca9c6
+  tags: 665376bd251d73cee5f00477f35ed7734f1894931218cc775821da932fdd0603
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:coordination
+- type.knowledge.atom
+- workspace.desk.atoms

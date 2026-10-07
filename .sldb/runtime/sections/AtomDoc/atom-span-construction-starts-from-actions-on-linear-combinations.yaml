@@ -1,0 +1,100 @@
+doc_name: atom-span-construction-starts-from-actions-on-linear-combinations
+sections:
+- path: la-construcci-n-de-span-comienza-con-acciones-sobre-combinaciones-lineales
+  title: La construcción de span comienza con acciones sobre combinaciones lineales
+  breadcrumbs:
+  - La construcción de span comienza con acciones sobre combinaciones lineales
+  about:
+  - La construcción de span comienza con acciones sobre combinaciones lineales
+  - la construcci n de span comienza con acciones sobre combinaciones lineales
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:linear-combination
+  - topic:spanning-set-and-span
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:linear-combination
+  - topic:spanning-set-and-span
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: la-construcci-n-de-span-comienza-con-acciones-sobre-combinaciones-lineales
+  level: 1
+  line_start: 15
+  line_end: 23
+- path: la-construcci-n-de-span-comienza-con-acciones-sobre-combinaciones-lineales/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - La construcción de span comienza con acciones sobre combinaciones lineales
+  - Respuesta
+  about:
+  - La construcción de span comienza con acciones sobre combinaciones lineales
+  - la construcci n de span comienza con acciones sobre combinaciones lineales
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:linear-combination
+  - topic:spanning-set-and-span
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:linear-combination
+  - topic:spanning-set-and-span
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 17
+  line_end: 20
+- path: la-construcci-n-de-span-comienza-con-acciones-sobre-combinaciones-lineales/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - La construcción de span comienza con acciones sobre combinaciones lineales
+  - Procedencia
+  about:
+  - La construcción de span comienza con acciones sobre combinaciones lineales
+  - la construcci n de span comienza con acciones sobre combinaciones lineales
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:linear-combination
+  - topic:spanning-set-and-span
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:linear-combination
+  - topic:spanning-set-and-span
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 21
+  line_end: 23
+source_hash: 6531b59d27ab7a7413fce09409a76dc3de048b6231cd83f3484fde3ca274de97
+sections_version: '2'

@@ -1,0 +1,20 @@
+name: atom-theoretical-models-increase-reliability-of-data-analysis
+path: desk/atoms/apos/research/paradigm/atom-theoretical-models-increase-reliability-of-data-analysis.md
+source_hash: 450b77bc2b80e97d7839e6f61e7ee2b6bc1980c538cb866a4d8ba083b1661601
+content_hash: baeb5c83052ae4ea9aee1f1f5f95ccfb657fa5a13222f3077e00dfc158275c9f
+field_hashes:
+  id: 847718f1a4e21f8f930919665c329fb73e1a8246f2ee2225b103bb9ce55c0b22
+  title: 91989607905721ef8ad7188fbb68a8655a1087ced75e320ae37f9272a7f1d055
+  five_wh_one_plus: 1566d618b9ad05f5d6636ef68875b058a3311f288ab671709bb72d36b5dd1a5c
+  answer: 8935f1d8dd2f90bbfe019459f3aefc031f48218c2a31e9dbeb6334f38bffb442
+  tags: 5addb5622bd06c555ec611f1f0a519734a1b0e6df37d28e763b286929fef4885
+semantic_tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:reliability
+- topic:research-paradigm
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/mechanisms/levels/atom-levels-are-content-specific-while-stages-are-general.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:levels
+- topic:stages
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: f66f670ded3f6d3317d198d7fdf382837f4a4ad944eb9e36aa5b472ceba25a95

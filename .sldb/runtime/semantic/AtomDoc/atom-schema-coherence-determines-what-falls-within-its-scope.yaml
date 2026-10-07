@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/schema-development/schema-interaction/atom-schema-coherence-determines-what-falls-within-its-scope.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:coherence
+- topic:schema
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 7bdca750b79da24ea9e6f51b6267aabf79548cf07a9185fc798eb665f2b3f333

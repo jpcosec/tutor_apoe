@@ -12,6 +12,8 @@ tags:
   - topic:levels
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-mechanisms-stages
 ---
 
 # Las etapas y los niveles organizan el análisis del desarrollo en APOS

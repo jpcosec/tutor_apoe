@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one.md
+tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:generic-student
+- topic:genetic-decomposition
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 6746414cc2c32e2ba44ce8f8d2e2ecaab21e49d110d3a3590ab5980583417b3c

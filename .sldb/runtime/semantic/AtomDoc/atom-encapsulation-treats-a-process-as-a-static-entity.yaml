@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/mechanisms/encapsulation/atom-encapsulation-treats-a-process-as-a-static-entity.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:encapsulation
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 37ba1661036d55c7e7ccb2a5118ffcb32c85848b8cc0580ebf96800ef8ef1e74

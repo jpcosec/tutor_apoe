@@ -1,0 +1,750 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+    name: atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+    model: AtomDoc
+    path: desk/atoms/apos/foundations/reflective-abstraction/atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: d543b140777ca81e20b20a14bc896aa68c4df9fd85eab5459be66df1d367a8b6
+    hash_d: 97aa96f18bf0a2469a5a7f98e2d985044a9c7d0912587c3bd3f19c1147e48d57
+  facets: {}
+- id: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#atom-xxx-unique-identifier
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#atom-xxx-unique-identifier
+    document_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+    path: atom-xxx-unique-identifier
+    title: atom-xxx, unique identifier
+    breadcrumbs:
+    - atom-xxx, unique identifier
+    about:
+    - atom-xxx, unique identifier
+    - atom xxx unique identifier
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: atom-xxx-unique-identifier
+    level: 1
+    line_start: 2
+    line_end: 3
+  facets: {}
+- id: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#short-descriptive-title
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#short-descriptive-title
+    document_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+    path: short-descriptive-title
+    title: Short, descriptive title
+    breadcrumbs:
+    - Short, descriptive title
+    about:
+    - Short, descriptive title
+    - short descriptive title
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: short-descriptive-title
+    level: 1
+    line_start: 4
+    line_end: 5
+  facets: {}
+- id: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#what-why-how-how-not-when-where-for-whom
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#what-why-how-how-not-when-where-for-whom
+    document_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+    path: what-why-how-how-not-when-where-for-whom
+    title: what | why | how | how_not | when | where | for_whom
+    breadcrumbs:
+    - what | why | how | how_not | when | where | for_whom
+    about:
+    - what | why | how | how_not | when | where | for_whom
+    - what why how how not when where for whom
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: what-why-how-how-not-when-where-for-whom
+    level: 1
+    line_start: 6
+    line_end: 7
+  facets: {}
+- id: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#e-g-system-deskops-topic-templates
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#e-g-system-deskops-topic-templates
+    document_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+    path: e-g-system-deskops-topic-templates
+    title: e.g., system:deskops, topic:templates
+    breadcrumbs:
+    - e.g., system:deskops, topic:templates
+    about:
+    - e.g., system:deskops, topic:templates
+    - e g system deskops topic templates
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: e-g-system-deskops-topic-templates
+    level: 1
+    line_start: 8
+    line_end: 18
+  facets: {}
+- id: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
+    document_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+    path: la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
+    title: La abstracción reflexiva es el mecanismo principal de Piaget para las estructuras
+      lógico-matemáticas
+    breadcrumbs:
+    - La abstracción reflexiva es el mecanismo principal de Piaget para las estructuras
+      lógico-matemáticas
+    about:
+    - La abstracción reflexiva es el mecanismo principal de Piaget para las estructuras
+      lógico-matemáticas
+    - la abstracci n reflexiva es el mecanismo principal de piaget para las estructuras
+      l gico matem ticas
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
+    level: 1
+    line_start: 19
+    line_end: 27
+  facets: {}
+- id: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/respuesta
+    document_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+    path: la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - La abstracción reflexiva es el mecanismo principal de Piaget para las estructuras
+      lógico-matemáticas
+    - Respuesta
+    about:
+    - La abstracción reflexiva es el mecanismo principal de Piaget para las estructuras
+      lógico-matemáticas
+    - la abstracci n reflexiva es el mecanismo principal de piaget para las estructuras
+      l gico matem ticas
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 21
+    line_end: 24
+  facets: {}
+- id: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/procedencia
+    document_id: AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+    path: la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - La abstracción reflexiva es el mecanismo principal de Piaget para las estructuras
+      lógico-matemáticas
+    - Procedencia
+    about:
+    - La abstracción reflexiva es el mecanismo principal de Piaget para las estructuras
+      lógico-matemáticas
+    - la abstracci n reflexiva es el mecanismo principal de piaget para las estructuras
+      l gico matem ticas
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:piaget
+    - topic:reflective-abstraction
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 25
+    line_end: 27
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:theory
+  node_type: semantic_tag
+  semantics:
+    tag: layer:theory
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:piaget
+  node_type: semantic_tag
+  semantics:
+    tag: topic:piaget
+  facets: {}
+- id: sldb://semantic_tag/topic:reflective-abstraction
+  node_type: semantic_tag
+  semantics:
+    tag: topic:reflective-abstraction
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#atom-xxx-unique-identifier
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#short-descriptive-title
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#what-why-how-how-not-when-where-for-whom
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#e-g-system-deskops-topic-templates
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://semantic_tag/topic:piaget
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://semantic_tag/topic:reflective-abstraction
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:piaget
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:reflective-abstraction
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#short-descriptive-title
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#short-descriptive-title
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#short-descriptive-title
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#short-descriptive-title
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#short-descriptive-title
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#short-descriptive-title
+  target: sldb://semantic_tag/topic:piaget
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#short-descriptive-title
+  target: sldb://semantic_tag/topic:reflective-abstraction
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#short-descriptive-title
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#short-descriptive-title
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:piaget
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:reflective-abstraction
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:piaget
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:reflective-abstraction
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
+  target: sldb://semantic_tag/topic:piaget
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
+  target: sldb://semantic_tag/topic:reflective-abstraction
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/respuesta
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/respuesta
+  target: sldb://semantic_tag/topic:piaget
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/respuesta
+  target: sldb://semantic_tag/topic:reflective-abstraction
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/procedencia
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/procedencia
+  target: sldb://semantic_tag/topic:piaget
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/procedencia
+  target: sldb://semantic_tag/topic:reflective-abstraction
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures#la-abstracci-n-reflexiva-es-el-mecanismo-principal-de-piaget-para-las-estructuras-l-gico-matem-ticas/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+model_name: AtomDoc
+source_hash: d543b140777ca81e20b20a14bc896aa68c4df9fd85eab5459be66df1d367a8b6
+content_hash: 97aa96f18bf0a2469a5a7f98e2d985044a9c7d0912587c3bd3f19c1147e48d57
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:piaget
+- topic:reflective-abstraction
+- type.knowledge.atom
+- workspace.desk.atoms

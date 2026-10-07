@@ -12,6 +12,8 @@ tags:
   - topic:piaget
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-mechanisms-interiorization
 ---
 
 # La interiorización traduce acciones materiales en procesos mentales

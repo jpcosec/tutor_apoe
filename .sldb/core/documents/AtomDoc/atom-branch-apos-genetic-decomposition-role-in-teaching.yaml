@@ -1,0 +1,18 @@
+name: atom-branch-apos-genetic-decomposition-role-in-teaching
+path: desk/atoms/branches/atom-branch-apos-genetic-decomposition-role-in-teaching.md
+source_hash: 06612e10d1d36d3588e84d4f6003fc1c50a2f0bba895528f2cd598528a2925b3
+content_hash: 20c73f9742033bfc68e562a3af38ca9c8ae91ff6bdc6c0ff37791322a06a8b9b
+field_hashes:
+  id: b5b5aaefac0694673ddac909ecd9007dfbc144f4fe71358e989d595a053e6566
+  title: 80cde8abf5480217d05468f64be4a7627af0cb0d41752e9eb376f2e81de53f1c
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

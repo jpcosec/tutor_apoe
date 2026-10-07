@@ -1,0 +1,20 @@
+name: atom-apos-book-presents-framework-for-research-and-curriculum-development
+path: desk/atoms/sources/apos-theory-book/purpose/atom-apos-book-presents-framework-for-research-and-curriculum-development.md
+source_hash: 00a385b7609baf44db6d261a1aeb18ce00cde8263974988567e65026c4de4efb
+content_hash: db969b20451564f613d6f744a517ded628619b08047fb0dedcfbba0f4537e4c4
+field_hashes:
+  id: f41e05df03dcab0545a579da24d1efe005bf1c3b560e7ae1157092db5886c62f
+  title: 6e57050095b7b328e049a24c5c0c10108409b883df03e6bd90b30c37da30fd7e
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 529cedea0eb3be30e50f512cac19581bb3a884cea69160f714407ac3ff79d022
+  tags: 1c2f31c15689aef8dccf621cc27a370436ae9fcb19ed795744a11d2db7a87672
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:framework
+- topic:source-book
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -8,6 +8,8 @@ tags:
   - topic:stages
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-mechanisms-levels
 ---
 
 # Los niveles son específicos del contenido mientras que las etapas son generales

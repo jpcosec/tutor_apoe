@@ -1,0 +1,18 @@
+name: atom-branch-sources-apos-theory-book-structure
+path: desk/atoms/branches/atom-branch-sources-apos-theory-book-structure.md
+source_hash: e88fbd206b62d54da35514806ef84f7db5d19c29245f30406b1de12d6cf902e6
+content_hash: 0c0d6d4b7f60ea857bab4c564718e083f44a33500b104f5e2e9fa405de2d3c24
+field_hashes:
+  id: a3d20e7c316eb7d8176e1507d6c54c0b0eee82b3a587b59bfeaea8cf4b5d525f
+  title: a20c89205a4448d25207e1f3bd7b638e0489cd23f4cdf032d0ead7404b29d30b
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

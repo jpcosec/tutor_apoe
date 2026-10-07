@@ -12,6 +12,8 @@ tags:
   - topic:prerequisites
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-genetic-decomposition-design
 ---
 
 # La descomposición genética puede incluir prerrequisitos y diferencias de desempeño

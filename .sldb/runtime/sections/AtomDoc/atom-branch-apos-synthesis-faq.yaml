@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-synthesis-faq
+sections:
+- path: faq
+  title: Faq
+  breadcrumbs:
+  - Faq
+  about:
+  - Faq
+  - faq
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: faq
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: faq/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Faq
+  - Respuesta
+  about:
+  - Faq
+  - faq
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: faq/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Faq
+  - Procedencia
+  about:
+  - Faq
+  - faq
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: cdf026158a292f4cfa88a962d59a036c375195e067780253c4ecf72677a75b46
+sections_version: '2'

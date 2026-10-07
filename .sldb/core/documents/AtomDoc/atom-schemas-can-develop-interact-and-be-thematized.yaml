@@ -1,0 +1,19 @@
+name: atom-schemas-can-develop-interact-and-be-thematized
+path: desk/atoms/apos/schema-development/schema-growth/atom-schemas-can-develop-interact-and-be-thematized.md
+source_hash: baec7b09f95416ae2d08fccc18d02f64ada936be570f9c1841c61f85afe7746d
+content_hash: 11b47be5d604bf73786aa23903077575e12953abb474628fdd4eade889426343
+field_hashes:
+  id: ea4bf0f01d5c726a9c6551159622f59a02761e351f7fdd0c51bf3cac91a7a83e
+  title: ac4ec620f9159b71f022a736f60da781fa0e9bb1454235b64e51371daa4a21db
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 21e7c673b0f13b7e933d71e57729b0b3be3a0dd5b531fb40ab286558b948b1f1
+  tags: 3723cc6671dd24a94f30f72d48306d89383965a81a044e57887f04769d20b89b
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:schema-development
+- type.knowledge.atom
+- workspace.desk.atoms

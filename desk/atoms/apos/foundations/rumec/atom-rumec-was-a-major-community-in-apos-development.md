@@ -11,6 +11,8 @@ tags:
   - topic:rumec
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-foundations-rumec
 ---
 
 # RUMEC fue una comunidad decisiva en el desarrollo de APOS

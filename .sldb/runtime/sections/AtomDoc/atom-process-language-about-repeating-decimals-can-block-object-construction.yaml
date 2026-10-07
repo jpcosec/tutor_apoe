@@ -1,0 +1,110 @@
+doc_name: atom-process-language-about-repeating-decimals-can-block-object-construction
+sections:
+- path: el-lenguaje-de-proceso-sobre-decimales-peri-dicos-puede-bloquear-la-construcci-n-de-objeto
+  title: El lenguaje de proceso sobre decimales periódicos puede bloquear la construcción
+    de objeto
+  breadcrumbs:
+  - El lenguaje de proceso sobre decimales periódicos puede bloquear la construcción
+    de objeto
+  about:
+  - El lenguaje de proceso sobre decimales periódicos puede bloquear la construcción
+    de objeto
+  - el lenguaje de proceso sobre decimales peri dicos puede bloquear la construcci
+    n de objeto
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:process-language
+  - topic:repeating-decimals
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:process-language
+  - topic:repeating-decimals
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: el-lenguaje-de-proceso-sobre-decimales-peri-dicos-puede-bloquear-la-construcci-n-de-objeto
+  level: 1
+  line_start: 15
+  line_end: 23
+- path: el-lenguaje-de-proceso-sobre-decimales-peri-dicos-puede-bloquear-la-construcci-n-de-objeto/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - El lenguaje de proceso sobre decimales periódicos puede bloquear la construcción
+    de objeto
+  - Respuesta
+  about:
+  - El lenguaje de proceso sobre decimales periódicos puede bloquear la construcción
+    de objeto
+  - el lenguaje de proceso sobre decimales peri dicos puede bloquear la construcci
+    n de objeto
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:process-language
+  - topic:repeating-decimals
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:process-language
+  - topic:repeating-decimals
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 17
+  line_end: 20
+- path: el-lenguaje-de-proceso-sobre-decimales-peri-dicos-puede-bloquear-la-construcci-n-de-objeto/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - El lenguaje de proceso sobre decimales periódicos puede bloquear la construcción
+    de objeto
+  - Procedencia
+  about:
+  - El lenguaje de proceso sobre decimales periódicos puede bloquear la construcción
+    de objeto
+  - el lenguaje de proceso sobre decimales peri dicos puede bloquear la construcci
+    n de objeto
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:process-language
+  - topic:repeating-decimals
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:process-language
+  - topic:repeating-decimals
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 21
+  line_end: 23
+source_hash: 1d5440d1c49a0d43b9173c53a5a830cd86c786bf1b406b286b414c15b438de2f
+sections_version: '2'

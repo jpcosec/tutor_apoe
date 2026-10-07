@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/research/data-collection/atom-apos-interviews-use-prompting-to-probe-construction-in-progress.md
+tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:interviews
+- topic:prompting
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 943691ebd9d40a7f4ca2dec4822f3a386b7aa66eeb844988b1caf1f462cf3dce

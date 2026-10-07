@@ -1,0 +1,206 @@
+doc_name: atom-action-requires-explicit-step-by-step-external-guidance
+sections:
+- path: atom-xxx-unique-identifier
+  title: atom-xxx, unique identifier
+  breadcrumbs:
+  - atom-xxx, unique identifier
+  about:
+  - atom-xxx, unique identifier
+  - atom xxx unique identifier
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:action
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:action
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: atom-xxx-unique-identifier
+  level: 1
+  line_start: 2
+  line_end: 3
+- path: short-descriptive-title
+  title: Short, descriptive title
+  breadcrumbs:
+  - Short, descriptive title
+  about:
+  - Short, descriptive title
+  - short descriptive title
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:action
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:action
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: short-descriptive-title
+  level: 1
+  line_start: 4
+  line_end: 5
+- path: what-why-how-how-not-when-where-for-whom
+  title: what | why | how | how_not | when | where | for_whom
+  breadcrumbs:
+  - what | why | how | how_not | when | where | for_whom
+  about:
+  - what | why | how | how_not | when | where | for_whom
+  - what why how how not when where for whom
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:action
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:action
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: what-why-how-how-not-when-where-for-whom
+  level: 1
+  line_start: 6
+  line_end: 7
+- path: e-g-system-deskops-topic-templates
+  title: e.g., system:deskops, topic:templates
+  breadcrumbs:
+  - e.g., system:deskops, topic:templates
+  about:
+  - e.g., system:deskops, topic:templates
+  - e g system deskops topic templates
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:action
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:action
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: e-g-system-deskops-topic-templates
+  level: 1
+  line_start: 8
+  line_end: 17
+- path: una-acci-n-requiere-gu-a-externa-expl-cita-y-ejecuci-n-paso-a-paso
+  title: Una Acción requiere guía externa explícita y ejecución paso a paso
+  breadcrumbs:
+  - Una Acción requiere guía externa explícita y ejecución paso a paso
+  about:
+  - Una Acción requiere guía externa explícita y ejecución paso a paso
+  - una acci n requiere gu a externa expl cita y ejecuci n paso a paso
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:action
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:action
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: una-acci-n-requiere-gu-a-externa-expl-cita-y-ejecuci-n-paso-a-paso
+  level: 1
+  line_start: 18
+  line_end: 26
+- path: una-acci-n-requiere-gu-a-externa-expl-cita-y-ejecuci-n-paso-a-paso/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Una Acción requiere guía externa explícita y ejecución paso a paso
+  - Respuesta
+  about:
+  - Una Acción requiere guía externa explícita y ejecución paso a paso
+  - una acci n requiere gu a externa expl cita y ejecuci n paso a paso
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:action
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:action
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 20
+  line_end: 23
+- path: una-acci-n-requiere-gu-a-externa-expl-cita-y-ejecuci-n-paso-a-paso/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Una Acción requiere guía externa explícita y ejecución paso a paso
+  - Procedencia
+  about:
+  - Una Acción requiere guía externa explícita y ejecución paso a paso
+  - una acci n requiere gu a externa expl cita y ejecuci n paso a paso
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:action
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:action
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 24
+  line_end: 26
+source_hash: 477252b337105e4bdd681629dc91f0d06100e94c006dd2f7d4a94811d4ca99ba
+sections_version: '2'

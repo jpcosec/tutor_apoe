@@ -1,0 +1,20 @@
+name: atom-reflective-abstraction-is-a-foundational-idea-for-apos
+path: desk/atoms/apos/foundations/reflective-abstraction/atom-reflective-abstraction-is-a-foundational-idea-for-apos.md
+source_hash: 45dcf19164ad097d11faee8774cbecdc1bc27652e74cd44f78f3c56d965ce892
+content_hash: daf3e4b8552397dbdf5b0a57704ad2396e08c3726e7f101953b6dd0ec93d1bdb
+field_hashes:
+  id: bb44447792be409b2b10190d7f0a77b1daee853ec3171103a3a914e75535864c
+  title: 82724f7112dd04df71370684d8253b4ef73550675def59e2d2657edb0c06d84c
+  five_wh_one_plus: 1566d618b9ad05f5d6636ef68875b058a3311f288ab671709bb72d36b5dd1a5c
+  answer: 45f356702b3c78d80c06c8970d488f8f0367850aa327c9b1ca6c2a1ee8009c9b
+  tags: 5550789858d786b8f7635eb48ce49a86be2f9f8c8234fc8392e0f5d69cca780b
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:piaget
+- topic:reflective-abstraction
+- type.knowledge.atom
+- workspace.desk.atoms

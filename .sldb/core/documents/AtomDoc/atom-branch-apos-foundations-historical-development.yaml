@@ -1,0 +1,18 @@
+name: atom-branch-apos-foundations-historical-development
+path: desk/atoms/branches/atom-branch-apos-foundations-historical-development.md
+source_hash: 764daa95e393c10515e253b5bf3edf7fde1866baf592601728c91035f9e8e816
+content_hash: 40ff582ac91e30ffb669a75738b9835a76738053884703153ea5e4aab16d4c09
+field_hashes:
+  id: 26d88d2070b78315458d98ea0e764618e0f10227e9af56460519c67c47a4f49a
+  title: ae9d8b2b46d5d5a3176c3f05889724ec6738683c8d3be4ff96b5d4916f18372e
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

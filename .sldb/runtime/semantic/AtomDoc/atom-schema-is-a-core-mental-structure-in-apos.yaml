@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/core-structures/schema/atom-schema-is-a-core-mental-structure-in-apos.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:schema
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 3fc3fb35a0c74d47da6dfa6c739a08b85169a9a1538276fd04bf408033fb150b

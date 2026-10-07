@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-foundations-piaget
+sections:
+- path: piaget
+  title: Piaget
+  breadcrumbs:
+  - Piaget
+  about:
+  - Piaget
+  - piaget
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: piaget
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: piaget/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Piaget
+  - Respuesta
+  about:
+  - Piaget
+  - piaget
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: piaget/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Piaget
+  - Procedencia
+  about:
+  - Piaget
+  - piaget
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: f34eb8a74248f915f587e64ad3c1c825644a5c51a18b445af6635e990c6bc1ea
+sections_version: '2'

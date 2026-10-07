@@ -1,0 +1,20 @@
+name: atom-genetic-decomposition-does-not-imply-linear-learning
+path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-does-not-imply-linear-learning.md
+source_hash: 0b06637bdc482eabcae9d83509976d18cf07d89bffb060872e8fc205810db180
+content_hash: 3da1a7d8e8f550133106162cd28ba5809eaa9ddb6a80c7d0b515d5a2c9ac00cf
+field_hashes:
+  id: 553315892cfa87b856a360970e3f6f34afa95cbe9aec4460e7d9d124216753b1
+  title: 9ad98d2b68d3ca0b56f7a349f3c4c786d506e9fce73d0023be5a94eea7122ba0
+  five_wh_one_plus: c7d4bb6c4e85ef7f9bf7592aeecd1d09dd38adc39afd1ffb3908b19e689040ad
+  answer: a1ccd968c46e55a431ac729d87e91e3d38ec18c6c95b791f92bac8c519fe835d
+  tags: a2c252e74202305f94eac5b2d1b2bccaab216f68039208062fa46343f6d0cbce
+semantic_tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:genetic-decomposition
+- topic:learning-trajectories
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,11 @@
+model: AtomDoc
+path: desk/atoms/branches/atom-branch-apos-genetic-decomposition-non-uniqueness.md
+tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: a314a6a2b070967fff1393f174a026658c2e9f2fec15bb7763faa5a0f89b98c6

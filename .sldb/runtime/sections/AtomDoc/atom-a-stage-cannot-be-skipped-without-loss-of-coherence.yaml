@@ -1,0 +1,100 @@
+doc_name: atom-a-stage-cannot-be-skipped-without-loss-of-coherence
+sections:
+- path: una-etapa-no-puede-saltarse-sin-p-rdida-de-coherencia
+  title: Una etapa no puede saltarse sin pérdida de coherencia
+  breadcrumbs:
+  - Una etapa no puede saltarse sin pérdida de coherencia
+  about:
+  - Una etapa no puede saltarse sin pérdida de coherencia
+  - una etapa no puede saltarse sin p rdida de coherencia
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:stages
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:stages
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: una-etapa-no-puede-saltarse-sin-p-rdida-de-coherencia
+  level: 1
+  line_start: 15
+  line_end: 23
+- path: una-etapa-no-puede-saltarse-sin-p-rdida-de-coherencia/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Una etapa no puede saltarse sin pérdida de coherencia
+  - Respuesta
+  about:
+  - Una etapa no puede saltarse sin pérdida de coherencia
+  - una etapa no puede saltarse sin p rdida de coherencia
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:stages
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:stages
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 17
+  line_end: 20
+- path: una-etapa-no-puede-saltarse-sin-p-rdida-de-coherencia/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Una etapa no puede saltarse sin pérdida de coherencia
+  - Procedencia
+  about:
+  - Una etapa no puede saltarse sin pérdida de coherencia
+  - una etapa no puede saltarse sin p rdida de coherencia
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:stages
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:stages
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 21
+  line_end: 23
+source_hash: d6d4a832996001926f376516ea38c6d9bbb576561ba4664e2d4c0a3b3f016005
+sections_version: '2'

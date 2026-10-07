@@ -1,0 +1,88 @@
+doc_name: atom-branch-sources-apos-theory-book-structure
+sections:
+- path: structure
+  title: Structure
+  breadcrumbs:
+  - Structure
+  about:
+  - Structure
+  - structure
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: structure
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: structure/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Structure
+  - Respuesta
+  about:
+  - Structure
+  - structure
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: structure/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Structure
+  - Procedencia
+  about:
+  - Structure
+  - structure
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: e88fbd206b62d54da35514806ef84f7db5d19c29245f30406b1de12d6cf902e6
+sections_version: '2'

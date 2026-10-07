@@ -12,6 +12,8 @@ tags:
   - topic:data-collection
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-research-data-collection
 ---
 
 # La investigación APOS se apoya en triangulación colaborativa

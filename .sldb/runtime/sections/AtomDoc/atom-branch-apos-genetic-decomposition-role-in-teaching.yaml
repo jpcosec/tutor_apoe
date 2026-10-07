@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-genetic-decomposition-role-in-teaching
+sections:
+- path: role-in-teaching
+  title: Role In Teaching
+  breadcrumbs:
+  - Role In Teaching
+  about:
+  - Role In Teaching
+  - role in teaching
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: role-in-teaching
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: role-in-teaching/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Role In Teaching
+  - Respuesta
+  about:
+  - Role In Teaching
+  - role in teaching
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: role-in-teaching/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Role In Teaching
+  - Procedencia
+  about:
+  - Role In Teaching
+  - role in teaching
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: 06612e10d1d36d3588e84d4f6003fc1c50a2f0bba895528f2cd598528a2925b3
+sections_version: '2'

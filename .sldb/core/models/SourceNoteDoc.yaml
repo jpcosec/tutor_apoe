@@ -3,7 +3,10 @@ model_ref: knowledge_models:SourceNoteDoc
 path: knowledge_models/docs.py
 documents_index: .sldb/core/documents/SourceNoteDoc.yaml
 sections_index: ''
-hash_b: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+model_hash: 32c5a13353644d24e7435bf46c9197e4d9e02e5ff3d680651b099ef4d96e32ea
+roster_hash: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+contract_hash: a2d28aca9e3a10379b1d3f9531da0a4c788255f974b17f9c17572afa5538a353
+documents_count: 0
 version: 1
 canonical: false
 family: null

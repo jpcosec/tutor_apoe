@@ -1,0 +1,400 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+    name: atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+    model: AtomDoc
+    path: desk/atoms/apos/applications/elementary-math/atom-elementary-school-apos-work-relies-on-concrete-objects-for-action.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:concrete-operations
+    - topic:elementary-math
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: c73e049d0e32f3230cb314dba8d9c84a130177bfbb9f0a31361cef8291b759e0
+    hash_d: d6ed38bf069f4c76ff45f70ec035e22007dfaeb3c99ab0e6e035bb36365804a2
+  facets: {}
+- id: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
+    document_id: AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+    path: el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
+    title: El trabajo APOS en escuela elemental se apoya en objetos concretos para
+      la acción
+    breadcrumbs:
+    - El trabajo APOS en escuela elemental se apoya en objetos concretos para la acción
+    about:
+    - El trabajo APOS en escuela elemental se apoya en objetos concretos para la acción
+    - el trabajo apos en escuela elemental se apoya en objetos concretos para la acci
+      n
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:concrete-operations
+    - topic:elementary-math
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:concrete-operations
+    - topic:elementary-math
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
+    level: 1
+    line_start: 15
+    line_end: 23
+  facets: {}
+- id: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/respuesta
+    document_id: AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+    path: el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - El trabajo APOS en escuela elemental se apoya en objetos concretos para la acción
+    - Respuesta
+    about:
+    - El trabajo APOS en escuela elemental se apoya en objetos concretos para la acción
+    - el trabajo apos en escuela elemental se apoya en objetos concretos para la acci
+      n
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:concrete-operations
+    - topic:elementary-math
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:concrete-operations
+    - topic:elementary-math
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 17
+    line_end: 20
+  facets: {}
+- id: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/procedencia
+    document_id: AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+    path: el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - El trabajo APOS en escuela elemental se apoya en objetos concretos para la acción
+    - Procedencia
+    about:
+    - El trabajo APOS en escuela elemental se apoya en objetos concretos para la acción
+    - el trabajo apos en escuela elemental se apoya en objetos concretos para la acci
+      n
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:concrete-operations
+    - topic:elementary-math
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:concrete-operations
+    - topic:elementary-math
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 21
+    line_end: 23
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:applications
+  node_type: semantic_tag
+  semantics:
+    tag: layer:applications
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:concrete-operations
+  node_type: semantic_tag
+  semantics:
+    tag: topic:concrete-operations
+  facets: {}
+- id: sldb://semantic_tag/topic:elementary-math
+  node_type: semantic_tag
+  semantics:
+    tag: topic:elementary-math
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  target: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  target: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  target: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  target: sldb://semantic_tag/topic:concrete-operations
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  target: sldb://semantic_tag/topic:elementary-math
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
+  target: sldb://semantic_tag/topic:concrete-operations
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
+  target: sldb://semantic_tag/topic:elementary-math
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/respuesta
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/respuesta
+  target: sldb://semantic_tag/topic:concrete-operations
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/respuesta
+  target: sldb://semantic_tag/topic:elementary-math
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/procedencia
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/procedencia
+  target: sldb://semantic_tag/topic:concrete-operations
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/procedencia
+  target: sldb://semantic_tag/topic:elementary-math
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-elementary-school-apos-work-relies-on-concrete-objects-for-action#el-trabajo-apos-en-escuela-elemental-se-apoya-en-objetos-concretos-para-la-acci-n/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+model_name: AtomDoc
+source_hash: c73e049d0e32f3230cb314dba8d9c84a130177bfbb9f0a31361cef8291b759e0
+content_hash: d6ed38bf069f4c76ff45f70ec035e22007dfaeb3c99ab0e6e035bb36365804a2
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:concrete-operations
+- topic:elementary-math
+- type.knowledge.atom
+- workspace.desk.atoms

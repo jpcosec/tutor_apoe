@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/mathematical-domains/induction/atom-induction-genetic-decomposition-requires-function-and-logic-schemas.md
+tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:genetic-decomposition
+- topic:induction
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: e90aed88f694845f6c983dd2faf5965600765158c6efff150eb56d776e78e234

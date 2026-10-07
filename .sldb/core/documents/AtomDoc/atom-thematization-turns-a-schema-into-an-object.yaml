@@ -1,0 +1,20 @@
+name: atom-thematization-turns-a-schema-into-an-object
+path: desk/atoms/apos/mechanisms/thematization/atom-thematization-turns-a-schema-into-an-object.md
+source_hash: a67f98ee409cf69797b9aab56e6698858451117195d137140b357f003a28be14
+content_hash: 044771f1be38094c2ce00fe81e6165ff15d9d7f442078d5c49ed2fa2836fc41d
+field_hashes:
+  id: 0795d8fdab8f2ce1641311d0ab78452be2d87de1295930da72409857ff580934
+  title: 72e7e12a542029df451f5457f0b3765f3340e25a0d1134d54467c57186df1d6f
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 5a4b591f2a18b8327fc2716ffb42fde05d6a4854d6d37189b834c0c7ca2dc922
+  tags: 7508160d1bb977d58f34bf6de83119266a4b6305646632562d90950a788d0d7b
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:schema
+- topic:thematization
+- type.knowledge.atom
+- workspace.desk.atoms

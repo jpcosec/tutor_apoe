@@ -1,0 +1,20 @@
+name: atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis
+path: desk/atoms/apos/synthesis/faq/atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis.md
+source_hash: 980b8bcf056ca733948921f7d39f3ed0edbd9b36a9529220f228b94c36e99a32
+content_hash: 670c267fd41ed4be89e65f72b2a58cb1e2984b35ecff8f371109843c58b62ccc
+field_hashes:
+  id: 80455144858a5a1b6aeeeb5a9e82424e4cb9b2a899f74f693323793eef553e53
+  title: 89f7dbc9206d80b6a7c6763a0ad816cf807e68ece4e3aadbb8326653c7c4058b
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 9cb270bb0901fd7d9cc3dcbb83e153b8bd1c683dd61ab278718f653db2f7e0d7
+  tags: 675c88a3b0d704185c1b3e5fe53e3da455b80bc5258e59bb4f0055cdf0781280
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:faq
+- topic:synthesis
+- type.knowledge.atom
+- workspace.desk.atoms

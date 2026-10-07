@@ -1,0 +1,110 @@
+doc_name: atom-computer-activities-support-interiorization-by-generalizing-specific-actions
+sections:
+- path: las-actividades-computacionales-apoyan-la-interiorizaci-n-al-generalizar-acciones-espec-ficas
+  title: Las actividades computacionales apoyan la interiorización al generalizar
+    acciones específicas
+  breadcrumbs:
+  - Las actividades computacionales apoyan la interiorización al generalizar acciones
+    específicas
+  about:
+  - Las actividades computacionales apoyan la interiorización al generalizar acciones
+    específicas
+  - las actividades computacionales apoyan la interiorizaci n al generalizar acciones
+    espec ficas
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:interiorization
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:interiorization
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: las-actividades-computacionales-apoyan-la-interiorizaci-n-al-generalizar-acciones-espec-ficas
+  level: 1
+  line_start: 15
+  line_end: 23
+- path: las-actividades-computacionales-apoyan-la-interiorizaci-n-al-generalizar-acciones-espec-ficas/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Las actividades computacionales apoyan la interiorización al generalizar acciones
+    específicas
+  - Respuesta
+  about:
+  - Las actividades computacionales apoyan la interiorización al generalizar acciones
+    específicas
+  - las actividades computacionales apoyan la interiorizaci n al generalizar acciones
+    espec ficas
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:interiorization
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:interiorization
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 17
+  line_end: 20
+- path: las-actividades-computacionales-apoyan-la-interiorizaci-n-al-generalizar-acciones-espec-ficas/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Las actividades computacionales apoyan la interiorización al generalizar acciones
+    específicas
+  - Procedencia
+  about:
+  - Las actividades computacionales apoyan la interiorización al generalizar acciones
+    específicas
+  - las actividades computacionales apoyan la interiorizaci n al generalizar acciones
+    espec ficas
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:interiorization
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:interiorization
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 21
+  line_end: 23
+source_hash: 0b0fadc1278bb73a8f6593d4b70e9c25f733432f98bdc107b0ce556664f4711b
+sections_version: '2'

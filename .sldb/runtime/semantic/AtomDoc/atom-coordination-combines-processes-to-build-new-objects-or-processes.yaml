@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/mechanisms/coordination/atom-coordination-combines-processes-to-build-new-objects-or-processes.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:coordination
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 249831d75be6ebe300c9a8b40c2556393b196983dd6c6b82356f443269513a45

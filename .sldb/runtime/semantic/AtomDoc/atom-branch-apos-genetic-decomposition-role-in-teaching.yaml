@@ -1,0 +1,11 @@
+model: AtomDoc
+path: desk/atoms/branches/atom-branch-apos-genetic-decomposition-role-in-teaching.md
+tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 06612e10d1d36d3588e84d4f6003fc1c50a2f0bba895528f2cd598528a2925b3

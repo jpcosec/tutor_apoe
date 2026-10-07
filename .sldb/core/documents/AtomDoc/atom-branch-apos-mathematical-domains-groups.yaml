@@ -1,0 +1,18 @@
+name: atom-branch-apos-mathematical-domains-groups
+path: desk/atoms/branches/atom-branch-apos-mathematical-domains-groups.md
+source_hash: d032c4e1dd541df0f30a2a6e63ed5a7546d2b78f4e84f2eabae54949e841303e
+content_hash: 28d8106218bde8832c8fbe4885484213e274893af6f316c8a35307d40c26cd1d
+field_hashes:
+  id: 19fea3876f69868eaeb2419b2fad1d887a1a76b119d3df2a12dbacea56d044b0
+  title: 81c19d5d6b84602896e651b50d8d4d878b32d74e42f71816d5991785e1193bd8
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

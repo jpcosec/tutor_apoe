@@ -8,6 +8,8 @@ tags:
   - topic:schema
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-mathematical-domains-groups
 ---
 
 # El concepto de grupo se modela como coordinación de los esquemas de conjunto, operación binaria y axioma

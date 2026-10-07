@@ -8,6 +8,8 @@ tags:
   - topic:concrete-operations
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-applications-elementary-math
 ---
 
 # El trabajo APOS en escuela elemental se apoya en objetos concretos para la acción

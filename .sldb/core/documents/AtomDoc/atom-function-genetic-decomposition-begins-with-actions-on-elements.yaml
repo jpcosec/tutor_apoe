@@ -1,0 +1,20 @@
+name: atom-function-genetic-decomposition-begins-with-actions-on-elements
+path: desk/atoms/apos/mathematical-domains/functions/atom-function-genetic-decomposition-begins-with-actions-on-elements.md
+source_hash: d1d3ceb8ba2df245eff3856ca7d07b15d7118755cf131a3b7a6bf9f236555558
+content_hash: f0031d388bd937765f3614b1273a46e62b9ad9c751b0fadd44025a7afe29430e
+field_hashes:
+  id: 75f2a887088e1cd193ec68ea9bd2c01fdceac8c0fe4c5b5cc2fe85eba3c2ba09
+  title: aa62104b94a13a62c80546d7aa84beec13e077c26c12a0b4c4f453c3ddca5d93
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 75db054976c285c548daedeeeec33698360a2795c865755f08c3d0996098e333
+  tags: 65a4d1875da3107e3ad71a6dc08495d02770d2735fc56565e270a5e8e9011a27
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:functions
+- topic:genetic-decomposition
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,122 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://model/RepositoryDoc
+  node_type: sldb_model
+  semantics:
+    name: RepositoryDoc
+    model_ref: deskops.models:RepositoryDoc
+    path: /home/jp/proyectos/hum-ecosystem/tools/deskops/deskops/models/repository.py
+    version: 1
+    canonical: false
+    family: null
+    semantic_tags:
+    - type.desk.repository
+    - workspace.desk.registry
+    base_models: []
+  facets: {}
+- id: sldb://semantic_tag/type.desk.repository
+  node_type: semantic_tag
+  semantics:
+    tag: type.desk.repository
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.registry
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.registry
+  facets: {}
+- id: sldb://field/RepositoryDoc.name
+  node_type: sldb_field
+  semantics:
+    name: name
+    kind: string
+    required: true
+    model: RepositoryDoc
+    description: Short human-readable name of the repository.
+  facets: {}
+- id: sldb://field/RepositoryDoc.id
+  node_type: sldb_field
+  semantics:
+    name: id
+    kind: string
+    required: false
+    model: RepositoryDoc
+    description: Stable unique identifier for the repository.
+  facets: {}
+- id: sldb://field/RepositoryDoc.path
+  node_type: sldb_field
+  semantics:
+    name: path
+    kind: string
+    required: false
+    model: RepositoryDoc
+    description: Relative path to the repository root from the ecosystem root.
+  facets: {}
+- id: sldb://field/RepositoryDoc.status
+  node_type: sldb_field
+  semantics:
+    name: status
+    kind: string
+    required: false
+    model: RepositoryDoc
+    description: Current status of the repository (e.g., active, maintenance, archived).
+  facets: {}
+- id: sldb://field/RepositoryDoc.description
+  node_type: sldb_field
+  semantics:
+    name: description
+    kind: string
+    required: true
+    model: RepositoryDoc
+    description: Markdown description of the repository's purpose and scope.
+  facets: {}
+- id: sldb://field/RepositoryDoc.tags
+  node_type: sldb_field
+  semantics:
+    name: tags
+    kind: stringlist
+    required: false
+    model: RepositoryDoc
+    description: Semantic tags for categorization (e.g., type:tool, layer:infra).
+  facets: {}
+edges:
+- source: sldb://model/RepositoryDoc
+  target: sldb://semantic_tag/type.desk.repository
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/RepositoryDoc
+  target: sldb://semantic_tag/workspace.desk.registry
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/RepositoryDoc
+  target: sldb://field/RepositoryDoc.name
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RepositoryDoc
+  target: sldb://field/RepositoryDoc.id
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RepositoryDoc
+  target: sldb://field/RepositoryDoc.path
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RepositoryDoc
+  target: sldb://field/RepositoryDoc.status
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RepositoryDoc
+  target: sldb://field/RepositoryDoc.description
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RepositoryDoc
+  target: sldb://field/RepositoryDoc.tags
+  relation: has_field
+  metadata:
+    origin: schema
+model_name: RepositoryDoc

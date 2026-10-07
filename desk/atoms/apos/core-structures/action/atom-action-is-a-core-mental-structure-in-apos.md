@@ -11,6 +11,8 @@ tags:
   - topic:action
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-core-structures-action
 ---
 
 # La Acción es una estructura mental central en APOS

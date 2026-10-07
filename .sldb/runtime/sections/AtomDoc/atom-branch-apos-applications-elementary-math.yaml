@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-applications-elementary-math
+sections:
+- path: elementary-math
+  title: Elementary Math
+  breadcrumbs:
+  - Elementary Math
+  about:
+  - Elementary Math
+  - elementary math
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: elementary-math
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: elementary-math/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Elementary Math
+  - Respuesta
+  about:
+  - Elementary Math
+  - elementary math
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: elementary-math/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Elementary Math
+  - Procedencia
+  about:
+  - Elementary Math
+  - elementary math
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: 855578b6d7a8297ae7a7b8d79b62700a2f64b156bb22b8ce90780117bb49c961
+sections_version: '2'

@@ -1,0 +1,740 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+    name: atom-apos-is-a-constructivist-theory-of-learning-mathematics
+    model: AtomDoc
+    path: desk/atoms/apos/foundations/constructivism/atom-apos-is-a-constructivist-theory-of-learning-mathematics.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: 0022b368d4d9a15a8a8a0524255961d603dd5cce9c337624a5cb8fcf1cb6debd
+    hash_d: 95f646cdb28d10a6983eed65ca2c4a4b664d61bf2aa05d808b6cfd2a06e9b409
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#atom-xxx-unique-identifier
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#atom-xxx-unique-identifier
+    document_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+    path: atom-xxx-unique-identifier
+    title: atom-xxx, unique identifier
+    breadcrumbs:
+    - atom-xxx, unique identifier
+    about:
+    - atom-xxx, unique identifier
+    - atom xxx unique identifier
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: atom-xxx-unique-identifier
+    level: 1
+    line_start: 2
+    line_end: 3
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#short-descriptive-title
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#short-descriptive-title
+    document_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+    path: short-descriptive-title
+    title: Short, descriptive title
+    breadcrumbs:
+    - Short, descriptive title
+    about:
+    - Short, descriptive title
+    - short descriptive title
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: short-descriptive-title
+    level: 1
+    line_start: 4
+    line_end: 5
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#what-why-how-how-not-when-where-for-whom
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#what-why-how-how-not-when-where-for-whom
+    document_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+    path: what-why-how-how-not-when-where-for-whom
+    title: what | why | how | how_not | when | where | for_whom
+    breadcrumbs:
+    - what | why | how | how_not | when | where | for_whom
+    about:
+    - what | why | how | how_not | when | where | for_whom
+    - what why how how not when where for whom
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: what-why-how-how-not-when-where-for-whom
+    level: 1
+    line_start: 6
+    line_end: 7
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#e-g-system-deskops-topic-templates
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#e-g-system-deskops-topic-templates
+    document_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+    path: e-g-system-deskops-topic-templates
+    title: e.g., system:deskops, topic:templates
+    breadcrumbs:
+    - e.g., system:deskops, topic:templates
+    about:
+    - e.g., system:deskops, topic:templates
+    - e g system deskops topic templates
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: e-g-system-deskops-topic-templates
+    level: 1
+    line_start: 8
+    line_end: 18
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
+    document_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+    path: apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
+    title: APOS es una teoría constructivista del aprendizaje de las matemáticas
+    breadcrumbs:
+    - APOS es una teoría constructivista del aprendizaje de las matemáticas
+    about:
+    - APOS es una teoría constructivista del aprendizaje de las matemáticas
+    - apos es una teor a constructivista del aprendizaje de las matem ticas
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
+    level: 1
+    line_start: 19
+    line_end: 27
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/respuesta
+    document_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+    path: apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - APOS es una teoría constructivista del aprendizaje de las matemáticas
+    - Respuesta
+    about:
+    - APOS es una teoría constructivista del aprendizaje de las matemáticas
+    - apos es una teor a constructivista del aprendizaje de las matem ticas
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 21
+    line_end: 24
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/procedencia
+    document_id: AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+    path: apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - APOS es una teoría constructivista del aprendizaje de las matemáticas
+    - Procedencia
+    about:
+    - APOS es una teoría constructivista del aprendizaje de las matemáticas
+    - apos es una teor a constructivista del aprendizaje de las matem ticas
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:constructivism
+    - topic:learning-theory
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 25
+    line_end: 27
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:theory
+  node_type: semantic_tag
+  semantics:
+    tag: layer:theory
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:constructivism
+  node_type: semantic_tag
+  semantics:
+    tag: topic:constructivism
+  facets: {}
+- id: sldb://semantic_tag/topic:learning-theory
+  node_type: semantic_tag
+  semantics:
+    tag: topic:learning-theory
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#atom-xxx-unique-identifier
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#short-descriptive-title
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#what-why-how-how-not-when-where-for-whom
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#e-g-system-deskops-topic-templates
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://semantic_tag/topic:constructivism
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://semantic_tag/topic:learning-theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:constructivism
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:learning-theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/topic:constructivism
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/topic:learning-theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:constructivism
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:learning-theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:constructivism
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:learning-theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
+  target: sldb://semantic_tag/topic:constructivism
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
+  target: sldb://semantic_tag/topic:learning-theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/respuesta
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/respuesta
+  target: sldb://semantic_tag/topic:constructivism
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/respuesta
+  target: sldb://semantic_tag/topic:learning-theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/procedencia
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/procedencia
+  target: sldb://semantic_tag/topic:constructivism
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/procedencia
+  target: sldb://semantic_tag/topic:learning-theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-is-a-constructivist-theory-of-learning-mathematics#apos-es-una-teor-a-constructivista-del-aprendizaje-de-las-matem-ticas/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-apos-is-a-constructivist-theory-of-learning-mathematics
+model_name: AtomDoc
+source_hash: 0022b368d4d9a15a8a8a0524255961d603dd5cce9c337624a5cb8fcf1cb6debd
+content_hash: 95f646cdb28d10a6983eed65ca2c4a4b664d61bf2aa05d808b6cfd2a06e9b409
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:constructivism
+- topic:learning-theory
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -11,6 +11,8 @@ tags:
   - topic:de-encapsulation
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-mechanisms-de-encapsulation
 ---
 
 # La desencapsulación recupera el proceso subyacente de un objeto

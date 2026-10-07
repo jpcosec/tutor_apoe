@@ -1,0 +1,20 @@
+name: atom-annotated-bibliography-materializes-the-breadth-of-apos-research
+path: desk/atoms/apos/synthesis/conclusions/atom-annotated-bibliography-materializes-the-breadth-of-apos-research.md
+source_hash: b542f8d82cf1d1c02364fadb5a374638ee3e5f0fcbac2bd10245e74d90b9dbc6
+content_hash: 8ecafccd0db146b4bd8559af855d36d4baf6d96d960eb14b85ff8b34016f284e
+field_hashes:
+  id: a720230e8dc5c7abe2bc5f77b6d79f633345f92f76950127e6748ad68b3f0fb7
+  title: b48d463023471630e1f3331125ef25cbb0e6a8695f9c9bb1283e5b749682ad43
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 178fafd1d525e8597f98a49e7d715da5f64a018a86e133a3263d47b562f797bb
+  tags: dc7ace7ffeaa47ff9757de1e6174d7b161f2518f5669d1fc72118417d239a770
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:bibliography
+- topic:synthesis
+- type.knowledge.atom
+- workspace.desk.atoms

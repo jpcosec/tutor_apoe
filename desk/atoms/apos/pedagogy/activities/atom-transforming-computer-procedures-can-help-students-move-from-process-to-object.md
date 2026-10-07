@@ -8,6 +8,8 @@ tags:
   - topic:process-to-object
   - domain:mathematics-education
   - layer:pedagogy
+node_type: knowledge
+parent_id: branch-apos-pedagogy-activities
 ---
 
 # Transformar procedimientos computacionales puede ayudar a pasar de Proceso a Objeto

@@ -1,0 +1,18 @@
+name: atom-branch-apos-mathematical-domains-repeating-decimals
+path: desk/atoms/branches/atom-branch-apos-mathematical-domains-repeating-decimals.md
+source_hash: bb151ec6eae0c7e02f63b447fb0355e0f2c75a787202bbb0eaceac7bed8ebbc2
+content_hash: 1fda6d426508efb8a965b04d0e7dbcd5598cf5f6c6923966789ca8189ec8bb00
+field_hashes:
+  id: 9c264913cdfc5d9e470aea7e7ed6b50783aaa8a1ab119de5ffc6aca56cf2ffe7
+  title: 6d3491e52bd3b57ddb4f6f09e4d10f542f3250f0593774963c0f5c75d830bdc0
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

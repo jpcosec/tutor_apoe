@@ -1,0 +1,20 @@
+name: atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+path: desk/atoms/apos/foundations/reflective-abstraction/atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures.md
+source_hash: d543b140777ca81e20b20a14bc896aa68c4df9fd85eab5459be66df1d367a8b6
+content_hash: 97aa96f18bf0a2469a5a7f98e2d985044a9c7d0912587c3bd3f19c1147e48d57
+field_hashes:
+  id: 79ec0c07a603b52e984848dc63b72fc9e4387c4db36c651f23b853de0cb4aa85
+  title: 65f1e31856a9bba17b49ffa22c87b46f6f5a1c77d8bf075b5f42b2e139641eda
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 6fe2a882564510563061d41309e8bc4693b331645d93dc8389a4c5a816c3c567
+  tags: 5550789858d786b8f7635eb48ce49a86be2f9f8c8234fc8392e0f5d69cca780b
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:piaget
+- topic:reflective-abstraction
+- type.knowledge.atom
+- workspace.desk.atoms

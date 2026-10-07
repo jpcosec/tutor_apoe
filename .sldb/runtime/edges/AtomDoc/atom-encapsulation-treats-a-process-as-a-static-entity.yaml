@@ -1,0 +1,679 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+    name: atom-encapsulation-treats-a-process-as-a-static-entity
+    model: AtomDoc
+    path: desk/atoms/apos/mechanisms/encapsulation/atom-encapsulation-treats-a-process-as-a-static-entity.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: 37ba1661036d55c7e7ccb2a5118ffcb32c85848b8cc0580ebf96800ef8ef1e74
+    hash_d: 0961cec0ba508c3345b6c4efcd462a362e3183295b57a46113c33b5c2aef30fe
+  facets: {}
+- id: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#atom-xxx-unique-identifier
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#atom-xxx-unique-identifier
+    document_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+    path: atom-xxx-unique-identifier
+    title: atom-xxx, unique identifier
+    breadcrumbs:
+    - atom-xxx, unique identifier
+    about:
+    - atom-xxx, unique identifier
+    - atom xxx unique identifier
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: atom-xxx-unique-identifier
+    level: 1
+    line_start: 2
+    line_end: 3
+  facets: {}
+- id: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#short-descriptive-title
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#short-descriptive-title
+    document_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+    path: short-descriptive-title
+    title: Short, descriptive title
+    breadcrumbs:
+    - Short, descriptive title
+    about:
+    - Short, descriptive title
+    - short descriptive title
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: short-descriptive-title
+    level: 1
+    line_start: 4
+    line_end: 5
+  facets: {}
+- id: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#what-why-how-how-not-when-where-for-whom
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#what-why-how-how-not-when-where-for-whom
+    document_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+    path: what-why-how-how-not-when-where-for-whom
+    title: what | why | how | how_not | when | where | for_whom
+    breadcrumbs:
+    - what | why | how | how_not | when | where | for_whom
+    about:
+    - what | why | how | how_not | when | where | for_whom
+    - what why how how not when where for whom
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: what-why-how-how-not-when-where-for-whom
+    level: 1
+    line_start: 6
+    line_end: 7
+  facets: {}
+- id: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#e-g-system-deskops-topic-templates
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#e-g-system-deskops-topic-templates
+    document_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+    path: e-g-system-deskops-topic-templates
+    title: e.g., system:deskops, topic:templates
+    breadcrumbs:
+    - e.g., system:deskops, topic:templates
+    about:
+    - e.g., system:deskops, topic:templates
+    - e g system deskops topic templates
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: e-g-system-deskops-topic-templates
+    level: 1
+    line_start: 8
+    line_end: 17
+  facets: {}
+- id: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica
+    document_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+    path: la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica
+    title: La encapsulación permite tratar un proceso como una entidad estática
+    breadcrumbs:
+    - La encapsulación permite tratar un proceso como una entidad estática
+    about:
+    - La encapsulación permite tratar un proceso como una entidad estática
+    - la encapsulaci n permite tratar un proceso como una entidad est tica
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica
+    level: 1
+    line_start: 18
+    line_end: 26
+  facets: {}
+- id: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/respuesta
+    document_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+    path: la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - La encapsulación permite tratar un proceso como una entidad estática
+    - Respuesta
+    about:
+    - La encapsulación permite tratar un proceso como una entidad estática
+    - la encapsulaci n permite tratar un proceso como una entidad est tica
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 20
+    line_end: 23
+  facets: {}
+- id: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/procedencia
+    document_id: AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+    path: la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - La encapsulación permite tratar un proceso como una entidad estática
+    - Procedencia
+    about:
+    - La encapsulación permite tratar un proceso como una entidad estática
+    - la encapsulaci n permite tratar un proceso como una entidad est tica
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:theory
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 24
+    line_end: 26
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:theory
+  node_type: semantic_tag
+  semantics:
+    tag: layer:theory
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:encapsulation
+  node_type: semantic_tag
+  semantics:
+    tag: topic:encapsulation
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#atom-xxx-unique-identifier
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#short-descriptive-title
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#what-why-how-how-not-when-where-for-whom
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#e-g-system-deskops-topic-templates
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://semantic_tag/topic:encapsulation
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:encapsulation
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#short-descriptive-title
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#short-descriptive-title
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#short-descriptive-title
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#short-descriptive-title
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#short-descriptive-title
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#short-descriptive-title
+  target: sldb://semantic_tag/topic:encapsulation
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#short-descriptive-title
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#short-descriptive-title
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:encapsulation
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:encapsulation
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica
+  target: sldb://semantic_tag/topic:encapsulation
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/respuesta
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/respuesta
+  target: sldb://semantic_tag/topic:encapsulation
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/procedencia
+  target: sldb://semantic_tag/layer:theory
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/procedencia
+  target: sldb://semantic_tag/topic:encapsulation
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-encapsulation-treats-a-process-as-a-static-entity#la-encapsulaci-n-permite-tratar-un-proceso-como-una-entidad-est-tica/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-encapsulation-treats-a-process-as-a-static-entity
+model_name: AtomDoc
+source_hash: 37ba1661036d55c7e7ccb2a5118ffcb32c85848b8cc0580ebf96800ef8ef1e74
+content_hash: 0961cec0ba508c3345b6c4efcd462a362e3183295b57a46113c33b5c2aef30fe
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:encapsulation
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,20 @@
+name: atom-apos-defines-four-core-mental-structures
+path: desk/atoms/apos/core-structures/action/atom-apos-defines-four-core-mental-structures.md
+source_hash: 49fc8365697b0158acab91320775c35e7c5ed5d79d9cf116c87d3a5f358c03a3
+content_hash: fbb3c4f79a9c3c42ba580b72ae11819abd97935c46dbc495936fcbc168df1433
+field_hashes:
+  id: dd360c3d1a2d8eda34b761419f2f20e16c0ce558bed341e44ee03438a4b012a7
+  title: 772395b29e611bbecf642365d7543e9b6a89e31affae2055400725041c62bbc4
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 45a5a3db7156762f414546eb8f6a379fd84c0288ace95de544f0e95a737db285
+  tags: e682828626e59b1b9a4d651fbb964f726826d6abd894a5e9c9244ab06afc0a81
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:apos
+- topic:core-structures
+- type.knowledge.atom
+- workspace.desk.atoms

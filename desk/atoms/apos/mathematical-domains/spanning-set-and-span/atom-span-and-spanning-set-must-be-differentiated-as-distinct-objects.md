@@ -8,6 +8,8 @@ tags:
   - topic:object
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-mathematical-domains-spanning-set-and-span
 ---
 
 # Span y conjunto generador deben diferenciarse como objetos distintos

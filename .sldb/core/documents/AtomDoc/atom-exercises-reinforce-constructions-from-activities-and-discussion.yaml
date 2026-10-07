@@ -1,0 +1,20 @@
+name: atom-exercises-reinforce-constructions-from-activities-and-discussion
+path: desk/atoms/apos/pedagogy/exercises/atom-exercises-reinforce-constructions-from-activities-and-discussion.md
+source_hash: 6d6e3d44b042836952ba75d97629ac0444a7073dfc14951282ca55c5272a83da
+content_hash: 4cd80cc00471797bb716d532371e84910273315f80895db2b9bf22e792149dd4
+field_hashes:
+  id: 85c95d8864e14fd9ce54f3b713fc6e86f428ae1970845dec0c35f406b81a8029
+  title: baf4d5a5a4eceb7382d4ccd52a09ea59b8a02f3e9f7994f8ee22d0ba95f7b96e
+  five_wh_one_plus: 1566d618b9ad05f5d6636ef68875b058a3311f288ab671709bb72d36b5dd1a5c
+  answer: d9f2c1f47511461072a681d1ddf073378b1eb0838f476abcd71b6a0df48eddec
+  tags: 900f44368365e4dc5289b25064619f24d417d4346016d8b126e75c3d36475dab
+semantic_tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:ace-cycle
+- topic:exercises
+- type.knowledge.atom
+- workspace.desk.atoms

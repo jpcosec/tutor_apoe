@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/research/data-collection/atom-apos-research-relies-on-collaborative-triangulation.md
+tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:data-collection
+- topic:triangulation
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 826e23567f510f30f7f61e09492408e564580b83360425c3c9c572a095eb3bde

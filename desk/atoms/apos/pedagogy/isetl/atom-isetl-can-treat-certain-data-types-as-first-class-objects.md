@@ -8,6 +8,8 @@ tags:
   - topic:data-types
   - domain:mathematics-education
   - layer:pedagogy
+node_type: knowledge
+parent_id: branch-apos-pedagogy-isetl
 ---
 
 # ISETL puede tratar ciertos tipos de datos como objetos de primera clase

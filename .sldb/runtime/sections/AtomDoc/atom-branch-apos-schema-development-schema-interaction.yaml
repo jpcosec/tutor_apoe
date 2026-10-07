@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-schema-development-schema-interaction
+sections:
+- path: schema-interaction
+  title: Schema Interaction
+  breadcrumbs:
+  - Schema Interaction
+  about:
+  - Schema Interaction
+  - schema interaction
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: schema-interaction
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: schema-interaction/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Schema Interaction
+  - Respuesta
+  about:
+  - Schema Interaction
+  - schema interaction
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: schema-interaction/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Schema Interaction
+  - Procedencia
+  about:
+  - Schema Interaction
+  - schema interaction
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: b2fa13d057d0feda66f41573ac7838972ca3f1a76529dae95079969a3f01561e
+sections_version: '2'

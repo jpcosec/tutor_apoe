@@ -1,0 +1,20 @@
+name: atom-cognitive-path-and-genetic-decomposition-are-not-the-same
+path: desk/atoms/apos/genetic-decomposition/non-uniqueness/atom-cognitive-path-and-genetic-decomposition-are-not-the-same.md
+source_hash: 816734149b65da24161f1b95485909e6871aa79463d9dbda3f9a7cf96c9db263
+content_hash: b84e491e6009daf7c7b6ff117866bbb369d2c008ed161ee051edf97b8a1d57cd
+field_hashes:
+  id: 95884d5926c6044be9a43fb74adf06fbd82a29ab08c33559956986a1fc28c4e3
+  title: 43b7ef7bb0e4ec2a71da10948dcaca533eabe0e5c3ae0826d19f190087b7fd78
+  five_wh_one_plus: c7d4bb6c4e85ef7f9bf7592aeecd1d09dd38adc39afd1ffb3908b19e689040ad
+  answer: 96f201c8e9f376f4911cf1969bdaf39331961b10b9484f4d4d51253e9f5d135f
+  tags: 84772e7b86da6129be67450f13b8829c520a4868990f71b63a532c1e40a4b111
+semantic_tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:cognitive-path
+- topic:genetic-decomposition
+- type.knowledge.atom
+- workspace.desk.atoms

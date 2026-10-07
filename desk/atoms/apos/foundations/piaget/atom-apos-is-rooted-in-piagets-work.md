@@ -11,6 +11,8 @@ tags:
   - topic:piaget
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-foundations-piaget
 ---
 
 # APOS está arraigada en la obra de Piaget

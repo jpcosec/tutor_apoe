@@ -12,6 +12,8 @@ tags:
   - topic:genetic-decomposition
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-mathematical-domains-induction
 ---
 
 # La descomposición genética de inducción requiere esquemas de función y lógica

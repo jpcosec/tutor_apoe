@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/core-structures/process/atom-process-allows-mental-control-without-executing-each-step.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:process
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 3de7b3666128bde12895dea7afa4a2cb03096ab6f9c66e9ce30902cf07a9356f

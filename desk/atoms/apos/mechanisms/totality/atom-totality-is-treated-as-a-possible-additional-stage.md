@@ -12,6 +12,8 @@ tags:
   - topic:infinity
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-apos-mechanisms-totality
 ---
 
 # Totality se trata como una posible etapa adicional en APOS

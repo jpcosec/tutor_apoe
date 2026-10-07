@@ -8,6 +8,8 @@ tags:
   - topic:linear-combination
   - domain:mathematics-education
   - layer:applications
+node_type: knowledge
+parent_id: branch-apos-mathematical-domains-spanning-set-and-span
 ---
 
 # La construcción de span comienza con acciones sobre combinaciones lineales

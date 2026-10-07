@@ -1,0 +1,20 @@
+name: atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting
+path: desk/atoms/apos/pedagogy/activities/atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting.md
+source_hash: fbcbaf92f827a0df17c1edfc6473dde18dce805cf90cdab8f1f55c3fa2932929
+content_hash: e7810df3e38b5e840a6115cb3a5ba8351f5093f50c5ac364d2702d59f331cd5e
+field_hashes:
+  id: 236ade157bca8d0f42bb6cb01cf27bc20de207265d726ed50978eafd6f06773b
+  title: 8aafa760be3d1369e7514963c5886acf5b7ae5dd4b98d10c43fb293106e1c1da
+  five_wh_one_plus: 1566d618b9ad05f5d6636ef68875b058a3311f288ab671709bb72d36b5dd1a5c
+  answer: 456c1ed033c2f045aba768fae8dc2889db1f94838d7793ae016942838bd3baf9
+  tags: a3c2d0893f12e8415808b9964e3bf4541410ef1db5f9236dd35cedcbbcddb3c8
+semantic_tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:ace-cycle
+- topic:activities
+- type.knowledge.atom
+- workspace.desk.atoms

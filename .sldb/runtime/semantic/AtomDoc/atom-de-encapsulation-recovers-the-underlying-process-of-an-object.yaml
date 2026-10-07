@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/mechanisms/de-encapsulation/atom-de-encapsulation-recovers-the-underlying-process-of-an-object.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:de-encapsulation
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 6c604bf6acf2623c250c0695b4da24f21de19a46fa482e50eba339ac0d26aa0b

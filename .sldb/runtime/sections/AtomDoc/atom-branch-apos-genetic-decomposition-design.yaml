@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-genetic-decomposition-design
+sections:
+- path: design
+  title: Design
+  breadcrumbs:
+  - Design
+  about:
+  - Design
+  - design
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: design
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: design/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Design
+  - Respuesta
+  about:
+  - Design
+  - design
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: design/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Design
+  - Procedencia
+  about:
+  - Design
+  - design
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: 902eb3d31c1621e220d75dd65a948a0442376c24bfca952d7dff5ff5d80e3afb
+sections_version: '2'

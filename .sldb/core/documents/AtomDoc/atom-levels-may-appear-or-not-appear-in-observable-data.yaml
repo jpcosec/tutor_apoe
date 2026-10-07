@@ -1,0 +1,19 @@
+name: atom-levels-may-appear-or-not-appear-in-observable-data
+path: desk/atoms/apos/mechanisms/levels/atom-levels-may-appear-or-not-appear-in-observable-data.md
+source_hash: eab953f06d63f58f0624a23076fea868ac941a9969b2bca68ca38bd958726d23
+content_hash: c0439849c4d614fa6d9386aa64146c3eb47ddfaee828479919b7a326a44b4ac3
+field_hashes:
+  id: 3e86bbbcd324f9563e20c27e0c1d8559bea15874363e476334b0b7f864d3f5ec
+  title: ce17f7b8a8b256ee00eb3dc497b088a6269c4b1a6b2d75ec3f12a2a32c99a93c
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 760fd39901234e177ec64bea78676d22ff76c0e7e3918cf61a68fe4db93cba04
+  tags: 6c9de8804a4d17d69380cc21890f2402f445d80fcfd83097b0d225b8f5dd19cf
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:levels
+- type.knowledge.atom
+- workspace.desk.atoms

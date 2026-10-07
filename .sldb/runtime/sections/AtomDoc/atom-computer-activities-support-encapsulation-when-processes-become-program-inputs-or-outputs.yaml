@@ -1,0 +1,110 @@
+doc_name: atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+sections:
+- path: las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+  title: Las actividades computacionales apoyan la encapsulación cuando los procesos
+    pasan a ser entradas o salidas de programas
+  breadcrumbs:
+  - Las actividades computacionales apoyan la encapsulación cuando los procesos pasan
+    a ser entradas o salidas de programas
+  about:
+  - Las actividades computacionales apoyan la encapsulación cuando los procesos pasan
+    a ser entradas o salidas de programas
+  - las actividades computacionales apoyan la encapsulaci n cuando los procesos pasan
+    a ser entradas o salidas de programas
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:encapsulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:encapsulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+  level: 1
+  line_start: 15
+  line_end: 23
+- path: las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Las actividades computacionales apoyan la encapsulación cuando los procesos pasan
+    a ser entradas o salidas de programas
+  - Respuesta
+  about:
+  - Las actividades computacionales apoyan la encapsulación cuando los procesos pasan
+    a ser entradas o salidas de programas
+  - las actividades computacionales apoyan la encapsulaci n cuando los procesos pasan
+    a ser entradas o salidas de programas
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:encapsulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:encapsulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 17
+  line_end: 20
+- path: las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Las actividades computacionales apoyan la encapsulación cuando los procesos pasan
+    a ser entradas o salidas de programas
+  - Procedencia
+  about:
+  - Las actividades computacionales apoyan la encapsulación cuando los procesos pasan
+    a ser entradas o salidas de programas
+  - las actividades computacionales apoyan la encapsulaci n cuando los procesos pasan
+    a ser entradas o salidas de programas
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:encapsulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:activities
+  - topic:encapsulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 21
+  line_end: 23
+source_hash: c4430d553e30c09f6ed52074c7e97af9db80d2255b06f61a1e4524be464b4f6a
+sections_version: '2'

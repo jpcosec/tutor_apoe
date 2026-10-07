@@ -1,0 +1,396 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+    name: atom-isetl-supports-function-as-input-output-and-transformable-entity
+    model: AtomDoc
+    path: desk/atoms/apos/pedagogy/isetl/atom-isetl-supports-function-as-input-output-and-transformable-entity.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:isetl
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: 37472380dcdc7eb257a51cd2aba1213c888ce9c1326bbd95a8cf831fe6d671e6
+    hash_d: 4df6cf26f6bd5b377a6dc077a969d589eab749a16051953429ef524f5a27f7cb
+  facets: {}
+- id: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+    document_id: AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+    path: isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+    title: ISETL soporta la función como entrada, salida y entidad transformable
+    breadcrumbs:
+    - ISETL soporta la función como entrada, salida y entidad transformable
+    about:
+    - ISETL soporta la función como entrada, salida y entidad transformable
+    - isetl soporta la funci n como entrada salida y entidad transformable
+    - domain:mathematics-education
+    - layer:pedagogy
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:isetl
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:isetl
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+    level: 1
+    line_start: 15
+    line_end: 23
+  facets: {}
+- id: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
+    document_id: AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+    path: isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - ISETL soporta la función como entrada, salida y entidad transformable
+    - Respuesta
+    about:
+    - ISETL soporta la función como entrada, salida y entidad transformable
+    - isetl soporta la funci n como entrada salida y entidad transformable
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:pedagogy
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:isetl
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:isetl
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 17
+    line_end: 20
+  facets: {}
+- id: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
+    document_id: AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+    path: isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - ISETL soporta la función como entrada, salida y entidad transformable
+    - Procedencia
+    about:
+    - ISETL soporta la función como entrada, salida y entidad transformable
+    - isetl soporta la funci n como entrada salida y entidad transformable
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:pedagogy
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:isetl
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:functions
+    - topic:isetl
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 21
+    line_end: 23
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:pedagogy
+  node_type: semantic_tag
+  semantics:
+    tag: layer:pedagogy
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:functions
+  node_type: semantic_tag
+  semantics:
+    tag: topic:functions
+  facets: {}
+- id: sldb://semantic_tag/topic:isetl
+  node_type: semantic_tag
+  semantics:
+    tag: topic:isetl
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+  target: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+  target: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+  target: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+  target: sldb://semantic_tag/layer:pedagogy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+  target: sldb://semantic_tag/topic:functions
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+  target: sldb://semantic_tag/topic:isetl
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+  target: sldb://semantic_tag/layer:pedagogy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+  target: sldb://semantic_tag/topic:functions
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+  target: sldb://semantic_tag/topic:isetl
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
+  target: sldb://semantic_tag/layer:pedagogy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
+  target: sldb://semantic_tag/topic:functions
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
+  target: sldb://semantic_tag/topic:isetl
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
+  target: sldb://semantic_tag/layer:pedagogy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
+  target: sldb://semantic_tag/topic:functions
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
+  target: sldb://semantic_tag/topic:isetl
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-isetl-supports-function-as-input-output-and-transformable-entity#isetl-soporta-la-funci-n-como-entrada-salida-y-entidad-transformable/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-isetl-supports-function-as-input-output-and-transformable-entity
+model_name: AtomDoc
+source_hash: 37472380dcdc7eb257a51cd2aba1213c888ce9c1326bbd95a8cf831fe6d671e6
+content_hash: 4df6cf26f6bd5b377a6dc077a969d589eab749a16051953429ef524f5a27f7cb
+semantic_tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:functions
+- topic:isetl
+- type.knowledge.atom
+- workspace.desk.atoms

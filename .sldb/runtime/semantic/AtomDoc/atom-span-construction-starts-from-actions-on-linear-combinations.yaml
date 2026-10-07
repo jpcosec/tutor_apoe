@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/mathematical-domains/spanning-set-and-span/atom-span-construction-starts-from-actions-on-linear-combinations.md
+tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:linear-combination
+- topic:spanning-set-and-span
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 6531b59d27ab7a7413fce09409a76dc3de048b6231cd83f3484fde3ca274de97

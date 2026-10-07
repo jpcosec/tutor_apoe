@@ -11,6 +11,8 @@ tags:
   - topic:research-paradigm
   - domain:mathematics-education
   - layer:research
+node_type: knowledge
+parent_id: branch-apos-research-paradigm
 ---
 
 # APOS articula teoría, metodología y pedagogía como un paradigma

@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/mathematical-domains/groups/atom-early-group-activities-develop-set-as-process.md
+tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:groups
+- topic:sets
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 2ab5cca51fc0c3ca4fdfc09b70e90dc677cee89ddcc1eff1f272c0ef826b800c

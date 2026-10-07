@@ -1,0 +1,18 @@
+name: atom-branch-apos-foundations-reflective-abstraction
+path: desk/atoms/branches/atom-branch-apos-foundations-reflective-abstraction.md
+source_hash: 44847e203b354e122df206df4831ff142eb6207993116de861271a49be3eccff
+content_hash: e114a00346d0c6929b3417cdb9eb4613a6a8b0afdb9097067069982127f06143
+field_hashes:
+  id: 448771769ab335f0c8f985596266c18edec099a50df8d50d6b21d74d38f488a8
+  title: a0e113068dc91a9f3a20efb3f25d2d72ff6c529670f8dfd7d30b9ba7ed2dddc0
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

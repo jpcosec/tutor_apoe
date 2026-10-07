@@ -1,0 +1,19 @@
+name: atom-process-is-a-core-mental-structure-in-apos
+path: desk/atoms/apos/core-structures/process/atom-process-is-a-core-mental-structure-in-apos.md
+source_hash: e43a3bdb3952dcd103e0b40876c8400f2019fd8a2363acd788120754c32c491b
+content_hash: 9f77a6ef8919f470696be0a43ffbeaffeb9ccee4f4ed866b415b68ce393ba80a
+field_hashes:
+  id: 78dbaf6a43874c02200c0a7f2c39cce016fc5b1d09229991ff85ed20721a4ddf
+  title: c00d54c192019e48c67d730608d0328b1b652b57f9c2275061c1e337768fb9db
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 0a905352d275de22b67174e76720044ab772a05549042552a601396284617fe4
+  tags: 80964f225c75d19283b7f88fa38d9d256cf61fb3cc0c6e08863f80622cbbe21e
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:process
+- type.knowledge.atom
+- workspace.desk.atoms

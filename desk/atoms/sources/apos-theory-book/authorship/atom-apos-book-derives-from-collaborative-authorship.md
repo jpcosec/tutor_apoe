@@ -12,6 +12,8 @@ tags:
   - topic:authorship
   - domain:mathematics-education
   - layer:theory
+node_type: knowledge
+parent_id: branch-sources-apos-theory-book-authorship
 ---
 
 # El libro de APOS es una síntesis colaborativa de varios investigadores

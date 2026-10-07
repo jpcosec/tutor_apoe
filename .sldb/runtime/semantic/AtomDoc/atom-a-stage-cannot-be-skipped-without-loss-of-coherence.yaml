@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/mechanisms/stages/atom-a-stage-cannot-be-skipped-without-loss-of-coherence.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:coherence
+- topic:stages
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: d6d4a832996001926f376516ea38c6d9bbb576561ba4664e2d4c0a3b3f016005

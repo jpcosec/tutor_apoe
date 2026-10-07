@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/foundations/reflective-abstraction/atom-reflective-abstraction-is-a-foundational-idea-for-apos.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:piaget
+- topic:reflective-abstraction
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 45dcf19164ad097d11faee8774cbecdc1bc27652e74cd44f78f3c56d965ce892

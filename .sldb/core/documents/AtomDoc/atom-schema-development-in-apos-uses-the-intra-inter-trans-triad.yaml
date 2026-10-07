@@ -1,0 +1,20 @@
+name: atom-schema-development-in-apos-uses-the-intra-inter-trans-triad
+path: desk/atoms/apos/schema-development/schema-growth/atom-schema-development-in-apos-uses-the-intra-inter-trans-triad.md
+source_hash: b95556e8b7728d5f128b2a0ab9c8822b540fd499233b874dbec2d455d3489615
+content_hash: 3d56d4fd22b8f04ccfdc1d2f0c56397422cd465b55cf4cfe7bd48a528f6745d0
+field_hashes:
+  id: 46e323d6d0839605ffcde315a2e23e8c41ad8549124738b5b83b0bd38542f633
+  title: 56246f137ed757e9691bf9dae9d452c4366c1f4a090a4eab8cbda8158c647dda
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: e9ba2357521d902787d30b953f15430ba84341a7790f41f940f5d207afdf7fd7
+  tags: 5989ba992f76dab55ba2d0b3a1043ce3e9441bd86c177dd4ac6f774e0454746d
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:schema-development
+- topic:triad
+- type.knowledge.atom
+- workspace.desk.atoms

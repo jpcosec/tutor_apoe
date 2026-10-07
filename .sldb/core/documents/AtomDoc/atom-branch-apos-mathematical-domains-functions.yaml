@@ -1,0 +1,18 @@
+name: atom-branch-apos-mathematical-domains-functions
+path: desk/atoms/branches/atom-branch-apos-mathematical-domains-functions.md
+source_hash: 9497754b7b9a09642d3acb7c0ca4899651cf7871cb6d659948a0eaa9aa7de8ae
+content_hash: ae67d97a1c5060f6f96b1d6e466d0a66c7879424c9c03b6c78a9362859ec6f7d
+field_hashes:
+  id: 8a4c00e3a8e33be1498a175c837d27c4eaf14997d99742eeee3e5d4ba84dbe86
+  title: c2e80feeb978007feabc899553873b45168860c29c6e22420d8a87dca0d71613
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

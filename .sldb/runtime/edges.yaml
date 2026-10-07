@@ -1,0 +1,587 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://store
+  node_type: sldb_store
+  semantics: {}
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:applications
+  node_type: semantic_tag
+  semantics:
+    tag: layer:applications
+  facets: {}
+- id: sldb://semantic_tag/layer:pedagogy
+  node_type: semantic_tag
+  semantics:
+    tag: layer:pedagogy
+  facets: {}
+- id: sldb://semantic_tag/layer:research
+  node_type: semantic_tag
+  semantics:
+    tag: layer:research
+  facets: {}
+- id: sldb://semantic_tag/layer:taxonomy
+  node_type: semantic_tag
+  semantics:
+    tag: layer:taxonomy
+  facets: {}
+- id: sldb://semantic_tag/layer:theory
+  node_type: semantic_tag
+  semantics:
+    tag: layer:theory
+  facets: {}
+- id: sldb://semantic_tag/node:branch
+  node_type: semantic_tag
+  semantics:
+    tag: node:branch
+  facets: {}
+- id: sldb://semantic_tag/representation
+  node_type: semantic_tag
+  semantics:
+    tag: representation
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source
+  node_type: semantic_tag
+  semantics:
+    tag: source
+  facets: {}
+- id: sldb://semantic_tag/source.document
+  node_type: semantic_tag
+  semantics:
+    tag: source.document
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:ace-cycle
+  node_type: semantic_tag
+  semantics:
+    tag: topic:ace-cycle
+  facets: {}
+- id: sldb://semantic_tag/topic:action
+  node_type: semantic_tag
+  semantics:
+    tag: topic:action
+  facets: {}
+- id: sldb://semantic_tag/topic:action-to-process
+  node_type: semantic_tag
+  semantics:
+    tag: topic:action-to-process
+  facets: {}
+- id: sldb://semantic_tag/topic:activities
+  node_type: semantic_tag
+  semantics:
+    tag: topic:activities
+  facets: {}
+- id: sldb://semantic_tag/topic:apos
+  node_type: semantic_tag
+  semantics:
+    tag: topic:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:audience
+  node_type: semantic_tag
+  semantics:
+    tag: topic:audience
+  facets: {}
+- id: sldb://semantic_tag/topic:authorship
+  node_type: semantic_tag
+  semantics:
+    tag: topic:authorship
+  facets: {}
+- id: sldb://semantic_tag/topic:axioms
+  node_type: semantic_tag
+  semantics:
+    tag: topic:axioms
+  facets: {}
+- id: sldb://semantic_tag/topic:bibliography
+  node_type: semantic_tag
+  semantics:
+    tag: topic:bibliography
+  facets: {}
+- id: sldb://semantic_tag/topic:book-structure
+  node_type: semantic_tag
+  semantics:
+    tag: topic:book-structure
+  facets: {}
+- id: sldb://semantic_tag/topic:class-discussion
+  node_type: semantic_tag
+  semantics:
+    tag: topic:class-discussion
+  facets: {}
+- id: sldb://semantic_tag/topic:cognitive-path
+  node_type: semantic_tag
+  semantics:
+    tag: topic:cognitive-path
+  facets: {}
+- id: sldb://semantic_tag/topic:coherence
+  node_type: semantic_tag
+  semantics:
+    tag: topic:coherence
+  facets: {}
+- id: sldb://semantic_tag/topic:concrete-operations
+  node_type: semantic_tag
+  semantics:
+    tag: topic:concrete-operations
+  facets: {}
+- id: sldb://semantic_tag/topic:constructivism
+  node_type: semantic_tag
+  semantics:
+    tag: topic:constructivism
+  facets: {}
+- id: sldb://semantic_tag/topic:coordination
+  node_type: semantic_tag
+  semantics:
+    tag: topic:coordination
+  facets: {}
+- id: sldb://semantic_tag/topic:core-structures
+  node_type: semantic_tag
+  semantics:
+    tag: topic:core-structures
+  facets: {}
+- id: sldb://semantic_tag/topic:data-analysis
+  node_type: semantic_tag
+  semantics:
+    tag: topic:data-analysis
+  facets: {}
+- id: sldb://semantic_tag/topic:data-collection
+  node_type: semantic_tag
+  semantics:
+    tag: topic:data-collection
+  facets: {}
+- id: sldb://semantic_tag/topic:data-types
+  node_type: semantic_tag
+  semantics:
+    tag: topic:data-types
+  facets: {}
+- id: sldb://semantic_tag/topic:de-encapsulation
+  node_type: semantic_tag
+  semantics:
+    tag: topic:de-encapsulation
+  facets: {}
+- id: sldb://semantic_tag/topic:elementary-math
+  node_type: semantic_tag
+  semantics:
+    tag: topic:elementary-math
+  facets: {}
+- id: sldb://semantic_tag/topic:encapsulation
+  node_type: semantic_tag
+  semantics:
+    tag: topic:encapsulation
+  facets: {}
+- id: sldb://semantic_tag/topic:exercises
+  node_type: semantic_tag
+  semantics:
+    tag: topic:exercises
+  facets: {}
+- id: sldb://semantic_tag/topic:faq
+  node_type: semantic_tag
+  semantics:
+    tag: topic:faq
+  facets: {}
+- id: sldb://semantic_tag/topic:fractions
+  node_type: semantic_tag
+  semantics:
+    tag: topic:fractions
+  facets: {}
+- id: sldb://semantic_tag/topic:framework
+  node_type: semantic_tag
+  semantics:
+    tag: topic:framework
+  facets: {}
+- id: sldb://semantic_tag/topic:functions
+  node_type: semantic_tag
+  semantics:
+    tag: topic:functions
+  facets: {}
+- id: sldb://semantic_tag/topic:generic-student
+  node_type: semantic_tag
+  semantics:
+    tag: topic:generic-student
+  facets: {}
+- id: sldb://semantic_tag/topic:genetic-decomposition
+  node_type: semantic_tag
+  semantics:
+    tag: topic:genetic-decomposition
+  facets: {}
+- id: sldb://semantic_tag/topic:groups
+  node_type: semantic_tag
+  semantics:
+    tag: topic:groups
+  facets: {}
+- id: sldb://semantic_tag/topic:history
+  node_type: semantic_tag
+  semantics:
+    tag: topic:history
+  facets: {}
+- id: sldb://semantic_tag/topic:hypothesis
+  node_type: semantic_tag
+  semantics:
+    tag: topic:hypothesis
+  facets: {}
+- id: sldb://semantic_tag/topic:imagination
+  node_type: semantic_tag
+  semantics:
+    tag: topic:imagination
+  facets: {}
+- id: sldb://semantic_tag/topic:induction
+  node_type: semantic_tag
+  semantics:
+    tag: topic:induction
+  facets: {}
+- id: sldb://semantic_tag/topic:infinity
+  node_type: semantic_tag
+  semantics:
+    tag: topic:infinity
+  facets: {}
+- id: sldb://semantic_tag/topic:instruction
+  node_type: semantic_tag
+  semantics:
+    tag: topic:instruction
+  facets: {}
+- id: sldb://semantic_tag/topic:interiorization
+  node_type: semantic_tag
+  semantics:
+    tag: topic:interiorization
+  facets: {}
+- id: sldb://semantic_tag/topic:interviews
+  node_type: semantic_tag
+  semantics:
+    tag: topic:interviews
+  facets: {}
+- id: sldb://semantic_tag/topic:isetl
+  node_type: semantic_tag
+  semantics:
+    tag: topic:isetl
+  facets: {}
+- id: sldb://semantic_tag/topic:learning-theory
+  node_type: semantic_tag
+  semantics:
+    tag: topic:learning-theory
+  facets: {}
+- id: sldb://semantic_tag/topic:learning-trajectories
+  node_type: semantic_tag
+  semantics:
+    tag: topic:learning-trajectories
+  facets: {}
+- id: sldb://semantic_tag/topic:levels
+  node_type: semantic_tag
+  semantics:
+    tag: topic:levels
+  facets: {}
+- id: sldb://semantic_tag/topic:linear-combination
+  node_type: semantic_tag
+  semantics:
+    tag: topic:linear-combination
+  facets: {}
+- id: sldb://semantic_tag/topic:mathematical-domains
+  node_type: semantic_tag
+  semantics:
+    tag: topic:mathematical-domains
+  facets: {}
+- id: sldb://semantic_tag/topic:mechanisms
+  node_type: semantic_tag
+  semantics:
+    tag: topic:mechanisms
+  facets: {}
+- id: sldb://semantic_tag/topic:mental-construction
+  node_type: semantic_tag
+  semantics:
+    tag: topic:mental-construction
+  facets: {}
+- id: sldb://semantic_tag/topic:non-uniqueness
+  node_type: semantic_tag
+  semantics:
+    tag: topic:non-uniqueness
+  facets: {}
+- id: sldb://semantic_tag/topic:notation
+  node_type: semantic_tag
+  semantics:
+    tag: topic:notation
+  facets: {}
+- id: sldb://semantic_tag/topic:object
+  node_type: semantic_tag
+  semantics:
+    tag: topic:object
+  facets: {}
+- id: sldb://semantic_tag/topic:performance-differences
+  node_type: semantic_tag
+  semantics:
+    tag: topic:performance-differences
+  facets: {}
+- id: sldb://semantic_tag/topic:piaget
+  node_type: semantic_tag
+  semantics:
+    tag: topic:piaget
+  facets: {}
+- id: sldb://semantic_tag/topic:prerequisites
+  node_type: semantic_tag
+  semantics:
+    tag: topic:prerequisites
+  facets: {}
+- id: sldb://semantic_tag/topic:process
+  node_type: semantic_tag
+  semantics:
+    tag: topic:process
+  facets: {}
+- id: sldb://semantic_tag/topic:process-language
+  node_type: semantic_tag
+  semantics:
+    tag: topic:process-language
+  facets: {}
+- id: sldb://semantic_tag/topic:process-to-object
+  node_type: semantic_tag
+  semantics:
+    tag: topic:process-to-object
+  facets: {}
+- id: sldb://semantic_tag/topic:prompting
+  node_type: semantic_tag
+  semantics:
+    tag: topic:prompting
+  facets: {}
+- id: sldb://semantic_tag/topic:reflective-abstraction
+  node_type: semantic_tag
+  semantics:
+    tag: topic:reflective-abstraction
+  facets: {}
+- id: sldb://semantic_tag/topic:reliability
+  node_type: semantic_tag
+  semantics:
+    tag: topic:reliability
+  facets: {}
+- id: sldb://semantic_tag/topic:repeating-decimals
+  node_type: semantic_tag
+  semantics:
+    tag: topic:repeating-decimals
+  facets: {}
+- id: sldb://semantic_tag/topic:research-cycle
+  node_type: semantic_tag
+  semantics:
+    tag: topic:research-cycle
+  facets: {}
+- id: sldb://semantic_tag/topic:research-paradigm
+  node_type: semantic_tag
+  semantics:
+    tag: topic:research-paradigm
+  facets: {}
+- id: sldb://semantic_tag/topic:reversal
+  node_type: semantic_tag
+  semantics:
+    tag: topic:reversal
+  facets: {}
+- id: sldb://semantic_tag/topic:rumec
+  node_type: semantic_tag
+  semantics:
+    tag: topic:rumec
+  facets: {}
+- id: sldb://semantic_tag/topic:schema
+  node_type: semantic_tag
+  semantics:
+    tag: topic:schema
+  facets: {}
+- id: sldb://semantic_tag/topic:schema-development
+  node_type: semantic_tag
+  semantics:
+    tag: topic:schema-development
+  facets: {}
+- id: sldb://semantic_tag/topic:school-levels
+  node_type: semantic_tag
+  semantics:
+    tag: topic:school-levels
+  facets: {}
+- id: sldb://semantic_tag/topic:sets
+  node_type: semantic_tag
+  semantics:
+    tag: topic:sets
+  facets: {}
+- id: sldb://semantic_tag/topic:source-book
+  node_type: semantic_tag
+  semantics:
+    tag: topic:source-book
+  facets: {}
+- id: sldb://semantic_tag/topic:spanning-set-and-span
+  node_type: semantic_tag
+  semantics:
+    tag: topic:spanning-set-and-span
+  facets: {}
+- id: sldb://semantic_tag/topic:stages
+  node_type: semantic_tag
+  semantics:
+    tag: topic:stages
+  facets: {}
+- id: sldb://semantic_tag/topic:synthesis
+  node_type: semantic_tag
+  semantics:
+    tag: topic:synthesis
+  facets: {}
+- id: sldb://semantic_tag/topic:teaching-design
+  node_type: semantic_tag
+  semantics:
+    tag: topic:teaching-design
+  facets: {}
+- id: sldb://semantic_tag/topic:textbook-analysis
+  node_type: semantic_tag
+  semantics:
+    tag: topic:textbook-analysis
+  facets: {}
+- id: sldb://semantic_tag/topic:thematization
+  node_type: semantic_tag
+  semantics:
+    tag: topic:thematization
+  facets: {}
+- id: sldb://semantic_tag/topic:theory-evolution
+  node_type: semantic_tag
+  semantics:
+    tag: topic:theory-evolution
+  facets: {}
+- id: sldb://semantic_tag/topic:totality
+  node_type: semantic_tag
+  semantics:
+    tag: topic:totality
+  facets: {}
+- id: sldb://semantic_tag/topic:triad
+  node_type: semantic_tag
+  semantics:
+    tag: topic:triad
+  facets: {}
+- id: sldb://semantic_tag/topic:triangulation
+  node_type: semantic_tag
+  semantics:
+    tag: topic:triangulation
+  facets: {}
+- id: sldb://semantic_tag/type
+  node_type: semantic_tag
+  semantics:
+    tag: type
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace
+  node_type: semantic_tag
+  semantics:
+    tag: workspace
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://store
+  target: sldb://model/AtomDoc
+  relation: has_model
+  metadata:
+    origin: structural
+- source: sldb://store
+  target: sldb://model/BoardDoc
+  relation: has_model
+  metadata:
+    origin: structural
+- source: sldb://store
+  target: sldb://model/FAQDoc
+  relation: has_model
+  metadata:
+    origin: structural
+- source: sldb://store
+  target: sldb://model/InboxNoteDoc
+  relation: has_model
+  metadata:
+    origin: structural
+- source: sldb://store
+  target: sldb://model/KnowledgeAtomDoc
+  relation: has_model
+  metadata:
+    origin: structural
+- source: sldb://store
+  target: sldb://model/PillDoc
+  relation: has_model
+  metadata:
+    origin: structural
+- source: sldb://store
+  target: sldb://model/RepositoryDoc
+  relation: has_model
+  metadata:
+    origin: structural
+- source: sldb://store
+  target: sldb://model/RitualDoc
+  relation: has_model
+  metadata:
+    origin: structural
+- source: sldb://store
+  target: sldb://model/SourceNoteDoc
+  relation: has_model
+  metadata:
+    origin: structural
+- source: sldb://store
+  target: sldb://model/StepDoc
+  relation: has_model
+  metadata:
+    origin: structural
+- source: sldb://store
+  target: sldb://model/TaskDoc
+  relation: has_model
+  metadata:
+    origin: structural
+- source: sldb://semantic_tag/representation.markdown
+  target: sldb://semantic_tag/representation
+  relation: semantic_parent
+  metadata:
+    origin: structural
+- source: sldb://semantic_tag/source.document
+  target: sldb://semantic_tag/source
+  relation: semantic_parent
+  metadata:
+    origin: structural
+- source: sldb://semantic_tag/source.document.markdown
+  target: sldb://semantic_tag/source.document
+  relation: semantic_parent
+  metadata:
+    origin: structural
+- source: sldb://semantic_tag/type.knowledge
+  target: sldb://semantic_tag/type
+  relation: semantic_parent
+  metadata:
+    origin: structural
+- source: sldb://semantic_tag/type.knowledge.atom
+  target: sldb://semantic_tag/type.knowledge
+  relation: semantic_parent
+  metadata:
+    origin: structural
+- source: sldb://semantic_tag/workspace.desk
+  target: sldb://semantic_tag/workspace
+  relation: semantic_parent
+  metadata:
+    origin: structural
+- source: sldb://semantic_tag/workspace.desk.atoms
+  target: sldb://semantic_tag/workspace.desk
+  relation: semantic_parent
+  metadata:
+    origin: structural
