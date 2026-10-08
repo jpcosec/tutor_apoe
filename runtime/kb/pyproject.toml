@@ -1,0 +1,23 @@
+[project]
+name = "tutor-kb"
+version = "0.1.0"
+description = "Spec 01: acceso de solo lectura a una KB sldb (validación, consultas, materialización)"
+requires-python = ">=3.12"
+dependencies = [
+    "tutor-ontology",
+    "sldb",
+    "pron",
+    "pydantic>=2.7",
+    "pyyaml>=6.0",
+    "typer>=0.12",
+]
+
+[project.scripts]
+kb = "kb.cli:main"
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kb", "src/kb_base"]

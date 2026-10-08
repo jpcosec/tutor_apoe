@@ -1,0 +1,12 @@
+-e third_party/sldb
+-e third_party/pron
+-e runtime/ontology
+-e runtime/cognitive
+-e runtime/kb
+-e runtime/embeddings
+-e runtime/llm
+-e runtime/tools
+-e runtime/semantics
+-e runtime/agents
+-e runtime/context
+-e .[dev]

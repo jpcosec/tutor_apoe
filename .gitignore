@@ -2,3 +2,10 @@ __pycache__/
 *.pyc
 .deskops.log
 .sldb/runtime/cache/
+
+# KBs sldb de kbs/: los .md se versionan; el store, los índices y los vectores son derivados
+# (`python -m tutor.kb_build` los regenera; store_index.yaml lleva rutas absolutas).
+kbs/*/.sldb/
+kbs/**/docs.*.json
+**/.embedding_cache/
+.env

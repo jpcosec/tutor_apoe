@@ -1,0 +1,40 @@
+[project]
+name = "tutor-apoe"
+version = "0.1.0"
+description = "Tutor APOE: tutor agentico sobre una KB sldb"
+requires-python = ">=3.12"
+dependencies = [
+    "tutor-ontology",
+    "tutor-cognitive",
+    "tutor-kb",
+    "tutor-embeddings",
+    "tutor-llm",
+    "tutor-agents",
+    "tutor-tools",
+    "tutor-semantics",
+    "tutor-context",
+    "pydantic-ai-slim[google]>=1.0",
+    "mcp>=1.2",
+    "httpx",
+    "pyyaml",
+    "typer",
+    "fastapi>=0.110",
+    "uvicorn",
+]
+
+[project.optional-dependencies]
+# SDK oficial de TypeSafe en PyPI (docs.typesafe.ai/sdk/python); "typesafe-ai" es solo un shim.
+jev = ["typesafe-sdk"]
+embed = ["fastembed>=0.4"]
+dev = ["pytest>=8", "pytest-asyncio"]
+
+[project.scripts]
+tutor = "tutor.cli:main"
+tutor-mcp = "tutor.mcp_server:main"
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tutor"]

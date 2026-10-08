@@ -18,7 +18,9 @@ packs/<pack_id>/
   pack.json
   atoms.json
   prompt_policy.md
+  persona.md
   expansion_rules.json
+  index.html
 ```
 
 ## pack.json

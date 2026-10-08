@@ -2,6 +2,45 @@
 
 Repositorio de trabajo para extraer, organizar y consultar conocimiento sobre APOS/ APOE usando **Deskops** y **SLDB**.
 
+Desde octubre de 2026 el repo es además la base de dos piezas reutilizables:
+
+1. **Infra de agentes con KB** (`runtime/` + `src/tutor/`): un tutor es un agente
+   pydantic-ai cuyo contexto se arma por turno desde una KB sldb (`ContextRouter`
+   + embeddings + jerarquía; opcionalmente Jev/TypeSafe como selector). La KB de
+   APOS vive en `kbs/apos/` y se regenera desde `desk/atoms/`.
+2. **Servidor MCP** (`tutor-mcp`): crear, poblar (por chat o por ingesta de
+   texto/PDF), validar y probar KBs y tutores desde Claude Desktop o cualquier
+   cliente MCP. Ver [`docs/mcp.md`](docs/mcp.md).
+
+## Arranque rápido
+
+```bash
+./scripts/bootstrap_deps.sh         # sldb y pron vía google `repo` → third_party/
+pip install -r requirements.txt     # paquetes vendoreados (runtime/) + tutor, editable
+export TUTOR_EMBEDDER=hash          # sin red; `fastembed` requiere el extra `embed`
+
+tutor kb build                      # desk/atoms → kbs/apos (idempotente, ~30 s)
+tutor kb validate --kb kbs/apos
+tutor kb rank --kb kbs/apos "qué es la encapsulación" --k 5
+tutor ask --kb kbs/apos --model test "¿Qué diferencia una acción de un proceso?"
+tutor web --kb kbs/apos --model test --port 8300     # UI de chat con la mesa por turno
+tutor-mcp --selftest                                 # MCP: crea una KB demo y la ejercita
+```
+
+`--model test` no usa red. Con una API key exportada: `--model google:gemini-2.5-flash`,
+`openai:gpt-4o-mini`, `openrouter:...`. Variables en `.env.example`.
+
+**Entrega aislada (Docker):**
+
+```bash
+docker build -f docker/Dockerfile -t tutor-apoe .
+docker run --rm tutor-apoe                  # scripts/docker_smoke.sh: instala, construye KB, MCP, tests
+docker compose up -d                        # MCP por HTTP en :8200, KBs en un volumen (docs/mcp.md)
+```
+
+Benchmark de retrieval (20 preguntas, `benchmarks/`): `python -m benchmarks.run --k 5`.
+Mapa del código: `runtime/<paquete>/README.md`, `kbs/README.md`, `docs/mcp.md`.
+
 ## Consulta simple de la KB
 
 No necesitas usar un chatbot ni configurar claves de IA. Desde la Terminal:

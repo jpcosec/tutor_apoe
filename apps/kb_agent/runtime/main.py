@@ -45,7 +45,8 @@ class ChatResponse(BaseModel):
 
 def build_prompt(message: str, prompt_mesa: dict, knowledge_pack: KnowledgePack) -> str:
     mesa_json = json.dumps(prompt_mesa, ensure_ascii=False, indent=2)
-    return f"""
+    return f"""{knowledge_pack.persona}
+
 {knowledge_pack.prompt_policy}
 
 Pregunta del usuario:

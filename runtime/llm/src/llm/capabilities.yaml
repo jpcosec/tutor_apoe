@@ -1,0 +1,7 @@
+# Capacidades certificadas por par (spec 04). `provider|*` vale para todo modelo del
+# proveedor hasta que un par tenga su propio reporte de conformidad.
+"test|*": {tools: true, structured_output: true, output_mode: tool, system_prompt: true, usage_reported: true}
+"function|*": {tools: true, structured_output: true, output_mode: tool, system_prompt: true, usage_reported: false}
+"openrouter|*": {tools: true, structured_output: true, output_mode: tool, system_prompt: true, usage_reported: true}
+"openai|*": {tools: true, structured_output: true, output_mode: tool, system_prompt: true, usage_reported: true}
+"bedrock|*": {tools: true, structured_output: true, output_mode: tool, system_prompt: true, usage_reported: true}

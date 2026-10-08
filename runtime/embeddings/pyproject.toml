@@ -1,0 +1,16 @@
+[project]
+name = "tutor-embeddings"
+version = "0.1.0"
+description = "Adaptadores de embeddings para el puerto Embedder de sldb (decisión E1–E5)"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+fastembed = ["fastembed>=0.4"]
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/embeddings"]

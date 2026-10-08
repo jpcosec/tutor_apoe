@@ -1,0 +1,37 @@
+{
+  "pair": "openrouter|anthropic/claude-haiku-4.5",
+  "substrate_version": "2.51.0",
+  "created_at": "2026-09-28T07:37:52.225757Z",
+  "checks": [
+    {
+      "name": "texto",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tool",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "salida_tipada",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tools_y_salida_tipada",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mapa_abierto",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "max_tokens",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

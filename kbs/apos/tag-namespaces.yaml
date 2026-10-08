@@ -1,0 +1,44 @@
+# Taxonomía de tags de esta KB: un namespace por categoría; el tag se escribe `ns:valor`.
+# Generado por `python -m tutor.kb_build` desde desk/atoms/tag-namespaces.yaml.
+namespaces:
+  agent:
+    do_not_use_when: Describe la teoría o la taxonomía.
+    examples:
+    - agent:tutor
+    meaning: Encuadre de un rol del runtime.
+    use_when: Declara el rol de un agente (tutor).
+  domain:
+    do_not_use_when: A more specific system, topic, layer, or pattern tag applies.
+    examples:
+    - domain:knowledge-management
+    - domain:task-execution
+    meaning: Problem domain or durable area of concern.
+    use_when: The atom belongs to a reusable problem domain.
+  layer:
+    do_not_use_when: The tag names only a broad topic or system.
+    examples:
+    - layer:document-model
+    - layer:runtime
+    - layer:cli
+    meaning: Architectural layer where the atom applies.
+    use_when: The atom is scoped to a layer of the system.
+  node:
+    do_not_use_when: El documento responde una pregunta sobre APOS.
+    examples:
+    - node:branch
+    meaning: Rol estructural del documento en la taxonomía (rama).
+    use_when: El documento es un nodo de organización, no conocimiento.
+  system:
+    do_not_use_when: The tag is only a general topic.
+    examples:
+    - system:deskops
+    - system:sldb
+    meaning: System, project, or tool the atom belongs to.
+    use_when: The atom is about a specific system.
+  topic:
+    do_not_use_when: The atom describes a reusable implementation shape.
+    examples:
+    - topic:atoms
+    - topic:composition
+    meaning: Subject area discussed by the atom.
+    use_when: The atom is about a conceptual topic.

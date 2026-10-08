@@ -15,6 +15,7 @@ class KnowledgePack:
     atoms_data: dict[str, Any]
     expansion_rules: dict[str, Any]
     prompt_policy: str
+    persona: str
     index_path: Path
     atoms_path: Path
 
@@ -63,6 +64,7 @@ def load_pack(pack_id: str | None = None, pack_root: Path | None = None) -> Know
     atoms_path = pack_dir / 'atoms.json'
     rules_path = pack_dir / 'expansion_rules.json'
     prompt_path = pack_dir / 'prompt_policy.md'
+    persona_path = pack_dir / 'persona.md'
     index_path = pack_dir / 'index.html'
 
     try:
@@ -103,6 +105,14 @@ def load_pack(pack_id: str | None = None, pack_root: Path | None = None) -> Know
         raise RuntimeError(f'Invalid prompt policy at {prompt_path}: {exc}') from exc
     if not prompt_policy:
         raise RuntimeError(f'Malformed prompt policy {prompt_path}: empty file')
+
+    try:
+        persona = persona_path.read_text(encoding='utf-8').strip()
+    except Exception as exc:
+        raise RuntimeError(f'Invalid persona at {persona_path}: {exc}') from exc
+    if not persona:
+        raise RuntimeError(f'Malformed persona {persona_path}: empty file')
+
     if not index_path.is_file():
         raise RuntimeError(f'Pack UI file not found: {index_path}')
 
@@ -113,6 +123,7 @@ def load_pack(pack_id: str | None = None, pack_root: Path | None = None) -> Know
         atoms_data=atoms_data,
         expansion_rules=expansion_rules,
         prompt_policy=prompt_policy,
+        persona=persona,
         index_path=index_path,
         atoms_path=atoms_path,
     )

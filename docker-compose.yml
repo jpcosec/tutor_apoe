@@ -1,0 +1,43 @@
+# Despliegue mínimo para entregar a alguien que no programa:
+#   - `mcp`: servidor MCP por HTTP; se conecta desde Claude Desktop / claude.ai
+#     como conector remoto por URL (ver docs/mcp.md). Crea, puebla y prueba KBs.
+# Las KBs viven en el volumen `kbs`, no en la imagen: lo que el autor crea persiste.
+#
+#   cp .env.example .env   # API keys y token
+#   docker compose up -d --build
+#   docker compose run --rm mcp tutor-mcp --selftest
+
+services:
+  mcp:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: tutor-apoe
+    command: ["tutor-mcp", "--http", "0.0.0.0:8200", "--kbs-root", "/data/kbs"]
+    ports:
+      - "8200:8200"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      TUTOR_KBS_ROOT: /data/kbs
+      TUTOR_EMBEDDER: ${TUTOR_EMBEDDER:-hash}
+      TUTOR_MODEL: ${TUTOR_MODEL:-test}
+      TUTOR_MCP_TOKEN: ${TUTOR_MCP_TOKEN:-}
+    volumes:
+      - kbs:/data/kbs
+    restart: unless-stopped
+
+  # Copia la KB de APOS de la imagen al volumen la primera vez.
+  seed:
+    image: tutor-apoe
+    profiles: ["seed"]
+    command: >
+      bash -c 'test -e /data/kbs/apos/kb.yaml && echo "apos ya existe" ||
+               (mkdir -p /data/kbs && cp -r kbs/apos /data/kbs/ && cp -r kbs/kb_models /data/kbs/ &&
+                TUTOR_KB=/data/kbs/apos python -m tutor.kb_build --atoms desk/atoms --out /data/kbs/apos)'
+    volumes:
+      - kbs:/data/kbs
+
+volumes:
+  kbs:
