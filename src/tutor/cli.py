@@ -26,7 +26,15 @@ kb_app = typer.Typer(help="Construir, validar y consultar la KB.", no_args_is_he
 app.add_typer(kb_app, name="kb")
 
 KbOpt = Annotated[Path | None, typer.Option("--kb", help="Raíz de la KB (kb.yaml); por defecto TUTOR_KB o kbs/apos.")]
-ModelOpt = Annotated[str, typer.Option("--model", help="test | provider:model (openai:gpt-4o-mini, google-gla:gemini-2.5-flash…).")]
+ModelOpt = Annotated[
+    str,
+    typer.Option(
+        "--model",
+        help="test | provider:model (openrouter:google/gemini-2.5-flash, openai:gpt-4o-mini…). Por defecto TUTOR_MODEL o test.",
+    ),
+]
+#: Se lee al importar: con direnv, `.env.defaults` del proyecto ya está en el entorno.
+DEFAULT_MODEL = os.environ.get("TUTOR_MODEL", "test")
 RoleOpt = Annotated[str, typer.Option("--role", help="Rol del AgentDoc.")]
 
 
@@ -115,7 +123,7 @@ def kb_show(atom_id: Annotated[str, typer.Argument(help="Id del átomo o rama.")
 def ask(
     question: Annotated[str, typer.Argument(help="La pregunta.")],
     kb: KbOpt = None,
-    model: ModelOpt = "test",
+    model: ModelOpt = DEFAULT_MODEL,
     role: RoleOpt = "tutor",
     k: Annotated[int, typer.Option("--k", help="Tamaño de la mesa.")] = 8,
     as_json: Annotated[bool, typer.Option("--json", help="Volcar el TurnResult como JSON.")] = False,
@@ -134,7 +142,7 @@ def ask(
 
 
 @app.command("chat")
-def chat(kb: KbOpt = None, model: ModelOpt = "test", role: RoleOpt = "tutor", show_mesa: Annotated[bool, typer.Option("--mesa/--no-mesa", help="Mostrar la mesa tras cada respuesta.")] = True) -> None:
+def chat(kb: KbOpt = None, model: ModelOpt = DEFAULT_MODEL, role: RoleOpt = "tutor", show_mesa: Annotated[bool, typer.Option("--mesa/--no-mesa", help="Mostrar la mesa tras cada respuesta.")] = True) -> None:
     """REPL multi-turno en memoria; `exit`, `quit` o Ctrl-D para salir."""
     from tutor import world
     from tutor.agent import Conversation
@@ -161,7 +169,7 @@ def chat(kb: KbOpt = None, model: ModelOpt = "test", role: RoleOpt = "tutor", sh
 @app.command("web")
 def web(
     kb: KbOpt = None,
-    model: ModelOpt = "test",
+    model: ModelOpt = DEFAULT_MODEL,
     role: RoleOpt = "tutor",
     host: Annotated[str, typer.Option("--host")] = "127.0.0.1",
     port: Annotated[int, typer.Option("--port")] = 8300,

@@ -24,6 +24,10 @@ PATHS = [
     REPO / "src",
 ]
 os.environ.setdefault("PYDANTIC_AI_NO_BANNER", "1")
+# Los tests no deben salir a la red aunque el shell (direnv) traiga keys y defaults del proyecto.
+os.environ["TUTOR_SELECTOR"] = "heuristic"
+os.environ["TUTOR_MODEL"] = "test"
+os.environ["TUTOR_EMBEDDER"] = "hash"
 for path in reversed(PATHS):
     if str(path) not in sys.path:
         sys.path.insert(0, str(path))

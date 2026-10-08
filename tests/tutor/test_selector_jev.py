@@ -10,6 +10,7 @@ import pytest
 from tutor import world
 from tutor.selector_jev import (
     API_KEY_ENV,
+    MIN_PICK,
     FakeJevClient,
     JevSelector,
     JevTreeRouter,
@@ -43,14 +44,17 @@ def test_select_returns_sorted_ids_above_threshold() -> None:
     chosen = selector.select("tutor", QUESTION, None, POOL)
     assert chosen is not None
     assert chosen[0] == "atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms"
-    assert set(chosen) == {
+    # Solo dos superan el umbral; el piso MIN_PICK completa con el siguiente mejor, bajo umbral.
+    assert chosen[:2] == [
         "atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms",
         "atom-encapsulation-treats-a-process-as-a-static-entity",
-    }
+    ]
+    assert len(chosen) == MIN_PICK
     assert len(client.calls) == len(POOL)  # un Noul por candidato
     scored = dict(selector.score(QUESTION, POOL))
     assert all(scored[a] >= scored[b] for a, b in zip(chosen, chosen[1:]))
     assert scored["atom-rumec-was-a-major-community-in-apos-development"] < 0.5
+    assert selector.last_scores == scored  # expuesto para que la mesa muestre el noul
     state = client.calls[0]["state"]
     assert state["student_question"] == QUESTION and "candidate_atom" in state
     assert client.calls[0]["model"] == selector.model

@@ -21,6 +21,7 @@ Un turno tiene dos mitades, y las dos quedan auditables en `TurnResult`:
 from __future__ import annotations
 
 import logging
+import os
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any
@@ -52,6 +53,8 @@ MIN_RELEVANCE = 0.2
 EXPAND = 2
 #: Cuántos candidatos ve el selector LLM, si lo hay.
 SELECTOR_POOL = 30
+#: Caracteres de la respuesta del átomo que ve el selector externo, además del título.
+SELECTOR_TEXT_CHARS = 400
 #: Peticiones al modelo por turno: la primera más las iteraciones con tools.
 MAX_REQUESTS = 6
 #: Prefijos de Gemini de pydantic-ai 1.x que 2.x conoce como `google:` (GEMINI_API_KEY / GOOGLE_API_KEY).
@@ -115,13 +118,23 @@ def build_context(
         # el selector ve toda la porción admitida: la KB es chica y así un id válido nunca se descarta
         llm_pool=max(SELECTOR_POOL, len(kb.in_projection(projection))),
     )
+    adapter = _SelectorAdapter(kb, selector) if selector is not None else None
     router = ContextRouter(
         RouteContextConfig(roles={role: route}),
         kb,
         projections={role: projection},
-        selector=_SelectorAdapter(kb, selector) if selector is not None else None,
+        selector=adapter,
     )
     router.route(context)
+
+    # El ruteador no guarda puntaje para lo que eligió el selector; si éste lo expone, va a la mesa.
+    if adapter is not None and adapter.last_scores:
+        context.active[role] = [
+            e.model_copy(update={"score": adapter.last_scores[e.key]})
+            if e.reason == "llm" and e.key in adapter.last_scores
+            else e
+            for e in context.active.get(role, [])
+        ]
 
     entries = context.active.get(role, [])
     events = [e for e in context.ledger if e.turn == turn]
@@ -217,16 +230,48 @@ def build_context(
 
 class _SelectorAdapter:
     """Presenta el hook `Selector` tal cual (`select(role, question, step, pool)`) y acepta que
-    devuelva ids pelados (`atom-…`) además de claves `Modelo:nombre`, que es lo que el ruteador exige."""
+    devuelva ids pelados (`atom-…`) además de claves `Modelo:nombre`, que es lo que el ruteador exige.
+
+    Además arregla lo que el ruteador le daría a un selector externo: el resumen de cada candidato
+    es solo `payload.summary` o el título (los `KnowledgeAtom` no tienen `summary`), y el pool es
+    toda la porción admitida. Aquí cada candidato lleva título + respuesta y el pool se recorta a
+    los `SELECTOR_POOL` mejores por embedding, que es lo que midió el benchmark (embed → rerank)."""
 
     def __init__(self, kb: KnowledgeBase, inner: Selector) -> None:
+        self.kb = kb
         self.inner = inner
         self.keys = {d.name: d.key for d in kb.documents()}
+        self.text: dict[str, str] = {}
+        for document in kb.documents():
+            payload = document.payload
+            title = str(payload.get("title") or document.name)
+            body = str(payload.get("answer") or payload.get("summary") or "").strip()
+            self.text[document.key] = f"{title}. {body[:SELECTOR_TEXT_CHARS]}" if body else title
+        #: `{clave: puntaje}` del selector en la última llamada, si lo expone (`last_scores`).
+        self.last_scores: dict[str, float] = {}
+
+    def _cut(self, question: str, pool: list[tuple[str, str]]) -> list[tuple[str, str]]:
+        admitted = {ref: summary for ref, summary in pool}
+        ordered: list[str] = []
+        for name, _ in world.rank(self.kb, question, k=SELECTOR_POOL * 2, threshold=0.0):
+            key = self.keys.get(name, name)
+            if key in admitted and key not in ordered:
+                ordered.append(key)
+            if len(ordered) >= SELECTOR_POOL:
+                break
+        for ref in admitted:  # lo que el embedding no alcanzó a ordenar, hasta llenar el pool
+            if len(ordered) >= SELECTOR_POOL:
+                break
+            if ref not in ordered:
+                ordered.append(ref)
+        return [(ref, self.text.get(ref, admitted[ref])) for ref in ordered]
 
     def select(
         self, role: str, question: str, step: str | None, pool: list[tuple[str, str]]
     ) -> list[str] | None:
-        chosen = self.inner.select(role, question, step, pool)
+        chosen = self.inner.select(role, question, step, self._cut(question, pool))
+        raw = getattr(self.inner, "last_scores", None) or {}
+        self.last_scores = {self.keys.get(ref, ref): float(p) for ref, p in raw.items()}
         if chosen is None:
             return None
         return [self.keys.get(ref, ref) for ref in chosen]
@@ -376,6 +421,20 @@ def build_agent(
     )
 
 
+#: Tope de tokens de salida por turno. Sin esto `llm.make_model` pide el máximo del modelo
+#: (65k en Gemini 2.5), que OpenRouter cobra por adelantado contra el crédito disponible.
+MAX_TOKENS_ENV = "TUTOR_MAX_TOKENS"
+DEFAULT_MAX_TOKENS = 1500
+
+
+def max_output_tokens() -> int:
+    try:
+        return max(64, int(os.environ.get(MAX_TOKENS_ENV, DEFAULT_MAX_TOKENS)))
+    except ValueError:
+        log.warning("%s inválido; uso %d", MAX_TOKENS_ENV, DEFAULT_MAX_TOKENS)
+        return DEFAULT_MAX_TOKENS
+
+
 def resolve_model(name: str) -> Model:
     """`provider:model` → un `Model` de pydantic-ai. Pares con capacidades declaradas en `llm`
     (openai, openrouter, bedrock) salen de `llm.make_model`, con sus reintentos; el resto
@@ -386,7 +445,7 @@ def resolve_model(name: str) -> Model:
     if provider in GOOGLE_ALIASES:  # pydantic-ai 2.x unificó `google-gla:`/`google-vertex:` en `google:`
         provider, name = "google", f"google:{model_name}"
     if sep:
-        settings = LlmSettings(provider=provider, model=model_name)
+        settings = LlmSettings(provider=provider, model=model_name, max_output_tokens=max_output_tokens())
         try:
             capabilities_of(settings)
         except LlmUnknownModel:
@@ -415,6 +474,28 @@ def _test_model(mesa: dict[str, Any]) -> Model:
 # --------------------------------------------------------------------------------------------
 
 
+#: `TUTOR_SELECTOR`: `heuristic` (default) · `jev` (exige Jev; sin key cae a heurística con warning)
+#: · `auto` (Jev si hay `TYPESAFE_API_KEY` y el SDK; si no, heurística, sin ruido).
+SELECTOR_ENV = "TUTOR_SELECTOR"
+
+
+def default_selector(k: int = 8) -> Selector | None:
+    """El selector que pide el entorno; None = heurística del router."""
+    mode = os.environ.get(SELECTOR_ENV, "heuristic").strip().lower()
+    if mode in ("", "heuristic", "none", "off"):
+        return None
+    if mode not in ("jev", "auto"):
+        log.warning("%s=%r desconocido; uso heurística", SELECTOR_ENV, mode)
+        return None
+    from .selector_jev import API_KEY_ENV, JevSelector
+
+    if not os.environ.get(API_KEY_ENV):
+        if mode == "jev":
+            log.warning("%s=jev pero falta %s: uso heurística", SELECTOR_ENV, API_KEY_ENV)
+        return None
+    return JevSelector(k=k)
+
+
 def answer(
     question: str,
     *,
@@ -427,15 +508,20 @@ def answer(
     message_history: list[ModelMessage] | None = None,
     k: int = 8,
 ) -> TurnResult:
-    """Un turno completo: mesa → agente → respuesta. `model="test"` responde sin red."""
+    """Un turno completo: mesa → agente → respuesta. `model="test"` responde sin red.
+    `selector=None` toma el de `TUTOR_SELECTOR` (heurística si no está definido)."""
     kb = kb or world.open_kb(kb_root)
+    selector = selector if selector is not None else default_selector(k)
     mesa = build_context(kb, question, role=role, previous=previous, selector=selector, k=k)
     projection = str((world.agent(kb, role) or {}).get("projection") or role)
     tools = TutorTools(kb, projection)
     resolved = _test_model(mesa) if model == TEST_MODEL else (resolve_model(model) if isinstance(model, str) else model)
     agent = build_agent(kb, model=resolved, role=role, mesa_items=mesa["items"], tools=tools)
     result = agent.run_sync(
-        question, message_history=message_history or [], usage_limits=UsageLimits(request_limit=MAX_REQUESTS)
+        question,
+        message_history=message_history or [],
+        usage_limits=UsageLimits(request_limit=MAX_REQUESTS),
+        model_settings={"max_tokens": max_output_tokens()},
     )
     if tools.reads:
         mesa["reads"] = tools.reads

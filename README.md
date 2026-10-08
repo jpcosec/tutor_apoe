@@ -30,6 +30,11 @@ tutor-mcp --selftest                                 # MCP: crea una KB demo y l
 `--model test` no usa red. Con una API key exportada: `--model google:gemini-2.5-flash`,
 `openai:gpt-4o-mini`, `openrouter:...`. Variables en `.env.example`.
 
+**Secrets y config:** no hay `.env` en el repo. `direnv allow` una vez y `.envrc` carga los
+secrets desde `~/setup/.env-collection/master.env` (fuera de git) y la config versionada de
+`.env.defaults` (OpenRouter como LLM, Jev/TypeSafe como selector de contexto, embedder hash).
+Con eso `tutor ask "..."` y `tutor web` corren con el stack real sin flags.
+
 **Entrega aislada (Docker):**
 
 ```bash

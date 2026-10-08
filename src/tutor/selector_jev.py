@@ -30,6 +30,8 @@ from typing import Any, Protocol
 log = logging.getLogger(__name__)
 
 API_KEY_ENV = "TYPESAFE_API_KEY"
+#: Mínimo de átomos que `select` devuelve si Jev respondió, aunque pocos superen el umbral.
+MIN_PICK = 3
 DEFAULT_MODEL = "jev-latest"
 MAX_POOL = 30
 BEAM_WIDTH = 3
@@ -133,6 +135,8 @@ class JevSelector:
         self.timeout = timeout
         self._client = client
         self._resolved = client is not None
+        #: `{ref: noul}` de la última llamada a `select`, para que la mesa muestre el puntaje real.
+        self.last_scores: dict[str, float] = {}
 
     @property
     def client(self) -> JevClient | None:
@@ -150,7 +154,12 @@ class JevSelector:
         scored = self.score(question, pool, role=role, step=step)
         if scored is None:
             return None
+        self.last_scores = dict(scored)
         chosen = [(ref, p) for ref, p in scored if p >= self.threshold]
+        # Piso: una mesa con 0–2 átomos deja al tutor sin evidencia; mejor los MIN_PICK mejores aunque
+        # estén bajo el umbral (su noul queda visible en la mesa para juzgarlo).
+        if len(chosen) < MIN_PICK:
+            chosen = scored[:MIN_PICK]
         return [ref for ref, _ in chosen[: self.k]]
 
     def score(

@@ -17,6 +17,10 @@ services:
     ports:
       - "8200:8200"
     env_file:
+      - path: ${HOME}/setup/.env-collection/master.env    # secrets (TypeSafe, OpenRouter…)
+        required: false
+      - path: .env.defaults                               # config no secreta del proyecto
+        required: false
       - path: .env
         required: false
     environment:
