@@ -30,7 +30,7 @@ ModelOpt = Annotated[
     str,
     typer.Option(
         "--model",
-        help="test | provider:model (openrouter:google/gemini-2.5-flash, openai:gpt-4o-mini…). Por defecto TUTOR_MODEL o test.",
+        help="test | provider:model (openrouter:deepseek/deepseek-v4.1-flash, openai:gpt-4o-mini…). Por defecto TUTOR_MODEL o test.",
     ),
 ]
 #: Se lee al importar: con direnv, `.env.defaults` del proyecto ya está en el entorno.

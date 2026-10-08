@@ -32,7 +32,8 @@ tutor-mcp --selftest                                 # MCP: crea una KB demo y l
 
 **Secrets y config:** no hay `.env` en el repo. `direnv allow` una vez y `.envrc` carga los
 secrets desde `~/setup/.env-collection/master.env` (fuera de git) y la config versionada de
-`.env.defaults` (OpenRouter como LLM, Jev/TypeSafe como selector de contexto, embedder hash).
+`.env.defaults` (DeepSeek V4.1 Flash vía OpenRouter como LLM, Jev/TypeSafe como selector de
+contexto, embedder hash).
 Con eso `tutor ask "..."` y `tutor web` corren con el stack real sin flags.
 
 **Entrega aislada (Docker):**
