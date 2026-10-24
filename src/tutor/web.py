@@ -154,4 +154,7 @@ def create_app(kb_root: Path | str | None = None, model: str = "test", role: str
             raise HTTPException(status_code=404, detail="atom not found")
         return found
 
+    from tutor.preload_web import router
+
+    app.include_router(router(model))
     return app

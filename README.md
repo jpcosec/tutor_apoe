@@ -340,3 +340,30 @@ Piensa así:
 
 - **Deskops** = tareas, board, rituales, operación
 - **SLDB** = documentos, tracking, búsqueda, store
+
+## Precargar paquetes desde PDF o página
+
+En el chat (`tutor web`), abre **Precargar paquetes**, o visita
+<http://127.0.0.1:8300/packages>:
+
+1. Sube un PDF con texto seleccionable o introduce una URL pública de HTML/texto.
+2. Genera un **resumen estructural**: átomos editables con sección, afirmación y
+   referencias a fragmentos (página en PDF). Se procesa toda la fuente por fragmentos.
+3. Revisa el resumen y **condénsalo**: conceptos con relaciones padre/hijo y
+   `derived_from` hacia los átomos estructurales. Puedes editar síntesis y padres;
+   el grafo rechaza ciclos y referencias inexistentes.
+4. Activa el paquete para validarlo como KB independiente y conversar desde esa
+   misma pantalla, con el selector y modelo configurados para el tutor.
+
+Los borradores, fuentes y KBs quedan en `.local/packages/`, fuera de Git
+(`TUTOR_PACKAGES_ROOT` permite cambiar la ubicación). Puedes retomar un paquete
+al reiniciar y descargarlo en JSON con sus dos capas y fuentes. El historial de
+conversación del paquete vive en memoria. Editar el resumen invalida el grafo;
+modificar el grafo exige una nueva activación. Cada activación crea una revisión
+independiente, sin modificar APOS ni otras KBs.
+
+La extracción y condensación requieren un modelo real y envían la fuente al
+proveedor configurado. `--model test` sirve para probar el chat, pero no extrae
+conocimiento. Límite por fuente: 15 MB y 240.000 caracteres; divide libros grandes
+por capítulos. No incluye OCR ni páginas que requieren ejecutar JavaScript.
+Las URLs deben ser públicas y finales (sin redirección).

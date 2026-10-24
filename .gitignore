@@ -9,3 +9,6 @@ kbs/*/.sldb/
 kbs/**/docs.*.json
 **/.embedding_cache/
 .env
+
+# Borradores, fuentes y KBs precargadas desde la interfaz local
+.local/

@@ -20,6 +20,8 @@ dependencies = [
     "typer",
     "fastapi>=0.110",
     "uvicorn",
+    "pypdf>=5",
+    "python-multipart>=0.0.9",
 ]
 
 [project.optional-dependencies]
