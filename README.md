@@ -27,10 +27,10 @@ tutor web --kb kbs/apos --model test --port 8300     # UI de chat con la mesa po
 tutor-mcp --selftest                                 # MCP: crea una KB demo y la ejercita
 ```
 
-La interfaz de `tutor web` reúne **Conversación**, **Paquetes** y **Grafo APOS**
+La interfaz de `tutor web` reúne **Conversación**, **Paquetes**, **Grafo APOS** y **Scratch**
 en pestañas en <http://127.0.0.1:8300>. Cada vista permanece abierta al cambiar
 de pestaña, conservando sus formularios, selecciones y posición. Los enlaces
-`/#chat`, `/#packages` y `/#graph` permiten abrir una vista directamente;
+`/#chat`, `/#packages`, `/#graph` y `/#scratch` permiten abrir una vista directamente;
 Atrás/Adelante y las flechas del teclado en la barra de pestañas también funcionan.
 El grafo fuente usa `scripts/kb.py` (búsqueda SLDB y edición Markdown) desde el
 mismo servidor; no es necesario iniciar otro proceso en el puerto 8000.
@@ -364,7 +364,7 @@ En el chat (`tutor web`), abre **Precargar paquetes**, o visita
    misma pantalla, con el selector y modelo configurados para el tutor.
 
 La interfaz presenta una etapa a la vez y una biblioteca lateral para retomar
-paquetes. El botón **Recorrido guiado**, disponible en las tres vistas, resalta
+paquetes. El botón **Recorrido guiado**, disponible en todas las vistas, resalta
 los controles reales con ayuda contextual. En Paquetes también se inicia desde
 **Ver recorrido** o al activar **Modo tutorial**. Puedes seguir usando los
 campos y botones: el recorrido espera los requisitos de cada etapa y avanza
@@ -386,3 +386,12 @@ proveedor configurado. `--model test` sirve para probar el chat, pero no extrae
 conocimiento. Límite por fuente: 15 MB y 240.000 caracteres; divide libros grandes
 por capítulos. No incluye OCR ni páginas que requieren ejecutar JavaScript.
 Las URLs deben ser públicas y finales (sin redirección).
+
+
+## Scratch personal
+
+La pestaña **Scratch** (`/#scratch`) es un cuaderno libre: crea varios borradores,
+edita sus títulos y escribe notas con formato Markdown. Guarda automáticamente
+en el navegador y conserva las notas al cambiar de pestaña o recargar.
+**Descargar .md** exporta el borrador actual. No envía las notas al modelo ni
+las incorpora a la KB. El botón **Recorrido guiado** explica sus controles.

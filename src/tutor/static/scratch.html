@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scratch · Tutor</title>
+<link rel="stylesheet" href="/web/theme.css">
+<style>
+*{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;font:14px/1.6 var(--ui-font);height:100dvh;overflow:hidden}.scratch{height:100%;display:grid;grid-template-columns:245px minmax(0,1fr)}.notes{background:var(--ui-deep);color:#e6eee8;padding:26px 20px;display:flex;flex-direction:column;min-height:0}.brand{font:25px Georgia,serif;letter-spacing:-.03em}.notes p{color:#b9cfc0;font-size:12px;margin:8px 0 24px}button{font:600 13px var(--ui-font);cursor:pointer;border-radius:9px;border:1px solid var(--ui-line);padding:9px 13px;background:var(--ui-accent);color:white}.notes #newNote{background:#dcebdc;color:#193f30;border:0;text-align:left}.eyebrow{font-size:10px;letter-spacing:.13em;font-weight:700;text-transform:uppercase;color:var(--ui-accent)}.notes .eyebrow{color:#b9cfc0;margin:27px 0 12px}.note-list{display:flex;flex-direction:column;gap:7px;overflow:auto;min-height:0}.note-list button{background:transparent;color:#e6eee8;border-color:transparent;text-align:left;font-weight:400;padding:12px 10px;overflow-wrap:anywhere}.note-list button:hover,.note-list button.active{background:#244e3e;border-color:#48735b}.note-list button small{display:block;font-size:10px;color:#b9cfc0;margin-top:3px}.notes footer{font-size:11px;color:#b9cfc0;margin-top:auto;padding-top:20px}.work{min-width:0;min-height:0;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;background:var(--ui-bg)}header{padding:19px 28px;border-bottom:1px solid var(--ui-line);background:var(--ui-paper);display:flex;align-items:center;justify-content:space-between;gap:15px}header h1{font:28px Georgia,serif;margin:0 0 4px}header p{color:var(--ui-muted);font-size:12px;margin:0}.secondary{background:white;color:var(--ui-accent)}.document-head{padding:25px 34px 16px;max-width:1100px;width:100%;margin:auto}.document-head input{border:0;border-bottom:1px solid var(--ui-line);background:transparent;color:var(--ui-ink);font:29px/1.4 Georgia,serif;width:100%;padding:8px 0}.toolbar{display:flex;align-items:center;gap:6px;margin-top:12px}.toolbar button{background:transparent;color:var(--ui-accent);font-size:12px;border:1px solid var(--ui-line);padding:5px 10px}.toolbar small{color:var(--ui-muted);margin-left:8px;font-size:11px}.editor-wrap{padding:0 34px 24px;min-height:0;max-width:1100px;width:100%;margin:auto;height:100%}textarea{width:100%;height:100%;resize:none;border:1px solid var(--ui-line);border-radius:12px;background:var(--ui-paper);padding:25px;color:var(--ui-ink);font:15px/1.95 var(--ui-font)}textarea::placeholder{color:#88978b}.statusbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 28px;border-top:1px solid var(--ui-line);color:var(--ui-muted);background:var(--ui-paper);font-size:11px}.statusbar .error{color:#a13e27;font-weight:600}.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+@media(max-width:800px){.scratch{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr)}.notes{padding:12px 18px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px}.notes p,.notes .eyebrow,.notes footer{display:none}.brand{font-size:22px}.note-list{grid-column:1/-1;flex-direction:row;max-height:80px}.note-list button{flex-shrink:0;max-width:230px;font-size:11px;padding:6px 10px}.note-list small{display:none!important}header{padding:14px 18px}.document-head{padding:16px 18px 12px}.document-head input{font-size:25px}.editor-wrap{padding:0 18px 16px}textarea{padding:18px}.toolbar small{display:none}.statusbar{padding:10px 18px;flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<div class="scratch">
+<aside class="notes" aria-label="Borradores"><div class="brand">Tutor / scratch</div><p>Un espacio para pensar en voz baja.</p><button id="newNote">＋ Nuevo borrador</button><div class="eyebrow">Tus notas</div><nav id="noteList" class="note-list" aria-label="Notas guardadas"></nav><footer>Notas personales de este navegador.<br>No se envían al modelo ni se añaden a la KB.</footer></aside>
+<main class="work"><header><div><h1>Ideas en borrador.</h1><p>Anota preguntas, pega fragmentos o ensaya una explicación.</p></div><button id="exportNote" class="secondary">Descargar .md ↓</button></header>
+<div class="document-head"><label class="sr-only" for="scratchTitle">Título del borrador</label><input id="scratchTitle" maxlength="180" placeholder="Sin título" autocomplete="off"><div class="toolbar" role="group" aria-label="Formato Markdown"><button data-format="bold" title="Negrita (Ctrl o Cmd+B)">Negrita</button><button data-format="italic" title="Cursiva (Ctrl o Cmd+I)">Cursiva</button><button data-format="list">Lista</button><small>Texto libre · puedes usar Markdown</small></div></div>
+<div class="editor-wrap"><label class="sr-only" for="scratchBody">Contenido del borrador</label><textarea id="scratchBody" spellcheck="true" placeholder="Empieza por una idea…&#10;&#10;¿Qué quiero comprender?&#10;¿Cómo se relaciona con lo que ya leí?&#10;¿Qué pregunta le haría al tutor?"></textarea></div>
+<footer class="statusbar"><span id="saveStatus" role="status" aria-live="polite"></span><span id="wordCount">0 palabras</span></footer></main>
+</div>
+<script>
+(() => {
+  const KEY='tutor-scratch-v1';
+  const title=document.getElementById('scratchTitle'), body=document.getElementById('scratchBody');
+  const list=document.getElementById('noteList'), status=document.getElementById('saveStatus');
+  let state, blocked=false, saved=true;
+  function fresh(){const note={id:crypto.randomUUID(),title:'Mi primer borrador',body:'',updated:new Date().toISOString()};return {version:1,selected:note.id,notes:[note]};}
+  try {
+    const raw=localStorage.getItem(KEY);
+    state=raw ? JSON.parse(raw) : fresh();
+    if(state.version!==1 || !Array.isArray(state.notes) || !state.notes.length || !state.notes.every(n=>typeof n.id==='string' && typeof n.title==='string' && typeof n.body==='string' && typeof n.updated==='string')) throw Error('Formato inválido');
+    if(!state.notes.some(n=>n.id===state.selected)) state.selected=state.notes[0].id;
+  } catch {state=fresh();blocked=true;saved=false;}
+  function active(){return state.notes.find(n=>n.id===state.selected);}
+  function counts(){const count=body.value.trim().split(/\s+/).filter(Boolean).length;document.getElementById('wordCount').textContent=`${count} ${count===1?'palabra':'palabras'} · ${body.value.length} caracteres`;}
+  function persist(){
+    try {if(blocked) throw Error('Almacenamiento no disponible');localStorage.setItem(KEY,JSON.stringify(state));saved=true;status.className='';status.textContent='✓ Guardado en este navegador';}
+    catch {saved=false;status.className='error';status.textContent='No se pudo guardar localmente. Descarga una copia antes de cerrar.';}
+  }
+  function renderList(){
+    list.replaceChildren(...state.notes.map(note=>{
+      const button=document.createElement('button');button.textContent=note.title.trim()||'Sin título';button.className=note.id===state.selected?'active':'';
+      if(note.id===state.selected)button.setAttribute('aria-current','true');
+      const small=document.createElement('small');const date=new Date(note.updated);small.textContent=Number.isNaN(date.getTime())?'Borrador':date.toLocaleDateString('es',{day:'numeric',month:'short'});button.append(small);
+      button.onclick=()=>{state.selected=note.id;render();persist();};return button;
+    }));
+  }
+  function render(){title.value=active().title;body.value=active().body;renderList();counts();}
+  function update(){const note=active();note.title=title.value;note.body=body.value;note.updated=new Date().toISOString();renderList();counts();persist();}
+  title.addEventListener('input',update);body.addEventListener('input',update);
+  document.getElementById('newNote').onclick=()=>{const note={id:crypto.randomUUID(),title:'Nuevo borrador',body:'',updated:new Date().toISOString()};state.notes.unshift(note);state.selected=note.id;render();persist();title.focus();title.select();};
+  function format(kind){
+    const start=body.selectionStart,end=body.selectionEnd,selection=body.value.slice(start,end);
+    const before=kind==='bold'?'**':kind==='italic'?'*':'- ';
+    const after=kind==='list'?'':before;
+    const text=selection || 'texto',formatted=kind==='list'?text.split('\n').map(line=>'- '+line).join('\n'):before+text+after;body.setRangeText(formatted,start,end,'select');body.focus();body.setSelectionRange(kind==='list'?start:start+before.length,kind==='list'?start+formatted.length:start+before.length+text.length);update();
+  }
+  document.querySelectorAll('[data-format]').forEach(button=>button.onclick=()=>format(button.dataset.format));
+  body.addEventListener('keydown',event=>{if((event.metaKey||event.ctrlKey)&&['b','i'].includes(event.key.toLowerCase())){event.preventDefault();format(event.key.toLowerCase()==='b'?'bold':'italic');}});
+  document.getElementById('exportNote').onclick=()=>{
+    const note=active(),name=(note.title.trim()||'borrador').replace(/[^\p{L}\p{N} _-]/gu,'').slice(0,100)||'borrador';
+    const blob=new Blob([`# ${note.title.trim()||'Sin título'}\n\n${note.body}\n`],{type:'text/markdown;charset=utf-8'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download=name+'.md';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  };
+  window.tutorHasUnsavedChanges=()=>!saved;
+  window.addEventListener('beforeunload',event=>{if(!saved){event.preventDefault();event.returnValue='';}});
+  render();persist();
+})();
+</script>
+<script src="/ui/navigation.js"></script>
+</body>
+</html>

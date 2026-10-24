@@ -3,6 +3,12 @@
   window.TutorTourPlans = (view, doc) => {
     const q = selector => doc.querySelector(selector);
     const at = selector => () => q(selector);
+    if (view === 'scratch') return [
+      {target:at('#scratchTitle'), title:'Dale un nombre a tu idea', text:'Cada borrador tiene un título propio. Los borradores se guardan en este navegador y puedes retomarlos desde la lista lateral.'},
+      {target:at('#scratchBody'), title:'Un espacio libre para pensar', text:'Escribe notas, preguntas o fragmentos. Se guardan automáticamente mientras escribes. Puedes usar Markdown y los botones de formato. Nada se envía al modelo ni entra a la base de conocimiento.'},
+      {target:at('#newNote'), title:'Separa tus ideas en borradores', text:'Crea otra nota cuando quieras explorar un tema distinto. Cambiar de borrador conserva lo que ya escribiste.'},
+      {target:at('#exportNote'), title:'Llévate una copia', text:'Este botón descarga el borrador actual como archivo Markdown. Úsalo para respaldar tus notas o compartirlas fuera del tutor.'}
+    ];
     if (view === 'chat') return [
       {target:at('#input'), title:'Haz tu primera pregunta', text:'Escribe aquí una pregunta sobre la teoría. Puedes pedir una explicación, comparar conceptos o solicitar un ejemplo. El recorrido no envía mensajes por ti.'},
       {target:at('#send'), title:'Conversar con fundamento', text:'Este botón envía tu pregunta al tutor. La respuesta se construye con los átomos seleccionados. Puedes seguir preguntando dentro de la misma conversación.'},

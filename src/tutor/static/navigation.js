@@ -7,7 +7,7 @@
     if (window.parent !== window) window.parent.postMessage({type:'tutor:tour', action:'stop'}, location.origin);
   });
   if (window.parent === window) return;
-  const views = {'/': 'chat', '/chat': 'chat', '/packages': 'packages', '/graph': 'graph'};
+  const views = {'/': 'chat', '/chat': 'chat', '/packages': 'packages', '/graph': 'graph', '/scratch': 'scratch'};
   document.addEventListener('click', event => {
     if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     const link = event.target.closest('a[href]');

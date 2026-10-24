@@ -90,6 +90,12 @@ def create_app(kb_root: Path | str | None = None, model: str = "test", role: str
             return RedirectResponse("/#chat")
         return FileResponse(INDEX, media_type="text/html")
 
+    @app.get("/scratch")
+    def scratch_view(embed: bool = False):
+        if not embed:
+            return RedirectResponse("/#scratch")
+        return FileResponse(INDEX.with_name("scratch.html"), media_type="text/html")
+
     @app.get("/ui/navigation.js")
     def navigation_script():
         return FileResponse(INDEX.with_name("navigation.js"), media_type="text/javascript")

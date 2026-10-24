@@ -20,7 +20,7 @@ def test_shell_and_view_links(client):
     assert 'role="tablist"' in shell.text
     assert 'Recorrido guiado' in shell.text
     assert '/web/guided-tour.js' in shell.text
-    for view, expected in [('chat', 'id="messages"'), ('packages', 'Modo tutorial'), ('graph', 'mindmap.js')]:
+    for view, expected in [('chat', 'id="messages"'), ('packages', 'Modo tutorial'), ('graph', 'mindmap.js'), ('scratch', 'id="scratchBody"')]:
         redirect = client.get('/' + view, follow_redirects=False)
         assert redirect.status_code == 307
         assert redirect.headers['location'] == '/#' + view
