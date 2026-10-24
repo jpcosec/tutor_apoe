@@ -44,6 +44,7 @@ RUN pip install -q -r requirements.txt
 COPY kbs ./kbs
 COPY desk/atoms ./desk/atoms
 COPY scripts ./scripts
+COPY web ./web
 COPY tests ./tests
 COPY benchmarks ./benchmarks
 # Reglas léxicas del runtime viejo: baseline `heuristic` del benchmark.

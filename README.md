@@ -27,6 +27,14 @@ tutor web --kb kbs/apos --model test --port 8300     # UI de chat con la mesa po
 tutor-mcp --selftest                                 # MCP: crea una KB demo y la ejercita
 ```
 
+La interfaz de `tutor web` reúne **Conversación**, **Paquetes** y **Grafo APOS**
+en pestañas en <http://127.0.0.1:8300>. Cada vista permanece abierta al cambiar
+de pestaña, conservando sus formularios, selecciones y posición. Los enlaces
+`/#chat`, `/#packages` y `/#graph` permiten abrir una vista directamente;
+Atrás/Adelante y las flechas del teclado en la barra de pestañas también funcionan.
+El grafo fuente usa `scripts/kb.py` (búsqueda SLDB y edición Markdown) desde el
+mismo servidor; no es necesario iniciar otro proceso en el puerto 8000.
+
 `--model test` no usa red. Con una API key exportada: `--model google:gemini-2.5-flash`,
 `openai:gpt-4o-mini`, `openrouter:...`. Variables en `.env.example`.
 

@@ -442,8 +442,10 @@ $('chat').onsubmit = event => {
     $('question').value = ''; renderThread();
   });
 };
+window.tutorHasUnsavedChanges = () => dirtyOutline || dirtyGraph;
 window.addEventListener('beforeunload', event => { if (dirtyOutline || dirtyGraph) { event.preventDefault(); event.returnValue = ''; } });
 kind('pdf'); go(0, false); run('Cargando tu biblioteca…', list);
 </script>
+<script src="/ui/navigation.js"></script>
 </body>
 </html>

@@ -16,6 +16,7 @@ import argparse
 import json
 import re
 import subprocess
+import sys
 from dataclasses import dataclass
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -27,6 +28,10 @@ ROOT = Path(__file__).resolve().parents[1]
 STORE = ROOT / ".sldb"
 ATOMS = ROOT / "desk" / "atoms"
 WEB = ROOT / "web"
+# Prefer the CLI installed alongside this Python (e.g. the project venv).
+SLDB = str(Path(sys.executable).with_name("sldb"))
+if not Path(SLDB).is_file():
+    SLDB = "sldb"
 
 
 @dataclass(frozen=True)
@@ -112,7 +117,7 @@ def atoms_by_id() -> dict[str, Atom]:
 def sldb_find(term: str) -> list[str]:
     """Busca IDs con SLDB. El CLI es la autoridad del resultado."""
     command = [
-        "sldb", "find", term, "--in", "both", "--type", "doc",
+        SLDB, "find", term, "--in", "both", "--type", "doc",
         "--store", str(STORE), "--pythonpath", str(ROOT), "--format", "json",
     ]
     result = subprocess.run(command, cwd=ROOT, text=True, capture_output=True)
@@ -184,7 +189,7 @@ def update_atom(atom_id: str, data: dict[str, object]) -> Atom:
     body = _replace_section(body, "Procedencia", provenance)
     path.write_text(f"---\n{meta}---\n{body}", encoding="utf-8")
     refreshed = subprocess.run(
-        ["sldb", "stores", "update", "--store", str(STORE), "--pythonpath", str(ROOT)],
+        [SLDB, "stores", "update", "--store", str(STORE), "--pythonpath", str(ROOT)],
         cwd=ROOT, text=True, capture_output=True,
     )
     if refreshed.returncode:
@@ -216,7 +221,7 @@ def create_child(parent_id: str, data: dict[str, object]) -> Atom:
         "Pendiente de documentar.", "",
     ))
     path.write_text(content, encoding="utf-8")
-    refreshed = subprocess.run(["sldb", "stores", "update", "--store", str(STORE), "--pythonpath", str(ROOT)], cwd=ROOT, text=True, capture_output=True)
+    refreshed = subprocess.run([SLDB, "stores", "update", "--store", str(STORE), "--pythonpath", str(ROOT)], cwd=ROOT, text=True, capture_output=True)
     if refreshed.returncode:
         raise RuntimeError("El hijo se creó, pero SLDB no pudo reindexar.")
     return read_atom(path)
@@ -352,7 +357,7 @@ def main() -> None:
         for atom_id in sldb_find(args.term):
             print(atom_id)
     else:
-        raise SystemExit(subprocess.run(["sldb", "stores", "check", "--store", str(STORE)], cwd=ROOT).returncode)
+        raise SystemExit(subprocess.run([SLDB, "stores", "check", "--store", str(STORE)], cwd=ROOT).returncode)
 
 
 if __name__ == "__main__":

@@ -15,7 +15,7 @@ from uuid import uuid4
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, RedirectResponse
 from pydantic import BaseModel
 
 from tutor import world
@@ -82,7 +82,17 @@ def create_app(kb_root: Path | str | None = None, model: str = "test", role: str
 
     @app.get("/")
     def index():
+        return FileResponse(INDEX.with_name("app.html"), media_type="text/html")
+
+    @app.get("/chat")
+    def chat_view(embed: bool = False):
+        if not embed:
+            return RedirectResponse("/#chat")
         return FileResponse(INDEX, media_type="text/html")
+
+    @app.get("/ui/navigation.js")
+    def navigation_script():
+        return FileResponse(INDEX.with_name("navigation.js"), media_type="text/javascript")
 
     @app.get("/api/health")
     def health():
@@ -157,4 +167,7 @@ def create_app(kb_root: Path | str | None = None, model: str = "test", role: str
     from tutor.preload_web import router
 
     app.include_router(router(model))
+    from tutor.graph_web import router as graph_router
+
+    app.include_router(graph_router())
     return app

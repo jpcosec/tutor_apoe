@@ -59,7 +59,7 @@ def test_pipeline_routes_and_activation(store, monkeypatch):
     app = FastAPI()
     app.include_router(router('test', store))
     client = TestClient(app)
-    assert client.get('/packages').status_code == 200
+    assert client.get('/packages?embed=1').status_code == 200
     p = client.post('/api/packages/page', json={'title':'Prueba','url':'https://example.org'}).json()
     base = f'/api/packages/{p["id"]}'
     assert client.post(base+'/condense').status_code == 400

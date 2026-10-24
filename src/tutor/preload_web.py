@@ -3,7 +3,7 @@ from pathlib import Path
 from threading import Lock
 
 from fastapi import APIRouter, File, Form, HTTPException, UploadFile
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, RedirectResponse
 from pydantic import BaseModel
 
 from tutor import preload, world
@@ -50,7 +50,9 @@ def router(model: str, store=None):
             lock.release()
 
     @routes.get('/packages')
-    def index():
+    def index(embed: bool = False):
+        if not embed:
+            return RedirectResponse('/#packages')
         return FileResponse(Path(__file__).parent / 'static' / 'packages.html')
 
     @routes.get('/api/packages')
