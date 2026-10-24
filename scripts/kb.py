@@ -261,7 +261,7 @@ class Handler(BaseHTTPRequestHandler):
             return
         if parsed.path.startswith("/web/"):
             filename = parsed.path.removeprefix("/web/")
-            content_types = {"mindmap.js": "text/javascript; charset=utf-8", "mindmap.css": "text/css; charset=utf-8"}
+            content_types = {"hierarchy.js": "text/javascript; charset=utf-8", "mindmap.js": "text/javascript; charset=utf-8", "mindmap.css": "text/css; charset=utf-8"}
             if filename in content_types:
                 data = (WEB / filename).read_bytes()
                 self.send_response(HTTPStatus.OK)

@@ -3,6 +3,7 @@ import {createRoot} from 'react-dom/client';
 import {Background, Controls, Handle, MiniMap, Position, ReactFlow, ReactFlowProvider, useEdgesState, useNodesInitialized, useNodesState, useReactFlow} from '@xyflow/react';
 import htm from 'htm';
 import dagre from 'dagre';
+import {hierarchy} from './hierarchy.js';
 
 const html = htm.bind(React.createElement);
 const COLORS = ['#4fc3d9', '#e6a85c', '#7cba7c', '#c97db9', '#9b7fd4', '#ff6b6b'];
@@ -38,8 +39,8 @@ function buildGraph(atoms, direction, showAtoms) {
   visible.forEach(atom => {
     const id = `atom:${atom.id}`; const tone = colour(atom.node_type || 'knowledge');
     const isBranch = atom.node_type === 'branch';
-    nodes.push({id, type: 'knowledge', data: {...atom, kind: 'atom', label: atom.title, colour: tone}, position: {x: 0, y: 0}});
-    const parent = atom.parent_id && ids.has(atom.parent_id) ? `atom:${atom.parent_id}` : 'root';
+    nodes.push({id, type: 'knowledge', data: {...atom, kind: atom.kind || 'atom', label: atom.title, colour: tone}, position: {x: 0, y: 0}});
+    const parent = atom.graph_parent && ids.has(atom.graph_parent) ? `atom:${atom.graph_parent}` : 'root';
     edges.push({id: `${parent}-${id}`, source: parent, target: id, style: {stroke: `${tone}aa`, strokeWidth: isBranch ? 1.8 : 1}});
     graph.setNode(id, {width: isBranch ? 116 : 165, height: isBranch ? 40 : 42}); graph.setEdge(parent, id);
   });
@@ -74,12 +75,17 @@ function App() {
 
   const search = useCallback(async (value = '') => {
     setStatus('Consultando SLDB…');
-    const response = await fetch(`/api/search?q=${encodeURIComponent(value)}`);
+    const [response, contextResponse] = await Promise.all([
+      fetch(`/api/search?q=${encodeURIComponent(value)}`),
+      fetch('/api/search'),
+    ]);
     const data = await response.json();
+    const context = await contextResponse.json();
     if (!response.ok) { setStatus(data.detail || 'No se pudo consultar SLDB.'); return; }
     const leaves = Boolean(value) || showAtoms;
     if (value) setShowAtoms(true);
-    setAtoms(data.atoms); setSelected(null); setDraft(null); draw(data.atoms, direction, leaves);
+    const items = hierarchy(data.atoms, context.atoms || data.atoms);
+    setAtoms(items); setSelected(null); setDraft(null); draw(items, direction, leaves);
     setStatus(`${data.atoms.length} átomos · ${value ? `resultado para “${value}”` : 'vista completa'}`);
   }, [direction, draw, showAtoms]);
 
@@ -97,7 +103,7 @@ function App() {
     const data = await response.json();
     if (!response.ok) { setStatus(data.detail || 'No se pudo guardar el átomo.'); return; }
     const updated = data.atom; const next = atoms.map(atom => atom.id === updated.id ? updated : atom);
-    setAtoms(next); select(updated); draw(next, direction, showAtoms); setStatus(`Guardado: ${updated.title}`);
+    setAtoms(next); select(updated); draw(hierarchy(next), direction, showAtoms); setStatus(`Guardado: ${updated.title}`);
   };
   const addChild = async () => {
     if (!selected) return;
@@ -108,7 +114,7 @@ function App() {
     const response = await fetch(`/api/atoms/${encodeURIComponent(selected.id)}/children`, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({title, node_type})});
     const data = await response.json();
     if (!response.ok) { setStatus(data.detail || 'No se pudo crear el hijo.'); return; }
-    const next = [...atoms, data.atom]; setAtoms(next); setShowAtoms(true); select(data.atom); draw(next, direction, true); setStatus(`Hijo creado: ${data.atom.title}`);
+    const next = [...atoms, data.atom]; setAtoms(next); setShowAtoms(true); select(data.atom); draw(hierarchy(next), direction, true); setStatus(`Hijo creado: ${data.atom.title}`);
   };
 
   return html`<main className="shell">
