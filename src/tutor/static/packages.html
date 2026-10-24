@@ -1,41 +1,449 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Precargar paquetes · Tutor</title>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Biblioteca de conocimiento · Tutor</title>
 <style>
-:root{color-scheme:dark;font:15px system-ui;background:#09111b;color:#e6edf5}*{box-sizing:border-box}[hidden]{display:none!important}body{margin:0}header{padding:22px 5vw;border-bottom:1px solid #304050;display:flex;justify-content:space-between;gap:20px}h1{font-size:25px;margin:0 0 8px}h2{font-size:19px}p{color:#aab8c7;line-height:1.5}a{color:#83d8e6}main{max-width:1250px;margin:auto;padding:24px}section{background:#111e2b;border:1px solid #304457;border-radius:12px;padding:20px;margin:18px 0}label{display:block;color:#bdcddd;font-size:13px;margin:12px 0}input,select,textarea,button{font:inherit;border-radius:6px;border:1px solid #3b5369;padding:10px;background:#0b1520;color:#eef4fa}input,textarea{display:block;width:100%;margin-top:6px}textarea{resize:vertical;line-height:1.5}button{background:#176175;cursor:pointer}button:disabled{opacity:.45;cursor:wait}button.secondary{background:#203246}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.row>*{flex:1}.row button,.row a{flex:0 0 auto}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}.card{border:1px solid #344c61;border-radius:8px;padding:14px;background:#0c1723}.card p{font-size:12px;overflow-wrap:anywhere}.tag{font:12px ui-monospace;color:#83d8e6}#status{position:sticky;top:0;z-index:2;background:#152c3e;padding:13px;border-radius:8px;white-space:pre-wrap}#status:empty{display:none}.error{color:#ffb4ad}details{margin-top:12px}summary{cursor:pointer;color:#83d8e6}pre{white-space:pre-wrap;font:13px system-ui;max-height:300px;overflow:auto}#graph{overflow:auto;max-height:560px;background:#08111b;border-radius:8px}svg text{fill:#ecf3fa;font:12px system-ui}svg rect{fill:#19394c;stroke:#71c8d7}svg path{stroke:#6b95a3;fill:none}#thread{max-height:400px;overflow:auto;white-space:pre-wrap}.message{padding:14px;border-bottom:1px solid #31465a;line-height:1.6}.steps{color:#87d6df;font-size:14px}small{color:#9dafbe}#evidence{white-space:pre-wrap;line-height:1.6} @media(max-width:650px){header{display:block}main{padding:12px}}
-</style></head><body>
-<header><div><h1>Precargar paquetes de conocimiento</h1><div class="steps">Fuente → átomos estructurales → condensación → grafo → conversación</div></div><a href="/">Volver al tutor</a></header>
-<main><div id="status" role="status" aria-live="polite"></div>
-<section><h2>1. Incorporar una fuente</h2><p>Crea un paquete independiente. El resumen conserva la estructura de la fuente como átomos; la condensación combina esos átomos en conceptos enlazados. Revisa ambas capas antes de activarlo.</p>
-<form id="source"><label>Nombre del paquete<input id="title" required placeholder="Ej.: Teoría de situaciones didácticas"></label><div class="row"><label>Tipo de fuente<select id="kind"><option value="pdf">PDF</option><option value="page">Página web</option></select></label><label id="pdfField">Archivo PDF · hasta 15 MB<input id="file" type="file" accept="application/pdf,.pdf"></label><label id="urlField" hidden>URL de la página<input id="url" type="url" placeholder="https://…"></label></div><p><small>PDF con texto seleccionable; para escaneos, aplica OCR primero. Hasta 240.000 caracteres por paquete; separa libros grandes por capítulos. La extracción y condensación envían el contenido al modelo configurado.</small></p><button>Incorporar fuente</button></form>
-<hr><div class="row"><label>Continuar un paquete guardado<select id="saved"><option value="">Selecciona un paquete…</option></select></label><button id="reload" class="secondary">Actualizar lista</button></div></section>
-<div id="work" hidden><section><div class="row"><h2 id="packageTitle"></h2><button id="export" class="secondary">Descargar paquete JSON</button></div><div id="sourceInfo"></div><details><summary>Consultar fragmentos fuente</summary><div id="chunks"></div></details></section>
-<section><h2>2. Resumen estructural en átomos</h2><p>Cada átomo conserva una sección y sus referencias a fragmentos fuente. Puedes editarlo antes de condensar. Volver a generar o guardar el resumen invalida el grafo anterior.</p><div class="row"><button id="summarize">Generar resumen estructural</button><button id="saveOutline" class="secondary">Guardar revisión</button></div><div id="outline" class="cards"></div></section>
-<section><h2>3. Condensación y grafo</h2><p>Se combinan redundancias y se organizan conceptos. Cada nodo conserva los IDs de los átomos estructurales que lo sustentan. Pulsa un nodo para ver su evidencia.</p><div class="row"><button id="condense">Condensar resumen revisado</button><button id="saveGraph" class="secondary">Guardar grafo revisado</button></div><div id="graph"></div><p id="evidence"></p><details><summary>Editar conceptos y padres</summary><div id="nodes" class="cards"></div></details></section>
-<section><h2>4. Activar y conversar</h2><p>La activación valida y crea una KB independiente. APOS sigue disponible en el tutor principal. Los borradores y paquetes persisten localmente; este historial de chat vive durante la sesión del servidor.</p><button id="activate">Activar paquete revisado</button><p id="active"></p><div id="thread"></div><form id="chat"><label>Pregunta sobre este paquete<textarea id="question" rows="2" required></textarea></label><button>Enviar al tutor de este paquete</button></form></section></div></main>
+:root{color-scheme:light;--ink:#243a35;--muted:#697770;--green:#236650;--green-dark:#173e32;--mint:#e9f2ec;--line:#dfe5df;--paper:#fffefa;--bg:#f5f5ef;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg)}
+*{box-sizing:border-box}[hidden]{display:none!important}body{margin:0}button,input,textarea,select{font:inherit}button,a,input,textarea,select,summary{outline-offset:4px}button:focus-visible,a:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid #b28435}a{color:var(--green)}button{cursor:pointer;border:1px solid transparent;border-radius:9px;padding:10px 17px;background:var(--green);color:white;font-weight:600;transition:background .15s,transform .15s}button:hover{background:#194f3d}button:active{transform:translateY(1px)}button:disabled{opacity:.45;cursor:not-allowed}button.secondary{background:white;border-color:var(--line);color:var(--ink)}button.secondary:hover{background:var(--mint)}button.quiet{background:transparent;color:var(--green);padding:7px 9px;font-size:13px}button.small{font-size:12px;padding:6px 10px}input,textarea,select{border:1px solid #cdd7ce;border-radius:8px;padding:11px 12px;color:var(--ink);background:white;max-width:100%}input:focus,textarea:focus,select:focus{outline:2px solid #bad8c7;border-color:var(--green)}input,textarea{display:block;width:100%;margin-top:6px}textarea{resize:vertical;line-height:1.65}label{display:block;font-size:13px;font-weight:600;margin:14px 0}select{display:block;width:100%;margin-top:6px}h1,h2,h3,p{margin:0}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.03em}h1{font-size:clamp(29px,3.5vw,42px);line-height:1.15}h2{font-size:28px;line-height:1.2}h3{font-size:16px}p{color:var(--muted)}small{font-size:12px;color:var(--muted)}hr{border:0;border-top:1px solid var(--line);margin:22px 0}.eyebrow{text-transform:uppercase;font-size:10px;font-weight:700;letter-spacing:.15em;color:var(--green)}.skip{position:absolute;top:-70px;left:260px;background:white;padding:14px;z-index:20}.skip:focus{top:10px}.app{display:grid;grid-template-columns:245px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;background:var(--green-dark);color:#e6eee8;padding:28px 20px;overflow:auto}.brand{color:#fff;text-decoration:none;font-family:Georgia,serif;font-size:24px;letter-spacing:-.03em}.brand span{color:#a9cab3}.sidebar .tagline{color:#a8beb1;font-size:12px;margin:5px 0 28px}.sidebar .new{width:100%;background:#dcebdc;color:#193f30;border:0;text-align:left;margin-bottom:30px}.sidebar .new:hover{background:white}.sidebar .eyebrow{color:#9fb9a9}.library-head{display:flex;align-items:center;justify-content:space-between}.sidebar .refresh{background:transparent;padding:4px 7px;color:#bdd2c3;font-size:16px}.library{display:flex;flex-direction:column;gap:5px;margin-top:14px;flex:1}.library button{background:transparent;color:#d4e1d7;text-align:left;font-size:13px;font-weight:400;border:1px solid transparent;padding:12px 10px;overflow-wrap:anywhere}.library button:hover,.library button.active{background:#244e3e;border-color:#48735b}.library button.active:before{content:'●';color:#b6d3ae;font-size:8px;margin-right:9px}.library .empty{font-size:12px;color:#acc2b3;padding:10px;line-height:1.7}.sidebar footer{border-top:1px solid #345442;padding-top:20px;font-size:12px;color:#acc2b3;margin-top:25px}.sidebar footer a{color:#dcebdc;text-decoration:none}.content{min-width:0}.topbar{position:sticky;top:0;z-index:6;min-height:72px;display:flex;align-items:center;justify-content:space-between;padding:17px 38px;border-bottom:1px solid var(--line);background:#fffefa}.crumb{font-size:12px;color:var(--muted)}.crumb span{color:var(--ink);margin-left:9px}.tutorial-toggle{display:flex;align-items:center;gap:8px;margin:0;font-weight:500;font-size:12px}.tutorial-toggle input{appearance:none;display:block;width:32px;height:19px;border-radius:20px;background:#c8d1ca;border:0;padding:0;margin:0;cursor:pointer;position:relative}.tutorial-toggle input:before{content:'';position:absolute;top:3px;left:3px;width:13px;height:13px;border-radius:50%;background:white;transition:left .2s}.tutorial-toggle input:checked{background:var(--green)}.tutorial-toggle input:checked:before{left:16px}main{padding:34px 38px 50px;max-width:1330px;margin:auto}.hero{display:flex;justify-content:space-between;gap:22px;align-items:flex-start;margin-bottom:28px}.has-package .hero{display:none}.hero .eyebrow{margin-bottom:11px}.hero p{max-width:620px;font-size:14px;margin-top:12px}.badge{border:1px solid #d5dfd3;background:#eef2e9;color:#55724f;font-size:11px;border-radius:30px;padding:6px 11px;white-space:nowrap;margin-top:8px}.stepper{position:sticky;top:72px;z-index:5;background:var(--bg);padding:10px 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:22px}.step{display:flex;align-items:center;gap:10px;text-align:left;background:transparent;color:var(--muted);border:1px solid var(--line);padding:13px 12px;font-size:13px;font-weight:600}.step:hover{background:white}.step.active{background:white;border-color:var(--green);color:var(--green);box-shadow:0 2px 7px #183d2d08}.step-number{width:27px;height:27px;flex-shrink:0;display:grid;place-items:center;border-radius:50%;background:#e6e9e0;font-size:12px}.step.active .step-number,.step.done .step-number{background:var(--green);color:white}.step small{display:block;font-weight:400;font-size:10px}.step-title{line-height:1.4}.coach{display:flex;align-items:flex-start;gap:14px;border:1px solid #d4e1d4;border-radius:12px;background:#edf3e9;padding:18px 20px;margin-bottom:22px}.coach-icon{background:white;color:var(--green);width:30px;height:30px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}.coach strong{font-size:13px}.coach p{font-size:13px;max-width:760px;margin-top:4px}.coach .quiet{margin-left:auto;white-space:nowrap}.status{border-radius:9px;padding:12px 15px;font-size:13px;margin-bottom:18px;background:var(--mint);color:var(--green);display:flex;align-items:center;gap:9px;white-space:pre-wrap}.status.error{background:#fceae4;color:#8a3628}.status.busy:before{content:'';width:14px;height:14px;flex-shrink:0;border:2px solid #bdcfbf;border-top-color:var(--green);border-radius:50%;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.workspace-card{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:28px;box-shadow:0 4px 20px #1d3f2d04}.panel-head{display:flex;align-items:flex-start;gap:20px;justify-content:space-between;margin-bottom:24px}.panel-head p{margin-top:8px;font-size:14px;max-width:680px}.step-label{font-size:11px;color:var(--green);margin-bottom:6px;font-weight:600}.subtle{font-weight:400;color:var(--muted)}.source-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(220px,.8fr);gap:35px}.source-form{max-width:660px}.type-tabs{display:flex;gap:8px;margin:16px 0}.type-tabs button{background:#f6f7f1;border-color:var(--line);color:var(--muted);flex:1}.type-tabs button[aria-pressed=true]{background:var(--mint);border-color:#7ca891;color:var(--green)}.upload-zone{border:1px dashed #9bb8a4;border-radius:12px;padding:25px 16px;text-align:center;background:#f6f9f2;position:relative}.upload-zone.drag{border:2px solid var(--green);background:#e7f1e7}.upload-zone input{font-size:12px;background:white;margin:16px 0 0;padding:9px;font-weight:400}.upload-icon{font-size:29px;color:var(--green);margin-bottom:8px}.upload-zone strong{font-size:14px;display:block}.upload-zone small{display:block;margin-top:3px}#fileName{color:var(--green);font-size:12px;overflow-wrap:anywhere;margin-top:7px}.hint{font-size:12px;margin:12px 0 20px;line-height:1.65}.source-note{background:#f3f4ed;border-radius:12px;padding:23px;height:fit-content;margin-top:14px}.source-note h3{font-family:Georgia,serif;font-size:20px;font-weight:400}.source-note p{font-size:13px;margin-top:9px}.mini-flow{display:flex;align-items:center;gap:8px;margin:22px 0;color:var(--green)}.mini-flow span{border:1px solid #cfdccd;background:#fffefa;font-size:11px;padding:7px 9px;border-radius:7px}.mini-flow i{font-style:normal}.footnote{border-top:1px solid var(--line);padding-top:14px;margin-top:16px!important;font-size:11px!important}.package-bar{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:15px 0 21px;flex-wrap:wrap}.package-name{font-size:14px;font-weight:600}.package-source{font-size:11px;color:var(--muted);overflow-wrap:anywhere;max-width:660px}.package-actions{display:flex;gap:6px}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.actions{border-top:1px solid var(--line);padding-top:20px;margin-top:24px;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(290px,100%),1fr));gap:14px;margin:20px 0}.atom-card{border:1px solid var(--line);border-radius:11px;padding:18px;background:white}.atom-card .atom-top{display:flex;justify-content:space-between;gap:9px;align-items:center;margin-bottom:12px}.atom-id{font-size:10px;letter-spacing:.08em;font-weight:600;color:var(--green);background:var(--mint);padding:3px 7px;border-radius:4px}.section-name{font-size:11px;color:var(--muted)}.atom-card h3{line-height:1.45;margin-bottom:9px}.atom-card .answer{font-size:13px;color:#58675e;line-height:1.7;white-space:pre-wrap}.atom-card details{border-top:1px solid var(--line);padding-top:10px;margin-top:15px}.atom-card label{font-size:11px}.atom-card input,.atom-card textarea{font-size:13px}.source-links{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}.source-links button{font-size:10px;border:1px solid var(--line);color:var(--muted);background:transparent;padding:4px 7px;font-weight:400}.source-links button:hover{background:var(--mint)}summary{color:var(--green);cursor:pointer;font-size:12px;font-weight:600}details>p{font-size:12px;margin-top:8px}.empty-state{border:1px dashed #d5ddcf;border-radius:11px;text-align:center;padding:38px 22px;background:#f9faf4;margin:18px 0}.empty-state .empty-icon{font-size:28px;color:#719b80;margin-bottom:12px}.empty-state h3{font-family:Georgia,serif;font-size:23px;font-weight:400}.empty-state p{max-width:440px;margin:10px auto 19px;font-size:13px}.count{font-size:11px;background:#f0f3eb;color:var(--green);padding:5px 9px;border-radius:30px}.inline-note{background:#fbf2df;border-left:3px solid #b49348;padding:11px 14px;font-size:12px;color:#75603a;margin-top:14px;border-radius:4px}.graph-layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:18px 0}.graph-area{min-width:0;background:#f6f8f2}.graph-tools{display:flex;align-items:center;gap:6px;padding:10px;border-bottom:1px solid var(--line)}.graph-tools small{margin-left:auto;font-size:10px}#graph{height:385px;overflow:auto;background-image:radial-gradient(#d4ddd2 1px,transparent 1px);background-size:18px 18px}svg text{fill:var(--ink);font:12px system-ui}svg rect{fill:white;stroke:#a4bba9;stroke-width:1.3}svg .selected rect{fill:#edf4e9;stroke:var(--green);stroke-width:2}svg path{stroke:#a4bba9;stroke-width:1.5;fill:none}svg g{cursor:pointer}svg g:hover rect{stroke:var(--green)}.evidence{padding:20px;border-left:1px solid var(--line);max-height:440px;overflow:auto;background:white}.evidence h3{font-family:Georgia,serif;font-size:20px;font-weight:400}.evidence p{font-size:12px;margin:10px 0;white-space:pre-wrap}.evidence .evidence-atom{border-top:1px solid var(--line);padding-top:12px;margin-top:14px}.evidence .evidence-atom strong{font-size:12px;display:block}.node-editor{margin-top:20px}.chat-box{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:18px}.chat-intro{text-align:center;padding:35px 20px;background:#f8faf4}.chat-intro h3{font-family:Georgia,serif;font-size:23px;font-weight:400}.chat-intro p{font-size:13px;margin:8px 0 18px}.suggestions{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}.suggestions button{font-size:11px;background:white;color:var(--green);border:1px solid var(--line);font-weight:400}.thread{max-height:430px;overflow:auto;padding:0 20px}.message{padding:20px 0;border-bottom:1px solid var(--line);white-space:pre-wrap;font-size:14px;line-height:1.8}.message .speaker{display:block;color:var(--green);font-size:10px;text-transform:uppercase;font-weight:700;letter-spacing:.1em;margin-bottom:5px}.message.user{color:var(--muted)}.composer{padding:16px;background:#f8faf4;border-top:1px solid var(--line)}.composer label{margin:0}.composer textarea{background:white;font-size:14px}.composer .row{justify-content:space-between;margin-top:10px}.ready-banner{display:flex;gap:12px;background:var(--mint);color:var(--green);padding:16px;border-radius:10px;margin:18px 0}.ready-banner p{color:var(--green);font-size:12px;margin-top:3px}dialog{border:1px solid var(--line);border-radius:17px;padding:0;max-width:580px;width:calc(100% - 36px);color:var(--ink);background:var(--paper);box-shadow:0 30px 100px #0e2d2540}dialog::backdrop{background:#18392c66;backdrop-filter:blur(3px)}.dialog-head{display:flex;justify-content:space-between;align-items:center;padding:20px 26px;border-bottom:1px solid var(--line)}.dialog-head .quiet{font-size:20px;padding:0 6px}.dialog-body{padding:28px}.dialog-body h2{margin-bottom:12px}.dialog-body p{font-size:14px;line-height:1.8}.tour-visual{background:var(--mint);padding:20px;border-radius:12px;margin:20px 0;font-size:14px;line-height:1.9;color:var(--green);white-space:pre-line}.tour-example-label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:600;display:block;margin-bottom:8px;color:#698572}.tour-footer{display:flex;justify-content:space-between;align-items:center;padding:20px 26px;border-top:1px solid var(--line)}.dots{display:flex;gap:5px}.dot{width:6px;height:6px;background:#d2ddcf;border-radius:50%}.dot.active{background:var(--green);width:18px;border-radius:8px}.source-text{white-space:pre-wrap;font-size:14px;line-height:1.85;max-height:55vh;overflow:auto}.source-list details{border:1px solid var(--line);border-radius:7px;padding:12px;margin-bottom:8px}.source-list summary{overflow-wrap:anywhere}.source-list pre{font:13px/1.8 system-ui;white-space:pre-wrap;max-height:250px;overflow:auto}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(min-width:1600px){main{padding-top:48px}}@media(max-width:1150px){.app{grid-template-columns:210px minmax(0,1fr)}main{padding:26px}.topbar{padding:17px 26px}.graph-layout{grid-template-columns:minmax(0,1fr)}.evidence{border-left:0;border-top:1px solid var(--line);max-height:240px}.source-grid{gap:22px}.step{padding:10px 8px;gap:6px}.step small{display:none}}
+@media(max-width:800px){.app{grid-template-columns:1fr}.sidebar{position:relative;height:auto;padding:16px 20px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px}.sidebar .tagline,.sidebar footer,.library-head{display:none}.sidebar .new{margin:0;width:auto;padding:8px 13px;font-size:12px}.library{grid-column:1/-1;display:flex;flex-direction:row;overflow:auto;margin:0;max-height:100px}.library button{flex-shrink:0;max-width:230px;font-size:11px;padding:7px 9px}.library .empty{padding:0}.topbar{position:sticky;top:0;z-index:6;min-height:58px;padding:13px 20px}main{padding:24px 20px}.source-grid{grid-template-columns:1fr}.source-note{margin:0}.hero .badge{display:none}.workspace-card{padding:22px}.coach{padding:14px}.coach .quiet{font-size:11px}.coach-icon{display:none}.stepper{gap:5px}.step{flex-direction:column;align-items:center;text-align:center;font-size:11px;padding:10px 3px}.panel-head{gap:12px}.panel-head h2{font-size:25px}.package-bar{gap:9px}.graph-tools small{display:none}.skip{left:10px}.actions{align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.status.busy:before{animation:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#workspace">Ir al área de trabajo</a>
+<div class="app">
+<aside class="sidebar" aria-label="Biblioteca de paquetes">
+  <a class="brand" href="/">Tutor<span> / biblioteca</span></a>
+  <p class="tagline">Conocimiento que puedes explorar.</p>
+  <button class="new" id="newPackage">＋ Nuevo paquete</button>
+  <div class="library-head"><span class="eyebrow">Tus paquetes</span><button class="refresh" id="reload" aria-label="Actualizar biblioteca" title="Actualizar biblioteca">↻</button></div>
+  <nav id="library" class="library" aria-label="Paquetes guardados"><p class="empty">Cargando biblioteca…</p></nav>
+  <footer>Cada fuente tiene su propio árbol.<br><br><a href="/">← Volver al tutor principal</a></footer>
+</aside>
+<div class="content">
+<header class="topbar"><div class="crumb">Biblioteca <span>/ Precargar conocimiento</span></div><label class="tutorial-toggle"><input type="checkbox" id="tutorialToggle" role="switch" checked>Modo tutorial</label></header>
+<main>
+<div class="hero"><div><p class="eyebrow">Tu espacio de lectura y conexión</p><h1>De una fuente a una<br>conversación con fundamento.</h1><p>Transforma un libro o una página en ideas que puedes revisar, conectar y consultar.</p></div><span class="badge">✧ Una fuente, un nuevo árbol</span></div>
+<nav class="stepper" aria-label="Etapas de precarga">
+  <button class="step active" data-stage="0"><span class="step-number">1</span><span class="step-title">Incorporar<small>Elige una fuente</small></span></button>
+  <button class="step" data-stage="1"><span class="step-number">2</span><span class="step-title">Comprender<small>Revisa los átomos</small></span></button>
+  <button class="step" data-stage="2"><span class="step-number">3</span><span class="step-title">Conectar<small>Construye el grafo</small></span></button>
+  <button class="step" data-stage="3"><span class="step-number">4</span><span class="step-title">Conversar<small>Activa tu paquete</small></span></button>
+</nav>
+<aside class="coach" id="coach" aria-label="Ayuda del tutorial"><div class="coach-icon" aria-hidden="true">?</div><div><strong id="coachTitle"></strong><p id="coachText"></p></div><button class="quiet" id="startTour">Ver recorrido ↗</button></aside>
+<div id="status" class="status" role="status" aria-live="polite" hidden></div>
+<div class="package-bar" id="packageBar" hidden><div><div class="package-name" id="packageTitle"></div><div class="package-source" id="sourceInfo"></div></div><div class="package-actions"><button id="viewSources" class="quiet">Ver fuente</button><button id="export" class="quiet">Descargar JSON ↓</button></div></div>
+<div id="workspace" tabindex="-1">
+<section class="workspace-card panel" data-panel="0" aria-labelledby="sourceHeading">
+  <div class="panel-head"><div><div class="step-label">PASO 01 / INCORPORAR</div><h2 id="sourceHeading" tabindex="-1">¿Qué quieres explorar?</h2><p>Empieza por un libro, un capítulo o una página. Puedes volver a tus paquetes desde la biblioteca.</p></div></div>
+  <div class="source-grid"><form id="source" class="source-form">
+    <label for="title">Nombre del paquete <span class="subtle">· para reconocerlo después</span><input id="title" required maxlength="180" placeholder="Ej.: Teoría de situaciones didácticas"></label>
+    <div class="type-tabs" role="group" aria-label="Tipo de fuente"><button type="button" id="typePdf" aria-pressed="true">▤ Archivo PDF</button><button type="button" id="typePage" aria-pressed="false">↗ Página web</button></div>
+    <div id="pdfField" class="upload-zone"><div class="upload-icon" aria-hidden="true">↥</div><strong>Arrastra tu PDF aquí</strong><small>o selecciónalo desde tu equipo</small><label for="file" class="sr-only">Archivo PDF</label><input id="file" type="file" accept="application/pdf,.pdf"><div id="fileName" aria-live="polite"></div></div>
+    <label id="urlField" hidden>Dirección de la página<input id="url" type="url" placeholder="https://ejemplo.org/articulo" aria-describedby="urlHelp"><small id="urlHelp">Usa la dirección final de una página pública con texto.</small></label>
+    <p class="hint" id="sourceHint">PDF con texto seleccionable · hasta 15 MB.<br>Para libros extensos, empieza por un capítulo.</p>
+    <button id="importSource" type="submit">Incorporar y continuar →</button>
+    <details style="margin-top:18px"><summary>Privacidad y formatos compatibles</summary><p>La extracción y la condensación envían el contenido al modelo configurado. Los paquetes se guardan localmente, fuera de Git. Se admiten hasta 240.000 caracteres por fuente. Los PDF escaneados necesitan OCR previo y las páginas deben contener texto sin depender de JavaScript.</p></details>
+  </form><aside class="source-note"><h3>Leer antes de conectar.</h3><p>Primero respetamos la estructura de la fuente. Después reunimos las ideas en un mapa de conceptos.</p><div class="mini-flow" aria-label="Fuente, átomos, grafo"><span>Fuente</span><i>→</i><span>Átomos</span><i>→</i><span>Grafo</span></div><p><strong>Tú revisas cada etapa.</strong><br>Ningún paquete se activa hasta que lo decidas.</p><p class="footnote">Cada PDF o página crea un paquete independiente. Por ahora, varias fuentes no se fusionan en un mismo árbol.</p></aside></div>
+</section>
+<section class="workspace-card panel" data-panel="1" hidden aria-labelledby="outlineHeading">
+  <div class="panel-head"><div><div class="step-label">PASO 02 / COMPRENDER</div><h2 id="outlineHeading" tabindex="-1">Las ideas, una por una.</h2><p>El resumen estructural conserva las secciones y afirmaciones de la fuente. Cada idea es un átomo que puedes revisar.</p></div><span id="outlineCount" class="count" hidden></span></div>
+  <div id="outlineEmpty" class="empty-state"><div class="empty-icon" aria-hidden="true">≋</div><h3>Primero, una lectura estructural.</h3><p id="outlineEmptyText"></p><button id="summarize">Generar átomos estructurales →</button><button class="secondary" data-go="0" id="outlineNeedsSource">Elegir una fuente →</button></div>
+  <div id="outlineReady" hidden><div class="row"><small>Abre «Editar átomo» para ajustar una idea. Las referencias te llevan a su fuente.</small></div><div id="outline" class="cards"></div><div class="inline-note" id="outlineDirty" hidden>Hay cambios sin guardar. Guardarlos dejará pendiente una nueva condensación y activación.</div><div class="actions"><div class="row"><button id="saveOutline" class="secondary">Guardar cambios</button><button id="regenerate" class="quiet">Volver a generar</button></div><button id="goGraph" data-go="2">Revisar y conectar →</button></div></div>
+</section>
+<section class="workspace-card panel" data-panel="2" hidden aria-labelledby="graphHeading">
+  <div class="panel-head"><div><div class="step-label">PASO 03 / CONECTAR</div><h2 id="graphHeading" tabindex="-1">De las ideas al mapa.</h2><p>La condensación reúne ideas relacionadas y organiza los conceptos. Cada nodo conserva el camino hacia sus átomos y fuentes.</p></div><span id="graphCount" class="count" hidden></span></div>
+  <div id="graphEmpty" class="empty-state"><div class="empty-icon" aria-hidden="true">⌘</div><h3>Conecta lo que ya comprendiste.</h3><p id="graphEmptyText"></p><button id="condense">Condensar y crear el grafo →</button><button class="secondary" data-go="1" id="graphNeedsOutline">Ir al resumen →</button></div>
+  <div id="graphReady" hidden><div class="graph-layout"><div class="graph-area"><div class="graph-tools"><button class="secondary small" id="zoomOut" aria-label="Alejar grafo">−</button><button class="secondary small" id="zoomIn" aria-label="Acercar grafo">＋</button><button class="quiet" id="fitGraph">Ajustar</button><small>Selecciona un concepto para ver su origen</small></div><div id="graph" role="region" aria-label="Grafo de conceptos" tabindex="0"></div></div><aside id="evidence" class="evidence" aria-label="Concepto y evidencia"></aside></div><details class="node-editor"><summary>Editar conceptos y relaciones</summary><p>Cambia una síntesis o el concepto padre. Las relaciones se validan antes de guardarse.</p><div id="nodes" class="cards"></div></details><div class="inline-note" id="graphDirty" hidden>Hay cambios sin guardar. Revisa las relaciones antes de activar el paquete.</div><div class="actions"><div class="row"><button id="saveGraph" class="secondary">Guardar cambios</button><button id="recondense" class="quiet">Volver a condensar</button></div><button data-go="3">Continuar a conversación →</button></div></div>
+</section>
+<section class="workspace-card panel" data-panel="3" hidden aria-labelledby="chatHeading">
+  <div class="panel-head"><div><div class="step-label">PASO 04 / CONVERSAR</div><h2 id="chatHeading" tabindex="-1">Ahora, dialoga con las ideas.</h2><p>Activa el grafo revisado para conversar sobre este paquete. El tutor usará sus conceptos como contexto.</p></div></div>
+  <div id="chatNeedsGraph" class="empty-state"><div class="empty-icon" aria-hidden="true">↗</div><h3>Tu conversación empieza en el mapa.</h3><p>Primero necesitas un resumen y un grafo revisados.</p><button data-go="2">Volver al grafo →</button></div>
+  <div id="activation" hidden><div class="ready-banner"><span aria-hidden="true">✓</span><div><strong>El mapa está listo para tu revisión final.</strong><p id="activationInfo"></p></div></div><button id="activate">Activar este paquete →</button><p class="hint">Se creará una KB independiente. Tus otros paquetes y APOS siguen disponibles.</p></div>
+  <div id="chatReady" hidden><div class="ready-banner"><span aria-hidden="true">●</span><div><strong>Paquete activo</strong><p>Esta conversación utiliza el conocimiento de este paquete.</p></div></div><div class="chat-box"><div class="chat-intro" id="chatIntro"><h3>Empieza por una buena pregunta.</h3><p>Pide una explicación, un ejemplo o una relación entre conceptos.</p><div class="suggestions"><button data-question="¿Cuáles son las ideas principales de esta fuente?">Ideas principales</button><button data-question="Explícame un concepto central con un ejemplo concreto.">Un ejemplo concreto</button><button data-question="¿Cómo se relacionan los conceptos de este paquete?">Conectar conceptos</button></div></div><div id="thread" class="thread" role="log" aria-label="Conversación del paquete" aria-live="polite"></div><form id="chat" class="composer"><label class="sr-only" for="question">Tu pregunta</label><textarea id="question" rows="2" required placeholder="¿Qué te gustaría comprender de esta fuente?"></textarea><div class="row"><small>El historial de este chat dura mientras el servidor esté activo.</small><button type="submit">Enviar pregunta ↑</button></div></form></div></div>
+</section>
+</div>
+</main>
+</div>
+</div>
+<dialog id="tour" aria-labelledby="tourTitle"><div class="dialog-head"><span class="eyebrow" id="tourStep"></span><button class="quiet" id="closeTour" aria-label="Cerrar recorrido">×</button></div><div class="dialog-body"><h2 id="tourTitle"></h2><p id="tourText"></p><div class="tour-visual"><span class="tour-example-label">Ejemplo ilustrativo</span><div id="tourExample"></div></div><small id="tourTip"></small></div><div class="tour-footer"><button class="secondary" id="tourBack">Atrás</button><div id="tourDots" class="dots" aria-hidden="true"></div><button id="tourNext">Siguiente →</button></div></dialog>
+<dialog id="sourceDialog" aria-labelledby="sourceDialogTitle"><div class="dialog-head"><h3 id="sourceDialogTitle">Fuente original</h3><button class="quiet" id="closeSource" aria-label="Cerrar fuente">×</button></div><div class="dialog-body" id="sourceDialogBody"></div></dialog>
 <script type="module">
-let pack=null,busy=false;const $=id=>document.getElementById(id);
-const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e};
-async function api(path,options={}){const r=await fetch('/api/packages'+path,options);const d=await r.json();if(!r.ok)throw Error(typeof d.detail==='string'?d.detail:JSON.stringify(d.detail));return d}
-const json=(method,body)=>({method,headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
-function controls(){document.querySelectorAll('button,input,textarea,select').forEach(e=>e.disabled=busy);if(!busy){$('saveOutline').disabled=!pack?.outline;$('condense').disabled=!pack?.outline;$('saveGraph').disabled=!pack?.graph;$('activate').disabled=!pack?.graph; $('chat').querySelectorAll('button,textarea').forEach(e=>e.disabled=!pack?.activated)}}
-async function run(message,fn){if(busy)return;busy=true;controls();$('status').className='';$('status').textContent=message;try{await fn();$('status').textContent='Listo. Cambios guardados.'}catch(e){$('status').className='error';$('status').textContent=e.message}finally{busy=false;controls()}}
-async function list(){const items=await api('');$('saved').replaceChildren(new Option('Selecciona un paquete…',''),...items.map(p=>new Option(p.title,p.id)));if(pack)$('saved').value=pack.id}
-function field(card,label,value,change,multiline=false){const l=el('label',label),e=el(multiline?'textarea':'input');e.value=value||'';if(multiline)e.rows=4;e.oninput=()=>change(e.value);l.append(e);card.append(l)}
-function render(){if(!pack)return;$('work').hidden=false;$('packageTitle').textContent=pack.title;$('sourceInfo').textContent=`${pack.source} · ${pack.chunks.length} fragmentos · revisión ${pack.revision}`;$('chunks').replaceChildren(...pack.chunks.map(c=>{const d=el('details');d.append(el('summary',`${c.id}${c.page?' · página '+c.page:''}`),el('pre',c.text));return d}));
-$('outline').replaceChildren(...(pack.outline?.atoms||[]).map(a=>{const c=el('div',undefined,'card');c.append(el('p',`${a.id} · fuentes: ${a.source_ids.join(', ')}`,'tag'));field(c,'Sección',a.section,v=>a.section=v);field(c,'Título',a.title,v=>a.title=v);field(c,'Afirmación estructural',a.answer,v=>a.answer=v,true);return c}));
-$('nodes').replaceChildren(...(pack.graph?.nodes||[]).map(n=>{const c=el('div',undefined,'card');c.append(el('p',`${n.id} ← ${n.derived_from.join(', ')}`,'tag'));field(c,'Concepto',n.title,v=>n.title=v);field(c,'Síntesis',n.answer,v=>n.answer=v,true);const l=el('label','Padre'),s=el('select');s.append(new Option('Raíz',''),...pack.graph.nodes.filter(x=>x.id!==n.id).map(x=>new Option(x.title,x.id)));s.value=n.parent||'';s.onchange=()=>n.parent=s.value||null;l.append(s);c.append(l);return c}));draw();$('active').textContent=pack.activated?'Paquete activo. Ya puedes conversar.':'Todavía no está activo.';controls()}
-function draw(){const ns='http://www.w3.org/2000/svg',nodes=pack.graph?.nodes||[];$('graph').replaceChildren();$('evidence').textContent='';if(!nodes.length)return;const svg=document.createElementNS(ns,'svg'),positions=new Map(),byId=new Map(nodes.map(n=>[n.id,n])),counts={};function depth(n,seen=new Set()){if(!n.parent||!byId.has(n.parent)||seen.has(n.id))return 0;seen.add(n.id);return 1+depth(byId.get(n.parent),seen)}nodes.forEach(n=>{const d=depth(n),row=counts[d]||0;counts[d]=row+1;positions.set(n.id,{x:20+d*250,y:20+row*92})});svg.setAttribute('width',(Math.max(...Object.keys(counts).map(Number))+1)*250+20);svg.setAttribute('height',Math.max(...Object.values(counts))*92+20);for(const n of nodes){const p=positions.get(n.parent),q=positions.get(n.id);if(p){const line=document.createElementNS(ns,'path');line.setAttribute('d',`M${p.x+215},${p.y+30} C${p.x+235},${p.y+30} ${q.x-20},${q.y+30} ${q.x},${q.y+30}`);svg.append(line)}}for(const n of nodes){const p=positions.get(n.id),g=document.createElementNS(ns,'g'),r=document.createElementNS(ns,'rect');r.setAttribute('x',p.x);r.setAttribute('y',p.y);r.setAttribute('width',215);r.setAttribute('height',62);r.setAttribute('rx',8);g.append(r);const title=document.createElementNS(ns,'title');title.textContent=n.title;g.append(title);for(let i=0;i<2;i++){const t=document.createElementNS(ns,'text');t.setAttribute('x',p.x+10);t.setAttribute('y',p.y+24+i*18);t.textContent=n.title.slice(i*27,(i+1)*27)+(i===1&&n.title.length>54?'…':'');g.append(t)}g.style.cursor='pointer';g.onclick=()=>{$('evidence').textContent=n.title+'\n'+n.answer+'\n\nDerivado de:\n'+n.derived_from.map(id=>{const a=pack.outline.atoms.find(a=>a.id===id);return `${id}: ${a.title}\n${a.answer}\nFuentes: ${a.source_ids.join(', ')}`}).join('\n\n')};svg.append(g)}$('graph').append(svg)}
-$('kind').onchange=()=>{$('pdfField').hidden=$('kind').value!=='pdf';$('urlField').hidden=$('kind').value!=='page'};
-$('source').onsubmit=e=>{e.preventDefault();run('Incorporando y extrayendo la fuente…',async()=>{if($('kind').value==='pdf'){if(!$('file').files[0])throw Error('Selecciona un PDF.');const f=new FormData();f.append('title',$('title').value);f.append('file',$('file').files[0]);pack=await api('/pdf',{method:'POST',body:f})}else{pack=await api('/page',json('POST',{title:$('title').value,url:$('url').value}))}$('thread').replaceChildren();render();await list()})};
-$('saved').onchange=()=>{if(!$('saved').value)return;run('Abriendo paquete…',async()=>{pack=await api('/'+$('saved').value);$('thread').replaceChildren();render()})};$('reload').onclick=()=>run('Actualizando…',list);
-$('summarize').onclick=()=>run('Generando átomos estructurales de todos los fragmentos. Puede tardar varios minutos…',async()=>{pack=await api('/'+pack.id+'/summarize',{method:'POST'});render()});
-async function saveOutline(){pack=await api('/'+pack.id+'/outline',json('PUT',pack.outline))}
-async function saveGraph(){pack=await api('/'+pack.id+'/graph',json('PUT',pack.graph))}
-$('saveOutline').onclick=()=>run('Guardando revisión e invalidando el grafo anterior…',async()=>{await saveOutline();render()});
-$('condense').onclick=()=>run('Guardando resumen y condensando el grafo…',async()=>{await saveOutline();render();pack=await api('/'+pack.id+'/condense',{method:'POST'});render()});
-$('saveGraph').onclick=()=>run('Validando y guardando grafo…',async()=>{await saveGraph();render()});
-$('activate').onclick=()=>run('Validando y preparando la KB independiente…',async()=>{await saveGraph();pack=await api('/'+pack.id+'/activate',{method:'POST'});$('thread').replaceChildren();render()});
-$('export').onclick=()=>{const blob=new Blob([JSON.stringify(pack,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download='paquete-'+pack.id+'.json';a.click();URL.revokeObjectURL(url)};
-$('chat').onsubmit=e=>{e.preventDefault();const message=$('question').value;run('Seleccionando contexto y preparando respuesta…',async()=>{const d=await api('/'+pack.id+'/chat',json('POST',{message}));$('thread').append(el('div','Tú: '+message,'message'),el('div','Tutor: '+d.reply,'message'));$('question').value='';$('thread').scrollTop=$('thread').scrollHeight})};
-controls();run('Cargando paquetes…',list);
-</script></body></html>
+const $ = id => document.getElementById(id);
+const el = (tag, text, className) => {
+  const node = document.createElement(tag);
+  if (text !== undefined) node.textContent = text;
+  if (className) node.className = className;
+  return node;
+};
+let pack = null, busy = false, currentStage = 0, sourceKind = 'pdf';
+let dirtyOutline = false, dirtyGraph = false, packages = [], tourIndex = 0;
+let selectedNode = null, zoom = 1, graphSize = {width: 500, height: 300};
+const messages = new Map();
+const coach = [
+  ['Empieza con una fuente pequeña.', 'Prueba con un artículo o un capítulo. Ponle un nombre reconocible: cada fuente se convierte en un paquete con su propio árbol.'],
+  ['Un átomo es una idea con respaldo.', 'Lee los títulos y las afirmaciones. Abre una referencia para contrastarla con el texto original. Aquí conservamos la estructura; todavía no combinamos conceptos.'],
+  ['Condensar es conectar sin perder el origen.', 'Reunimos ideas relacionadas y quitamos redundancias. Selecciona un nodo del mapa para ver qué átomos lo sostienen y volver a la fuente.'],
+  ['Tu revisión hace la diferencia.', 'Activa el paquete cuando el mapa represente bien la fuente. Después puedes pedir explicaciones y ejemplos, o preguntar cómo se relacionan los conceptos.']
+];
+const tourSlides = [
+  {title: 'Una lectura en cuatro pasos.', text: 'No necesitas preparar una base de conocimiento a mano. Vas a incorporar una fuente, revisar sus ideas, conectarlas en un mapa y conversar sobre ellas.', example: 'Un capítulo → ideas con fuente → mapa de conceptos → preguntas', tip: 'Este recorrido solo explica la interfaz. No crea ni modifica paquetes.'},
+  {title: '1. Elige qué quieres comprender.', text: 'Sube un PDF con texto seleccionable o pega la dirección de una página pública. Un nombre claro te ayudará a volver al paquete desde la biblioteca.', example: 'Nombre: «Aprendizaje · capítulo 2»\nFuente: un capítulo en PDF', tip: 'Cada fuente crea su propio árbol. Los PDF escaneados necesitan OCR previo.'},
+  {title: '2. Revisa una idea a la vez.', text: 'El modelo prepara un resumen estructural en átomos. Cada átomo conserva su sección y las referencias al texto que lo respalda. Puedes leerlo, editarlo y contrastarlo.', example: 'Sección: Construcción de conceptos\nIdea: «Una acción se ejecuta siguiendo pasos».\nReferencia: página 3 del capítulo', tip: 'Pulsa una referencia para consultar el fragmento original. Los cambios no se guardan hasta que lo indiques.'},
+  {title: '3. Mira cómo se conectan.', text: 'La condensación convierte los átomos revisados en un grafo de conceptos. Selecciona un nodo para ver su síntesis y los átomos que lo originaron.', example: 'Construcción de conceptos\n   ↳ Acción\n   ↳ Interiorización\n   ↳ Proceso', tip: 'En «Editar conceptos y relaciones» puedes cambiar el concepto padre. No se admiten ciclos.'},
+  {title: '4. Activa y empieza a preguntar.', text: 'La activación prepara una KB independiente a partir del grafo. El tutor utiliza ese conocimiento para responder; puedes volver a revisarlo cuando quieras.', example: '«¿Qué diferencia una acción de un proceso?»\n«Dame un ejemplo».\n«¿Qué fuente respalda esa explicación?»', tip: 'Podrás activar o cerrar el modo tutorial en cualquier momento desde la barra superior.'}
+];
+function setting(key, value) {
+  try { if (value !== undefined) localStorage.setItem(key, value); else return localStorage.getItem(key); } catch {}
+}
+$('tutorialToggle').checked = setting('tutor-packages-tutorial') !== 'off';
+function status(text = '', kind = '') {
+  $('status').hidden = !text;
+  $('status').className = `status ${kind}`;
+  $('status').textContent = text;
+}
+function hasGraph() { return Boolean(pack?.graph && !dirtyOutline); }
+function controls() {
+  document.querySelectorAll('button,input,textarea,select').forEach(node => { node.disabled = busy; });
+  document.querySelectorAll('button[data-stage]').forEach((node, index) => {
+    const done = [Boolean(pack), Boolean(pack?.outline && !dirtyOutline), hasGraph() && !dirtyGraph, Boolean(pack?.activated && !dirtyGraph && !dirtyOutline)][index];
+    node.classList.toggle('active', index === currentStage);
+    node.classList.toggle('done', done);
+    if (index === currentStage) node.setAttribute('aria-current', 'step'); else node.removeAttribute('aria-current');
+    node.querySelector('.step-number').textContent = done && index !== currentStage ? '✓' : String(index + 1);
+  });
+  $('coach').hidden = !$('tutorialToggle').checked;
+  $('coachTitle').textContent = coach[currentStage][0];
+  $('coachText').textContent = coach[currentStage][1];
+  $('outlineDirty').hidden = !dirtyOutline;
+  $('graphDirty').hidden = !dirtyGraph;
+  $('saveOutline').disabled = busy || !dirtyOutline;
+  $('saveGraph').disabled = busy || !dirtyGraph;
+  $('summarize').hidden = !pack;
+  $('outlineNeedsSource').hidden = Boolean(pack);
+  $('outlineEmpty').hidden = Boolean(pack?.outline);
+  $('outlineReady').hidden = !pack?.outline;
+  $('outlineEmptyText').textContent = pack ? `Tu fuente tiene ${pack.chunks.length} fragmento${pack.chunks.length === 1 ? '' : 's'}. El modelo los leerá para preparar ideas con referencias. Esto puede tardar varios minutos.` : 'Incorpora una fuente para poder generar y revisar sus ideas.';
+  $('graphEmpty').hidden = hasGraph();
+  $('graphReady').hidden = !hasGraph();
+  $('condense').hidden = !pack?.outline;
+  $('graphNeedsOutline').hidden = Boolean(pack?.outline);
+  $('graphEmptyText').textContent = dirtyOutline ? 'Hay cambios en el resumen. Los guardaremos antes de crear un nuevo grafo; la versión anterior quedará pendiente de una nueva activación.' : pack?.outline ? 'El modelo combinará las ideas del resumen y organizará los conceptos en un mapa que podrás revisar.' : 'Primero genera el resumen estructural y revisa sus átomos. Después podrás conectarlos.';
+  const active = Boolean(pack?.activated && hasGraph() && !dirtyGraph);
+  $('chatNeedsGraph').hidden = hasGraph();
+  $('activation').hidden = !hasGraph() || active;
+  $('chatReady').hidden = !active;
+  $('activationInfo').textContent = pack?.graph ? `${pack.graph.nodes.length} conceptos conectados a ${pack.outline.atoms.length} átomos estructurales. ${dirtyGraph ? 'Guardaremos tus cambios antes de activar.' : 'Puedes regresar al grafo antes de continuar.'}` : '';
+  $('chat').querySelectorAll('button,textarea').forEach(node => { node.disabled = busy || !active; });
+  $('file').disabled = busy || sourceKind !== 'pdf';
+  $('url').disabled = busy || sourceKind !== 'page';
+  $('tourBack').disabled = tourIndex === 0;
+  // Help stays usable while the model works; it does not alter the package.
+  ['tutorialToggle', 'startTour', 'closeTour', 'closeSource', 'tourNext'].forEach(id => { $(id).disabled = false; });
+}
+async function api(path, options = {}) {
+  let response;
+  try { response = await fetch('/api/packages' + path, options); }
+  catch { throw Error('No pudimos conectar con el servidor. Conserva esta página abierta y vuelve a intentarlo.'); }
+  const data = await response.json();
+  if (!response.ok) {
+    const detail = data.detail;
+    throw Error(typeof detail === 'string' ? detail : 'Revisa los campos de la fuente o del paquete y vuelve a intentarlo.');
+  }
+  return data;
+}
+const json = (method, body) => ({method, headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)});
+async function run(message, fn, success = '') {
+  if (busy) return;
+  busy = true; controls(); status(message, 'busy');
+  try { await fn(); status(success); }
+  catch (error) { status(error.message, 'error'); }
+  finally { busy = false; controls(); }
+}
+function go(stage, focus = true) {
+  currentStage = stage;
+  document.querySelectorAll('[data-panel]').forEach(panel => { panel.hidden = Number(panel.dataset.panel) !== stage; });
+  controls();
+  if (stage === 2 && hasGraph()) requestAnimationFrame(fitGraph);
+  if (focus) document.querySelector(`[data-panel="${stage}"] h2`).focus({preventScroll: true});
+}
+function discardEdits() {
+  return !(dirtyOutline || dirtyGraph) || window.confirm('Hay cambios sin guardar. ¿Quieres descartarlos y cambiar de paquete?');
+}
+function library() {
+  $('library').replaceChildren();
+  if (!packages.length) { $('library').append(el('p', 'Tu biblioteca empieza con una fuente. Crea tu primer paquete.', 'empty')); return; }
+  for (const item of packages) {
+    const button = el('button', item.title);
+    button.classList.toggle('active', item.id === pack?.id);
+    if (item.id === pack?.id) button.setAttribute('aria-current', 'true');
+    button.onclick = () => {
+      if (item.id === pack?.id) return;
+      if (!discardEdits()) return;
+      run('Abriendo tu paquete…', async () => {
+        pack = await api('/' + item.id); dirtyOutline = dirtyGraph = false; selectedNode = null;
+        render(); go(pack.activated ? 3 : pack.graph ? 2 : 1);
+      });
+    };
+    $('library').append(button);
+  }
+}
+async function list() { packages = await api(''); library(); }
+function newPackage() {
+  if (busy || !discardEdits()) return;
+  pack = null; dirtyOutline = dirtyGraph = false; selectedNode = null;
+  $('packageBar').hidden = true; $('source').reset(); kind('pdf');
+  $('fileName').textContent = ''; library(); status(); render(); go(0); $('title').focus();
+}
+function kind(value) {
+  sourceKind = value;
+  $('pdfField').hidden = value !== 'pdf'; $('urlField').hidden = value !== 'page';
+  $('typePdf').setAttribute('aria-pressed', String(value === 'pdf'));
+  $('typePage').setAttribute('aria-pressed', String(value === 'page'));
+  $('file').required = value === 'pdf'; $('url').required = value === 'page';
+  $('url').disabled = value !== 'page'; $('file').disabled = value !== 'pdf';
+  $('sourceHint').textContent = value === 'pdf' ? 'PDF con texto seleccionable · hasta 15 MB. Para libros extensos, empieza por un capítulo.' : 'Una página pública de HTML o texto. Si el sitio redirige, utiliza su dirección final.';
+}
+function showSource(ref) {
+  const chunk = pack?.chunks.find(chunk => chunk.id === ref);
+  if (!chunk) return;
+  $('sourceDialogTitle').textContent = chunk.page ? `Fuente · página ${chunk.page}` : 'Fragmento de la página';
+  $('sourceDialogBody').replaceChildren(el('p', pack.source, 'hint'), el('div', chunk.text, 'source-text'));
+  $('sourceDialog').showModal();
+}
+function sourceLinks(parent, refs) {
+  const links = el('div', undefined, 'source-links');
+  for (const ref of [...new Set(refs)]) {
+    const chunk = pack.chunks.find(item => item.id === ref);
+    const button = el('button', chunk?.page ? `↗ Página ${chunk.page} · ${ref}` : `↗ Fragmento ${ref}`);
+    button.type = 'button'; button.onclick = () => showSource(ref); links.append(button);
+  }
+  parent.append(links);
+}
+function field(card, label, value, change, multiline = false) {
+  const wrapper = el('label', label), input = el(multiline ? 'textarea' : 'input');
+  input.value = value || ''; if (multiline) input.rows = 4;
+  input.oninput = () => { change(input.value); controls(); };
+  wrapper.append(input); card.append(wrapper);
+}
+function render() {
+  document.body.classList.toggle('has-package', Boolean(pack));
+  $('packageBar').hidden = !pack;
+  if (!pack) { $('outline').replaceChildren(); $('nodes').replaceChildren(); controls(); return; }
+  $('packageTitle').textContent = pack.title;
+  $('sourceInfo').textContent = `${pack.source} · ${pack.chunks.length} fragmento${pack.chunks.length === 1 ? '' : 's'} · revisión ${pack.revision}`;
+  $('outlineCount').hidden = !pack.outline;
+  $('outlineCount').textContent = `${pack.outline?.atoms.length || 0} átomos`;
+  $('graphCount').hidden = !hasGraph();
+  $('graphCount').textContent = `${pack.graph?.nodes.length || 0} conceptos`;
+  $('outline').replaceChildren(...(pack.outline?.atoms || []).map(atom => {
+    const card = el('article', undefined, 'atom-card'), top = el('div', undefined, 'atom-top');
+    top.append(el('span', atom.id, 'atom-id'), el('span', atom.section, 'section-name'));
+    const title = el('h3', atom.title), answer = el('p', atom.answer, 'answer');
+    card.append(top, title, answer); sourceLinks(card, atom.source_ids);
+    const editor = el('details'); editor.append(el('summary', 'Editar átomo'));
+    field(editor, 'Sección', atom.section, value => { atom.section = value; top.lastChild.textContent = value; dirtyOutline = true; });
+    field(editor, 'Título', atom.title, value => { atom.title = value; title.textContent = value; dirtyOutline = true; });
+    field(editor, 'Afirmación', atom.answer, value => { atom.answer = value; answer.textContent = value; dirtyOutline = true; }, true);
+    card.append(editor); return card;
+  }));
+  $('nodes').replaceChildren(...(pack.graph?.nodes || []).map(node => {
+    const card = el('article', undefined, 'atom-card'); card.append(el('span', node.id, 'atom-id'));
+    field(card, 'Concepto', node.title, value => { node.title = value; dirtyGraph = true; });
+    field(card, 'Síntesis', node.answer, value => { node.answer = value; dirtyGraph = true; }, true);
+    const label = el('label', 'Concepto padre'), select = el('select');
+    select.append(new Option('Raíz del mapa', ''), ...pack.graph.nodes.filter(item => item.id !== node.id).map(item => new Option(item.title, item.id)));
+    select.value = node.parent || ''; select.onchange = () => { node.parent = select.value || null; dirtyGraph = true; controls(); };
+    label.append(select); card.append(label, el('p', `Derivado de: ${node.derived_from.join(', ')}`, 'hint')); return card;
+  }));
+  draw(); renderThread(); library(); controls();
+}
+function evidence(node) {
+  selectedNode = node?.id || null;
+  $('evidence').replaceChildren();
+  if (!node) { $('evidence').append(el('p', 'EL ORIGEN DE CADA IDEA', 'eyebrow'), el('h3', 'Sigue el hilo.'), el('p', 'Selecciona un concepto del mapa para leer su síntesis y ver los átomos que lo sustentan.')); return; }
+  $('evidence').append(el('span', 'CONCEPTO SELECCIONADO', 'eyebrow'), el('h3', node.title), el('p', node.answer));
+  for (const id of node.derived_from) {
+    const atom = pack.outline.atoms.find(item => item.id === id);
+    if (!atom) continue;
+    const block = el('div', undefined, 'evidence-atom');
+    block.append(el('span', `ÁTOMO ${id}`, 'eyebrow'), el('strong', atom.title), el('p', atom.answer));
+    sourceLinks(block, atom.source_ids); $('evidence').append(block);
+  }
+  document.querySelectorAll('#graph g').forEach(group => group.classList.toggle('selected', group.dataset.id === node.id));
+}
+function draw() {
+  const nodes = pack.graph?.nodes || [], ns = 'http://www.w3.org/2000/svg';
+  $('graph').replaceChildren();
+  if (!nodes.length) { evidence(null); return; }
+  const svg = document.createElementNS(ns, 'svg'), positions = new Map(), seen = new Set();
+  let row = 0, maxDepth = 0;
+  function place(node, depth) {
+    if (seen.has(node.id)) return;
+    seen.add(node.id); maxDepth = Math.max(maxDepth, depth);
+    const children = nodes.filter(item => item.parent === node.id && !seen.has(item.id));
+    const start = row;
+    children.forEach(child => place(child, depth + 1));
+    const y = children.length ? (start + Math.max(start, row - 1)) * 108 / 2 : row++ * 108;
+    positions.set(node.id, {x: 24 + depth * 290, y: 24 + y});
+  }
+  nodes.filter(node => !node.parent).forEach(node => place(node, 0));
+  nodes.filter(node => !seen.has(node.id)).forEach(node => place(node, 0));
+  graphSize = {width: (maxDepth + 1) * 290 + 24, height: Math.max(row, 1) * 108 + 28};
+  svg.setAttribute('viewBox', `0 0 ${graphSize.width} ${graphSize.height}`);
+  svg.setAttribute('aria-label', `${nodes.length} conceptos conectados`);
+  for (const node of nodes) {
+    const p = positions.get(node.parent), q = positions.get(node.id);
+    if (!p) continue;
+    const path = document.createElementNS(ns, 'path');
+    path.setAttribute('d', `M${p.x+250},${p.y+39} C${p.x+270},${p.y+39} ${q.x-20},${q.y+39} ${q.x},${q.y+39}`); svg.append(path);
+  }
+  for (const node of nodes) {
+    const p = positions.get(node.id), group = document.createElementNS(ns, 'g'), rect = document.createElementNS(ns, 'rect');
+    group.dataset.id = node.id; group.setAttribute('tabindex', '0'); group.setAttribute('role', 'button');
+    group.setAttribute('aria-label', `${node.title}. Ver síntesis y evidencia.`);
+    for (const [name, value] of Object.entries({x:p.x, y:p.y, width:250, height:78, rx:10})) rect.setAttribute(name, value);
+    group.append(rect);
+    const words = node.title.split(/\s+/), lines = [''];
+    for (const word of words) {
+      if ((lines.at(-1) + ' ' + word).trim().length > 31 && lines.at(-1)) lines.push(word);
+      else lines[lines.length - 1] = (lines.at(-1) + ' ' + word).trim();
+    }
+    lines.slice(0,3).forEach((line, index) => {
+      const text = document.createElementNS(ns, 'text'); text.setAttribute('x', p.x+14); text.setAttribute('y', p.y+23+index*17);
+      text.textContent = line + (index === 2 && lines.length > 3 ? '…' : ''); group.append(text);
+    });
+    group.onclick = () => evidence(node);
+    group.onkeydown = event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); evidence(node); } };
+    svg.append(group);
+  }
+  $('graph').append(svg); setZoom(zoom);
+  evidence(nodes.find(node => node.id === selectedNode) || null);
+}
+function setZoom(value) {
+  zoom = Math.min(1.8, Math.max(.25, value));
+  const svg = $('graph').querySelector('svg');
+  if (svg) { svg.setAttribute('width', graphSize.width * zoom); svg.setAttribute('height', graphSize.height * zoom); }
+}
+function fitGraph() { if ($('graph').clientWidth) setZoom(Math.min(1, ($('graph').clientWidth-10)/graphSize.width)); }
+function renderThread() {
+  const entries = messages.get(pack?.id) || [];
+  $('chatIntro').hidden = entries.length > 0; $('thread').replaceChildren();
+  for (const entry of entries) {
+    const message = el('div', undefined, `message ${entry.role}`);
+    message.append(el('span', entry.role === 'user' ? 'Tú' : 'Tutor', 'speaker'), el('div', entry.text)); $('thread').append(message);
+  }
+  $('thread').scrollTop = $('thread').scrollHeight;
+}
+function showTour(index = 0) {
+  tourIndex = index; const slide = tourSlides[index];
+  $('tourTitle').textContent = slide.title; $('tourText').textContent = slide.text;
+  $('tourExample').textContent = slide.example; $('tourTip').textContent = slide.tip;
+  $('tourStep').textContent = `RECORRIDO GUIADO · ${index+1} DE ${tourSlides.length}`;
+  $('tourNext').textContent = index === tourSlides.length-1 ? 'Empezar a explorar →' : 'Siguiente →';
+  $('tourDots').replaceChildren(...tourSlides.map((_, i) => el('span', undefined, `dot ${i === index ? 'active' : ''}`)));
+  $('tourBack').disabled = index === 0;
+  if (!$('tour').open) $('tour').showModal();
+}
+async function saveOutline() {
+  if (!dirtyOutline) return;
+  pack = await api('/'+pack.id+'/outline', json('PUT', pack.outline)); dirtyOutline = dirtyGraph = false;
+  messages.delete(pack.id); render();
+}
+async function saveGraph() {
+  if (!dirtyGraph) return;
+  pack = await api('/'+pack.id+'/graph', json('PUT', pack.graph)); dirtyGraph = false;
+  messages.delete(pack.id); render();
+}
+function regenerate() {
+  if (pack?.outline && !window.confirm('Volver a generar reemplazará el resumen y dejará pendiente una nueva condensación y activación. ¿Continuar?')) return;
+  run('Leyendo la fuente y creando átomos estructurales… Puede tardar varios minutos. Mantén esta página abierta.', async () => {
+    pack = await api('/'+pack.id+'/summarize', {method:'POST'}); dirtyOutline = dirtyGraph = false; selectedNode = null;
+    messages.delete(pack.id); render(); go(1);
+  }, 'Resumen preparado. Revisa las ideas y contrástalas con su fuente.');
+}
+function condense() {
+  if (hasGraph() && !window.confirm('Se creará un nuevo grafo a partir del resumen. El grafo actual quedará reemplazado y necesitará una nueva activación. ¿Continuar?')) return;
+  run('Conectando las ideas del resumen… La condensación puede tardar varios minutos.', async () => {
+    await saveOutline(); pack = await api('/'+pack.id+'/condense', {method:'POST'}); dirtyGraph = false; selectedNode = null;
+    messages.delete(pack.id); render(); go(2);
+  }, 'Mapa preparado. Selecciona un concepto para revisar su origen.');
+}
+$('tutorialToggle').onchange = () => { setting('tutor-packages-tutorial', $('tutorialToggle').checked ? 'on' : 'off'); controls(); };
+$('startTour').onclick = () => showTour();
+$('closeTour').onclick = () => $('tour').close();
+$('tourBack').onclick = () => showTour(Math.max(0, tourIndex-1));
+$('tourNext').onclick = () => { if (tourIndex === tourSlides.length-1) $('tour').close(); else showTour(tourIndex+1); };
+$('closeSource').onclick = () => $('sourceDialog').close();
+$('typePdf').onclick = () => kind('pdf'); $('typePage').onclick = () => kind('page');
+$('newPackage').onclick = newPackage;
+$('reload').onclick = () => run('Actualizando biblioteca…', list);
+document.querySelectorAll('[data-stage]').forEach(button => button.onclick = () => go(Number(button.dataset.stage)));
+document.querySelectorAll('[data-go]').forEach(button => button.onclick = () => go(Number(button.dataset.go)));
+$('file').onchange = () => {
+  const file = $('file').files[0]; $('fileName').textContent = file ? `${file.name} · ${(file.size/1024/1024).toFixed(1)} MB` : '';
+  if (file && !$('title').value.trim()) $('title').value = file.name.replace(/\.pdf$/i, '').replaceAll('_', ' ');
+};
+$('pdfField').ondragover = event => { event.preventDefault(); $('pdfField').classList.add('drag'); };
+$('pdfField').ondragleave = () => $('pdfField').classList.remove('drag');
+$('pdfField').ondrop = event => {
+  event.preventDefault(); $('pdfField').classList.remove('drag'); if (busy) return;
+  const files = event.dataTransfer.files;
+  if (files.length !== 1 || !files[0].name.toLowerCase().endsWith('.pdf')) { status('Selecciona un solo archivo PDF.', 'error'); return; }
+  $('file').files = files; $('file').onchange();
+};
+$('source').onsubmit = event => {
+  event.preventDefault();
+  if (!discardEdits()) return;
+  if (!$('title').value.trim()) { $('title').focus(); status('Ponle un nombre al paquete para continuar.', 'error'); return; }
+  const file = $('file').files[0];
+  if (sourceKind === 'pdf' && (!file || file.size > 15*1024*1024)) { status(file ? 'El archivo supera 15 MB. Prueba con un capítulo o una parte del PDF.' : 'Selecciona un PDF para continuar.', 'error'); return; }
+  run('Incorporando la fuente y preparando sus fragmentos…', async () => {
+    let next;
+    if (sourceKind === 'pdf') {
+      const form = new FormData(); form.append('title', $('title').value.trim()); form.append('file', file);
+      next = await api('/pdf', {method:'POST', body:form});
+    } else next = await api('/page', json('POST', {title:$('title').value.trim(), url:$('url').value}));
+    pack = next; dirtyOutline = dirtyGraph = false; selectedNode = null;
+    render(); go(1); await list();
+  }, 'Fuente incorporada. Ahora puedes generar su resumen estructural.');
+};
+$('summarize').onclick = regenerate; $('regenerate').onclick = regenerate;
+$('saveOutline').onclick = () => run('Guardando tus cambios…', async () => { await saveOutline(); render(); }, 'Resumen guardado. El siguiente paso es condensarlo de nuevo.');
+$('condense').onclick = condense; $('recondense').onclick = condense;
+$('saveGraph').onclick = () => run('Validando conceptos y relaciones…', async () => { await saveGraph(); render(); }, 'Grafo guardado. Puedes activarlo para conversar.');
+$('activate').onclick = () => run('Validando el mapa y preparando tu paquete para conversar…', async () => {
+  await saveGraph(); pack = await api('/'+pack.id+'/activate', {method:'POST'}); messages.delete(pack.id); render(); go(3);
+}, 'Paquete activo. Ya puedes hacer tu primera pregunta.');
+$('export').onclick = () => {
+  const url = URL.createObjectURL(new Blob([JSON.stringify(pack,null,2)], {type:'application/json'}));
+  const link = el('a'); link.href = url; link.download = 'paquete-'+pack.id+'.json'; link.click(); URL.revokeObjectURL(url);
+  status(dirtyOutline || dirtyGraph ? 'Descargaste una copia con tus cambios de esta pantalla. Aún debes guardarlos para actualizar el paquete.' : 'Paquete descargado con sus fuentes y sus dos capas de conocimiento.');
+};
+$('viewSources').onclick = () => {
+  $('sourceDialogTitle').textContent = 'Fragmentos de la fuente';
+  const list = el('div', undefined, 'source-list');
+  for (const chunk of pack.chunks) {
+    const details = el('details'); details.append(el('summary', chunk.page ? `Página ${chunk.page} · ${chunk.id}` : `Fragmento ${chunk.id}`), el('pre', chunk.text)); list.append(details);
+  }
+  $('sourceDialogBody').replaceChildren(el('p', pack.source, 'hint'), list); $('sourceDialog').showModal();
+};
+$('zoomIn').onclick = () => setZoom(zoom+.15); $('zoomOut').onclick = () => setZoom(zoom-.15); $('fitGraph').onclick = fitGraph;
+document.querySelectorAll('[data-question]').forEach(button => button.onclick = () => { $('question').value = button.dataset.question; $('question').focus(); });
+$('chat').onsubmit = event => {
+  event.preventDefault(); const message = $('question').value.trim(); if (!message) return;
+  run('Seleccionando el contexto y preparando una respuesta…', async () => {
+    const data = await api('/'+pack.id+'/chat', json('POST', {message}));
+    const entries = messages.get(pack.id) || [];
+    entries.push({role:'user', text:message}, {role:'assistant', text:data.reply}); messages.set(pack.id, entries);
+    $('question').value = ''; renderThread();
+  });
+};
+window.addEventListener('beforeunload', event => { if (dirtyOutline || dirtyGraph) { event.preventDefault(); event.returnValue = ''; } });
+kind('pdf'); go(0, false); run('Cargando tu biblioteca…', list);
+</script>
+</body>
+</html>

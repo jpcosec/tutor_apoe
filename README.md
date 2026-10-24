@@ -355,6 +355,12 @@ En el chat (`tutor web`), abre **Precargar paquetes**, o visita
 4. Activa el paquete para validarlo como KB independiente y conversar desde esa
    misma pantalla, con el selector y modelo configurados para el tutor.
 
+La interfaz presenta una etapa a la vez y una biblioteca lateral para retomar
+paquetes. Activa **Modo tutorial** para ver ayuda contextual o pulsa **Ver
+recorrido** para una explicación con ejemplos. Las referencias de cada átomo y
+nodo abren el fragmento fuente. Los editores quedan plegados hasta que los
+necesites; avanzar sin editar conserva el grafo y la activación actuales.
+
 Los borradores, fuentes y KBs quedan en `.local/packages/`, fuera de Git
 (`TUTOR_PACKAGES_ROOT` permite cambiar la ubicación). Puedes retomar un paquete
 al reiniciar y descargarlo en JSON con sus dos capas y fuentes. El historial de
