@@ -35,7 +35,7 @@ def router():
 
     @routes.get('/web/{filename}')
     def asset(filename: str):
-        types = {'mindmap.js': 'text/javascript', 'hierarchy.js': 'text/javascript', 'mindmap.css': 'text/css'}
+        types = {'mindmap.js': 'text/javascript', 'hierarchy.js': 'text/javascript', 'mindmap.css': 'text/css', 'theme.css': 'text/css', 'guided-tour.js': 'text/javascript', 'tour-plans.js': 'text/javascript'}
         if filename not in types:
             raise HTTPException(404, 'Archivo no encontrado.')
         return FileResponse(web / filename, media_type=types[filename])

@@ -18,6 +18,8 @@ def test_shell_and_view_links(client):
     shell = client.get('/')
     assert shell.status_code == 200
     assert 'role="tablist"' in shell.text
+    assert 'Recorrido guiado' in shell.text
+    assert '/web/guided-tour.js' in shell.text
     for view, expected in [('chat', 'id="messages"'), ('packages', 'Modo tutorial'), ('graph', 'mindmap.js')]:
         redirect = client.get('/' + view, follow_redirects=False)
         assert redirect.status_code == 307
@@ -25,8 +27,9 @@ def test_shell_and_view_links(client):
         response = client.get('/' + view + '?embed=1')
         assert response.status_code == 200 and expected in response.text
         assert '/ui/navigation.js' in response.text
+        assert '/web/theme.css' in response.text
     assert client.get('/ui/navigation.js').status_code == 200
-    for filename in ('mindmap.js', 'hierarchy.js', 'mindmap.css'):
+    for filename in ('mindmap.js', 'hierarchy.js', 'mindmap.css', 'theme.css', 'guided-tour.js', 'tour-plans.js'):
         assert client.get('/web/' + filename).status_code == 200
     assert client.get('/web/AGENTS.md').status_code == 404
 

@@ -364,9 +364,14 @@ En el chat (`tutor web`), abre **Precargar paquetes**, o visita
    misma pantalla, con el selector y modelo configurados para el tutor.
 
 La interfaz presenta una etapa a la vez y una biblioteca lateral para retomar
-paquetes. Activa **Modo tutorial** para ver ayuda contextual o pulsa **Ver
-recorrido** para una explicación con ejemplos. Las referencias de cada átomo y
-nodo abren el fragmento fuente. Los editores quedan plegados hasta que los
+paquetes. El botón **Recorrido guiado**, disponible en las tres vistas, resalta
+los controles reales con ayuda contextual. En Paquetes también se inicia desde
+**Ver recorrido** o al activar **Modo tutorial**. Puedes seguir usando los
+campos y botones: el recorrido espera los requisitos de cada etapa y avanza
+al terminar la carga, el resumen, la condensación o la activación. Usa
+**Atrás**, **Siguiente** o **Esc** para salir; no envía preguntas ni ejecuta
+operaciones por ti. Al abrir una fuente, la guía se oculta hasta que la cierres.
+Las referencias de cada átomo y nodo abren el fragmento fuente. Los editores quedan plegados hasta que los
 necesites; avanzar sin editar conserva el grafo y la activación actuales.
 
 Los borradores, fuentes y KBs quedan en `.local/packages/`, fuera de Git

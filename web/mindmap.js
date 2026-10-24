@@ -6,7 +6,7 @@ import dagre from 'dagre';
 import {hierarchy} from './hierarchy.js';
 
 const html = htm.bind(React.createElement);
-const COLORS = ['#4fc3d9', '#e6a85c', '#7cba7c', '#c97db9', '#9b7fd4', '#ff6b6b'];
+const COLORS = ['#39775d', '#976e3f', '#667e46', '#796185', '#567c85', '#995e52'];
 
 function colour(name) {
   let total = 0;
@@ -31,7 +31,7 @@ function buildGraph(atoms, direction, showAtoms) {
   const graph = new dagre.graphlib.Graph();
   graph.setDefaultEdgeLabel(() => ({}));
   graph.setGraph({rankdir: direction, ranksep: 72, nodesep: 18, marginx: 40, marginy: 40});
-  const nodes = [{id: 'root', type: 'knowledge', data: {kind: 'root', label: 'Teoría APOS', colour: '#d4a574'}, position: {x: 0, y: 0}}];
+  const nodes = [{id: 'root', type: 'knowledge', data: {kind: 'root', label: 'Teoría APOS', colour: '#236650'}, position: {x: 0, y: 0}}];
   const edges = [];
   graph.setNode('root', {width: 150, height: 48});
   const visible = atoms.filter(atom => showAtoms || atom.node_type === 'branch');
@@ -118,12 +118,12 @@ function App() {
   };
 
   return html`<main className="shell">
-    <header><div><p className="eyebrow">VISOR DE CONOCIMIENTO · SLDB</p><h1>Tutor APOE</h1><p className="subtitle">Teoría APOS, sin chatbot ni modelo generativo.</p></div>
+    <header><div><p className="eyebrow">VISOR DE CONOCIMIENTO · SLDB</p><h1>Tutor APOE</h1><p className="subtitle">Átomos fuente, jerarquía y procedencia.</p></div>
       <div className="help">${status}<br/><span>Selecciona un átomo para editar su fuente Markdown.</span></div></header>
     <section className="toolbar"><form onSubmit=${event => {event.preventDefault(); search(term)}}><input value=${term} onInput=${event => setTerm(event.target.value)} placeholder="Buscar texto o tag: topic:schema"/><button>Buscar</button><button type="button" className="secondary" onClick=${() => {setTerm(''); search('')}}>Limpiar</button></form>
       <div className="layouts"><button className=${direction === 'TB' ? 'active' : ''} onClick=${() => setDirection('TB')}>Ancho</button><button className=${direction === 'LR' ? 'active' : ''} onClick=${() => setDirection('LR')}>Alto</button><button className=${showAtoms ? 'active' : ''} onClick=${() => setShowAtoms(!showAtoms)}>${showAtoms ? 'Ocultar átomos' : 'Ver átomos'}</button></div></section>
     <section className="topics"><span>Temas visibles</span>${topics.slice(0, 14).map(tag => html`<button key=${tag} onClick=${() => {setTerm(tag); search(tag)}}>${tag.replace('topic:', '')}</button>`)}</section>
-    <section className="workspace"><div className="canvas"><${ReactFlow} nodes=${nodes} edges=${edges} nodeTypes=${nodeTypes} onNodesChange=${onNodesChange} onEdgesChange=${onEdgesChange} onNodeClick=${onNodeClick} onPaneClick=${() => {}} fitView proOptions=${{hideAttribution: true}} minZoom=${.08} maxZoom=${1.8}><${Background} gap=${24} color="rgba(212,165,116,.14)"/><${Controls}/><${MiniMap} nodeColor=${node => node.data.colour} maskColor="rgba(7, 11, 18, .75)"/></${ReactFlow}></div></section>
+    <section className="workspace"><div className="canvas"><${ReactFlow} nodes=${nodes} edges=${edges} nodeTypes=${nodeTypes} onNodesChange=${onNodesChange} onEdgesChange=${onEdgesChange} onNodeClick=${onNodeClick} onPaneClick=${() => {}} fitView proOptions=${{hideAttribution: true}} minZoom=${.08} maxZoom=${1.8}><${Background} gap=${24} color="#d4ddd2"/><${Controls}/><${MiniMap} nodeColor=${node => node.data.colour} maskColor="rgba(245, 245, 239, .68)"/></${ReactFlow}></div></section>
     ${selected && draft && html`<div className="modal-backdrop" onClick=${() => {setSelected(null); setDraft(null)}}><aside className="detail modal" onClick=${event => event.stopPropagation()}><button className="modal-close" type="button" onClick=${() => {setSelected(null); setDraft(null)}} aria-label="Cerrar editor">×</button><p className="eyebrow">EDITAR ÁTOMO</p><form className="editor" onSubmit=${save}><label>Título<input value=${draft.title} onInput=${e => setDraft({...draft, title: e.target.value})}/></label><label>Tipo de nodo <small>texto libre</small><input value=${draft.node_type} onInput=${e => setDraft({...draft, node_type: e.target.value})}/></label><label>Átomo padre <small>vacío = jerarquía de carpetas</small><input value=${draft.parent_id} onInput=${e => setDraft({...draft, parent_id: e.target.value})}/></label><label>Pregunta<select value=${draft.question} onChange=${e => setDraft({...draft, question: e.target.value})}>${['what','why','how','how_not','when','where','for_whom'].map(option => html`<option key=${option}>${option}</option>`)}</select></label><label>Tags <small>separados por coma</small><input value=${draft.tags.join(', ')} onInput=${e => setDraft({...draft, tags: e.target.value.split(',').map(tag => tag.trim()).filter(Boolean)})}/></label><label>Respuesta<textarea rows="7" value=${draft.answer} onInput=${e => setDraft({...draft, answer: e.target.value})}/></label><label>Procedencia<textarea rows="5" value=${draft.provenance} onInput=${e => setDraft({...draft, provenance: e.target.value})}/></label><div className="modal-actions"><button>Guardar átomo</button><button type="button" className="secondary" onClick=${addChild}>Add child</button></div><footer>${selected.path}</footer></form></aside></div>`}
   </main>`;
 }

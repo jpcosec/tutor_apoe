@@ -6,7 +6,9 @@
 <title>Tutor · Espacio de conocimiento</title>
 <style>
 :root{font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#243a35;background:#f5f5ef;color-scheme:light}*{box-sizing:border-box}html{height:100%;overflow:hidden}[hidden]{display:none!important}body{margin:0;height:100dvh;display:grid;grid-template-rows:auto minmax(0,1fr);overflow:hidden}header{background:#fffefa;border-bottom:1px solid #dfe5df;display:flex;align-items:center;gap:30px;padding:0 24px;min-height:69px}.brand{font-family:Georgia,serif;font-size:24px;white-space:nowrap;letter-spacing:-.04em}.brand span{color:#809789;font-size:17px}nav{align-self:stretch;display:flex;gap:6px}button{font:inherit;border:0;background:transparent;color:#697770;padding:0 18px;border-bottom:3px solid transparent;cursor:pointer;display:flex;gap:9px;align-items:center;white-space:nowrap}button[aria-selected=true]{color:#236650;border-bottom-color:#236650;background:#f1f6ed;font-weight:650}button:hover{background:#f3f6ef}button:focus-visible{outline:2px solid #ac8541;outline-offset:-5px}.icon{font-size:17px}.view-info{margin-left:auto;color:#697770;font-size:11px;max-width:260px;text-align:right}.workspace,.panel{min-width:0;min-height:0;height:100%;position:relative}.panel{position:absolute;inset:0;background:#f5f5ef}.panel[hidden]{display:block!important;visibility:hidden;pointer-events:none}.panel iframe{width:100%;height:100%;border:0;display:block}.loading{position:absolute;inset:0;display:grid;place-content:center;gap:10px;text-align:center;color:#697770;font-size:13px}.loading strong{font:25px Georgia,serif;color:#236650}.loading a{color:#236650}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.skip{position:absolute;top:-60px;left:15px;background:white;color:#236650;padding:10px;z-index:10}.skip:focus{top:8px}@media(max-width:850px){header{padding:0 15px;gap:15px}.brand span,.view-info{display:none}button{padding:0 14px;font-size:13px}}@media(max-width:520px){header{flex-wrap:wrap;gap:0;padding:10px 12px 0}.brand{font-size:21px;width:100%;margin-bottom:5px}nav{width:100%;min-height:47px}button{flex:1;justify-content:center;padding:0 7px;font-size:12px}.icon{font-size:14px}}
+.tour-launch{border:1px solid var(--ui-line,#dbe4db);border-radius:9px;color:var(--ui-accent,#236650);background:#edf3e9;font-size:12px;padding:8px 12px;align-self:center;flex:none}.tour-launch:hover{background:#e3efdf}@media(max-width:850px){.tour-launch{font-size:11px;padding:8px}}@media(max-width:520px){.tour-launch{position:absolute;top:10px;right:12px;width:auto}.brand{padding-right:155px}}
 </style>
+<link rel="stylesheet" href="/web/theme.css">
 </head>
 <body>
 <a class="skip" href="#workspace">Ir a la vista activa</a>
@@ -14,20 +16,26 @@
 <button id="tab-chat" role="tab" aria-controls="panel-chat" aria-selected="true" data-view="chat"><span class="icon" aria-hidden="true">☷</span>Conversación</button>
 <button id="tab-packages" role="tab" aria-controls="panel-packages" aria-selected="false" tabindex="-1" data-view="packages"><span class="icon" aria-hidden="true">▤</span>Paquetes</button>
 <button id="tab-graph" role="tab" aria-controls="panel-graph" aria-selected="false" tabindex="-1" data-view="graph"><span class="icon" aria-hidden="true">⌘</span>Grafo APOS</button>
-</nav><div class="view-info" id="viewInfo"></div></header>
+</nav><div class="view-info" id="viewInfo"></div><button id="startGuide" class="tour-launch">? Recorrido guiado</button></header>
 <main id="workspace" class="workspace" tabindex="-1">
 <section id="panel-chat" class="panel" role="tabpanel" aria-labelledby="tab-chat"><div class="loading" role="status"><strong>Abriendo la conversación…</strong><span>Tu espacio de diálogo y contexto.</span></div><iframe title="Conversación con el tutor" data-src="/chat?embed=1" hidden></iframe></section>
 <section id="panel-packages" class="panel" role="tabpanel" aria-labelledby="tab-packages" hidden><div class="loading" role="status"><strong>Abriendo tus paquetes…</strong><span>Fuentes, átomos y grafos revisables.</span></div><iframe title="Biblioteca y precarga de paquetes" data-src="/packages?embed=1" hidden></iframe></section>
 <section id="panel-graph" class="panel" role="tabpanel" aria-labelledby="tab-graph" hidden><div class="loading" role="status"><strong>Abriendo el grafo APOS…</strong><span>El visor de átomos y su jerarquía de carpetas.</span></div><iframe title="Grafo de la base de conocimiento APOS" data-src="/graph?embed=1" hidden></iframe></section>
 </main>
+<script src="/web/guided-tour.js"></script>
+<script src="/web/tour-plans.js"></script>
 <script>
 (() => {
   history.scrollRestoration = 'manual';
   window.scrollTo(0, 0);
+  const guide = new GuidedTour();
+  let activeView = 'chat';
   const tabs = [...document.querySelectorAll('[role=tab]')];
   const descriptions = {chat:'Conversa e inspecciona el contexto de cada respuesta.',packages:'Incorpora fuentes y prepara nuevos cuerpos teóricos.',graph:'Explora y edita los átomos fuente de APOS.'};
   function activate(view, focus = false) {
     if (!descriptions[view]) view = 'chat';
+    if (view !== activeView) guide.close();
+    activeView = view;
     tabs.forEach(tab => {
       const selected = tab.dataset.view === view;
       tab.setAttribute('aria-selected', String(selected)); tab.tabIndex = selected ? 0 : -1;
@@ -52,6 +60,29 @@
     if (location.hash !== '#'+view) history.pushState(null, '', '#'+view);
     activate(view, focus);
   }
+  async function startGuide() {
+    guide.close();
+    const view = activeView;
+    const button = document.getElementById('startGuide');
+    button.disabled = true;
+    try {
+      const frame = document.querySelector('#panel-'+view+' iframe');
+      for (let i=0;i<60;i++) {
+        if (view !== activeView) return;
+        const doc = frame.contentDocument;
+        const ready = doc?.readyState === 'complete' && (view !== 'packages' || frame.contentWindow.tutorGuide);
+        if (ready) {
+          if (view === 'packages') frame.contentWindow.tutorGuide.enable();
+          const steps = TutorTourPlans(view, doc);
+          if (steps.length) guide.start(steps);
+          return;
+        }
+        await new Promise(resolve => setTimeout(resolve, 150));
+      }
+      document.getElementById('viewInfo').textContent = 'La vista sigue cargando. Vuelve a iniciar el recorrido cuando esté lista.';
+    } finally { button.disabled = false; }
+  }
+  document.getElementById('startGuide').onclick = startGuide;
   tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => navigate(tab.dataset.view));
     tab.addEventListener('keydown', event => {
@@ -67,9 +98,12 @@
   window.addEventListener('hashchange', () => activate(location.hash.slice(1)));
   window.addEventListener('popstate', () => activate(location.hash.slice(1)));
   window.addEventListener('message', event => {
-    if (event.origin !== location.origin || event.data?.type !== 'tutor:navigate') return;
+    if (event.origin !== location.origin || !['tutor:navigate','tutor:tour'].includes(event.data?.type)) return;
     const trusted = [...document.querySelectorAll('iframe')].some(frame => frame.contentWindow === event.source);
-    if (trusted) navigate(event.data.view);
+    if (!trusted) return;
+    if (event.data.type === 'tutor:navigate') navigate(event.data.view);
+    else if (event.data.action === 'stop') guide.close();
+    else if (event.source === document.querySelector('#panel-'+activeView+' iframe').contentWindow) startGuide();
   });
   window.addEventListener('beforeunload', event => {
     if ([...document.querySelectorAll('iframe')].some(frame => frame.contentWindow.tutorHasUnsavedChanges?.())) {

@@ -1,0 +1,41 @@
+/* Shared visual language for the workspace and its three views. */
+:root{color-scheme:light;--ui-bg:#f5f5ef;--ui-paper:#fffefa;--ui-ink:#243a35;--ui-muted:#64756b;--ui-accent:#236650;--ui-deep:#173e32;--ui-soft:#e9f2ec;--ui-line:#dbe4db;--ui-focus:#ad8132;--ui-font:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--bg:var(--ui-bg);--paper:var(--ui-paper);--ink:var(--ui-ink);--text:var(--ui-ink);--muted:var(--ui-muted);--green:var(--ui-accent);--green-dark:var(--ui-deep);--mint:var(--ui-soft);--line:var(--ui-line);--panel:var(--ui-paper);--panel2:#f7f9f3;--panel3:#edf3e9;--panel4:#f5f7f0;--border:var(--ui-line);--border2:#c8d8cd;--accent:var(--ui-accent);--accent2:var(--ui-soft);--user:#e7f0e5;--assistant:#fffefa;--chip:#edf3e9;--ok:#e4f0df;--warn:#fbf0d8;--shadow:0 5px 20px #173e3208;--shadow2:0 3px 12px #173e3206}
+body{font-family:var(--ui-font);color:var(--ui-ink);background:var(--ui-bg)}button,input,textarea,select{font-family:var(--ui-font)}button{border-radius:9px;font-weight:600}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--ui-focus);outline-offset:3px}button:disabled{cursor:not-allowed}input,textarea,select{accent-color:var(--ui-accent)}a{color:var(--ui-accent)}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.03em}::selection{background:#cfe4d3;color:#173e32}
+/* Chat keeps its layout, with the same paper, forest sidebar and green accents. */
+body[data-view="chat"] .leftbar{background:var(--ui-deep);border-color:#345442;color:#e6eee8}
+body[data-view="chat"] .lefthead{background:transparent;border-color:#345442;padding:25px 20px}
+body[data-view="chat"] .lefttools{border-color:#345442}
+body[data-view="chat"] .lefthead .title{font:25px Georgia,serif;letter-spacing:-.03em}
+body[data-view="chat"] .leftbar .sub,body[data-view="chat"] .leftbar .meta,body[data-view="chat"] .conv-meta{color:#b9cfc0}
+body[data-view="chat"] .profile-pill{background:#244e3e;border-color:#48735b;color:#dcebdc}
+body[data-view="chat"] .leftbar .secondary{background:#dcebdc;color:#193f30;border-color:transparent}
+body[data-view="chat"] .conv-item{border-color:#345442;color:#e6eee8;background:transparent}
+body[data-view="chat"] .conv-item:hover,body[data-view="chat"] .conv-item.active{background:#244e3e;border-color:#62876c}
+body[data-view="chat"] .topbar,body[data-view="chat"] .sidehead{background:var(--ui-paper);padding:20px}
+body[data-view="chat"] .topbar .title{font:25px Georgia,serif;font-weight:400}
+body[data-view="chat"] .messages{padding:28px;gap:20px}
+body[data-view="chat"] .side-inner,body[data-view="chat"] .section,body[data-view="chat"] .atom-row{background:var(--ui-paper)}
+body[data-view="chat"] .atom-row:hover{background:var(--ui-soft);border-color:#97b6a0}
+body[data-view="chat"] .section-head{background:#f2f6ee}
+body[data-view="chat"] .section-title{color:var(--ui-accent);font-weight:650}
+body[data-view="chat"] .msg{border-radius:13px;padding:19px 22px;line-height:1.8}
+body[data-view="chat"] .msg.assistant.selected{background:#f1f6ed}
+body[data-view="chat"] .composer{padding:20px;background:var(--ui-paper);align-items:end}
+body[data-view="chat"] textarea{background:white;line-height:1.65;font:14px/1.65 var(--ui-font)}
+body[data-view="chat"] button{color:white}
+body[data-view="chat"] button.secondary,body[data-view="chat"] .sidebar-toggle,body[data-view="chat"] .left-toggle,body[data-view="chat"] .close{color:var(--ui-ink)}
+body[data-view="chat"] .pill,body[data-view="chat"] .chip,body[data-view="chat"] .atom-score,body[data-view="chat"] .atom-link,body[data-view="chat"] .linkish{color:var(--ui-accent);border-color:#c5d9c8;background:var(--ui-soft)}
+body[data-view="chat"] .atom-linkhint{color:var(--ui-accent)}
+body[data-view="chat"] .body code,body[data-view="chat"] .body pre,body[data-view="chat"] .toc-line,body[data-view="chat"] .tag-group-row{background:#f1f4ec;border-color:var(--ui-line)}
+body[data-view="chat"] .modal-backdrop{background:#18392c66;backdrop-filter:blur(3px)}
+body[data-view="chat"] .messages,body[data-view="chat"] .sidebody{scrollbar-color:#b6cab9 transparent}
+body[data-view="chat"] .messages::-webkit-scrollbar-thumb,body[data-view="chat"] .sidebody::-webkit-scrollbar-thumb{background:#b6cab9}
+@media(max-width:650px){body[data-view="chat"] .messages{padding:16px}body[data-view="chat"] .composer{padding:12px}}
+/* Walkthrough chrome stays in the shell, even when its target is in a tab. */
+.guide-layer{position:fixed;inset:0;z-index:10000;pointer-events:none;font:14px/1.6 var(--ui-font);color:var(--ui-ink)}
+.guide-ring{position:fixed;border:2px solid #6dba8d;border-radius:10px;box-shadow:0 0 0 9999px #132e255c;pointer-events:none}
+.guide-card{position:fixed;pointer-events:auto;width:min(350px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overflow:auto;background:var(--ui-paper);border:1px solid #b8cfbd;border-radius:14px;padding:19px;box-shadow:0 15px 60px #12392d33;white-space:normal}
+.guide-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}.guide-count{font-size:10px;font-weight:700;letter-spacing:.12em;color:var(--ui-accent)}
+.guide-card .guide-close{border:0;background:transparent;color:var(--ui-muted);font-size:23px;padding:0 5px;line-height:1.3;display:block}
+.guide-card h2{font:25px/1.2 Georgia,serif;margin:0 0 10px;letter-spacing:-.03em}.guide-card p{font-size:13px;color:var(--ui-muted);margin:0 0 13px;line-height:1.7}.guide-card .guide-hint{font-size:12px;background:var(--ui-soft);border-radius:6px;color:var(--ui-accent);padding:9px;margin:12px 0}.guide-actions{display:flex;justify-content:space-between;gap:12px;margin:16px 0 9px}.guide-actions button{border-radius:8px;padding:8px 13px;border:1px solid var(--ui-line);background:var(--ui-accent);color:white;font:600 13px var(--ui-font);cursor:pointer;display:block}.guide-actions .guide-back{color:var(--ui-ink);background:white}.guide-actions button:disabled{opacity:.45;cursor:not-allowed}.guide-card small{font-size:10px;color:var(--ui-muted);display:block}.guide-card button:focus-visible{outline:3px solid var(--ui-focus);outline-offset:3px}
+body[data-view="chat"] .top-actions a{color:var(--ui-accent)!important}

@@ -1,5 +1,11 @@
 // Child views ask the shared workspace to switch tabs without reloading them.
 (() => {
+  window.addEventListener('tutor:tour-request', () => {
+    if (window.parent !== window) window.parent.postMessage({type:'tutor:tour', action:'start'}, location.origin);
+  });
+  window.addEventListener('tutor:tour-stop', () => {
+    if (window.parent !== window) window.parent.postMessage({type:'tutor:tour', action:'stop'}, location.origin);
+  });
   if (window.parent === window) return;
   const views = {'/': 'chat', '/chat': 'chat', '/packages': 'packages', '/graph': 'graph'};
   document.addEventListener('click', event => {
