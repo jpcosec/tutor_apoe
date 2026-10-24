@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/sources/apos-theory-book/authorship/atom-apos-book-derives-from-collaborative-authorship.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:authorship
+- topic:source-book
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 8e2e9427667b1b5ac7fb0a4ecc005cb1810a86dcee89d21b47b035f1864bf743

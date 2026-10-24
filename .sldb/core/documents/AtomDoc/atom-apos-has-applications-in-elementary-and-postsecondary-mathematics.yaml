@@ -1,0 +1,19 @@
+name: atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+path: desk/atoms/apos/applications/elementary-math/atom-apos-has-applications-in-elementary-and-postsecondary-mathematics.md
+source_hash: 66e979cb4ce8095af971922a58d49a5d2fe359badf5821c12e57cb064271c36f
+content_hash: 0ba1dfb7cb1e10f55113fdf3451a05cbc2c8b25e78b02f946ba12f5a12ecbf3c
+field_hashes:
+  id: 782ba3ffc2003cf014e5ea8347a30b7a093af2d091edb4c3298af19c39663f06
+  title: bf8fbbbe0de47675733d2f8e0abfe4dad7ad37c953c5e2d0620d1276425ca4a2
+  five_wh_one_plus: 43f94244d00ce4813a89d3c0d15e1842fe2cfd95ce9fe3b063dda9e7983e0063
+  answer: c21dc35038662503225710f2c25941749d5074e315efe910d6a98b17c2c63426
+  tags: 22ac75f4bc48c9072607d8b90bb1066ea5bc581ef09b4d4b72e5b06107bf2fe5
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:school-levels
+- type.knowledge.atom
+- workspace.desk.atoms

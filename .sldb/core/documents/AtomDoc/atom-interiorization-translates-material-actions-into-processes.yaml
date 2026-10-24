@@ -1,0 +1,20 @@
+name: atom-interiorization-translates-material-actions-into-processes
+path: desk/atoms/apos/mechanisms/interiorization/atom-interiorization-translates-material-actions-into-processes.md
+source_hash: 687f6396062db55d0328ea264a92a1ec5a08a9d3abaa449a15580d3cd7e0dd56
+content_hash: bbf2060d6117a94e9458c47224cc8ea06edab205760c2f0fcf92733b7fd922f8
+field_hashes:
+  id: 47ffabf306c1210b9ffd4c09970956907f65c62e6b506bbba2e13db4498740c0
+  title: 2af313b7d3803bc8dcd2b4e077e427990002ccd80f30dec77b6571b6b67868aa
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 172ab37e0038b5659a4846678318a594936743d8977c132689ed84ea586898e9
+  tags: 2c8a5a145b085d223f3732117b9722243c260f5b89131d0212205589f8d00aaa
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:interiorization
+- topic:piaget
+- type.knowledge.atom
+- workspace.desk.atoms

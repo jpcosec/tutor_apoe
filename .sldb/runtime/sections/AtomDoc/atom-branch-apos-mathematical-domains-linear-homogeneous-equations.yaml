@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-mathematical-domains-linear-homogeneous-equations
+sections:
+- path: linear-homogeneous-equations
+  title: Linear Homogeneous Equations
+  breadcrumbs:
+  - Linear Homogeneous Equations
+  about:
+  - Linear Homogeneous Equations
+  - linear homogeneous equations
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: linear-homogeneous-equations
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: linear-homogeneous-equations/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Linear Homogeneous Equations
+  - Respuesta
+  about:
+  - Linear Homogeneous Equations
+  - linear homogeneous equations
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: linear-homogeneous-equations/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Linear Homogeneous Equations
+  - Procedencia
+  about:
+  - Linear Homogeneous Equations
+  - linear homogeneous equations
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: aa83c0c0a9b6e9d9581a3884628532d1ac92c7e150f996a675f8c052e0a8065f
+sections_version: '2'

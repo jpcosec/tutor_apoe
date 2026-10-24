@@ -1,0 +1,20 @@
+name: atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+path: desk/atoms/apos/mathematical-domains/groups/atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas.md
+source_hash: 7b69caef54659c190a596425c4968a57548d2dec3b7c44321009fb1b9781e125
+content_hash: 88aa503e7c66bb0e9ffeba72cbc082c9b4857aef4c6e5bbc33ae2dd31b89b7de
+field_hashes:
+  id: 630f179184d6b7b567cd70d38737dc6c963d9a9f329130c21a6dfb49e5d3c2ad
+  title: 539682656a50a2a54831f8e02b9a45db4eab4c59fe0d7fea3ce27d9822b64ee4
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: c75de3155072d5b9053bfe74b89c9ea136716f46f883fee99bcbd274afa53a16
+  tags: fec9cfb70577d14727df191d50c2de78b36ab9d057df5aff7a2b18671d784c65
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:groups
+- topic:schema
+- type.knowledge.atom
+- workspace.desk.atoms

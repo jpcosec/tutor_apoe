@@ -1,0 +1,57 @@
+id: deployment.modal-runtime
+title: Modal Deployment Runtime
+type: deployment
+version: "0.1"
+data:
+  nodes:
+    browser:
+      label: Browser (anonymous user)
+      kind: client
+      contains:
+        - chat_ui
+    modal:
+      label: Modal App (tutor-apoe-kb-chat-ui)
+      kind: server
+      contains:
+        - chat_api
+        - mesa_compiler
+        - pack_bundle
+    volume:
+      label: Modal Volume
+      kind: server
+      contains:
+        - sqlite_db
+    vertex:
+      label: Google Vertex AI
+      kind: server
+      contains:
+        - gemini_model
+  artifacts:
+    chat_ui:
+      label: Chat UI (index.html)
+      kind: frontend
+    chat_api:
+      label: FastAPI app (main.py)
+      kind: backend
+    mesa_compiler:
+      label: Mesa Compiler (table_compiler.py)
+      kind: backend
+    pack_bundle:
+      label: Knowledge pack (atoms.json + config)
+      kind: backend
+    sqlite_db:
+      label: kb_chat_ui.db
+      kind: database
+    gemini_model:
+      label: gemini-2.5-flash
+      kind: service
+  connections:
+    - from: chat_ui
+      to: chat_api
+      protocol: HTTPS
+    - from: chat_api
+      to: sqlite_db
+      protocol: file
+    - from: chat_api
+      to: gemini_model
+      protocol: HTTPS

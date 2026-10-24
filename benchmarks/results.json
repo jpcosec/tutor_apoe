@@ -1,0 +1,688 @@
+{
+  "k": 5,
+  "n_questions": 20,
+  "methods": {
+    "heuristic": {
+      "name": "heuristic",
+      "status": "ok",
+      "reason": null,
+      "per_question": [
+        {
+          "id": "q01-accion",
+          "top": [
+            "atom-action-requires-explicit-step-by-step-external-guidance",
+            "atom-action-is-a-core-mental-structure-in-apos",
+            "atom-interiorization-translates-material-actions-into-processes",
+            "atom-process-allows-mental-control-without-executing-each-step",
+            "atom-reversal-can-operate-after-de-encapsulation"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 1.32
+        },
+        {
+          "id": "q02-proceso",
+          "top": [
+            "atom-process-allows-mental-control-without-executing-each-step",
+            "atom-action-requires-explicit-step-by-step-external-guidance",
+            "atom-process-labels-should-serve-target-object-in-genetic-decomposition",
+            "atom-process-is-a-core-mental-structure-in-apos",
+            "atom-action-is-a-core-mental-structure-in-apos"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 1.12
+        },
+        {
+          "id": "q03-objeto",
+          "top": [
+            "atom-function-object-conception-supports-sets-operations-and-limits-of-functions",
+            "atom-object-is-a-core-mental-structure-in-apos",
+            "atom-process-labels-should-serve-target-object-in-genetic-decomposition",
+            "atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects",
+            "atom-totality-is-proposed-to-explain-difficulties-between-process-and-object"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 1.15
+        },
+        {
+          "id": "q04-esquema",
+          "top": [
+            "atom-schema-is-a-coherent-framework-of-linked-structures",
+            "atom-schema-is-a-core-mental-structure-in-apos",
+            "atom-thematization-turns-a-schema-into-an-object",
+            "atom-schema-coherence-determines-what-falls-within-its-scope",
+            "atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 1.12
+        },
+        {
+          "id": "q05-encapsulacion",
+          "top": [
+            "atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms",
+            "atom-encapsulation-treats-a-process-as-a-static-entity",
+            "atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs",
+            "atom-process-labels-should-serve-target-object-in-genetic-decomposition",
+            "atom-reversal-can-operate-after-de-encapsulation"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 1.17
+        },
+        {
+          "id": "q06-desencapsulacion",
+          "top": [
+            "atom-process-labels-should-serve-target-object-in-genetic-decomposition",
+            "atom-de-encapsulation-recovers-the-underlying-process-of-an-object",
+            "atom-homogeneous-linear-equation-example-links-linear-form-de-encapsulation-and-partial-reversal",
+            "atom-reversal-can-operate-after-de-encapsulation",
+            "atom-function-object-conception-supports-sets-operations-and-limits-of-functions"
+          ],
+          "first_hit_rank": 2,
+          "hit@1": 0,
+          "hit@k": 1,
+          "rr": 0.5,
+          "tag_hit@k": 1,
+          "latency_ms": 1.62
+        },
+        {
+          "id": "q07-totalidad",
+          "top": [
+            "atom-process-labels-should-serve-target-object-in-genetic-decomposition",
+            "atom-totality-is-proposed-to-explain-difficulties-between-process-and-object",
+            "atom-object-is-a-core-mental-structure-in-apos",
+            "atom-process-allows-mental-control-without-executing-each-step",
+            "atom-process-is-a-core-mental-structure-in-apos"
+          ],
+          "first_hit_rank": 2,
+          "hit@1": 0,
+          "hit@k": 1,
+          "rr": 0.5,
+          "tag_hit@k": 1,
+          "latency_ms": 1.19
+        },
+        {
+          "id": "q08-interiorizacion",
+          "top": [
+            "atom-process-is-a-core-mental-structure-in-apos",
+            "atom-process-labels-should-serve-target-object-in-genetic-decomposition",
+            "atom-process-allows-mental-control-without-executing-each-step",
+            "atom-action-is-a-core-mental-structure-in-apos",
+            "atom-action-requires-explicit-step-by-step-external-guidance"
+          ],
+          "first_hit_rank": null,
+          "hit@1": 0,
+          "hit@k": 0,
+          "rr": 0.0,
+          "tag_hit@k": 0,
+          "latency_ms": 1.14
+        },
+        {
+          "id": "q09-coordinacion",
+          "top": [
+            "atom-process-labels-should-serve-target-object-in-genetic-decomposition",
+            "atom-function-object-conception-supports-sets-operations-and-limits-of-functions",
+            "atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects",
+            "atom-object-is-a-core-mental-structure-in-apos",
+            "atom-process-allows-mental-control-without-executing-each-step"
+          ],
+          "first_hit_rank": null,
+          "hit@1": 0,
+          "hit@k": 0,
+          "rr": 0.0,
+          "tag_hit@k": 0,
+          "latency_ms": 1.09
+        },
+        {
+          "id": "q10-reversion",
+          "top": [
+            "atom-process-is-a-core-mental-structure-in-apos",
+            "atom-process-labels-should-serve-target-object-in-genetic-decomposition",
+            "atom-process-allows-mental-control-without-executing-each-step",
+            "atom-reversal-is-central-for-inverses-and-related-constructions",
+            "atom-apos-defines-four-core-mental-structures"
+          ],
+          "first_hit_rank": 4,
+          "hit@1": 0,
+          "hit@k": 1,
+          "rr": 0.25,
+          "tag_hit@k": 1,
+          "latency_ms": 1.11
+        },
+        {
+          "id": "q11-tematizacion",
+          "top": [
+            "atom-process-labels-should-serve-target-object-in-genetic-decomposition",
+            "atom-thematization-turns-a-schema-into-an-object",
+            "atom-object-is-a-core-mental-structure-in-apos",
+            "atom-schema-coherence-determines-what-falls-within-its-scope",
+            "atom-schema-is-a-coherent-framework-of-linked-structures"
+          ],
+          "first_hit_rank": 2,
+          "hit@1": 0,
+          "hit@k": 1,
+          "rr": 0.5,
+          "tag_hit@k": 1,
+          "latency_ms": 1.12
+        },
+        {
+          "id": "q12-descomposicion-genetica",
+          "top": [
+            "atom-genetic-decomposition-is-a-central-tool-in-apos",
+            "atom-genetic-decomposition-begins-as-a-preliminary-hypothesis",
+            "atom-genetic-decompositions-are-not-unique",
+            "atom-function-genetic-decomposition-begins-with-actions-on-elements",
+            "atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 1.4
+        },
+        {
+          "id": "q13-ciclo-ace",
+          "top": [
+            "atom-schema-coherence-determines-what-falls-within-its-scope",
+            "atom-homogeneous-linear-equation-example-links-linear-form-de-encapsulation-and-partial-reversal",
+            "atom-process-labels-should-serve-target-object-in-genetic-decomposition",
+            "atom-research-cycle-centers-on-two-evaluative-questions",
+            "atom-classroom-discussion-helps-students-reflect-on-activity-work"
+          ],
+          "first_hit_rank": null,
+          "hit@1": 0,
+          "hit@k": 0,
+          "rr": 0.0,
+          "tag_hit@k": 1,
+          "latency_ms": 1.28
+        },
+        {
+          "id": "q14-isetl",
+          "top": [
+            "atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting",
+            "atom-ace-cycle-is-the-main-apos-instructional-pattern",
+            "atom-computer-activities-support-interiorization-by-generalizing-specific-actions",
+            "atom-isetl-can-treat-certain-data-types-as-first-class-objects",
+            "atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction"
+          ],
+          "first_hit_rank": 5,
+          "hit@1": 0,
+          "hit@k": 1,
+          "rr": 0.2,
+          "tag_hit@k": 1,
+          "latency_ms": 1.24
+        },
+        {
+          "id": "q15-piaget-abstraccion-reflexiva",
+          "top": [
+            "atom-action-is-a-core-mental-structure-in-apos",
+            "atom-action-requires-explicit-step-by-step-external-guidance",
+            "atom-reflective-abstraction-is-a-foundational-idea-for-apos",
+            "atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures",
+            "atom-apos-book-derives-from-collaborative-authorship"
+          ],
+          "first_hit_rank": 3,
+          "hit@1": 0,
+          "hit@k": 1,
+          "rr": 0.3333333333333333,
+          "tag_hit@k": 1,
+          "latency_ms": 1.18
+        },
+        {
+          "id": "q16-rumec",
+          "top": [
+            "atom-apos-developed-through-recognizable-historical-periods",
+            "atom-apos-book-targets-researchers-teachers-and-graduate-students",
+            "atom-rumec-was-a-major-community-in-apos-development",
+            "atom-genetic-decomposition-begins-as-a-preliminary-hypothesis",
+            "atom-action-requires-explicit-step-by-step-external-guidance"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 1.19
+        },
+        {
+          "id": "q17-funciones",
+          "top": [
+            "atom-function-genetic-decomposition-begins-with-actions-on-elements",
+            "atom-genetic-decomposition-begins-as-a-preliminary-hypothesis",
+            "atom-genetic-decompositions-are-not-unique",
+            "atom-induction-genetic-decomposition-requires-function-and-logic-schemas",
+            "atom-cognitive-path-and-genetic-decomposition-are-not-the-same"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 1.16
+        },
+        {
+          "id": "q18-grupos",
+          "top": [
+            "atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas",
+            "atom-early-group-activities-develop-set-as-process",
+            "atom-apos-book-derives-from-collaborative-authorship",
+            "atom-apos-book-presents-framework-for-research-and-curriculum-development",
+            "atom-apos-is-a-constructivist-theory-of-learning-mathematics"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 1.18
+        },
+        {
+          "id": "q19-escuela-elemental",
+          "top": [
+            "atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi",
+            "atom-action-requires-explicit-step-by-step-external-guidance",
+            "atom-reversal-can-operate-after-de-encapsulation",
+            "atom-apos-has-applications-in-elementary-and-postsecondary-mathematics",
+            "atom-apos-research-uses-multiple-data-collection-modes"
+          ],
+          "first_hit_rank": 4,
+          "hit@1": 0,
+          "hit@k": 1,
+          "rr": 0.25,
+          "tag_hit@k": 1,
+          "latency_ms": 1.32
+        },
+        {
+          "id": "q20-paradigma-investigacion",
+          "top": [
+            "atom-apos-book-targets-researchers-teachers-and-graduate-students",
+            "atom-apos-is-a-constructivist-theory-of-learning-mathematics",
+            "atom-reversal-can-operate-after-de-encapsulation",
+            "atom-action-requires-explicit-step-by-step-external-guidance",
+            "atom-annotated-bibliography-materializes-the-breadth-of-apos-research"
+          ],
+          "first_hit_rank": null,
+          "hit@1": 0,
+          "hit@k": 0,
+          "rr": 0.0,
+          "tag_hit@k": 0,
+          "latency_ms": 1.18
+        }
+      ],
+      "metrics": {
+        "hit@1": 0.45,
+        "hit@5": 0.8,
+        "mrr": 0.5766666666666667,
+        "tag_hit@5": 0.85,
+        "latency_ms": 1.214
+      }
+    },
+    "embed": {
+      "name": "embed",
+      "status": "ok",
+      "reason": null,
+      "per_question": [
+        {
+          "id": "q01-accion",
+          "top": [
+            "atom-action-requires-explicit-step-by-step-external-guidance",
+            "atom-apos-book-targets-researchers-teachers-and-graduate-students",
+            "atom-apos-is-a-constructivist-theory-of-learning-mathematics",
+            "atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one",
+            "atom-process-labels-should-serve-target-object-in-genetic-decomposition"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 12.86
+        },
+        {
+          "id": "q02-proceso",
+          "top": [
+            "atom-totality-is-proposed-to-explain-difficulties-between-process-and-object",
+            "atom-de-encapsulation-recovers-the-underlying-process-of-an-object",
+            "atom-writing-computer-procedures-can-help-students-move-from-action-to-process",
+            "atom-process-labels-should-serve-target-object-in-genetic-decomposition",
+            "atom-reversal-can-operate-after-de-encapsulation"
+          ],
+          "first_hit_rank": null,
+          "hit@1": 0,
+          "hit@k": 0,
+          "rr": 0.0,
+          "tag_hit@k": 1,
+          "latency_ms": 6.22
+        },
+        {
+          "id": "q03-objeto",
+          "top": [
+            "atom-function-object-conception-supports-sets-operations-and-limits-of-functions",
+            "atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one",
+            "atom-totality-is-proposed-to-explain-difficulties-between-process-and-object",
+            "atom-transforming-computer-procedures-can-help-students-move-from-process-to-object",
+            "atom-genetic-decomposition-is-a-central-tool-in-apos"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 5.85
+        },
+        {
+          "id": "q04-esquema",
+          "top": [
+            "atom-schema-coherence-determines-what-falls-within-its-scope",
+            "atom-thematization-turns-a-schema-into-an-object",
+            "atom-schema-is-a-core-mental-structure-in-apos",
+            "atom-schema-development-in-apos-uses-the-intra-inter-trans-triad",
+            "atom-apos-developed-through-recognizable-historical-periods"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 5.94
+        },
+        {
+          "id": "q05-encapsulacion",
+          "top": [
+            "atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms",
+            "atom-encapsulation-treats-a-process-as-a-static-entity",
+            "atom-transforming-computer-procedures-can-help-students-move-from-process-to-object",
+            "atom-function-object-conception-supports-sets-operations-and-limits-of-functions",
+            "atom-de-encapsulation-recovers-the-underlying-process-of-an-object"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 5.06
+        },
+        {
+          "id": "q06-desencapsulacion",
+          "top": [
+            "atom-de-encapsulation-recovers-the-underlying-process-of-an-object",
+            "atom-transforming-computer-procedures-can-help-students-move-from-process-to-object",
+            "atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one",
+            "atom-encapsulation-treats-a-process-as-a-static-entity",
+            "atom-reversal-can-operate-after-de-encapsulation"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 4.81
+        },
+        {
+          "id": "q07-totalidad",
+          "top": [
+            "atom-infinite-processes-make-the-process-to-object-transition-especially-difficult",
+            "atom-totality-is-proposed-to-explain-difficulties-between-process-and-object",
+            "atom-transforming-computer-procedures-can-help-students-move-from-process-to-object",
+            "atom-encapsulation-treats-a-process-as-a-static-entity",
+            "atom-thematization-turns-a-schema-into-an-object"
+          ],
+          "first_hit_rank": 2,
+          "hit@1": 0,
+          "hit@k": 1,
+          "rr": 0.5,
+          "tag_hit@k": 1,
+          "latency_ms": 5.75
+        },
+        {
+          "id": "q08-interiorizacion",
+          "top": [
+            "atom-interiorization-translates-material-actions-into-processes",
+            "atom-process-is-a-core-mental-structure-in-apos",
+            "atom-process-allows-mental-control-without-executing-each-step",
+            "atom-object-is-a-core-mental-structure-in-apos",
+            "atom-isetl-supports-function-as-input-output-and-transformable-entity"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 5.11
+        },
+        {
+          "id": "q09-coordinacion",
+          "top": [
+            "atom-coordination-combines-processes-to-build-new-objects-or-processes",
+            "atom-infinite-processes-make-the-process-to-object-transition-especially-difficult",
+            "atom-reversal-is-central-for-inverses-and-related-constructions",
+            "atom-reversal-can-operate-after-de-encapsulation",
+            "atom-thematization-turns-a-schema-into-an-object"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 5.37
+        },
+        {
+          "id": "q10-reversion",
+          "top": [
+            "atom-reversal-is-central-for-inverses-and-related-constructions",
+            "atom-reversal-can-operate-after-de-encapsulation",
+            "atom-apos-interviews-use-prompting-to-probe-construction-in-progress",
+            "atom-transforming-computer-procedures-can-help-students-move-from-process-to-object",
+            "atom-stages-and-levels-organize-developmental-analysis-in-apos"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 5.58
+        },
+        {
+          "id": "q11-tematizacion",
+          "top": [
+            "atom-thematization-turns-a-schema-into-an-object",
+            "atom-infinite-processes-make-the-process-to-object-transition-especially-difficult",
+            "atom-de-encapsulation-recovers-the-underlying-process-of-an-object",
+            "atom-induction-genetic-decomposition-requires-function-and-logic-schemas",
+            "atom-schema-is-a-core-mental-structure-in-apos"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 5.79
+        },
+        {
+          "id": "q12-descomposicion-genetica",
+          "top": [
+            "atom-genetic-decomposition-is-a-central-tool-in-apos",
+            "atom-genetic-decompositions-are-not-unique",
+            "atom-genetic-decomposition-begins-as-a-preliminary-hypothesis",
+            "atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences",
+            "atom-cognitive-path-and-genetic-decomposition-are-not-the-same"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 5.31
+        },
+        {
+          "id": "q13-ciclo-ace",
+          "top": [
+            "atom-ace-cycle-is-the-main-apos-instructional-pattern",
+            "atom-exercises-reinforce-constructions-from-activities-and-discussion",
+            "atom-schema-coherence-determines-what-falls-within-its-scope",
+            "atom-isetl-supports-function-as-input-output-and-transformable-entity",
+            "atom-computer-activities-support-interiorization-by-generalizing-specific-actions"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 6.22
+        },
+        {
+          "id": "q14-isetl",
+          "top": [
+            "atom-textbook-analysis-can-inform-preliminary-genetic-decompositions",
+            "atom-early-group-activities-develop-set-as-process",
+            "atom-classroom-discussion-helps-students-reflect-on-activity-work",
+            "atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction",
+            "atom-ace-cycle-is-the-main-apos-instructional-pattern"
+          ],
+          "first_hit_rank": 4,
+          "hit@1": 0,
+          "hit@k": 1,
+          "rr": 0.25,
+          "tag_hit@k": 1,
+          "latency_ms": 5.53
+        },
+        {
+          "id": "q15-piaget-abstraccion-reflexiva",
+          "top": [
+            "atom-reflective-abstraction-is-a-foundational-idea-for-apos",
+            "atom-reflective-abstraction-has-reflection-and-reorganization-components",
+            "atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting",
+            "atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures",
+            "atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 4.76
+        },
+        {
+          "id": "q16-rumec",
+          "top": [
+            "atom-apos-developed-through-recognizable-historical-periods",
+            "atom-a-stage-cannot-be-skipped-without-loss-of-coherence",
+            "atom-repeating-decimals-and-infinity-are-key-sites-for-totality",
+            "atom-apos-research-uses-multiple-data-collection-modes",
+            "atom-apos-is-a-constructivist-theory-of-learning-mathematics"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 4.94
+        },
+        {
+          "id": "q17-funciones",
+          "top": [
+            "atom-genetic-decompositions-are-not-unique",
+            "atom-span-construction-starts-from-actions-on-linear-combinations",
+            "atom-cognitive-path-and-genetic-decomposition-are-not-the-same",
+            "atom-theoretical-models-increase-reliability-of-data-analysis",
+            "atom-historical-development-can-inform-genetic-decomposition-design"
+          ],
+          "first_hit_rank": null,
+          "hit@1": 0,
+          "hit@k": 0,
+          "rr": 0.0,
+          "tag_hit@k": 0,
+          "latency_ms": 5.1
+        },
+        {
+          "id": "q18-grupos",
+          "top": [
+            "atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas",
+            "atom-apos-book-presents-framework-for-research-and-curriculum-development",
+            "atom-genetic-decompositions-are-not-unique",
+            "atom-genetic-decomposition-may-include-prerequisites-and-performance-differences",
+            "atom-early-group-activities-develop-set-as-process"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 5.38
+        },
+        {
+          "id": "q19-escuela-elemental",
+          "top": [
+            "atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs",
+            "atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms",
+            "atom-transforming-computer-procedures-can-help-students-move-from-process-to-object",
+            "atom-levels-may-appear-or-not-appear-in-observable-data",
+            "atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one"
+          ],
+          "first_hit_rank": null,
+          "hit@1": 0,
+          "hit@k": 0,
+          "rr": 0.0,
+          "tag_hit@k": 0,
+          "latency_ms": 5.63
+        },
+        {
+          "id": "q20-paradigma-investigacion",
+          "top": [
+            "atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm",
+            "atom-apos-book-targets-researchers-teachers-and-graduate-students",
+            "atom-apos-is-a-constructivist-theory-of-learning-mathematics",
+            "atom-apos-developed-through-recognizable-historical-periods",
+            "atom-apos-book-presents-framework-for-research-and-curriculum-development"
+          ],
+          "first_hit_rank": 1,
+          "hit@1": 1,
+          "hit@k": 1,
+          "rr": 1.0,
+          "tag_hit@k": 1,
+          "latency_ms": 4.83
+        }
+      ],
+      "metrics": {
+        "hit@1": 0.75,
+        "hit@5": 0.85,
+        "mrr": 0.7875,
+        "tag_hit@5": 0.9,
+        "latency_ms": 5.802
+      }
+    },
+    "jev": {
+      "name": "jev",
+      "status": "skipped",
+      "reason": "sin TYPESAFE_API_KEY en el entorno",
+      "per_question": [],
+      "metrics": {}
+    },
+    "jev_tree": {
+      "name": "jev_tree",
+      "status": "skipped",
+      "reason": "sin TYPESAFE_API_KEY en el entorno",
+      "per_question": [],
+      "metrics": {}
+    }
+  }
+}

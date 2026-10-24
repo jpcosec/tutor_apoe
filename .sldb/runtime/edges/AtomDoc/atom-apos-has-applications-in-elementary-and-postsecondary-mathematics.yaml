@@ -1,0 +1,679 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+    name: atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+    model: AtomDoc
+    path: desk/atoms/apos/applications/elementary-math/atom-apos-has-applications-in-elementary-and-postsecondary-mathematics.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: 66e979cb4ce8095af971922a58d49a5d2fe359badf5821c12e57cb064271c36f
+    hash_d: 0ba1dfb7cb1e10f55113fdf3451a05cbc2c8b25e78b02f946ba12f5a12ecbf3c
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#atom-xxx-unique-identifier
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#atom-xxx-unique-identifier
+    document_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+    path: atom-xxx-unique-identifier
+    title: atom-xxx, unique identifier
+    breadcrumbs:
+    - atom-xxx, unique identifier
+    about:
+    - atom-xxx, unique identifier
+    - atom xxx unique identifier
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: atom-xxx-unique-identifier
+    level: 1
+    line_start: 2
+    line_end: 3
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#short-descriptive-title
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#short-descriptive-title
+    document_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+    path: short-descriptive-title
+    title: Short, descriptive title
+    breadcrumbs:
+    - Short, descriptive title
+    about:
+    - Short, descriptive title
+    - short descriptive title
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: short-descriptive-title
+    level: 1
+    line_start: 4
+    line_end: 5
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#what-why-how-how-not-when-where-for-whom
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#what-why-how-how-not-when-where-for-whom
+    document_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+    path: what-why-how-how-not-when-where-for-whom
+    title: what | why | how | how_not | when | where | for_whom
+    breadcrumbs:
+    - what | why | how | how_not | when | where | for_whom
+    about:
+    - what | why | how | how_not | when | where | for_whom
+    - what why how how not when where for whom
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: what-why-how-how-not-when-where-for-whom
+    level: 1
+    line_start: 6
+    line_end: 7
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#e-g-system-deskops-topic-templates
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#e-g-system-deskops-topic-templates
+    document_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+    path: e-g-system-deskops-topic-templates
+    title: e.g., system:deskops, topic:templates
+    breadcrumbs:
+    - e.g., system:deskops, topic:templates
+    about:
+    - e.g., system:deskops, topic:templates
+    - e g system deskops topic templates
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: e-g-system-deskops-topic-templates
+    level: 1
+    line_start: 8
+    line_end: 17
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria
+    document_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+    path: apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria
+    title: APOS tiene aplicaciones en matemática escolar y postsecundaria
+    breadcrumbs:
+    - APOS tiene aplicaciones en matemática escolar y postsecundaria
+    about:
+    - APOS tiene aplicaciones en matemática escolar y postsecundaria
+    - apos tiene aplicaciones en matem tica escolar y postsecundaria
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria
+    level: 1
+    line_start: 18
+    line_end: 26
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/respuesta
+    document_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+    path: apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - APOS tiene aplicaciones en matemática escolar y postsecundaria
+    - Respuesta
+    about:
+    - APOS tiene aplicaciones en matemática escolar y postsecundaria
+    - apos tiene aplicaciones en matem tica escolar y postsecundaria
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 20
+    line_end: 23
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/procedencia
+    document_id: AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+    path: apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - APOS tiene aplicaciones en matemática escolar y postsecundaria
+    - Procedencia
+    about:
+    - APOS tiene aplicaciones en matemática escolar y postsecundaria
+    - apos tiene aplicaciones en matem tica escolar y postsecundaria
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:school-levels
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 24
+    line_end: 26
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:applications
+  node_type: semantic_tag
+  semantics:
+    tag: layer:applications
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:school-levels
+  node_type: semantic_tag
+  semantics:
+    tag: topic:school-levels
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#atom-xxx-unique-identifier
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#short-descriptive-title
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#what-why-how-how-not-when-where-for-whom
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#e-g-system-deskops-topic-templates
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://semantic_tag/topic:school-levels
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:school-levels
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/topic:school-levels
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#short-descriptive-title
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:school-levels
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:school-levels
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria
+  target: sldb://semantic_tag/topic:school-levels
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/respuesta
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/respuesta
+  target: sldb://semantic_tag/topic:school-levels
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/procedencia
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/procedencia
+  target: sldb://semantic_tag/topic:school-levels
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-has-applications-in-elementary-and-postsecondary-mathematics#apos-tiene-aplicaciones-en-matem-tica-escolar-y-postsecundaria/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+model_name: AtomDoc
+source_hash: 66e979cb4ce8095af971922a58d49a5d2fe359badf5821c12e57cb064271c36f
+content_hash: 0ba1dfb7cb1e10f55113fdf3451a05cbc2c8b25e78b02f946ba12f5a12ecbf3c
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:school-levels
+- type.knowledge.atom
+- workspace.desk.atoms

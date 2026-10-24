@@ -1,0 +1,20 @@
+name: atom-ace-cycle-is-the-main-apos-instructional-pattern
+path: desk/atoms/apos/pedagogy/ace-cycle/atom-ace-cycle-is-the-main-apos-instructional-pattern.md
+source_hash: bf1c429772ebbb8064e411bc992fcdeaca36a0b9c1dbd3dbd4a60307f4ab5b2a
+content_hash: e127a841b2b1fbc01c50e5d715415275870ff10000ac217d38335d7d8c95367e
+field_hashes:
+  id: 27d666b42f3c24b5e325298d3cdaf7bb22a5a430c1f023ae371d1dac2a487b75
+  title: d1910693bd98c58254ee6776fa76e9adace1a06ed28967db1798066d83e4ec98
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: efce6fee22d0d5fc5d01005d247b5ad83eafc02315ce2d61f68c1faa460f2f7a
+  tags: e954f8aa7a3d79354cf71954b07cc4347d858ba5016f65bc1702a1dcc06802af
+semantic_tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:ace-cycle
+- topic:instruction
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,20 @@
+name: atom-stages-and-levels-organize-developmental-analysis-in-apos
+path: desk/atoms/apos/mechanisms/stages/atom-stages-and-levels-organize-developmental-analysis-in-apos.md
+source_hash: bc17d81ec3eefaac0ac64f48234e156a665d385ec0db1930b32044536d2cb095
+content_hash: 8c606a6631c830f2b17dd217f6fa8a7f3e4596d5ddfaa8c0325a2d5c37ac6d25
+field_hashes:
+  id: 11f37b6a70641646b34eb9436e4a52b36885a605da995df5a78ceaa7108139bf
+  title: 1f89a69fe19e51ff566fbbe2166e9bd6dea3eeea70fe5041d86971319cc1dae7
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 602118cf3b07b827babc703a848ec418b12dde2ec37460f4df2175fa46c6732c
+  tags: b6305c21efabddd5ebc15c22ba4b7839e8efdb8ad6c523c4d7ca75a61c4e0deb
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:levels
+- topic:stages
+- type.knowledge.atom
+- workspace.desk.atoms

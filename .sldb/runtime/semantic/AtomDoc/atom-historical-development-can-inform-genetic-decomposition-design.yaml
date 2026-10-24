@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/genetic-decomposition/design/atom-historical-development-can-inform-genetic-decomposition-design.md
+tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:genetic-decomposition
+- topic:history
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 5feded3781b3b07e01d88108b542ebd5c61a2c5940d42ffc67b5fedba0d86c8d

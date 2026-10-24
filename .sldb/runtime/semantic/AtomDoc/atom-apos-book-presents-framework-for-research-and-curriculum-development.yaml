@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/sources/apos-theory-book/purpose/atom-apos-book-presents-framework-for-research-and-curriculum-development.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:framework
+- topic:source-book
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 00a385b7609baf44db6d261a1aeb18ce00cde8263974988567e65026c4de4efb

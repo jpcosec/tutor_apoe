@@ -1,0 +1,19 @@
+name: atom-schema-is-a-coherent-framework-of-linked-structures
+path: desk/atoms/apos/core-structures/schema/atom-schema-is-a-coherent-framework-of-linked-structures.md
+source_hash: a30b2613dfa1b0df0822a07c12f8eff471238239eb383c422fef2b2d52ba4285
+content_hash: 0616c2f337a64a3d8e9bfb15f6565a0ac24712947784ef5ef7b11a58cbc44165
+field_hashes:
+  id: 1807dc1d5258798e9973387c85599b2b0889e7db40d2df435d37e728e64cc854
+  title: a0f3e05c96023aa651895c60f150e58e13f7e7bb0706f986faefe91c41c75c33
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: eb0a234ba65b4027f66a54ab7cadf019d792d6270f802e1a050f8c9b54ced587
+  tags: b275b5443c0da5ffb5493cbb9c35e449157b3c9361501017a566a1d6bc8b9a3f
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:schema
+- type.knowledge.atom
+- workspace.desk.atoms

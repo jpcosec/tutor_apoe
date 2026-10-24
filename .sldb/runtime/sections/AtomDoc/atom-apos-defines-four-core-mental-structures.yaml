@@ -1,0 +1,220 @@
+doc_name: atom-apos-defines-four-core-mental-structures
+sections:
+- path: atom-xxx-unique-identifier
+  title: atom-xxx, unique identifier
+  breadcrumbs:
+  - atom-xxx, unique identifier
+  about:
+  - atom-xxx, unique identifier
+  - atom xxx unique identifier
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:apos
+  - topic:core-structures
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:apos
+  - topic:core-structures
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: atom-xxx-unique-identifier
+  level: 1
+  line_start: 2
+  line_end: 3
+- path: short-descriptive-title
+  title: Short, descriptive title
+  breadcrumbs:
+  - Short, descriptive title
+  about:
+  - Short, descriptive title
+  - short descriptive title
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:apos
+  - topic:core-structures
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:apos
+  - topic:core-structures
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: short-descriptive-title
+  level: 1
+  line_start: 4
+  line_end: 5
+- path: what-why-how-how-not-when-where-for-whom
+  title: what | why | how | how_not | when | where | for_whom
+  breadcrumbs:
+  - what | why | how | how_not | when | where | for_whom
+  about:
+  - what | why | how | how_not | when | where | for_whom
+  - what why how how not when where for whom
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:apos
+  - topic:core-structures
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:apos
+  - topic:core-structures
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: what-why-how-how-not-when-where-for-whom
+  level: 1
+  line_start: 6
+  line_end: 7
+- path: e-g-system-deskops-topic-templates
+  title: e.g., system:deskops, topic:templates
+  breadcrumbs:
+  - e.g., system:deskops, topic:templates
+  about:
+  - e.g., system:deskops, topic:templates
+  - e g system deskops topic templates
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:apos
+  - topic:core-structures
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:apos
+  - topic:core-structures
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: e-g-system-deskops-topic-templates
+  level: 1
+  line_start: 8
+  line_end: 18
+- path: apos-define-cuatro-estructuras-mentales-centrales
+  title: APOS define cuatro estructuras mentales centrales
+  breadcrumbs:
+  - APOS define cuatro estructuras mentales centrales
+  about:
+  - APOS define cuatro estructuras mentales centrales
+  - apos define cuatro estructuras mentales centrales
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:apos
+  - topic:core-structures
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:apos
+  - topic:core-structures
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: apos-define-cuatro-estructuras-mentales-centrales
+  level: 1
+  line_start: 19
+  line_end: 27
+- path: apos-define-cuatro-estructuras-mentales-centrales/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - APOS define cuatro estructuras mentales centrales
+  - Respuesta
+  about:
+  - APOS define cuatro estructuras mentales centrales
+  - apos define cuatro estructuras mentales centrales
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:apos
+  - topic:core-structures
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:apos
+  - topic:core-structures
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 21
+  line_end: 24
+- path: apos-define-cuatro-estructuras-mentales-centrales/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - APOS define cuatro estructuras mentales centrales
+  - Procedencia
+  about:
+  - APOS define cuatro estructuras mentales centrales
+  - apos define cuatro estructuras mentales centrales
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:apos
+  - topic:core-structures
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:apos
+  - topic:core-structures
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 25
+  line_end: 27
+source_hash: 49fc8365697b0158acab91320775c35e7c5ed5d79d9cf116c87d3a5f358c03a3
+sections_version: '2'

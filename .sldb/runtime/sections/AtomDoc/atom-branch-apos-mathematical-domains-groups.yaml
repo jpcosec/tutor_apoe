@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-mathematical-domains-groups
+sections:
+- path: groups
+  title: Groups
+  breadcrumbs:
+  - Groups
+  about:
+  - Groups
+  - groups
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: groups
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: groups/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Groups
+  - Respuesta
+  about:
+  - Groups
+  - groups
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: groups/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Groups
+  - Procedencia
+  about:
+  - Groups
+  - groups
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: d032c4e1dd541df0f30a2a6e63ed5a7546d2b78f4e84f2eabae54949e841303e
+sections_version: '2'

@@ -1,0 +1,19 @@
+name: atom-apos-uses-specific-mechanisms-to-explain-construction
+path: desk/atoms/apos/mechanisms/interiorization/atom-apos-uses-specific-mechanisms-to-explain-construction.md
+source_hash: 91345633af3a3926add849d6e387bfa318067bb0f17f8852782571becff32aa2
+content_hash: b2f6efe07d81c512627678a444d3ea6f643c7971148ea9bfba6e4e4276dfad45
+field_hashes:
+  id: d6d95a1585f3ba4fbcb13a1dd62917fd5178d83fd89eaea6b3eef0b8ce017238
+  title: 6a6d8b03895a77c6ed5c35d773d0aff572bbb364797a05a537f160cb27052ae0
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 01e2c42133cb080ff15dfaad3bd608600b1289ecb184cebebd79414af5fe659c
+  tags: af43ea68cb3dc23384bbb0b00eb65c6294acf237faecf6d789ba33eac12d7a16
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:mechanisms
+- type.knowledge.atom
+- workspace.desk.atoms

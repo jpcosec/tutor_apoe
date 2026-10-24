@@ -1,0 +1,19 @@
+# Lo que esta KB declara de sí misma (contrato kb_version 1, lo lee runtime/kb).
+# Generado por `python -m tutor.kb_build`; no editar a mano.
+kb:
+  name: apos
+  kb_version: 1
+  models: kb_models
+  pythonpath: ..
+  categories: required
+  materialize:
+    order:
+    - knowledge
+    - sources
+    - taxonomy
+  index:
+    models:
+    - KnowledgeAtom
+    text: fields:answer
+    text_id: answer
+    embedder_id: hash:char-ngram-256

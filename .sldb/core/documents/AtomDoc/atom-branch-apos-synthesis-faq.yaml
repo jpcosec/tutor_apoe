@@ -1,0 +1,18 @@
+name: atom-branch-apos-synthesis-faq
+path: desk/atoms/branches/atom-branch-apos-synthesis-faq.md
+source_hash: cdf026158a292f4cfa88a962d59a036c375195e067780253c4ecf72677a75b46
+content_hash: 9e5c65d940b5d8faa57d3cb294412a9613d47da773632cff16635dad359b6f6f
+field_hashes:
+  id: 40457b1d940cf0114327764a16e349c8f3afba215b432f18910de16abd29522c
+  title: 6d4a048ec69380c4d3b1c24a7bfbf1f60b998267c0cc2d1d8890d59fe235c2bf
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

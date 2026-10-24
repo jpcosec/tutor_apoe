@@ -1,0 +1,18 @@
+name: atom-branch-apos-research-research-cycle
+path: desk/atoms/branches/atom-branch-apos-research-research-cycle.md
+source_hash: 8996d5dd7edf72d37fd4ec76690e64b36371df1ee9c6691a879db98d363491db
+content_hash: 9ccc237caac788f5b0b5fdb82d7b052e1d10275bdfd9a22bebca4a16e5bbdf85
+field_hashes:
+  id: 924e20e19ff5541c285d0a034ebc421d957c8302f0e7e21bcc0a3895168e85ec
+  title: ca7e2ff7e945ada69124b659f152a71019b82d9440aa480e506662f325af3d10
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

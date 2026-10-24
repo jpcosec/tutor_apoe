@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/mathematical-domains/repeating-decimals/atom-process-language-about-repeating-decimals-can-block-object-construction.md
+tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:process-language
+- topic:repeating-decimals
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 1d5440d1c49a0d43b9173c53a5a830cd86c786bf1b406b286b414c15b438de2f

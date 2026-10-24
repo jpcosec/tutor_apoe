@@ -3,7 +3,10 @@ model_ref: knowledge_models:KnowledgeAtomDoc
 path: knowledge_models/docs.py
 documents_index: .sldb/core/documents/KnowledgeAtomDoc.yaml
 sections_index: ''
-hash_b: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+model_hash: 3165aa561e49a1dea56e17db2928ea02648351f95c2d3bd28afedb3a60757b33
+roster_hash: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+contract_hash: 9dfe309a6c36cc66eb3cf499d0c1c67d8a97c108b772beed179c7da327e1c159
+documents_count: 0
 version: 1
 canonical: false
 family: null

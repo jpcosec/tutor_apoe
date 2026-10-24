@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/mechanisms/levels/atom-levels-may-appear-or-not-appear-in-observable-data.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:levels
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: eab953f06d63f58f0624a23076fea868ac941a9969b2bca68ca38bd958726d23

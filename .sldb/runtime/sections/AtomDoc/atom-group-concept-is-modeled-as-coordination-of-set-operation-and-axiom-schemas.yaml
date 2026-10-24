@@ -1,0 +1,110 @@
+doc_name: atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+sections:
+- path: el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+  title: El concepto de grupo se modela como coordinación de los esquemas de conjunto,
+    operación binaria y axioma
+  breadcrumbs:
+  - El concepto de grupo se modela como coordinación de los esquemas de conjunto,
+    operación binaria y axioma
+  about:
+  - El concepto de grupo se modela como coordinación de los esquemas de conjunto,
+    operación binaria y axioma
+  - el concepto de grupo se modela como coordinaci n de los esquemas de conjunto operaci
+    n binaria y axioma
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:groups
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:groups
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+  level: 1
+  line_start: 15
+  line_end: 23
+- path: el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - El concepto de grupo se modela como coordinación de los esquemas de conjunto,
+    operación binaria y axioma
+  - Respuesta
+  about:
+  - El concepto de grupo se modela como coordinación de los esquemas de conjunto,
+    operación binaria y axioma
+  - el concepto de grupo se modela como coordinaci n de los esquemas de conjunto operaci
+    n binaria y axioma
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:groups
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:groups
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 17
+  line_end: 20
+- path: el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - El concepto de grupo se modela como coordinación de los esquemas de conjunto,
+    operación binaria y axioma
+  - Procedencia
+  about:
+  - El concepto de grupo se modela como coordinación de los esquemas de conjunto,
+    operación binaria y axioma
+  - el concepto de grupo se modela como coordinaci n de los esquemas de conjunto operaci
+    n binaria y axioma
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:groups
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:groups
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 21
+  line_end: 23
+source_hash: 7b69caef54659c190a596425c4968a57548d2dec3b7c44321009fb1b9781e125
+sections_version: '2'

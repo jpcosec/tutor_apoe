@@ -1,0 +1,206 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://model/SourceNoteDoc
+  node_type: sldb_model
+  semantics:
+    name: SourceNoteDoc
+    model_ref: knowledge_models:SourceNoteDoc
+    path: knowledge_models/docs.py
+    version: 1
+    canonical: false
+    family: null
+    semantic_tags:
+    - type.knowledge.source-note
+    - workspace.knowledge.source-notes
+    base_models: []
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.source-note
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.source-note
+  facets: {}
+- id: sldb://semantic_tag/workspace.knowledge.source-notes
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.knowledge.source-notes
+  facets: {}
+- id: sldb://field/SourceNoteDoc.id
+  node_type: sldb_field
+  semantics:
+    name: id
+    kind: string
+    required: true
+    model: SourceNoteDoc
+    description: Identificador estable de la nota fuente.
+  facets: {}
+- id: sldb://field/SourceNoteDoc.title
+  node_type: sldb_field
+  semantics:
+    name: title
+    kind: string
+    required: true
+    model: SourceNoteDoc
+    description: Título corto de la nota fuente.
+  facets: {}
+- id: sldb://field/SourceNoteDoc.source_path
+  node_type: sldb_field
+  semantics:
+    name: source_path
+    kind: string
+    required: true
+    model: SourceNoteDoc
+    description: Ruta al documento fuente dentro del repositorio.
+  facets: {}
+- id: sldb://field/SourceNoteDoc.source_title
+  node_type: sldb_field
+  semantics:
+    name: source_title
+    kind: string
+    required: true
+    model: SourceNoteDoc
+    description: Título corto de la fuente.
+  facets: {}
+- id: sldb://field/SourceNoteDoc.chapter
+  node_type: sldb_field
+  semantics:
+    name: chapter
+    kind: string
+    required: false
+    model: SourceNoteDoc
+    description: Capítulo de la fuente, si aplica.
+  facets: {}
+- id: sldb://field/SourceNoteDoc.section
+  node_type: sldb_field
+  semantics:
+    name: section
+    kind: string
+    required: false
+    model: SourceNoteDoc
+    description: Sección de la fuente, si aplica.
+  facets: {}
+- id: sldb://field/SourceNoteDoc.page_start
+  node_type: sldb_field
+  semantics:
+    name: page_start
+    kind: integer
+    required: false
+    model: SourceNoteDoc
+    description: Página inicial relevante.
+  facets: {}
+- id: sldb://field/SourceNoteDoc.page_end
+  node_type: sldb_field
+  semantics:
+    name: page_end
+    kind: integer
+    required: false
+    model: SourceNoteDoc
+    description: Página final relevante.
+  facets: {}
+- id: sldb://field/SourceNoteDoc.anchor_text
+  node_type: sldb_field
+  semantics:
+    name: anchor_text
+    kind: string
+    required: true
+    model: SourceNoteDoc
+    description: Texto ancla para llegar al párrafo de origen.
+  facets: {}
+- id: sldb://field/SourceNoteDoc.excerpt
+  node_type: sldb_field
+  semantics:
+    name: excerpt
+    kind: string
+    required: true
+    model: SourceNoteDoc
+    description: Extracto breve del texto fuente que sostiene la nota.
+  facets: {}
+- id: sldb://field/SourceNoteDoc.note
+  node_type: sldb_field
+  semantics:
+    name: note
+    kind: string
+    required: true
+    model: SourceNoteDoc
+    description: Nota estructurada derivada del fragmento fuente.
+  facets: {}
+- id: sldb://field/SourceNoteDoc.tags
+  node_type: sldb_field
+  semantics:
+    name: tags
+    kind: list
+    required: false
+    model: SourceNoteDoc
+    description: Etiquetas semánticas para agrupación y búsqueda.
+  facets: {}
+edges:
+- source: sldb://model/SourceNoteDoc
+  target: sldb://semantic_tag/type.knowledge.source-note
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/SourceNoteDoc
+  target: sldb://semantic_tag/workspace.knowledge.source-notes
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/SourceNoteDoc
+  target: sldb://field/SourceNoteDoc.id
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/SourceNoteDoc
+  target: sldb://field/SourceNoteDoc.title
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/SourceNoteDoc
+  target: sldb://field/SourceNoteDoc.source_path
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/SourceNoteDoc
+  target: sldb://field/SourceNoteDoc.source_title
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/SourceNoteDoc
+  target: sldb://field/SourceNoteDoc.chapter
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/SourceNoteDoc
+  target: sldb://field/SourceNoteDoc.section
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/SourceNoteDoc
+  target: sldb://field/SourceNoteDoc.page_start
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/SourceNoteDoc
+  target: sldb://field/SourceNoteDoc.page_end
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/SourceNoteDoc
+  target: sldb://field/SourceNoteDoc.anchor_text
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/SourceNoteDoc
+  target: sldb://field/SourceNoteDoc.excerpt
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/SourceNoteDoc
+  target: sldb://field/SourceNoteDoc.note
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/SourceNoteDoc
+  target: sldb://field/SourceNoteDoc.tags
+  relation: has_field
+  metadata:
+    origin: schema
+model_name: SourceNoteDoc

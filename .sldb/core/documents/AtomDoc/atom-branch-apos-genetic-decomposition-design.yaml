@@ -1,0 +1,18 @@
+name: atom-branch-apos-genetic-decomposition-design
+path: desk/atoms/branches/atom-branch-apos-genetic-decomposition-design.md
+source_hash: 902eb3d31c1621e220d75dd65a948a0442376c24bfca952d7dff5ff5d80e3afb
+content_hash: 3759ecef61821b1ea5c7728204e389d3cb6e26e16de80cdb1455c80fe5e15725
+field_hashes:
+  id: ab525b0b58668c62ec47347a7d3a959b2a99a377019f85e79a9733a1b7d18f0e
+  title: 28273887a8e4c0b1bd90265f97557b0ba7d70ff83832943b5edd2f8c32ba552f
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

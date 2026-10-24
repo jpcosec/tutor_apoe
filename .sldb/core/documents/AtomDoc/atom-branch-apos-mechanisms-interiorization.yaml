@@ -1,0 +1,18 @@
+name: atom-branch-apos-mechanisms-interiorization
+path: desk/atoms/branches/atom-branch-apos-mechanisms-interiorization.md
+source_hash: 97828cf32207e0c554493ea9c642ca482177905406e193dbe4fe1874ebef463c
+content_hash: 80d8ef5c5de4c726cc995e259f211765c7b7d4b88b3f2e49cf11ffd6ca1ecae0
+field_hashes:
+  id: 70b5c1f9b1bd3cf0c795cfb212a9b35be8f8e4c1548af6b4bb3ec4d3a776e711
+  title: b96ac5c69ba06b221edb6243a8485768fa0101e9d3dab2b18a46852a9b99e208
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

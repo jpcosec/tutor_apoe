@@ -1,0 +1,18 @@
+name: atom-branch-apos-mechanisms-thematization
+path: desk/atoms/branches/atom-branch-apos-mechanisms-thematization.md
+source_hash: a598c8239e992c73b179d69f1fa15221fcb08ddacc94b55fb233342ba55a6546
+content_hash: 6999a831e8ee85548e206bb525c00a112d1d8310559d0bb45c1da5ee87cf6b1f
+field_hashes:
+  id: 8528dcdbb8605aaf146e62d3afe196ac64dbe582584877fbff79e80a867ecb07
+  title: c37814edcd5a5e2c42844bb1922b2cccdf50222bd9ac67a8969c74475df159fb
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

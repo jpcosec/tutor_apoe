@@ -1,0 +1,230 @@
+doc_name: atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+sections:
+- path: atom-xxx-unique-identifier
+  title: atom-xxx, unique identifier
+  breadcrumbs:
+  - atom-xxx, unique identifier
+  about:
+  - atom-xxx, unique identifier
+  - atom xxx unique identifier
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:generic-student
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:generic-student
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: atom-xxx-unique-identifier
+  level: 1
+  line_start: 2
+  line_end: 3
+- path: short-descriptive-title
+  title: Short, descriptive title
+  breadcrumbs:
+  - Short, descriptive title
+  about:
+  - Short, descriptive title
+  - short descriptive title
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:generic-student
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:generic-student
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: short-descriptive-title
+  level: 1
+  line_start: 4
+  line_end: 5
+- path: what-why-how-how-not-when-where-for-whom
+  title: what | why | how | how_not | when | where | for_whom
+  breadcrumbs:
+  - what | why | how | how_not | when | where | for_whom
+  about:
+  - what | why | how | how_not | when | where | for_whom
+  - what why how how not when where for whom
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:generic-student
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:generic-student
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: what-why-how-how-not-when-where-for-whom
+  level: 1
+  line_start: 6
+  line_end: 7
+- path: e-g-system-deskops-topic-templates
+  title: e.g., system:deskops, topic:templates
+  breadcrumbs:
+  - e.g., system:deskops, topic:templates
+  about:
+  - e.g., system:deskops, topic:templates
+  - e g system deskops topic templates
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:generic-student
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:generic-student
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: e-g-system-deskops-topic-templates
+  level: 1
+  line_start: 8
+  line_end: 18
+- path: la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+  title: La descomposición genética se formula para un estudiante genérico y no para
+    uno específico
+  breadcrumbs:
+  - La descomposición genética se formula para un estudiante genérico y no para uno
+    específico
+  about:
+  - La descomposición genética se formula para un estudiante genérico y no para uno
+    específico
+  - la descomposici n gen tica se formula para un estudiante gen rico y no para uno
+    espec fico
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:generic-student
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:generic-student
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+  level: 1
+  line_start: 19
+  line_end: 27
+- path: la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - La descomposición genética se formula para un estudiante genérico y no para uno
+    específico
+  - Respuesta
+  about:
+  - La descomposición genética se formula para un estudiante genérico y no para uno
+    específico
+  - la descomposici n gen tica se formula para un estudiante gen rico y no para uno
+    espec fico
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:generic-student
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:generic-student
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 21
+  line_end: 24
+- path: la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - La descomposición genética se formula para un estudiante genérico y no para uno
+    específico
+  - Procedencia
+  about:
+  - La descomposición genética se formula para un estudiante genérico y no para uno
+    específico
+  - la descomposici n gen tica se formula para un estudiante gen rico y no para uno
+    espec fico
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:generic-student
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:generic-student
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 25
+  line_end: 27
+source_hash: 6746414cc2c32e2ba44ce8f8d2e2ecaab21e49d110d3a3590ab5980583417b3c
+sections_version: '2'

@@ -1,0 +1,18 @@
+name: atom-branch-apos-foundations-piaget
+path: desk/atoms/branches/atom-branch-apos-foundations-piaget.md
+source_hash: f34eb8a74248f915f587e64ad3c1c825644a5c51a18b445af6635e990c6bc1ea
+content_hash: 5dc63b3993d0005cdc7bcaa37066f831abfa1f9a8f171c663de13932e0aa53b0
+field_hashes:
+  id: 8048415581f2a0efa7a07c5d30c86ba05db939e63c0451e2dc93a63bc4d9e811
+  title: 536a9394bf46c878586c528db81f67820e3491e3c726253bb828fc39c2365921
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,12 @@
+Task: task-package-kb-agent-as-reusable-runtime-plus-pack
+Title: Package KB agent as reusable runtime plus pack
+Status: active
+Current node: checklist-task-package-kb-agent-as-reusable-runtime-plus-pack-execution-ready
+Task type: 
+Routine: routine-task-package-kb-agent-as-reusable-runtime-plus-pack
+Effective pills:
+- desk/contexts/pill-guardrail-kb-agent-packaging.md
+Checklist status:
+- checklist-task-package-kb-agent-as-reusable-runtime-plus-pack-execution-ready: complete
+- checklist-task-package-kb-agent-as-reusable-runtime-plus-pack-testing-ready: complete
+- checklist-task-package-kb-agent-as-reusable-runtime-plus-pack-closeout-ready: pending

@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/mathematical-domains/groups/atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms.md
+tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:axioms
+- topic:groups
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 3601727116d0af338eafb9784f503d5365c000f83458bedd4b88340f2c48cc17

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Dependencias externas de tutor_apoe, inyectadas con Google `repo`.
+     Uso: scripts/bootstrap_deps.sh -->
+<manifest>
+  <remote name="github" fetch="https://github.com/jpcosec/" />
+  <default remote="github" revision="main" sync-j="2" />
+
+  <!-- Store de documentos estructurados (Markdown <-> Pydantic). -->
+  <project name="sldb" path="sldb" revision="main" />
+  <!-- SHRDLU sobre un mundo sldb; depende de sldb. -->
+  <project name="pron" path="pron" revision="master" />
+</manifest>

@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-mathematical-domains-repeating-decimals
+sections:
+- path: repeating-decimals
+  title: Repeating Decimals
+  breadcrumbs:
+  - Repeating Decimals
+  about:
+  - Repeating Decimals
+  - repeating decimals
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: repeating-decimals
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: repeating-decimals/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Repeating Decimals
+  - Respuesta
+  about:
+  - Repeating Decimals
+  - repeating decimals
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: repeating-decimals/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Repeating Decimals
+  - Procedencia
+  about:
+  - Repeating Decimals
+  - repeating decimals
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: bb151ec6eae0c7e02f63b447fb0355e0f2c75a787202bbb0eaceac7bed8ebbc2
+sections_version: '2'

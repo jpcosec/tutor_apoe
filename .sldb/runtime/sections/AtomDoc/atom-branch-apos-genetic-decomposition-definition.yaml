@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-genetic-decomposition-definition
+sections:
+- path: definition
+  title: Definition
+  breadcrumbs:
+  - Definition
+  about:
+  - Definition
+  - definition
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: definition
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: definition/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Definition
+  - Respuesta
+  about:
+  - Definition
+  - definition
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: definition/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Definition
+  - Procedencia
+  about:
+  - Definition
+  - definition
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: c7152bc07b2a1db7ab3213b6efba0849ad9b07af0ab3cd8d80b669b350aa0989
+sections_version: '2'

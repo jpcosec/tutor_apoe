@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/pedagogy/class-discussion/atom-classroom-discussion-helps-students-reflect-on-activity-work.md
+tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:ace-cycle
+- topic:class-discussion
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 01ed2f5ac6585b4c9700c6bbb213e2b7832f52e7213416294fbfdc9259a65dd5

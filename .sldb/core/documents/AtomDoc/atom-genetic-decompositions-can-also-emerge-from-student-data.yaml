@@ -1,0 +1,20 @@
+name: atom-genetic-decompositions-can-also-emerge-from-student-data
+path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decompositions-can-also-emerge-from-student-data.md
+source_hash: 56ee4e3005d91c477e8301142acf5f29be2f6a97f36b51633c75ec8ce4f3cc42
+content_hash: 49f82572a3d1d6680d7b39528ec13fee2dbfacdd4b7216b03a4538611dbab296
+field_hashes:
+  id: d9463033ca913c980bc96a0aa7f5558684bb1f1565b56353e592d98163717046
+  title: 0a1392292404d11a4476d0866833dd05e027f9042443d046351671f73240d09c
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: eb03598899fa1a6f2e1ac8ca3f9d1b6dcda3c8c9adf544ed6f6fa035f810ad41
+  tags: 278c857411c5f4bda7b7b99823d177039b0e328e665dc905806e1cf33d2639db
+semantic_tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:data-analysis
+- topic:genetic-decomposition
+- type.knowledge.atom
+- workspace.desk.atoms

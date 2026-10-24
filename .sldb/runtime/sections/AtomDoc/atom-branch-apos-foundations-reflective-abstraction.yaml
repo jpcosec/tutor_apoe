@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-foundations-reflective-abstraction
+sections:
+- path: reflective-abstraction
+  title: Reflective Abstraction
+  breadcrumbs:
+  - Reflective Abstraction
+  about:
+  - Reflective Abstraction
+  - reflective abstraction
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: reflective-abstraction
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: reflective-abstraction/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Reflective Abstraction
+  - Respuesta
+  about:
+  - Reflective Abstraction
+  - reflective abstraction
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: reflective-abstraction/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Reflective Abstraction
+  - Procedencia
+  about:
+  - Reflective Abstraction
+  - reflective abstraction
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: 44847e203b354e122df206df4831ff142eb6207993116de861271a49be3eccff
+sections_version: '2'

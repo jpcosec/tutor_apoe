@@ -1,0 +1,21 @@
+Task: task-package-kb-agent-as-reusable-runtime-plus-pack
+Title: Package KB agent as reusable runtime plus pack
+Status: active
+Current node: checklist-task-package-kb-agent-as-reusable-runtime-plus-pack-execution-ready
+Phase: execution
+Required ritual:
+- desk/rituals/execution.md
+Required pills:
+- desk/contexts/pills.md
+- desk/contexts/pill-guardrail-kb-agent-packaging.md
+Next actions:
+1. Make the active task, scope, touched files, and validation targets explicit.
+2. Run a fresh-context subagent review.
+3. Bind matching board and task pills.
+4. Start implementation only after the initialization gate is satisfied.
+Advance when:
+- Execution gate obligations are recorded or satisfied.
+Sources:
+- task: desk/tasks/task-package-kb-agent-as-reusable-runtime-plus-pack.md
+- board: desk/tasks/Board.md
+- workflow: spec/workflows/task_lifecycle.yaml

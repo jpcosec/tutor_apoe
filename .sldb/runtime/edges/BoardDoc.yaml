@@ -1,0 +1,235 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://model/BoardDoc
+  node_type: sldb_model
+  semantics:
+    name: BoardDoc
+    model_ref: deskops.models:BoardDoc
+    path: /home/jp/proyectos/hum-ecosystem/tools/deskops/deskops/models/board.py
+    version: 1
+    canonical: false
+    family: null
+    semantic_tags:
+    - type.workflow.board
+    - workspace.desk
+    base_models: []
+  facets: {}
+- id: sldb://semantic_tag/type.workflow.board
+  node_type: semantic_tag
+  semantics:
+    tag: type.workflow.board
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk
+  facets: {}
+- id: sldb://field/BoardDoc.title
+  node_type: sldb_field
+  semantics:
+    name: title
+    kind: string
+    required: true
+    model: BoardDoc
+    description: Board title for one active routing surface.
+  facets: {}
+- id: sldb://field/BoardDoc.id
+  node_type: sldb_field
+  semantics:
+    name: id
+    kind: string
+    required: true
+    model: BoardDoc
+    description: Stable board identifier.
+  facets: {}
+- id: sldb://field/BoardDoc.status
+  node_type: sldb_field
+  semantics:
+    name: status
+    kind: string
+    required: false
+    model: BoardDoc
+    description: Primitive lifecycle status.
+  facets: {}
+- id: sldb://field/BoardDoc.summary
+  node_type: sldb_field
+  semantics:
+    name: summary
+    kind: string
+    required: false
+    model: BoardDoc
+    description: Short semantic summary for the primitive.
+  facets: {}
+- id: sldb://field/BoardDoc.tags
+  node_type: sldb_field
+  semantics:
+    name: tags
+    kind: stringlist
+    required: false
+    model: BoardDoc
+    description: Semantic tags placed at the end, using namespaced forms such as 'system:sldb'
+      or 'workspace:desk'.
+  facets: {}
+- id: sldb://field/BoardDoc.routine
+  node_type: sldb_field
+  semantics:
+    name: routine
+    kind: string
+    required: false
+    model: BoardDoc
+    description: Primary routine identifier that makes the artifact actionable.
+  facets: {}
+- id: sldb://field/BoardDoc.current_node
+  node_type: sldb_field
+  semantics:
+    name: current_node
+    kind: string
+    required: false
+    model: BoardDoc
+    description: Current node in the operational routine or state machine.
+  facets: {}
+- id: sldb://field/BoardDoc.history
+  node_type: sldb_field
+  semantics:
+    name: history
+    kind: stringlist
+    required: false
+    model: BoardDoc
+    description: Operational transition history for the artifact.
+  facets: {}
+- id: sldb://field/BoardDoc.scope
+  node_type: sldb_field
+  semantics:
+    name: scope
+    kind: string
+    required: true
+    model: BoardDoc
+    description: What area or workspace this board routes.
+  facets: {}
+- id: sldb://field/BoardDoc.purpose
+  node_type: sldb_field
+  semantics:
+    name: purpose
+    kind: string
+    required: true
+    model: BoardDoc
+    description: Why this board exists and what it indexes.
+  facets: {}
+- id: sldb://field/BoardDoc.tasks
+  node_type: sldb_field
+  semantics:
+    name: tasks
+    kind: stringlist
+    required: false
+    model: BoardDoc
+    description: Active task document references routed by this board.
+  facets: {}
+- id: sldb://field/BoardDoc.pills
+  node_type: sldb_field
+  semantics:
+    name: pills
+    kind: stringlist
+    required: false
+    model: BoardDoc
+    description: Active pill document references routed by this board.
+  facets: {}
+- id: sldb://field/BoardDoc.rituals
+  node_type: sldb_field
+  semantics:
+    name: rituals
+    kind: stringlist
+    required: false
+    model: BoardDoc
+    description: Ritual document references relevant to this board.
+  facets: {}
+- id: sldb://field/BoardDoc.notes
+  node_type: sldb_field
+  semantics:
+    name: notes
+    kind: string
+    required: false
+    model: BoardDoc
+    description: Short operational notes about the current routed set.
+  facets: {}
+edges:
+- source: sldb://model/BoardDoc
+  target: sldb://semantic_tag/type.workflow.board
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/BoardDoc
+  target: sldb://semantic_tag/workspace.desk
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/BoardDoc
+  target: sldb://field/BoardDoc.title
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/BoardDoc
+  target: sldb://field/BoardDoc.id
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/BoardDoc
+  target: sldb://field/BoardDoc.status
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/BoardDoc
+  target: sldb://field/BoardDoc.summary
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/BoardDoc
+  target: sldb://field/BoardDoc.tags
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/BoardDoc
+  target: sldb://field/BoardDoc.routine
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/BoardDoc
+  target: sldb://field/BoardDoc.current_node
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/BoardDoc
+  target: sldb://field/BoardDoc.history
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/BoardDoc
+  target: sldb://field/BoardDoc.scope
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/BoardDoc
+  target: sldb://field/BoardDoc.purpose
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/BoardDoc
+  target: sldb://field/BoardDoc.tasks
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/BoardDoc
+  target: sldb://field/BoardDoc.pills
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/BoardDoc
+  target: sldb://field/BoardDoc.rituals
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/BoardDoc
+  target: sldb://field/BoardDoc.notes
+  relation: has_field
+  metadata:
+    origin: schema
+model_name: BoardDoc

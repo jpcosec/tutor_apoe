@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/foundations/piaget/atom-apos-is-rooted-in-piagets-work.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:piaget
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 2c00f0d49c3ad5c0d6a423da6b424de1824403fe7e1b7d7235684bba2b5c6d99

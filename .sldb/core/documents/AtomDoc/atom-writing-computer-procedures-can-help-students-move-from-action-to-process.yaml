@@ -1,0 +1,20 @@
+name: atom-writing-computer-procedures-can-help-students-move-from-action-to-process
+path: desk/atoms/apos/pedagogy/activities/atom-writing-computer-procedures-can-help-students-move-from-action-to-process.md
+source_hash: bee9d735cec56c3939fb08eb241c9a9bdc61ccbbaf2724443d6cab9fb8b6882c
+content_hash: 7fb061300c6c1f788b6bd39438b9e09d10e55545a9925b45158cfe448e2a0023
+field_hashes:
+  id: ae627e535b83068751e730957e4bcf502ea70a14a85dd893319f8e49224eb7e5
+  title: 3d4479af7b2de1efa10aa9a9264a32ff6d6785c862d6a4887c77e6bb297b376b
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 1c34ab8de4ec62b0ffd041b7994c35a767ec7959b79026acefc7210d31e3cee3
+  tags: 5ccb8734101d5539b5a3eff933c23932495f427bcd75d35ed89292f87b2e1b8b
+semantic_tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:action-to-process
+- topic:activities
+- type.knowledge.atom
+- workspace.desk.atoms

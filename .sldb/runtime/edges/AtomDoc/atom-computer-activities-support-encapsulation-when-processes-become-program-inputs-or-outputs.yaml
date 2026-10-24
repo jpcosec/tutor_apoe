@@ -1,0 +1,406 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+    name: atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+    model: AtomDoc
+    path: desk/atoms/apos/pedagogy/activities/atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:activities
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: c4430d553e30c09f6ed52074c7e97af9db80d2255b06f61a1e4524be464b4f6a
+    hash_d: 47d2170c181ae5766b52da71816d93266105b19e7a9f1dc4a23fadf8200ce0f9
+  facets: {}
+- id: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+    document_id: AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+    path: las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+    title: Las actividades computacionales apoyan la encapsulación cuando los procesos
+      pasan a ser entradas o salidas de programas
+    breadcrumbs:
+    - Las actividades computacionales apoyan la encapsulación cuando los procesos
+      pasan a ser entradas o salidas de programas
+    about:
+    - Las actividades computacionales apoyan la encapsulación cuando los procesos
+      pasan a ser entradas o salidas de programas
+    - las actividades computacionales apoyan la encapsulaci n cuando los procesos
+      pasan a ser entradas o salidas de programas
+    - domain:mathematics-education
+    - layer:pedagogy
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:activities
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:activities
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+    level: 1
+    line_start: 15
+    line_end: 23
+  facets: {}
+- id: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
+    document_id: AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+    path: las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Las actividades computacionales apoyan la encapsulación cuando los procesos
+      pasan a ser entradas o salidas de programas
+    - Respuesta
+    about:
+    - Las actividades computacionales apoyan la encapsulación cuando los procesos
+      pasan a ser entradas o salidas de programas
+    - las actividades computacionales apoyan la encapsulaci n cuando los procesos
+      pasan a ser entradas o salidas de programas
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:pedagogy
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:activities
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:activities
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 17
+    line_end: 20
+  facets: {}
+- id: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
+    document_id: AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+    path: las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Las actividades computacionales apoyan la encapsulación cuando los procesos
+      pasan a ser entradas o salidas de programas
+    - Procedencia
+    about:
+    - Las actividades computacionales apoyan la encapsulación cuando los procesos
+      pasan a ser entradas o salidas de programas
+    - las actividades computacionales apoyan la encapsulaci n cuando los procesos
+      pasan a ser entradas o salidas de programas
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:pedagogy
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:activities
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:pedagogy
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:activities
+    - topic:encapsulation
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 21
+    line_end: 23
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:pedagogy
+  node_type: semantic_tag
+  semantics:
+    tag: layer:pedagogy
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:activities
+  node_type: semantic_tag
+  semantics:
+    tag: topic:activities
+  facets: {}
+- id: sldb://semantic_tag/topic:encapsulation
+  node_type: semantic_tag
+  semantics:
+    tag: topic:encapsulation
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  target: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  target: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  target: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  target: sldb://semantic_tag/layer:pedagogy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  target: sldb://semantic_tag/topic:activities
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  target: sldb://semantic_tag/topic:encapsulation
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+  target: sldb://semantic_tag/layer:pedagogy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+  target: sldb://semantic_tag/topic:activities
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+  target: sldb://semantic_tag/topic:encapsulation
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
+  target: sldb://semantic_tag/layer:pedagogy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
+  target: sldb://semantic_tag/topic:activities
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
+  target: sldb://semantic_tag/topic:encapsulation
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
+  target: sldb://semantic_tag/layer:pedagogy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
+  target: sldb://semantic_tag/topic:activities
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
+  target: sldb://semantic_tag/topic:encapsulation
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs#las-actividades-computacionales-apoyan-la-encapsulaci-n-cuando-los-procesos-pasan-a-ser-entradas-o-salidas-de-programas/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+model_name: AtomDoc
+source_hash: c4430d553e30c09f6ed52074c7e97af9db80d2255b06f61a1e4524be464b4f6a
+content_hash: 47d2170c181ae5766b52da71816d93266105b19e7a9f1dc4a23fadf8200ce0f9
+semantic_tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:activities
+- topic:encapsulation
+- type.knowledge.atom
+- workspace.desk.atoms

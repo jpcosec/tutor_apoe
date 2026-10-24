@@ -1,0 +1,18 @@
+name: atom-branch-apos-research-paradigm
+path: desk/atoms/branches/atom-branch-apos-research-paradigm.md
+source_hash: 14050a14e65a0a3bdf46e7f14b8aff5b17c8467dca70920953c83bbae801c8f9
+content_hash: 622e3461ac19172e036b65ee26069f7310f9b6b7d6b9a2cbed9780b1e3b8487f
+field_hashes:
+  id: 42e23d684562f29a99831019b5c590078441d4197b39dcdcd3b61a8456d79b8e
+  title: 9e175b89311515778b2e0d680fb023180fc520f482e032d6a777c2da995ad236
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

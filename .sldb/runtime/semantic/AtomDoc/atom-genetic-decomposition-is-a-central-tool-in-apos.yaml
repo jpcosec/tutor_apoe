@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/genetic-decomposition/definition/atom-genetic-decomposition-is-a-central-tool-in-apos.md
+tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:genetic-decomposition
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 3e40a981233d312d6f6688701a31f7cbaab40bba124aa29020a79250d58b3bca

@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/foundations/rumec/atom-rumec-was-a-major-community-in-apos-development.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:rumec
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 5f35f9bbcc7ebb0157f5a94697fb673eb7e2761d1cdbecbcff5fdb0b2984731e

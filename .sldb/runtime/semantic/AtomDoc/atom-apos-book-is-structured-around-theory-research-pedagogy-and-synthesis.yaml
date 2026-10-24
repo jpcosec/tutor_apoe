@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/sources/apos-theory-book/structure/atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:book-structure
+- topic:source-book
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 4b9e535264f370608dd72d90a0bd9be569a8fa307e2f350733c84da3666b25f5

@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-foundations-rumec
+sections:
+- path: rumec
+  title: Rumec
+  breadcrumbs:
+  - Rumec
+  about:
+  - Rumec
+  - rumec
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: rumec
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: rumec/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Rumec
+  - Respuesta
+  about:
+  - Rumec
+  - rumec
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: rumec/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Rumec
+  - Procedencia
+  about:
+  - Rumec
+  - rumec
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: 534139b04b21990f1dec1f0508a9dc672fe507e184e8f25ffaabe7a15c396e51
+sections_version: '2'

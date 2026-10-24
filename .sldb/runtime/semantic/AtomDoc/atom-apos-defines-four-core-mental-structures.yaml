@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/core-structures/action/atom-apos-defines-four-core-mental-structures.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:apos
+- topic:core-structures
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 49fc8365697b0158acab91320775c35e7c5ed5d79d9cf116c87d3a5f358c03a3

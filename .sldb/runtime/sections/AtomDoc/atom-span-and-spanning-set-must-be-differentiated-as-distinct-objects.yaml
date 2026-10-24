@@ -1,0 +1,100 @@
+doc_name: atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects
+sections:
+- path: span-y-conjunto-generador-deben-diferenciarse-como-objetos-distintos
+  title: Span y conjunto generador deben diferenciarse como objetos distintos
+  breadcrumbs:
+  - Span y conjunto generador deben diferenciarse como objetos distintos
+  about:
+  - Span y conjunto generador deben diferenciarse como objetos distintos
+  - span y conjunto generador deben diferenciarse como objetos distintos
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:object
+  - topic:spanning-set-and-span
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:object
+  - topic:spanning-set-and-span
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: span-y-conjunto-generador-deben-diferenciarse-como-objetos-distintos
+  level: 1
+  line_start: 15
+  line_end: 23
+- path: span-y-conjunto-generador-deben-diferenciarse-como-objetos-distintos/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Span y conjunto generador deben diferenciarse como objetos distintos
+  - Respuesta
+  about:
+  - Span y conjunto generador deben diferenciarse como objetos distintos
+  - span y conjunto generador deben diferenciarse como objetos distintos
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:object
+  - topic:spanning-set-and-span
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:object
+  - topic:spanning-set-and-span
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 17
+  line_end: 20
+- path: span-y-conjunto-generador-deben-diferenciarse-como-objetos-distintos/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Span y conjunto generador deben diferenciarse como objetos distintos
+  - Procedencia
+  about:
+  - Span y conjunto generador deben diferenciarse como objetos distintos
+  - span y conjunto generador deben diferenciarse como objetos distintos
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:object
+  - topic:spanning-set-and-span
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:object
+  - topic:spanning-set-and-span
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 21
+  line_end: 23
+source_hash: 6640361b523022da7559abf5fff17c607877690bc3005da2fb7bdd89dcb7ea52
+sections_version: '2'

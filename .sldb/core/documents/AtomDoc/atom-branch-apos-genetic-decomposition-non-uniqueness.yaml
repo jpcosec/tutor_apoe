@@ -1,0 +1,18 @@
+name: atom-branch-apos-genetic-decomposition-non-uniqueness
+path: desk/atoms/branches/atom-branch-apos-genetic-decomposition-non-uniqueness.md
+source_hash: a314a6a2b070967fff1393f174a026658c2e9f2fec15bb7763faa5a0f89b98c6
+content_hash: c8743b14d7da540492f046d80970b4e935b63ef2d42e9df33a1e7e669d154439
+field_hashes:
+  id: 70fff88b4e2101a0bf8f22689cba6bf85fd9150f4e13434a32743f2c78e4d948
+  title: 54bceae59ac040a251fde3bca7b0eed27b4c24bf0a0c797a5d0d83992cc3a58c
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,10 @@
+## main...origin/main [ahead 4]
+ D desk/drawer/tasks/task-package-kb-agent-as-reusable-runtime-plus-pack.md
+ M desk/tasks/Board.md
+?? apps/kb_agent/
+?? desk/contexts/pill-guardrail-kb-agent-packaging.md
+?? desk/primitives/
+?? desk/routines/
+?? desk/tasks/task-package-kb-agent-as-reusable-runtime-plus-pack.md
+?? runs/
+?? tests/

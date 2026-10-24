@@ -1,0 +1,13 @@
+# Cuerpos de respuesta que significan saturación aunque el estado HTTP no lo diga (04 §6.3, P6).
+# Proveedor → expresiones regulares (sin distinguir mayúsculas); "*" vale para todos.
+"*":
+  - "overloaded"
+  - "rate.?limit"
+  - "too many requests"
+  - "capacity"
+bedrock:
+  - "ThrottlingException"
+  - "ServiceUnavailableException"
+  - "ModelNotReadyException"
+openrouter:
+  - "provider returned error.*429"

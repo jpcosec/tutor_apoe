@@ -1,0 +1,406 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+    name: atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+    model: AtomDoc
+    path: desk/atoms/apos/mathematical-domains/groups/atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:groups
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: 7b69caef54659c190a596425c4968a57548d2dec3b7c44321009fb1b9781e125
+    hash_d: 88aa503e7c66bb0e9ffeba72cbc082c9b4857aef4c6e5bbc33ae2dd31b89b7de
+  facets: {}
+- id: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+    document_id: AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+    path: el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+    title: El concepto de grupo se modela como coordinación de los esquemas de conjunto,
+      operación binaria y axioma
+    breadcrumbs:
+    - El concepto de grupo se modela como coordinación de los esquemas de conjunto,
+      operación binaria y axioma
+    about:
+    - El concepto de grupo se modela como coordinación de los esquemas de conjunto,
+      operación binaria y axioma
+    - el concepto de grupo se modela como coordinaci n de los esquemas de conjunto
+      operaci n binaria y axioma
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:groups
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:groups
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+    level: 1
+    line_start: 15
+    line_end: 23
+  facets: {}
+- id: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
+    document_id: AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+    path: el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - El concepto de grupo se modela como coordinación de los esquemas de conjunto,
+      operación binaria y axioma
+    - Respuesta
+    about:
+    - El concepto de grupo se modela como coordinación de los esquemas de conjunto,
+      operación binaria y axioma
+    - el concepto de grupo se modela como coordinaci n de los esquemas de conjunto
+      operaci n binaria y axioma
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:groups
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:groups
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 17
+    line_end: 20
+  facets: {}
+- id: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
+    document_id: AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+    path: el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - El concepto de grupo se modela como coordinación de los esquemas de conjunto,
+      operación binaria y axioma
+    - Procedencia
+    about:
+    - El concepto de grupo se modela como coordinación de los esquemas de conjunto,
+      operación binaria y axioma
+    - el concepto de grupo se modela como coordinaci n de los esquemas de conjunto
+      operaci n binaria y axioma
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:groups
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:applications
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:groups
+    - topic:schema
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 21
+    line_end: 23
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:applications
+  node_type: semantic_tag
+  semantics:
+    tag: layer:applications
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:groups
+  node_type: semantic_tag
+  semantics:
+    tag: topic:groups
+  facets: {}
+- id: sldb://semantic_tag/topic:schema
+  node_type: semantic_tag
+  semantics:
+    tag: topic:schema
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  target: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  target: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  target: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  target: sldb://semantic_tag/topic:groups
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  target: sldb://semantic_tag/topic:schema
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+  target: sldb://semantic_tag/topic:groups
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+  target: sldb://semantic_tag/topic:schema
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
+  target: sldb://semantic_tag/topic:groups
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
+  target: sldb://semantic_tag/topic:schema
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
+  target: sldb://semantic_tag/layer:applications
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
+  target: sldb://semantic_tag/topic:groups
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
+  target: sldb://semantic_tag/topic:schema
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas#el-concepto-de-grupo-se-modela-como-coordinaci-n-de-los-esquemas-de-conjunto-operaci-n-binaria-y-axioma/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+model_name: AtomDoc
+source_hash: 7b69caef54659c190a596425c4968a57548d2dec3b7c44321009fb1b9781e125
+content_hash: 88aa503e7c66bb0e9ffeba72cbc082c9b4857aef4c6e5bbc33ae2dd31b89b7de
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:groups
+- topic:schema
+- type.knowledge.atom
+- workspace.desk.atoms

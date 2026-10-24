@@ -1,0 +1,20 @@
+name: atom-apos-interviews-use-prompting-to-probe-construction-in-progress
+path: desk/atoms/apos/research/data-collection/atom-apos-interviews-use-prompting-to-probe-construction-in-progress.md
+source_hash: 943691ebd9d40a7f4ca2dec4822f3a386b7aa66eeb844988b1caf1f462cf3dce
+content_hash: c5d6179955929ab25de82d02e3a2f6c98f0f2adf35e038e589587276d910de80
+field_hashes:
+  id: eb204ebd91acca09cf51f4dd5b964163e06be6152f436ca6cc1bb03669f5490a
+  title: 1d42dd93068a91a3a3ef23c916a2bd8631f67210a88bd0e0313ba4a6ede0085d
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 6713acd9ff064532d741da22d92a7c29314ea7ce4bf3496b68341bb74c80cc0f
+  tags: 9e3603d9d3406067596a3b1b53d7d11c59e0ad7ef2985b643a48bff02e5d9311
+semantic_tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:interviews
+- topic:prompting
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/research/data-collection/atom-apos-research-uses-multiple-data-collection-modes.md
+tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:data-collection
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: e1441b5e27daa9805ca35ae0cf956d1d19ef3df33feeecba12d5458f0aa0a48a

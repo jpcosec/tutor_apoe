@@ -1,0 +1,110 @@
+doc_name: atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi
+sections:
+- path: la-instrucci-n-basada-en-apos-en-escuela-elemental-puede-apoyar-conceptos-abstractos-fuera-del-curr-culo-regular
+  title: La instrucción basada en APOS en escuela elemental puede apoyar conceptos
+    abstractos fuera del currículo regular
+  breadcrumbs:
+  - La instrucción basada en APOS en escuela elemental puede apoyar conceptos abstractos
+    fuera del currículo regular
+  about:
+  - La instrucción basada en APOS en escuela elemental puede apoyar conceptos abstractos
+    fuera del currículo regular
+  - la instrucci n basada en apos en escuela elemental puede apoyar conceptos abstractos
+    fuera del curr culo regular
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:elementary-math
+  - topic:fractions
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:elementary-math
+  - topic:fractions
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: la-instrucci-n-basada-en-apos-en-escuela-elemental-puede-apoyar-conceptos-abstractos-fuera-del-curr-culo-regular
+  level: 1
+  line_start: 15
+  line_end: 23
+- path: la-instrucci-n-basada-en-apos-en-escuela-elemental-puede-apoyar-conceptos-abstractos-fuera-del-curr-culo-regular/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - La instrucción basada en APOS en escuela elemental puede apoyar conceptos abstractos
+    fuera del currículo regular
+  - Respuesta
+  about:
+  - La instrucción basada en APOS en escuela elemental puede apoyar conceptos abstractos
+    fuera del currículo regular
+  - la instrucci n basada en apos en escuela elemental puede apoyar conceptos abstractos
+    fuera del curr culo regular
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:elementary-math
+  - topic:fractions
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:elementary-math
+  - topic:fractions
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 17
+  line_end: 20
+- path: la-instrucci-n-basada-en-apos-en-escuela-elemental-puede-apoyar-conceptos-abstractos-fuera-del-curr-culo-regular/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - La instrucción basada en APOS en escuela elemental puede apoyar conceptos abstractos
+    fuera del currículo regular
+  - Procedencia
+  about:
+  - La instrucción basada en APOS en escuela elemental puede apoyar conceptos abstractos
+    fuera del currículo regular
+  - la instrucci n basada en apos en escuela elemental puede apoyar conceptos abstractos
+    fuera del curr culo regular
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:elementary-math
+  - topic:fractions
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:applications
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:elementary-math
+  - topic:fractions
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 21
+  line_end: 23
+source_hash: 9bc46b738e85fdbdfbeec0440d755a542fc59adb2cd32918cabcfc59150031a1
+sections_version: '2'

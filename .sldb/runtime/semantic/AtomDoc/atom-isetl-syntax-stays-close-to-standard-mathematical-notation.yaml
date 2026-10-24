@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/pedagogy/isetl/atom-isetl-syntax-stays-close-to-standard-mathematical-notation.md
+tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:isetl
+- topic:notation
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 7b869a84f11c21661104ec0b2f07f76c4e4d33f1ad3f80087811a4f4feb5ec92

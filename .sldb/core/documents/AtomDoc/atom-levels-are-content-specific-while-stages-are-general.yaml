@@ -1,0 +1,20 @@
+name: atom-levels-are-content-specific-while-stages-are-general
+path: desk/atoms/apos/mechanisms/levels/atom-levels-are-content-specific-while-stages-are-general.md
+source_hash: f66f670ded3f6d3317d198d7fdf382837f4a4ad944eb9e36aa5b472ceba25a95
+content_hash: ede159f79ee5f582a2c697495035de02f5f754f9ee9598559153fc97c6b0ab54
+field_hashes:
+  id: a6b0c8933f391ae688c0fddb5c50c40a2ffed1d023947c2882c3d7079065dd5d
+  title: fa2c2a81014d83cc7b00df66ba0c47e661a6280b4ec4ea8961b49746ef876104
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 87edbefc560f1dad17f12ea7c2d3b2f5e4a42c1a13d1af6c60cc9cb725b48c6d
+  tags: 3926884a87b61e7302bd9998b0a06d96e5d08086432e36266499624352f1333c
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:levels
+- topic:stages
+- type.knowledge.atom
+- workspace.desk.atoms

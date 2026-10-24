@@ -1,0 +1,18 @@
+name: atom-branch-apos-mathematical-domains-infinity
+path: desk/atoms/branches/atom-branch-apos-mathematical-domains-infinity.md
+source_hash: 4e055808963b65939208738bcf450845d40071ddb6952e42c7ad91f651ad5e6a
+content_hash: 157817cd472764896b928ba3ea80f031945bdef9a158cc2f4793c4352798f23f
+field_hashes:
+  id: 23bcde90d47e635753e23d45098a2dd850421be8e121638632469498b7270a8c
+  title: f7240e746ae2e77280b7be8fcc04173492ee07cc820e3120431900a3449e71a3
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

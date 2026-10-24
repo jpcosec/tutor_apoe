@@ -1,0 +1,104 @@
+doc_name: atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences
+sections:
+- path: la-descomposici-n-gen-tica-act-a-como-lente-para-explicar-diferencias-de-desempe-o
+  title: La descomposición genética actúa como lente para explicar diferencias de
+    desempeño
+  breadcrumbs:
+  - La descomposición genética actúa como lente para explicar diferencias de desempeño
+  about:
+  - La descomposición genética actúa como lente para explicar diferencias de desempeño
+  - la descomposici n gen tica act a como lente para explicar diferencias de desempe
+    o
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:genetic-decomposition
+  - topic:performance-differences
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:genetic-decomposition
+  - topic:performance-differences
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: la-descomposici-n-gen-tica-act-a-como-lente-para-explicar-diferencias-de-desempe-o
+  level: 1
+  line_start: 15
+  line_end: 23
+- path: la-descomposici-n-gen-tica-act-a-como-lente-para-explicar-diferencias-de-desempe-o/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - La descomposición genética actúa como lente para explicar diferencias de desempeño
+  - Respuesta
+  about:
+  - La descomposición genética actúa como lente para explicar diferencias de desempeño
+  - la descomposici n gen tica act a como lente para explicar diferencias de desempe
+    o
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:genetic-decomposition
+  - topic:performance-differences
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:genetic-decomposition
+  - topic:performance-differences
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 17
+  line_end: 20
+- path: la-descomposici-n-gen-tica-act-a-como-lente-para-explicar-diferencias-de-desempe-o/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - La descomposición genética actúa como lente para explicar diferencias de desempeño
+  - Procedencia
+  about:
+  - La descomposición genética actúa como lente para explicar diferencias de desempeño
+  - la descomposici n gen tica act a como lente para explicar diferencias de desempe
+    o
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:genetic-decomposition
+  - topic:performance-differences
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:genetic-decomposition
+  - topic:performance-differences
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 21
+  line_end: 23
+source_hash: b2db98972146aa6bf42f938575396989909287761026365246bea3fe8b60c5a6
+sections_version: '2'

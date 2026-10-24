@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-core-structures-object
+sections:
+- path: object
+  title: Object
+  breadcrumbs:
+  - Object
+  about:
+  - Object
+  - object
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: object
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: object/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Object
+  - Respuesta
+  about:
+  - Object
+  - object
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: object/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Object
+  - Procedencia
+  about:
+  - Object
+  - object
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: be0d59586ee95c56fa80cd5521f649972a265d87579ff868c3844aa6efabaf7b
+sections_version: '2'

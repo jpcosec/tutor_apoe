@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-pedagogy-activities
+sections:
+- path: activities
+  title: Activities
+  breadcrumbs:
+  - Activities
+  about:
+  - Activities
+  - activities
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: activities
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: activities/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Activities
+  - Respuesta
+  about:
+  - Activities
+  - activities
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: activities/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Activities
+  - Procedencia
+  about:
+  - Activities
+  - activities
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: 27af537c55fc8162a1e55521ae4567bbb2bc0d9bd28c51cb8bf440c498244540
+sections_version: '2'

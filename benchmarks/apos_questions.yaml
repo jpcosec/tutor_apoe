@@ -1,0 +1,146 @@
+# Preguntas de un estudiante sobre la teoría APOS (Arnon et al. 2014) para el benchmark de
+# selección de contexto. `expected_atom_ids` son ids reales de `kbs/apos/knowledge/**`;
+# `expected_tags` son tags `topic:*` que debería traer al menos un átomo del top-k.
+questions:
+  - id: q01-accion
+    question: "¿Qué es una Acción en la teoría APOS y por qué necesita guía externa paso a paso?"
+    expected_atom_ids:
+      - atom-action-is-a-core-mental-structure-in-apos
+      - atom-action-requires-explicit-step-by-step-external-guidance
+    expected_tags: [topic:action]
+
+  - id: q02-proceso
+    question: "¿En qué se diferencia un Proceso de una Acción? ¿Por qué se dice que ya no hace falta ejecutar cada paso?"
+    expected_atom_ids:
+      - atom-process-allows-mental-control-without-executing-each-step
+      - atom-process-is-a-core-mental-structure-in-apos
+    expected_tags: [topic:process]
+
+  - id: q03-objeto
+    question: "¿Qué significa que un estudiante tenga una concepción de Objeto de una función?"
+    expected_atom_ids:
+      - atom-object-is-a-core-mental-structure-in-apos
+      - atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+    expected_tags: [topic:object]
+
+  - id: q04-esquema
+    question: "¿Qué es un Esquema en APOS y qué lo hace coherente?"
+    expected_atom_ids:
+      - atom-schema-is-a-coherent-framework-of-linked-structures
+      - atom-schema-is-a-core-mental-structure-in-apos
+      - atom-schema-coherence-determines-what-falls-within-its-scope
+    expected_tags: [topic:schema]
+
+  - id: q05-encapsulacion
+    question: "¿Qué es la encapsulación y por qué es tan difícil para los estudiantes?"
+    expected_atom_ids:
+      - atom-encapsulation-treats-a-process-as-a-static-entity
+      - atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms
+    expected_tags: [topic:encapsulation]
+
+  - id: q06-desencapsulacion
+    question: "¿Cómo puede un estudiante volver desde un objeto al proceso que lo originó? ¿Eso es la desencapsulación?"
+    expected_atom_ids:
+      - atom-de-encapsulation-recovers-the-underlying-process-of-an-object
+    expected_tags: [topic:de-encapsulation]
+
+  - id: q07-totalidad
+    question: "¿Qué es la etapa de Totalidad y por qué la proponen entre Proceso y Objeto?"
+    expected_atom_ids:
+      - atom-totality-is-proposed-to-explain-difficulties-between-process-and-object
+      - atom-totality-is-treated-as-a-possible-additional-stage
+    expected_tags: [topic:totality]
+
+  - id: q08-interiorizacion
+    question: "¿Qué es la interiorización y cómo convierte una acción material en un proceso mental?"
+    expected_atom_ids:
+      - atom-interiorization-translates-material-actions-into-processes
+      - atom-apos-uses-specific-mechanisms-to-explain-construction
+    expected_tags: [topic:interiorization]
+
+  - id: q09-coordinacion
+    question: "¿Qué papel juega la coordinación de procesos para construir nuevos procesos u objetos?"
+    expected_atom_ids:
+      - atom-coordination-combines-processes-to-build-new-objects-or-processes
+    expected_tags: [topic:coordination]
+
+  - id: q10-reversion
+    question: "¿Cómo explica APOS la construcción de la función inversa mediante la reversión de un proceso?"
+    expected_atom_ids:
+      - atom-reversal-is-central-for-inverses-and-related-constructions
+      - atom-reversal-can-operate-after-de-encapsulation
+    expected_tags: [topic:reversal]
+
+  - id: q11-tematizacion
+    question: "¿Qué quiere decir que un esquema se tematiza y pasa a ser un objeto?"
+    expected_atom_ids:
+      - atom-thematization-turns-a-schema-into-an-object
+      - atom-schemas-can-develop-interact-and-be-thematized
+    expected_tags: [topic:thematization]
+
+  - id: q12-descomposicion-genetica
+    question: "¿Qué es una descomposición genética? ¿Hay una sola para cada concepto matemático?"
+    expected_atom_ids:
+      - atom-genetic-decomposition-is-a-central-tool-in-apos
+      - atom-genetic-decompositions-are-not-unique
+      - atom-genetic-decomposition-begins-as-a-preliminary-hypothesis
+    expected_tags: [topic:genetic-decomposition]
+
+  - id: q13-ciclo-ace
+    question: "¿En qué consiste el ciclo ACE y qué función cumplen los ejercicios dentro de él?"
+    expected_atom_ids:
+      - atom-ace-cycle-is-the-main-apos-instructional-pattern
+      - atom-exercises-reinforce-constructions-from-activities-and-discussion
+    expected_tags: [topic:ace-cycle]
+
+  - id: q14-isetl
+    question: "¿Qué es ISETL y por qué lo usan en la enseñanza basada en APOS?"
+    expected_atom_ids:
+      - atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction
+      - atom-isetl-syntax-stays-close-to-standard-mathematical-notation
+    expected_tags: [topic:isetl]
+
+  - id: q15-piaget-abstraccion-reflexiva
+    question: "¿Qué es la abstracción reflexiva de Piaget y cómo la retoma APOS?"
+    expected_atom_ids:
+      - atom-reflective-abstraction-is-a-foundational-idea-for-apos
+      - atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures
+      - atom-reflective-abstraction-has-reflection-and-reorganization-components
+    expected_tags: [topic:reflective-abstraction, topic:piaget]
+
+  - id: q16-rumec
+    question: "¿Qué fue RUMEC y qué papel tuvo en la historia de APOS?"
+    expected_atom_ids:
+      - atom-rumec-was-a-major-community-in-apos-development
+      - atom-apos-developed-through-recognizable-historical-periods
+    expected_tags: [topic:rumec, topic:history]
+
+  - id: q17-funciones
+    question: "¿Cómo empieza la descomposición genética del concepto de función según el libro?"
+    expected_atom_ids:
+      - atom-function-genetic-decomposition-begins-with-actions-on-elements
+    expected_tags: [topic:functions]
+
+  - id: q18-grupos
+    question: "¿Cómo modela APOS el concepto de grupo en álgebra abstracta y la verificación de los axiomas?"
+    expected_atom_ids:
+      - atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas
+      - atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms
+      - atom-early-group-activities-develop-set-as-process
+    expected_tags: [topic:groups]
+
+  - id: q19-escuela-elemental
+    question: "¿Se puede usar APOS con niños de escuela elemental? ¿Qué cambia respecto a la universidad?"
+    expected_atom_ids:
+      - atom-elementary-school-apos-work-relies-on-concrete-objects-for-action
+      - atom-apos-has-applications-in-elementary-and-postsecondary-mathematics
+      - atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization
+    expected_tags: [topic:elementary-math]
+
+  - id: q20-paradigma-investigacion
+    question: "¿Por qué dicen que APOS es un paradigma de investigación y no solo una teoría?"
+    expected_atom_ids:
+      - atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+      - atom-theoretical-models-increase-reliability-of-data-analysis
+      - atom-research-cycle-centers-on-two-evaluative-questions
+    expected_tags: [topic:research-paradigm]

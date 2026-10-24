@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/synthesis/faq/atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:faq
+- topic:synthesis
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 980b8bcf056ca733948921f7d39f3ed0edbd9b36a9529220f228b94c36e99a32

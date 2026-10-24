@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/pedagogy/activities/atom-computer-activities-support-interiorization-by-generalizing-specific-actions.md
+tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:activities
+- topic:interiorization
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 0b0fadc1278bb73a8f6593d4b70e9c25f733432f98bdc107b0ce556664f4711b

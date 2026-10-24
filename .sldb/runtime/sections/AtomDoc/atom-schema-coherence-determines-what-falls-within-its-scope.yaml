@@ -1,0 +1,220 @@
+doc_name: atom-schema-coherence-determines-what-falls-within-its-scope
+sections:
+- path: atom-xxx-unique-identifier
+  title: atom-xxx, unique identifier
+  breadcrumbs:
+  - atom-xxx, unique identifier
+  about:
+  - atom-xxx, unique identifier
+  - atom xxx unique identifier
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: atom-xxx-unique-identifier
+  level: 1
+  line_start: 2
+  line_end: 3
+- path: short-descriptive-title
+  title: Short, descriptive title
+  breadcrumbs:
+  - Short, descriptive title
+  about:
+  - Short, descriptive title
+  - short descriptive title
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: short-descriptive-title
+  level: 1
+  line_start: 4
+  line_end: 5
+- path: what-why-how-how-not-when-where-for-whom
+  title: what | why | how | how_not | when | where | for_whom
+  breadcrumbs:
+  - what | why | how | how_not | when | where | for_whom
+  about:
+  - what | why | how | how_not | when | where | for_whom
+  - what why how how not when where for whom
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: what-why-how-how-not-when-where-for-whom
+  level: 1
+  line_start: 6
+  line_end: 7
+- path: e-g-system-deskops-topic-templates
+  title: e.g., system:deskops, topic:templates
+  breadcrumbs:
+  - e.g., system:deskops, topic:templates
+  about:
+  - e.g., system:deskops, topic:templates
+  - e g system deskops topic templates
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: e-g-system-deskops-topic-templates
+  level: 1
+  line_start: 8
+  line_end: 18
+- path: la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+  title: La coherencia del esquema determina qué cae dentro de su alcance
+  breadcrumbs:
+  - La coherencia del esquema determina qué cae dentro de su alcance
+  about:
+  - La coherencia del esquema determina qué cae dentro de su alcance
+  - la coherencia del esquema determina qu cae dentro de su alcance
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance
+  level: 1
+  line_start: 19
+  line_end: 27
+- path: la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - La coherencia del esquema determina qué cae dentro de su alcance
+  - Respuesta
+  about:
+  - La coherencia del esquema determina qué cae dentro de su alcance
+  - la coherencia del esquema determina qu cae dentro de su alcance
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 21
+  line_end: 24
+- path: la-coherencia-del-esquema-determina-qu-cae-dentro-de-su-alcance/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - La coherencia del esquema determina qué cae dentro de su alcance
+  - Procedencia
+  about:
+  - La coherencia del esquema determina qué cae dentro de su alcance
+  - la coherencia del esquema determina qu cae dentro de su alcance
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:coherence
+  - topic:schema
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 25
+  line_end: 27
+source_hash: 7bdca750b79da24ea9e6f51b6267aabf79548cf07a9185fc798eb665f2b3f333
+sections_version: '2'

@@ -1,0 +1,330 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-branch-apos-mathematical-domains-functions
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-branch-apos-mathematical-domains-functions
+    name: atom-branch-apos-mathematical-domains-functions
+    model: AtomDoc
+    path: desk/atoms/branches/atom-branch-apos-mathematical-domains-functions.md
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: 9497754b7b9a09642d3acb7c0ca4899651cf7871cb6d659948a0eaa9aa7de8ae
+    hash_d: ae67d97a1c5060f6f96b1d6e466d0a66c7879424c9c03b6c78a9362859ec6f7d
+  facets: {}
+- id: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-branch-apos-mathematical-domains-functions#functions
+    document_id: AtomDoc:atom-branch-apos-mathematical-domains-functions
+    path: functions
+    title: Functions
+    breadcrumbs:
+    - Functions
+    about:
+    - Functions
+    - functions
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: functions
+    level: 1
+    line_start: 13
+    line_end: 21
+  facets: {}
+- id: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/respuesta
+    document_id: AtomDoc:atom-branch-apos-mathematical-domains-functions
+    path: functions/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Functions
+    - Respuesta
+    about:
+    - Functions
+    - functions
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 18
+  facets: {}
+- id: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/procedencia
+    document_id: AtomDoc:atom-branch-apos-mathematical-domains-functions
+    path: functions/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Functions
+    - Procedencia
+    about:
+    - Functions
+    - functions
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 21
+  facets: {}
+- id: sldb://semantic_tag/layer:taxonomy
+  node_type: semantic_tag
+  semantics:
+    tag: layer:taxonomy
+  facets: {}
+- id: sldb://semantic_tag/node:branch
+  node_type: semantic_tag
+  semantics:
+    tag: node:branch
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-branch-apos-mathematical-domains-functions
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-mathematical-domains-functions
+  target: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-mathematical-domains-functions
+  target: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-mathematical-domains-functions
+  target: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-mathematical-domains-functions
+  target: sldb://semantic_tag/layer:taxonomy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-mathematical-domains-functions
+  target: sldb://semantic_tag/node:branch
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-mathematical-domains-functions
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-mathematical-domains-functions
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-mathematical-domains-functions
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-mathematical-domains-functions
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-mathematical-domains-functions
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions
+  target: sldb://semantic_tag/layer:taxonomy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions
+  target: sldb://semantic_tag/node:branch
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/respuesta
+  target: sldb://semantic_tag/layer:taxonomy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/respuesta
+  target: sldb://semantic_tag/node:branch
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/procedencia
+  target: sldb://semantic_tag/layer:taxonomy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/procedencia
+  target: sldb://semantic_tag/node:branch
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-mathematical-domains-functions#functions/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-branch-apos-mathematical-domains-functions
+model_name: AtomDoc
+source_hash: 9497754b7b9a09642d3acb7c0ca4899651cf7871cb6d659948a0eaa9aa7de8ae
+content_hash: ae67d97a1c5060f6f96b1d6e466d0a66c7879424c9c03b6c78a9362859ec6f7d
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

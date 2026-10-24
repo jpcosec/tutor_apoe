@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/foundations/historical-development/atom-apos-developed-through-recognizable-historical-periods.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:history
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 98adec3aab3084718ce12d2553f59134a4a01c184da341ffb5894f64b95e7b32

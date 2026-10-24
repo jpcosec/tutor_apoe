@@ -1,0 +1,60 @@
+{
+  "aliases": {
+    "encapsulacion": ["topic:encapsulation"],
+    "encapsulación": ["topic:encapsulation"],
+    "esquema": ["topic:schema"],
+    "schema": ["topic:schema"],
+    "accion": ["topic:action"],
+    "acción": ["topic:action"],
+    "proceso": ["topic:process"],
+    "process": ["topic:process"],
+    "objeto": ["topic:object"],
+    "object": ["topic:object"],
+    "desencapsulacion": ["topic:de-encapsulation"],
+    "desencapsulación": ["topic:de-encapsulation"],
+    "de-encapsulation": ["topic:de-encapsulation"],
+    "totalidad": ["topic:totality"],
+    "totality": ["topic:totality"],
+    "genetic decomposition": ["topic:genetic-decomposition"],
+    "descomposicion genetica": ["topic:genetic-decomposition"],
+    "descomposición genética": ["topic:genetic-decomposition"],
+    "pedagogia": ["layer:pedagogy"],
+    "pedagogía": ["layer:pedagogy"],
+    "ensenanza": ["layer:pedagogy"],
+    "enseñanza": ["layer:pedagogy"],
+    "teoria": ["layer:theory"],
+    "teoría": ["layer:theory"],
+    "apos": ["system:apos"],
+    "apoe": ["system:apos"]
+  },
+  "expansions": {
+    "topic:encapsulation": ["topic:process", "topic:object", "topic:de-encapsulation", "topic:totality"],
+    "topic:schema": ["topic:action", "topic:process", "topic:object"]
+  },
+  "followup_markers": [
+    "y eso",
+    "ahonda",
+    "profundiza",
+    "expande",
+    "mas detalle",
+    "más detalle",
+    "mas",
+    "más",
+    "sigue",
+    "continua",
+    "continúa",
+    "compara eso",
+    "ese punto",
+    "ese",
+    "eso"
+  ],
+  "scoring": {
+    "exact_tag": 100,
+    "expanded_tag": 30,
+    "lexical_overlap": 8,
+    "retained_from_previous": 18,
+    "pedagogy_included_bonus": 20,
+    "pedagogy_excluded_penalty": -10,
+    "theory_bonus": 5
+  }
+}

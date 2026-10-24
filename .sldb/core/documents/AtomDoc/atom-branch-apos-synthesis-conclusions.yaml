@@ -1,0 +1,18 @@
+name: atom-branch-apos-synthesis-conclusions
+path: desk/atoms/branches/atom-branch-apos-synthesis-conclusions.md
+source_hash: ee534c660bd3bb42dd63945e1148072c8ec4029a09aee4f00f16e2cdc050e81f
+content_hash: 5fe3a21712719c1bf333d9bf3430ed4c9f9fd3cc0ddb4737ca6fb927445bd5bc
+field_hashes:
+  id: c9dfd8bce1ff774f888624ec87701e14471ffc0cd0b1daf50fc648dc4c29eb2d
+  title: 32ca88623883f14578ad1d6e23261c5a9e881001ec605f12f8350d0f61d774f8
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

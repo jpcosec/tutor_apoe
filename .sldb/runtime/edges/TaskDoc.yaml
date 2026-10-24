@@ -1,0 +1,392 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://model/TaskDoc
+  node_type: sldb_model
+  semantics:
+    name: TaskDoc
+    model_ref: deskops.models:TaskDoc
+    path: /home/jp/proyectos/hum-ecosystem/tools/deskops/deskops/models/task.py
+    version: 1
+    canonical: false
+    family: null
+    semantic_tags:
+    - type.workflow.task
+    - workspace.desk
+    base_models: []
+  facets: {}
+- id: sldb://semantic_tag/type.workflow.task
+  node_type: semantic_tag
+  semantics:
+    tag: type.workflow.task
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk
+  facets: {}
+- id: sldb://field/TaskDoc.title
+  node_type: sldb_field
+  semantics:
+    name: title
+    kind: string
+    required: true
+    model: TaskDoc
+    description: Short action-oriented task title.
+  facets: {}
+- id: sldb://field/TaskDoc.id
+  node_type: sldb_field
+  semantics:
+    name: id
+    kind: string
+    required: true
+    model: TaskDoc
+    description: Stable task identifier.
+  facets: {}
+- id: sldb://field/TaskDoc.status
+  node_type: sldb_field
+  semantics:
+    name: status
+    kind: string
+    required: true
+    model: TaskDoc
+    description: Current task state, typically active or blocked.
+  facets: {}
+- id: sldb://field/TaskDoc.summary
+  node_type: sldb_field
+  semantics:
+    name: summary
+    kind: string
+    required: false
+    model: TaskDoc
+    description: Short semantic summary for the primitive.
+  facets: {}
+- id: sldb://field/TaskDoc.tags
+  node_type: sldb_field
+  semantics:
+    name: tags
+    kind: stringlist
+    required: false
+    model: TaskDoc
+    description: Semantic tags placed at the end, using namespaced forms such as 'system:sldb'
+      or 'language:python'.
+  facets: {}
+- id: sldb://field/TaskDoc.routine
+  node_type: sldb_field
+  semantics:
+    name: routine
+    kind: string
+    required: false
+    model: TaskDoc
+    description: Primary routine identifier that makes the artifact actionable.
+  facets: {}
+- id: sldb://field/TaskDoc.current_node
+  node_type: sldb_field
+  semantics:
+    name: current_node
+    kind: string
+    required: false
+    model: TaskDoc
+    description: Current node in the operational routine or state machine.
+  facets: {}
+- id: sldb://field/TaskDoc.history
+  node_type: sldb_field
+  semantics:
+    name: history
+    kind: stringlist
+    required: false
+    model: TaskDoc
+    description: Operational transition history for the artifact.
+  facets: {}
+- id: sldb://field/TaskDoc.frontmatter
+  node_type: sldb_field
+  semantics:
+    name: frontmatter
+    kind: object
+    required: false
+    model: TaskDoc
+    description: YAML frontmatter containing task metadata
+  facets: {}
+- id: sldb://field/TaskDoc.why
+  node_type: sldb_field
+  semantics:
+    name: why
+    kind: string
+    required: false
+    model: TaskDoc
+    description: Rationale or business driver behind the task.
+  facets: {}
+- id: sldb://field/TaskDoc.goal
+  node_type: sldb_field
+  semantics:
+    name: goal
+    kind: string
+    required: true
+    model: TaskDoc
+    description: Concrete intended result for the task.
+  facets: {}
+- id: sldb://field/TaskDoc.scope
+  node_type: sldb_field
+  semantics:
+    name: scope
+    kind: string
+    required: true
+    model: TaskDoc
+    description: What is in and out of scope for the task.
+  facets: {}
+- id: sldb://field/TaskDoc.references
+  node_type: sldb_field
+  semantics:
+    name: references
+    kind: stringlist
+    required: false
+    model: TaskDoc
+    description: Relevant references such as files, docs, commits, or commands.
+  facets: {}
+- id: sldb://field/TaskDoc.depends_on
+  node_type: sldb_field
+  semantics:
+    name: depends_on
+    kind: stringlist
+    required: false
+    model: TaskDoc
+    description: Task identifiers that must complete first.
+  facets: {}
+- id: sldb://field/TaskDoc.pills
+  node_type: sldb_field
+  semantics:
+    name: pills
+    kind: stringlist
+    required: false
+    model: TaskDoc
+    description: Pill identifiers required for safe execution of the task.
+  facets: {}
+- id: sldb://field/TaskDoc.files
+  node_type: sldb_field
+  semantics:
+    name: files
+    kind: stringlist
+    required: false
+    model: TaskDoc
+    description: Files or paths expected to change during the task.
+  facets: {}
+- id: sldb://field/TaskDoc.checklists
+  node_type: sldb_field
+  semantics:
+    name: checklists
+    kind: stringlist
+    required: false
+    model: TaskDoc
+    description: Checklist identifiers that verify the task's operational routine.
+  facets: {}
+- id: sldb://field/TaskDoc.implementation_path
+  node_type: sldb_field
+  semantics:
+    name: implementation_path
+    kind: string
+    required: true
+    model: TaskDoc
+    description: Suggested implementation path for completing the task.
+  facets: {}
+- id: sldb://field/TaskDoc.validation
+  node_type: sldb_field
+  semantics:
+    name: validation
+    kind: stringlist
+    required: false
+    model: TaskDoc
+    description: Tests, checks, or commands required before closure.
+  facets: {}
+- id: sldb://field/TaskDoc.done_when
+  node_type: sldb_field
+  semantics:
+    name: done_when
+    kind: string
+    required: true
+    model: TaskDoc
+    description: Observable completion rule for the task.
+  facets: {}
+- id: sldb://field/TaskDoc.task_type
+  node_type: sldb_field
+  semantics:
+    name: task_type
+    kind: string
+    required: false
+    model: TaskDoc
+    description: Workflow task type such as design, implementation, test, reflection,
+      or closeout.
+  facets: {}
+- id: sldb://field/TaskDoc.inherits_from
+  node_type: sldb_field
+  semantics:
+    name: inherits_from
+    kind: stringlist
+    required: false
+    model: TaskDoc
+    description: Task identifiers that provide inherited workflow context.
+  facets: {}
+- id: sldb://field/TaskDoc.inherit_acceptance_context
+  node_type: sldb_field
+  semantics:
+    name: inherit_acceptance_context
+    kind: boolean
+    required: false
+    model: TaskDoc
+    description: Whether validation and done-when context should be inherited from
+      referenced tasks.
+  facets: {}
+- id: sldb://field/TaskDoc.atoms
+  node_type: sldb_field
+  semantics:
+    name: atoms
+    kind: stringlist
+    required: false
+    model: TaskDoc
+    description: Workflow or knowledge atoms explicitly bound to the task.
+  facets: {}
+- id: sldb://field/TaskDoc.from_drawer
+  node_type: sldb_field
+  semantics:
+    name: from_drawer
+    kind: string
+    required: false
+    model: TaskDoc
+    description: Repo-relative path of the desk/drawer/ file this task was authored
+      from; empty when it was not.
+  facets: {}
+edges:
+- source: sldb://model/TaskDoc
+  target: sldb://semantic_tag/type.workflow.task
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/TaskDoc
+  target: sldb://semantic_tag/workspace.desk
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.title
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.id
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.status
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.summary
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.tags
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.routine
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.current_node
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.history
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.frontmatter
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.why
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.goal
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.scope
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.references
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.depends_on
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.pills
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.files
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.checklists
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.implementation_path
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.validation
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.done_when
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.task_type
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.inherits_from
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.inherit_acceptance_context
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.atoms
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/TaskDoc
+  target: sldb://field/TaskDoc.from_drawer
+  relation: has_field
+  metadata:
+    origin: schema
+model_name: TaskDoc

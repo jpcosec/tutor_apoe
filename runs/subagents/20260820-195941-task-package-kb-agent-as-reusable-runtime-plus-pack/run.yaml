@@ -1,0 +1,5 @@
+run_dir: runs/subagents/20260820-195941-task-package-kb-agent-as-reusable-runtime-plus-pack
+run_id: 4f22af2c
+session: /home/jp/.pi/agent/sessions/--home-jp-proyectos-gemini_test--/2026-08-20T04-02-22-748Z_01a01d55-939c-722e-9480-ad544b640ee0/4f22af2c/run-0/session.jsonl
+session_sha256: 287e4c839dfc493220638ce4ee2982b54eb6bb221db3bb4cb10e9856b253bd04
+task_id: task-package-kb-agent-as-reusable-runtime-plus-pack

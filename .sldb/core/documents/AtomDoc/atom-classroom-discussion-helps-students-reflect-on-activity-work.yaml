@@ -1,0 +1,20 @@
+name: atom-classroom-discussion-helps-students-reflect-on-activity-work
+path: desk/atoms/apos/pedagogy/class-discussion/atom-classroom-discussion-helps-students-reflect-on-activity-work.md
+source_hash: 01ed2f5ac6585b4c9700c6bbb213e2b7832f52e7213416294fbfdc9259a65dd5
+content_hash: 955fc43678671ecc08fcd292374aed61384dd96aa773bd4aea2b4412c99ca456
+field_hashes:
+  id: 5cfb598650b5e71a8abe7d69cdfa7878261be8c906c9bd58cf309909a53c063e
+  title: 7f1077ec897795bd4b14791d903db8468ba4c3cbbb1e7b2618946639797d5e48
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 50da34bf21c1b120f0efb204a28d0cf3e95c83a17625052e8a50897b7284d9a4
+  tags: 2f964f234803742c7e8ad28b546c97446d2295bbcd0872b37fff4c923f42e207
+semantic_tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:ace-cycle
+- topic:class-discussion
+- type.knowledge.atom
+- workspace.desk.atoms

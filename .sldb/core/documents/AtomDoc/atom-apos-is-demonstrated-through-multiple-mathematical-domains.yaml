@@ -1,0 +1,19 @@
+name: atom-apos-is-demonstrated-through-multiple-mathematical-domains
+path: desk/atoms/apos/mathematical-domains/functions/atom-apos-is-demonstrated-through-multiple-mathematical-domains.md
+source_hash: 434da693027ce17f22ee7d8b87e362ed9b2ce4c43b52100242c18aade122344c
+content_hash: 599612c3720cc301d53a6918d3951d9f84a591952255ae23e8271738e6c8efde
+field_hashes:
+  id: 6cb7ce18b04378ca01f59616f4a2923a0abe717eac9cc95e29db635252a7633a
+  title: df8927cbf7d0106dadd6f1de523909d09d3046fcacb532acc3a55049f152fbf2
+  five_wh_one_plus: 43f94244d00ce4813a89d3c0d15e1842fe2cfd95ce9fe3b063dda9e7983e0063
+  answer: 32920c69a9f5a3f7cf989744644ec9155056ab8f8f3ea9d9cabb4edb95978e01
+  tags: 8661934b8b9b482581cd5b6379a711b26c8d55c34f619e832d08b2f95a8a2679
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:mathematical-domains
+- type.knowledge.atom
+- workspace.desk.atoms

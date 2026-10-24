@@ -1,0 +1,19 @@
+name: atom-process-allows-mental-control-without-executing-each-step
+path: desk/atoms/apos/core-structures/process/atom-process-allows-mental-control-without-executing-each-step.md
+source_hash: 3de7b3666128bde12895dea7afa4a2cb03096ab6f9c66e9ce30902cf07a9356f
+content_hash: 97176aef50d7fbd4b361a6590a3d5ba704cca29134a0aa8f20c4f1843119ea33
+field_hashes:
+  id: d5b04bb981010b2a4d35c2fe11420399ef30579b301f2dab7ebc23715f079ce3
+  title: 1978a0707a25cf03bf7b307f3fd07ea7bc24c4791072e154bea48b2270759fa8
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 22d949d8bdf904aaaf9740238cd8a1d998424da5167b9801db17a15b0f47de91
+  tags: 80964f225c75d19283b7f88fa38d9d256cf61fb3cc0c6e08863f80622cbbe21e
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:process
+- type.knowledge.atom
+- workspace.desk.atoms

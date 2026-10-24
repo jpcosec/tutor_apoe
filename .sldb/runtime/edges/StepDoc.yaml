@@ -1,0 +1,109 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://model/StepDoc
+  node_type: sldb_model
+  semantics:
+    name: StepDoc
+    model_ref: deskops.models:StepDoc
+    path: /home/jp/proyectos/hum-ecosystem/tools/deskops/deskops/models/step.py
+    version: 1
+    canonical: false
+    family: null
+    semantic_tags:
+    - type.workflow.step
+    - workspace.desk
+    base_models: []
+  facets: {}
+- id: sldb://semantic_tag/type.workflow.step
+  node_type: semantic_tag
+  semantics:
+    tag: type.workflow.step
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk
+  facets: {}
+- id: sldb://field/StepDoc.title
+  node_type: sldb_field
+  semantics:
+    name: title
+    kind: string
+    required: true
+    model: StepDoc
+    description: Short step title.
+  facets: {}
+- id: sldb://field/StepDoc.id
+  node_type: sldb_field
+  semantics:
+    name: id
+    kind: string
+    required: true
+    model: StepDoc
+    description: Stable step identifier.
+  facets: {}
+- id: sldb://field/StepDoc.action
+  node_type: sldb_field
+  semantics:
+    name: action
+    kind: string
+    required: true
+    model: StepDoc
+    description: What the step should do.
+  facets: {}
+- id: sldb://field/StepDoc.outcome
+  node_type: sldb_field
+  semantics:
+    name: outcome
+    kind: string
+    required: true
+    model: StepDoc
+    description: What the step should produce or confirm.
+  facets: {}
+- id: sldb://field/StepDoc.tags
+  node_type: sldb_field
+  semantics:
+    name: tags
+    kind: stringlist
+    required: false
+    model: StepDoc
+    description: Semantic tags placed at the end, using namespaced forms such as 'topic:testing'
+      or 'workspace:desk'.
+  facets: {}
+edges:
+- source: sldb://model/StepDoc
+  target: sldb://semantic_tag/type.workflow.step
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/StepDoc
+  target: sldb://semantic_tag/workspace.desk
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/StepDoc
+  target: sldb://field/StepDoc.title
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/StepDoc
+  target: sldb://field/StepDoc.id
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/StepDoc
+  target: sldb://field/StepDoc.action
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/StepDoc
+  target: sldb://field/StepDoc.outcome
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/StepDoc
+  target: sldb://field/StepDoc.tags
+  relation: has_field
+  metadata:
+    origin: schema
+model_name: StepDoc

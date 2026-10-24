@@ -1,0 +1,220 @@
+doc_name: atom-cognitive-path-and-genetic-decomposition-are-not-the-same
+sections:
+- path: atom-xxx-unique-identifier
+  title: atom-xxx, unique identifier
+  breadcrumbs:
+  - atom-xxx, unique identifier
+  about:
+  - atom-xxx, unique identifier
+  - atom xxx unique identifier
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:cognitive-path
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:cognitive-path
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: atom-xxx-unique-identifier
+  level: 1
+  line_start: 2
+  line_end: 3
+- path: short-descriptive-title
+  title: Short, descriptive title
+  breadcrumbs:
+  - Short, descriptive title
+  about:
+  - Short, descriptive title
+  - short descriptive title
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:cognitive-path
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:cognitive-path
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: short-descriptive-title
+  level: 1
+  line_start: 4
+  line_end: 5
+- path: what-why-how-how-not-when-where-for-whom
+  title: what | why | how | how_not | when | where | for_whom
+  breadcrumbs:
+  - what | why | how | how_not | when | where | for_whom
+  about:
+  - what | why | how | how_not | when | where | for_whom
+  - what why how how not when where for whom
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:cognitive-path
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:cognitive-path
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: what-why-how-how-not-when-where-for-whom
+  level: 1
+  line_start: 6
+  line_end: 7
+- path: e-g-system-deskops-topic-templates
+  title: e.g., system:deskops, topic:templates
+  breadcrumbs:
+  - e.g., system:deskops, topic:templates
+  about:
+  - e.g., system:deskops, topic:templates
+  - e g system deskops topic templates
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:cognitive-path
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:cognitive-path
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: e-g-system-deskops-topic-templates
+  level: 1
+  line_start: 8
+  line_end: 18
+- path: el-camino-cognitivo-y-la-descomposici-n-gen-tica-no-son-lo-mismo
+  title: El camino cognitivo y la descomposición genética no son lo mismo
+  breadcrumbs:
+  - El camino cognitivo y la descomposición genética no son lo mismo
+  about:
+  - El camino cognitivo y la descomposición genética no son lo mismo
+  - el camino cognitivo y la descomposici n gen tica no son lo mismo
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:cognitive-path
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:cognitive-path
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: el-camino-cognitivo-y-la-descomposici-n-gen-tica-no-son-lo-mismo
+  level: 1
+  line_start: 19
+  line_end: 27
+- path: el-camino-cognitivo-y-la-descomposici-n-gen-tica-no-son-lo-mismo/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - El camino cognitivo y la descomposición genética no son lo mismo
+  - Respuesta
+  about:
+  - El camino cognitivo y la descomposición genética no son lo mismo
+  - el camino cognitivo y la descomposici n gen tica no son lo mismo
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:cognitive-path
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:cognitive-path
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 21
+  line_end: 24
+- path: el-camino-cognitivo-y-la-descomposici-n-gen-tica-no-son-lo-mismo/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - El camino cognitivo y la descomposición genética no son lo mismo
+  - Procedencia
+  about:
+  - El camino cognitivo y la descomposición genética no son lo mismo
+  - el camino cognitivo y la descomposici n gen tica no son lo mismo
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:cognitive-path
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:cognitive-path
+  - topic:genetic-decomposition
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 25
+  line_end: 27
+source_hash: 816734149b65da24161f1b95485909e6871aa79463d9dbda3f9a7cf96c9db263
+sections_version: '2'

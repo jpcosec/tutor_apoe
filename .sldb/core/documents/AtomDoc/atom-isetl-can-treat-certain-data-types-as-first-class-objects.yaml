@@ -1,0 +1,20 @@
+name: atom-isetl-can-treat-certain-data-types-as-first-class-objects
+path: desk/atoms/apos/pedagogy/isetl/atom-isetl-can-treat-certain-data-types-as-first-class-objects.md
+source_hash: d8cb9825102920a0d40c52bf6d6c1a902cd03289c736b9ee6de4af5c846c6fb5
+content_hash: 982af42aaf02d5d9d5cdc6de1883ffed8643c25d8f97a2f01f032288e781c702
+field_hashes:
+  id: b336600d100fa80fee4b6f281e2e09980f6f1098132c555b5d9289de737ba150
+  title: 6c62e44091a549f680515cf4c28db7e12809e7de3a1c0527a9567dac3758c65d
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 8485395b4350be76f460b91be53e7627ace240fca14f0424d56714c8f7c62f02
+  tags: 698568fe33ddb3f902e7d7b28cc139fceb725d6c5ac0273a038e0aa8ec10ca16
+semantic_tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:data-types
+- topic:isetl
+- type.knowledge.atom
+- workspace.desk.atoms

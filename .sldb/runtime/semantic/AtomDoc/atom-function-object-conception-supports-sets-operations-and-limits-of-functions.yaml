@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/mathematical-domains/functions/atom-function-object-conception-supports-sets-operations-and-limits-of-functions.md
+tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:functions
+- topic:object
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 5cc65c62bcbe146ecd22fae78e7ade6c238924e7818fdc687db4e00bb38e90aa

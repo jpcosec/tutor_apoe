@@ -12,3 +12,4 @@ Pills are reusable context documents for the Tutor APOE desk routine.
 
 - Keep active task-to-pill binding in task docs.
 - Add temporary context here only when it affects execution safety or scope.
+

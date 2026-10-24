@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/research/paradigm/atom-theoretical-models-increase-reliability-of-data-analysis.md
+tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:reliability
+- topic:research-paradigm
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 450b77bc2b80e97d7839e6f61e7ee2b6bc1980c538cb866a4d8ba083b1661601

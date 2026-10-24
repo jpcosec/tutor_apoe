@@ -1,0 +1,20 @@
+name: atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms
+path: desk/atoms/apos/mathematical-domains/groups/atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms.md
+source_hash: 3601727116d0af338eafb9784f503d5365c000f83458bedd4b88340f2c48cc17
+content_hash: 258dc04da9f9a26e4558042cc6f6bb5d72731400be387d9cebbecba4b9dc71cc
+field_hashes:
+  id: 00330ee3536afd0f91294111287f4e4ee629a6359dd4a6d7f23dde230bce45be
+  title: 10fa773d3ae0e5f3fd2d4b196df9f10ff479f52034f7b2b986e8af63475b2354
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 8f5291641bc875a06e8f052368bd942446e24c0981ecf4cf7b676f1cfd31e3b0
+  tags: 677093243853c88d800791cbdaed668eadc3a4db704f1e7f98ab873b56700e02
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:axioms
+- topic:groups
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,8 @@
+{
+  "pythonVersion": "3.12",
+  "pythonPlatform": "Linux",
+  "typeCheckingMode": "strict",
+  "pythonPath": "/home/jp/AntonIA/repos/AWS_Infra/.venv/bin/python",
+  "extraPaths": ["src", "../ontology/src"],
+  "include": ["src", "tests"]
+}

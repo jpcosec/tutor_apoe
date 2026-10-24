@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/genetic-decomposition/design/atom-textbook-analysis-can-inform-preliminary-genetic-decompositions.md
+tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:genetic-decomposition
+- topic:textbook-analysis
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 6ea45669fa261ae0f2150bc08720eaf142bce408dee92b6fc3062a44df97735f

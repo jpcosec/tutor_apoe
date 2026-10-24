@@ -1,0 +1,330 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-branch-apos-genetic-decomposition-definition
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-branch-apos-genetic-decomposition-definition
+    name: atom-branch-apos-genetic-decomposition-definition
+    model: AtomDoc
+    path: desk/atoms/branches/atom-branch-apos-genetic-decomposition-definition.md
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: c7152bc07b2a1db7ab3213b6efba0849ad9b07af0ab3cd8d80b669b350aa0989
+    hash_d: ba4a4736ebda9da76e617f5b294b5bba9d1b7bbf8608265e7412c22bb1fa1ec8
+  facets: {}
+- id: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition
+    document_id: AtomDoc:atom-branch-apos-genetic-decomposition-definition
+    path: definition
+    title: Definition
+    breadcrumbs:
+    - Definition
+    about:
+    - Definition
+    - definition
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: definition
+    level: 1
+    line_start: 13
+    line_end: 21
+  facets: {}
+- id: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/respuesta
+    document_id: AtomDoc:atom-branch-apos-genetic-decomposition-definition
+    path: definition/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Definition
+    - Respuesta
+    about:
+    - Definition
+    - definition
+    - Respuesta
+    - respuesta
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 15
+    line_end: 18
+  facets: {}
+- id: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/procedencia
+    document_id: AtomDoc:atom-branch-apos-genetic-decomposition-definition
+    path: definition/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Definition
+    - Procedencia
+    about:
+    - Definition
+    - definition
+    - Procedencia
+    - procedencia
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - layer:taxonomy
+    - node:branch
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 19
+    line_end: 21
+  facets: {}
+- id: sldb://semantic_tag/layer:taxonomy
+  node_type: semantic_tag
+  semantics:
+    tag: layer:taxonomy
+  facets: {}
+- id: sldb://semantic_tag/node:branch
+  node_type: semantic_tag
+  semantics:
+    tag: node:branch
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-branch-apos-genetic-decomposition-definition
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-genetic-decomposition-definition
+  target: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-genetic-decomposition-definition
+  target: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-genetic-decomposition-definition
+  target: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-genetic-decomposition-definition
+  target: sldb://semantic_tag/layer:taxonomy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-genetic-decomposition-definition
+  target: sldb://semantic_tag/node:branch
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-genetic-decomposition-definition
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-genetic-decomposition-definition
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-genetic-decomposition-definition
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-genetic-decomposition-definition
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-branch-apos-genetic-decomposition-definition
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition
+  target: sldb://semantic_tag/layer:taxonomy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition
+  target: sldb://semantic_tag/node:branch
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/respuesta
+  target: sldb://semantic_tag/layer:taxonomy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/respuesta
+  target: sldb://semantic_tag/node:branch
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/procedencia
+  target: sldb://semantic_tag/layer:taxonomy
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/procedencia
+  target: sldb://semantic_tag/node:branch
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-branch-apos-genetic-decomposition-definition#definition/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-branch-apos-genetic-decomposition-definition
+model_name: AtomDoc
+source_hash: c7152bc07b2a1db7ab3213b6efba0849ad9b07af0ab3cd8d80b669b350aa0989
+content_hash: ba4a4736ebda9da76e617f5b294b5bba9d1b7bbf8608265e7412c22bb1fa1ec8
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

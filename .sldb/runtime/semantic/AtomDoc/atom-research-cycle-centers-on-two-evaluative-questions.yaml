@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/research/research-cycle/atom-research-cycle-centers-on-two-evaluative-questions.md
+tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:research-cycle
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: da0abad31fceab01815d622c353b3ca672dbbb2dab58973069c0736afa4eef7f

@@ -1,0 +1,220 @@
+doc_name: atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis
+sections:
+- path: atom-xxx-unique-identifier
+  title: atom-xxx, unique identifier
+  breadcrumbs:
+  - atom-xxx, unique identifier
+  about:
+  - atom-xxx, unique identifier
+  - atom xxx unique identifier
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:faq
+  - topic:synthesis
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:faq
+  - topic:synthesis
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: atom-xxx-unique-identifier
+  level: 1
+  line_start: 2
+  line_end: 3
+- path: short-descriptive-title
+  title: Short, descriptive title
+  breadcrumbs:
+  - Short, descriptive title
+  about:
+  - Short, descriptive title
+  - short descriptive title
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:faq
+  - topic:synthesis
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:faq
+  - topic:synthesis
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: short-descriptive-title
+  level: 1
+  line_start: 4
+  line_end: 5
+- path: what-why-how-how-not-when-where-for-whom
+  title: what | why | how | how_not | when | where | for_whom
+  breadcrumbs:
+  - what | why | how | how_not | when | where | for_whom
+  about:
+  - what | why | how | how_not | when | where | for_whom
+  - what why how how not when where for whom
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:faq
+  - topic:synthesis
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:faq
+  - topic:synthesis
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: what-why-how-how-not-when-where-for-whom
+  level: 1
+  line_start: 6
+  line_end: 7
+- path: e-g-system-deskops-topic-templates
+  title: e.g., system:deskops, topic:templates
+  breadcrumbs:
+  - e.g., system:deskops, topic:templates
+  about:
+  - e.g., system:deskops, topic:templates
+  - e g system deskops topic templates
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:faq
+  - topic:synthesis
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:faq
+  - topic:synthesis
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: e-g-system-deskops-topic-templates
+  level: 1
+  line_start: 8
+  line_end: 18
+- path: el-libro-cierra-con-preguntas-frecuentes-conclusiones-y-s-ntesis-bibliogr-fica
+  title: El libro cierra con preguntas frecuentes, conclusiones y síntesis bibliográfica
+  breadcrumbs:
+  - El libro cierra con preguntas frecuentes, conclusiones y síntesis bibliográfica
+  about:
+  - El libro cierra con preguntas frecuentes, conclusiones y síntesis bibliográfica
+  - el libro cierra con preguntas frecuentes conclusiones y s ntesis bibliogr fica
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:faq
+  - topic:synthesis
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:faq
+  - topic:synthesis
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: el-libro-cierra-con-preguntas-frecuentes-conclusiones-y-s-ntesis-bibliogr-fica
+  level: 1
+  line_start: 19
+  line_end: 27
+- path: el-libro-cierra-con-preguntas-frecuentes-conclusiones-y-s-ntesis-bibliogr-fica/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - El libro cierra con preguntas frecuentes, conclusiones y síntesis bibliográfica
+  - Respuesta
+  about:
+  - El libro cierra con preguntas frecuentes, conclusiones y síntesis bibliográfica
+  - el libro cierra con preguntas frecuentes conclusiones y s ntesis bibliogr fica
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:faq
+  - topic:synthesis
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:faq
+  - topic:synthesis
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 21
+  line_end: 24
+- path: el-libro-cierra-con-preguntas-frecuentes-conclusiones-y-s-ntesis-bibliogr-fica/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - El libro cierra con preguntas frecuentes, conclusiones y síntesis bibliográfica
+  - Procedencia
+  about:
+  - El libro cierra con preguntas frecuentes, conclusiones y síntesis bibliográfica
+  - el libro cierra con preguntas frecuentes conclusiones y s ntesis bibliogr fica
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:faq
+  - topic:synthesis
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:faq
+  - topic:synthesis
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 25
+  line_end: 27
+source_hash: 980b8bcf056ca733948921f7d39f3ed0edbd9b36a9529220f228b94c36e99a32
+sections_version: '2'

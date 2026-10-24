@@ -1,0 +1,230 @@
+doc_name: atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting
+sections:
+- path: atom-xxx-unique-identifier
+  title: atom-xxx, unique identifier
+  breadcrumbs:
+  - atom-xxx, unique identifier
+  about:
+  - atom-xxx, unique identifier
+  - atom xxx unique identifier
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:ace-cycle
+  - topic:activities
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:ace-cycle
+  - topic:activities
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: atom-xxx-unique-identifier
+  level: 1
+  line_start: 2
+  line_end: 3
+- path: short-descriptive-title
+  title: Short, descriptive title
+  breadcrumbs:
+  - Short, descriptive title
+  about:
+  - Short, descriptive title
+  - short descriptive title
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:ace-cycle
+  - topic:activities
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:ace-cycle
+  - topic:activities
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: short-descriptive-title
+  level: 1
+  line_start: 4
+  line_end: 5
+- path: what-why-how-how-not-when-where-for-whom
+  title: what | why | how | how_not | when | where | for_whom
+  breadcrumbs:
+  - what | why | how | how_not | when | where | for_whom
+  about:
+  - what | why | how | how_not | when | where | for_whom
+  - what why how how not when where for whom
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:ace-cycle
+  - topic:activities
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:ace-cycle
+  - topic:activities
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: what-why-how-how-not-when-where-for-whom
+  level: 1
+  line_start: 6
+  line_end: 7
+- path: e-g-system-deskops-topic-templates
+  title: e.g., system:deskops, topic:templates
+  breadcrumbs:
+  - e.g., system:deskops, topic:templates
+  about:
+  - e.g., system:deskops, topic:templates
+  - e g system deskops topic templates
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:ace-cycle
+  - topic:activities
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:ace-cycle
+  - topic:activities
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: e-g-system-deskops-topic-templates
+  level: 1
+  line_start: 8
+  line_end: 18
+- path: las-actividades-del-ciclo-ace-priorizan-la-abstracci-n-reflexiva-por-sobre-solo-obtener-respuestas
+  title: Las actividades del ciclo ACE priorizan la abstracción reflexiva por sobre
+    solo obtener respuestas
+  breadcrumbs:
+  - Las actividades del ciclo ACE priorizan la abstracción reflexiva por sobre solo
+    obtener respuestas
+  about:
+  - Las actividades del ciclo ACE priorizan la abstracción reflexiva por sobre solo
+    obtener respuestas
+  - las actividades del ciclo ace priorizan la abstracci n reflexiva por sobre solo
+    obtener respuestas
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:ace-cycle
+  - topic:activities
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:ace-cycle
+  - topic:activities
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: las-actividades-del-ciclo-ace-priorizan-la-abstracci-n-reflexiva-por-sobre-solo-obtener-respuestas
+  level: 1
+  line_start: 19
+  line_end: 27
+- path: las-actividades-del-ciclo-ace-priorizan-la-abstracci-n-reflexiva-por-sobre-solo-obtener-respuestas/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Las actividades del ciclo ACE priorizan la abstracción reflexiva por sobre solo
+    obtener respuestas
+  - Respuesta
+  about:
+  - Las actividades del ciclo ACE priorizan la abstracción reflexiva por sobre solo
+    obtener respuestas
+  - las actividades del ciclo ace priorizan la abstracci n reflexiva por sobre solo
+    obtener respuestas
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:ace-cycle
+  - topic:activities
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:ace-cycle
+  - topic:activities
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 21
+  line_end: 24
+- path: las-actividades-del-ciclo-ace-priorizan-la-abstracci-n-reflexiva-por-sobre-solo-obtener-respuestas/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Las actividades del ciclo ACE priorizan la abstracción reflexiva por sobre solo
+    obtener respuestas
+  - Procedencia
+  about:
+  - Las actividades del ciclo ACE priorizan la abstracción reflexiva por sobre solo
+    obtener respuestas
+  - las actividades del ciclo ace priorizan la abstracci n reflexiva por sobre solo
+    obtener respuestas
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:ace-cycle
+  - topic:activities
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:ace-cycle
+  - topic:activities
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 25
+  line_end: 27
+source_hash: fbcbaf92f827a0df17c1edfc6473dde18dce805cf90cdab8f1f55c3fa2932929
+sections_version: '2'

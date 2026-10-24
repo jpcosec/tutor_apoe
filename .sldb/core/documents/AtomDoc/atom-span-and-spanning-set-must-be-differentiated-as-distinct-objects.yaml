@@ -1,0 +1,20 @@
+name: atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects
+path: desk/atoms/apos/mathematical-domains/spanning-set-and-span/atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects.md
+source_hash: 6640361b523022da7559abf5fff17c607877690bc3005da2fb7bdd89dcb7ea52
+content_hash: 42aef70f673d30b43528f037d8c809d2e60a572f9288c18f1ef29c0ec8222fa2
+field_hashes:
+  id: 11e883d67842e484a17f014aaef088b79cebe6268e4e14127e0c5897c2afaf17
+  title: 3f5505895438f41ecbb35a4aa60184ade339d42dd4bb616f2446eda8d1bd0357
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: cb65eef6996e5e7a8bc598ff021583de6644fa5e4cdf028be6f2d4c2263c9a8b
+  tags: 4054fbacfe7f836d2491f6857daecc2656ce10e461fad98ddcd3a78591c4f57a
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:object
+- topic:spanning-set-and-span
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,20 @@
+name: atom-mental-construction-in-apos-is-spiral-and-enriching
+path: desk/atoms/apos/foundations/constructivism/atom-mental-construction-in-apos-is-spiral-and-enriching.md
+source_hash: 9eb648cebf78d5c542b8c99dfad04249f92ce73ae6b1c278052a6254fe252a4b
+content_hash: 79633a163be1abf641ac7c205b37d0f4550d1ec3e45d1cc16fd080036ab8b886
+field_hashes:
+  id: 1b7acbc5fdd11f2e844d4da927452ce8c0c0a646ee0324eae1dc0431c7fa7c1f
+  title: ce4882704acac7ea81e06930502055300d828f5447e4f664eab9e089a408f535
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: b19204f8d46051b0d519d2a9bad0afa9e387132d4c29034e11e5f891f0b94604
+  tags: b9b00e0aaa6f20ec5bf42d7ffa24f568dda3d84524f604d2bc8aec76bbc82770
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:constructivism
+- topic:mental-construction
+- type.knowledge.atom
+- workspace.desk.atoms

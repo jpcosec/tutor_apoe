@@ -1,0 +1,20 @@
+name: atom-apos-book-derives-from-collaborative-authorship
+path: desk/atoms/sources/apos-theory-book/authorship/atom-apos-book-derives-from-collaborative-authorship.md
+source_hash: 8e2e9427667b1b5ac7fb0a4ecc005cb1810a86dcee89d21b47b035f1864bf743
+content_hash: b1614dd5d2739bc5390ece6efc139791a891ba244ad110f842100ea77456f9b1
+field_hashes:
+  id: 7fd3c86975dffeda30cc434dfdd497fa7ecbf275121ff7920661ee2f841b0bb7
+  title: ab0efa3fd22a8d9a38645b7d864f57f67e85f8e17cc565c0ed68354a809c9c4e
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: cd53ab2137c8d43bac770776e4296522b425cf85bd957f1f7df6762791d2521a
+  tags: 6d8dd857484a49d1d9f62f38b3e10dac754d1ae1b21a033a94f3642d7e886b0b
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:authorship
+- topic:source-book
+- type.knowledge.atom
+- workspace.desk.atoms

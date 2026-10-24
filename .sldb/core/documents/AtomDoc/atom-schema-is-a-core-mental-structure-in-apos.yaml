@@ -1,0 +1,19 @@
+name: atom-schema-is-a-core-mental-structure-in-apos
+path: desk/atoms/apos/core-structures/schema/atom-schema-is-a-core-mental-structure-in-apos.md
+source_hash: 3fc3fb35a0c74d47da6dfa6c739a08b85169a9a1538276fd04bf408033fb150b
+content_hash: 191210721e4854690ca301bed06fdf8b117379918805d70f3b8ebca83c449249
+field_hashes:
+  id: f250030df8e4c5260243542ee6e0635647fce8ef6ecf14a7ebb8c94ffe93e0d0
+  title: fc9fc57450a237b75148714830179ffcf0d1bbc15ea031255648e007ba0ed75f
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 71deaa46b5e4875deb70ce6787996d686451d2ec0f433fcc52bad23553d9a93d
+  tags: b275b5443c0da5ffb5493cbb9c35e449157b3c9361501017a566a1d6bc8b9a3f
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:schema
+- type.knowledge.atom
+- workspace.desk.atoms

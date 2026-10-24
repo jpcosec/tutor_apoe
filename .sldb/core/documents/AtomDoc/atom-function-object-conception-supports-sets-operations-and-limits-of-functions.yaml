@@ -1,0 +1,20 @@
+name: atom-function-object-conception-supports-sets-operations-and-limits-of-functions
+path: desk/atoms/apos/mathematical-domains/functions/atom-function-object-conception-supports-sets-operations-and-limits-of-functions.md
+source_hash: 5cc65c62bcbe146ecd22fae78e7ade6c238924e7818fdc687db4e00bb38e90aa
+content_hash: b28170f7a4137de890f1e4e5c88d751caabc13b6dd7d557ff7ed742cf27a5028
+field_hashes:
+  id: 34f0ecd3296c1ded0bccf0461d83e4191cfbad7926088acb3641346de77a5e24
+  title: e2f8d4c64cccff822039460dd1a7f6588e5bd301407b2df7d66ff982aeac68c0
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 0d9f0674473c3a1f89398e2a0a81b80bba89e258aaaecbeece6f2f67fe550f1e
+  tags: d8aac5ace68d33a2cba25b3249ee1be2a5060fb62e62e4b1d5083d9df112d83a
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:functions
+- topic:object
+- type.knowledge.atom
+- workspace.desk.atoms

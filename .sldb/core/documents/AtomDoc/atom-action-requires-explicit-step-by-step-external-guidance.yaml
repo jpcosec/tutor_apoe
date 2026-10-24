@@ -1,0 +1,19 @@
+name: atom-action-requires-explicit-step-by-step-external-guidance
+path: desk/atoms/apos/core-structures/action/atom-action-requires-explicit-step-by-step-external-guidance.md
+source_hash: 477252b337105e4bdd681629dc91f0d06100e94c006dd2f7d4a94811d4ca99ba
+content_hash: 69fd9a2896869f1050855f5d78f04d1bc4dd18efd2ef1b350194fe759b0c153c
+field_hashes:
+  id: a17ef4a012cd5613e1a6460a7058d830f0841248758da0ff1a20a12d50d03a01
+  title: 32eda2cda97dba0c435fade8d24fc1d14b8740be9006b1fbb1f9c767aab7ae74
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: db1cb29bf87c8adac1b1e43872c5a7e51b572f1bea505bd1c2cca4a09f7bb39e
+  tags: 7ea2ef457dd1f0c39ae46e426cde12db083d62d14ecddbc0b65a71398562bf57
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:action
+- type.knowledge.atom
+- workspace.desk.atoms

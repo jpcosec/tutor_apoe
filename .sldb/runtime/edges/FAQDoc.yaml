@@ -1,0 +1,67 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://model/FAQDoc
+  node_type: sldb_model
+  semantics:
+    name: FAQDoc
+    model_ref: deskops.models:FAQDoc
+    path: /home/jp/proyectos/hum-ecosystem/tools/deskops/deskops/models/faq.py
+    version: 1
+    canonical: false
+    family: null
+    semantic_tags:
+    - type.documentation.faq
+    - workspace.docs.faq
+    base_models: []
+  facets: {}
+- id: sldb://semantic_tag/type.documentation.faq
+  node_type: semantic_tag
+  semantics:
+    tag: type.documentation.faq
+  facets: {}
+- id: sldb://semantic_tag/workspace.docs.faq
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.docs.faq
+  facets: {}
+- id: sldb://field/FAQDoc.title
+  node_type: sldb_field
+  semantics:
+    name: title
+    kind: string
+    required: true
+    model: FAQDoc
+    description: Primary H1 heading for the FAQ document.
+  facets: {}
+- id: sldb://field/FAQDoc.body
+  node_type: sldb_field
+  semantics:
+    name: body
+    kind: string
+    required: true
+    model: FAQDoc
+    description: Full FAQ body after the H1, including questions, answers, command
+      examples, and cross-references to atom docs.
+  facets: {}
+edges:
+- source: sldb://model/FAQDoc
+  target: sldb://semantic_tag/type.documentation.faq
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/FAQDoc
+  target: sldb://semantic_tag/workspace.docs.faq
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/FAQDoc
+  target: sldb://field/FAQDoc.title
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/FAQDoc
+  target: sldb://field/FAQDoc.body
+  relation: has_field
+  metadata:
+    origin: schema
+model_name: FAQDoc

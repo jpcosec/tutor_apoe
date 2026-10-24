@@ -1,0 +1,11 @@
+model: AtomDoc
+path: desk/atoms/branches/atom-branch-apos-genetic-decomposition-definition.md
+tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: c7152bc07b2a1db7ab3213b6efba0849ad9b07af0ab3cd8d80b669b350aa0989

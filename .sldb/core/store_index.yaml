@@ -72,5 +72,21 @@ models:
   canonical: false
   family: null
   semantics: []
+- name: SourceNoteDoc
+  model_ref: knowledge_models:SourceNoteDoc
+  path: knowledge_models/docs.py
+  models_index: .sldb/core/models/SourceNoteDoc.yaml
+  version: 1
+  canonical: false
+  family: null
+  semantics: []
+- name: KnowledgeAtomDoc
+  model_ref: knowledge_models:KnowledgeAtomDoc
+  path: knowledge_models/docs.py
+  models_index: .sldb/core/models/KnowledgeAtomDoc.yaml
+  version: 1
+  canonical: false
+  family: null
+  semantics: []
 predicates: []
-hash_a: 03c43859506dfc28ca8a3fd391c9b7ed4c125411b57ebfe2f5bf187d6e617468
+store_hash: ee0daee8336920b0f0de6e5283e73af0573bb42fc54be6cedc19a11d0adc7706

@@ -1,0 +1,220 @@
+doc_name: atom-isetl-syntax-stays-close-to-standard-mathematical-notation
+sections:
+- path: atom-xxx-unique-identifier
+  title: atom-xxx, unique identifier
+  breadcrumbs:
+  - atom-xxx, unique identifier
+  about:
+  - atom-xxx, unique identifier
+  - atom xxx unique identifier
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:isetl
+  - topic:notation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:isetl
+  - topic:notation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: atom-xxx-unique-identifier
+  level: 1
+  line_start: 2
+  line_end: 3
+- path: short-descriptive-title
+  title: Short, descriptive title
+  breadcrumbs:
+  - Short, descriptive title
+  about:
+  - Short, descriptive title
+  - short descriptive title
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:isetl
+  - topic:notation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:isetl
+  - topic:notation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: short-descriptive-title
+  level: 1
+  line_start: 4
+  line_end: 5
+- path: what-why-how-how-not-when-where-for-whom
+  title: what | why | how | how_not | when | where | for_whom
+  breadcrumbs:
+  - what | why | how | how_not | when | where | for_whom
+  about:
+  - what | why | how | how_not | when | where | for_whom
+  - what why how how not when where for whom
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:isetl
+  - topic:notation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:isetl
+  - topic:notation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: what-why-how-how-not-when-where-for-whom
+  level: 1
+  line_start: 6
+  line_end: 7
+- path: e-g-system-deskops-topic-templates
+  title: e.g., system:deskops, topic:templates
+  breadcrumbs:
+  - e.g., system:deskops, topic:templates
+  about:
+  - e.g., system:deskops, topic:templates
+  - e g system deskops topic templates
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:isetl
+  - topic:notation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:isetl
+  - topic:notation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: e-g-system-deskops-topic-templates
+  level: 1
+  line_start: 8
+  line_end: 18
+- path: la-sintaxis-de-isetl-se-mantiene-cercana-a-la-notaci-n-matem-tica-est-ndar
+  title: La sintaxis de ISETL se mantiene cercana a la notación matemática estándar
+  breadcrumbs:
+  - La sintaxis de ISETL se mantiene cercana a la notación matemática estándar
+  about:
+  - La sintaxis de ISETL se mantiene cercana a la notación matemática estándar
+  - la sintaxis de isetl se mantiene cercana a la notaci n matem tica est ndar
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:isetl
+  - topic:notation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:isetl
+  - topic:notation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: la-sintaxis-de-isetl-se-mantiene-cercana-a-la-notaci-n-matem-tica-est-ndar
+  level: 1
+  line_start: 19
+  line_end: 27
+- path: la-sintaxis-de-isetl-se-mantiene-cercana-a-la-notaci-n-matem-tica-est-ndar/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - La sintaxis de ISETL se mantiene cercana a la notación matemática estándar
+  - Respuesta
+  about:
+  - La sintaxis de ISETL se mantiene cercana a la notación matemática estándar
+  - la sintaxis de isetl se mantiene cercana a la notaci n matem tica est ndar
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:isetl
+  - topic:notation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:isetl
+  - topic:notation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 21
+  line_end: 24
+- path: la-sintaxis-de-isetl-se-mantiene-cercana-a-la-notaci-n-matem-tica-est-ndar/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - La sintaxis de ISETL se mantiene cercana a la notación matemática estándar
+  - Procedencia
+  about:
+  - La sintaxis de ISETL se mantiene cercana a la notación matemática estándar
+  - la sintaxis de isetl se mantiene cercana a la notaci n matem tica est ndar
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:isetl
+  - topic:notation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:isetl
+  - topic:notation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 25
+  line_end: 27
+source_hash: 7b869a84f11c21661104ec0b2f07f76c4e4d33f1ad3f80087811a4f4feb5ec92
+sections_version: '2'

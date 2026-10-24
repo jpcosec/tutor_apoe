@@ -1,0 +1,13 @@
+[project]
+name = "tutor-semantics"
+version = "0.1.0"
+description = "Spec 15: la ontología del runtime; coordina KB, entidades, tools y el texto que ven los agentes"
+requires-python = ">=3.12"
+dependencies = ["tutor-ontology", "tutor-kb", "tutor-tools", "pydantic>=2.7"]
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/semantics"]

@@ -1,0 +1,100 @@
+doc_name: atom-isetl-can-treat-certain-data-types-as-first-class-objects
+sections:
+- path: isetl-puede-tratar-ciertos-tipos-de-datos-como-objetos-de-primera-clase
+  title: ISETL puede tratar ciertos tipos de datos como objetos de primera clase
+  breadcrumbs:
+  - ISETL puede tratar ciertos tipos de datos como objetos de primera clase
+  about:
+  - ISETL puede tratar ciertos tipos de datos como objetos de primera clase
+  - isetl puede tratar ciertos tipos de datos como objetos de primera clase
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-types
+  - topic:isetl
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-types
+  - topic:isetl
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: isetl-puede-tratar-ciertos-tipos-de-datos-como-objetos-de-primera-clase
+  level: 1
+  line_start: 15
+  line_end: 23
+- path: isetl-puede-tratar-ciertos-tipos-de-datos-como-objetos-de-primera-clase/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - ISETL puede tratar ciertos tipos de datos como objetos de primera clase
+  - Respuesta
+  about:
+  - ISETL puede tratar ciertos tipos de datos como objetos de primera clase
+  - isetl puede tratar ciertos tipos de datos como objetos de primera clase
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-types
+  - topic:isetl
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-types
+  - topic:isetl
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 17
+  line_end: 20
+- path: isetl-puede-tratar-ciertos-tipos-de-datos-como-objetos-de-primera-clase/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - ISETL puede tratar ciertos tipos de datos como objetos de primera clase
+  - Procedencia
+  about:
+  - ISETL puede tratar ciertos tipos de datos como objetos de primera clase
+  - isetl puede tratar ciertos tipos de datos como objetos de primera clase
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-types
+  - topic:isetl
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:pedagogy
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-types
+  - topic:isetl
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 21
+  line_end: 23
+source_hash: d8cb9825102920a0d40c52bf6d6c1a902cd03289c736b9ee6de4af5c846c6fb5
+sections_version: '2'

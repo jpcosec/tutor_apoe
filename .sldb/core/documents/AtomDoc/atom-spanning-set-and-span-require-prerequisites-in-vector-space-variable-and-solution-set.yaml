@@ -1,0 +1,20 @@
+name: atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set
+path: desk/atoms/apos/mathematical-domains/spanning-set-and-span/atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set.md
+source_hash: d36ef14d295d5267f6a7843507ec8e7fa018f2c5fa978e65b9c90839f929cc0d
+content_hash: f05ecea5450e727004e1aff580ad7077ae06fc42d7278c60275df51c65b75ac9
+field_hashes:
+  id: 21110118cae0b51e07d072b2cbe1490475c00d440593889f73115025550df2b3
+  title: 2220cb4bb0958ef49e248f999e9a6a5eefa9b3440737671462d20aaedcd828be
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: db2bb15dc887701d752cd0edc6828f9be501b789960a6ee823035717d223355b
+  tags: 28fddf31c5b929768aadcebdfe0aba212356fa6878a3a7ebc6fba0fe5c4fa026
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:prerequisites
+- topic:spanning-set-and-span
+- type.knowledge.atom
+- workspace.desk.atoms

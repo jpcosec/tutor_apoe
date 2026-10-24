@@ -1,0 +1,397 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+    name: atom-genetic-decompositions-can-also-emerge-from-student-data
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decompositions-can-also-emerge-from-student-data.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:data-analysis
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: 56ee4e3005d91c477e8301142acf5f29be2f6a97f36b51633c75ec8ce4f3cc42
+    hash_d: 49f82572a3d1d6680d7b39528ec13fee2dbfacdd4b7216b03a4538611dbab296
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
+    document_id: AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+    path: las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
+    title: Las descomposiciones genéticas también pueden emerger a partir de datos
+      de estudiantes
+    breadcrumbs:
+    - Las descomposiciones genéticas también pueden emerger a partir de datos de estudiantes
+    about:
+    - Las descomposiciones genéticas también pueden emerger a partir de datos de estudiantes
+    - las descomposiciones gen ticas tambi n pueden emerger a partir de datos de estudiantes
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:data-analysis
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:data-analysis
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
+    level: 1
+    line_start: 15
+    line_end: 23
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/respuesta
+    document_id: AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+    path: las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - Las descomposiciones genéticas también pueden emerger a partir de datos de estudiantes
+    - Respuesta
+    about:
+    - Las descomposiciones genéticas también pueden emerger a partir de datos de estudiantes
+    - las descomposiciones gen ticas tambi n pueden emerger a partir de datos de estudiantes
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:data-analysis
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:data-analysis
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 17
+    line_end: 20
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/procedencia
+    document_id: AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+    path: las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - Las descomposiciones genéticas también pueden emerger a partir de datos de estudiantes
+    - Procedencia
+    about:
+    - Las descomposiciones genéticas también pueden emerger a partir de datos de estudiantes
+    - las descomposiciones gen ticas tambi n pueden emerger a partir de datos de estudiantes
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:data-analysis
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:data-analysis
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 21
+    line_end: 23
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:research
+  node_type: semantic_tag
+  semantics:
+    tag: layer:research
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:data-analysis
+  node_type: semantic_tag
+  semantics:
+    tag: topic:data-analysis
+  facets: {}
+- id: sldb://semantic_tag/topic:genetic-decomposition
+  node_type: semantic_tag
+  semantics:
+    tag: topic:genetic-decomposition
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+  target: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+  target: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+  target: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+  target: sldb://semantic_tag/topic:data-analysis
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
+  target: sldb://semantic_tag/topic:data-analysis
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/respuesta
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/respuesta
+  target: sldb://semantic_tag/topic:data-analysis
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/respuesta
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/procedencia
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/procedencia
+  target: sldb://semantic_tag/topic:data-analysis
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/procedencia
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decompositions-can-also-emerge-from-student-data#las-descomposiciones-gen-ticas-tambi-n-pueden-emerger-a-partir-de-datos-de-estudiantes/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-genetic-decompositions-can-also-emerge-from-student-data
+model_name: AtomDoc
+source_hash: 56ee4e3005d91c477e8301142acf5f29be2f6a97f36b51633c75ec8ce4f3cc42
+content_hash: 49f82572a3d1d6680d7b39528ec13fee2dbfacdd4b7216b03a4538611dbab296
+semantic_tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:data-analysis
+- topic:genetic-decomposition
+- type.knowledge.atom
+- workspace.desk.atoms

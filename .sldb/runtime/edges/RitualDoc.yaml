@@ -1,0 +1,249 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://model/RitualDoc
+  node_type: sldb_model
+  semantics:
+    name: RitualDoc
+    model_ref: deskops.models:RitualDoc
+    path: /home/jp/proyectos/hum-ecosystem/tools/deskops/deskops/models/ritual.py
+    version: 1
+    canonical: false
+    family: null
+    semantic_tags:
+    - type.workflow.ritual
+    - workspace.desk
+    base_models: []
+  facets: {}
+- id: sldb://semantic_tag/type.workflow.ritual
+  node_type: semantic_tag
+  semantics:
+    tag: type.workflow.ritual
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk
+  facets: {}
+- id: sldb://field/RitualDoc.title
+  node_type: sldb_field
+  semantics:
+    name: title
+    kind: string
+    required: true
+    model: RitualDoc
+    description: Short ritual title.
+  facets: {}
+- id: sldb://field/RitualDoc.id
+  node_type: sldb_field
+  semantics:
+    name: id
+    kind: string
+    required: true
+    model: RitualDoc
+    description: Stable ritual identifier.
+  facets: {}
+- id: sldb://field/RitualDoc.status
+  node_type: sldb_field
+  semantics:
+    name: status
+    kind: string
+    required: false
+    model: RitualDoc
+    description: Primitive lifecycle status.
+  facets: {}
+- id: sldb://field/RitualDoc.summary
+  node_type: sldb_field
+  semantics:
+    name: summary
+    kind: string
+    required: false
+    model: RitualDoc
+    description: Short semantic summary for the primitive.
+  facets: {}
+- id: sldb://field/RitualDoc.tags
+  node_type: sldb_field
+  semantics:
+    name: tags
+    kind: stringlist
+    required: false
+    model: RitualDoc
+    description: Semantic tags placed at the end, using namespaced forms such as 'layer:workflow'
+      or 'system:sldb'.
+  facets: {}
+- id: sldb://field/RitualDoc.routine
+  node_type: sldb_field
+  semantics:
+    name: routine
+    kind: string
+    required: false
+    model: RitualDoc
+    description: Primary routine identifier that makes the artifact actionable.
+  facets: {}
+- id: sldb://field/RitualDoc.current_node
+  node_type: sldb_field
+  semantics:
+    name: current_node
+    kind: string
+    required: false
+    model: RitualDoc
+    description: Current node in the operational routine or state machine.
+  facets: {}
+- id: sldb://field/RitualDoc.history
+  node_type: sldb_field
+  semantics:
+    name: history
+    kind: stringlist
+    required: false
+    model: RitualDoc
+    description: Operational transition history for the artifact.
+  facets: {}
+- id: sldb://field/RitualDoc.purpose
+  node_type: sldb_field
+  semantics:
+    name: purpose
+    kind: string
+    required: true
+    model: RitualDoc
+    description: Why the ritual exists.
+  facets: {}
+- id: sldb://field/RitualDoc.trigger
+  node_type: sldb_field
+  semantics:
+    name: trigger
+    kind: string
+    required: true
+    model: RitualDoc
+    description: When the ritual should be started.
+  facets: {}
+- id: sldb://field/RitualDoc.preconditions
+  node_type: sldb_field
+  semantics:
+    name: preconditions
+    kind: stringlist
+    required: false
+    model: RitualDoc
+    description: Conditions that must hold before running the ritual.
+  facets: {}
+- id: sldb://field/RitualDoc.steps
+  node_type: sldb_field
+  semantics:
+    name: steps
+    kind: stringlist
+    required: false
+    model: RitualDoc
+    description: Ordered steps to execute as part of the ritual.
+  facets: {}
+- id: sldb://field/RitualDoc.validation
+  node_type: sldb_field
+  semantics:
+    name: validation
+    kind: stringlist
+    required: false
+    model: RitualDoc
+    description: Checks that confirm the ritual was performed correctly.
+  facets: {}
+- id: sldb://field/RitualDoc.failure_modes
+  node_type: sldb_field
+  semantics:
+    name: failure_modes
+    kind: stringlist
+    required: false
+    model: RitualDoc
+    description: Common mistakes, drifts, or anti-patterns to avoid.
+  facets: {}
+- id: sldb://field/RitualDoc.completion
+  node_type: sldb_field
+  semantics:
+    name: completion
+    kind: string
+    required: true
+    model: RitualDoc
+    description: What indicates that the ritual has been completed.
+  facets: {}
+edges:
+- source: sldb://model/RitualDoc
+  target: sldb://semantic_tag/type.workflow.ritual
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/RitualDoc
+  target: sldb://semantic_tag/workspace.desk
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.title
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.id
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.status
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.summary
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.tags
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.routine
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.current_node
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.history
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.purpose
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.trigger
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.preconditions
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.steps
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.validation
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.failure_modes
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/RitualDoc
+  target: sldb://field/RitualDoc.completion
+  relation: has_field
+  metadata:
+    origin: schema
+model_name: RitualDoc

@@ -1,0 +1,7 @@
+Missing graph references:
+- missing_declared_target: task:task-package-kb-agent-as-reusable-runtime-plus-pack -> desk/drawer/tasks/task-package-kb-agent-as-reusable-runtime-plus-pack.md
+  provenance: desk/tasks/task-package-kb-agent-as-reusable-runtime-plus-pack.md:line:13:source-file-reference
+  reason: declared target was not found among extracted graph nodes
+- missing_declared_target: task:task-package-kb-agent-as-reusable-runtime-plus-pack -> desk/inbox/20260820-185005-suggestion-package-kb-agent-as-reusable-runtime-plus-pack.md
+  provenance: desk/tasks/task-package-kb-agent-as-reusable-runtime-plus-pack.md:line:40:source-file-reference
+  reason: declared target was not found among extracted graph nodes

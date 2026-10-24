@@ -1,0 +1,19 @@
+name: atom-apos-developed-through-recognizable-historical-periods
+path: desk/atoms/apos/foundations/historical-development/atom-apos-developed-through-recognizable-historical-periods.md
+source_hash: 98adec3aab3084718ce12d2553f59134a4a01c184da341ffb5894f64b95e7b32
+content_hash: 5acb4f1ec83087fe77007cd34251e81c2f63185b07f2f1bc4fb44247ef04307f
+field_hashes:
+  id: 4fa46fd8afe1b29b257bd1587044b064c7ca2f72becc30fec837455dc4b920fa
+  title: bf10dbf7d846851f0ce811839ad468a9e94add7b65044d86736af441eb16bc4c
+  five_wh_one_plus: 6d924791a1798656302bd4b9716a494a0c5f7f55ad9ceebf629dfb2317e86078
+  answer: 0b2886d82b891aeea7268072b0c6eb67df162a3dbf5bcb04734034ddf253e0f9
+  tags: b3336222cfb00ffbbb9b4f7c2d4a19c6a217b4c8e63406644d15f50a24778004
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:history
+- type.knowledge.atom
+- workspace.desk.atoms

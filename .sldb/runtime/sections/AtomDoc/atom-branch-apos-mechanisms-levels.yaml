@@ -1,0 +1,88 @@
+doc_name: atom-branch-apos-mechanisms-levels
+sections:
+- path: levels
+  title: Levels
+  breadcrumbs:
+  - Levels
+  about:
+  - Levels
+  - levels
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: levels
+  level: 1
+  line_start: 13
+  line_end: 21
+- path: levels/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - Levels
+  - Respuesta
+  about:
+  - Levels
+  - levels
+  - Respuesta
+  - respuesta
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 15
+  line_end: 18
+- path: levels/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - Levels
+  - Procedencia
+  about:
+  - Levels
+  - levels
+  - Procedencia
+  - procedencia
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - layer:taxonomy
+  - node:branch
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 19
+  line_end: 21
+source_hash: 685c292d7530f045a7b98b1e07fe98b3170e32ab7ef1469dc15ed38fdf07ba75
+sections_version: '2'

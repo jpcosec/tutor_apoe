@@ -1,0 +1,220 @@
+doc_name: atom-apos-research-relies-on-collaborative-triangulation
+sections:
+- path: atom-xxx-unique-identifier
+  title: atom-xxx, unique identifier
+  breadcrumbs:
+  - atom-xxx, unique identifier
+  about:
+  - atom-xxx, unique identifier
+  - atom xxx unique identifier
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - topic:triangulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - topic:triangulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: atom-xxx-unique-identifier
+  level: 1
+  line_start: 2
+  line_end: 3
+- path: short-descriptive-title
+  title: Short, descriptive title
+  breadcrumbs:
+  - Short, descriptive title
+  about:
+  - Short, descriptive title
+  - short descriptive title
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - topic:triangulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - topic:triangulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: short-descriptive-title
+  level: 1
+  line_start: 4
+  line_end: 5
+- path: what-why-how-how-not-when-where-for-whom
+  title: what | why | how | how_not | when | where | for_whom
+  breadcrumbs:
+  - what | why | how | how_not | when | where | for_whom
+  about:
+  - what | why | how | how_not | when | where | for_whom
+  - what why how how not when where for whom
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - topic:triangulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - topic:triangulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: what-why-how-how-not-when-where-for-whom
+  level: 1
+  line_start: 6
+  line_end: 7
+- path: e-g-system-deskops-topic-templates
+  title: e.g., system:deskops, topic:templates
+  breadcrumbs:
+  - e.g., system:deskops, topic:templates
+  about:
+  - e.g., system:deskops, topic:templates
+  - e g system deskops topic templates
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - topic:triangulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - topic:triangulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: e-g-system-deskops-topic-templates
+  level: 1
+  line_start: 8
+  line_end: 18
+- path: la-investigaci-n-apos-se-apoya-en-triangulaci-n-colaborativa
+  title: La investigación APOS se apoya en triangulación colaborativa
+  breadcrumbs:
+  - La investigación APOS se apoya en triangulación colaborativa
+  about:
+  - La investigación APOS se apoya en triangulación colaborativa
+  - la investigaci n apos se apoya en triangulaci n colaborativa
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - topic:triangulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - topic:triangulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: la-investigaci-n-apos-se-apoya-en-triangulaci-n-colaborativa
+  level: 1
+  line_start: 19
+  line_end: 27
+- path: la-investigaci-n-apos-se-apoya-en-triangulaci-n-colaborativa/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - La investigación APOS se apoya en triangulación colaborativa
+  - Respuesta
+  about:
+  - La investigación APOS se apoya en triangulación colaborativa
+  - la investigaci n apos se apoya en triangulaci n colaborativa
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - topic:triangulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - topic:triangulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 21
+  line_end: 24
+- path: la-investigaci-n-apos-se-apoya-en-triangulaci-n-colaborativa/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - La investigación APOS se apoya en triangulación colaborativa
+  - Procedencia
+  about:
+  - La investigación APOS se apoya en triangulación colaborativa
+  - la investigaci n apos se apoya en triangulaci n colaborativa
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - topic:triangulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:data-collection
+  - topic:triangulation
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 25
+  line_end: 27
+source_hash: 826e23567f510f30f7f61e09492408e564580b83360425c3c9c572a095eb3bde
+sections_version: '2'

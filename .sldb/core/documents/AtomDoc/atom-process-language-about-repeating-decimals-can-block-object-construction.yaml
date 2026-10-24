@@ -1,0 +1,20 @@
+name: atom-process-language-about-repeating-decimals-can-block-object-construction
+path: desk/atoms/apos/mathematical-domains/repeating-decimals/atom-process-language-about-repeating-decimals-can-block-object-construction.md
+source_hash: 1d5440d1c49a0d43b9173c53a5a830cd86c786bf1b406b286b414c15b438de2f
+content_hash: 955ae6e6f94e38ffa7e4e1b24c46555307f5bd196c61668259a8a92b06dd5eb7
+field_hashes:
+  id: 9c44c30002ed0f6265f022f0ff97b033461aa87a4a1f6bb69a354139181cabdb
+  title: 83dd9d2057903d01e80d35fe4f97559e73d4e254736be9982d7c4f3da750508d
+  five_wh_one_plus: 1566d618b9ad05f5d6636ef68875b058a3311f288ab671709bb72d36b5dd1a5c
+  answer: 5e9833c001adee90bb6a81e4338a969715ab7a1dd0fadc764ca82baab683191a
+  tags: 81b3dc290283caab064c66ae27be8c59e8c901c683b185ece6c920b2d7278b72
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:process-language
+- topic:repeating-decimals
+- type.knowledge.atom
+- workspace.desk.atoms

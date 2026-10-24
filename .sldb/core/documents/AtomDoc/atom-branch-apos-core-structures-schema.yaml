@@ -1,0 +1,18 @@
+name: atom-branch-apos-core-structures-schema
+path: desk/atoms/branches/atom-branch-apos-core-structures-schema.md
+source_hash: 27717eb6a20e1169f16cd154ad71cfc678873f1e66e395202dcbcb0ca6bfffdb
+content_hash: d91d1ee609e83b33f3d5656664c24548205abe17815ae5c82b44bba20ac2415e
+field_hashes:
+  id: d163edd5b97895a8aad5abd2513e0d0daf1b4dfc41466157e25cea7c9798edeb
+  title: 042f3027da92ca82bce617aa5a914211a892c7e11dc9a9bbeff281c79497226c
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,11 @@
+model: AtomDoc
+path: desk/atoms/branches/atom-branch-apos-genetic-decomposition-role-in-research.md
+tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 6e3b40a04b9154e1f8b2ae7ac03223c78024f03dbb72bd8b2db7eb7c48440764

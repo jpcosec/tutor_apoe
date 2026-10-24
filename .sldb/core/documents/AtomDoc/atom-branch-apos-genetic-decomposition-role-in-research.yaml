@@ -1,0 +1,18 @@
+name: atom-branch-apos-genetic-decomposition-role-in-research
+path: desk/atoms/branches/atom-branch-apos-genetic-decomposition-role-in-research.md
+source_hash: 6e3b40a04b9154e1f8b2ae7ac03223c78024f03dbb72bd8b2db7eb7c48440764
+content_hash: bffa6b968c7c5c8539d8bf652060d0decca02fd83de79f61e2f2dce7e2d9d766
+field_hashes:
+  id: efe27c57bc9d92e53394d5d524eb58ad4b1fc05bfc0038912258b871bc45865d
+  title: 9c6291b20d2a1d5380e1d064effeadaebc8426b740ac34cdf6b065d4f2c085d7
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

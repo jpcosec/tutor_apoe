@@ -1,0 +1,173 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://model/InboxNoteDoc
+  node_type: sldb_model
+  semantics:
+    name: InboxNoteDoc
+    model_ref: deskops.models:InboxNoteDoc
+    path: /home/jp/proyectos/hum-ecosystem/tools/deskops/deskops/models/inbox.py
+    version: 1
+    canonical: false
+    family: null
+    semantic_tags:
+    - type.desk.inbox-note
+    - workspace.desk.inbox
+    base_models: []
+  facets: {}
+- id: sldb://semantic_tag/type.desk.inbox-note
+  node_type: semantic_tag
+  semantics:
+    tag: type.desk.inbox-note
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.inbox
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.inbox
+  facets: {}
+- id: sldb://field/InboxNoteDoc.kind
+  node_type: sldb_field
+  semantics:
+    name: kind
+    kind: enum
+    required: true
+    enum:
+    - unclear
+    - suggestion
+    model: InboxNoteDoc
+    description: Inbox note type indicating unresolved confusion or an improvement
+      proposal.
+  facets: {}
+- id: sldb://field/InboxNoteDoc.sender_project
+  node_type: sldb_field
+  semantics:
+    name: sender_project
+    kind: string
+    required: false
+    model: InboxNoteDoc
+    description: Project that sent the inbox message, resolved from the repo registry
+      when possible.
+  facets: {}
+- id: sldb://field/InboxNoteDoc.target_project
+  node_type: sldb_field
+  semantics:
+    name: target_project
+    kind: string
+    required: false
+    model: InboxNoteDoc
+    description: Project the inbox note targets, resolved from the shared desk identity
+      contract.
+  facets: {}
+- id: sldb://field/InboxNoteDoc.created_at
+  node_type: sldb_field
+  semantics:
+    name: created_at
+    kind: string
+    required: true
+    model: InboxNoteDoc
+    description: Timestamp for when the inbox note was created.
+  facets: {}
+- id: sldb://field/InboxNoteDoc.status
+  node_type: sldb_field
+  semantics:
+    name: status
+    kind: enum
+    required: true
+    enum:
+    - open
+    - closed
+    model: InboxNoteDoc
+    description: Whether the inbox note is still open or already handled.
+  facets: {}
+- id: sldb://field/InboxNoteDoc.acknowledged_by
+  node_type: sldb_field
+  semantics:
+    name: acknowledged_by
+    kind: string
+    required: false
+    model: InboxNoteDoc
+    description: Project identity that acknowledged and closed the inbox note.
+  facets: {}
+- id: sldb://field/InboxNoteDoc.acknowledged_at
+  node_type: sldb_field
+  semantics:
+    name: acknowledged_at
+    kind: string
+    required: false
+    model: InboxNoteDoc
+    description: Timestamp for when the inbox note was acknowledged and closed.
+  facets: {}
+- id: sldb://field/InboxNoteDoc.title
+  node_type: sldb_field
+  semantics:
+    name: title
+    kind: string
+    required: true
+    model: InboxNoteDoc
+    description: Inbox note title shown as the H1 heading.
+  facets: {}
+- id: sldb://field/InboxNoteDoc.body
+  node_type: sldb_field
+  semantics:
+    name: body
+    kind: string
+    required: true
+    model: InboxNoteDoc
+    description: Markdown body describing the question or suggestion in detail.
+  facets: {}
+edges:
+- source: sldb://model/InboxNoteDoc
+  target: sldb://semantic_tag/type.desk.inbox-note
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/InboxNoteDoc
+  target: sldb://semantic_tag/workspace.desk.inbox
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/InboxNoteDoc
+  target: sldb://field/InboxNoteDoc.kind
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/InboxNoteDoc
+  target: sldb://field/InboxNoteDoc.sender_project
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/InboxNoteDoc
+  target: sldb://field/InboxNoteDoc.target_project
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/InboxNoteDoc
+  target: sldb://field/InboxNoteDoc.created_at
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/InboxNoteDoc
+  target: sldb://field/InboxNoteDoc.status
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/InboxNoteDoc
+  target: sldb://field/InboxNoteDoc.acknowledged_by
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/InboxNoteDoc
+  target: sldb://field/InboxNoteDoc.acknowledged_at
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/InboxNoteDoc
+  target: sldb://field/InboxNoteDoc.title
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/InboxNoteDoc
+  target: sldb://field/InboxNoteDoc.body
+  relation: has_field
+  metadata:
+    origin: schema
+model_name: InboxNoteDoc

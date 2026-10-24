@@ -1,0 +1,18 @@
+name: atom-branch-apos-applications-elementary-math
+path: desk/atoms/branches/atom-branch-apos-applications-elementary-math.md
+source_hash: 855578b6d7a8297ae7a7b8d79b62700a2f64b156bb22b8ce90780117bb49c961
+content_hash: 1d7dcaad6da01448cbaaf2b3de15a5e957e762688aa9aa1dfca8004f18e6c65e
+field_hashes:
+  id: dfe02c434a1461891fe245961cbd3a651788e0ef6a2e0e1ec7f2ae32358b4e4b
+  title: 87de1928c3e5bc5194ed0a5f29e345d8b4d78832be24096c69bde2221ffad993
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

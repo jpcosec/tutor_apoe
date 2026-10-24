@@ -1,0 +1,19 @@
+name: atom-reversal-is-central-for-inverses-and-related-constructions
+path: desk/atoms/apos/mechanisms/reversal/atom-reversal-is-central-for-inverses-and-related-constructions.md
+source_hash: c43bd0db15a0e064d461cf6d17f0d330bc0dd8d34a5d51e09c27c45dde951fa3
+content_hash: c6c599560289edbc5e16a3f72ee9db24ef8cf59e97332b74273393e5cfdbf8df
+field_hashes:
+  id: e6592275b763b39259673f48e033f6b6c3da1686fed47984ef866dfb983b18ac
+  title: de18eee34f4241623874295ef142e26ea2ea2cc9a383df4067c7961955d30ede
+  five_wh_one_plus: 1566d618b9ad05f5d6636ef68875b058a3311f288ab671709bb72d36b5dd1a5c
+  answer: 3c0a6e0ca4751838720ddef5c711eff478e3ce4538275c631ff4c2ec4298d5fe
+  tags: e67574d9c30b71d8f23fb9eff11cab9d088ef100774d03ef3298b569b08525c7
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:reversal
+- type.knowledge.atom
+- workspace.desk.atoms

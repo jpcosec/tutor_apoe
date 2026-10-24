@@ -1,0 +1,64 @@
+id: sequence.chat-turn
+title: Chat Turn with Deterministic Mesa
+type: sequence
+version: "0.1"
+data:
+  participants:
+    - id: User
+      kind: actor
+    - id: ChatApp
+      kind: component
+    - id: Storage
+      kind: boundary
+    - id: MesaCompiler
+      kind: component
+    - id: Pack
+      kind: boundary
+    - id: Responder
+      kind: component
+    - id: Gemini
+      kind: boundary
+  messages:
+    - from: User
+      to: ChatApp
+      message: POST /api/chat (message, user_id, conversation_id)
+    - from: ChatApp
+      to: Storage
+      message: ensure_user / ensure_conversation
+      kind: sync
+    - from: ChatApp
+      to: Storage
+      message: get_conversation_turns (previous turn)
+      kind: sync
+    - from: ChatApp
+      to: MesaCompiler
+      message: compile(query, previous_turn)
+      kind: sync
+    - from: MesaCompiler
+      to: Pack
+      message: load atoms + rules
+      kind: sync
+    - from: MesaCompiler
+      to: ChatApp
+      message: mesa + prompt_mesa
+      kind: reply
+    - from: ChatApp
+      to: Responder
+      message: build_prompt(prompt_mesa)
+      kind: sync
+    - from: Responder
+      to: Gemini
+      message: generate_content(gemini-2.5-flash)
+      kind: sync
+    - from: Gemini
+      to: Responder
+      message: answer text
+      kind: reply
+    - from: ChatApp
+      to: Storage
+      message: save_turn(mesa, answer)
+      kind: sync
+    - from: ChatApp
+      to: User
+      message: turn (turn_id, mesa, assistant_message)
+      kind: reply

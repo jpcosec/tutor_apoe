@@ -1,0 +1,19 @@
+name: atom-reflective-abstraction-has-reflection-and-reorganization-components
+path: desk/atoms/apos/foundations/reflective-abstraction/atom-reflective-abstraction-has-reflection-and-reorganization-components.md
+source_hash: 82906f6795e591c727c70322b483ae610cf11bdfa61b1138a23871d963ef19be
+content_hash: 7fd2b9bd19d170cea0b3782ef89be8f021c077a5508d1830c878e8a3c6d24343
+field_hashes:
+  id: e3074a5a83dbe2fe178e44396d3e6f84dd206f12fe4768eacdb763f14c184061
+  title: cca71ba911552f5a2452d58f601fb0a5f9bf7473072c9aaefda382cf329ed15d
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 471bbbc879802d069290f9e5deee33516395920cb1d7da93f1dcfa979f25cd2a
+  tags: 2a33358956d27b08bbaa8ea75ab7cbf5581e66fd6a818a909bf0cc40da397a22
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:reflective-abstraction
+- type.knowledge.atom
+- workspace.desk.atoms

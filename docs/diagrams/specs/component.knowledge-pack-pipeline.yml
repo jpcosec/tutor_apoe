@@ -1,0 +1,56 @@
+id: component.knowledge-pack-pipeline
+title: Knowledge Pack Build Pipeline
+type: component
+version: "0.1"
+data:
+  nodes:
+    Sources:
+      label: Source documents (PDF, notes)
+      kind: boundary
+    StructuredDocs:
+      label: Structured Markdown atoms (desk/atoms)
+      kind: core
+    SLDB:
+      label: SLDB store (.sldb)
+      kind: database
+    Exporter:
+      label: Pack exporter (adapter)
+      kind: core
+    AtomsInventory:
+      label: atoms.json inventory
+      kind: boundary
+    PackConfig:
+      label: pack config + rules + prompt policy
+      kind: boundary
+    Runtime:
+      label: KB Agent Runtime
+      kind: boundary
+  edges:
+    - from: Sources
+      to: StructuredDocs
+      relation: distilled_into
+      label: extract atoms
+    - from: StructuredDocs
+      to: SLDB
+      relation: tracked_by
+      label: parse/validate/index
+    - from: SLDB
+      to: Exporter
+      relation: read_by
+      label: find + docs show
+    - from: Exporter
+      to: AtomsInventory
+      relation: produces
+      label: export inventory
+    - from: PackConfig
+      to: AtomsInventory
+      relation: accompanies
+      label: pack bundle
+    - from: AtomsInventory
+      to: Runtime
+      relation: consumed_by
+      label: load pack
+    - from: PackConfig
+      to: Runtime
+      relation: consumed_by
+      label: load config

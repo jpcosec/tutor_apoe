@@ -1,0 +1,20 @@
+name: atom-genetic-decomposition-guides-both-research-and-teaching
+path: desk/atoms/apos/genetic-decomposition/role-in-teaching/atom-genetic-decomposition-guides-both-research-and-teaching.md
+source_hash: c60ab7c64ab3a5392382b45b792e607636b5bc0e605ad43e7df559303e0b0de7
+content_hash: 652e3ba4aa7672cabdd2858743cfb4dd343fc2751f8826beefe6fc574fc07bed
+field_hashes:
+  id: 7ab48fcffcb99da717d74ff8ee2efeaf44768590420afbe9a92c8ac608878acf
+  title: 9413b5ed4f6ad991574d8b992e01dba2ccf1f41c7acc347c6ea44d544d224aad
+  five_wh_one_plus: 1566d618b9ad05f5d6636ef68875b058a3311f288ab671709bb72d36b5dd1a5c
+  answer: a50903c97fd8c693eab02f30265901e16e5990cf65ae2273c9a5ab569881d0b6
+  tags: 5be69077ebc1bdf738b835509ead6f924742edc2b72796399ab20061d3ec0853
+semantic_tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:genetic-decomposition
+- topic:teaching-design
+- type.knowledge.atom
+- workspace.desk.atoms

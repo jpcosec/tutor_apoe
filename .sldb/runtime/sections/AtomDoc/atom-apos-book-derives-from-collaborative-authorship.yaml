@@ -1,0 +1,220 @@
+doc_name: atom-apos-book-derives-from-collaborative-authorship
+sections:
+- path: atom-xxx-unique-identifier
+  title: atom-xxx, unique identifier
+  breadcrumbs:
+  - atom-xxx, unique identifier
+  about:
+  - atom-xxx, unique identifier
+  - atom xxx unique identifier
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:authorship
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:authorship
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: atom-xxx-unique-identifier
+  level: 1
+  line_start: 2
+  line_end: 3
+- path: short-descriptive-title
+  title: Short, descriptive title
+  breadcrumbs:
+  - Short, descriptive title
+  about:
+  - Short, descriptive title
+  - short descriptive title
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:authorship
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:authorship
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: short-descriptive-title
+  level: 1
+  line_start: 4
+  line_end: 5
+- path: what-why-how-how-not-when-where-for-whom
+  title: what | why | how | how_not | when | where | for_whom
+  breadcrumbs:
+  - what | why | how | how_not | when | where | for_whom
+  about:
+  - what | why | how | how_not | when | where | for_whom
+  - what why how how not when where for whom
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:authorship
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:authorship
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: what-why-how-how-not-when-where-for-whom
+  level: 1
+  line_start: 6
+  line_end: 7
+- path: e-g-system-deskops-topic-templates
+  title: e.g., system:deskops, topic:templates
+  breadcrumbs:
+  - e.g., system:deskops, topic:templates
+  about:
+  - e.g., system:deskops, topic:templates
+  - e g system deskops topic templates
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:authorship
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:authorship
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: e-g-system-deskops-topic-templates
+  level: 1
+  line_start: 8
+  line_end: 18
+- path: el-libro-de-apos-es-una-s-ntesis-colaborativa-de-varios-investigadores
+  title: El libro de APOS es una síntesis colaborativa de varios investigadores
+  breadcrumbs:
+  - El libro de APOS es una síntesis colaborativa de varios investigadores
+  about:
+  - El libro de APOS es una síntesis colaborativa de varios investigadores
+  - el libro de apos es una s ntesis colaborativa de varios investigadores
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:authorship
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:authorship
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: el-libro-de-apos-es-una-s-ntesis-colaborativa-de-varios-investigadores
+  level: 1
+  line_start: 19
+  line_end: 27
+- path: el-libro-de-apos-es-una-s-ntesis-colaborativa-de-varios-investigadores/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - El libro de APOS es una síntesis colaborativa de varios investigadores
+  - Respuesta
+  about:
+  - El libro de APOS es una síntesis colaborativa de varios investigadores
+  - el libro de apos es una s ntesis colaborativa de varios investigadores
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:authorship
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:authorship
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 21
+  line_end: 24
+- path: el-libro-de-apos-es-una-s-ntesis-colaborativa-de-varios-investigadores/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - El libro de APOS es una síntesis colaborativa de varios investigadores
+  - Procedencia
+  about:
+  - El libro de APOS es una síntesis colaborativa de varios investigadores
+  - el libro de apos es una s ntesis colaborativa de varios investigadores
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:authorship
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:theory
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:authorship
+  - topic:source-book
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 25
+  line_end: 27
+source_hash: 8e2e9427667b1b5ac7fb0a4ecc005cb1810a86dcee89d21b47b035f1864bf743
+sections_version: '2'

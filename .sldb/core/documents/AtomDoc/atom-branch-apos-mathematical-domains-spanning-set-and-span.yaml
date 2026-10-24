@@ -1,0 +1,18 @@
+name: atom-branch-apos-mathematical-domains-spanning-set-and-span
+path: desk/atoms/branches/atom-branch-apos-mathematical-domains-spanning-set-and-span.md
+source_hash: 60bf8478be0dcf8c22dbf402a8cad585683698b8f01228ed576a30bf2e52ee4f
+content_hash: 41b8eafee671c17e02b46fa5dbf18fd08991afddcaab08c577ce0f6568417fc0
+field_hashes:
+  id: 73db906ec4f4f69506ae5a7813f39fa4e7640a299eed092d975f0fdcb4f7e3d1
+  title: bcb24149c7f272e4de29f34fa6b17678fcc3f3339a9a7cf4c5e32870a886c253
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 2909c07b94400f23ec79ed3df7120293f5c4afc8c97e938db08bbffdffecdd96
+  tags: a9d6bfae06c52e40cc3948e1d547044b5d5c0964b69331becb5326bc7a24a9fb
+semantic_tags:
+- layer:taxonomy
+- node:branch
+- representation.markdown
+- source.document.markdown
+- system:apos
+- type.knowledge.atom
+- workspace.desk.atoms

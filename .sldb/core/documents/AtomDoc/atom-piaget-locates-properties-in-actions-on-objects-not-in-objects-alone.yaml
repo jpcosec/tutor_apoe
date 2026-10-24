@@ -1,0 +1,20 @@
+name: atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone
+path: desk/atoms/apos/foundations/piaget/atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone.md
+source_hash: 34e506d6918658773a4acb3c6dc11b766cf5b1c323ab3a414114a2c584660690
+content_hash: 5462e3b175cee38013b695854c20fb4b7fb8bc8686a9a025caa037704b7ff2e1
+field_hashes:
+  id: d2eeb5bf888961d863fcf7e9ff61ba267d91beaf6e1529248372c22d0a8ae839
+  title: 0040157d174728eb6498426d1f430fca96c4ce90720b22f9dc4f30d590e72f29
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 406ee3f89ee7a5c1728da887396c3eceacf934a6324331d35f6a52f98cf97bb3
+  tags: 27e3ada20bf7a32c79b0f3e258441702775a5a04b63e564a375147fd71dd9da9
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:piaget
+- topic:reflective-abstraction
+- type.knowledge.atom
+- workspace.desk.atoms

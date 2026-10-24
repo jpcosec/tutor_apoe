@@ -1,0 +1,20 @@
+name: atom-apos-book-is-not-the-last-word-on-apos
+path: desk/atoms/sources/apos-theory-book/scope/atom-apos-book-is-not-the-last-word-on-apos.md
+source_hash: fcb67b1e0cd56f05ff2fb6400a704c4e7c251a2790b0aba79ee4ca815ef295be
+content_hash: a262d76d4fd860c64173bd2a10861091eaf9ab725062f84fbe447d0e3df23775
+field_hashes:
+  id: c6dd46d0d4b19905195bcb1560da801ec4ebc34ad99fc7f5808612571149efbb
+  title: 2dc88758b8dadfa88cfaaa87ae6b08952dc364d6042641d89e129188e048a29c
+  five_wh_one_plus: c7d4bb6c4e85ef7f9bf7592aeecd1d09dd38adc39afd1ffb3908b19e689040ad
+  answer: 84f3249de013ad664c5db5da703464b0be802fee53550f2ccf5933d4267a5d1e
+  tags: 0ac9eb50b2a66dc7e18ac51c7cacce4983d9b58cd6142db7ddd8bb06318c54f9
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:source-book
+- topic:theory-evolution
+- type.knowledge.atom
+- workspace.desk.atoms

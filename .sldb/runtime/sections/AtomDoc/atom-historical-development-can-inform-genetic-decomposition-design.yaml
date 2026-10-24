@@ -1,0 +1,110 @@
+doc_name: atom-historical-development-can-inform-genetic-decomposition-design
+sections:
+- path: el-desarrollo-hist-rico-de-un-concepto-puede-informar-el-dise-o-de-una-descomposici-n-gen-tica
+  title: El desarrollo histórico de un concepto puede informar el diseño de una descomposición
+    genética
+  breadcrumbs:
+  - El desarrollo histórico de un concepto puede informar el diseño de una descomposición
+    genética
+  about:
+  - El desarrollo histórico de un concepto puede informar el diseño de una descomposición
+    genética
+  - el desarrollo hist rico de un concepto puede informar el dise o de una descomposici
+    n gen tica
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:genetic-decomposition
+  - topic:history
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:genetic-decomposition
+  - topic:history
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: el-desarrollo-hist-rico-de-un-concepto-puede-informar-el-dise-o-de-una-descomposici-n-gen-tica
+  level: 1
+  line_start: 15
+  line_end: 23
+- path: el-desarrollo-hist-rico-de-un-concepto-puede-informar-el-dise-o-de-una-descomposici-n-gen-tica/respuesta
+  title: Respuesta
+  breadcrumbs:
+  - El desarrollo histórico de un concepto puede informar el diseño de una descomposición
+    genética
+  - Respuesta
+  about:
+  - El desarrollo histórico de un concepto puede informar el diseño de una descomposición
+    genética
+  - el desarrollo hist rico de un concepto puede informar el dise o de una descomposici
+    n gen tica
+  - Respuesta
+  - respuesta
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:genetic-decomposition
+  - topic:history
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:genetic-decomposition
+  - topic:history
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: respuesta
+  level: 2
+  line_start: 17
+  line_end: 20
+- path: el-desarrollo-hist-rico-de-un-concepto-puede-informar-el-dise-o-de-una-descomposici-n-gen-tica/procedencia
+  title: Procedencia
+  breadcrumbs:
+  - El desarrollo histórico de un concepto puede informar el diseño de una descomposición
+    genética
+  - Procedencia
+  about:
+  - El desarrollo histórico de un concepto puede informar el diseño de una descomposición
+    genética
+  - el desarrollo hist rico de un concepto puede informar el dise o de una descomposici
+    n gen tica
+  - Procedencia
+  - procedencia
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:genetic-decomposition
+  - topic:history
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  semantic_tags:
+  - domain:mathematics-education
+  - layer:research
+  - representation.markdown
+  - source.document.markdown
+  - system:apos
+  - topic:genetic-decomposition
+  - topic:history
+  - type.knowledge.atom
+  - workspace.desk.atoms
+  slug: procedencia
+  level: 2
+  line_start: 21
+  line_end: 23
+source_hash: 5feded3781b3b07e01d88108b542ebd5c61a2c5940d42ffc67b5fedba0d86c8d
+sections_version: '2'

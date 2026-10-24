@@ -1,0 +1,237 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://model/PillDoc
+  node_type: sldb_model
+  semantics:
+    name: PillDoc
+    model_ref: deskops.models:PillDoc
+    path: /home/jp/proyectos/hum-ecosystem/tools/deskops/deskops/models/pill.py
+    version: 1
+    canonical: false
+    family: null
+    semantic_tags:
+    - type.workflow.pill
+    - workspace.desk
+    base_models: []
+  facets: {}
+- id: sldb://semantic_tag/type.workflow.pill
+  node_type: semantic_tag
+  semantics:
+    tag: type.workflow.pill
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk
+  facets: {}
+- id: sldb://field/PillDoc.title
+  node_type: sldb_field
+  semantics:
+    name: title
+    kind: string
+    required: true
+    model: PillDoc
+    description: Pill title, including semantic prefix when useful, such as 'ADR:'
+      or 'Pattern:'.
+  facets: {}
+- id: sldb://field/PillDoc.id
+  node_type: sldb_field
+  semantics:
+    name: id
+    kind: string
+    required: true
+    model: PillDoc
+    description: Stable pill identifier.
+  facets: {}
+- id: sldb://field/PillDoc.status
+  node_type: sldb_field
+  semantics:
+    name: status
+    kind: string
+    required: false
+    model: PillDoc
+    description: Pill lifecycle status.
+  facets: {}
+- id: sldb://field/PillDoc.summary
+  node_type: sldb_field
+  semantics:
+    name: summary
+    kind: string
+    required: false
+    model: PillDoc
+    description: Short semantic summary for the pill.
+  facets: {}
+- id: sldb://field/PillDoc.tags
+  node_type: sldb_field
+  semantics:
+    name: tags
+    kind: stringlist
+    required: false
+    model: PillDoc
+    description: Semantic tags placed at the end, using namespaced forms such as 'language:python'
+      or 'library:pydantic'.
+  facets: {}
+- id: sldb://field/PillDoc.routine
+  node_type: sldb_field
+  semantics:
+    name: routine
+    kind: string
+    required: false
+    model: PillDoc
+    description: Primary routine identifier that makes the pill actionable.
+  facets: {}
+- id: sldb://field/PillDoc.current_node
+  node_type: sldb_field
+  semantics:
+    name: current_node
+    kind: string
+    required: false
+    model: PillDoc
+    description: Current node in the operational routine.
+  facets: {}
+- id: sldb://field/PillDoc.history
+  node_type: sldb_field
+  semantics:
+    name: history
+    kind: stringlist
+    required: false
+    model: PillDoc
+    description: Operational transition history.
+  facets: {}
+- id: sldb://field/PillDoc.what
+  node_type: sldb_field
+  semantics:
+    name: what
+    kind: string
+    required: true
+    model: PillDoc
+    description: What the pill defines or clarifies.
+  facets: {}
+- id: sldb://field/PillDoc.why
+  node_type: sldb_field
+  semantics:
+    name: why
+    kind: string
+    required: true
+    model: PillDoc
+    description: Why this context matters for implementation or refactoring.
+  facets: {}
+- id: sldb://field/PillDoc.when
+  node_type: sldb_field
+  semantics:
+    name: when
+    kind: string
+    required: true
+    model: PillDoc
+    description: When this pill should be applied.
+  facets: {}
+- id: sldb://field/PillDoc.where
+  node_type: sldb_field
+  semantics:
+    name: where
+    kind: string
+    required: true
+    model: PillDoc
+    description: Where this pill applies, either as general scope or as references
+      to existing code or docs.
+  facets: {}
+- id: sldb://field/PillDoc.how
+  node_type: sldb_field
+  semantics:
+    name: how
+    kind: string
+    required: true
+    model: PillDoc
+    description: How to apply the guidance in practice.
+  facets: {}
+- id: sldb://field/PillDoc.how_not
+  node_type: sldb_field
+  semantics:
+    name: how_not
+    kind: string
+    required: true
+    model: PillDoc
+    description: How not to apply the guidance or what to avoid.
+  facets: {}
+edges:
+- source: sldb://model/PillDoc
+  target: sldb://semantic_tag/type.workflow.pill
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/PillDoc
+  target: sldb://semantic_tag/workspace.desk
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://model/PillDoc
+  target: sldb://field/PillDoc.title
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/PillDoc
+  target: sldb://field/PillDoc.id
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/PillDoc
+  target: sldb://field/PillDoc.status
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/PillDoc
+  target: sldb://field/PillDoc.summary
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/PillDoc
+  target: sldb://field/PillDoc.tags
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/PillDoc
+  target: sldb://field/PillDoc.routine
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/PillDoc
+  target: sldb://field/PillDoc.current_node
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/PillDoc
+  target: sldb://field/PillDoc.history
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/PillDoc
+  target: sldb://field/PillDoc.what
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/PillDoc
+  target: sldb://field/PillDoc.why
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/PillDoc
+  target: sldb://field/PillDoc.when
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/PillDoc
+  target: sldb://field/PillDoc.where
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/PillDoc
+  target: sldb://field/PillDoc.how
+  relation: has_field
+  metadata:
+    origin: schema
+- source: sldb://model/PillDoc
+  target: sldb://field/PillDoc.how_not
+  relation: has_field
+  metadata:
+    origin: schema
+model_name: PillDoc

@@ -1,0 +1,19 @@
+name: atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms
+path: desk/atoms/apos/mechanisms/encapsulation/atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms.md
+source_hash: aa126dd6cd560ef36bc15443b02cc4b6fb08ce7ee7d9be2394a23b7a84bc6793
+content_hash: 6c91b353b17562e7995926346e42cca727b607ab1e3bb50c29dbb01610e625a8
+field_hashes:
+  id: 2854d371063b7c57c9330257f9d618fe7c0f9da7f820b13880868a262e7bce20
+  title: 235402e598fc722e7b968ca9766937310e5573f67b2c99304efec7c50cddefc2
+  five_wh_one_plus: 1566d618b9ad05f5d6636ef68875b058a3311f288ab671709bb72d36b5dd1a5c
+  answer: 3ef2ef4febcd2a0a6c3a3e5a219b2ab5e59ef01cf1e8276e1815fa1e9aa1bf45
+  tags: fa27f15b20b7a2608c48cf8667f981fad5ba576c04c803ff8d715f9ad6d4d392
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:encapsulation
+- type.knowledge.atom
+- workspace.desk.atoms

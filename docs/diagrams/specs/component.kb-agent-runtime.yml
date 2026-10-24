@@ -1,0 +1,92 @@
+id: component.kb-agent-runtime
+title: KB Agent Runtime and Knowledge Pack
+type: component
+version: "0.1"
+data:
+  nodes:
+    Runtime:
+      label: KB Agent Runtime (reusable core)
+      kind: core
+      contains:
+        - ChatApp
+        - MesaCompiler
+        - Responder
+        - Storage
+        - PackLoader
+    ChatApp:
+      label: FastAPI Chat App
+      kind: core
+    MesaCompiler:
+      label: Mesa Compiler (deterministic context)
+      kind: core
+    Responder:
+      label: Gemini Responder
+      kind: core
+    Storage:
+      label: SQLite Persistence
+      kind: boundary
+    PackLoader:
+      label: Knowledge Pack Loader
+      kind: core
+    KnowledgePack:
+      label: Knowledge Pack (per KB)
+      kind: boundary
+      contains:
+        - AtomsInventory
+        - PackConfig
+        - PromptPolicy
+        - ExpansionRules
+    AtomsInventory:
+      label: atoms.json inventory
+      kind: boundary
+    PackConfig:
+      label: pack config (tags, labels, limits)
+      kind: boundary
+    PromptPolicy:
+      label: prompt policy
+      kind: boundary
+    ExpansionRules:
+      label: tag inference and expansion rules
+      kind: boundary
+    SLDB:
+      label: SLDB store (.sldb)
+      kind: database
+    Deskops:
+      label: Deskops workflow harness
+      kind: boundary
+    Gemini:
+      label: Gemini / Vertex AI
+      kind: boundary
+  edges:
+    - from: ChatApp
+      to: MesaCompiler
+      relation: compiles
+      label: compile mesa
+    - from: MesaCompiler
+      to: PackLoader
+      relation: reads
+      label: rules + inventory
+    - from: PackLoader
+      to: KnowledgePack
+      relation: loads
+      label: load pack
+    - from: MesaCompiler
+      to: Responder
+      relation: provides
+      label: prompt_mesa
+    - from: Responder
+      to: Gemini
+      relation: calls
+      label: generate
+    - from: ChatApp
+      to: Storage
+      relation: persists
+      label: turns/mesas
+    - from: AtomsInventory
+      to: SLDB
+      relation: derived_from
+      label: exported from store
+    - from: KnowledgePack
+      to: Deskops
+      relation: governed_by
+      label: workflow + build

@@ -1,0 +1,20 @@
+name: atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis
+path: desk/atoms/sources/apos-theory-book/structure/atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis.md
+source_hash: 4b9e535264f370608dd72d90a0bd9be569a8fa307e2f350733c84da3666b25f5
+content_hash: ad635e276a09886b844e92d6944cbc7d7545d68296d14280a1aa87cc792273d4
+field_hashes:
+  id: b32a3c31944a31907ff8953cd5f728d61ea73141969d906ba7210fd174458384
+  title: 8c32cd12b948c62126b70847a02861c75ebef6d7a04e8c5f6ababfe17c6acf17
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 51f09c55cd887a186d21314ef1efeed743f675f9c1004bc826922ad23d1c5610
+  tags: a77b05ad21d3dc7bffd56cd1d7d36285cb3f054ba62cf36c78b291fae8d27429
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:book-structure
+- topic:source-book
+- type.knowledge.atom
+- workspace.desk.atoms

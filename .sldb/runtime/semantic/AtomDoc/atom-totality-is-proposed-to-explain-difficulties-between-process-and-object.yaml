@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/mechanisms/totality/atom-totality-is-proposed-to-explain-difficulties-between-process-and-object.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:process-to-object
+- topic:totality
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 2abbbb8cbfd2aa15f5146741e7c22e128e252f86b458650964e46804ceec97c4

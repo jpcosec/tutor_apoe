@@ -1,0 +1,740 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+    name: atom-genetic-decomposition-guides-both-research-and-teaching
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/role-in-teaching/atom-genetic-decomposition-guides-both-research-and-teaching.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: c60ab7c64ab3a5392382b45b792e607636b5bc0e605ad43e7df559303e0b0de7
+    hash_d: 652e3ba4aa7672cabdd2858743cfb4dd343fc2751f8826beefe6fc574fc07bed
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#atom-xxx-unique-identifier
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#atom-xxx-unique-identifier
+    document_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+    path: atom-xxx-unique-identifier
+    title: atom-xxx, unique identifier
+    breadcrumbs:
+    - atom-xxx, unique identifier
+    about:
+    - atom-xxx, unique identifier
+    - atom xxx unique identifier
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: atom-xxx-unique-identifier
+    level: 1
+    line_start: 2
+    line_end: 3
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#short-descriptive-title
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#short-descriptive-title
+    document_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+    path: short-descriptive-title
+    title: Short, descriptive title
+    breadcrumbs:
+    - Short, descriptive title
+    about:
+    - Short, descriptive title
+    - short descriptive title
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: short-descriptive-title
+    level: 1
+    line_start: 4
+    line_end: 5
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#what-why-how-how-not-when-where-for-whom
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#what-why-how-how-not-when-where-for-whom
+    document_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+    path: what-why-how-how-not-when-where-for-whom
+    title: what | why | how | how_not | when | where | for_whom
+    breadcrumbs:
+    - what | why | how | how_not | when | where | for_whom
+    about:
+    - what | why | how | how_not | when | where | for_whom
+    - what why how how not when where for whom
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: what-why-how-how-not-when-where-for-whom
+    level: 1
+    line_start: 6
+    line_end: 7
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#e-g-system-deskops-topic-templates
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#e-g-system-deskops-topic-templates
+    document_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+    path: e-g-system-deskops-topic-templates
+    title: e.g., system:deskops, topic:templates
+    breadcrumbs:
+    - e.g., system:deskops, topic:templates
+    about:
+    - e.g., system:deskops, topic:templates
+    - e g system deskops topic templates
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: e-g-system-deskops-topic-templates
+    level: 1
+    line_start: 8
+    line_end: 18
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
+    document_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+    path: la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
+    title: La descomposición genética orienta tanto la investigación como la enseñanza
+    breadcrumbs:
+    - La descomposición genética orienta tanto la investigación como la enseñanza
+    about:
+    - La descomposición genética orienta tanto la investigación como la enseñanza
+    - la descomposici n gen tica orienta tanto la investigaci n como la ense anza
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
+    level: 1
+    line_start: 19
+    line_end: 27
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/respuesta
+    document_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+    path: la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - La descomposición genética orienta tanto la investigación como la enseñanza
+    - Respuesta
+    about:
+    - La descomposición genética orienta tanto la investigación como la enseñanza
+    - la descomposici n gen tica orienta tanto la investigaci n como la ense anza
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 21
+    line_end: 24
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/procedencia
+    document_id: AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+    path: la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - La descomposición genética orienta tanto la investigación como la enseñanza
+    - Procedencia
+    about:
+    - La descomposición genética orienta tanto la investigación como la enseñanza
+    - la descomposici n gen tica orienta tanto la investigaci n como la ense anza
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:genetic-decomposition
+    - topic:teaching-design
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 25
+    line_end: 27
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:research
+  node_type: semantic_tag
+  semantics:
+    tag: layer:research
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:genetic-decomposition
+  node_type: semantic_tag
+  semantics:
+    tag: topic:genetic-decomposition
+  facets: {}
+- id: sldb://semantic_tag/topic:teaching-design
+  node_type: semantic_tag
+  semantics:
+    tag: topic:teaching-design
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#atom-xxx-unique-identifier
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#short-descriptive-title
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#what-why-how-how-not-when-where-for-whom
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#e-g-system-deskops-topic-templates
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://semantic_tag/topic:teaching-design
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:teaching-design
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#short-descriptive-title
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#short-descriptive-title
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#short-descriptive-title
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#short-descriptive-title
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#short-descriptive-title
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#short-descriptive-title
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#short-descriptive-title
+  target: sldb://semantic_tag/topic:teaching-design
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#short-descriptive-title
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#short-descriptive-title
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:teaching-design
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:teaching-design
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
+  target: sldb://semantic_tag/topic:teaching-design
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/respuesta
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/respuesta
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/respuesta
+  target: sldb://semantic_tag/topic:teaching-design
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/procedencia
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/procedencia
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/procedencia
+  target: sldb://semantic_tag/topic:teaching-design
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-guides-both-research-and-teaching#la-descomposici-n-gen-tica-orienta-tanto-la-investigaci-n-como-la-ense-anza/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-genetic-decomposition-guides-both-research-and-teaching
+model_name: AtomDoc
+source_hash: c60ab7c64ab3a5392382b45b792e607636b5bc0e605ad43e7df559303e0b0de7
+content_hash: 652e3ba4aa7672cabdd2858743cfb4dd343fc2751f8826beefe6fc574fc07bed
+semantic_tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:genetic-decomposition
+- topic:teaching-design
+- type.knowledge.atom
+- workspace.desk.atoms

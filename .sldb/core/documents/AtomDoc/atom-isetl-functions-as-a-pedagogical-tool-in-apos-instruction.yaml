@@ -1,0 +1,20 @@
+name: atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction
+path: desk/atoms/apos/pedagogy/isetl/atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction.md
+source_hash: 71d4c6b20c76c1cd1b044a061b7cfc915cd69a48c8cd1e4b6e54b2ffa95f4d16
+content_hash: f9732656cc8ae3f614f4f1ce7c546e1266dbd78aaeb0f0d0887e1b8429d268b9
+field_hashes:
+  id: c8f7aaa4dd7376e96da0dc235f729d203696103e651bdcd7bceb25276ef0e228
+  title: e2a99a7ef89bed09b5ac252a71e2427f01ffae6d2d7a9dd18dfaf58260910685
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: f9b93d260f4c158e38e16ac70c9f6166961749c24ca07391a09a34362b4977d8
+  tags: ee4707261b611db86fec4814cbd6474188e42cea494b4e44e89d29893b12ad30
+semantic_tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:instruction
+- topic:isetl
+- type.knowledge.atom
+- workspace.desk.atoms

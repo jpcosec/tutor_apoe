@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/pedagogy/activities/atom-transforming-computer-procedures-can-help-students-move-from-process-to-object.md
+tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:activities
+- topic:process-to-object
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 09110a7f1ac36524d9a066062a012d49bc05d31cf84b6897dc40033fbeb5a6b9

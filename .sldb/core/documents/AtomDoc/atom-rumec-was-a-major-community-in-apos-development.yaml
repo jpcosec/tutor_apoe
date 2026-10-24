@@ -1,0 +1,19 @@
+name: atom-rumec-was-a-major-community-in-apos-development
+path: desk/atoms/apos/foundations/rumec/atom-rumec-was-a-major-community-in-apos-development.md
+source_hash: 5f35f9bbcc7ebb0157f5a94697fb673eb7e2761d1cdbecbcff5fdb0b2984731e
+content_hash: 168b3882e1afe78d3b66dae32e17f4ec53cb16e1c242224041a4b93c289ff15e
+field_hashes:
+  id: e63dc992ae1d9fd7b0aa20d3c09323cd015a1a05d6208d16871c5e2f49746f27
+  title: a8c12e8983ea149b0f1fbe36bc9ff93bd1dc13b7211e1d29d1bac6e804234a11
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: e3cb0ef4b37d603c036582764afe700144e543ef3510b7bda35df441e4f76693
+  tags: ce37e2bd294c226cef90520f84ddfedfce1975ad21e9ad0b5dea9fe71cb402b0
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:rumec
+- type.knowledge.atom
+- workspace.desk.atoms

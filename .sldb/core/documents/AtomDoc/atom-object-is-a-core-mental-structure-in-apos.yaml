@@ -1,0 +1,19 @@
+name: atom-object-is-a-core-mental-structure-in-apos
+path: desk/atoms/apos/core-structures/object/atom-object-is-a-core-mental-structure-in-apos.md
+source_hash: dff79f009ce0b698d919e39e062bc582b7ef58c5a315027a4205308da8e29656
+content_hash: fdb909b3f0fc619b9665db888100bf6cd910dccb899c06f3f497a24def46b643
+field_hashes:
+  id: 09ca54c5c5f84d2ac149f0238fbfdd7b8cfd5ed1deb56fe2ad0787496798f5ff
+  title: 9850ecca3051c40cdf48be38d40f18ada34ff33b9cff602d0068f80c94cfbb5f
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: 7fbb712b2e2a029a79a0ae8d01bde032795b0779381dbfe260b3ebc8febb33ea
+  tags: af9219d188e08e39dd84ed2eee0624062016f127adfb333ebfcdc57708b612ca
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:object
+- type.knowledge.atom
+- workspace.desk.atoms

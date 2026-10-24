@@ -1,0 +1,19 @@
+name: atom-apos-is-a-living-and-revisable-body-of-ideas
+path: desk/atoms/apos/foundations/historical-development/atom-apos-is-a-living-and-revisable-body-of-ideas.md
+source_hash: d3d83ee26f889d52f1be3c915c6b386aaed6eecf5b9011924499608df5be95d4
+content_hash: 503ece84e5fd19dc804e1158d2ca9878deb7d6a73b9eee95ac5d96bd3748a1fc
+field_hashes:
+  id: 75bc43347caffb5c069893a825c288d123be338cc6092c9f72f86f04f34d4ff0
+  title: c27ec441befe8a295665cc95d23c9843d20581a092b0ba694ef1e7a82c498fa4
+  five_wh_one_plus: 0ac5b48a10a651e75b01f8d26468c18977ea336c90a9607a6163d0d330a4bb40
+  answer: fd9e103a51e45f4016ce8c4df6f70a6ac92c8eae806a99da55bde79fa9a4d03d
+  tags: e928aecd1c9402151d4a105c281ae0ed5269d30ff843005ae7b783d28a6897fc
+semantic_tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:theory-evolution
+- type.knowledge.atom
+- workspace.desk.atoms

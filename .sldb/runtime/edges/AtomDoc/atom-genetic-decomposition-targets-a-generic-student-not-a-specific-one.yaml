@@ -1,0 +1,750 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+    name: atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+    model: AtomDoc
+    path: desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: 6746414cc2c32e2ba44ce8f8d2e2ecaab21e49d110d3a3590ab5980583417b3c
+    hash_d: d3cd55203a8627ad0aa8be0e4a05304b14afbcce2f93e10c7426744a0fa28813
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#atom-xxx-unique-identifier
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#atom-xxx-unique-identifier
+    document_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+    path: atom-xxx-unique-identifier
+    title: atom-xxx, unique identifier
+    breadcrumbs:
+    - atom-xxx, unique identifier
+    about:
+    - atom-xxx, unique identifier
+    - atom xxx unique identifier
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: atom-xxx-unique-identifier
+    level: 1
+    line_start: 2
+    line_end: 3
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#short-descriptive-title
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#short-descriptive-title
+    document_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+    path: short-descriptive-title
+    title: Short, descriptive title
+    breadcrumbs:
+    - Short, descriptive title
+    about:
+    - Short, descriptive title
+    - short descriptive title
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: short-descriptive-title
+    level: 1
+    line_start: 4
+    line_end: 5
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#what-why-how-how-not-when-where-for-whom
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#what-why-how-how-not-when-where-for-whom
+    document_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+    path: what-why-how-how-not-when-where-for-whom
+    title: what | why | how | how_not | when | where | for_whom
+    breadcrumbs:
+    - what | why | how | how_not | when | where | for_whom
+    about:
+    - what | why | how | how_not | when | where | for_whom
+    - what why how how not when where for whom
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: what-why-how-how-not-when-where-for-whom
+    level: 1
+    line_start: 6
+    line_end: 7
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#e-g-system-deskops-topic-templates
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#e-g-system-deskops-topic-templates
+    document_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+    path: e-g-system-deskops-topic-templates
+    title: e.g., system:deskops, topic:templates
+    breadcrumbs:
+    - e.g., system:deskops, topic:templates
+    about:
+    - e.g., system:deskops, topic:templates
+    - e g system deskops topic templates
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: e-g-system-deskops-topic-templates
+    level: 1
+    line_start: 8
+    line_end: 18
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+    document_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+    path: la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+    title: La descomposición genética se formula para un estudiante genérico y no
+      para uno específico
+    breadcrumbs:
+    - La descomposición genética se formula para un estudiante genérico y no para
+      uno específico
+    about:
+    - La descomposición genética se formula para un estudiante genérico y no para
+      uno específico
+    - la descomposici n gen tica se formula para un estudiante gen rico y no para
+      uno espec fico
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+    level: 1
+    line_start: 19
+    line_end: 27
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
+    document_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+    path: la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - La descomposición genética se formula para un estudiante genérico y no para
+      uno específico
+    - Respuesta
+    about:
+    - La descomposición genética se formula para un estudiante genérico y no para
+      uno específico
+    - la descomposici n gen tica se formula para un estudiante gen rico y no para
+      uno espec fico
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 21
+    line_end: 24
+  facets: {}
+- id: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
+    document_id: AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+    path: la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - La descomposición genética se formula para un estudiante genérico y no para
+      uno específico
+    - Procedencia
+    about:
+    - La descomposición genética se formula para un estudiante genérico y no para
+      uno específico
+    - la descomposici n gen tica se formula para un estudiante gen rico y no para
+      uno espec fico
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:generic-student
+    - topic:genetic-decomposition
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 25
+    line_end: 27
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:research
+  node_type: semantic_tag
+  semantics:
+    tag: layer:research
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:generic-student
+  node_type: semantic_tag
+  semantics:
+    tag: topic:generic-student
+  facets: {}
+- id: sldb://semantic_tag/topic:genetic-decomposition
+  node_type: semantic_tag
+  semantics:
+    tag: topic:genetic-decomposition
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#atom-xxx-unique-identifier
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#short-descriptive-title
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#what-why-how-how-not-when-where-for-whom
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#e-g-system-deskops-topic-templates
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://semantic_tag/topic:generic-student
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:generic-student
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#short-descriptive-title
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#short-descriptive-title
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#short-descriptive-title
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#short-descriptive-title
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#short-descriptive-title
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#short-descriptive-title
+  target: sldb://semantic_tag/topic:generic-student
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#short-descriptive-title
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#short-descriptive-title
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#short-descriptive-title
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:generic-student
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:generic-student
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+  target: sldb://semantic_tag/topic:generic-student
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
+  target: sldb://semantic_tag/topic:generic-student
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
+  target: sldb://semantic_tag/topic:generic-student
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
+  target: sldb://semantic_tag/topic:genetic-decomposition
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one#la-descomposici-n-gen-tica-se-formula-para-un-estudiante-gen-rico-y-no-para-uno-espec-fico/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+model_name: AtomDoc
+source_hash: 6746414cc2c32e2ba44ce8f8d2e2ecaab21e49d110d3a3590ab5980583417b3c
+content_hash: d3cd55203a8627ad0aa8be0e4a05304b14afbcce2f93e10c7426744a0fa28813
+semantic_tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:generic-student
+- topic:genetic-decomposition
+- type.knowledge.atom
+- workspace.desk.atoms

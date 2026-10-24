@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/pedagogy/isetl/atom-isetl-can-treat-certain-data-types-as-first-class-objects.md
+tags:
+- domain:mathematics-education
+- layer:pedagogy
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:data-types
+- topic:isetl
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: d8cb9825102920a0d40c52bf6d6c1a902cd03289c736b9ee6de4af5c846c6fb5

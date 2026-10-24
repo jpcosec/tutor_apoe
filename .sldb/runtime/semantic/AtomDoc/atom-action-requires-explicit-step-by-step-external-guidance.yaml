@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/core-structures/action/atom-action-requires-explicit-step-by-step-external-guidance.md
+tags:
+- domain:mathematics-education
+- layer:theory
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:action
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 477252b337105e4bdd681629dc91f0d06100e94c006dd2f7d4a94811d4ca99ba

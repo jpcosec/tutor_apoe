@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/genetic-decomposition/definition/atom-genetic-decomposition-begins-as-a-preliminary-hypothesis.md
+tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:genetic-decomposition
+- topic:hypothesis
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: e970b9abbc0553a05a1fc8d9ec93da4f3be208d470a4dbc265467e4ed8f44c90

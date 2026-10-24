@@ -1,0 +1,13 @@
+model: AtomDoc
+path: desk/atoms/apos/mathematical-domains/spanning-set-and-span/atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects.md
+tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:object
+- topic:spanning-set-and-span
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 6640361b523022da7559abf5fff17c607877690bc3005da2fb7bdd89dcb7ea52

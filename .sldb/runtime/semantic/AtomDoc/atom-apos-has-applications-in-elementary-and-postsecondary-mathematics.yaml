@@ -1,0 +1,12 @@
+model: AtomDoc
+path: desk/atoms/apos/applications/elementary-math/atom-apos-has-applications-in-elementary-and-postsecondary-mathematics.md
+tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:school-levels
+- type.knowledge.atom
+- workspace.desk.atoms
+source_hash: 66e979cb4ce8095af971922a58d49a5d2fe359badf5821c12e57cb064271c36f

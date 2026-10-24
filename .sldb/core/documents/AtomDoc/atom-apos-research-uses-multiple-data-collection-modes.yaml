@@ -1,0 +1,19 @@
+name: atom-apos-research-uses-multiple-data-collection-modes
+path: desk/atoms/apos/research/data-collection/atom-apos-research-uses-multiple-data-collection-modes.md
+source_hash: e1441b5e27daa9805ca35ae0cf956d1d19ef3df33feeecba12d5458f0aa0a48a
+content_hash: 912bb00557d163ae5fe98c7f2d7eba2129e3140c4ef3e309435696873b9d7c98
+field_hashes:
+  id: 431caaa8a2e797050a29409cb961a93ea643cdd571e75b8ee0aed7c172056698
+  title: 52ba7d95a3ee9b2d9cf7f63489903036e03857776ccd2bae7113ae508ec5e6c4
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: 82bd1cd82dc3da5acb9f1d31ad0db2c725e6d92f5e689e3d4e559cf3fe32a0a0
+  tags: 0ea2421b9cfa320b7b2739e555fd51d0279ab520ed163eaec4d0a8b5c7f0a524
+semantic_tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:data-collection
+- type.knowledge.atom
+- workspace.desk.atoms

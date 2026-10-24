@@ -1,0 +1,679 @@
+edges_version: 3|sections:2
+nodes:
+- id: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  node_type: AtomDoc
+  semantics:
+    export_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+    name: atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+    model: AtomDoc
+    path: desk/atoms/apos/research/paradigm/atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm.md
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    hash_c: e2d0839d8c9e01b7fed37be52428d799be8ef1db9abf5ff26f07ea3aa64088f4
+    hash_d: 9479e4ccbf06070c8b730dd4679ba333d26fadc01efcb91867d62233a641c6ed
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#atom-xxx-unique-identifier
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#atom-xxx-unique-identifier
+    document_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+    path: atom-xxx-unique-identifier
+    title: atom-xxx, unique identifier
+    breadcrumbs:
+    - atom-xxx, unique identifier
+    about:
+    - atom-xxx, unique identifier
+    - atom xxx unique identifier
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: atom-xxx-unique-identifier
+    level: 1
+    line_start: 2
+    line_end: 3
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#short-descriptive-title
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#short-descriptive-title
+    document_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+    path: short-descriptive-title
+    title: Short, descriptive title
+    breadcrumbs:
+    - Short, descriptive title
+    about:
+    - Short, descriptive title
+    - short descriptive title
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: short-descriptive-title
+    level: 1
+    line_start: 4
+    line_end: 5
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#what-why-how-how-not-when-where-for-whom
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#what-why-how-how-not-when-where-for-whom
+    document_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+    path: what-why-how-how-not-when-where-for-whom
+    title: what | why | how | how_not | when | where | for_whom
+    breadcrumbs:
+    - what | why | how | how_not | when | where | for_whom
+    about:
+    - what | why | how | how_not | when | where | for_whom
+    - what why how how not when where for whom
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: what-why-how-how-not-when-where-for-whom
+    level: 1
+    line_start: 6
+    line_end: 7
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#e-g-system-deskops-topic-templates
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#e-g-system-deskops-topic-templates
+    document_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+    path: e-g-system-deskops-topic-templates
+    title: e.g., system:deskops, topic:templates
+    breadcrumbs:
+    - e.g., system:deskops, topic:templates
+    about:
+    - e.g., system:deskops, topic:templates
+    - e g system deskops topic templates
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: e-g-system-deskops-topic-templates
+    level: 1
+    line_start: 8
+    line_end: 17
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma
+    document_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+    path: apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma
+    title: APOS articula teoría, metodología y pedagogía como un paradigma
+    breadcrumbs:
+    - APOS articula teoría, metodología y pedagogía como un paradigma
+    about:
+    - APOS articula teoría, metodología y pedagogía como un paradigma
+    - apos articula teor a metodolog a y pedagog a como un paradigma
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma
+    level: 1
+    line_start: 18
+    line_end: 26
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/respuesta
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/respuesta
+    document_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+    path: apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/respuesta
+    title: Respuesta
+    breadcrumbs:
+    - APOS articula teoría, metodología y pedagogía como un paradigma
+    - Respuesta
+    about:
+    - APOS articula teoría, metodología y pedagogía como un paradigma
+    - apos articula teor a metodolog a y pedagog a como un paradigma
+    - Respuesta
+    - respuesta
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: respuesta
+    level: 2
+    line_start: 20
+    line_end: 23
+  facets: {}
+- id: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/procedencia
+  node_type: sldb_section
+  semantics:
+    export_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/procedencia
+    document_id: AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+    path: apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/procedencia
+    title: Procedencia
+    breadcrumbs:
+    - APOS articula teoría, metodología y pedagogía como un paradigma
+    - Procedencia
+    about:
+    - APOS articula teoría, metodología y pedagogía como un paradigma
+    - apos articula teor a metodolog a y pedagog a como un paradigma
+    - Procedencia
+    - procedencia
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    semantic_tags:
+    - domain:mathematics-education
+    - layer:research
+    - representation.markdown
+    - source.document.markdown
+    - system:apos
+    - topic:research-paradigm
+    - type.knowledge.atom
+    - workspace.desk.atoms
+    slug: procedencia
+    level: 2
+    line_start: 24
+    line_end: 26
+  facets: {}
+- id: sldb://semantic_tag/domain:mathematics-education
+  node_type: semantic_tag
+  semantics:
+    tag: domain:mathematics-education
+  facets: {}
+- id: sldb://semantic_tag/layer:research
+  node_type: semantic_tag
+  semantics:
+    tag: layer:research
+  facets: {}
+- id: sldb://semantic_tag/representation.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: representation.markdown
+  facets: {}
+- id: sldb://semantic_tag/source.document.markdown
+  node_type: semantic_tag
+  semantics:
+    tag: source.document.markdown
+  facets: {}
+- id: sldb://semantic_tag/system:apos
+  node_type: semantic_tag
+  semantics:
+    tag: system:apos
+  facets: {}
+- id: sldb://semantic_tag/topic:research-paradigm
+  node_type: semantic_tag
+  semantics:
+    tag: topic:research-paradigm
+  facets: {}
+- id: sldb://semantic_tag/type.knowledge.atom
+  node_type: semantic_tag
+  semantics:
+    tag: type.knowledge.atom
+  facets: {}
+- id: sldb://semantic_tag/workspace.desk.atoms
+  node_type: semantic_tag
+  semantics:
+    tag: workspace.desk.atoms
+  facets: {}
+edges:
+- source: sldb://model/AtomDoc
+  target: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  relation: has_document
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#atom-xxx-unique-identifier
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#short-descriptive-title
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#what-why-how-how-not-when-where-for-whom
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#e-g-system-deskops-topic-templates
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/respuesta
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/procedencia
+  relation: has_section
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://semantic_tag/topic:research-paradigm
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://document/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/topic:research-paradigm
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#atom-xxx-unique-identifier
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#short-descriptive-title
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#short-descriptive-title
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#short-descriptive-title
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#short-descriptive-title
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#short-descriptive-title
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#short-descriptive-title
+  target: sldb://semantic_tag/topic:research-paradigm
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#short-descriptive-title
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#short-descriptive-title
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/topic:research-paradigm
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#what-why-how-how-not-when-where-for-whom
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/topic:research-paradigm
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#e-g-system-deskops-topic-templates
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma
+  target: sldb://semantic_tag/topic:research-paradigm
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/respuesta
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/respuesta
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/respuesta
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/respuesta
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/respuesta
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/respuesta
+  target: sldb://semantic_tag/topic:research-paradigm
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/respuesta
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/respuesta
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/procedencia
+  target: sldb://semantic_tag/domain:mathematics-education
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/procedencia
+  target: sldb://semantic_tag/layer:research
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/procedencia
+  target: sldb://semantic_tag/representation.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/procedencia
+  target: sldb://semantic_tag/source.document.markdown
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/procedencia
+  target: sldb://semantic_tag/system:apos
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/procedencia
+  target: sldb://semantic_tag/topic:research-paradigm
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/procedencia
+  target: sldb://semantic_tag/type.knowledge.atom
+  relation: tagged_as
+  metadata:
+    origin: structural
+- source: sldb://section/AtomDoc:atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm#apos-articula-teor-a-metodolog-a-y-pedagog-a-como-un-paradigma/procedencia
+  target: sldb://semantic_tag/workspace.desk.atoms
+  relation: tagged_as
+  metadata:
+    origin: structural
+doc_name: atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm
+model_name: AtomDoc
+source_hash: e2d0839d8c9e01b7fed37be52428d799be8ef1db9abf5ff26f07ea3aa64088f4
+content_hash: 9479e4ccbf06070c8b730dd4679ba333d26fadc01efcb91867d62233a641c6ed
+semantic_tags:
+- domain:mathematics-education
+- layer:research
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:research-paradigm
+- type.knowledge.atom
+- workspace.desk.atoms

@@ -1,0 +1,20 @@
+name: atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization
+path: desk/atoms/apos/applications/elementary-math/atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization.md
+source_hash: c8466d39c1842ab81b64a3bac836ba471f5a78d7f9e390e533ff1aff53b55f28
+content_hash: 9d5ef018f81f7469e89b60ade4bdc820fb53912ea2a3f9266663b67ba7dacc00
+field_hashes:
+  id: 23ad5204d3ca94b38fc9affe770fb3c7040807c409adf5fcab77d5c2d3b1434a
+  title: d17058000498463f3afd165f16b76d10bd641c8d92747903ef5f6a6bda3a090d
+  five_wh_one_plus: 5cada7d158df7d5d2f211af6f0f652e095e9f6ed1f2f2da0bd61ecab7e8ee74f
+  answer: d2a3537f16b27638b2902861b0105aa45e6691d8265f81a70fb40bff6ef44995
+  tags: 4f57abfb283a1f387c25b9f421dcec4f34b03ac59eb3c6578c77b73eccc8e5f4
+semantic_tags:
+- domain:mathematics-education
+- layer:applications
+- representation.markdown
+- source.document.markdown
+- system:apos
+- topic:elementary-math
+- topic:imagination
+- type.knowledge.atom
+- workspace.desk.atoms
