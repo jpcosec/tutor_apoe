@@ -22,3 +22,15 @@ generados de `.sldb/runtime/`, credenciales ni cambios ajenos en ese commit.
 La interfaz para explorar y buscar la base es `scripts/kb.py`. No añade un
 chatbot ni usa un modelo de lenguaje: delega la búsqueda a `sldb find` y
 presenta los átomos fuente en un visor local.
+
+## Skills para trabajar sin programar
+
+En `.agents/skills/` hay skills que Codex (y otros agentes) cargan solos al abrir este
+repositorio. Están pensadas para quien no programa: basta pedirlo con palabras propias o
+escribir `$` y el nombre.
+
+- `tutor-preparar` — instalar y comprobar que todo funciona.
+- `tutor-buscar` — qué dice la base sobre un tema, con su fuente.
+- `tutor-abrir-visor` — abrir el chat y el grafo en el navegador.
+- `tutor-cargar-fuente` — ingerir un PDF y proponer, revisar y aprobar átomos.
+- `tutor-guardar-cambios` — guardar y publicar el trabajo.
