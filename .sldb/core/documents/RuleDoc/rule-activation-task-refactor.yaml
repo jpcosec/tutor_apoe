@@ -1,0 +1,18 @@
+name: rule-activation-task-refactor
+path: desk/lifecycle/rule-activation-task-refactor.md
+source_hash: 5e544ad793bb5443f326931e4114079d4a12ed2b793e7fb3e6dea1fadca15aa3
+content_hash: 716afef858b79d87719d469b5d0896007b88b9c7f77938b256a8c472072db8c3
+field_hashes:
+  title: 53a493741bea5d6918024a24a1bc0f4e6c72f01ddaac70ada1492f246221ed9a
+  subject: eb42660e445fec0389367f3ce1c3e0e58c489c4d94929067c7de55ff786f5b93
+  where: 41cf66136f14a6722fc28afc4912179d17f97f87dce68a246d9b59e866f80593
+  condition: a0a0f9e077291b7cb5a46f38f509c804ce284a63bb5b66019075da277c2d3cdd
+  severity: 4d01709fcd599118652e3b27bd0ca97c802f832183d01f76a034755f2bc62fa3
+  moment: ab448ebaca73366f53e2384b99949ac894517170772b07ff2e9301285d960476
+  message: a7f5e161cb15ada17923ec871782c4f3440478c12ccc31ffac527ffe50b6ebdb
+semantic_tags:
+- layer.governance
+- representation.markdown
+- source.document.markdown
+- type.rule
+provenance: null

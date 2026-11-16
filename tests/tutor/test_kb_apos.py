@@ -10,7 +10,7 @@ import pytest
 
 from tutor import world
 from tutor.embedding import HASH_ID, HashEmbedder, get_embedder
-from tutor.kb_build import plan, read_atoms, synthesize_branches
+from tutor.kb_build import missing_branches, plan, read_atoms
 
 ACTION_BRANCH = "branch-apos-core-structures-action"
 ACTION_ATOMS = {
@@ -41,7 +41,7 @@ def test_ids_preserved(kb) -> None:
         for path in (world.repo_root() / "desk" / "atoms").rglob("*.md")
         if (m := re.search(r"^id: (\S+)$", path.read_text(encoding="utf-8"), re.M))
     }
-    assert len(source_ids) == 141
+    assert len(source_ids) == 153
     in_kb = {d.name for d in kb.by_model("KnowledgeAtom")} | {d.name for d in kb.by_model("BranchNode")}
     assert source_ids <= in_kb
 
@@ -58,7 +58,8 @@ def test_parent_and_get(kb) -> None:
     assert atom["question"] == "what"
     assert "topic:action" in atom["tags"]
     assert atom["summary"].startswith("APOS incluye la Acción")
-    assert atom["provenance"].startswith("Fuente principal")
+    assert atom["provenance"].startswith("Arnon et al. (2014), cap. 3")
+    assert atom["provenance_refs"][0]["kind"] == "book" and atom["provenance_refs"][0]["chapter"] == 3
     assert world.parent(kb, atom["id"])["id"] == ACTION_BRANCH
     assert world.parent(kb, ACTION_BRANCH)["id"] == "branch-apos-core-structures"
     assert world.parent(kb, "branch-apos") is None
@@ -98,9 +99,9 @@ def test_hash_embedder_is_deterministic_and_default() -> None:
 def test_build_plan_from_source_atoms(kb_root: Path) -> None:
     atoms_dir = world.repo_root() / "desk" / "atoms"
     atoms = read_atoms(atoms_dir)
-    assert len(atoms) == 141
-    synthesized = synthesize_branches(atoms)
-    assert {b.id for b in synthesized} >= {"branch-apos", "branch-apos-core-structures"}
+    assert len(atoms) == 153
+    assert missing_branches(atoms) == []  # todas las ramas existen como archivo: el build no inventa ninguna
+    assert {a.id for a in atoms if a.node_type == "branch"} >= {"branch-apos", "branch-apos-core-structures"}
     built = plan(atoms, atoms_dir, None, HASH_ID)
     models = {doc.model for doc in built.docs}
     assert models == {

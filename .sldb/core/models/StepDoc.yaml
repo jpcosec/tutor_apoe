@@ -1,6 +1,6 @@
 name: StepDoc
 model_ref: deskops.models:StepDoc
-path: /home/jp/proyectos/hum-ecosystem/tools/deskops/deskops/models/step.py
+path: ''
 documents_index: .sldb/core/documents/StepDoc.yaml
 sections_index: ''
 model_hash: dd3a2c0d0a07e7950b867bdee110eefd5acc6b253b24be58400d557d4dad1fbf

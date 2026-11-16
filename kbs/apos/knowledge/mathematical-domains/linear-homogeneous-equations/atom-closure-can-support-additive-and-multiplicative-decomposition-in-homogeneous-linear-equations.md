@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor kb_build
+  at: '2026-11-16T02:20:37Z'
+  authority: generated
+  via: create_document
 id: atom-closure-can-support-additive-and-multiplicative-decomposition-in-homogeneous-linear-equations
 title: La clausura puede sustentar la descomposicion aditiva y multiplicativa en una
   ELH
@@ -11,6 +16,17 @@ tags:
 - domain:linear-algebra
 - layer:applications
 parent: branch-apos-mathematical-domains-linear-homogeneous-equations
+provenance:
+- kind: expert
+  source: null
+  chapter: null
+  sections: []
+  pages: null
+  excerpt: null
+  chunk_ids: []
+  nouls: []
+  anchored: null
+  note: '2026-07-16'
 ---
 
 # La clausura puede sustentar la descomposicion aditiva y multiplicativa en una ELH
@@ -25,4 +41,4 @@ En este uso, la clausura no se registra como un nivel APOE por si misma. Mas bie
 
 ## Procedencia
 
-Conversacion de curacion con experto, 2026-07-16.
+Conversación de curación con experto (2026-07-16).

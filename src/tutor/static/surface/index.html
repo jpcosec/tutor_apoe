@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tutor APOS · Superficie del texto</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="/surface/static/surface.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="nav">
+      <div class="navhead">
+        <div class="eyebrow">SUPERFICIE · TEXTO ↔ ÁTOMOS</div>
+        <div class="title" id="sourceTitle">Cargando la fuente…</div>
+        <div class="sub"><a href="/">chat</a> · <a href="/graph">grafo</a></div>
+      </div>
+      <div class="pager">
+        <button id="prevPage" title="Página anterior">‹</button>
+        <input id="pageInput" type="number" min="1" value="1" />
+        <span id="pageTotal">/ ?</span>
+        <button id="nextPage" title="Página siguiente">›</button>
+      </div>
+      <div class="pagemap" id="pageMap" title="Mapa de cobertura: cada celda es una página; las vacías no tienen átomos anclados"></div>
+      <div class="legend"><span class="cell has"></span> con átomos <span class="cell"></span> sin átomos <span class="cell current"></span> actual</div>
+      <div class="outline" id="outline"></div>
+    </aside>
+    <main class="text">
+      <div class="texthead">
+        <div>
+          <div class="eyebrow" id="sectionLabel">—</div>
+          <div class="title" id="pageTitle">Página</div>
+        </div>
+        <div class="meta" id="pageMeta"></div>
+      </div>
+      <div class="pagebody" id="pageBody"><div class="empty">Elige una página o una sección.</div></div>
+    </main>
+    <aside class="atoms">
+      <div class="atomshead">
+        <div class="title">Átomos anclados en esta página</div>
+        <div class="sub" id="atomsMeta">Pasa el cursor por un átomo para ver dónde se verifica.</div>
+      </div>
+      <div class="atomlist" id="atomList"><div class="empty">Sin átomos.</div></div>
+    </aside>
+  </div>
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal">
+      <div class="modal-head"><div class="title" id="modalTitle">Átomo</div><button class="close" id="modalClose">✕</button></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+  <script src="/surface/static/surface.js"></script>
+</body>
+</html>

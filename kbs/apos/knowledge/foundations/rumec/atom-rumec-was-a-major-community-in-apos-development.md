@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:15Z'
+  authority: generated
+  via: save_document_payload
 id: atom-rumec-was-a-major-community-in-apos-development
 title: RUMEC fue una comunidad decisiva en el desarrollo de APOS
 five_wh_one_plus: what
@@ -8,6 +13,18 @@ tags:
 - domain:mathematics-education
 - layer:theory
 parent: branch-apos-foundations-rumec
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 2
+  sections:
+  - '2.5'
+  pages: null
+  excerpt: null
+  chunk_ids: []
+  nouls: []
+  anchored: false
+  note: null
 ---
 
 # RUMEC fue una comunidad decisiva en el desarrollo de APOS
@@ -18,4 +35,4 @@ El libro identifica a la Research in Undergraduate Mathematics Education Communi
 
 ## Procedencia
 
-Fuente principal: Capítulo 2, sección 2.5, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), cap. 2 §2.5.

@@ -1,20 +1,28 @@
 """Genera la KB sldb del tutor (`kbs/apos/`) a partir de los átomos Markdown de `desk/atoms/`.
 
-    python -m tutor.kb_build --atoms desk/atoms --out kbs/apos [--embedder hash] [--no-index]
+    python -m tutor.kb_build --atoms desk/atoms --out kbs/apos [--embedder hash] [--no-index] [--no-anchor]
 
 Idempotente: borra lo que generó la vez anterior (los directorios de documentos y `.sldb/`)
 y lo vuelve a escribir con la API pública de sldb (`init_store`, `init_relations`,
 `add_model`, `create_document`, `update_store_indexes`, `rebuild_edges`), igual que hace
-`kb.portable.build_store`. Luego valida con `kb` (V0–V13) y, salvo `--no-index`, refresca el
-índice de embeddings con el embedder elegido. Los `.md` que escribe son función de los
-átomos fuente; el store y el índice son derivados.
+`kb.portable.build_store`. Lo que NO genera (`ingest/**`: fuentes y fragmentos; `proposed/**`:
+átomos propuestos) lo conserva y lo vuelve a registrar en el store. Luego:
+
+1. esquema de cada fuente (`SourceOutline`, `tutor.outline`): capítulos/secciones → páginas y fragmentos;
+2. anclaje (`tutor.anchor`, salvo `--no-anchor`): cada átomo `book` queda con los fragmentos que lo
+   respaldan (Jev, cacheado), sus páginas reales y una cita;
+3. cobertura de las ramas (`tutor.branches`): unión de la procedencia de sus descendientes;
+4. validación con `kb` (V0–V13) y, salvo `--no-index`, el índice de embeddings.
+
+Los `.md` que escribe son función de los átomos fuente (+ anclaje); el store y el índice son derivados.
 
 Qué produce (ver `kbs/README.md`):
 
 - `knowledge/**`, `sources/**`: un `KnowledgeAtom`/`SourceAtom` por átomo `node_type: knowledge`,
-  con la misma ruta relativa que en `desk/atoms/` y el mismo `id`;
-- `taxonomy/`: un `BranchNode` por átomo `node_type: branch`, más las ramas intermedias que
-  los `parent_id` nombran y que no existen como archivo (marcadas en su procedencia);
+  con la misma ruta relativa que en `desk/atoms/` y el mismo `id`; la prosa de `## Procedencia` de
+  `desk/atoms` se parsea a `Provenance` estructurada (`kb_models.provenance`) y se vuelve a renderizar;
+- `taxonomy/`: un `BranchNode` por átomo `node_type: branch` (todas las ramas existen como archivo en
+  `desk/atoms/branches/`; un `parent_id` sin archivo es un error, no se inventa nada);
 - `relations/`: un `RelationDoc` `child_of--<hijo>--<padre>` por `parent_id`, con el tipo
   `child_of` declarado en `kgdb/relation_types/child_of.md`;
 - `categories/`: un `TagNamespaceDoc` por namespace de tag (de `tag-namespaces.yaml` o propio);
@@ -35,6 +43,8 @@ from typing import Any
 
 import yaml
 
+from kb_models.provenance import Provenance, parse_provenance_prose
+
 log = logging.getLogger("tutor.kb_build")
 
 MODELS_PACKAGE = "kb_models"
@@ -45,7 +55,27 @@ MODEL_REFS = (
     f"{MODELS_PACKAGE}.governance:AgentDoc",
     f"{MODELS_PACKAGE}.kb_docs:TagNamespaceDoc",
     "pron.models:ProjectionDoc",
+    f"{MODELS_PACKAGE}.ingest:SourceDoc",
+    f"{MODELS_PACKAGE}.ingest:SourceChunk",
+    f"{MODELS_PACKAGE}.ingest:SourceOutline",
+    f"{MODELS_PACKAGE}.proposed:ProposedAtom",
 )
+#: Carpeta (relativa a la raíz de la KB) donde vive cada modelo; también sirve para inferir el
+#: modelo de un `.md` al registrar de nuevo un store.
+FOLDERS: dict[str, str] = {
+    "KnowledgeAtom": "knowledge",
+    "SourceAtom": "sources",
+    "BranchNode": "taxonomy",
+    "RelationDoc": "relations",
+    "RelationTypeDoc": "kgdb/relation_types",
+    "TagNamespaceDoc": "categories",
+    "AgentDoc": "agent",
+    "ProjectionDoc": "projections",
+    "SourceDoc": "ingest/sources",
+    "SourceChunk": "ingest/chunks",
+    "SourceOutline": "ingest",
+    "ProposedAtom": "proposed",
+}
 RELATION = "child_of"
 ROLE = "tutor"
 AGENT_NAME = f"agent-{ROLE}-apos"
@@ -53,27 +83,15 @@ PROJECTION_NAME = f"projection-{ROLE}"
 ROOT_BRANCH = "branch-apos"
 ACTOR = "tutor kb_build"
 GENERATED_DIRS = ("knowledge", "sources", "taxonomy", "relations", "kgdb", "sldb", "categories", "agent", "projections")
+#: Carpetas que el build conserva y vuelve a registrar (no son función de desk/atoms).
+PRESERVED_DIRS = ("ingest", "proposed")
 FRONTMATTER = re.compile(r"\A---\n(.*?)\n---\n(.*)\Z", re.S)
 SECTION = re.compile(r"^## (.+?)\s*$", re.M)
 BRANCH_TAGS = ["system:apos", "node:branch", "layer:taxonomy"]
-BRANCH_TITLES = {
-    "branch-apos": "Teoría APOS",
-    "branch-apos-applications": "Aplicaciones",
-    "branch-apos-core-structures": "Estructuras mentales",
-    "branch-apos-foundations": "Fundamentos",
-    "branch-apos-genetic-decomposition": "Descomposición genética",
-    "branch-apos-mathematical-domains": "Dominios matemáticos",
-    "branch-apos-mechanisms": "Mecanismos",
-    "branch-apos-pedagogy": "Pedagogía",
-    "branch-apos-research": "Investigación",
-    "branch-apos-schema-development": "Desarrollo de esquemas",
-    "branch-apos-synthesis": "Síntesis",
-    "branch-sources-apos-theory-book": "Libro fuente: Arnon et al. (2014)",
-}
 EXTRA_NAMESPACES: dict[str, dict[str, Any]] = {
     "node": {
         "meaning": "Rol estructural del documento en la taxonomía (rama).",
-        "use_when": "El documento es un nodo de organización, no conocimiento.",
+        "use_when": "El documento es una rama de la taxonomía, no conocimiento.",
         "do_not_use_when": "El documento responde una pregunta sobre APOS.",
         "examples": ["node:branch"],
     },
@@ -105,9 +123,9 @@ class SourceAtom:
     node_type: str
     parent_id: str | None
     answer: str
-    provenance: str
+    provenance: list[Provenance]
     relative: Path
-    synthesized: bool = False
+    provenance_text: str = ""
 
 
 @dataclass(frozen=True)
@@ -158,17 +176,37 @@ def parse_atom(path: Path, atoms_dir: Path) -> SourceAtom | None:
         log.warning("sin id o node_type, se omite: %s", path)
         return None
     sections = split_sections(match.group(2))
+    node_type = str(front["node_type"])
+    prose = sections.get("Procedencia", "").strip()
+    if node_type == "branch":
+        answer = (sections.get("Descripción") or sections.get("Respuesta") or "").strip()
+        provenance: list[Provenance] = []
+    else:
+        answer = sections.get("Respuesta", "").strip()
+        provenance = atom_provenance(front, prose, path)
     return SourceAtom(
         id=str(front["id"]),
         title=str(front.get("title") or front["id"]),
         question=str(front.get("five_wh_one_plus") or "what"),
         tags=[str(t) for t in front.get("tags") or []],
-        node_type=str(front["node_type"]),
+        node_type=node_type,
         parent_id=str(front["parent_id"]) if front.get("parent_id") else None,
-        answer=sections.get("Respuesta", "").strip(),
-        provenance=sections.get("Procedencia", "").strip(),
+        answer=answer,
+        provenance=provenance,
         relative=path.relative_to(atoms_dir),
+        provenance_text=prose,
     )
+
+
+def atom_provenance(front: dict[str, Any], prose: str, path: Path) -> list[Provenance]:
+    """La procedencia estructurada del frontmatter si la hay; si no, la prosa de `## Procedencia` parseada."""
+    declared = front.get("provenance")
+    if isinstance(declared, list) and declared:
+        return [Provenance.model_validate(p) for p in declared]
+    items = parse_provenance_prose(prose)
+    if not items:
+        log.warning("%s: sin procedencia", path)
+    return items
 
 
 def split_sections(body: str) -> dict[str, str]:
@@ -181,72 +219,36 @@ def split_sections(body: str) -> dict[str, str]:
     return sections
 
 
-def synthesize_branches(atoms: list[SourceAtom]) -> list[SourceAtom]:
-    """Las ramas que los `parent_id` nombran y no existen: se infieren de los ids (`a-b-c` → `a-b`)."""
+def missing_branches(atoms: list[SourceAtom]) -> list[str]:
+    """Los `parent_id` que ningún átomo declara: ramas que faltan como archivo en `desk/atoms/branches/`."""
     known = {a.id for a in atoms}
-    missing: dict[str, SourceAtom] = {}
-    pending = sorted({a.parent_id for a in atoms if a.parent_id and a.parent_id not in known})
-    while pending:
-        branch_id = pending.pop()
-        if branch_id in known or branch_id in missing:
-            continue
-        parent = infer_parent(branch_id)
-        missing[branch_id] = SourceAtom(
-            id=branch_id,
-            title=branch_title(branch_id),
-            question="what",
-            tags=list(BRANCH_TAGS),
-            node_type="branch",
-            parent_id=parent,
-            answer=f"Nodo de organización de la base de conocimiento APOS: agrupa las ramas y átomos cuyo parent_id es `{branch_id}`.",
-            provenance="Inferida por `tutor.kb_build` a partir de los `parent_id` de los átomos; no existe como archivo en `desk/atoms/`.",
-            relative=Path("branches") / f"{branch_id}.md",
-            synthesized=True,
-        )
-        if parent and parent not in known and parent not in missing:
-            pending.append(parent)
-    return sorted(missing.values(), key=lambda a: a.id)
-
-
-def infer_parent(branch_id: str) -> str | None:
-    """`branch-apos-core-structures` → `branch-apos`; `branch-apos` y `branch-sources-*` son raíces."""
-    if branch_id == ROOT_BRANCH or branch_id.startswith("branch-sources-"):
-        return None
-    if branch_id.startswith(f"{ROOT_BRANCH}-"):
-        return ROOT_BRANCH
-    return None
-
-
-def branch_title(branch_id: str) -> str:
-    if branch_id in BRANCH_TITLES:
-        return BRANCH_TITLES[branch_id]
-    return branch_id.removeprefix("branch-").replace("-", " ").capitalize()
+    return sorted({a.parent_id for a in atoms if a.parent_id and a.parent_id not in known})
 
 
 # -- planificar -------------------------------------------------------------------------
 
 
-def plan(
-    atoms: list[SourceAtom], atoms_dir: Path, pack_dir: Path | None, embedder_id: str
-) -> BuildPlan:
+def plan(atoms: list[SourceAtom], atoms_dir: Path, pack_dir: Path | None, embedder_id: str) -> BuildPlan:
     """Qué documentos tendrá la KB, con qué modelo y en qué ruta."""
-    everything = [*atoms, *synthesize_branches(atoms)]
-    by_id = {a.id for a in everything}
-    namespaces = tag_namespaces(atoms_dir, everything)
-    plan = BuildPlan(manifest=manifest(embedder_id), namespaces=namespaces)
-    for atom in everything:
-        if atom.parent_id and atom.parent_id not in by_id:
-            raise ValueError(f"{atom.id}: parent_id {atom.parent_id!r} no existe")
-        plan.docs.append(atom_doc(atom))
-    plan.docs.append(relation_type_doc())
-    models = {a.id: model_for(a) for a in everything}
-    for atom in everything:
+    missing = missing_branches(atoms)
+    if missing:
+        raise ValueError(
+            f"ramas sin archivo en {atoms_dir / 'branches'}: {missing} "
+            "(créalas con `tutor compile branches <id>` o a mano; el build ya no las inventa)"
+        )
+    namespaces = tag_namespaces(atoms_dir, atoms)
+    built = BuildPlan(manifest=manifest(embedder_id), namespaces=namespaces)
+    for atom in atoms:
+        built.docs.append(atom_doc(atom))
+    built.docs.append(relation_type_doc())
+    models = {a.id: model_for(a) for a in atoms}
+    for atom in atoms:
         if atom.parent_id:
-            plan.docs.append(relation_doc(models[atom.id], atom.id, models[atom.parent_id], atom.parent_id))
-    plan.docs.extend(category_doc(ns, spec) for ns, spec in sorted(namespaces.items()))
-    plan.docs.append(agent_doc(pack_dir))
-    plan.docs.append(projection_doc())
-    return plan
+            built.docs.append(relation_doc(models[atom.id], atom.id, models[atom.parent_id], atom.parent_id))
+    built.docs.extend(category_doc(ns, spec) for ns, spec in sorted(namespaces.items()))
+    built.docs.append(agent_doc(pack_dir))
+    built.docs.append(projection_doc())
+    return built
 
 
 def model_for(atom: SourceAtom) -> str:
@@ -262,10 +264,10 @@ def atom_doc(atom: SourceAtom) -> Doc:
         payload: dict[str, Any] = {
             "id": atom.id,
             "title": atom.title,
-            "tags": atom.tags,
+            "tags": atom.tags or list(BRANCH_TAGS),
             "parent": atom.parent_id,
-            "description": atom.answer,
-            "provenance": atom.provenance,
+            "coverage": None,
+            "description": atom.answer or f"Rama «{atom.title}».",
         }
     else:
         folder = "sources" if model == "SourceAtom" else "knowledge"
@@ -277,8 +279,8 @@ def atom_doc(atom: SourceAtom) -> Doc:
             "five_wh_one_plus": atom.question,
             "tags": atom.tags,
             "parent": atom.parent_id,
+            "provenance": [p.model_dump(mode="json") for p in atom.provenance],
             "answer": atom.answer,
-            "provenance": atom.provenance,
         }
     return Doc(model, path, payload)
 
@@ -324,7 +326,7 @@ def tag_namespaces(atoms_dir: Path, atoms: list[SourceAtom]) -> dict[str, dict[s
     source = atoms_dir / "tag-namespaces.yaml"
     if source.is_file():
         declared = dict((yaml.safe_load(source.read_text(encoding="utf-8")) or {}).get("namespaces") or {})
-    used = {t.partition(":")[0] for a in atoms for t in a.tags} | {"agent"}
+    used = {t.partition(":")[0] for a in atoms for t in a.tags} | {"agent", "node"}
     namespaces: dict[str, dict[str, Any]] = {}
     for ns in sorted(used):
         spec = declared.get(ns) or EXTRA_NAMESPACES.get(ns)
@@ -415,7 +417,7 @@ def manifest(embedder_id: str) -> dict[str, Any]:
             "models": MODELS_PACKAGE,
             "pythonpath": "..",
             "categories": "required",
-            "materialize": {"order": ["knowledge", "sources", "taxonomy"]},
+            "materialize": {"order": ["knowledge", "sources", "taxonomy", "ingest", "proposed"]},
             "index": {
                 "models": ["KnowledgeAtom"],
                 "text": "fields:answer",
@@ -437,9 +439,18 @@ def read_text(directory: Path | None, name: str, default: str) -> str:
 # -- escribir ---------------------------------------------------------------------------
 
 
-def write_kb(out: Path, plan: BuildPlan) -> None:
-    """Limpia lo generado antes, escribe `kb.yaml` y `tag-namespaces.yaml`, arma el store y los `.md`."""
-    from sldb.api import add_model, create_document, init_relations, init_store, rebuild_edges, update_store_indexes
+def model_for_path(relative: str) -> str | None:
+    """El modelo de un `.md` por la carpeta en que vive (la carpeta más específica gana)."""
+    for model, folder in sorted(FOLDERS.items(), key=lambda kv: -len(kv[1])):
+        if relative.startswith(folder + "/"):
+            return model
+    return None
+
+
+def write_kb(out: Path, plan: BuildPlan) -> dict[str, int]:
+    """Limpia lo generado antes, escribe `kb.yaml` y `tag-namespaces.yaml`, arma el store y los `.md`,
+    y vuelve a registrar lo conservado (`ingest/`, `proposed/`). Devuelve cuántos conservados registró."""
+    from sldb.api import add_model, create_document, init_relations, init_store, rebuild_edges, track_document_file, update_store_indexes
 
     out = out.resolve()
     pythonpath = str((out / plan.manifest["kb"]["pythonpath"]).resolve())
@@ -464,8 +475,42 @@ def write_kb(out: Path, plan: BuildPlan) -> None:
         add_model(store, ref, pythonpath=pythonpath, actor=ACTOR)
     for doc in plan.docs:
         create_document(store, doc.model, out / doc.path, doc.payload, name=doc.doc_name, pythonpath=pythonpath, actor=ACTOR)
+    preserved: dict[str, int] = {}
+    for folder in PRESERVED_DIRS:
+        for path in sorted((out / folder).rglob("*.md")) if (out / folder).is_dir() else []:
+            relative = path.relative_to(out).as_posix()
+            model = model_for_path(relative)
+            if model is None:
+                log.warning("conservado sin modelo conocido, se omite: %s", relative)
+                continue
+            track_document_file(store, model, path, pythonpath=pythonpath, actor=ACTOR)
+            preserved[model] = preserved.get(model, 0) + 1
     update_store_indexes(store, pythonpath=pythonpath, wait=True)
     rebuild_edges(store, pythonpath, wait=True)
+    return preserved
+
+
+def enrich(out: Path, *, anchor: bool = True, jev_client: Any | None = None, force_anchor: bool = False) -> dict[str, Any]:
+    """Los pasos derivados sobre la KB ya escrita: esquema de las fuentes, anclaje de los átomos y
+    cobertura de las ramas. Devuelve `{outlines, anchor, coverage}`."""
+    from tutor import branches as branches_mod
+    from tutor import outline as outline_mod
+    from tutor.anchor import anchor_kb
+    from tutor.authoring import KbWriter
+
+    writer = KbWriter(out.resolve())
+    outlines: dict[str, dict[str, Any] | None] = {}
+    for document in writer.kb().by_model("SourceDoc"):
+        outlines[document.name] = outline_mod.ensure_outline(writer, document.name)
+    summary: dict[str, Any] = {"outlines": {k: (len(v["entries"]) if v else 0) for k, v in outlines.items()}, "anchor": None}
+    if anchor and outlines:
+        report = anchor_kb(writer.kb_id, writer.root.parent, writer=writer, client=jev_client, force=force_anchor, refresh=False)
+        summary["anchor"] = {k: v for k, v in report.items() if k != "atoms"}
+        log.info("anclaje: %d anclados, %d sin respaldo, %d sin evaluar (%d llamadas a Jev)", report["anchored"], report["unanchored"], report["pending"], report["jev_calls"])
+    first = next((v for v in outlines.values() if v), None)
+    summary["coverage"] = branches_mod.apply_coverage(writer, first, refresh=False)
+    writer.refresh(index=False)
+    return summary
 
 
 def validate(out: Path, embedder: Any | None) -> tuple[Any, Any]:
@@ -479,20 +524,36 @@ def validate(out: Path, embedder: Any | None) -> tuple[Any, Any]:
 
 
 def build(
-    atoms_dir: Path, out: Path, *, pack_dir: Path | None = None, embedder_name: str | None = None, index: bool = True
+    atoms_dir: Path,
+    out: Path,
+    *,
+    pack_dir: Path | None = None,
+    embedder_name: str | None = None,
+    index: bool = True,
+    anchor: bool = True,
+    jev_client: Any | None = None,
+    force_anchor: bool = False,
 ) -> Any:
-    """Todo el flujo: leer, planificar, escribir, validar, indexar. Devuelve el `ValidationReport`."""
+    """Todo el flujo: leer, planificar, escribir, enriquecer (esquema, anclaje, cobertura), validar,
+    indexar. Devuelve el `ValidationReport` (con `.enrichment` para el resumen del anclaje)."""
     from tutor.embedding import get_embedder
 
     embedder = get_embedder(embedder_name)
     atoms = read_atoms(atoms_dir)
     built = plan(atoms, atoms_dir, pack_dir, embedder.id())
     log.info("%d átomos leídos, %d documentos a escribir", len(atoms), len(built.docs))
-    write_kb(out, built)
+    preserved = write_kb(out, built)
+    if preserved:
+        log.info("conservados y registrados: %s", preserved)
+    enrichment = enrich(out, anchor=anchor, jev_client=jev_client, force_anchor=force_anchor)
     kb, report = validate(out, embedder)
     if report.is_valid and index:
         counts = kb.refresh_index()
         log.info("índice %s: %s", counts.index_path, counts.counts)
+    try:
+        report.enrichment = enrichment  # informativo; el ValidationReport es un modelo de kb
+    except (AttributeError, ValueError, TypeError):
+        pass
     return report
 
 
@@ -505,11 +566,12 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--embedder", default=None, help="hash (default, o TUTOR_EMBEDDER) | fastembed[:modelo].")
     parser.add_argument("--no-index", action="store_true", help="No refrescar el índice de embeddings.")
+    parser.add_argument("--no-anchor", action="store_true", help="No anclar los átomos a los fragmentos (Jev).")
     parser.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args(argv)
     logging.basicConfig(level=logging.INFO if args.verbose else logging.WARNING, format="%(message)s")
     pack = args.pack if args.pack.is_dir() else None
-    report = build(args.atoms, args.out, pack_dir=pack, embedder_name=args.embedder, index=not args.no_index)
+    report = build(args.atoms, args.out, pack_dir=pack, embedder_name=args.embedder, index=not args.no_index, anchor=not args.no_anchor)
     if not report.is_valid:
         for error in report.errors:
             print(error.line(), file=sys.stderr)

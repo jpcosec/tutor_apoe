@@ -334,6 +334,7 @@ def _expand(
 
 
 def _item(document: Document, score: float, role: str, why: str) -> dict[str, Any]:
+    flat = world.atom_dict(document)
     return {
         "atom_id": document.name,
         "title": str(document.payload.get("title") or document.name),
@@ -342,6 +343,8 @@ def _item(document: Document, score: float, role: str, why: str) -> dict[str, An
         "role": role,
         "via": role if role not in {"retained", "expanded"} else "semantic",
         "tags": list(document.tags),
+        "citation": flat["provenance"],
+        "surface_url": flat["surface_url"],
     }
 
 

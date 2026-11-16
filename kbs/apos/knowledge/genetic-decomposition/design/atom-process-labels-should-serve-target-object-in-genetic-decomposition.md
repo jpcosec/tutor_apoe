@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor kb_build
+  at: '2026-11-16T02:20:41Z'
+  authority: generated
+  via: create_document
 id: atom-process-labels-should-serve-target-object-in-genetic-decomposition
 title: Los rotulos de procesos en una descomposicion genetica deben vincularse con
   el objeto matematico buscado
@@ -11,6 +16,17 @@ tags:
 - domain:mathematics-education
 - layer:methodology
 parent: branch-apos-genetic-decomposition-design
+provenance:
+- kind: expert
+  source: null
+  chapter: null
+  sections: []
+  pages: null
+  excerpt: null
+  chunk_ids: []
+  nouls: []
+  anchored: null
+  note: '2026-07-16'
 ---
 
 # Los rotulos de procesos en una descomposicion genetica deben vincularse con el objeto matematico buscado
@@ -27,4 +43,4 @@ Esta precaucion evita confundir una descripcion algoritmica externa con una estr
 
 ## Procedencia
 
-Conversacion de curacion con experto, 2026-07-16.
+Conversación de curación con experto (2026-07-16).

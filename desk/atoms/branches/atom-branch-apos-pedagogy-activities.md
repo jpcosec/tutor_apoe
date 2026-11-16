@@ -1,21 +1,18 @@
 ---
 id: branch-apos-pedagogy-activities
 title: Activities
-five_wh_one_plus: what
 tags:
-  - system:apos
-  - node:branch
-  - layer:taxonomy
+- layer:taxonomy
+- node:branch
+- system:apos
 node_type: branch
 parent_id: branch-apos-pedagogy
+description_by: google-gla:gemini-2.5-flash
+description_at: '2026-10-08'
 ---
 
 # Activities
 
-## Respuesta
+## Descripción
 
-Nodo de organización de la base de conocimiento APOS.
-
-## Procedencia
-
-Estructura taxonómica del repositorio.
+Esta subraya cómo las actividades del ciclo ACE se diseñan para promover la abstracción reflexiva y la construcción mental, no solo la obtención de respuestas correctas. Se detalla cómo las actividades computacionales, al permitir escribir o transformar procedimientos, apoyan la interiorización al pasar de

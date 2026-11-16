@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:09Z'
+  authority: generated
+  via: save_document_payload
 id: atom-action-is-a-core-mental-structure-in-apos
 title: La Acción es una estructura mental central en APOS
 five_wh_one_plus: what
@@ -8,6 +13,27 @@ tags:
 - domain:mathematics-education
 - layer:theory
 parent: branch-apos-core-structures-action
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 3
+  sections:
+  - 3.2.1
+  pages:
+  - 30
+  - 31
+  excerpt: Although the most primitive of structures (and often, the only one stressed
+    in traditional teaching), Actions are fundamental to APOS Theory.
+  chunk_ids:
+  - source-arnon-et-al-2014-apos-theory-chunk-64
+  - source-arnon-et-al-2014-apos-theory-chunk-62
+  - source-arnon-et-al-2014-apos-theory-chunk-63
+  nouls:
+  - 0.89
+  - 0.78
+  - 0.67
+  anchored: true
+  note: null
 ---
 
 # La Acción es una estructura mental central en APOS
@@ -18,4 +44,4 @@ APOS incluye la Acción como una de sus estructuras mentales centrales para desc
 
 ## Procedencia
 
-Fuente principal: Capítulo 3, sección 3.2.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), cap. 3 §3.2.1, pp. 30–31. «Although the most primitive of structures (and often, the only one stressed in traditional teaching), Actions are fundamental to APOS Theory.»

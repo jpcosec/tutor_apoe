@@ -1,0 +1,18 @@
+name: RoleDoc
+model_ref: deskops.models:RoleDoc
+path: ''
+documents_index: .sldb/core/documents/RoleDoc.yaml
+sections_index: ''
+model_hash: a236f70351f39050ff47246e8611f644fe7e121953ce186239b119dee2768640
+roster_hash: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+contract_hash: 0133498aec7921a98513106e1893442b6dd39484b2ec2b5ea700ec6ed837705f
+documents_count: 0
+version: 1
+canonical: false
+family: null
+semantics:
+- representation.markdown
+- source.document.markdown
+- type.workflow.role
+- workspace.desk.roles
+base_models: []

@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:11Z'
+  authority: generated
+  via: save_document_payload
 id: atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms
 title: La encapsulación se reporta como uno de los mecanismos más difíciles
 five_wh_one_plus: why
@@ -8,6 +13,24 @@ tags:
 - domain:mathematics-education
 - layer:theory
 parent: branch-apos-mechanisms-encapsulation
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 3
+  sections:
+  - 3.2.3
+  pages:
+  - 33
+  - 33
+  excerpt: The difﬁculties arising when a process is converted into an object are,
+    in a sense, like those experienced during transition from one scientiﬁc paradigm
+    to another...
+  chunk_ids:
+  - source-arnon-et-al-2014-apos-theory-chunk-70
+  nouls:
+  - 0.63
+  anchored: true
+  note: incluyendo los ejemplos sobre media y funciones de dos variables
 ---
 
 # La encapsulación se reporta como uno de los mecanismos más difíciles
@@ -18,4 +41,4 @@ El libro reporta que la encapsulación suele ser especialmente difícil para los
 
 ## Procedencia
 
-Fuente principal: Capítulo 3, sección 3.2.3, incluyendo los ejemplos sobre media y funciones de dos variables, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), cap. 3 §3.2.3 (incluyendo los ejemplos sobre media y funciones de dos variables), p. 33. «The difﬁculties arising when a process is converted into an object are, in a sense, like those experienced during transition from one scientiﬁc paradigm to another...»

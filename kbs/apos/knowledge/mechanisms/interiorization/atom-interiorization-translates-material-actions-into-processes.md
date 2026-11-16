@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:13Z'
+  authority: generated
+  via: save_document_payload
 id: atom-interiorization-translates-material-actions-into-processes
 title: La interiorización traduce acciones materiales en procesos mentales
 five_wh_one_plus: how
@@ -9,6 +14,40 @@ tags:
 - domain:mathematics-education
 - layer:theory
 parent: branch-apos-mechanisms-interiorization
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 2
+  sections: []
+  pages:
+  - 19
+  - 19
+  excerpt: external, that is, physical, Action (“material” action) is reconstructed
+    in the mind of the subject to become a Process (interiorized operation), that
+    is, an internal, mental construction that does the same thing as the Action, but
+    wholly in the mind of the subject rather than externally.
+  chunk_ids:
+  - source-arnon-et-al-2014-apos-theory-chunk-34
+  - source-arnon-et-al-2014-apos-theory-chunk-32
+  nouls:
+  - 0.94
+  - 0.76
+  anchored: true
+  note: especialmente la discusión de acciones materiales e interiorized operations
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 3
+  sections: []
+  pages:
+  - 31
+  - 31
+  excerpt: null
+  chunk_ids:
+  - source-arnon-et-al-2014-apos-theory-chunk-66
+  nouls:
+  - 0.88
+  anchored: true
+  note: null
 ---
 
 # La interiorización traduce acciones materiales en procesos mentales
@@ -19,4 +58,4 @@ La interiorización se presenta como el mecanismo por el cual una acción extern
 
 ## Procedencia
 
-Fuente principal: Capítulos 2 y 3 del libro de Arnon et al. (2014), especialmente la discusión de acciones materiales e interiorized operations, extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), cap. 2 (especialmente la discusión de acciones materiales e interiorized operations), p. 19; cap. 3, p. 31. «external, that is, physical, Action (“material” action) is reconstructed in the mind of the subject to become a Process (interiorized operation), that is, an internal, mental construction that does the same thing as the Action, but wholly in the mind of the subject rather than externally.»

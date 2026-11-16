@@ -1,0 +1,26 @@
+name: ritual-phase
+path: desk/rituals/phase.md
+source_hash: 511c3447a014bc420d204c88b3801c0133019bef4647fc9d011a557c8350c1df
+content_hash: 99617f50ad282cd76db41d1b5bcdb4624e52400cb26fb045cef5b99e50eae2c4
+field_hashes:
+  title: 48015d1ab344e4f177ef5d61a70ebf4e8af20414559b8a338932a1048b712630
+  id: 5f5ee136ba17af4298d3358b6378b4070e7f7bf74cea6cafa66bd04f22d29ea8
+  status: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  summary: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+  current_node: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  history: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  purpose: 2f0f25a2cb5866e74ca1dda6469842fad5d8d8c813a2095c890195f383c44ece
+  trigger: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  preconditions: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  steps: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  validation: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  failure_modes: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  completion: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.workflow.ritual
+- workspace.desk
+- workspace:desk
+provenance: null

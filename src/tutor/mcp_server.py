@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import hmac
+import importlib
 import json
 import logging
 import os
@@ -125,6 +126,10 @@ def default_model() -> str:
     return os.environ.get(ENV_MODEL) or DEFAULT_MODEL
 
 
+#: Extensiones con tools propias (ver el final de `build`).
+EXTENSIONS = ("tutor.eval", "tutor.compiler")
+
+
 def tool_result(result: Any) -> dict[str, Any]:
     """El dict que devolvió una tool, desde un `CallToolResult` (estructurado o texto JSON)."""
     data = getattr(result, "structured_content", None)
@@ -212,8 +217,10 @@ def build(kbs_root: Path | str | None = None) -> MCPServer:
     @server.tool(annotations=read_only)
     @_safe
     def get_atom(kb_id: str, atom_id: str) -> dict[str, Any]:
-        """Un átomo o rama completo por id: título, pregunta, respuesta, procedencia, tags, padre, hijos y
-        relaciones tipadas en que participa."""
+        """Un átomo o rama completo por id: título, pregunta, respuesta, procedencia (`provenance` en prosa corta,
+        `citation` con la cita textual, `provenance_refs` estructurada: fuente, capítulo, secciones, páginas,
+        fragmentos `chunk_id` que lo respaldan; `surface_url` para verlo sobre el texto de la fuente), tags,
+        padre, hijos y relaciones tipadas en que participa."""
         kb = state.kb(kb_id)
         atom = world.get_atom(kb, atom_id)
         if atom is None:
@@ -408,6 +415,18 @@ def build(kbs_root: Path | str | None = None) -> MCPServer:
         except AuthoringError:
             pass
         return SESSION_PROMPT.format(kb_id=kb_id, role=role, framing=framing or "(sin encuadre: usa upsert_tutor)", instructions=instructions or "(sin instrucciones)")
+
+    # Módulos opcionales que suman tools: cada uno expone
+    # `register_mcp(server, state, safe, annotations: dict[str, ToolAnnotations])`.
+    annotations = {"read_only": read_only, "writes": writes, "destructive": destructive, "calls_model": calls_model}
+    for name in EXTENSIONS:
+        try:
+            module = importlib.import_module(name)
+        except ImportError:
+            continue
+        register = getattr(module, "register_mcp", None)
+        if register is not None:
+            register(server, state, _safe, annotations)
 
     server.state = state  # type: ignore[attr-defined]  # para pruebas y selftest
     return server

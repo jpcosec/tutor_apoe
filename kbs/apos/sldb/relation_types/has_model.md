@@ -1,7 +1,12 @@
 ---
+sldb:
+  by: agent
+  at: '2026-11-16T02:20:34Z'
+  authority: generated
+  via: init_relations
 name: has_model
 direction: directed
-cardinality: one_to_many
+cardinality: many_to_many
 axis: WHAT
 source_types:
 - sldb_store
@@ -14,4 +19,4 @@ condition: ''
 
 ## Description
 
-The store registers this model.
+The store registers this model: its own, or one it inherits from the linked store that owns it.

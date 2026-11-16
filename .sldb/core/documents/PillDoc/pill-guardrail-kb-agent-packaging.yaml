@@ -1,0 +1,20 @@
+name: pill-guardrail-kb-agent-packaging
+path: desk/contexts/pill-guardrail-kb-agent-packaging.md
+source_hash: 62f42fab7051c2b593bdca13262816a31c2eba0d548447a4ad3e0b1411961aaf
+content_hash: db66130d2504a2a2408dfcc64148cfd457d868fe88548e1d11822fea141841d0
+field_hashes:
+  title: 9a196c3e7c22c75753cd8df80a5d60e0e33968d497c5616617a30c7e03bed1f7
+  id: de4217fa9241b3aa746c0fab5bd7ed86de1f00600cea5fa2c354e4d9fc9fc503
+  tags: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  what: 24dea3e69fe6f39ff5f525e3ddda37eae6b68a0ef326f076a94e78396eb50ed7
+  why: 41e56f46c882ab323bafbe84d28592e8e1c85f6df5c5bc1a6370174f94f7ed0e
+  when: eacd4edfbba3835a323d059d257198d645da3b97014a6c0ee35591a926e370c2
+  where: 4c76bbba800ac5027348e1e2be15e3313a119c94593ebb77566aa8090390d867
+  how: 1f75b4721a346195d39a783a34feda2f22f9998906a82ea2de366b8a7a633108
+  how_not: 4b84f0d21f45943261f114b7e8c2eb7a5446ac47f6f112ee49cc4f382aeb8dc5
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.workflow.pill
+- workspace.desk
+provenance: null

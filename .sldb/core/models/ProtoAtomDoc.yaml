@@ -1,0 +1,18 @@
+name: ProtoAtomDoc
+model_ref: deskops.models:ProtoAtomDoc
+path: ''
+documents_index: .sldb/core/documents/ProtoAtomDoc.yaml
+sections_index: ''
+model_hash: 73c1388c2e7515d9b6f342794d83eeee4589e4409b24d0714d8519db38f142ca
+roster_hash: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+contract_hash: d9f08880b80caae90116c3c56c49aecad56db507843df80f706feef2318ca25d
+documents_count: 0
+version: 1
+canonical: false
+family: null
+semantics:
+- representation.markdown
+- source.document.markdown
+- type.knowledge.protoatom
+- workspace.desk.atoms
+base_models: []

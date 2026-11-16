@@ -1,21 +1,18 @@
 ---
 id: branch-apos-mechanisms-stages
 title: Stages
-five_wh_one_plus: what
 tags:
-  - system:apos
-  - node:branch
-  - layer:taxonomy
+- layer:taxonomy
+- node:branch
+- system:apos
 node_type: branch
 parent_id: branch-apos-mechanisms
+description_by: google-gla:gemini-2.5-flash
+description_at: '2026-10-08'
 ---
 
 # Stages
 
-## Respuesta
+## Descripción
 
-Nodo de organización de la base de conocimiento APOS.
-
-## Procedencia
-
-Estructura taxonómica del repositorio.
+Este concepto explica cómo la comprensión matemática avanza a través de secuencias de desarrollo que no pueden ser omitidas, siguiendo las ideas de Piaget. Junto con los niveles, las etapas sirven para organizar el análisis de la progresión del conocimiento, diferenciándose de los mecanismos específicos de construcción mental como la interiorización o la coordinación.

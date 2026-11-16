@@ -4,15 +4,21 @@ Espejo tipado de los `.md` de `desk/atoms/`: mismo `id`, `title`, `five_wh_one_p
 cuerpo `## Respuesta` y `## Procedencia`. `node_type: knowledge` → `KnowledgeAtom`
 (`SourceAtom` si habla del libro fuente); `node_type: branch` → `BranchNode`; `parent_id` →
 `parent` más una arista `child_of`.
+
+La procedencia es estructurada (`kb_models.provenance.Provenance`, en el frontmatter) y la
+sección `## Procedencia` (`citation`) se renderiza desde ella; en las ramas, `coverage` es la
+unión de la procedencia de sus descendientes y su `## Procedencia` se renderiza desde ahí.
 """
 
 from __future__ import annotations
 
 from enum import StrEnum
-from typing import Annotated
+from typing import Annotated, Any
 
-from pydantic import Field
+from pydantic import Field, model_validator
 from sldb import StructuredNLDoc
+
+from .provenance import Coverage, Provenance, render_coverage, render_provenance
 
 
 class AtomQuestion(StrEnum):
@@ -47,6 +53,7 @@ title: ⸢rev•title⸥
 five_wh_one_plus: ⸢rev•five_wh_one_plus⸥
 tags: ⸢rev•tags⸥
 parent: ⸢optrev•parent⸥
+provenance: ⸢rev•provenance⸥
 ---
 
 # ⸢render•title⸥
@@ -57,7 +64,7 @@ parent: ⸢optrev•parent⸥
 
 ## Procedencia
 
-⸢rev•provenance⸥
+⸢rev•citation⸥
 """.strip()
 
     id: str = Field(description="Identificador estable, igual al nombre del documento; 'atom-<slug>'.")
@@ -68,8 +75,17 @@ parent: ⸢optrev•parent⸥
         default=None,
         description="Nombre del BranchNode padre; proyección legible de la arista child_of.",
     )
+    provenance: list[Provenance] = Field(
+        default_factory=list,
+        description="De dónde sale, estructurado: fuente, capítulo, secciones, páginas, fragmentos que lo respaldan.",
+    )
     answer: str = Field(description="La respuesta curada a la pregunta.")
-    provenance: str = Field(description="De dónde sale: fuente, capítulo, sección.")
+    citation: str = Field(default="", description="La procedencia en prosa corta, renderizada desde `provenance`.")
+
+    @model_validator(mode="after")
+    def _render_citation(self) -> KnowledgeAtom:
+        self.citation = render_provenance(self.provenance, with_excerpt=True)
+        return self
 
 
 class SourceAtom(KnowledgeAtom):
@@ -80,7 +96,7 @@ class SourceAtom(KnowledgeAtom):
 
 
 class BranchNode(StructuredNLDoc):
-    """Un nodo de organización de la taxonomía: agrupa átomos y otras ramas."""
+    """Un nodo de la taxonomía: agrupa átomos y otras ramas, y cubre un tramo de la fuente."""
 
     __family__ = "taxonomy"
     __semantics__ = {"type": ["knowledge", "branch"], "workspace": ["knowledge"]}
@@ -89,6 +105,7 @@ id: ⸢rev•id⸥
 title: ⸢rev•title⸥
 tags: ⸢rev•tags⸥
 parent: ⸢optrev•parent⸥
+coverage: ⸢optrev•coverage⸥
 ---
 
 # ⸢render•title⸥
@@ -106,5 +123,19 @@ parent: ⸢optrev•parent⸥
     title: str = Field(description="Nombre de la rama.")
     tags: list[AtomTag] = Field(default_factory=list, description="Tags editoriales.")
     parent: str | None = Field(default=None, description="Nombre del BranchNode padre; None en la raíz.")
-    description: str = Field(description="Qué agrupa esta rama.")
-    provenance: str = Field(description="De dónde sale la rama (taxonomía del repo o inferida).")
+    coverage: Coverage | None = Field(default=None, description="Unión de la procedencia de sus descendientes (derivada en el build).")
+    description: str = Field(description="Qué abarca la rama y cómo se relaciona con sus hermanas.")
+    provenance: str = Field(default="", description="Prosa renderizada desde `coverage` («Cubre … cap. 3 §3.2–3.4, pp. 20–41; 7 átomos»).")
+
+    @model_validator(mode="after")
+    def _render_provenance(self) -> BranchNode:
+        if self.coverage is not None:
+            self.provenance = render_coverage(self.coverage)
+        elif not self.provenance:
+            self.provenance = "Rama sin cobertura calculada todavía."
+        return self
+
+
+def provenance_items(payload: dict[str, Any]) -> list[Provenance]:
+    """La procedencia de un payload (átomo) como objetos, tolerando dicts crudos o listas vacías."""
+    return [Provenance.model_validate(p) if not isinstance(p, Provenance) else p for p in payload.get("provenance") or []]

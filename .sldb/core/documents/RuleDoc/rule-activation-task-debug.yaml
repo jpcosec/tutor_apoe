@@ -1,0 +1,18 @@
+name: rule-activation-task-debug
+path: desk/lifecycle/rule-activation-task-debug.md
+source_hash: 9ef9824527e075491163874c0080efb04c67f64841bfc0d2eb7e958719280b53
+content_hash: 3668431a69068eaea93f2ebe70a7e48f540011caba09492295bde7ed06a6aa3a
+field_hashes:
+  title: 77070ee6a5663aa6554629a324b162d2c5546930fa9d70cc2c8f90554771d203
+  subject: bf77206610ea59445544d359053291674e3ac69ceee66bcaea77dc0a71fcfdc5
+  where: 41cf66136f14a6722fc28afc4912179d17f97f87dce68a246d9b59e866f80593
+  condition: 4f2f095bc06c2c71b9d063bfe996a3ae6e12bfbf34233438aa66bb1e81d88d9f
+  severity: 4d01709fcd599118652e3b27bd0ca97c802f832183d01f76a034755f2bc62fa3
+  moment: ab448ebaca73366f53e2384b99949ac894517170772b07ff2e9301285d960476
+  message: 39e06cd611ee13a6334ab39130919869678254644b1b3e520cb25805a5361836
+semantic_tags:
+- layer.governance
+- representation.markdown
+- source.document.markdown
+- type.rule
+provenance: null

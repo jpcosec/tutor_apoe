@@ -1,10 +1,10 @@
 name: AtomDoc
 model_ref: deskops.models:AtomDoc
-path: /home/jp/proyectos/hum-ecosystem/tools/deskops/deskops/models/atom.py
+path: ''
 documents_index: .sldb/core/documents/AtomDoc.yaml
 sections_index: .sldb/runtime/sections/AtomDoc.yaml
-model_hash: 11b5c65d947b1ae85542f76a55ae08d3d8cd7cac8699e0b6d5424c0ff111d045
-roster_hash: 3bdbb27bfa6279c7ae3ce1aa427faefa35d99c458b0cbc03d8903080a9860f17
+model_hash: d8f7a723e9d966018ffc640ee62537c9b0ff49fff1e7aabc89d39289d63bbb02
+roster_hash: 38669ff1188fe8813f2c73b8d80c3fef6fbf716982a039060a75239f0f2b7745
 contract_hash: ee1a85c1da9ee8ba88d3094404d7771d03e738aad81a0995067fd55369e8b939
 documents_count: 137
 version: 1

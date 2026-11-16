@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:12Z'
+  authority: generated
+  via: save_document_payload
 id: atom-function-object-conception-supports-sets-operations-and-limits-of-functions
 title: La concepción de función como objeto permite conjuntos, operaciones y límites
   de funciones
@@ -10,6 +15,24 @@ tags:
 - domain:mathematics-education
 - layer:applications
 parent: branch-apos-mathematical-domains-functions
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 4
+  sections:
+  - 4.1.1
+  pages:
+  - 41
+  - 41
+  excerpt: An individual who shows a Process conception of function can think of a
+    function in terms of accepting inputs, manipulating them in some way, and produc-
+    ing outputs without the need to make explicit calculations.
+  chunk_ids:
+  - source-arnon-et-al-2014-apos-theory-chunk-88
+  nouls:
+  - 0.82
+  anchored: true
+  note: null
 ---
 
 # La concepción de función como objeto permite conjuntos, operaciones y límites de funciones
@@ -20,4 +43,4 @@ El libro usa el ejemplo de función para mostrar que una concepción de objeto s
 
 ## Procedencia
 
-Fuente principal: Capítulo 4, sección 4.1.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), cap. 4 §4.1.1, p. 41. «An individual who shows a Process conception of function can think of a function in terms of accepting inputs, manipulating them in some way, and produc- ing outputs without the need to make explicit calculations.»

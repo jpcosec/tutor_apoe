@@ -91,10 +91,13 @@ def ingest_text(
     source_path: str | None = None,
     chunk_chars: int = DEFAULT_CHUNK_CHARS,
     source_id: str | None = None,
+    page_offsets: list[tuple[int, int]] | None = None,
     root: Path | str | None = None,
 ) -> dict[str, Any]:
     """Guarda `text` como `SourceDoc` + `SourceChunk`s y devuelve los fragmentos para que el cliente
-    proponga átomos. Si la fuente (mismo `source_id`, derivado del título) ya existía, la reemplaza."""
+    proponga átomos. Si la fuente (mismo `source_id`, derivado del título) ya existía, la reemplaza.
+    `page_offsets` = `[(offset, página)]` ascendente (lo da `read_pdf_pages`): cada fragmento guarda
+    la página en la que empieza."""
     from kb_models.ingest import SourceChunk, SourceDoc
 
     text = text.replace("\r\n", "\n")
@@ -125,20 +128,21 @@ def ingest_text(
     out: list[dict[str, Any]] = []
     for chunk in chunks:
         chunk_id = f"{source_id}-chunk-{chunk['index']}"
+        page = page_at(page_offsets, chunk["start"]) if page_offsets else None
         payload = {
             "id": chunk_id,
-            "title": f"{title.strip()} · fragmento {chunk['index']}",
+            "title": f"{title.strip()} · fragmento {chunk['index']}" + (f" (p. {page})" if page else ""),
             "source": source_id,
             "index": chunk["index"],
             "start": chunk["start"],
             "end": chunk["end"],
+            "page": page,
             "text": demote_headings(chunk["text"]),
         }
         authoring._validate(SourceChunk, payload, "fragmento")
         docs.append(kb_build.Doc("SourceChunk", f"{FOLDERS['SourceChunk']}/{source_id}/{chunk_id}.md", payload, name=chunk_id))
-        out.append({"chunk_id": chunk_id, "index": chunk["index"], "text": chunk["text"], "start": chunk["start"], "end": chunk["end"]})
-    for doc in docs:
-        writer.write(doc)
+        out.append({"chunk_id": chunk_id, "index": chunk["index"], "text": chunk["text"], "start": chunk["start"], "end": chunk["end"], "page": page})
+    writer.write_many(docs)
     writer.refresh(index=False)
     return {"source_id": source_id, "title": title.strip(), "path": source_path, "n_chunks": len(out), "replaced": existing is not None, "chunks": out}
 
@@ -149,23 +153,49 @@ def ingest_file(kb_id: str, path: str | Path, *, title: str | None = None, chunk
     if not file.is_file():
         raise AuthoringError(f"no existe el archivo {file}", "pasa una ruta absoluta o relativa al directorio del servidor")
     suffix = file.suffix.lower()
+    page_offsets: list[tuple[int, int]] | None = None
     if suffix in TEXT_SUFFIXES or suffix == "":
         text = file.read_text(encoding="utf-8", errors="replace")
     elif suffix in PDF_SUFFIXES:
-        text = read_pdf(file)
+        text, page_offsets = read_pdf_pages(file)
     else:
         raise AuthoringError(f"formato no soportado: {suffix}", "usa .md, .txt o .pdf (con pypdf instalado)")
-    return ingest_text(kb_id, title or file.stem.replace("_", " ").replace("-", " ").strip(), text, source_path=str(file), chunk_chars=chunk_chars, root=root)
+    return ingest_text(kb_id, title or file.stem.replace("_", " ").replace("-", " ").strip(), text, source_path=str(file), chunk_chars=chunk_chars, page_offsets=page_offsets, root=root)
 
 
 def read_pdf(file: Path) -> str:
+    return read_pdf_pages(file)[0]
+
+
+def read_pdf_pages(file: Path) -> tuple[str, list[tuple[int, int]]]:
+    """El texto del PDF (páginas unidas por línea en blanco) y `[(offset, página)]` de cada página
+    no vacía, para que `ingest_text` guarde la página de cada fragmento."""
     try:
         from pypdf import PdfReader
     except ImportError as error:
         raise AuthoringError("pypdf no está instalado", "pip install pypdf, o convierte el PDF a .txt/.md") from error
     reader = PdfReader(str(file))
-    pages = [(page.extract_text() or "").strip() for page in reader.pages]
-    return "\n\n".join(p for p in pages if p)
+    parts: list[str] = []
+    offsets: list[tuple[int, int]] = []
+    position = 0
+    for number, page in enumerate(reader.pages, start=1):
+        text = (page.extract_text() or "").strip()
+        if not text:
+            continue
+        offsets.append((position, number))
+        parts.append(text)
+        position += len(text) + 2  # el "\n\n" de unión
+    return "\n\n".join(parts), offsets
+
+
+def page_at(page_offsets: list[tuple[int, int]] | None, offset: int) -> int | None:
+    """La página cuyo tramo contiene `offset` (el último `(start, página)` con start <= offset)."""
+    page = None
+    for start, number in page_offsets or []:
+        if start > offset:
+            break
+        page = number
+    return page
 
 
 def get_chunk(kb_id: str, chunk_id: str, root: Path | str | None = None) -> dict[str, Any]:
@@ -175,7 +205,7 @@ def get_chunk(kb_id: str, chunk_id: str, root: Path | str | None = None) -> dict
     if document.model != "SourceChunk":
         raise AuthoringError(f"{chunk_id!r} es un {document.model}, no un fragmento", "los fragmentos se llaman <source_id>-chunk-<n>")
     payload = document.payload
-    return {"chunk_id": document.name, "source": payload.get("source"), "index": payload.get("index"), "start": payload.get("start"), "end": payload.get("end"), "text": payload.get("text")}
+    return {"chunk_id": document.name, "source": payload.get("source"), "index": payload.get("index"), "start": payload.get("start"), "end": payload.get("end"), "page": payload.get("page"), "text": payload.get("text")}
 
 
 def list_sources(kb_id: str, root: Path | str | None = None) -> list[dict[str, Any]]:
@@ -208,4 +238,4 @@ def _delete_source(writer: KbWriter, source_id: str) -> int:
     return len(chunks)
 
 
-__all__ = ["chunk_text", "delete_source", "get_chunk", "ingest_file", "ingest_text", "list_sources", "read_pdf"]
+__all__ = ["chunk_text", "delete_source", "get_chunk", "ingest_file", "ingest_text", "list_sources", "page_at", "read_pdf", "read_pdf_pages"]

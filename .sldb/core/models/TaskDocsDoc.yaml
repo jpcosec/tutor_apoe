@@ -1,0 +1,18 @@
+name: TaskDocsDoc
+model_ref: deskops.models:TaskDocsDoc
+path: ''
+documents_index: .sldb/core/documents/TaskDocsDoc.yaml
+sections_index: ''
+model_hash: 943c9217708f32a3e8b0d840eae7363ef912d894d907282ff1a06a4c4468f720
+roster_hash: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+contract_hash: 0b7ba3b70188f4ac397f6ed0e69dca858c95f58a63ae959e5480aec8202d5904
+documents_count: 0
+version: 1
+canonical: false
+family: null
+semantics:
+- representation.markdown
+- source.document.markdown
+- type.workflow.task
+- workspace.desk
+base_models: []

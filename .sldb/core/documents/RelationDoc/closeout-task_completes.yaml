@@ -1,0 +1,18 @@
+name: closeout-task_completes
+path: desk/lifecycle/closeout-task_completes.md
+source_hash: 29579bdf3d30b8f5f21cbcd8af3d3760d183fdaa55bc07d8c1d47af9da7797dd
+content_hash: 4e83de866d67f72a24c9d8c6bfa5bb45faa7fab2c8121b2659dc63624a5c1680
+field_hashes:
+  title: dd9476afe3d2a81c5352fb095c5f221ae56f2cafb994ba5e25ed0167de0163bf
+  source_id: 8d0ac3d9d9104e74884b783e6eed071c02744eaa789c8fb54bcbf69f2387dd44
+  target_id: 8d0ac3d9d9104e74884b783e6eed071c02744eaa789c8fb54bcbf69f2387dd44
+  relation_type: b0adb483c3f3a55778ddefd15aa6b743cd71acbd255e66ab2441a8faa3d75566
+  condition: 08c521eb095c20b608c7a00ca4157183667d5a7f5aaa12e4f2f8d09a5da059cd
+  notes: d04dd788b3491ec6efdd7bda943ecf42f79bfd64c32a670fcc666a975109e750
+  attributes: 9b59ef7b8495bf63b3b3475bb37eed523717d794f2776accae4e7d297c01fbf8
+semantic_tags:
+- layer.topology
+- representation.markdown
+- source.document.markdown
+- type.relation.instance
+provenance: null

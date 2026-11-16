@@ -27,7 +27,7 @@ namespaces:
     examples:
     - node:branch
     meaning: Rol estructural del documento en la taxonomía (rama).
-    use_when: El documento es un nodo de organización, no conocimiento.
+    use_when: El documento es una rama de la taxonomía, no conocimiento.
   system:
     do_not_use_when: The tag is only a general topic.
     examples:

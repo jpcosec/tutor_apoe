@@ -42,25 +42,10 @@ log = logging.getLogger(__name__)
 ENV_ROOT = "TUTOR_KBS_ROOT"
 ACTOR = "tutor authoring"
 RELATION = kb_build.RELATION
-MODEL_REFS = (
-    *kb_build.MODEL_REFS,
-    f"{kb_build.MODELS_PACKAGE}.ingest:SourceDoc",
-    f"{kb_build.MODELS_PACKAGE}.ingest:SourceChunk",
-)
-#: Carpeta (relativa a la raíz de la KB) donde vive cada modelo; también sirve para inferir el
-#: modelo de un `.md` al reconstruir un store perdido.
-FOLDERS: dict[str, str] = {
-    "KnowledgeAtom": "knowledge",
-    "SourceAtom": "sources",
-    "BranchNode": "taxonomy",
-    "RelationDoc": "relations",
-    "RelationTypeDoc": "kgdb/relation_types",
-    "TagNamespaceDoc": "categories",
-    "AgentDoc": "agent",
-    "ProjectionDoc": "projections",
-    "SourceDoc": "ingest/sources",
-    "SourceChunk": "ingest/chunks",
-}
+MODEL_REFS = kb_build.MODEL_REFS
+#: Carpeta (relativa a la raíz de la KB) donde vive cada modelo (`kb_build.FOLDERS`); también sirve
+#: para inferir el modelo de un `.md` al reconstruir un store perdido.
+FOLDERS = kb_build.FOLDERS
 KB_ID = re.compile(r"^[a-z][a-z0-9-]*$")
 IDENTIFIER = re.compile(r"^[a-z0-9][a-z0-9_-]*$")
 RELATION_NAME = re.compile(r"^[a-z][a-z0-9_]*$")
@@ -215,6 +200,16 @@ class KbWriter:
 
     def invalidate(self) -> None:
         self._kb = self._report = None
+        # sldb cachea los shards de documentos en memoria y `save_document_payload` muta el objeto
+        # cacheado, con lo que su «escribir solo si cambió» cree que nada cambió y el shard en disco
+        # queda viejo (la KB valida en este proceso y falla en el siguiente). Olvidar la caché obliga
+        # a `update_store_indexes` a releer el disco y re-estampar lo que de verdad cambió.
+        try:
+            from sldb.store.io.shards import invalidate_shard_cache
+
+            invalidate_shard_cache()
+        except ImportError:  # versión de sldb sin shards cacheados
+            pass
 
     def ensure_model(self, model: str) -> None:
         """Registra el modelo en el store si una KB vieja no lo tiene (p. ej. SourceDoc)."""
@@ -243,6 +238,24 @@ class KbWriter:
             save_document_payload(self.store, doc.model, doc.doc_name, doc.payload, pythonpath=self.pythonpath, actor=ACTOR)
         else:
             create_document(self.store, doc.model, self.root / doc.path, doc.payload, name=doc.doc_name, pythonpath=self.pythonpath, actor=ACTOR)
+        self.invalidate()
+
+    def write_many(self, docs: list[kb_build.Doc]) -> None:
+        """Como `write` en tanda: una sola lectura de la KB para saber qué existe y una sola
+        invalidación al final (escribir cientos de fragmentos uno a uno revalida la KB cada vez)."""
+        from sldb.api import create_document, save_document_payload
+
+        for model in {doc.model for doc in docs}:
+            self.ensure_model(model)
+        existing = {d.name: d for d in self.kb().documents()}
+        for doc in docs:
+            current = existing.get(doc.doc_name)
+            if current is not None:
+                if current.model != doc.model:
+                    raise AuthoringError(f"{doc.doc_name!r} ya existe como {current.model}, no como {doc.model}", "borra el documento viejo o usa otro id")
+                save_document_payload(self.store, doc.model, doc.doc_name, doc.payload, pythonpath=self.pythonpath, actor=ACTOR)
+            else:
+                create_document(self.store, doc.model, self.root / doc.path, doc.payload, name=doc.doc_name, pythonpath=self.pythonpath, actor=ACTOR)
         self.invalidate()
 
     def delete(self, name: str) -> None:
@@ -353,8 +366,9 @@ def create_kb(
                 "title": title,
                 "tags": [f"system:{kb_id}", "node:branch"],
                 "parent": None,
+                "coverage": None,
                 "description": demote_headings(description) or f"Rama raíz de la KB «{title}»: de aquí cuelgan todas las ramas y átomos.",
-                "provenance": "Creada por `tutor.authoring.create_kb`.",
+                "provenance": "Rama raíz de la KB; su cobertura se calcula al construir la KB.",
             },
         )
     )
@@ -476,11 +490,7 @@ def _write_store(path: Path, pythonpath: str, refs: tuple[str, ...]) -> None:
         add_model(store, ref, pythonpath=pythonpath, actor=ACTOR)
 
 
-def _model_for_path(relative: str) -> str | None:
-    for model, folder in sorted(FOLDERS.items(), key=lambda kv: -len(kv[1])):
-        if relative.startswith(folder + "/"):
-            return model
-    return None
+_model_for_path = kb_build.model_for_path
 
 
 # -- átomos y ramas -----------------------------------------------------------------------
@@ -515,8 +525,8 @@ def upsert_atom(kb_id: str, atom: dict[str, Any], root: Path | str | None = None
         "five_wh_one_plus": question,
         "tags": tags,
         "parent": parent,
+        "provenance": normalize_provenance(data.get("provenance"), kb=writer),
         "answer": demote_headings(str(data.get("answer") or "")),
-        "provenance": demote_headings(str(data.get("provenance") or "")),
     }
     if not payload["answer"]:
         raise AuthoringError("el átomo necesita answer", "la respuesta curada a la pregunta, una afirmación")
@@ -569,8 +579,9 @@ def upsert_branch(kb_id: str, branch: dict[str, Any], root: Path | str | None = 
         "title": title,
         "tags": tags,
         "parent": parent,
+        "coverage": existing.payload.get("coverage") if existing is not None else None,
         "description": demote_headings(str(data.get("summary") or data.get("description") or "")) or f"Rama «{title}».",
-        "provenance": demote_headings(str(data.get("provenance") or "Creada por `tutor.authoring.upsert_branch`.")),
+        "provenance": demote_headings(str(data.get("provenance") or "")) or "Rama creada a mano; su cobertura se calcula al construir la KB.",
     }
     _validate(BranchNode, payload, "rama")
     declared = _ensure_namespaces(writer, tags, branch_id)
@@ -653,6 +664,47 @@ def list_tutors(kb_id: str, root: Path | str | None = None) -> list[dict[str, An
 
 
 # -- helpers --------------------------------------------------------------------------------
+
+
+def normalize_provenance(value: Any, *, kb: KbWriter | None = None) -> list[dict[str, Any]]:
+    """Lo que llega como `provenance` (prosa, lista de dicts/`Provenance`, o ids de fragmentos
+    `<source>-chunk-<n>`) → lista de `Provenance` serializada. La prosa con forma conocida se parsea;
+    los chunk_ids citados se resuelven a su fuente y página; el resto queda como `derived` con la prosa."""
+    from kb_models.provenance import Provenance, ProvenanceKind, parse_provenance_prose
+
+    if value is None:
+        return []
+    if isinstance(value, Provenance):
+        return [value.model_dump(mode="json")]
+    if isinstance(value, dict):
+        return [Provenance.model_validate(value).model_dump(mode="json")]
+    if isinstance(value, (list, tuple)):
+        out: list[dict[str, Any]] = []
+        for item in value:
+            out.extend(normalize_provenance(item, kb=kb))
+        return out
+    text = demote_headings(str(value))
+    if not text:
+        return []
+    chunk_ids = re.findall(r"\b([a-z0-9][a-z0-9_-]*-chunk-\d+)\b", text)
+    if chunk_ids and kb is not None:
+        rows = [kb.find(c) for c in dict.fromkeys(chunk_ids)]
+        rows = [r for r in rows if r is not None and r.model == "SourceChunk"]
+        if rows:
+            pages = sorted(int(r.payload["page"]) for r in rows if r.payload.get("page"))
+            note = re.sub(r"`?\b[a-z0-9][a-z0-9_-]*-chunk-\d+\b`?", "", text)
+            note = " ".join(note.replace("Fragmentos: , .", "").split()).strip(" ,;.") or None
+            return [
+                Provenance(
+                    kind=ProvenanceKind.BOOK,
+                    source=str(rows[0].payload.get("source")),
+                    pages=[pages[0], pages[-1]] if pages else None,
+                    chunk_ids=[r.name for r in rows],
+                    anchored=None,
+                    note=note,
+                ).model_dump(mode="json")
+            ]
+    return [p.model_dump(mode="json") for p in parse_provenance_prose(text)]
 
 
 def _validate(model: type, payload: dict[str, Any], what: str) -> None:
@@ -793,6 +845,7 @@ __all__ = [
     "link_atoms",
     "list_kbs",
     "list_tutors",
+    "normalize_provenance",
     "rebuild_kb",
     "slugify",
     "upsert_agent",

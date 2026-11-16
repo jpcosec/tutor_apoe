@@ -1,21 +1,18 @@
 ---
 id: branch-apos-foundations-reflective-abstraction
 title: Reflective Abstraction
-five_wh_one_plus: what
 tags:
-  - system:apos
-  - node:branch
-  - layer:taxonomy
+- layer:taxonomy
+- node:branch
+- system:apos
 node_type: branch
 parent_id: branch-apos-foundations
+description_by: google-gla:gemini-2.5-flash
+description_at: '2026-10-08'
 ---
 
 # Reflective Abstraction
 
-## Respuesta
+## Descripción
 
-Nodo de organización de la base de conocimiento APOS.
-
-## Procedencia
-
-Estructura taxonómica del repositorio.
+La abstracción reflexiva, un concepto central de Piaget, detalla cómo la mente construye sus estructuras lógico-matemáticas a través de la reflexión sobre contenidos y operaciones, y la posterior reorganización de estos en un nivel cognitivo superior. Este mecanismo es una idea fundacional clave para la teoría APOS, destacando entre las demás bases piagetianas por ser el principal motor de la creación del conocimiento matemático.

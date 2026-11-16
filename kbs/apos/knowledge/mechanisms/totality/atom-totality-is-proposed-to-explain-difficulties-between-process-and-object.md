@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:16Z'
+  authority: generated
+  via: save_document_payload
 id: atom-totality-is-proposed-to-explain-difficulties-between-process-and-object
 title: Totality se propone para explicar dificultades entre Proceso y Objeto
 five_wh_one_plus: why
@@ -9,6 +14,27 @@ tags:
 - domain:mathematics-education
 - layer:theory
 parent: branch-apos-mechanisms-totality
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 8
+  sections:
+  - '8.3'
+  pages:
+  - 148
+  - 151
+  excerpt: It has the property of being very different from any of the objects in
+    the sequence making up the inﬁnite process.
+  chunk_ids:
+  - source-arnon-et-al-2014-apos-theory-chunk-344
+  - source-arnon-et-al-2014-apos-theory-chunk-349
+  - source-arnon-et-al-2014-apos-theory-chunk-350
+  nouls:
+  - 0.89
+  - 0.77
+  - 0.57
+  anchored: true
+  note: null
 ---
 
 # Totality se propone para explicar dificultades entre Proceso y Objeto
@@ -19,4 +45,4 @@ El libro propone la etapa de Totality para interpretar mejor ciertas diferencias
 
 ## Procedencia
 
-Fuente principal: Capítulo 8, sección 8.3, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), cap. 8 §8.3, pp. 148–151. «It has the property of being very different from any of the objects in the sequence making up the inﬁnite process.»

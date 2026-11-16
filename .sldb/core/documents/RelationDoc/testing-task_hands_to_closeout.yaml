@@ -1,0 +1,18 @@
+name: testing-task_hands_to_closeout
+path: desk/lifecycle/testing-task_hands_to_closeout.md
+source_hash: e93064887b3745880b8307baf0d215696b1410eea6a7878333ef0077aa02bdb5
+content_hash: 4998d05f878ed8ffeb674509acc42cdc3e150a08284f3e5ed1f2d0460edfe107
+field_hashes:
+  title: be685570c6e09d00e6d5c4bc7e120b7bc5d40e46cdf5eb3ca4c031254fece4d1
+  source_id: 60beaa1e63b33d6f3b592ab028712bffcf4578989a8702d750cdedb931e02cc1
+  target_id: 8d0ac3d9d9104e74884b783e6eed071c02744eaa789c8fb54bcbf69f2387dd44
+  relation_type: 3a2cefb7433fb036ae492520ff37ac812ccfa53fe7d3b1d2a15f9ef7ce108857
+  condition: 3d9f574e536b08226f313dcd7a8de7928caa5b1eac4c07ee0dd00935f2c4d1b1
+  notes: 92ccb04fd25de05f430797fdb88874ee1d181e2685fd57a1c7d28ce77bc4b8b6
+  attributes: 7528e7d8c00ccb0400db2f5da9a5fd964abddddc10fd1abd6f1f102294f9d3d2
+semantic_tags:
+- layer.topology
+- representation.markdown
+- source.document.markdown
+- type.relation.instance
+provenance: null

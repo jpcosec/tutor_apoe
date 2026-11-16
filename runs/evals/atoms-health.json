@@ -1,0 +1,110 @@
+{
+  "kb": "apos",
+  "n_atoms": 94,
+  "n_branches": 59,
+  "thresholds": {
+    "short_chars": 80,
+    "long_chars": 1200,
+    "dup_ratio": 0.9,
+    "embed_sim": 0.9
+  },
+  "no_provenance": [],
+  "short_answers": [],
+  "long_answers": [],
+  "near_duplicate_titles": [],
+  "undeclared_tags": [],
+  "declared_namespaces": [
+    "agent",
+    "domain",
+    "layer",
+    "node",
+    "system",
+    "topic"
+  ],
+  "branches_without_atoms": [],
+  "orphan_atoms": [],
+  "dangling_parent": [],
+  "usage": {
+    "dir": "/home/jp/Upla/tutor_apoe/runs/evals",
+    "n_runs": 2,
+    "never_in_mesa_nor_cited": [
+      "atom-annotated-bibliography-materializes-the-breadth-of-apos-research",
+      "atom-apos-book-derives-from-collaborative-authorship",
+      "atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis",
+      "atom-apos-is-rooted-in-piagets-work",
+      "atom-apos-research-relies-on-collaborative-triangulation",
+      "atom-closure-can-support-additive-and-multiplicative-decomposition-in-homogeneous-linear-equations",
+      "atom-genetic-decomposition-guides-both-research-and-teaching",
+      "atom-genetic-decompositions-can-also-emerge-from-student-data",
+      "atom-interviews-are-the-primary-data-source-in-apos-research",
+      "atom-levels-are-content-specific-while-stages-are-general",
+      "atom-mental-construction-in-apos-is-spiral-and-enriching",
+      "atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis"
+    ],
+    "most_used": [
+      {
+        "id": "atom-genetic-decomposition-is-a-central-tool-in-apos",
+        "in_mesa": 8,
+        "cited": 8
+      },
+      {
+        "id": "atom-apos-uses-specific-mechanisms-to-explain-construction",
+        "in_mesa": 6,
+        "cited": 8
+      },
+      {
+        "id": "atom-encapsulation-treats-a-process-as-a-static-entity",
+        "in_mesa": 8,
+        "cited": 6
+      },
+      {
+        "id": "atom-reversal-can-operate-after-de-encapsulation",
+        "in_mesa": 7,
+        "cited": 5
+      },
+      {
+        "id": "atom-process-allows-mental-control-without-executing-each-step",
+        "in_mesa": 5,
+        "cited": 5
+      },
+      {
+        "id": "atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms",
+        "in_mesa": 7,
+        "cited": 4
+      },
+      {
+        "id": "atom-thematization-turns-a-schema-into-an-object",
+        "in_mesa": 7,
+        "cited": 4
+      },
+      {
+        "id": "atom-de-encapsulation-recovers-the-underlying-process-of-an-object",
+        "in_mesa": 6,
+        "cited": 4
+      },
+      {
+        "id": "atom-totality-is-proposed-to-explain-difficulties-between-process-and-object",
+        "in_mesa": 6,
+        "cited": 4
+      },
+      {
+        "id": "atom-function-object-conception-supports-sets-operations-and-limits-of-functions",
+        "in_mesa": 5,
+        "cited": 4
+      }
+    ],
+    "n_in_mesa": 82,
+    "n_cited": 62
+  },
+  "counts": {
+    "no_provenance": 0,
+    "short_answers": 0,
+    "long_answers": 0,
+    "near_duplicate_titles": 0,
+    "undeclared_tags": 0,
+    "branches_without_atoms": 0,
+    "orphan_atoms": 0,
+    "dangling_parent": 0,
+    "never_used": 12
+  }
+}

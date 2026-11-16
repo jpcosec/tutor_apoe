@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:13Z'
+  authority: generated
+  via: save_document_payload
 id: atom-genetic-decompositions-can-also-emerge-from-student-data
 title: Las descomposiciones genéticas también pueden emerger a partir de datos de
   estudiantes
@@ -10,6 +15,27 @@ tags:
 - domain:mathematics-education
 - layer:research
 parent: branch-apos-genetic-decomposition-design
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 4
+  sections:
+  - '4.2'
+  pages:
+  - 44
+  - 45
+  excerpt: The totality of the results obtained by this type of analysis leads to
+    the organization of the mental constructions that make up the genetic decomposition.
+  chunk_ids:
+  - source-arnon-et-al-2014-apos-theory-chunk-100
+  - source-arnon-et-al-2014-apos-theory-chunk-98
+  - source-arnon-et-al-2014-apos-theory-chunk-99
+  nouls:
+  - 0.91
+  - 0.9
+  - 0.84
+  anchored: true
+  note: null
 ---
 
 # Las descomposiciones genéticas también pueden emerger a partir de datos de estudiantes
@@ -20,4 +46,4 @@ El libro explica que, además de diseñarse teóricamente, una descomposición g
 
 ## Procedencia
 
-Fuente principal: Capítulo 4, sección 4.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), cap. 4 §4.2, pp. 44–45. «The totality of the results obtained by this type of analysis leads to the organization of the mental constructions that make up the genetic decomposition.»

@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:13Z'
+  authority: generated
+  via: save_document_payload
 id: atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization
 title: La imaginación juega un papel importante en la interiorización de niños pequeños
 five_wh_one_plus: how
@@ -9,6 +14,27 @@ tags:
 - domain:mathematics-education
 - layer:applications
 parent: branch-apos-applications-elementary-math
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 1
+  sections: []
+  pages: null
+  excerpt: null
+  chunk_ids: []
+  nouls: []
+  anchored: false
+  note: presentación del Capítulo 9
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 9
+  sections: []
+  pages: null
+  excerpt: null
+  chunk_ids: []
+  nouls: []
+  anchored: false
+  note: null
 ---
 
 # La imaginación juega un papel importante en la interiorización de niños pequeños
@@ -19,4 +45,4 @@ El libro anticipa que en contextos de infancia la imaginación cumple un papel s
 
 ## Procedencia
 
-Fuente principal: Capítulo 1, presentación del Capítulo 9, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), cap. 1 (presentación del Capítulo 9); cap. 9.

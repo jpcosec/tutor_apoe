@@ -1,0 +1,18 @@
+name: rule-closeout-alert-pill-graduation
+path: desk/lifecycle/rule-closeout-alert-pill-graduation.md
+source_hash: 1ff56c432a5b54ae33747191e1e20d128f183cb46fb141a38ebd22b99708c4aa
+content_hash: 841840004d30adabbff7bd1e8e0ac57b1e5ea77fabdae00cbc6f6af7619b1dad
+field_hashes:
+  title: 9a00d2b4a62a26a40ebe0e174a091994622d98839b72d1b89ae5fdbfeb59c6c8
+  subject: c42adbe41ced94302c03b1f6936f2d6333d4b69130b80ef24de6b2533adcacf0
+  where: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  condition: 029b3bda992e2ccdacf6fafafe4850ee8151056cdbc586d739d7101ed01b3a98
+  severity: cf170110abc5849f756d7abf9a6131f853d2f68ba1ca7a10497850f973dc7ef0
+  moment: bd9db2ccc19d3e0183709c1e733acebdb78e6fb67bf68171417a449a3f4b69c0
+  message: 4bf1a1d5dfe9ccffb02728b994bdd7943c3729587488d8a6b161e8685d2936d4
+semantic_tags:
+- layer.governance
+- representation.markdown
+- source.document.markdown
+- type.rule
+provenance: null

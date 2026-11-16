@@ -1,0 +1,18 @@
+name: CrossroadDoc
+model_ref: deskops.models:CrossroadDoc
+path: ''
+documents_index: .sldb/core/documents/CrossroadDoc.yaml
+sections_index: ''
+model_hash: 821d5cc4718f94346f68a11b73a3c7b4daf73ef9ea0087149ce48cb1edaea5af
+roster_hash: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+contract_hash: f1cb8901cf0b6375518de54bbd527963dd396e071243e9d8e2f15f9142ab971d
+documents_count: 0
+version: 1
+canonical: false
+family: null
+semantics:
+- representation.markdown
+- source.document.markdown
+- type.knowledge.crossroad
+- workspace.desk.atoms
+base_models: []

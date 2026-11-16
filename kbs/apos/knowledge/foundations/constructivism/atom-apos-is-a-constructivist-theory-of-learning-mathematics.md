@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:10Z'
+  authority: generated
+  via: save_document_payload
 id: atom-apos-is-a-constructivist-theory-of-learning-mathematics
 title: APOS es una teoría constructivista del aprendizaje de las matemáticas
 five_wh_one_plus: what
@@ -9,6 +14,17 @@ tags:
 - domain:mathematics-education
 - layer:theory
 parent: branch-apos-foundations-constructivism
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 1
+  sections: []
+  pages: null
+  excerpt: null
+  chunk_ids: []
+  nouls: []
+  anchored: false
+  note: null
 ---
 
 # APOS es una teoría constructivista del aprendizaje de las matemáticas
@@ -19,4 +35,4 @@ La introducción define la Teoría APOS como una teoría constructivista que mod
 
 ## Procedencia
 
-Fuente principal: Capítulo 1, Introducción, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), cap. 1.

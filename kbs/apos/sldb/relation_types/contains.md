@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: agent
+  at: '2026-11-16T02:20:35Z'
+  authority: generated
+  via: init_relations
 name: contains
 direction: directed
 cardinality: one_to_many

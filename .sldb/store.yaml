@@ -1,0 +1,411 @@
+version: 1
+links:
+- name: deskops
+  path: ../../proyectos/SLDB_1/deskops/.sldb
+models:
+- name: BoardDoc
+  model_ref: deskops.models:BoardDoc
+  origin: deskops
+- name: TaskDoc
+  model_ref: deskops.models:TaskDoc
+  origin: deskops
+- name: PillDoc
+  model_ref: deskops.models:PillDoc
+  origin: deskops
+- name: RitualDoc
+  model_ref: deskops.models:RitualDoc
+  origin: deskops
+- name: InboxNoteDoc
+  model_ref: deskops.models:InboxNoteDoc
+  origin: deskops
+- name: RepositoryDoc
+  model_ref: deskops.models:RepositoryDoc
+  origin: deskops
+- name: StepDoc
+  model_ref: deskops.models:StepDoc
+  origin: deskops
+- name: AtomDoc
+  model_ref: deskops.models:AtomDoc
+  origin: deskops
+- name: SourceNoteDoc
+  model_ref: knowledge_models:SourceNoteDoc
+  path: knowledge_models/docs.py
+- name: KnowledgeAtomDoc
+  model_ref: knowledge_models:KnowledgeAtomDoc
+  path: knowledge_models/docs.py
+- name: RelationTypeDoc
+  model_ref: sldb.models.relation_type_doc:RelationTypeDoc
+- name: RelationDoc
+  model_ref: sldb.models.relation_doc:RelationDoc
+- name: DeskFAQDoc
+  model_ref: deskops.models:DeskFAQDoc
+  origin: deskops
+- name: CrossroadDoc
+  model_ref: deskops.models:CrossroadDoc
+  origin: deskops
+- name: MaterializationContractDoc
+  model_ref: deskops.models:MaterializationContractDoc
+  origin: deskops
+- name: ProtoAtomDoc
+  model_ref: deskops.models:ProtoAtomDoc
+  origin: deskops
+- name: ReviewDoc
+  model_ref: deskops.models:ReviewDoc
+  origin: deskops
+- name: RoleDoc
+  model_ref: deskops.models:RoleDoc
+  origin: deskops
+- name: RunDoc
+  model_ref: deskops.models:RunDoc
+  origin: deskops
+- name: RuntimeProfileDoc
+  model_ref: deskops.models:RuntimeProfileDoc
+  origin: deskops
+- name: TaskAggregateDoc
+  model_ref: deskops.models:TaskAggregateDoc
+  origin: deskops
+- name: TaskCodeDoc
+  model_ref: deskops.models:TaskCodeDoc
+  origin: deskops
+- name: TaskDebugDoc
+  model_ref: deskops.models:TaskDebugDoc
+  origin: deskops
+- name: TaskDecisionDoc
+  model_ref: deskops.models:TaskDecisionDoc
+  origin: deskops
+- name: TaskDocsDoc
+  model_ref: deskops.models:TaskDocsDoc
+  origin: deskops
+- name: TaskExternalDoc
+  model_ref: deskops.models:TaskExternalDoc
+  origin: deskops
+- name: TaskRefactorDoc
+  model_ref: deskops.models:TaskRefactorDoc
+  origin: deskops
+- name: RuleDoc
+  model_ref: sldb.models.rule_doc:RuleDoc
+predicates:
+  applies_to_source:
+    axis: WHAT
+    description: 'Instances of this model may be the source of edges of this relation type: the verbs
+      a class can be subject of.'
+  applies_to_target:
+    axis: WHAT
+    description: Instances of this model may be the target of edges of this relation type.
+  composes:
+    axis: WHAT
+    description: A composed field of the source (`__compositions__`) renders this document's payload into
+      the source's text; the edge carries the composed field, the field holding the refs and the ref as
+      authored.
+  contains:
+    axis: WHERE
+    description: A field the model declared in `__containment__` holds this document as a child; the edge
+      carries the field name and the models the declaration allows.
+  extends:
+    axis: WHAT
+    description: The model inherits from that model (base_models); instances of the source are instances
+      of the target.
+  has_document:
+    axis: WHAT
+    description: The model has this document as an instance.
+  has_field:
+    axis: WHAT
+    description: The model declares this field; the field node carries its type and description.
+  has_model:
+    axis: WHAT
+    description: 'The store registers this model: its own, or one it inherits from the linked store that
+      owns it.'
+  has_section:
+    axis: WHERE
+    description: The document contains this section.
+  links_to:
+    axis: WHERE
+    description: 'The store links that store under an alias (`stores add`): it reads its documents and
+      inherits its models.'
+  names:
+    axis: WHAT
+    description: The anchor (an alias word) names this model, field, relation type or document.
+  references:
+    axis: WHAT
+    description: A field the model declared in `__references__` holds this document's id; the edge carries
+      the field name.
+  semantic_equivalent:
+    axis: WHAT
+    description: This local tag maps to that global tag across linked stores.
+  semantic_parent:
+    axis: WHAT
+    description: This tag is a child of that tag in the semantic DAG.
+  tagged_as:
+    axis: WHAT
+    description: The model, document or section carries this semantic tag.
+generate: []
+derived: []
+include:
+- model: AtomDoc
+  glob: desk/atoms/apos/applications/elementary-math/*.md
+- model: AtomDoc
+  glob: desk/atoms/apos/core-structures/action/*.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/core-structures/object/atom-object-is-a-core-mental-structure-in-apos.md
+- model: AtomDoc
+  glob: desk/atoms/apos/core-structures/process/*.md
+- model: AtomDoc
+  glob: desk/atoms/apos/core-structures/schema/*.md
+- model: AtomDoc
+  glob: desk/atoms/apos/foundations/constructivism/*.md
+- model: AtomDoc
+  glob: desk/atoms/apos/foundations/historical-development/*.md
+- model: AtomDoc
+  glob: desk/atoms/apos/foundations/piaget/*.md
+- model: AtomDoc
+  glob: desk/atoms/apos/foundations/reflective-abstraction/*.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/foundations/rumec/atom-rumec-was-a-major-community-in-apos-development.md
+- model: AtomDoc
+  glob: desk/atoms/apos/genetic-decomposition/definition/*.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-does-not-imply-linear-learning.md
+  - desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-may-include-prerequisites-and-performance-differences.md
+  - desk/atoms/apos/genetic-decomposition/design/atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one.md
+  - desk/atoms/apos/genetic-decomposition/design/atom-genetic-decompositions-can-also-emerge-from-student-data.md
+  - desk/atoms/apos/genetic-decomposition/design/atom-historical-development-can-inform-genetic-decomposition-design.md
+  - desk/atoms/apos/genetic-decomposition/design/atom-textbook-analysis-can-inform-preliminary-genetic-decompositions.md
+- model: AtomDoc
+  glob: desk/atoms/apos/genetic-decomposition/non-uniqueness/*.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/genetic-decomposition/role-in-research/atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/genetic-decomposition/role-in-teaching/atom-genetic-decomposition-guides-both-research-and-teaching.md
+- model: AtomDoc
+  glob: desk/atoms/apos/mathematical-domains/functions/*.md
+- model: AtomDoc
+  glob: desk/atoms/apos/mathematical-domains/groups/*.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/mathematical-domains/induction/atom-induction-genetic-decomposition-requires-function-and-logic-schemas.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/mathematical-domains/infinity/atom-infinite-processes-make-the-process-to-object-transition-especially-difficult.md
+- model: AtomDoc
+  glob: desk/atoms/apos/mathematical-domains/repeating-decimals/*.md
+- model: AtomDoc
+  glob: desk/atoms/apos/mathematical-domains/spanning-set-and-span/*.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/mechanisms/coordination/atom-coordination-combines-processes-to-build-new-objects-or-processes.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/mechanisms/de-encapsulation/atom-de-encapsulation-recovers-the-underlying-process-of-an-object.md
+- model: AtomDoc
+  glob: desk/atoms/apos/mechanisms/encapsulation/*.md
+- model: AtomDoc
+  glob: desk/atoms/apos/mechanisms/interiorization/*.md
+- model: AtomDoc
+  glob: desk/atoms/apos/mechanisms/levels/*.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/mechanisms/reversal/atom-reversal-is-central-for-inverses-and-related-constructions.md
+- model: AtomDoc
+  glob: desk/atoms/apos/mechanisms/stages/*.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/mechanisms/thematization/atom-thematization-turns-a-schema-into-an-object.md
+- model: AtomDoc
+  glob: desk/atoms/apos/mechanisms/totality/*.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/pedagogy/ace-cycle/atom-ace-cycle-is-the-main-apos-instructional-pattern.md
+- model: AtomDoc
+  glob: desk/atoms/apos/pedagogy/activities/*.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/pedagogy/class-discussion/atom-classroom-discussion-helps-students-reflect-on-activity-work.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/pedagogy/exercises/atom-exercises-reinforce-constructions-from-activities-and-discussion.md
+- model: AtomDoc
+  glob: desk/atoms/apos/pedagogy/isetl/*.md
+- model: AtomDoc
+  glob: desk/atoms/apos/research/data-collection/*.md
+- model: AtomDoc
+  glob: desk/atoms/apos/research/paradigm/*.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/research/research-cycle/atom-research-cycle-centers-on-two-evaluative-questions.md
+- model: AtomDoc
+  glob: desk/atoms/apos/schema-development/schema-growth/*.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/schema-development/schema-interaction/atom-schema-coherence-determines-what-falls-within-its-scope.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/synthesis/conclusions/atom-annotated-bibliography-materializes-the-breadth-of-apos-research.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/apos/synthesis/faq/atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/branches/atom-branch-apos-applications-elementary-math.md
+  - desk/atoms/branches/atom-branch-apos-core-structures-action.md
+  - desk/atoms/branches/atom-branch-apos-core-structures-object.md
+  - desk/atoms/branches/atom-branch-apos-core-structures-process.md
+  - desk/atoms/branches/atom-branch-apos-core-structures-schema.md
+  - desk/atoms/branches/atom-branch-apos-foundations-constructivism.md
+  - desk/atoms/branches/atom-branch-apos-foundations-historical-development.md
+  - desk/atoms/branches/atom-branch-apos-foundations-piaget.md
+  - desk/atoms/branches/atom-branch-apos-foundations-reflective-abstraction.md
+  - desk/atoms/branches/atom-branch-apos-foundations-rumec.md
+  - desk/atoms/branches/atom-branch-apos-genetic-decomposition-definition.md
+  - desk/atoms/branches/atom-branch-apos-genetic-decomposition-design.md
+  - desk/atoms/branches/atom-branch-apos-genetic-decomposition-non-uniqueness.md
+  - desk/atoms/branches/atom-branch-apos-genetic-decomposition-role-in-research.md
+  - desk/atoms/branches/atom-branch-apos-genetic-decomposition-role-in-teaching.md
+  - desk/atoms/branches/atom-branch-apos-mathematical-domains-functions.md
+  - desk/atoms/branches/atom-branch-apos-mathematical-domains-groups.md
+  - desk/atoms/branches/atom-branch-apos-mathematical-domains-induction.md
+  - desk/atoms/branches/atom-branch-apos-mathematical-domains-infinity.md
+  - desk/atoms/branches/atom-branch-apos-mathematical-domains-linear-homogeneous-equations.md
+  - desk/atoms/branches/atom-branch-apos-mathematical-domains-repeating-decimals.md
+  - desk/atoms/branches/atom-branch-apos-mathematical-domains-spanning-set-and-span.md
+  - desk/atoms/branches/atom-branch-apos-mechanisms-coordination.md
+  - desk/atoms/branches/atom-branch-apos-mechanisms-de-encapsulation.md
+  - desk/atoms/branches/atom-branch-apos-mechanisms-encapsulation.md
+  - desk/atoms/branches/atom-branch-apos-mechanisms-interiorization.md
+  - desk/atoms/branches/atom-branch-apos-mechanisms-levels.md
+  - desk/atoms/branches/atom-branch-apos-mechanisms-reversal.md
+  - desk/atoms/branches/atom-branch-apos-mechanisms-stages.md
+  - desk/atoms/branches/atom-branch-apos-mechanisms-thematization.md
+  - desk/atoms/branches/atom-branch-apos-mechanisms-totality.md
+  - desk/atoms/branches/atom-branch-apos-pedagogy-ace-cycle.md
+  - desk/atoms/branches/atom-branch-apos-pedagogy-activities.md
+  - desk/atoms/branches/atom-branch-apos-pedagogy-class-discussion.md
+  - desk/atoms/branches/atom-branch-apos-pedagogy-exercises.md
+  - desk/atoms/branches/atom-branch-apos-pedagogy-isetl.md
+  - desk/atoms/branches/atom-branch-apos-research-data-collection.md
+  - desk/atoms/branches/atom-branch-apos-research-paradigm.md
+  - desk/atoms/branches/atom-branch-apos-research-research-cycle.md
+  - desk/atoms/branches/atom-branch-apos-schema-development-schema-growth.md
+  - desk/atoms/branches/atom-branch-apos-schema-development-schema-interaction.md
+  - desk/atoms/branches/atom-branch-apos-synthesis-conclusions.md
+  - desk/atoms/branches/atom-branch-apos-synthesis-faq.md
+  - desk/atoms/branches/atom-branch-sources-apos-theory-book-authorship.md
+  - desk/atoms/branches/atom-branch-sources-apos-theory-book-purpose.md
+  - desk/atoms/branches/atom-branch-sources-apos-theory-book-scope.md
+  - desk/atoms/branches/atom-branch-sources-apos-theory-book-structure.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/sources/apos-theory-book/authorship/atom-apos-book-derives-from-collaborative-authorship.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/sources/apos-theory-book/purpose/atom-apos-book-presents-framework-for-research-and-curriculum-development.md
+- model: AtomDoc
+  glob: desk/atoms/sources/apos-theory-book/scope/*.md
+- model: AtomDoc
+  paths:
+  - desk/atoms/sources/apos-theory-book/structure/atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis.md
+- model: BoardDoc
+  paths:
+  - desk/tasks/Board.md
+- model: InboxNoteDoc
+  paths:
+  - desk/inbox/20261018-130325-suggestion-migraci-n-deskops-atoms-sin-five-wh-one-plus-impiden-stores-check.md
+- model: PillDoc
+  paths:
+  - desk/contexts/pill-guardrail-kb-agent-packaging.md
+- model: RelationDoc
+  paths:
+  - desk/lifecycle/closeout-task_completes.md
+  - desk/lifecycle/execution-task_activates.md
+  - desk/lifecycle/testing-task_hands_to_closeout.md
+- model: RelationTypeDoc
+  paths:
+  - desk/lifecycle/type-task_activates.md
+  - desk/lifecycle/type-task_completes.md
+  - desk/lifecycle/type-task_hands_to_closeout.md
+- model: RelationTypeDoc
+  paths:
+  - path: sldb/relation_types/applies_to_source.md
+    name: reltype-applies_to_source
+  - path: sldb/relation_types/applies_to_target.md
+    name: reltype-applies_to_target
+  - path: sldb/relation_types/composes.md
+    name: reltype-composes
+  - path: sldb/relation_types/contains.md
+    name: reltype-contains
+  - path: sldb/relation_types/extends.md
+    name: reltype-extends
+  - path: sldb/relation_types/has_document.md
+    name: reltype-has_document
+  - path: sldb/relation_types/has_field.md
+    name: reltype-has_field
+  - path: sldb/relation_types/has_model.md
+    name: reltype-has_model
+  - path: sldb/relation_types/has_section.md
+    name: reltype-has_section
+  - path: sldb/relation_types/links_to.md
+    name: reltype-links_to
+  - path: sldb/relation_types/names.md
+    name: reltype-names
+  - path: sldb/relation_types/references.md
+    name: reltype-references
+  - path: sldb/relation_types/semantic_equivalent.md
+    name: reltype-semantic_equivalent
+  - path: sldb/relation_types/semantic_parent.md
+    name: reltype-semantic_parent
+  - path: sldb/relation_types/tagged_as.md
+    name: reltype-tagged_as
+- model: RitualDoc
+  paths:
+  - path: desk/rituals/closeout.md
+    name: ritual-closeout
+  - path: desk/rituals/execution.md
+    name: ritual-execution
+  - path: desk/rituals/phase.md
+    name: ritual-phase
+  - path: desk/rituals/testing.md
+    name: ritual-testing
+- model: RuleDoc
+  paths:
+  - desk/lifecycle/rule-activation-task-aggregate.md
+  - desk/lifecycle/rule-activation-task-code.md
+  - desk/lifecycle/rule-activation-task-debug.md
+  - desk/lifecycle/rule-activation-task-decision.md
+  - desk/lifecycle/rule-activation-task-docs.md
+  - desk/lifecycle/rule-activation-task-external.md
+  - desk/lifecycle/rule-activation-task-refactor.md
+  - desk/lifecycle/rule-closeout-alert-implicit-code.md
+  - desk/lifecycle/rule-closeout-alert-pill-graduation.md
+  - desk/lifecycle/rule-closeout-task-aggregate.md
+  - desk/lifecycle/rule-closeout-task-code.md
+  - desk/lifecycle/rule-closeout-task-debug.md
+  - desk/lifecycle/rule-closeout-task-decision.md
+  - desk/lifecycle/rule-closeout-task-docs.md
+  - desk/lifecycle/rule-closeout-task-external.md
+  - desk/lifecycle/rule-closeout-task-refactor.md
+graph_backend: networkx
+policy: {}
+tag_models:
+- AtomDoc
+- ProtoAtomDoc
+tag_namespaces:
+- name: domain
+  hierarchical: true
+  folder_axis: false
+  anchored_by:
+    model: CrossroadDoc
+    field: path
+    value: bare
+- name: layer
+  hierarchical: true
+  folder_axis: false
+- name: system
+  hierarchical: true
+  folder_axis: false
+- name: topic
+  hierarchical: true
+  folder_axis: false

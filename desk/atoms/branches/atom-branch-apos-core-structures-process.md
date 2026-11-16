@@ -1,21 +1,18 @@
 ---
 id: branch-apos-core-structures-process
 title: Process
-five_wh_one_plus: what
 tags:
-  - system:apos
-  - node:branch
-  - layer:taxonomy
+- layer:taxonomy
+- node:branch
+- system:apos
 node_type: branch
 parent_id: branch-apos-core-structures
+description_by: google-gla:gemini-2.5-flash
+description_at: '2026-10-08'
 ---
 
 # Process
 
-## Respuesta
+## Descripción
 
-Nodo de organización de la base de conocimiento APOS.
-
-## Procedencia
-
-Estructura taxonómica del repositorio.
+Esta estructura mental, el Proceso, representa la internalización de una transformación, similar a una Acción pero completamente en la mente, permitiendo manipular sus pasos, omitirlos o revertirlos sin ejecución explícita. Se distingue de la Acción por este control mental y es fundamental para la posterior encapsulación que da lugar a la construcción de un Objeto.

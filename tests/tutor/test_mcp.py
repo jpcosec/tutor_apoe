@@ -76,7 +76,8 @@ def test_full_flow(server) -> None:
             kids = await call(client, "children", kb_id="flujo", atom_id=branch["id"])
             assert {c["id"] for c in kids["children"]} == {a["id"], b["id"]}
             got = await call(client, "get_atom", kb_id="flujo", atom_id=a["id"])
-            assert got["markdown"].startswith("---") and got["provenance"] == chunk
+            assert got["markdown"].startswith("---") and got["provenance_refs"][0]["chunk_ids"] == [chunk]
+            assert got["provenance"].startswith("source-") and got["surface_url"] == f"/surface?atom={a['id']}"
             link = await call(client, "link_atoms", kb_id="flujo", source=b["id"], relation="requires", target=a["id"])
             assert link["type_declared"] is True
             turn = await call(client, "run_turn", kb_id="flujo", question="¿Qué es la encapsulación?", model="test")

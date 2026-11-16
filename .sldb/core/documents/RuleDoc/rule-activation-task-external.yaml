@@ -1,0 +1,18 @@
+name: rule-activation-task-external
+path: desk/lifecycle/rule-activation-task-external.md
+source_hash: 41864d8366de65b23e0e078f4d12e5ab0a5cd454d6352ee7d55a620535e720d9
+content_hash: 53cf0619c184ad6442f4eb3fdce26cdc0d1ae8ab472e586bf70ea9539fe88492
+field_hashes:
+  title: b8d9fa0817e40041d320380ce08a06019018d3372aa6de87b7bda48d0fee371a
+  subject: 3f952c1227244afe5f144ad349b2f11f27fce7b876f4076c7b886f994777e689
+  where: 41cf66136f14a6722fc28afc4912179d17f97f87dce68a246d9b59e866f80593
+  condition: a751a65cee0dc3e3a4af5e70359e2e2cf54f3c1cc21f762964d0f57ac77e31a2
+  severity: 4d01709fcd599118652e3b27bd0ca97c802f832183d01f76a034755f2bc62fa3
+  moment: ab448ebaca73366f53e2384b99949ac894517170772b07ff2e9301285d960476
+  message: 6b00d925ed7f930b7b500495902bb51c4fde36c561092784ca3d9cd6b1d0b6df
+semantic_tags:
+- layer.governance
+- representation.markdown
+- source.document.markdown
+- type.rule
+provenance: null

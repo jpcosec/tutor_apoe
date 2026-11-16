@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor kb_build
+  at: '2026-11-16T02:20:40Z'
+  authority: generated
+  via: create_document
 id: atom-homogeneous-linear-equation-example-links-linear-form-de-encapsulation-and-partial-reversal
 title: Una ELH puede ejemplificar desencapsulacion de forma lineal y reversion parcial
 five_wh_one_plus: how
@@ -11,6 +16,17 @@ tags:
 - domain:linear-algebra
 - layer:examples
 parent: branch-apos-mathematical-domains-linear-homogeneous-equations
+provenance:
+- kind: expert
+  source: null
+  chapter: null
+  sections: []
+  pages: null
+  excerpt: null
+  chunk_ids: []
+  nouls: []
+  anchored: null
+  note: '2026-07-16'
 ---
 
 # Una ELH puede ejemplificar desencapsulacion de forma lineal y reversion parcial
@@ -27,4 +43,4 @@ Este ejemplo debe tratarse como una instancia situada dentro de una descomposici
 
 ## Procedencia
 
-Conversacion de curacion con experto, 2026-07-16.
+Conversación de curación con experto (2026-07-16).

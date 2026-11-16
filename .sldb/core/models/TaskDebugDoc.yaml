@@ -1,0 +1,18 @@
+name: TaskDebugDoc
+model_ref: deskops.models:TaskDebugDoc
+path: ''
+documents_index: .sldb/core/documents/TaskDebugDoc.yaml
+sections_index: ''
+model_hash: 429ed807cc78a1c5a3b363025f6703a609fd86dc4cd2856f7c324bdd8616e348
+roster_hash: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+contract_hash: 53dbba942bb0773e4fe6563cadaa9247a0005c0c727262091b284445ab5ae667
+documents_count: 0
+version: 1
+canonical: false
+family: null
+semantics:
+- representation.markdown
+- source.document.markdown
+- type.workflow.task
+- workspace.desk
+base_models: []

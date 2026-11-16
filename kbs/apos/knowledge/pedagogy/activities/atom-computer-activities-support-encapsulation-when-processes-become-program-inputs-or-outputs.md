@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:11Z'
+  authority: generated
+  via: save_document_payload
 id: atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
 title: Las actividades computacionales apoyan la encapsulación cuando los procesos
   pasan a ser entradas o salidas de programas
@@ -10,6 +15,24 @@ tags:
 - domain:mathematics-education
 - layer:pedagogy
 parent: branch-apos-pedagogy-activities
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 5
+  sections:
+  - 5.2.5
+  pages:
+  - 75
+  - 75
+  excerpt: Later activities presented exemplify those that are intended to help students
+    encapsulate processes to objects; these activities typically involve writing programs
+    in which the processes to be encapsulated are inputs and/or outputs to the program.
+  chunk_ids:
+  - source-arnon-et-al-2014-apos-theory-chunk-167
+  nouls:
+  - 0.85
+  anchored: true
+  note: null
 ---
 
 # Las actividades computacionales apoyan la encapsulación cuando los procesos pasan a ser entradas o salidas de programas
@@ -20,4 +43,4 @@ Desde la perspectiva instruccional del libro, la encapsulación puede verse favo
 
 ## Procedencia
 
-Fuente principal: Capítulo 5, sección 5.2.5, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), cap. 5 §5.2.5, p. 75. «Later activities presented exemplify those that are intended to help students encapsulate processes to objects; these activities typically involve writing programs in which the processes to be encapsulated are inputs and/or outputs to the program.»

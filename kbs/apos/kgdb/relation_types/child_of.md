@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor kb_build
+  at: '2026-11-16T02:20:48Z'
+  authority: generated
+  via: create_document
 name: child_of
 direction: directed
 cardinality: many_to_one

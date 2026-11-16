@@ -1,0 +1,18 @@
+name: rule-activation-task-code
+path: desk/lifecycle/rule-activation-task-code.md
+source_hash: 98b909ce90a1d7be43035d7a42332badca2a4b2baaee5d319a84aaeb565f09d6
+content_hash: dec07b7d9ec735e967350a25c8c8d152a520f5592995f2fd009b7b5581d4af8c
+field_hashes:
+  title: 15745c02137524c864c3b780d6b380b7811a71954f2e3a7308e8da48a1bd7643
+  subject: 892cd9dfadf7b41cb9bfe949292575075403e5f78b176a88e52a3af13f555b5b
+  where: 41cf66136f14a6722fc28afc4912179d17f97f87dce68a246d9b59e866f80593
+  condition: 9d12c7b6e73bb5aed767918481728d437308a4ea70013b949188db0c6fcc6762
+  severity: 4d01709fcd599118652e3b27bd0ca97c802f832183d01f76a034755f2bc62fa3
+  moment: ab448ebaca73366f53e2384b99949ac894517170772b07ff2e9301285d960476
+  message: 92e3f0cae2c00e14ceb4a4783d036f6424f153948e359a7bcb1b6d4514dec693
+semantic_tags:
+- layer.governance
+- representation.markdown
+- source.document.markdown
+- type.rule
+provenance: null

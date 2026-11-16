@@ -1,0 +1,19 @@
+name: reltype-names
+path: sldb/relation_types/names.md
+source_hash: 2166f9e353e9726713148eb93362cb79bcac0a02528f852580b82e0405559832
+content_hash: 73b524d5cbe0ff6160ef9f59354912aa48c38e16875677388be20a9ab3559035
+field_hashes:
+  title: 6a9e2a5c24ea63e98a05cbd58146222bab4261fe792826c7c611b141ddf48bb3
+  name: 6a9e2a5c24ea63e98a05cbd58146222bab4261fe792826c7c611b141ddf48bb3
+  direction: bc5965e31ad9b9fbdee7d03f2a8a26540c86629ea7b2abb3eb4cf2ac5e63a18b
+  cardinality: 3ea55382070a4f53a291448ffcb0ca975ac9b850f2514acbd418f89c891c1ffd
+  axis: 1e17359d7a476eb64fce4e5be66beac92b55686b9fb5f47596c5fefdbceeae2c
+  source_types: 092a5612bd88563356208866f952028b0badd9a2941f8dfef1b2a74b67344d99
+  target_types: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  condition: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  description: a0b25bd6b9434dca998cda43c7f3dc7270237fa64fbeab6a0c3ccbe0f216b9df
+semantic_tags:
+- layer.topology
+- representation.markdown
+- source.document.markdown
+- type.relation.type

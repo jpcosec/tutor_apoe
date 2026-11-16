@@ -1,21 +1,18 @@
 ---
 id: branch-apos-schema-development-schema-interaction
 title: Schema Interaction
-five_wh_one_plus: what
 tags:
-  - system:apos
-  - node:branch
-  - layer:taxonomy
+- layer:taxonomy
+- node:branch
+- system:apos
 node_type: branch
 parent_id: branch-apos-schema-development
+description_by: google-gla:gemini-2.5-flash
+description_at: '2026-10-08'
 ---
 
 # Schema Interaction
 
-## Respuesta
+## Descripción
 
-Nodo de organización de la base de conocimiento APOS.
-
-## Procedencia
-
-Estructura taxonómica del repositorio.
+La interacción del esquema se refiere a cómo este se relaciona con nueva información o con otras estructuras cognitivas, principalmente a través de la coherencia del esquema, que le permite determinar qué fenómenos caen dentro de su alcance. A diferencia del crecimiento del esquema, que explora la expansión y evolución interna de

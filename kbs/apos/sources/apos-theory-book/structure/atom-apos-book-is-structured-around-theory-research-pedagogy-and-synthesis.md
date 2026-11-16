@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:17Z'
+  authority: generated
+  via: save_document_payload
 id: atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis
 title: El libro de APOS se organiza alrededor de teoría, investigación, pedagogía
   y síntesis
@@ -10,6 +15,29 @@ tags:
 - domain:mathematics-education
 - layer:theory
 parent: branch-sources-apos-theory-book-structure
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: null
+  sections:
+  - Tabla de contenidos
+  pages: null
+  excerpt: null
+  chunk_ids: []
+  nouls: []
+  anchored: false
+  note: null
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: null
+  sections:
+  - Introducción
+  pages: null
+  excerpt: null
+  chunk_ids: []
+  nouls: []
+  anchored: false
+  note: null
 ---
 
 # El libro de APOS se organiza alrededor de teoría, investigación, pedagogía y síntesis
@@ -20,4 +48,4 @@ La tabla de contenidos y la introducción organizan el libro en fundamentos, est
 
 ## Procedencia
 
-Fuente principal: tabla de contenidos e introducción del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), tabla de contenidos; introducción.

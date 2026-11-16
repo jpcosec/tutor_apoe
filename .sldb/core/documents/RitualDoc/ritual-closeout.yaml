@@ -1,0 +1,25 @@
+name: ritual-closeout
+path: desk/rituals/closeout.md
+source_hash: 185239b1c3817e62e72e5498efe285808107a5a7be438157b3c4609317c418a8
+content_hash: 48f53591c967403129dd553f661fd2ed1f6c436ffba36b97b8213cf3278eb0cb
+field_hashes:
+  title: e5944a27e25a075a89d5a611a843a2951ecd7cd9626a3bad93ca7e9b75440346
+  id: 71574bcab867d8a2e20830806268bc698b67c239b762fe065d282e362267e872
+  status: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  summary: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+  current_node: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  history: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  purpose: efb6539f9c0f9ab328e35628d2f2bb498c35f50a1fa6768af2c8a0636b19e8cb
+  trigger: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  preconditions: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  steps: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  validation: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  failure_modes: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  completion: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.workflow.ritual
+- workspace.desk
+- workspace:desk

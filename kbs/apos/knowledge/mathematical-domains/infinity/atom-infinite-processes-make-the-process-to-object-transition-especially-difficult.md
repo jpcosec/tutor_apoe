@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:13Z'
+  authority: generated
+  via: save_document_payload
 id: atom-infinite-processes-make-the-process-to-object-transition-especially-difficult
 title: Los procesos infinitos vuelven especialmente difícil la transición de Proceso
   a Objeto
@@ -10,6 +15,23 @@ tags:
 - domain:mathematics-education
 - layer:applications
 parent: branch-apos-mathematical-domains-infinity
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 8
+  sections:
+  - '8.3'
+  pages:
+  - 148
+  - 148
+  excerpt: It has the property of being very different from any of the objects in
+    the sequence making up the inﬁnite process.
+  chunk_ids:
+  - source-arnon-et-al-2014-apos-theory-chunk-344
+  nouls:
+  - 0.93
+  anchored: true
+  note: null
 ---
 
 # Los procesos infinitos vuelven especialmente difícil la transición de Proceso a Objeto
@@ -20,4 +42,4 @@ El libro sugiere que la dificultad de pasar de proceso a objeto se intensifica e
 
 ## Procedencia
 
-Fuente principal: Capítulo 8, sección 8.3, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), cap. 8 §8.3, p. 148. «It has the property of being very different from any of the objects in the sequence making up the inﬁnite process.»

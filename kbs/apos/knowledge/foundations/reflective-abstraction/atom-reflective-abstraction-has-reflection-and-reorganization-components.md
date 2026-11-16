@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:14Z'
+  authority: generated
+  via: save_document_payload
 id: atom-reflective-abstraction-has-reflection-and-reorganization-components
 title: La abstracción reflexiva tiene un componente de reflexión y otro de reorganización
 five_wh_one_plus: how
@@ -8,6 +13,22 @@ tags:
 - domain:mathematics-education
 - layer:theory
 parent: branch-apos-foundations-reflective-abstraction
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 2
+  sections:
+  - '2.1'
+  pages:
+  - 18
+  - 18
+  excerpt: What is reﬂective abstraction?
+  chunk_ids:
+  - source-arnon-et-al-2014-apos-theory-chunk-29
+  nouls:
+  - 0.95
+  anchored: true
+  note: null
 ---
 
 # La abstracción reflexiva tiene un componente de reflexión y otro de reorganización
@@ -18,4 +39,4 @@ La explicación del libro divide la abstracción reflexiva en dos momentos: la r
 
 ## Procedencia
 
-Fuente principal: Capítulo 2, sección 2.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), cap. 2 §2.1, p. 18. «What is reﬂective abstraction?»

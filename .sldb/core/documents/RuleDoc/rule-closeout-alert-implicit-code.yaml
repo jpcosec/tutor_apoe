@@ -1,0 +1,18 @@
+name: rule-closeout-alert-implicit-code
+path: desk/lifecycle/rule-closeout-alert-implicit-code.md
+source_hash: ef70e3a73b70df77017af2caf1214f95c2c6965d27570dc583034b1898cfeee0
+content_hash: c6e021230cda83e4f575d9290bd8e0724fdb7771bf9d1364357bf927d5b8592f
+field_hashes:
+  title: db97b956822eb326738cde6b601495eb0d7e57f23bd3ea1ca01c0fa1b380cd56
+  subject: c42adbe41ced94302c03b1f6936f2d6333d4b69130b80ef24de6b2533adcacf0
+  where: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  condition: 4a1c340f080b34ea6e14922b5c5f6647e1081b9bb0e1d2a636d040f3981f9404
+  severity: cf170110abc5849f756d7abf9a6131f853d2f68ba1ca7a10497850f973dc7ef0
+  moment: bd9db2ccc19d3e0183709c1e733acebdb78e6fb67bf68171417a449a3f4b69c0
+  message: 62fd4d7f50f2c6732fc5abd2998ce017f947cdea14f7acd524fd2b281de48f58
+semantic_tags:
+- layer.governance
+- representation.markdown
+- source.document.markdown
+- type.rule
+provenance: null

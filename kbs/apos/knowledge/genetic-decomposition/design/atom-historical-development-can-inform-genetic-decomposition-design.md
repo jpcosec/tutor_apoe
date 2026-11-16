@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:13Z'
+  authority: generated
+  via: save_document_payload
 id: atom-historical-development-can-inform-genetic-decomposition-design
 title: El desarrollo histórico de un concepto puede informar el diseño de una descomposición
   genética
@@ -10,6 +15,27 @@ tags:
 - domain:mathematics-education
 - layer:research
 parent: branch-apos-genetic-decomposition-design
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 4
+  sections:
+  - '4.2'
+  pages:
+  - 44
+  - 45
+  excerpt: There are genetic decompositions based on data from observations of students
+    who are learning a mathematical concept.
+  chunk_ids:
+  - source-arnon-et-al-2014-apos-theory-chunk-98
+  - source-arnon-et-al-2014-apos-theory-chunk-99
+  - source-arnon-et-al-2014-apos-theory-chunk-97
+  nouls:
+  - 0.92
+  - 0.83
+  - 0.74
+  anchored: true
+  note: null
 ---
 
 # El desarrollo histórico de un concepto puede informar el diseño de una descomposición genética
@@ -20,4 +46,4 @@ El libro sostiene que el estudio del desarrollo histórico de un concepto puede 
 
 ## Procedencia
 
-Fuente principal: Capítulo 4, sección 4.2, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), cap. 4 §4.2, pp. 44–45. «There are genetic decompositions based on data from observations of students who are learning a mathematical concept.»

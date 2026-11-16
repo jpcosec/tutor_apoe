@@ -6,8 +6,7 @@ tags:
 - workspace:desk
 - artifact:task
 - source:drawer
-routine: routine-task-package-kb-agent-as-reusable-runtime-plus-pack
-current_node: checklist-task-package-kb-agent-as-reusable-runtime-plus-pack-closeout-ready
+current_node: ritual-closeout
 history:
 - operator-task-package-kb-agent-as-reusable-runtime-plus-pack-activate
 - operator-task-package-kb-agent-as-reusable-runtime-plus-pack-ready-for-testing
@@ -17,15 +16,10 @@ depends_on: []
 pills:
 - desk/contexts/pill-guardrail-kb-agent-packaging.md
 files: []
-checklists:
-- checklist-task-package-kb-agent-as-reusable-runtime-plus-pack-execution-ready
-- checklist-task-package-kb-agent-as-reusable-runtime-plus-pack-testing-ready
-- checklist-task-package-kb-agent-as-reusable-runtime-plus-pack-closeout-ready
 task_type: ''
 inherits_from: []
 inherit_acceptance_context: false
 atoms: []
-closeout_evidence_verified: false
 ---
 
 # Package KB agent as reusable runtime plus pack

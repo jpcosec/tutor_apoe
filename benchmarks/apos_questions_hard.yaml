@@ -1,0 +1,62 @@
+# Preguntas difíciles para `tutor eval run --questions benchmarks/apos_questions_hard.yaml`:
+# multi-concepto (hay que citar átomos de ramas distintas), negativas/"how_not" (lo que APOS no
+# dice) y fuera de cobertura (`expected_atom_ids: []`: no cuentan para hit@k; lo que importa es que
+# el `max noul` de la mesa sea bajo y que el tutor no cite nada que no respalde la pregunta).
+questions:
+  - id: h01-triada-vs-apo
+    question: "¿Qué relación hay entre la tríada intra-inter-trans y las etapas Acción-Proceso-Objeto? ¿Son lo mismo?"
+    expected_atom_ids:
+      - atom-schema-development-in-apos-uses-the-intra-inter-trans-triad
+      - atom-levels-are-content-specific-while-stages-are-general
+      - atom-stages-and-levels-organize-developmental-analysis-in-apos
+    expected_tags: [topic:schema-development, topic:schema]
+
+  - id: h02-decimales-infinito
+    question: "¿Por qué los decimales periódicos y los procesos infinitos son tan problemáticos para pasar de Proceso a Objeto?"
+    expected_atom_ids:
+      - atom-infinite-processes-make-the-process-to-object-transition-especially-difficult
+      - atom-repeating-decimals-and-infinity-are-key-sites-for-totality
+      - atom-process-language-about-repeating-decimals-can-block-object-construction
+    expected_tags: [topic:infinity, topic:repeating-decimals]
+
+  - id: h03-computadora-mecanismos
+    question: "¿Cómo ayudan las actividades con computadora a la interiorización y a la encapsulación?"
+    expected_atom_ids:
+      - atom-computer-activities-support-interiorization-by-generalizing-specific-actions
+      - atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs
+      - atom-writing-computer-procedures-can-help-students-move-from-action-to-process
+    expected_tags: [topic:interiorization, topic:encapsulation]
+
+  - id: h04-dg-no-lineal
+    question: "Si una descomposición genética dice Acción→Proceso→Objeto, ¿eso significa que todos los estudiantes aprenden en ese orden?"
+    expected_atom_ids:
+      - atom-genetic-decomposition-does-not-imply-linear-learning
+      - atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one
+      - atom-cognitive-path-and-genetic-decomposition-are-not-the-same
+    expected_tags: [topic:genetic-decomposition]
+
+  - id: h05-span
+    question: "¿Cómo se construye el concepto de espacio generado (span) según APOS y por qué hay que distinguirlo del conjunto generador?"
+    expected_atom_ids:
+      - atom-span-construction-starts-from-actions-on-linear-combinations
+      - atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects
+      - atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set
+    expected_tags: [topic:spanning-set-and-span, topic:linear-combination]
+
+  - id: h06-datos-entrevistas
+    question: "¿Qué datos usa la investigación APOS y por qué las entrevistas son tan importantes?"
+    expected_atom_ids:
+      - atom-interviews-are-the-primary-data-source-in-apos-research
+      - atom-apos-research-uses-multiple-data-collection-modes
+      - atom-apos-interviews-use-prompting-to-probe-construction-in-progress
+    expected_tags: [topic:data-collection, topic:interviews]
+
+  - id: h07-fuera-vygotsky
+    question: "¿Qué dice APOS sobre la zona de desarrollo próximo de Vygotsky?"
+    expected_atom_ids: []
+    expected_tags: []
+
+  - id: h08-fuera-derivada
+    question: "Dame la descomposición genética completa del concepto de derivada con sus niveles de esquema."
+    expected_atom_ids: []
+    expected_tags: []

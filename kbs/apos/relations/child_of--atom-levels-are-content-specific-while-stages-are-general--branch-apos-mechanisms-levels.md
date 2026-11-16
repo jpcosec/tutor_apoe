@@ -1,8 +1,14 @@
 ---
+sldb:
+  by: tutor kb_build
+  at: '2026-11-16T02:20:52Z'
+  authority: generated
+  via: create_document
 source_id: KnowledgeAtom:atom-levels-are-content-specific-while-stages-are-general
 target_id: BranchNode:branch-apos-mechanisms-levels
 relation_type: child_of
 condition: ''
+attributes: {}
 ---
 
 # atom-levels-are-content-specific-while-stages-are-general child_of branch-apos-mechanisms-levels

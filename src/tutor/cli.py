@@ -4,6 +4,7 @@
     tutor kb validate --kb kbs/apos
     tutor kb rank --kb kbs/apos "qué es la encapsulación en APOS" --k 5
     tutor kb show --kb kbs/apos ATOM_ID
+    tutor kb anchor --kb kbs/apos [--force]
     tutor ask --kb kbs/apos --model test "¿Qué diferencia una acción de un proceso?" [--json]
     tutor chat --kb kbs/apos --model google-gla:gemini-2.5-flash
 
@@ -30,7 +31,7 @@ ModelOpt = Annotated[
     str,
     typer.Option(
         "--model",
-        help="test | provider:model (openrouter:deepseek/deepseek-v4.1-flash, openai:gpt-4o-mini…). Por defecto TUTOR_MODEL o test.",
+        help="test | provider:model (deepseek:deepseek-flash, openrouter:openrouter/free, openai:gpt-4o-mini…). Por defecto TUTOR_MODEL o test.",
     ),
 ]
 #: Se lee al importar: con direnv, `.env.defaults` del proyecto ya está en el entorno.
@@ -47,17 +48,56 @@ def kb_build(
         "apps/kb_agent/packs/apos"
     ),
     no_index: Annotated[bool, typer.Option("--no-index", help="No refrescar el índice de embeddings.")] = False,
+    anchor: Annotated[bool, typer.Option("--anchor/--no-anchor", help="Anclar los átomos a los fragmentos de la fuente (Jev, cacheado).")] = True,
+    force_anchor: Annotated[bool, typer.Option("--force-anchor", help="Ignorar la caché de anclaje y volver a preguntar a Jev.")] = False,
 ) -> None:
-    """Genera la KB desde los átomos (`tutor.kb_build`); exit 1 si no valida."""
+    """Genera la KB desde los átomos (`tutor.kb_build`), conserva `ingest/` y `proposed/`, ancla y calcula
+    cobertura; exit 1 si no valida."""
     from tutor.kb_build import build
 
-    report = build(atoms, out, pack_dir=pack if pack.is_dir() else None, embedder_name=embedder, index=not no_index)
+    report = build(atoms, out, pack_dir=pack if pack.is_dir() else None, embedder_name=embedder, index=not no_index, anchor=anchor, force_anchor=force_anchor)
     if not report.is_valid:
         for error in report.errors:
             typer.echo(error.line(), err=True)
         typer.echo(f"KB inválida: {len(report.errors)} errores", err=True)
         raise typer.Exit(1)
+    summary = getattr(report, "enrichment", None) or {}
+    if summary.get("anchor"):
+        a = summary["anchor"]
+        typer.echo(f"anclaje: {a['anchored']} anclados, {a['unanchored']} sin respaldo, {a['pending']} sin evaluar, {a['skipped']} no aplica · {a['jev_calls']} llamadas a Jev, {a['cached']} desde caché")
     typer.echo(f"KB válida en {out}")
+
+
+@kb_app.command("anchor")
+def kb_anchor(
+    kb: KbOpt = None,
+    force: Annotated[bool, typer.Option("--force", help="Ignorar la caché y volver a preguntar a Jev.")] = False,
+    threshold: Annotated[float, typer.Option("--threshold", help="Noul mínimo para aceptar un fragmento.")] = 0.5,
+    top_k: Annotated[int, typer.Option("--top-k", help="Candidatos por embedding que ve Jev.")] = 6,
+    only: Annotated[list[str] | None, typer.Option("--only", help="Ids de átomos (repetible).")] = None,
+    as_json: Annotated[bool, typer.Option("--json", help="Volcar el informe completo.")] = False,
+) -> None:
+    """Ancla los átomos a los fragmentos de la fuente que los respaldan (Jev, cacheado) y recalcula la
+    cobertura de las ramas; imprime cuántos quedaron anclados y cuántos sin respaldo."""
+    from tutor import branches, world
+    from tutor.anchor import anchor_kb
+    from tutor.authoring import KbWriter
+
+    root = (kb or world.kb_root_default()).resolve()
+    writer = KbWriter(root)
+    report = anchor_kb(root.name, root.parent, writer=writer, threshold=threshold, top_k=top_k, force=force, only=set(only) if only else None, refresh=False)
+    first = next((o for o in (writer.kb().by_model("SourceOutline") or []) ), None)
+    branches.apply_coverage(writer, dict(first.payload) if first is not None else None, refresh=False)
+    writer.refresh(index=False)
+    if as_json:
+        typer.echo(json.dumps(report, ensure_ascii=False, indent=2))
+        return
+    if not report["jev"]:
+        typer.echo("Jev no disponible (TYPESAFE_API_KEY / typesafe-sdk): solo se usó la caché", err=True)
+    typer.echo(f"{report['n_atoms']} átomos · {report['anchored']} anclados · {report['unanchored']} sin respaldo · {report['pending']} sin evaluar · {report['skipped']} no aplica")
+    typer.echo(f"nouls: {report['nouls']['buckets']} (mediana {report['nouls']['median']}) · {report['jev_calls']} llamadas a Jev · {report['cached']} desde caché")
+    for atom_id in report["unanchored_ids"]:
+        typer.echo(f"  sin respaldo: {atom_id}")
 
 
 @kb_app.command("validate")
@@ -191,6 +231,26 @@ def render_mesa_text(mesa: dict[str, Any], indent: str = "") -> str:
     if mesa.get("reads"):
         lines.append(f"{indent}  · leídos con show_atom: {', '.join(mesa['reads'])}")
     return "\n".join(lines)
+
+
+#: Módulos opcionales que suman subcomandos: cada uno expone `register_cli(app: typer.Typer)`.
+EXTENSIONS = ("tutor.eval", "tutor.compiler")
+
+
+def _load_extensions() -> None:
+    import importlib
+
+    for name in EXTENSIONS:
+        try:
+            module = importlib.import_module(name)
+        except ImportError:
+            continue
+        register = getattr(module, "register_cli", None)
+        if register is not None:
+            register(app)
+
+
+_load_extensions()
 
 
 def main() -> None:

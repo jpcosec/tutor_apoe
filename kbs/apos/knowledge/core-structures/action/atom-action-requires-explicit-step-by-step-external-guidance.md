@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor authoring
+  at: '2026-11-16T02:22:09Z'
+  authority: generated
+  via: save_document_payload
 id: atom-action-requires-explicit-step-by-step-external-guidance
 title: Una Acción requiere guía externa explícita y ejecución paso a paso
 five_wh_one_plus: what
@@ -8,6 +13,23 @@ tags:
 - domain:mathematics-education
 - layer:theory
 parent: branch-apos-core-structures-action
+provenance:
+- kind: book
+  source: source-arnon-et-al-2014-apos-theory
+  chapter: 3
+  sections:
+  - 3.2.1
+  pages:
+  - 30
+  - 30
+  excerpt: An individual who is limited to an Action conception relies on external
+    cues.
+  chunk_ids:
+  - source-arnon-et-al-2014-apos-theory-chunk-63
+  nouls:
+  - 0.91
+  anchored: true
+  note: null
 ---
 
 # Una Acción requiere guía externa explícita y ejecución paso a paso
@@ -18,4 +40,4 @@ En APOS, una Acción es una transformación dirigida externamente en la que cada
 
 ## Procedencia
 
-Fuente principal: Capítulo 3, sección 3.2.1, del libro de Arnon et al. (2014), extraído desde `sources/Arnon et al. (2014). APOS-theory-framework-research-curriculum-development-mathematics-education.pdf`.
+Arnon et al. (2014), cap. 3 §3.2.1, p. 30. «An individual who is limited to an Action conception relies on external cues.»

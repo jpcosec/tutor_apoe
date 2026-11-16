@@ -1,9 +1,8 @@
-"""The tab workspace serves all views on one origin and delegates graph edits."""
+"""The tab workspace serves all views on one origin; the graph tab is the sldb KB graph."""
 import pytest
 from fastapi.testclient import TestClient
 
 from tutor import authoring
-from tutor.graph_web import source_viewer
 from tutor.web import create_app
 
 
@@ -20,7 +19,7 @@ def test_shell_and_view_links(client):
     assert 'role="tablist"' in shell.text
     assert 'Recorrido guiado' in shell.text
     assert '/web/guided-tour.js' in shell.text
-    for view, expected in [('chat', 'id="messages"'), ('packages', 'Modo tutorial'), ('graph', 'mindmap.js'), ('scratch', 'id="scratchBody"')]:
+    for view, expected in [('chat', 'id="messages"'), ('packages', 'Modo tutorial'), ('scratch', 'id="scratchBody"')]:
         redirect = client.get('/' + view, follow_redirects=False)
         assert redirect.status_code == 307
         assert redirect.headers['location'] == '/#' + view
@@ -28,41 +27,19 @@ def test_shell_and_view_links(client):
         assert response.status_code == 200 and expected in response.text
         assert '/ui/navigation.js' in response.text
         assert '/web/theme.css' in response.text
+    # El grafo es el de la KB sldb (`static/graph`): se sirve directo, con o sin `embed`.
+    graph = client.get('/graph?embed=1', follow_redirects=False)
+    assert graph.status_code == 200 and 'mindmap.js' in graph.text
+    assert client.get('/graph/static/mindmap.js').status_code == 200
     assert client.get('/ui/navigation.js').status_code == 200
     for filename in ('mindmap.js', 'hierarchy.js', 'mindmap.css', 'theme.css', 'guided-tour.js', 'tour-plans.js'):
         assert client.get('/web/' + filename).status_code == 200
     assert client.get('/web/AGENTS.md').status_code == 404
 
 
-def test_graph_search_and_mutations_delegate_to_source_viewer(client, monkeypatch):
-    viewer = source_viewer()
-    docs = viewer.atoms_by_id()
-    ident = next(iter(docs))
-    atom = docs[ident]
-    queries, writes = [], []
-    def find(query):
-        queries.append(query)
-        return [ident]
-    def update(ident, data):
-        writes.append(('update', ident, data))
-        return atom
-    def child(ident, data):
-        writes.append(('child', ident, data))
-        return atom
-    monkeypatch.setattr(viewer, 'sldb_find', find)
-    monkeypatch.setattr(viewer, 'update_atom', update)
-    monkeypatch.setattr(viewer, 'create_child', child)
-    full = client.get('/api/search').json()
-    assert len(full['atoms']) == len(docs)
-    filtered = client.get('/api/search', params={'q': 'topic:schema'}).json()
-    assert [a['id'] for a in filtered['atoms']] == [ident]
-    assert queries == ['topic:schema']
-    assert client.get('/api/atoms/' + ident).json()['id'] == ident
-    assert client.get('/api/atoms/missing').status_code == 404
-    assert client.post('/api/atoms/' + ident, json={'title': 'Revisado'}).status_code == 200
-    assert client.post('/api/atoms/' + ident + '/children', json={'title': 'Hijo'}).status_code == 201
-    assert writes == [('update', ident, {'title':'Revisado'}), ('child', ident, {'title':'Hijo'})]
-    def broken(query):
-        raise RuntimeError('SLDB no disponible')
-    monkeypatch.setattr(viewer, 'sldb_find', broken)
-    assert client.get('/api/search?q=test').status_code == 503
+def test_graph_search_reads_the_sldb_kb(client):
+    full = client.get('/api/search').json()['atoms']
+    assert [a['id'] for a in full] == ['branch-workspace']
+    assert client.get('/api/graph').json()['atoms'] == full
+    assert client.post('/api/atoms/missing', json={'title': 'x'}).status_code == 404
+    assert client.post('/api/atoms/missing/children', json={'title': 'x'}).status_code == 404

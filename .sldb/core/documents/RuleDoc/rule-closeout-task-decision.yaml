@@ -1,0 +1,18 @@
+name: rule-closeout-task-decision
+path: desk/lifecycle/rule-closeout-task-decision.md
+source_hash: 04c34023b5bc62d6cbe7afd1b1498381faac81896276228b2b6d7984f560fb63
+content_hash: 4cfb122a75759cd9acd52b41974f9644a3d795535560d99cb68269d7ebaed302
+field_hashes:
+  title: d44ada405b6c774db77535c8abb3803999ed433ef3bce71183e717504cac60c4
+  subject: fdd5ea003efaecbfe4681e462bb08d672aaac86d749b7dc53323b1269c7a60c1
+  where: 00f73b1519b3fe38e8b5d7b74f992608c64e6578114b98dbf4e0948f68071c91
+  condition: 4add2323c8ca74458aa90d4d614b1c7307b8e0bba9799e4020e5b2984c3a61b5
+  severity: 4d01709fcd599118652e3b27bd0ca97c802f832183d01f76a034755f2bc62fa3
+  moment: ab448ebaca73366f53e2384b99949ac894517170772b07ff2e9301285d960476
+  message: 195509a42312d768176a37e9cd8dd0f496de501d99bd99c00c76a4aba9b3eea8
+semantic_tags:
+- layer.governance
+- representation.markdown
+- source.document.markdown
+- type.rule
+provenance: null

@@ -108,10 +108,18 @@ def agent(kb: KnowledgeBase, role: str = "tutor") -> dict[str, Any] | None:
 
 
 def atom_dict(document: Any) -> dict[str, Any]:
-    """La vista plana de un documento: id, title, tags, summary, parent, question, model (+ el payload)."""
+    """La vista plana de un documento: id, title, tags, summary, parent, question, model, y la procedencia
+    en tres formas: `provenance` (prosa corta, lo que lee el LLM), `citation` (prosa con la cita textual)
+    y `provenance_refs` (estructurada: fuente, capítulo, secciones, páginas, fragmentos), más `surface_url`
+    para saltar al tramo de la fuente. Las ramas traen `coverage` y su `provenance` renderizada."""
+    from kb_models.provenance import render_provenance
+
     payload = dict(document.payload)
     summary = payload.get("answer") or payload.get("description") or payload.get("summary") or ""
-    return {
+    branch = document.model == BRANCH_MODEL
+    refs = list(payload.get("provenance") or []) if not branch else []
+    prose = payload.get("provenance") if branch else render_provenance(refs)
+    out = {
         "id": document.name,
         "title": payload.get("title", document.name),
         "tags": list(document.tags),
@@ -119,9 +127,25 @@ def atom_dict(document: Any) -> dict[str, Any]:
         "parent": payload.get("parent"),
         "question": payload.get("five_wh_one_plus"),
         "model": document.model,
-        "provenance": payload.get("provenance"),
+        "provenance": prose if isinstance(prose, str) else (render_provenance(refs) if refs else ""),
+        "citation": payload.get("citation") if not branch else payload.get("provenance"),
+        "provenance_refs": refs,
+        "surface_url": surface_url(document.name, refs, payload.get("coverage") if branch else None),
         "path": document.path,
     }
+    if branch:
+        out["coverage"] = payload.get("coverage")
+    return out
+
+
+def surface_url(name: str, refs: list[dict[str, Any]], coverage: dict[str, Any] | None = None) -> str | None:
+    """`/surface?atom=<id>` si el átomo tiene fragmentos anclados; `/surface?page=<n>` para una rama con
+    páginas cubiertas; None si no hay a dónde saltar."""
+    if any(r.get("chunk_ids") for r in refs):
+        return f"/surface?atom={name}"
+    if coverage and coverage.get("pages"):
+        return f"/surface?page={coverage['pages'][0]}"
+    return None
 
 
 def _name(ref: str) -> str:
@@ -160,4 +184,5 @@ __all__ = [
     "parent",
     "rank",
     "role_projection",
+    "surface_url",
 ]

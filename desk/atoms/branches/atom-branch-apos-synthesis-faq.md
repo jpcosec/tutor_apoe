@@ -1,21 +1,18 @@
 ---
 id: branch-apos-synthesis-faq
 title: Faq
-five_wh_one_plus: what
 tags:
-  - system:apos
-  - node:branch
-  - layer:taxonomy
+- layer:taxonomy
+- node:branch
+- system:apos
 node_type: branch
 parent_id: branch-apos-synthesis
+description_by: google-gla:gemini-2.5-flash
+description_at: '2026-10-08'
 ---
 
 # Faq
 
-## Respuesta
+## Descripción
 
-Nodo de organización de la base de conocimiento APOS.
-
-## Procedencia
-
-Estructura taxonómica del repositorio.
+Las preguntas frecuentes presentan y responden las dudas más comunes sobre la teoría APOS, consolidando su comprensión al final del libro. A diferencia de las conclusiones, esta sección se dedica a esclarecer puntos específicos planteados por los lectores, en lugar de sintetizar los principales descubrimientos o aplicaciones.

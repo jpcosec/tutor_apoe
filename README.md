@@ -32,15 +32,16 @@ en pestañas en <http://127.0.0.1:8300>. Cada vista permanece abierta al cambiar
 de pestaña, conservando sus formularios, selecciones y posición. Los enlaces
 `/#chat`, `/#packages`, `/#graph` y `/#scratch` permiten abrir una vista directamente;
 Atrás/Adelante y las flechas del teclado en la barra de pestañas también funcionan.
-El grafo fuente usa `scripts/kb.py` (búsqueda SLDB y edición Markdown) desde el
-mismo servidor; no es necesario iniciar otro proceso en el puerto 8000.
+El grafo es el mapa mental de la KB sldb, servido en `/graph` por el mismo servidor
+(`?highlight=atom-a,atom-b` resalta nodos; el chat tiene un enlace "ver en grafo" por
+turno). `web/` y `scripts/kb.py serve` son la versión legacy sobre `desk/atoms/*.md`.
 
 `--model test` no usa red. Con una API key exportada: `--model google:gemini-2.5-flash`,
 `openai:gpt-4o-mini`, `openrouter:...`. Variables en `.env.example`.
 
 **Secrets y config:** no hay `.env` en el repo. `direnv allow` una vez y `.envrc` carga los
 secrets desde `~/setup/.env-collection/master.env` (fuera de git) y la config versionada de
-`.env.defaults` (DeepSeek V4.1 Flash vía OpenRouter como LLM, Jev/TypeSafe como selector de
+`.env.defaults` (DeepSeek V4.1 Flash por API directa como LLM, Jev/TypeSafe como selector de
 contexto, embedder hash).
 Con eso `tutor ask "..."` y `tutor web` corren con el stack real sin flags.
 

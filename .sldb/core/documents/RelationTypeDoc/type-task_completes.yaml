@@ -1,0 +1,19 @@
+name: type-task_completes
+path: desk/lifecycle/type-task_completes.md
+source_hash: 5b3f4ce0793df8b2ee535b6b37490b8d0abdd4c8bb8b43b330ddb6134ead7f0f
+content_hash: c5c1a94ad43efaebabf1eb7c65f1fbfffa3a9bcbfebb90732cb323e94ee4085a
+field_hashes:
+  title: dd9476afe3d2a81c5352fb095c5f221ae56f2cafb994ba5e25ed0167de0163bf
+  name: b0adb483c3f3a55778ddefd15aa6b743cd71acbd255e66ab2441a8faa3d75566
+  direction: bc5965e31ad9b9fbdee7d03f2a8a26540c86629ea7b2abb3eb4cf2ac5e63a18b
+  cardinality: 3ea55382070a4f53a291448ffcb0ca975ac9b850f2514acbd418f89c891c1ffd
+  axis: e5dde65923d9119e9031fb86ce39e4686c31e5edc82de2486b18c60d560a0a36
+  source_types: 35a7e144bcd0b87616e4f1d78f9999548925590430d7ab92f87704e55bf40375
+  target_types: 35a7e144bcd0b87616e4f1d78f9999548925590430d7ab92f87704e55bf40375
+  condition: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  description: 70f392d91307c653b2a35612039857af3adba8561b0ffb54a8b2045851921a7f
+semantic_tags:
+- layer.topology
+- representation.markdown
+- source.document.markdown
+- type.relation.type

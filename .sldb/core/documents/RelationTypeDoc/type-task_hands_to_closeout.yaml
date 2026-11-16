@@ -1,0 +1,19 @@
+name: type-task_hands_to_closeout
+path: desk/lifecycle/type-task_hands_to_closeout.md
+source_hash: d16cc9c1d329c8d362e0d08c9ba3d6f23bbc7538429fd82cf20540c593f700bf
+content_hash: 6fe976c4bc5a2e63eacc83f86fd10072fe94800272e03be6d9f256cbec534852
+field_hashes:
+  title: be685570c6e09d00e6d5c4bc7e120b7bc5d40e46cdf5eb3ca4c031254fece4d1
+  name: 3a2cefb7433fb036ae492520ff37ac812ccfa53fe7d3b1d2a15f9ef7ce108857
+  direction: bc5965e31ad9b9fbdee7d03f2a8a26540c86629ea7b2abb3eb4cf2ac5e63a18b
+  cardinality: 3ea55382070a4f53a291448ffcb0ca975ac9b850f2514acbd418f89c891c1ffd
+  axis: e5dde65923d9119e9031fb86ce39e4686c31e5edc82de2486b18c60d560a0a36
+  source_types: 35a7e144bcd0b87616e4f1d78f9999548925590430d7ab92f87704e55bf40375
+  target_types: 35a7e144bcd0b87616e4f1d78f9999548925590430d7ab92f87704e55bf40375
+  condition: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  description: 92ccb04fd25de05f430797fdb88874ee1d181e2685fd57a1c7d28ce77bc4b8b6
+semantic_tags:
+- layer.topology
+- representation.markdown
+- source.document.markdown
+- type.relation.type

@@ -1,0 +1,17 @@
+name: 20261018-130325-suggestion-migraci-n-deskops-atoms-sin-five-wh-one-plus-impiden-stores-check
+path: desk/inbox/20261018-130325-suggestion-migraci-n-deskops-atoms-sin-five-wh-one-plus-impiden-stores-check.md
+source_hash: 1724729216078b1ffac1c9f997c8c6ceea168a51b2f4572a644bf1e07d481085
+content_hash: 9df462bbd570e133973aad914c577ed339fdb5e1cdeccb7cd48d353064cfd479
+field_hashes:
+  kind: f4accece99081750b6b8b5089a3f24b11d5ceba70797c3eb49000d84b98344fc
+  sender_project: be1a918d36a26b50ff05a32144905fa0851e3a2c55c93b05726d8a3bab97b3e7
+  target_project: 0ef1a7791b098146695671251d03ab831160ed73c07a6fed4c89b10aa7703e67
+  created_at: 43cea9517197ce328b013716cac16c209eb2abfe11187b6af0d28d6c2ce5c618
+  status: 35ff74aeea25311f4fe759a6b762c8cd41a79adb23dd5615b92cf215175a63e5
+  title: 4f9fc045a505f17453c8f33cc2ed05ce648942b49025c8dd5b8852242261ea8f
+  body: a96d8fdc67553752436a294f503ef4d12e9e7c0259379dc03022205c50e8a691
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.desk.inbox-note
+- workspace.desk.inbox

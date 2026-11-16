@@ -11,6 +11,8 @@ kb:
     - knowledge
     - sources
     - taxonomy
+    - ingest
+    - proposed
   index:
     models:
     - KnowledgeAtom

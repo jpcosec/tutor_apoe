@@ -407,8 +407,10 @@ class FakeJevClient:
 
     def system_one(self, state: Any, questions: Any, *, model: str | None = None) -> FakeResponse:
         self.calls.append({"state": state, "questions": questions, "model": model})
-        query = state.get("student_question", "") if isinstance(state, dict) else str(state)
-        rest = {k: v for k, v in state.items() if k != "student_question"} if isinstance(state, dict) else {}
+        # La «pregunta» es `student_question` o, si no está (p. ej. `atom_answer` del anclaje), el primer texto del estado.
+        key = "student_question" if not isinstance(state, dict) or "student_question" in state else next((k for k, v in state.items() if isinstance(v, str)), "student_question")
+        query = state.get(key, "") if isinstance(state, dict) else str(state)
+        rest = {k: v for k, v in state.items() if k != key} if isinstance(state, dict) else {}
         q_tokens = fake_tokens(query)
         answers: dict[str, Any] = {}
         for name, question in questions.items():

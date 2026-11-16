@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: tutor kb_build
+  at: '2026-11-16T02:20:42Z'
+  authority: generated
+  via: create_document
 id: atom-reversal-can-operate-after-de-encapsulation
 title: La reversion puede operar sobre procesos recuperados por desencapsulacion
 five_wh_one_plus: how
@@ -10,6 +15,17 @@ tags:
 - domain:mathematics-education
 - layer:theory
 parent: branch-apos-mechanisms-reversal
+provenance:
+- kind: expert
+  source: null
+  chapter: null
+  sections: []
+  pages: null
+  excerpt: null
+  chunk_ids: []
+  nouls: []
+  anchored: null
+  note: '2026-07-16'
 ---
 
 # La reversion puede operar sobre procesos recuperados por desencapsulacion
@@ -30,4 +46,4 @@ Esta formulacion mantiene distinguidos los mecanismos: la desencapsulacion recup
 
 ## Procedencia
 
-Conversacion de curacion con experto, 2026-07-16.
+Conversación de curación con experto (2026-07-16).
