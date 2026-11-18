@@ -167,12 +167,30 @@ def _normalise(value: str) -> str:
 QUERY_ALIASES = {
     "action": {"accion", "acciones", "actuar", "aplicar", "ejecutar"},
     "functions": {"funcion", "funciones", "analisis", "calculo", "calculus", "dominio", "limite", "limites"},
-    "process": {"proceso", "procesos", "interiorizar", "interiorizacion"},
-    "reversal": {"reversion", "revertir", "inversa", "inverso"},
-    "object": {"objeto", "objetos", "encapsular", "encapsulacion"},
+    "process": {"proceso", "procesos"},
+    "interiorization": {"interiorizar", "interiorizacion", "interioriza"},
+    "coordination": {"coordinar", "coordinacion", "coordina"},
+    "reversal": {"reversion", "revertir", "revierte", "inversa", "inverso"},
+    "de-encapsulation": {"desencapsular", "desencapsulacion", "desencapsula"},
+    "encapsulation": {"encapsular", "encapsulacion", "encapsula"},
+    "object": {"objeto", "objetos"},
     "schema": {"esquema", "esquemas"},
 }
 STOP_WORDS = {"a", "al", "con", "como", "de", "del", "el", "en", "es", "la", "las", "lo", "los", "me", "para", "por", "que", "quiero", "su", "un", "una", "y"}
+
+CORE_ROUTE_IDS = {
+    "process": (
+        "atom-interiorization-translates-material-actions-into-processes",
+        "atom-coordination-combines-processes-to-build-new-objects-or-processes",
+        "atom-reversal-can-operate-after-de-encapsulation",
+        "atom-de-encapsulation-recovers-the-underlying-process-of-an-object",
+    ),
+    "object": ("atom-encapsulation-treats-a-process-as-a-static-entity",),
+    "schema": (
+        "atom-schema-is-a-coherent-framework-of-linked-structures",
+        "atom-schema-development-in-apos-uses-the-intra-inter-trans-triad",
+    ),
+}
 
 
 def _query_topics(question: str) -> tuple[list[str], set[str]]:
@@ -228,6 +246,42 @@ def consult(question: str) -> dict[str, object]:
             "answer": "No encontré un átomo que responda esa formulación. Prueba con términos como acción, proceso, función, esquema o reversión.",
             "examples": [],
             "atoms": [],
+            "topics": topics,
+        }
+
+    normal_question = _normalise(clean_question)
+    construction_words = {"obtener", "obtiene", "obtencion", "construir", "construye", "formar", "forma"}
+    asks_for_construction = bool(set(normal_question.split()) & construction_words)
+    route_atoms: list[Atom] = []
+    route_answer = ""
+    by_id = atoms_by_id()
+    if "process" in topics and (asks_for_construction or len(set(topics) & {"interiorization", "coordination", "reversal", "de-encapsulation"}) > 0):
+        route_atoms = [by_id[atom_id] for atom_id in CORE_ROUTE_IDS["process"] if atom_id in by_id]
+        route_answer = (
+            "La base registra cuatro rutas para construir un Proceso:\n"
+            "• Acción → interiorización → Proceso.\n"
+            "• Coordinación de procesos → nuevo Proceso (o nuevo Objeto).\n"
+            "• Objeto → desencapsulación → Proceso; ese proceso puede revertirse para construir otro Proceso.\n"
+            "• Proceso → reversión → nuevo Proceso, cuando se controla la transformación en sentido inverso."
+        )
+    elif "object" in topics and (asks_for_construction or "encapsulation" in topics):
+        route_atoms = [by_id[atom_id] for atom_id in CORE_ROUTE_IDS["object"] if atom_id in by_id]
+        route_answer = "La ruta que registra la base es: Proceso → encapsulación → Objeto. La encapsulación permite tratar el proceso como una totalidad o entidad sobre la que se pueden aplicar nuevas transformaciones."
+    elif "schema" in topics:
+        route_atoms = [by_id[atom_id] for atom_id in CORE_ROUTE_IDS["schema"] if atom_id in by_id]
+        route_answer = (
+            "Un Esquema organiza coherentemente acciones, procesos, objetos y otros esquemas mediante relaciones generales. "
+            "Su desarrollo puede describirse con la tríada Intra–Inter–Trans: desde componentes aislados, pasando por sus relaciones, hasta una organización coherente capaz de justificar su alcance."
+        )
+
+    if route_atoms:
+        seen = set()
+        atoms = [atom for atom in route_atoms + atoms if not (atom.id in seen or seen.add(atom.id))][:4]
+        return {
+            "question": clean_question,
+            "answer": route_answer,
+            "examples": [],
+            "atoms": [atom_payload(atom) for atom in atoms],
             "topics": topics,
         }
 
