@@ -13,6 +13,7 @@ Uso:
 from __future__ import annotations
 
 import argparse
+import unicodedata
 import json
 import re
 import subprocess
@@ -122,6 +123,21 @@ def sldb_find(term: str) -> list[str]:
     ]
     result = subprocess.run(command, cwd=ROOT, text=True, capture_output=True)
     if result.returncode:
+        # Un store puede quedar incompleto tras actualizar SLDB. Conservamos la
+        # consulta principal en SLDB, pero el visor no pierde acceso a sus
+        # fuentes locales si falta un índice derivado.
+        normal = _normalise(term)
+        words = [word for word in normal.split() if len(word) >= 3]
+        matches: list[tuple[int, str]] = []
+        for atom in atoms_by_id().values():
+            haystack = " ".join((atom.id, atom.title, atom.answer, " ".join(atom.tags)))
+            searchable = _normalise(haystack)
+            score = sum(1 for word in words if word in searchable)
+            if score:
+                matches.append((score, atom.id))
+        if matches:
+            matches.sort(key=lambda item: (-item[0], item[1]))
+            return [atom_id for _, atom_id in matches]
         raise RuntimeError(result.stderr.strip() or result.stdout.strip() or "SLDB no pudo buscar.")
     payload = json.loads(result.stdout)
     return list(dict.fromkeys(item["doc"] for item in payload.get("results", []) if item.get("doc")))
@@ -138,6 +154,101 @@ def atom_payload(atom: Atom) -> dict[str, object]:
         "node_type": atom.node_type,
         "parent_id": atom.parent_id,
         "path": atom.path,
+    }
+
+
+def _normalise(value: str) -> str:
+    """Normaliza texto para una recuperación local transparente."""
+    decomposed = unicodedata.normalize("NFD", value.lower())
+    without_accents = "".join(char for char in decomposed if unicodedata.category(char) != "Mn")
+    return re.sub(r"[^a-z0-9]+", " ", without_accents).strip()
+
+
+QUERY_ALIASES = {
+    "action": {"accion", "acciones", "actuar", "aplicar", "ejecutar"},
+    "functions": {"funcion", "funciones", "analisis", "calculo", "calculus", "dominio", "limite", "limites"},
+    "process": {"proceso", "procesos", "interiorizar", "interiorizacion"},
+    "reversal": {"reversion", "revertir", "inversa", "inverso"},
+    "object": {"objeto", "objetos", "encapsular", "encapsulacion"},
+    "schema": {"esquema", "esquemas"},
+}
+STOP_WORDS = {"a", "al", "con", "como", "de", "del", "el", "en", "es", "la", "las", "lo", "los", "me", "para", "por", "que", "quiero", "su", "un", "una", "y"}
+
+
+def _query_topics(question: str) -> tuple[list[str], set[str]]:
+    words = {word for word in _normalise(question).split() if word not in STOP_WORDS}
+    topics = [topic for topic, aliases in QUERY_ALIASES.items() if words & aliases]
+    return topics, words
+
+
+def _rank_atoms(question: str, limit: int = 4) -> tuple[list[Atom], list[str]]:
+    """Relaciona una pregunta con átomos por sus títulos, tags y respuestas.
+
+    Esta capa no genera contenido: solo hace explícita una recuperación local
+    sobre la misma base que presenta el visor.
+    """
+    topics, words = _query_topics(question)
+    scored: list[tuple[int, Atom]] = []
+    for atom in atoms_by_id().values():
+        title = _normalise(atom.title)
+        answer = _normalise(atom.answer)
+        tags = " ".join(_normalise(tag) for tag in atom.tags)
+        score = 0
+        for topic in topics:
+            if f"topic {topic}" in tags or topic in tags:
+                score += 10
+            if topic.rstrip("s") in title:
+                score += 5
+            if topic.rstrip("s") in answer:
+                score += 2
+        for word in words:
+            if len(word) < 4:
+                continue
+            if word in title:
+                score += 3
+            if word in tags:
+                score += 2
+            if word in answer:
+                score += 1
+        if score:
+            scored.append((score, atom))
+    scored.sort(key=lambda item: (-item[0], item[1].title))
+    return [atom for _, atom in scored[:limit]], topics
+
+
+def consult(question: str) -> dict[str, object]:
+    """Devuelve una consulta didáctica basada en átomos con procedencia."""
+    clean_question = question.strip()
+    if not clean_question:
+        raise ValueError("Escribe una pregunta para consultar la base.")
+    atoms, topics = _rank_atoms(clean_question)
+    if not atoms:
+        return {
+            "question": clean_question,
+            "answer": "No encontré un átomo que responda esa formulación. Prueba con términos como acción, proceso, función, esquema o reversión.",
+            "examples": [],
+            "atoms": [],
+            "topics": topics,
+        }
+
+    answer = "\n\n".join(f"{atom.title}: {atom.answer}" for atom in atoms[:2])
+    examples: list[str] = []
+    if "action" in topics and "functions" in topics:
+        examples = [
+            "Con una regla explícita, calcular f(3) si f(x) = 2x + 1.",
+            "Dada una tabla, aplicar la regla para asignar a cada entrada un único valor de salida.",
+            "Para una función dada, seguir una instrucción para determinar la salida correspondiente a una entrada.",
+        ]
+        answer = (
+            "Para el dominio de funciones —un punto de entrada habitual al análisis— la base vincula una Acción con aplicar explícitamente una regla a elementos de un conjunto. "
+            "Los siguientes son ejemplos didácticos construidos a partir de esa idea; los átomos que la sustentan aparecen debajo."
+        )
+    return {
+        "question": clean_question,
+        "answer": answer,
+        "examples": examples,
+        "atoms": [atom_payload(atom) for atom in atoms],
+        "topics": topics,
     }
 
 
@@ -296,6 +407,19 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:  # noqa: N802 - API de BaseHTTPRequestHandler
         parsed = urlparse(self.path)
+        if parsed.path == "/api/consult":
+            try:
+                size = int(self.headers.get("Content-Length", "0"))
+                if size > 20_000:
+                    raise ValueError("La pregunta es demasiado larga.")
+                payload = json.loads(self.rfile.read(size))
+                question = payload.get("question") if isinstance(payload, dict) else None
+                if not isinstance(question, str):
+                    raise ValueError("La pregunta debe ser texto.")
+                self._json(consult(question))
+            except (ValueError, json.JSONDecodeError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
+            return
         if parsed.path.endswith("/children") and parsed.path.startswith("/api/atoms/"):
             try:
                 size = int(self.headers.get("Content-Length", "0"))

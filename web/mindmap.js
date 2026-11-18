@@ -59,6 +59,9 @@ function App() {
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const [term, setTerm] = useState('');
+  const [question, setQuestion] = useState('');
+  const [consultation, setConsultation] = useState(null);
+  const [asking, setAsking] = useState(false);
   const [direction, setDirection] = useState('TB');
   const [showAtoms, setShowAtoms] = useState(false);
   const [selected, setSelected] = useState(null);
@@ -116,10 +119,35 @@ function App() {
     if (!response.ok) { setStatus(data.detail || 'No se pudo crear el hijo.'); return; }
     const next = [...atoms, data.atom]; setAtoms(next); setShowAtoms(true); select(data.atom); draw(hierarchy(next), direction, true); setStatus(`Hijo creado: ${data.atom.title}`);
   };
+  const askTutor = async event => {
+    event.preventDefault();
+    if (!question.trim()) return;
+    setAsking(true); setStatus('Relacionando tu pregunta con átomos fuente…');
+    try {
+      const response = await fetch('/api/consult', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({question})});
+      const data = await response.json();
+      if (!response.ok) { setStatus(data.detail || 'No se pudo consultar la base.'); return; }
+      setConsultation(data);
+      if (data.atoms.length) {
+        const items = hierarchy(data.atoms);
+        setAtoms(items); setShowAtoms(true); draw(items, direction, true);
+        setStatus(`${data.atoms.length} átomo(s) vinculados a tu consulta`);
+      } else {
+        setStatus('No se encontraron átomos para esa formulación.');
+      }
+    } catch (_) {
+      setStatus('No se pudo conectar con la consulta local.');
+    } finally {
+      setAsking(false);
+    }
+  };
 
   return html`<main className="shell">
     <header><div><p className="eyebrow">VISOR DE CONOCIMIENTO · SLDB</p><h1>Tutor APOE</h1><p className="subtitle">Átomos fuente, jerarquía y procedencia.</p></div>
       <div className="help">${status}<br/><span>Selecciona un átomo para editar su fuente Markdown.</span></div></header>
+    <section className="tutor"><div><p className="eyebrow">CONSULTA GUIADA</p><h2>Pregúntale al Tutor APOE</h2><p>Relaciona tu pregunta con átomos fuente y muestra la procedencia. No genera respuestas fuera de la base.</p></div>
+      <form className="tutor-form" onSubmit=${askTutor}><input value=${question} onInput=${event => setQuestion(event.target.value)} placeholder="Ej.: Dame ejemplos de acciones en el dominio del análisis" aria-label="Pregunta para el Tutor APOE"/><button disabled=${asking}>${asking ? 'Consultando…' : 'Preguntar'}</button></form>
+      ${consultation && html`<div className="tutor-answer"><p className="tutor-question">${consultation.question}</p><p>${consultation.answer}</p>${consultation.examples.length > 0 && html`<div><strong>Ejemplos para trabajar</strong><ul>${consultation.examples.map(example => html`<li key=${example}>${example}</li>`)}</ul></div>`}<div className="tutor-sources"><strong>Átomos vinculados</strong>${consultation.atoms.map(atom => html`<button type="button" className="atom-link" key=${atom.id} onClick=${() => select(atom)}>${atom.title}</button>`)}</div></div>`}</section>
     <section className="toolbar"><form onSubmit=${event => {event.preventDefault(); search(term)}}><input value=${term} onInput=${event => setTerm(event.target.value)} placeholder="Buscar texto o tag: topic:schema"/><button>Buscar</button><button type="button" className="secondary" onClick=${() => {setTerm(''); search('')}}>Limpiar</button></form>
       <div className="layouts"><button className=${direction === 'TB' ? 'active' : ''} onClick=${() => setDirection('TB')}>Ancho</button><button className=${direction === 'LR' ? 'active' : ''} onClick=${() => setDirection('LR')}>Alto</button><button className=${showAtoms ? 'active' : ''} onClick=${() => setShowAtoms(!showAtoms)}>${showAtoms ? 'Ocultar átomos' : 'Ver átomos'}</button></div></section>
     <section className="topics"><span>Temas visibles</span>${topics.slice(0, 14).map(tag => html`<button key=${tag} onClick=${() => {setTerm(tag); search(tag)}}>${tag.replace('topic:', '')}</button>`)}</section>
