@@ -13,6 +13,7 @@ Uso:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import unicodedata
 import json
 import re
@@ -29,6 +30,7 @@ ROOT = Path(__file__).resolve().parents[1]
 STORE = ROOT / ".sldb"
 ATOMS = ROOT / "desk" / "atoms"
 WEB = ROOT / "web"
+SUGGESTIONS = ROOT / "knowledge" / "didactic-suggestions"
 # Prefer the CLI installed alongside this Python (e.g. the project venv).
 SLDB = str(Path(sys.executable).with_name("sldb"))
 if not Path(SLDB).is_file():
@@ -166,7 +168,8 @@ def _normalise(value: str) -> str:
 
 QUERY_ALIASES = {
     "action": {"accion", "acciones", "actuar", "aplicar", "ejecutar"},
-    "functions": {"funcion", "funciones", "analisis", "calculo", "calculus", "dominio", "limite", "limites"},
+    "analysis": {"analisis", "calculo", "calculus", "limite", "limites"},
+    "functions": {"funcion", "funciones"},
     "process": {"proceso", "procesos"},
     "interiorization": {"interiorizar", "interiorizacion", "interioriza"},
     "coordination": {"coordinar", "coordinacion", "coordina"},
@@ -234,6 +237,79 @@ def _rank_atoms(question: str, limit: int = 4) -> tuple[list[Atom], list[str]]:
     return [atom for _, atom in scored[:limit]], topics
 
 
+def _suggestion_path(domain: str, concept: str, examples: list[str]) -> Path:
+    """Una propuesta igual se guarda una sola vez, aunque se consulte de nuevo."""
+    safe_domain = re.sub(r"[^a-z0-9-]+", "-", _normalise(domain)).strip("-") or "sin-dominio"
+    safe_concept = re.sub(r"[^a-z0-9-]+", "-", _normalise(concept)).strip("-") or "sin-concepto"
+    digest = hashlib.sha256("\n".join(examples).encode("utf-8")).hexdigest()[:10]
+    return SUGGESTIONS / safe_domain / f"{safe_concept}-{digest}.md"
+
+
+def save_didactic_suggestion(
+    *, domain: str, concept: str, request: str, examples: list[str], source_atoms: list[Atom]
+) -> Path:
+    """Registra una propuesta didáctica sin convertirla en átomo fuente."""
+    path = _suggestion_path(domain, concept, examples)
+    if path.exists():
+        return path
+    path.parent.mkdir(parents=True, exist_ok=True)
+    suggestion_id = f"didactic-{path.stem}"
+    sources = "\n".join(f"  - {atom.id}" for atom in source_atoms)
+    lines = [
+        "---",
+        f"id: {suggestion_id}",
+        "status: proposed",
+        f"domain: {domain}",
+        f"concept: {concept}",
+        "origin: internal-kb-template",
+        "source_atoms:",
+        sources,
+        "---",
+        "",
+        f"# Sugerencias didácticas: {concept}",
+        "",
+        "## Solicitud que la generó",
+        "",
+        request,
+        "",
+        "## Ejemplos propuestos",
+        "",
+        *[f"- {example}" for example in examples],
+        "",
+        "## Nota de revisión",
+        "",
+        "Propuesta generada con una plantilla local. Revísala antes de usarla o promoverla a conocimiento fuente.",
+        "",
+    ]
+    path.write_text("\n".join(lines), encoding="utf-8")
+    return path
+
+
+def _didactic_examples(question: str, topics: list[str], atoms: list[Atom]) -> tuple[str, str, list[str], list[Atom]] | None:
+    """Plantillas locales: solo generan ejemplos cuando la KB permite contextualizarlos."""
+    words = set(_normalise(question).split())
+    asks_examples = bool(words & {"ejemplo", "ejemplos", "listar", "lista", "sugerir", "sugerencias"})
+    if not asks_examples or "action" not in topics:
+        return None
+    if not {"analysis", "functions"}.issubset(topics):
+        return ("", "", [], [])
+    source_id = "atom-function-genetic-decomposition-begins-with-actions-on-elements"
+    by_id = atoms_by_id()
+    source = by_id.get(source_id)
+    if source is None:
+        return None
+    return (
+        "análisis",
+        "función real de una variable",
+        [
+            "Con una regla explícita, calcular f(3) si f(x) = 2x + 1.",
+            "Dada una tabla, aplicar la regla para asignar a cada entrada un único valor de salida.",
+            "Para una función dada, seguir una instrucción para determinar la salida correspondiente a una entrada.",
+        ],
+        [source],
+    )
+
+
 def consult(question: str) -> dict[str, object]:
     """Devuelve una consulta didáctica basada en átomos con procedencia."""
     clean_question = question.strip()
@@ -247,6 +323,34 @@ def consult(question: str) -> dict[str, object]:
             "examples": [],
             "atoms": [],
             "topics": topics,
+        }
+
+    didactic = _didactic_examples(clean_question, topics, atoms)
+    if didactic is not None:
+        domain, concept, examples, source_atoms = didactic
+        if not examples:
+            return {
+                "question": clean_question,
+                "answer": "Para proponer ejemplos de acciones necesito que indiques el dominio y el concepto matemático. Por ejemplo: “función real de una variable en análisis” o “ecuación lineal homogénea en álgebra lineal”.",
+                "examples": [],
+                "atoms": [],
+                "topics": topics,
+                "needs_instruction": True,
+            }
+        saved = save_didactic_suggestion(
+            domain=domain,
+            concept=concept,
+            request=clean_question,
+            examples=examples,
+            source_atoms=source_atoms,
+        )
+        return {
+            "question": clean_question,
+            "answer": "Estos ejemplos se generaron desde el átomo de función vinculado. Quedaron registrados como propuesta didáctica pendiente de revisión.",
+            "examples": examples,
+            "atoms": [atom_payload(atom) for atom in source_atoms],
+            "topics": topics,
+            "suggestion_path": str(saved.relative_to(ROOT)) if saved.is_relative_to(ROOT) else saved.name,
         }
 
     normal_question = _normalise(clean_question)
@@ -287,16 +391,6 @@ def consult(question: str) -> dict[str, object]:
 
     answer = "\n\n".join(f"{atom.title}: {atom.answer}" for atom in atoms[:2])
     examples: list[str] = []
-    if "action" in topics and "functions" in topics:
-        examples = [
-            "Con una regla explícita, calcular f(3) si f(x) = 2x + 1.",
-            "Dada una tabla, aplicar la regla para asignar a cada entrada un único valor de salida.",
-            "Para una función dada, seguir una instrucción para determinar la salida correspondiente a una entrada.",
-        ]
-        answer = (
-            "Para el dominio de funciones —un punto de entrada habitual al análisis— la base vincula una Acción con aplicar explícitamente una regla a elementos de un conjunto. "
-            "Los siguientes son ejemplos didácticos construidos a partir de esa idea; los átomos que la sustentan aparecen debajo."
-        )
     return {
         "question": clean_question,
         "answer": answer,
