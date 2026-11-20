@@ -145,10 +145,14 @@ async function expertView() {
     };
     const close = async (validated, endedEarly) => {
       try {
-        await request('/api/experts/' + encodeURIComponent(expertId) + '/validate', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({conversation_id: conversationId, validated, ended_early: endedEarly, corrections: $('#corrections').value})});
+        const result = await request('/api/experts/' + encodeURIComponent(expertId) + '/validate', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({conversation_id: conversationId, validated, ended_early: endedEarly, corrections: $('#corrections').value})});
         $('#validation-card').hidden = true;
         $('#question-title').textContent = 'Entrevista cerrada';
-        $('#question-text').textContent = validated ? 'La síntesis fue validada y quedó disponible para revisión del módulo experto.' : 'La entrevista quedó cerrada con sus reservas de validación registradas.';
+        const message = validated ? 'La síntesis fue validada y quedó disponible para revisión del módulo experto.' : 'La entrevista quedó cerrada con sus reservas de validación registradas.';
+        const link = document.createElement('a');
+        link.href = '/api/experts/' + encodeURIComponent(expertId) + '/export?conversation=' + encodeURIComponent(conversationId);
+        link.textContent = 'Descargar registro para revisión e ingreso al Tutor APOE';
+        $('#question-text').replaceChildren(document.createTextNode(message + ' '), link);
       } catch (error) { status(error.message, true); }
     };
     $('#validate').onclick = () => close(true, false);

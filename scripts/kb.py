@@ -683,6 +683,42 @@ def _save_conversation_summary(directory: Path, conversation: dict[str, object])
         _write_json(directory / "conversations" / "index.json", summaries)
 
 
+def export_expert_conversation(expert_id: str, conversation_id: str) -> Path:
+    directory = _expert_dir(expert_id)
+    conversation = _read_json(directory / "conversations" / f"{conversation_id}.json", None)
+    profile = _read_json(directory / "profile.json", None)
+    if not isinstance(conversation, dict) or not isinstance(profile, dict):
+        raise KeyError("Conversación o especialista no encontrado.")
+    protocol = expert_protocol()
+    lines = [
+        "---",
+        f"title: Entrevista APOE {conversation_id}",
+        f"participant_code: {conversation.get('participant_code', 'sin-código')}",
+        f"consent: {conversation.get('consent', 'sin información')}",
+        f"status: {conversation.get('status', 'sin información')}",
+        f"protocol: {protocol.get('id', 'sin información')}",
+        "---",
+        "",
+        "# Registro exportable de entrevista APOE",
+        "",
+        f"Especialista: {profile.get('name', 'sin información')}",
+        "",
+        "Este archivo es una fuente de entrevista para revisión humana. No incorpora átomos al Tutor APOE automáticamente.",
+        "",
+    ]
+    for turn in conversation.get("turns", []):
+        if not isinstance(turn, dict):
+            continue
+        lines.extend((f"## {turn.get('question_id', 'sin id')} · turno {turn.get('turn', '?')}", "", f"Pregunta: {turn.get('question', '')}", "", f"Respuesta: {turn.get('answer', '')}", "", f"Cobertura: {turn.get('coverage', 'sin información')}", ""))
+    validation = conversation.get("synthesis_validation")
+    if isinstance(validation, dict):
+        lines.extend(("## Validación de síntesis", "", f"Validada: {validation.get('validated', False)}", "", f"Correcciones: {validation.get('corrections', 'sin información')}", ""))
+    path = directory / "exports" / f"{conversation_id}.md"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines), encoding="utf-8")
+    return path
+
+
 def pause_expert_conversation(expert_id: str, conversation_id: str) -> dict[str, object]:
     directory = _expert_dir(expert_id)
     path = directory / "conversations" / f"{conversation_id}.json"
@@ -733,8 +769,9 @@ def validate_expert_conversation(expert_id: str, conversation_id: str, validated
     _write_json(path, conversation)
     _save_conversation_summary(directory, conversation)
     _transcript(directory, conversation, expert_protocol())
+    export_path = export_expert_conversation(expert_id, conversation_id)
     _rebuild_expert_module()
-    return {"conversation": conversation, "synthesis": conversation.get("responses", [])}
+    return {"conversation": conversation, "synthesis": conversation.get("responses", []), "export_path": str(export_path.relative_to(ROOT))}
 
 
 def _active_question(protocol: dict[str, object], conversation: dict[str, object]) -> dict[str, object] | None:
@@ -876,6 +913,15 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(data)
 
+    def _download(self, path: Path) -> None:
+        data = path.read_bytes()
+        self.send_response(HTTPStatus.OK)
+        self.send_header("Content-Type", "text/markdown; charset=utf-8")
+        self.send_header("Content-Disposition", f'attachment; filename="{path.name}"')
+        self.send_header("Content-Length", str(len(data)))
+        self.end_headers()
+        self.wfile.write(data)
+
     def do_GET(self) -> None:  # noqa: N802 - API de BaseHTTPRequestHandler
         parsed = urlparse(self.path)
         if parsed.path == "/":
@@ -896,6 +942,15 @@ class Handler(BaseHTTPRequestHandler):
         if parsed.path == "/api/expert-module":
             with EXPERT_LOCK:
                 self._json(_rebuild_expert_module(persist=False))
+            return
+        if parsed.path.startswith("/api/experts/") and parsed.path.endswith("/export"):
+            expert_id = unquote(parsed.path.removeprefix("/api/experts/").removesuffix("/export").rstrip("/"))
+            conversation_id = parse_qs(parsed.query).get("conversation", [""])[0]
+            try:
+                export_path = export_expert_conversation(expert_id, conversation_id)
+                self._download(export_path)
+            except (KeyError, ValueError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.NOT_FOUND)
             return
         if parsed.path.startswith("/api/experts/"):
             expert_id = unquote(parsed.path.removeprefix("/api/experts/").strip("/"))
