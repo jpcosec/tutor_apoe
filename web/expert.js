@@ -32,7 +32,11 @@ async function loadModule() {
   target.replaceChildren(...module.experts.map(item => {
     const row = document.createElement('div');
     row.className = 'module-item';
-    row.textContent = item.name + ': ' + item.conversations + ' conversación(es), ' + item.responses + ' respuesta(s).';
+    const link = document.createElement('a');
+    link.href = '/expert/' + encodeURIComponent(item.id);
+    link.textContent = 'Abrir entrevista';
+    link.target = '_blank';
+    row.append(document.createTextNode(item.name + ': ' + item.conversations + ' conversación(es), ' + item.responses + ' respuesta(s). '), link);
     return row;
   }));
 }
