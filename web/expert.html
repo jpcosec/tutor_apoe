@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Módulo experto APOE</title>
+  <link rel="stylesheet" href="/web/expert.css">
+</head>
+<body>
+  <main>
+    <a class="back" href="/">← Visor de conocimiento</a>
+    <header>
+      <p class="eyebrow">MÓDULO EXPERTO APOE</p>
+      <h1>Diálogo estructurado con especialistas</h1>
+      <p>Las respuestas se guardan por separado en el repositorio de cada especialista. Un índice reúne las conversaciones sin alterar los átomos fuente.</p>
+    </header>
+    <section id="host" hidden>
+      <article class="card">
+        <p class="eyebrow">1 · PROTOCOLO</p>
+        <h2>Configura las preguntas</h2>
+        <form id="protocol-form">
+          <label>Título<input id="protocol-title" required></label>
+          <label>Instrucciones para la persona experta<textarea id="protocol-instructions" rows="3" required></textarea></label>
+          <label>Preguntas, una por línea<textarea id="protocol-questions" rows="7" required placeholder="¿Cuál es la construcción mental…?"></textarea></label>
+          <button>Guardar protocolo</button>
+        </form>
+      </article>
+      <article class="card">
+        <p class="eyebrow">2 · INVITACIÓN</p>
+        <h2>Crea un repositorio de especialista</h2>
+        <form id="expert-form">
+          <label>Nombre de la persona experta<input id="expert-name" required placeholder="Ej.: Dra. Ana Pérez"></label>
+          <button>Crear enlace e instrucciones</button>
+        </form>
+        <div id="invite" class="result" hidden></div>
+      </article>
+      <article class="card">
+        <p class="eyebrow">MÓDULO APOE</p>
+        <h2>Conversaciones reunidas</h2>
+        <div id="module-summary"></div>
+      </article>
+    </section>
+    <section id="expert" hidden>
+      <article class="card">
+        <p class="eyebrow">REPOSITORIO PERSONAL</p>
+        <h2 id="expert-name-title"></h2>
+        <p id="protocol-instructions-view"></p>
+      </article>
+      <article class="card">
+        <p class="eyebrow">ENTREVISTA</p>
+        <h2 id="question-title">Preparando entrevista</h2>
+        <p id="question-text"></p>
+        <form id="answer-form" hidden>
+          <label>Tu respuesta<textarea id="answer" rows="8" required></textarea></label>
+          <button>Guardar respuesta y continuar</button>
+        </form>
+        <button id="start" hidden>Comenzar entrevista</button>
+      </article>
+    </section>
+    <p id="status" class="status" role="status"></p>
+  </main>
+  <script type="module" src="/web/expert.js"></script>
+</body>
+</html>

@@ -20,10 +20,13 @@ import re
 import subprocess
 import sys
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from threading import Lock
 from urllib.parse import parse_qs, unquote, urlparse
+from uuid import uuid4
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,6 +34,9 @@ STORE = ROOT / ".sldb"
 ATOMS = ROOT / "desk" / "atoms"
 WEB = ROOT / "web"
 SUGGESTIONS = ROOT / "knowledge" / "didactic-suggestions"
+EXPERT_MODULE = ROOT / "knowledge" / "expert-apoe"
+EXPERTS = EXPERT_MODULE / "experts"
+EXPERT_LOCK = Lock()
 # Prefer the CLI installed alongside this Python (e.g. the project venv).
 SLDB = str(Path(sys.executable).with_name("sldb"))
 if not Path(SLDB).is_file():
@@ -486,6 +492,214 @@ def create_child(parent_id: str, data: dict[str, object]) -> Atom:
     return read_atom(path)
 
 
+DEFAULT_EXPERT_PROTOCOL = {
+    "id": "apoe-expert-protocol",
+    "title": "Protocolo de diálogo experto APOE",
+    "instructions": "El protocolo aún no tiene preguntas. La coordinación debe configurarlas antes de invitar a especialistas.",
+    "questions": [],
+}
+
+
+def _now() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def _read_json(path: Path, default: object) -> object:
+    if not path.is_file():
+        return default
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _write_json(path: Path, data: object) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def expert_protocol() -> dict[str, object]:
+    data = _read_json(EXPERT_MODULE / "protocol.json", DEFAULT_EXPERT_PROTOCOL)
+    return data if isinstance(data, dict) else dict(DEFAULT_EXPERT_PROTOCOL)
+
+
+def set_expert_protocol(data: dict[str, object]) -> dict[str, object]:
+    title = data.get("title")
+    instructions = data.get("instructions")
+    questions = data.get("questions")
+    if not isinstance(title, str) or not title.strip():
+        raise ValueError("El protocolo necesita un título.")
+    if not isinstance(instructions, str) or not instructions.strip():
+        raise ValueError("El protocolo necesita instrucciones.")
+    if not isinstance(questions, list) or not all(isinstance(question, str) and question.strip() for question in questions):
+        raise ValueError("El protocolo necesita una lista de preguntas no vacías.")
+    protocol = {
+        "id": "apoe-expert-protocol",
+        "title": title.strip(),
+        "instructions": instructions.strip(),
+        "questions": [question.strip() for question in questions],
+        "updated_at": _now(),
+    }
+    _write_json(EXPERT_MODULE / "protocol.json", protocol)
+    return protocol
+
+
+def _expert_id(name: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", _normalise(name)).strip("-") or "especialista"
+    return f"expert-{slug[:36]}-{uuid4().hex[:8]}"
+
+
+def _expert_dir(expert_id: str) -> Path:
+    if not re.fullmatch(r"expert-[a-z0-9-]+", expert_id):
+        raise ValueError("Identificador de especialista inválido.")
+    return EXPERTS / expert_id
+
+
+def _rebuild_expert_module(persist: bool = True) -> dict[str, object]:
+    experts: list[dict[str, object]] = []
+    if EXPERTS.is_dir():
+        for profile_path in sorted(EXPERTS.glob("*/profile.json")):
+            profile = _read_json(profile_path, {})
+            index = _read_json(profile_path.parent / "conversations" / "index.json", [])
+            if not isinstance(profile, dict) or not isinstance(index, list):
+                continue
+            experts.append({
+                "id": profile.get("id"),
+                "name": profile.get("name"),
+                "created_at": profile.get("created_at"),
+                "conversations": len(index),
+                "responses": sum(int(item.get("responses", 0)) for item in index if isinstance(item, dict)),
+                "repository": str(profile_path.parent.relative_to(ROOT)),
+            })
+    module = {
+        "title": "Módulo experto APOE",
+        "updated_at": _now(),
+        "protocol": expert_protocol().get("id"),
+        "experts": experts,
+        "note": "Las conversaciones permanecen en el repositorio propio de cada especialista; este índice las reúne sin sustituir los átomos fuente.",
+    }
+    if not persist:
+        return module
+
+    _write_json(EXPERT_MODULE / "module.json", module)
+    lines = [
+        "# Módulo experto APOE",
+        "",
+        "Este índice reúne repositorios de conversación de especialistas. Las entrevistas no modifican por sí solas los átomos fuente de la KB.",
+        "",
+        "## Especialistas",
+        "",
+    ]
+    lines.extend(
+        f"- {item['name']} — {item['conversations']} conversación(es), {item['responses']} respuesta(s) · `{item['repository']}`"
+        for item in experts
+    )
+    if not experts:
+        lines.append("- Aún no hay repositorios de especialistas.")
+    lines.append("")
+    (EXPERT_MODULE / "README.md").write_text("\n".join(lines), encoding="utf-8")
+    return module
+
+
+def create_expert(name: str) -> dict[str, object]:
+    clean_name = name.strip()
+    if len(clean_name) < 3:
+        raise ValueError("Indica el nombre de la persona experta.")
+    expert_id = _expert_id(clean_name)
+    directory = _expert_dir(expert_id)
+    profile = {
+        "id": expert_id,
+        "name": clean_name,
+        "created_at": _now(),
+        "repository": str(directory.relative_to(ROOT)),
+    }
+    _write_json(directory / "profile.json", profile)
+    _write_json(directory / "conversations" / "index.json", [])
+    _rebuild_expert_module()
+    return profile
+
+
+def expert_data(expert_id: str) -> dict[str, object]:
+    directory = _expert_dir(expert_id)
+    profile = _read_json(directory / "profile.json", None)
+    if not isinstance(profile, dict):
+        raise KeyError("Especialista no encontrado.")
+    conversations = _read_json(directory / "conversations" / "index.json", [])
+    return {
+        "expert": profile,
+        "protocol": expert_protocol(),
+        "conversations": conversations if isinstance(conversations, list) else [],
+    }
+
+
+def _transcript(directory: Path, conversation: dict[str, object], protocol: dict[str, object]) -> None:
+    lines = [
+        f"# Conversación {conversation['id']}",
+        "",
+        f"Protocolo: {protocol['title']}",
+        "",
+        "## Respuestas",
+        "",
+    ]
+    for response in conversation.get("responses", []):
+        lines.extend((f"### {response['question']}", "", response["answer"], ""))
+    if not conversation.get("responses"):
+        lines.append("Aún no hay respuestas.")
+    (directory / "conversations" / f"{conversation['id']}.md").write_text("\n".join(lines), encoding="utf-8")
+
+
+def start_expert_conversation(expert_id: str) -> dict[str, object]:
+    data = expert_data(expert_id)
+    protocol = data["protocol"]
+    questions = protocol.get("questions", [])
+    if not questions:
+        raise ValueError("La coordinación todavía no ha configurado las preguntas del protocolo.")
+    expert = data["expert"]
+    directory = _expert_dir(expert_id)
+    conversation = {
+        "id": f"conversation-{uuid4().hex[:10]}",
+        "expert_id": expert_id,
+        "created_at": _now(),
+        "updated_at": _now(),
+        "question_index": 0,
+        "responses": [],
+        "completed": False,
+    }
+    _write_json(directory / "conversations" / f"{conversation['id']}.json", conversation)
+    index = data["conversations"]
+    index.append({"id": conversation["id"], "created_at": conversation["created_at"], "responses": 0, "completed": False})
+    _write_json(directory / "conversations" / "index.json", index)
+    _transcript(directory, conversation, protocol)
+    _rebuild_expert_module()
+    return {"conversation": conversation, "question": questions[0], "expert": expert, "protocol": protocol}
+
+
+def record_expert_response(expert_id: str, conversation_id: str, answer: str) -> dict[str, object]:
+    clean_answer = answer.strip()
+    if not clean_answer:
+        raise ValueError("Escribe una respuesta antes de continuar.")
+    directory = _expert_dir(expert_id)
+    path = directory / "conversations" / f"{conversation_id}.json"
+    conversation = _read_json(path, None)
+    if not isinstance(conversation, dict):
+        raise KeyError("Conversación no encontrada.")
+    protocol = expert_protocol()
+    questions = protocol.get("questions", [])
+    index = conversation.get("question_index")
+    if not isinstance(index, int) or index >= len(questions) or conversation.get("completed"):
+        raise ValueError("La conversación ya no tiene preguntas pendientes.")
+    conversation.setdefault("responses", []).append({"question": questions[index], "answer": clean_answer, "answered_at": _now()})
+    conversation["question_index"] = index + 1
+    conversation["updated_at"] = _now()
+    conversation["completed"] = conversation["question_index"] >= len(questions)
+    _write_json(path, conversation)
+    _transcript(directory, conversation, protocol)
+    summaries = _read_json(directory / "conversations" / "index.json", [])
+    if isinstance(summaries, list):
+        for item in summaries:
+            if isinstance(item, dict) and item.get("id") == conversation_id:
+                item.update({"responses": len(conversation["responses"]), "completed": conversation["completed"], "updated_at": conversation["updated_at"]})
+        _write_json(directory / "conversations" / "index.json", summaries)
+    _rebuild_expert_module()
+    next_question = None if conversation["completed"] else questions[conversation["question_index"]]
+    return {"conversation": conversation, "next_question": next_question}
 PAGE = """<!doctype html>
 <html lang=\"es\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">
 <title>Tutor APOE · Base de conocimiento</title>
@@ -513,27 +727,51 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(data)
 
+    def _payload(self, limit: int = 200_000) -> dict[str, object]:
+        size = int(self.headers.get("Content-Length", "0"))
+        if size > limit:
+            raise ValueError("El envío es demasiado grande.")
+        payload = json.loads(self.rfile.read(size))
+        if not isinstance(payload, dict):
+            raise ValueError("El cuerpo debe ser un objeto.")
+        return payload
+
+    def _file(self, path: Path, content_type: str) -> None:
+        data = path.read_bytes()
+        self.send_response(HTTPStatus.OK)
+        self.send_header("Content-Type", content_type)
+        self.send_header("Content-Length", str(len(data)))
+        self.end_headers()
+        self.wfile.write(data)
+
     def do_GET(self) -> None:  # noqa: N802 - API de BaseHTTPRequestHandler
         parsed = urlparse(self.path)
         if parsed.path == "/":
-            data = (WEB / "index.html").read_bytes()
-            self.send_response(HTTPStatus.OK)
-            self.send_header("Content-Type", "text/html; charset=utf-8")
-            self.send_header("Content-Length", str(len(data)))
-            self.end_headers()
-            self.wfile.write(data)
+            self._file(WEB / "index.html", "text/html; charset=utf-8")
+            return
+        if parsed.path == "/expert" or parsed.path.startswith("/expert/"):
+            self._file(WEB / "expert.html", "text/html; charset=utf-8")
             return
         if parsed.path.startswith("/web/"):
             filename = parsed.path.removeprefix("/web/")
-            content_types = {"theme.css": "text/css; charset=utf-8", "hierarchy.js": "text/javascript; charset=utf-8", "mindmap.js": "text/javascript; charset=utf-8", "mindmap.css": "text/css; charset=utf-8"}
+            content_types = {"theme.css": "text/css; charset=utf-8", "hierarchy.js": "text/javascript; charset=utf-8", "mindmap.js": "text/javascript; charset=utf-8", "mindmap.css": "text/css; charset=utf-8", "expert.js": "text/javascript; charset=utf-8", "expert.css": "text/css; charset=utf-8"}
             if filename in content_types:
-                data = (WEB / filename).read_bytes()
-                self.send_response(HTTPStatus.OK)
-                self.send_header("Content-Type", content_types[filename])
-                self.send_header("Content-Length", str(len(data)))
-                self.end_headers()
-                self.wfile.write(data)
+                self._file(WEB / filename, content_types[filename])
                 return
+        if parsed.path == "/api/expert-protocol":
+            self._json(expert_protocol())
+            return
+        if parsed.path == "/api/expert-module":
+            with EXPERT_LOCK:
+                self._json(_rebuild_expert_module(persist=False))
+            return
+        if parsed.path.startswith("/api/experts/"):
+            expert_id = unquote(parsed.path.removeprefix("/api/experts/").strip("/"))
+            try:
+                self._json(expert_data(expert_id))
+            except (KeyError, ValueError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.NOT_FOUND)
+            return
         if parsed.path == "/api/search":
             term = parse_qs(parsed.query).get("q", [""])[0].strip()
             docs = atoms_by_id()
@@ -555,6 +793,44 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:  # noqa: N802 - API de BaseHTTPRequestHandler
         parsed = urlparse(self.path)
+        if parsed.path == "/api/experts":
+            try:
+                payload = self._payload(10_000)
+                name = payload.get("name")
+                if not isinstance(name, str):
+                    raise ValueError("El nombre debe ser texto.")
+                with EXPERT_LOCK:
+                    expert = create_expert(name)
+                host = self.headers.get("Host", "127.0.0.1:8000")
+                self._json({"expert": expert, "link": f"http://{host}/expert/{expert['id']}"}, HTTPStatus.CREATED)
+            except (ValueError, json.JSONDecodeError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
+            return
+        if parsed.path.startswith("/api/experts/") and parsed.path.endswith("/start"):
+            expert_id = unquote(parsed.path.removeprefix("/api/experts/").removesuffix("/start").rstrip("/"))
+            try:
+                with EXPERT_LOCK:
+                    self._json(start_expert_conversation(expert_id), HTTPStatus.CREATED)
+            except KeyError as error:
+                self._json({"detail": str(error)}, HTTPStatus.NOT_FOUND)
+            except ValueError as error:
+                self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
+            return
+        if parsed.path.startswith("/api/experts/") and parsed.path.endswith("/responses"):
+            expert_id, _, _ = unquote(parsed.path.removeprefix("/api/experts/")).partition("/")
+            try:
+                payload = self._payload(100_000)
+                conversation_id = payload.get("conversation_id")
+                answer = payload.get("answer")
+                if not isinstance(conversation_id, str) or not isinstance(answer, str):
+                    raise ValueError("La conversación y la respuesta son obligatorias.")
+                with EXPERT_LOCK:
+                    self._json(record_expert_response(expert_id, conversation_id, answer))
+            except KeyError as error:
+                self._json({"detail": str(error)}, HTTPStatus.NOT_FOUND)
+            except (ValueError, json.JSONDecodeError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
+            return
         if parsed.path == "/api/consult":
             try:
                 size = int(self.headers.get("Content-Length", "0"))
@@ -602,6 +878,17 @@ class Handler(BaseHTTPRequestHandler):
             self._json({"detail": str(error)}, HTTPStatus.INTERNAL_SERVER_ERROR)
             return
         self._json({"atom": atom_payload(atom)})
+
+    def do_PUT(self) -> None:  # noqa: N802 - API de BaseHTTPRequestHandler
+        parsed = urlparse(self.path)
+        if parsed.path != "/api/expert-protocol":
+            self._json({"detail": "Ruta no encontrada."}, HTTPStatus.NOT_FOUND)
+            return
+        try:
+            with EXPERT_LOCK:
+                self._json(set_expert_protocol(self._payload(50_000)))
+        except (ValueError, json.JSONDecodeError) as error:
+            self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
 
     def log_message(self, format: str, *args: object) -> None:
         print(f"[kb] {format % args}")
