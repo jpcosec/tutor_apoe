@@ -62,7 +62,11 @@ async function hostView() {
       const data = await request('/api/experts', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({name: $('#expert-name').value})});
       const invite = $('#invite');
       invite.hidden = false;
-      invite.textContent = 'Enlace para ' + data.expert.name + ':\n' + data.link + '\n\nInstrucciones: abre el enlace, lee el protocolo y responde una pregunta a la vez. Tus respuestas quedarán en tu repositorio personal.';
+      const link = document.createElement('a');
+      link.href = data.link;
+      link.textContent = 'Abrir entrevista de ' + data.expert.name;
+      link.target = '_blank';
+      invite.replaceChildren(document.createTextNode('Enlace creado. '), link, document.createElement('br'), document.createElement('br'), document.createTextNode('Instrucciones: abre el enlace, confirma la participación y responde una pregunta a la vez. Tus respuestas quedarán en tu repositorio personal.'));
       event.target.reset();
       await loadModule();
     } catch (error) { status(error.message, true); }

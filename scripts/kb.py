@@ -610,6 +610,8 @@ def _rebuild_expert_module(persist: bool = True) -> dict[str, object]:
         "",
         "Este índice reúne repositorios de conversación de especialistas. Las entrevistas no modifican por sí solas los átomos fuente de la KB.",
         "",
+        "El protocolo LAETEC v1.0 solicita conformidad y código de participante, recorre P01–P12 y genera un Markdown exportable al cierre para revisión humana antes de cualquier carga al Tutor APOE.",
+        "",
         "## Especialistas",
         "",
     ]
