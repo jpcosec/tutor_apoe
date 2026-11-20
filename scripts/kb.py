@@ -520,6 +520,26 @@ def expert_protocol() -> dict[str, object]:
     return data if isinstance(data, dict) else dict(DEFAULT_EXPERT_PROTOCOL)
 
 
+def _question_prompt(question: object) -> str:
+    if isinstance(question, dict):
+        prompt = question.get("prompt")
+        return prompt if isinstance(prompt, str) else ""
+    return question if isinstance(question, str) else ""
+
+
+def _question_id(question: object, position: int) -> str:
+    if isinstance(question, dict) and isinstance(question.get("id"), str):
+        return question["id"]
+    return f"P{position + 1:02d}"
+
+
+def _question_followups(question: object) -> list[str]:
+    if not isinstance(question, dict):
+        return []
+    followups = question.get("followups", [])
+    return [item.strip() for item in followups if isinstance(item, str) and item.strip()] if isinstance(followups, list) else []
+
+
 def set_expert_protocol(data: dict[str, object]) -> dict[str, object]:
     title = data.get("title")
     instructions = data.get("instructions")
@@ -528,15 +548,21 @@ def set_expert_protocol(data: dict[str, object]) -> dict[str, object]:
         raise ValueError("El protocolo necesita un título.")
     if not isinstance(instructions, str) or not instructions.strip():
         raise ValueError("El protocolo necesita instrucciones.")
-    if not isinstance(questions, list) or not all(isinstance(question, str) and question.strip() for question in questions):
+    if not isinstance(questions, list) or not all(_question_prompt(question).strip() for question in questions):
         raise ValueError("El protocolo necesita una lista de preguntas no vacías.")
+    previous = expert_protocol()
     protocol = {
         "id": "apoe-expert-protocol",
         "title": title.strip(),
         "instructions": instructions.strip(),
-        "questions": [question.strip() for question in questions],
+        "questions": questions,
         "updated_at": _now(),
     }
+    for key in ("opening", "closing", "source", "record_schema"):
+        if key in data:
+            protocol[key] = data[key]
+        elif key in previous:
+            protocol[key] = previous[key]
     _write_json(EXPERT_MODULE / "protocol.json", protocol)
     return protocol
 
@@ -634,23 +660,111 @@ def _transcript(directory: Path, conversation: dict[str, object], protocol: dict
         f"# Conversación {conversation['id']}",
         "",
         f"Protocolo: {protocol['title']}",
+        f"Participante: {conversation.get('participant_code', 'sin-código')}",
+        f"Conformidad: {conversation.get('consent', 'sin información')}",
+        f"Estado: {conversation.get('status', 'sin información')}",
         "",
         "## Respuestas",
         "",
     ]
     for response in conversation.get("responses", []):
-        lines.extend((f"### {response['question']}", "", response["answer"], ""))
+        lines.extend((f"### {response['question_id']} · {response['question']}", "", response["answer"], "", f"Cobertura: {response.get('coverage', 'sin información')}", ""))
     if not conversation.get("responses"):
         lines.append("Aún no hay respuestas.")
     (directory / "conversations" / f"{conversation['id']}.md").write_text("\n".join(lines), encoding="utf-8")
 
 
-def start_expert_conversation(expert_id: str) -> dict[str, object]:
+def _save_conversation_summary(directory: Path, conversation: dict[str, object]) -> None:
+    summaries = _read_json(directory / "conversations" / "index.json", [])
+    if isinstance(summaries, list):
+        for item in summaries:
+            if isinstance(item, dict) and item.get("id") == conversation["id"]:
+                item.update({"responses": len(conversation.get("responses", [])), "status": conversation.get("status"), "completed": conversation.get("completed"), "updated_at": conversation.get("updated_at")})
+        _write_json(directory / "conversations" / "index.json", summaries)
+
+
+def pause_expert_conversation(expert_id: str, conversation_id: str) -> dict[str, object]:
+    directory = _expert_dir(expert_id)
+    path = directory / "conversations" / f"{conversation_id}.json"
+    conversation = _read_json(path, None)
+    if not isinstance(conversation, dict):
+        raise KeyError("Conversación no encontrada.")
+    if conversation.get("status") != "active":
+        raise ValueError("Solo se puede pausar una conversación activa.")
+    conversation["status"] = "paused"
+    conversation["paused_at"] = _now()
+    conversation["updated_at"] = conversation["paused_at"]
+    _write_json(path, conversation)
+    _save_conversation_summary(directory, conversation)
+    _transcript(directory, conversation, expert_protocol())
+    _rebuild_expert_module()
+    return {"conversation": conversation, "next_question": _active_question(expert_protocol(), conversation)}
+
+
+def resume_expert_conversation(expert_id: str, conversation_id: str) -> dict[str, object]:
+    directory = _expert_dir(expert_id)
+    path = directory / "conversations" / f"{conversation_id}.json"
+    conversation = _read_json(path, None)
+    if not isinstance(conversation, dict):
+        raise KeyError("Conversación no encontrada.")
+    if conversation.get("status") != "paused":
+        raise ValueError("Solo se puede reanudar una conversación pausada.")
+    conversation["status"] = "active"
+    conversation["updated_at"] = _now()
+    _write_json(path, conversation)
+    _save_conversation_summary(directory, conversation)
+    _transcript(directory, conversation, expert_protocol())
+    _rebuild_expert_module()
+    return {"conversation": conversation, "next_question": _active_question(expert_protocol(), conversation)}
+
+
+def validate_expert_conversation(expert_id: str, conversation_id: str, validated: bool, corrections: str = "", ended_early: bool = False) -> dict[str, object]:
+    directory = _expert_dir(expert_id)
+    path = directory / "conversations" / f"{conversation_id}.json"
+    conversation = _read_json(path, None)
+    if not isinstance(conversation, dict):
+        raise KeyError("Conversación no encontrada.")
+    if conversation.get("status") not in {"awaiting_validation", "active", "paused"}:
+        raise ValueError("La conversación ya está cerrada.")
+    conversation["status"] = "closed_early" if ended_early else "validated" if validated else "closed_unvalidated"
+    conversation["completed"] = True
+    conversation["synthesis_validation"] = {"validated": validated, "corrections": corrections.strip() or "sin información", "ended_early": ended_early, "at": _now()}
+    conversation["updated_at"] = _now()
+    _write_json(path, conversation)
+    _save_conversation_summary(directory, conversation)
+    _transcript(directory, conversation, expert_protocol())
+    _rebuild_expert_module()
+    return {"conversation": conversation, "synthesis": conversation.get("responses", [])}
+
+
+def _active_question(protocol: dict[str, object], conversation: dict[str, object]) -> dict[str, object] | None:
+    questions = protocol.get("questions", [])
+    question_index = conversation.get("question_index")
+    if not isinstance(questions, list) or not isinstance(question_index, int) or question_index >= len(questions):
+        return None
+    question = questions[question_index]
+    question_id = _question_id(question, question_index)
+    followups_used = conversation.get("followups_used", 0)
+    followups = _question_followups(question)
+    if isinstance(followups_used, int) and followups_used > 0 and followups_used <= len(followups):
+        return {"id": question_id, "prompt": followups[followups_used - 1], "kind": "followup", "position": question_index + 1}
+    prompt = _question_prompt(question)
+    previous_turns = [turn for turn in conversation.get("turns", []) if isinstance(turn, dict) and question_id in turn.get("related_questions", [])]
+    if previous_turns:
+        sources = ", ".join(f"turno {turn.get('turn', '?')}" for turn in previous_turns)
+        prompt = f"Parte aún por explorar de {question_id}. El tema fue adelantado en {sources}; complete o matice solo lo que falte.\n\n{prompt}"
+    return {"id": question_id, "prompt": prompt, "kind": "main", "position": question_index + 1, "prior_turns": [turn.get("turn") for turn in previous_turns]}
+
+
+def start_expert_conversation(expert_id: str, participant_code: str, consent: bool) -> dict[str, object]:
     data = expert_data(expert_id)
     protocol = data["protocol"]
     questions = protocol.get("questions", [])
-    if not questions:
+    if not isinstance(questions, list) or not questions:
         raise ValueError("La coordinación todavía no ha configurado las preguntas del protocolo.")
+    clean_code = participant_code.strip()
+    if consent and not clean_code:
+        raise ValueError("Indica tu código de participante antes de comenzar.")
     expert = data["expert"]
     directory = _expert_dir(expert_id)
     conversation = {
@@ -658,20 +772,26 @@ def start_expert_conversation(expert_id: str) -> dict[str, object]:
         "expert_id": expert_id,
         "created_at": _now(),
         "updated_at": _now(),
+        "participant_code": clean_code or "sin-código",
+        "consent": "accepted" if consent else "declined",
+        "status": "active" if consent else "declined",
         "question_index": 0,
+        "followups_used": 0,
+        "coverage": {},
+        "turns": [],
         "responses": [],
-        "completed": False,
+        "completed": not consent,
     }
     _write_json(directory / "conversations" / f"{conversation['id']}.json", conversation)
     index = data["conversations"]
-    index.append({"id": conversation["id"], "created_at": conversation["created_at"], "responses": 0, "completed": False})
+    index.append({"id": conversation["id"], "created_at": conversation["created_at"], "participant_code": conversation["participant_code"], "consent": conversation["consent"], "responses": 0, "status": conversation["status"], "completed": conversation["completed"]})
     _write_json(directory / "conversations" / "index.json", index)
     _transcript(directory, conversation, protocol)
     _rebuild_expert_module()
-    return {"conversation": conversation, "question": questions[0], "expert": expert, "protocol": protocol}
+    return {"conversation": conversation, "question": _active_question(protocol, conversation), "expert": expert, "protocol": protocol}
 
 
-def record_expert_response(expert_id: str, conversation_id: str, answer: str) -> dict[str, object]:
+def record_expert_response(expert_id: str, conversation_id: str, answer: str, coverage: str = "complete", related_questions: list[str] | None = None) -> dict[str, object]:
     clean_answer = answer.strip()
     if not clean_answer:
         raise ValueError("Escribe una respuesta antes de continuar.")
@@ -683,22 +803,34 @@ def record_expert_response(expert_id: str, conversation_id: str, answer: str) ->
     protocol = expert_protocol()
     questions = protocol.get("questions", [])
     index = conversation.get("question_index")
-    if not isinstance(index, int) or index >= len(questions) or conversation.get("completed"):
+    if not isinstance(questions, list) or not isinstance(index, int) or index >= len(questions) or conversation.get("completed") or conversation.get("status") != "active":
         raise ValueError("La conversación ya no tiene preguntas pendientes.")
-    conversation.setdefault("responses", []).append({"question": questions[index], "answer": clean_answer, "answered_at": _now()})
-    conversation["question_index"] = index + 1
+    if coverage not in {"complete", "partial", "omitted"}:
+        raise ValueError("La cobertura debe ser completa, parcial u omitida.")
+    active = _active_question(protocol, conversation)
+    if active is None:
+        raise ValueError("No se encontró la pregunta activa.")
+    turn = {"turn": len(conversation.get("turns", [])) + 1, "question_id": active["id"], "question_kind": active["kind"], "question": active["prompt"], "answer": clean_answer, "coverage": coverage, "related_questions": related_questions or [], "answered_at": _now()}
+    conversation.setdefault("responses", []).append(turn)
+    conversation.setdefault("turns", []).append(turn)
+    conversation.setdefault("coverage", {})[active["id"]] = coverage
+    question = questions[index]
+    followups = _question_followups(question)
+    followups_used = conversation.get("followups_used", 0)
+    if coverage == "partial" and isinstance(followups_used, int) and followups_used < min(2, len(followups)):
+        conversation["followups_used"] = followups_used + 1
+    else:
+        conversation["question_index"] = index + 1
+        conversation["followups_used"] = 0
     conversation["updated_at"] = _now()
     conversation["completed"] = conversation["question_index"] >= len(questions)
+    if conversation["completed"]:
+        conversation["status"] = "awaiting_validation"
     _write_json(path, conversation)
     _transcript(directory, conversation, protocol)
-    summaries = _read_json(directory / "conversations" / "index.json", [])
-    if isinstance(summaries, list):
-        for item in summaries:
-            if isinstance(item, dict) and item.get("id") == conversation_id:
-                item.update({"responses": len(conversation["responses"]), "completed": conversation["completed"], "updated_at": conversation["updated_at"]})
-        _write_json(directory / "conversations" / "index.json", summaries)
+    _save_conversation_summary(directory, conversation)
     _rebuild_expert_module()
-    next_question = None if conversation["completed"] else questions[conversation["question_index"]]
+    next_question = None if conversation["completed"] else _active_question(protocol, conversation)
     return {"conversation": conversation, "next_question": next_question}
 PAGE = """<!doctype html>
 <html lang=\"es\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">
@@ -809,8 +941,13 @@ class Handler(BaseHTTPRequestHandler):
         if parsed.path.startswith("/api/experts/") and parsed.path.endswith("/start"):
             expert_id = unquote(parsed.path.removeprefix("/api/experts/").removesuffix("/start").rstrip("/"))
             try:
+                payload = self._payload(10_000)
+                participant_code = payload.get("participant_code", "")
+                consent = payload.get("consent")
+                if not isinstance(participant_code, str) or not isinstance(consent, bool):
+                    raise ValueError("Indica el código de participante y la conformidad.")
                 with EXPERT_LOCK:
-                    self._json(start_expert_conversation(expert_id), HTTPStatus.CREATED)
+                    self._json(start_expert_conversation(expert_id, participant_code, consent), HTTPStatus.CREATED)
             except KeyError as error:
                 self._json({"detail": str(error)}, HTTPStatus.NOT_FOUND)
             except ValueError as error:
@@ -822,10 +959,39 @@ class Handler(BaseHTTPRequestHandler):
                 payload = self._payload(100_000)
                 conversation_id = payload.get("conversation_id")
                 answer = payload.get("answer")
+                coverage = payload.get("coverage", "complete")
+                related_questions = payload.get("related_questions", [])
                 if not isinstance(conversation_id, str) or not isinstance(answer, str):
                     raise ValueError("La conversación y la respuesta son obligatorias.")
+                if not isinstance(coverage, str) or not isinstance(related_questions, list) or not all(isinstance(item, str) for item in related_questions):
+                    raise ValueError("La cobertura o las referencias de preguntas no son válidas.")
                 with EXPERT_LOCK:
-                    self._json(record_expert_response(expert_id, conversation_id, answer))
+                    self._json(record_expert_response(expert_id, conversation_id, answer, coverage, related_questions))
+            except KeyError as error:
+                self._json({"detail": str(error)}, HTTPStatus.NOT_FOUND)
+            except (ValueError, json.JSONDecodeError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
+            return
+        if parsed.path.startswith("/api/experts/") and (parsed.path.endswith("/pause") or parsed.path.endswith("/resume") or parsed.path.endswith("/validate")):
+            suffix = next(item for item in ("pause", "resume", "validate") if parsed.path.endswith("/" + item))
+            expert_id = unquote(parsed.path.removeprefix("/api/experts/").removesuffix("/" + suffix).rstrip("/"))
+            try:
+                payload = self._payload(20_000)
+                conversation_id = payload.get("conversation_id")
+                if not isinstance(conversation_id, str):
+                    raise ValueError("Indica la conversación.")
+                with EXPERT_LOCK:
+                    if suffix == "pause":
+                        self._json(pause_expert_conversation(expert_id, conversation_id))
+                    elif suffix == "resume":
+                        self._json(resume_expert_conversation(expert_id, conversation_id))
+                    else:
+                        validated = payload.get("validated")
+                        corrections = payload.get("corrections", "")
+                        ended_early = payload.get("ended_early", False)
+                        if not isinstance(validated, bool) or not isinstance(corrections, str) or not isinstance(ended_early, bool):
+                            raise ValueError("La validación no es válida.")
+                        self._json(validate_expert_conversation(expert_id, conversation_id, validated, corrections, ended_early))
             except KeyError as error:
                 self._json({"detail": str(error)}, HTTPStatus.NOT_FOUND)
             except (ValueError, json.JSONDecodeError) as error:

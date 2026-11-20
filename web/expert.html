@@ -46,15 +46,35 @@
         <h2 id="expert-name-title"></h2>
         <p id="protocol-instructions-view"></p>
       </article>
+      <article class="card" id="opening-card">
+        <p id="opening-text"></p>
+        <form id="opening-form">
+          <label>Código de participante<input id="participant-code" required placeholder="Ej.: EXP-01"></label>
+          <label class="check"><input id="consent" type="checkbox"> Estoy de acuerdo con continuar bajo las condiciones de uso informadas por el equipo.</label>
+          <button>Iniciar entrevista APOE</button>
+          <button class="secondary" id="decline" type="button">Declinar participación</button>
+        </form>
+      </article>
       <article class="card">
         <p class="eyebrow">ENTREVISTA</p>
         <h2 id="question-title">Preparando entrevista</h2>
         <p id="question-text"></p>
         <form id="answer-form" hidden>
           <label>Tu respuesta<textarea id="answer" rows="8" required></textarea></label>
+          <label>Cobertura<select id="coverage"><option value="complete">Completa</option><option value="partial">Parcial: solicitar repregunta</option><option value="omitted">Omitida</option></select></label>
+          <label>También aborda estas preguntas (opcional; ej.: P05, P07)<input id="related-questions" placeholder="P05, P07"></label>
           <button>Guardar respuesta y continuar</button>
         </form>
-        <button id="start" hidden>Comenzar entrevista</button>
+        <button id="resume" hidden>Reanudar entrevista</button>
+        <button class="secondary" id="pause" hidden>Pausar entrevista</button>
+        <button class="secondary" id="close-early" hidden>Terminar antes</button>
+      </article>
+      <article class="card" id="validation-card" hidden>
+        <p class="eyebrow">SÍNTESIS Y VALIDACIÓN</p>
+        <div id="synthesis"></div>
+        <label>Correcciones o matices<textarea id="corrections" rows="4"></textarea></label>
+        <button id="validate">Validar síntesis y cerrar</button>
+        <button class="secondary" id="close-unvalidated">Cerrar sin validar</button>
       </article>
     </section>
     <p id="status" class="status" role="status"></p>
