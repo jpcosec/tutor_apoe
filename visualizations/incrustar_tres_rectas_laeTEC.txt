@@ -1,0 +1,9 @@
+<!-- Incrustar el visualizador de tres rectas en LAETEC -->
+<!-- Sustituye TU-DOMINIO por la URL HTTPS definitiva de publicación. -->
+<iframe
+  src="https://TU-DOMINIO/geogebra/Tres_rectas_sin_ejes.html"
+  width="100%"
+  height="650"
+  title="Tres rectas sin ejes"
+  loading="lazy">
+</iframe>
