@@ -97,7 +97,7 @@ def scene_code(points: dict[str, Point], commands: list[Command], scene_name: st
         "    def construct(self):",
         f"        title = Text({title!r}, font_size=34).to_edge(UP)",
         "        axes = Axes(x_range=(-6, 6, 1), y_range=(-4, 4, 1), width=10, height=6)",
-        "        self.play(Write(title), Create(axes))",
+        "        self.play(Write(title), ShowCreation(axes))",
     ]
     for label, point in points.items():
         name = names[label]
@@ -114,13 +114,13 @@ def scene_code(points: dict[str, Point], commands: list[Command], scene_name: st
             name = identifier(command.label, used)
             lines.extend((
                 f"        {name} = {draw}({mapped[0]}.get_center(), {mapped[1]}.get_center(), color=BLUE){extension}",
-                f"        self.play(Create({name}))",
+                f"        self.play(ShowCreation({name}))",
             ))
         elif command.kind == "Circle" and len(mapped) >= 2 and all(mapped[:2]):
             name = identifier(command.label, used)
             lines.extend((
                 f"        {name} = Circle(radius=get_norm({mapped[1]}.get_center() - {mapped[0]}.get_center()), color=BLUE).move_to({mapped[0]}.get_center())",
-                f"        self.play(Create({name}))",
+                f"        self.play(ShowCreation({name}))",
             ))
         else:
             warnings.append(f"{command.kind} {command.label}: depende de objetos no representables; omitido.")

@@ -10,6 +10,7 @@ kbs/**/docs.*.json
 **/.embedding_cache/
 .env
 .venv-manim/
+visualizations/media/
 
 # Borradores, fuentes y KBs precargadas desde la interfaz local
 .local/
