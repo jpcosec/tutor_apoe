@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matriz 2×2 y vector dinámicos · GeoGebra</title>
+  <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+  <style>
+    :root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#213d35;background:#f6f6ef}*{box-sizing:border-box}body{margin:0}main{max-width:1120px;margin:auto;padding:34px 22px 60px}.eyebrow{font-size:11px;letter-spacing:.15em;font-weight:700;color:#17634e;margin:0 0 8px}h1{font:400 clamp(30px,4vw,42px) Georgia,serif;margin:0}header>p:last-child{color:#62746b;line-height:1.6}.workspace{display:grid;grid-template-columns:260px minmax(0,1fr);gap:22px;margin-top:28px}form,#geogebra{background:#fffefa;border:1px solid #d7e2d8;border-radius:13px;padding:20px}fieldset{border:0;padding:0;margin:0 0 22px;display:grid;grid-template-columns:1fr 1fr;gap:10px}legend{grid-column:1/-1;font:400 21px Georgia,serif;margin-bottom:4px}label{font-size:13px;font-weight:600}input{display:block;width:100%;margin-top:5px;padding:9px;border:1px solid #c7d3c9;border-radius:7px;font:inherit}output{display:block;white-space:pre-wrap;line-height:1.65;background:#eaf3ea;color:#164b39;padding:12px;border-radius:8px;font-size:14px;margin-bottom:14px}button{background:#17634e;color:white;border:0;border-radius:7px;padding:10px 12px;font:600 13px inherit;cursor:pointer}#geogebra{padding:0;min-height:600px;overflow:hidden}@media(max-width:720px){.workspace{grid-template-columns:1fr}#geogebra{min-height:480px}}
+  </style>
+</head>
+<body>
+  <main>
+    <header><p class="eyebrow">VISUALIZACIÓN DINÁMICA</p><h1>Matriz 2×2 por vector 2×1</h1><p>Edita la matriz o el vector. GeoGebra actualiza en vivo el vector resultante.</p></header>
+    <section class="workspace">
+      <form id="controls">
+        <fieldset><legend>Matriz A</legend><label>a₁₁ <input name="a" type="number" value="0" step="1"></label><label>a₁₂ <input name="b" type="number" value="-1" step="1"></label><label>a₂₁ <input name="c" type="number" value="1" step="1"></label><label>a₂₂ <input name="d" type="number" value="0" step="1"></label></fieldset>
+        <fieldset><legend>Vector inicial v</legend><label>x <input name="x" type="number" value="2" step="0.5"></label><label>y <input name="y" type="number" value="1" step="0.5"></label></fieldset>
+        <output id="result" aria-live="polite"></output><button type="button" id="restore">Restaurar rotación 90°</button>
+      </form>
+      <div id="geogebra" aria-label="Plano dinámico de GeoGebra"></div>
+    </section>
+  </main>
+  <script>
+    const form=document.querySelector('#controls'),output=document.querySelector('#result'),defaults={a:0,b:-1,c:1,d:0,x:2,y:1};let api=null;
+    function values(){return Object.fromEntries(Object.keys(defaults).map(key=>[key,Number(form.elements[key].value)||0]));}
+    function update(){const {a,b,c,d,x,y}=values(),rx=a*x+b*y,ry=c*x+d*y;output.textContent=`A = [[${a}, ${b}], [${c}, ${d}]]\nv = (${x}, ${y})\nA · v = (${rx}, ${ry})`;if(!api)return;api.evalCommand(`A = {{${a}, ${b}}, {${c}, ${d}}}`);api.evalCommand(`v = Vector((0, 0), (${x}, ${y}))`);api.evalCommand(`Av = Vector((0, 0), (${rx}, ${ry}))`);api.setColor('v',221,170,0);api.setColor('Av',31,105,177);api.setCaption('v','v (inicial)');api.setCaption('Av','A·v (resultante)');api.setLabelStyle('v',3);api.setLabelStyle('Av',3);}
+    for(const input of form.querySelectorAll('input'))input.addEventListener('input',update);document.querySelector('#restore').addEventListener('click',()=>{for(const[key,value]of Object.entries(defaults))form.elements[key].value=value;update();});
+    new GGBApplet({appName:'graphing',width:760,height:600,showToolBar:false,showAlgebraInput:false,showMenuBar:false,enableLabelDrags:false,appletOnLoad(loadedApi){api=loadedApi;api.setCoordSystem(-5,5,-4,4);update();}},true).inject('geogebra');update();
+  </script>
+</body>
+</html>
