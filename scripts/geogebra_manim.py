@@ -103,7 +103,7 @@ def scene_code(points: dict[str, Point], commands: list[Command], scene_name: st
         name = names[label]
         lines.extend((
             f"        {name} = Dot(axes.c2p({point.x!r}, {point.y!r}), color=YELLOW)",
-            f"        {name}_label = Tex({label!r}).next_to({name}, UR, buff=0.08)",
+            f"        {name}_label = Text({label!r}, font_size=24).next_to({name}, UR, buff=0.08)",
             f"        self.play(FadeIn({name}), Write({name}_label))",
         ))
     for command in commands:
