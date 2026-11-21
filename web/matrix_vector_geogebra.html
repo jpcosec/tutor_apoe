@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tutor APOE · Matriz y vector dinámicos</title>
+  <link rel="stylesheet" href="/web/matrix_vector_geogebra.css">
+  <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+</head>
+<body>
+  <main>
+    <a href="/">← Visor del Tutor APOE</a>
+    <header>
+      <p class="eyebrow">VISUALIZACIÓN DINÁMICA</p>
+      <h1>Matriz 2×2 por vector 2×1</h1>
+      <p>Edita la matriz o el vector. GeoGebra actualiza en vivo el vector resultante.</p>
+    </header>
+    <section class="workspace">
+      <form id="controls">
+        <fieldset>
+          <legend>Matriz A</legend>
+          <label>a₁₁ <input name="a" type="number" value="0" step="1"></label>
+          <label>a₁₂ <input name="b" type="number" value="-1" step="1"></label>
+          <label>a₂₁ <input name="c" type="number" value="1" step="1"></label>
+          <label>a₂₂ <input name="d" type="number" value="0" step="1"></label>
+        </fieldset>
+        <fieldset>
+          <legend>Vector inicial v</legend>
+          <label>x <input name="x" type="number" value="2" step="0.5"></label>
+          <label>y <input name="y" type="number" value="1" step="0.5"></label>
+        </fieldset>
+        <output id="result" aria-live="polite"></output>
+        <button type="button" id="restore">Restaurar rotación 90°</button>
+      </form>
+      <div id="geogebra" aria-label="Plano dinámico de GeoGebra"></div>
+    </section>
+  </main>
+  <script type="module" src="/web/matrix_vector_geogebra.js"></script>
+</body>
+</html>

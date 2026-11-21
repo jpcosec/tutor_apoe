@@ -1091,9 +1091,12 @@ class Handler(BaseHTTPRequestHandler):
         if parsed.path == "/examples" or parsed.path.startswith("/examples/"):
             self._file(WEB / "examples.html", "text/html; charset=utf-8")
             return
+        if parsed.path == "/visualizations/matrix-vector":
+            self._file(WEB / "matrix_vector_geogebra.html", "text/html; charset=utf-8")
+            return
         if parsed.path.startswith("/web/"):
             filename = parsed.path.removeprefix("/web/")
-            content_types = {"theme.css": "text/css; charset=utf-8", "hierarchy.js": "text/javascript; charset=utf-8", "mindmap.js": "text/javascript; charset=utf-8", "mindmap.css": "text/css; charset=utf-8", "expert.js": "text/javascript; charset=utf-8", "expert.css": "text/css; charset=utf-8", "examples.js": "text/javascript; charset=utf-8", "examples.css": "text/css; charset=utf-8"}
+            content_types = {"theme.css": "text/css; charset=utf-8", "hierarchy.js": "text/javascript; charset=utf-8", "mindmap.js": "text/javascript; charset=utf-8", "mindmap.css": "text/css; charset=utf-8", "expert.js": "text/javascript; charset=utf-8", "expert.css": "text/css; charset=utf-8", "examples.js": "text/javascript; charset=utf-8", "examples.css": "text/css; charset=utf-8", "matrix_vector_geogebra.js": "text/javascript; charset=utf-8", "matrix_vector_geogebra.css": "text/css; charset=utf-8"}
             if filename in content_types:
                 self._file(WEB / filename, content_types[filename])
                 return
