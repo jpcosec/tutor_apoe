@@ -961,11 +961,38 @@ def record_example_response(expert_id: str, conversation_id: str, answer: str, c
         raise ValueError("Cobertura inválida.")
     turn = {"turn": len(conversation["turns"]) + 1, "question_id": question["id"], "domain": question["domain"], "concept": question["concept"], "label": question["label"], "prompt": question["prompt"], "answer": answer.strip() or "sin información", "coverage": coverage, "origin": origin if origin in {"expert", "interviewer_stimulus", "mixed"} else "expert", "answered_at": _now()}
     conversation["turns"].append(turn)
+    followup_count = question.get("followup_count", 0)
+    if coverage == "partial" and isinstance(followup_count, int) and followup_count < 2:
+        prompts = [
+            "¿Qué diría o escribiría exactamente el estudiante y de qué indicación, fórmula o representación depende su actividad?",
+            "¿Qué cambio haría a la tarea para distinguir esta construcción de una ejecución más fluida de la acción?",
+        ]
+        followup = dict(question)
+        followup["id"] = f"{question['id']}-R{followup_count + 1}"
+        followup["label"] = f"{question['label']} · repregunta {followup_count + 1}"
+        followup["prompt"] = prompts[followup_count]
+        followup["followup_count"] = followup_count + 1
+        conversation["questions"].insert(conversation["position"] + 1, followup)
     conversation["position"] += 1
     conversation["updated_at"] = _now()
     conversation["completed"] = conversation["position"] >= len(conversation["questions"])
     if conversation["completed"]:
         conversation["status"] = "awaiting_validation"
+    _write_json(path, conversation)
+    return {"conversation": conversation, "next_question": _example_current(conversation)}
+
+
+def set_example_pause(expert_id: str, conversation_id: str, paused: bool) -> dict[str, object]:
+    directory = _example_dir(expert_id)
+    path = directory / "conversations" / f"{conversation_id}.json"
+    conversation = _read_json(path, None)
+    if not isinstance(conversation, dict):
+        raise KeyError("Conversación no encontrada.")
+    expected, target = ("active", "paused") if paused else ("paused", "active")
+    if conversation.get("status") != expected:
+        raise ValueError("La conversación no está en un estado que permita esta operación.")
+    conversation["status"] = target
+    conversation["updated_at"] = _now()
     _write_json(path, conversation)
     return {"conversation": conversation, "next_question": _example_current(conversation)}
 
@@ -1180,6 +1207,19 @@ class Handler(BaseHTTPRequestHandler):
                     raise ValueError("El cierre no es válido.")
                 with EXAMPLE_LOCK:
                     self._json(close_example_conversation(expert_id, conversation_id, validated, corrections))
+            except (KeyError, ValueError, json.JSONDecodeError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
+            return
+        if parsed.path.startswith("/api/examples/") and (parsed.path.endswith("/pause") or parsed.path.endswith("/resume")):
+            suffix = "pause" if parsed.path.endswith("/pause") else "resume"
+            expert_id = unquote(parsed.path.removeprefix("/api/examples/").removesuffix("/" + suffix).rstrip("/"))
+            try:
+                payload = self._payload(10_000)
+                conversation_id = payload.get("conversation_id")
+                if not isinstance(conversation_id, str):
+                    raise ValueError("Indica la conversación.")
+                with EXAMPLE_LOCK:
+                    self._json(set_example_pause(expert_id, conversation_id, suffix == "pause"))
             except (KeyError, ValueError, json.JSONDecodeError) as error:
                 self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
             return
