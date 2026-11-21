@@ -37,6 +37,9 @@ SUGGESTIONS = ROOT / "knowledge" / "didactic-suggestions"
 EXPERT_MODULE = ROOT / "knowledge" / "expert-apoe"
 EXPERTS = EXPERT_MODULE / "experts"
 EXPERT_LOCK = Lock()
+EXAMPLES_MODULE = ROOT / "knowledge" / "examples-apoe"
+EXAMPLE_EXPERTS = EXAMPLES_MODULE / "experts"
+EXAMPLE_LOCK = Lock()
 # Prefer the CLI installed alongside this Python (e.g. the project venv).
 SLDB = str(Path(sys.executable).with_name("sldb"))
 if not Path(SLDB).is_file():
@@ -871,6 +874,132 @@ def record_expert_response(expert_id: str, conversation_id: str, answer: str, co
     _rebuild_expert_module()
     next_question = None if conversation["completed"] else _active_question(protocol, conversation)
     return {"conversation": conversation, "next_question": next_question}
+
+
+def examples_protocol() -> dict[str, object]:
+    data = _read_json(EXAMPLES_MODULE / "protocol.json", {})
+    return data if isinstance(data, dict) else {}
+
+
+def _example_dir(expert_id: str) -> Path:
+    if not re.fullmatch(r"example-[a-z0-9-]+", expert_id):
+        raise ValueError("Identificador de especialista inválido.")
+    return EXAMPLE_EXPERTS / expert_id
+
+
+def create_example_expert(name: str) -> dict[str, object]:
+    clean_name = name.strip()
+    if len(clean_name) < 3:
+        raise ValueError("Indica el nombre de la persona experta.")
+    expert_id = "example-" + _expert_id(clean_name).removeprefix("expert-")
+    directory = _example_dir(expert_id)
+    profile = {"id": expert_id, "name": clean_name, "created_at": _now(), "repository": str(directory.relative_to(ROOT))}
+    _write_json(directory / "profile.json", profile)
+    _write_json(directory / "conversations" / "index.json", [])
+    return profile
+
+
+def example_data(expert_id: str) -> dict[str, object]:
+    directory = _example_dir(expert_id)
+    profile = _read_json(directory / "profile.json", None)
+    if not isinstance(profile, dict):
+        raise KeyError("Especialista no encontrado.")
+    conversations = _read_json(directory / "conversations" / "index.json", [])
+    return {"expert": profile, "protocol": examples_protocol(), "conversations": conversations if isinstance(conversations, list) else []}
+
+
+def _example_questions(protocol: dict[str, object], selected_domains: list[str], concepts: dict[str, str]) -> list[dict[str, object]]:
+    domains = protocol.get("domains", [])
+    depth = protocol.get("deepening", [])
+    result: list[dict[str, object]] = []
+    for domain in domains if isinstance(domains, list) else []:
+        if not isinstance(domain, dict) or domain.get("id") not in selected_domains:
+            continue
+        domain_id = domain["id"]
+        concept = concepts.get(domain_id, "").strip() or str(domain.get("concept", ""))
+        for suffix, field in (("A", "action"), ("I", "interiorization")):
+            result.append({"id": f"{domain_id}-{suffix}", "domain": domain_id, "concept": concept, "label": "Acción" if suffix == "A" else "Interiorización", "prompt": domain.get(field, "")})
+        for item in depth if isinstance(depth, list) else []:
+            if isinstance(item, dict):
+                result.append({"id": f"{domain_id}-{item.get('id')}", "domain": domain_id, "concept": concept, "label": item.get("label", "Profundización"), "prompt": item.get("prompt", "")})
+    return result
+
+
+def _example_current(conversation: dict[str, object]) -> dict[str, object] | None:
+    questions = conversation.get("questions", [])
+    position = conversation.get("position", 0)
+    return questions[position] if isinstance(questions, list) and isinstance(position, int) and position < len(questions) and isinstance(questions[position], dict) else None
+
+
+def start_example_conversation(expert_id: str, participant_code: str, consent: bool, domains: list[str], concepts: dict[str, str]) -> dict[str, object]:
+    data = example_data(expert_id)
+    clean_code = participant_code.strip()
+    if consent and not clean_code:
+        raise ValueError("Indica tu código de participante antes de comenzar.")
+    questions = _example_questions(data["protocol"], domains, concepts)
+    if consent and not questions:
+        raise ValueError("Selecciona al menos un dominio.")
+    directory = _example_dir(expert_id)
+    conversation = {"id": f"example-conversation-{uuid4().hex[:10]}", "expert_id": expert_id, "participant_code": clean_code or "sin-código", "consent": "accepted" if consent else "declined", "status": "active" if consent else "declined", "created_at": _now(), "updated_at": _now(), "questions": questions, "position": 0, "turns": [], "completed": not consent}
+    _write_json(directory / "conversations" / f"{conversation['id']}.json", conversation)
+    index = data["conversations"]
+    index.append({"id": conversation["id"], "participant_code": conversation["participant_code"], "status": conversation["status"], "responses": 0, "created_at": conversation["created_at"]})
+    _write_json(directory / "conversations" / "index.json", index)
+    return {"conversation": conversation, "question": _example_current(conversation)}
+
+
+def record_example_response(expert_id: str, conversation_id: str, answer: str, coverage: str, origin: str) -> dict[str, object]:
+    directory = _example_dir(expert_id)
+    path = directory / "conversations" / f"{conversation_id}.json"
+    conversation = _read_json(path, None)
+    if not isinstance(conversation, dict) or conversation.get("status") != "active":
+        raise ValueError("La conversación no está activa.")
+    question = _example_current(conversation)
+    if question is None:
+        raise ValueError("No hay una pregunta pendiente.")
+    if coverage not in {"complete", "partial", "omitted", "not_proposed", "pending"}:
+        raise ValueError("Cobertura inválida.")
+    turn = {"turn": len(conversation["turns"]) + 1, "question_id": question["id"], "domain": question["domain"], "concept": question["concept"], "label": question["label"], "prompt": question["prompt"], "answer": answer.strip() or "sin información", "coverage": coverage, "origin": origin if origin in {"expert", "interviewer_stimulus", "mixed"} else "expert", "answered_at": _now()}
+    conversation["turns"].append(turn)
+    conversation["position"] += 1
+    conversation["updated_at"] = _now()
+    conversation["completed"] = conversation["position"] >= len(conversation["questions"])
+    if conversation["completed"]:
+        conversation["status"] = "awaiting_validation"
+    _write_json(path, conversation)
+    return {"conversation": conversation, "next_question": _example_current(conversation)}
+
+
+def export_example_conversation(expert_id: str, conversation_id: str) -> Path:
+    directory = _example_dir(expert_id)
+    conversation = _read_json(directory / "conversations" / f"{conversation_id}.json", None)
+    if not isinstance(conversation, dict):
+        raise KeyError("Conversación no encontrada.")
+    lines = ["---", f"title: Ejemplos APOE y DG {conversation_id}", f"participant_code: {conversation.get('participant_code')}", f"consent: {conversation.get('consent')}", f"status: {conversation.get('status')}", "---", "", "# Banco de casos APOE y fragmentos de DG", ""]
+    for turn in conversation.get("turns", []):
+        if isinstance(turn, dict):
+            lines.extend((f"## {turn['question_id']} · {turn['concept']}", "", f"Pregunta: {turn['prompt']}", "", f"Respuesta: {turn['answer']}", "", f"Estado: {turn['coverage']} · Procedencia: {turn['origin']}", ""))
+    path = directory / "exports" / f"{conversation_id}.md"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines), encoding="utf-8")
+    return path
+
+
+def close_example_conversation(expert_id: str, conversation_id: str, validated: bool, corrections: str = "") -> dict[str, object]:
+    directory = _example_dir(expert_id)
+    path = directory / "conversations" / f"{conversation_id}.json"
+    conversation = _read_json(path, None)
+    if not isinstance(conversation, dict):
+        raise KeyError("Conversación no encontrada.")
+    if conversation.get("status") not in {"active", "awaiting_validation"}:
+        raise ValueError("La conversación ya está cerrada.")
+    conversation["status"] = "validated" if validated else "closed_unvalidated"
+    conversation["completed"] = True
+    conversation["validation"] = {"validated": validated, "corrections": corrections.strip() or "sin información", "at": _now()}
+    conversation["updated_at"] = _now()
+    _write_json(path, conversation)
+    export_path = export_example_conversation(expert_id, conversation_id)
+    return {"conversation": conversation, "export_path": str(export_path.relative_to(ROOT))}
 PAGE = """<!doctype html>
 <html lang=\"es\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">
 <title>Tutor APOE · Base de conocimiento</title>
@@ -932,14 +1061,35 @@ class Handler(BaseHTTPRequestHandler):
         if parsed.path == "/expert" or parsed.path.startswith("/expert/"):
             self._file(WEB / "expert.html", "text/html; charset=utf-8")
             return
+        if parsed.path == "/examples" or parsed.path.startswith("/examples/"):
+            self._file(WEB / "examples.html", "text/html; charset=utf-8")
+            return
         if parsed.path.startswith("/web/"):
             filename = parsed.path.removeprefix("/web/")
-            content_types = {"theme.css": "text/css; charset=utf-8", "hierarchy.js": "text/javascript; charset=utf-8", "mindmap.js": "text/javascript; charset=utf-8", "mindmap.css": "text/css; charset=utf-8", "expert.js": "text/javascript; charset=utf-8", "expert.css": "text/css; charset=utf-8"}
+            content_types = {"theme.css": "text/css; charset=utf-8", "hierarchy.js": "text/javascript; charset=utf-8", "mindmap.js": "text/javascript; charset=utf-8", "mindmap.css": "text/css; charset=utf-8", "expert.js": "text/javascript; charset=utf-8", "expert.css": "text/css; charset=utf-8", "examples.js": "text/javascript; charset=utf-8", "examples.css": "text/css; charset=utf-8"}
             if filename in content_types:
                 self._file(WEB / filename, content_types[filename])
                 return
         if parsed.path == "/api/expert-protocol":
             self._json(expert_protocol())
+            return
+        if parsed.path == "/api/examples-protocol":
+            self._json(examples_protocol())
+            return
+        if parsed.path.startswith("/api/examples/") and parsed.path.endswith("/export"):
+            expert_id = unquote(parsed.path.removeprefix("/api/examples/").removesuffix("/export").rstrip("/"))
+            conversation_id = parse_qs(parsed.query).get("conversation", [""])[0]
+            try:
+                self._download(export_example_conversation(expert_id, conversation_id))
+            except (KeyError, ValueError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.NOT_FOUND)
+            return
+        if parsed.path.startswith("/api/examples/"):
+            expert_id = unquote(parsed.path.removeprefix("/api/examples/").strip("/"))
+            try:
+                self._json(example_data(expert_id))
+            except (KeyError, ValueError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.NOT_FOUND)
             return
         if parsed.path == "/api/expert-module":
             with EXPERT_LOCK:
@@ -982,6 +1132,57 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:  # noqa: N802 - API de BaseHTTPRequestHandler
         parsed = urlparse(self.path)
+        if parsed.path == "/api/examples":
+            try:
+                payload = self._payload(10_000)
+                name = payload.get("name")
+                if not isinstance(name, str):
+                    raise ValueError("El nombre debe ser texto.")
+                with EXAMPLE_LOCK:
+                    expert = create_example_expert(name)
+                host = self.headers.get("Host", "127.0.0.1:8000")
+                self._json({"expert": expert, "link": f"http://{host}/examples/{expert['id']}"}, HTTPStatus.CREATED)
+            except (ValueError, json.JSONDecodeError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
+            return
+        if parsed.path.startswith("/api/examples/") and parsed.path.endswith("/start"):
+            expert_id = unquote(parsed.path.removeprefix("/api/examples/").removesuffix("/start").rstrip("/"))
+            try:
+                payload = self._payload(20_000)
+                code, consent, domains, concepts = payload.get("participant_code", ""), payload.get("consent"), payload.get("domains", []), payload.get("concepts", {})
+                if not isinstance(code, str) or not isinstance(consent, bool) or not isinstance(domains, list) or not all(isinstance(item, str) for item in domains) or not isinstance(concepts, dict) or not all(isinstance(key, str) and isinstance(value, str) for key, value in concepts.items()):
+                    raise ValueError("Los datos iniciales no son válidos.")
+                with EXAMPLE_LOCK:
+                    self._json(start_example_conversation(expert_id, code, consent, domains, concepts), HTTPStatus.CREATED)
+            except KeyError as error:
+                self._json({"detail": str(error)}, HTTPStatus.NOT_FOUND)
+            except (ValueError, json.JSONDecodeError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
+            return
+        if parsed.path.startswith("/api/examples/") and parsed.path.endswith("/responses"):
+            expert_id, _, _ = unquote(parsed.path.removeprefix("/api/examples/")).partition("/")
+            try:
+                payload = self._payload(100_000)
+                conversation_id, answer, coverage, origin = payload.get("conversation_id"), payload.get("answer"), payload.get("coverage", "complete"), payload.get("origin", "expert")
+                if not all(isinstance(value, str) for value in (conversation_id, answer, coverage, origin)):
+                    raise ValueError("La respuesta no es válida.")
+                with EXAMPLE_LOCK:
+                    self._json(record_example_response(expert_id, conversation_id, answer, coverage, origin))
+            except (ValueError, json.JSONDecodeError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
+            return
+        if parsed.path.startswith("/api/examples/") and parsed.path.endswith("/close"):
+            expert_id = unquote(parsed.path.removeprefix("/api/examples/").removesuffix("/close").rstrip("/"))
+            try:
+                payload = self._payload(20_000)
+                conversation_id, validated, corrections = payload.get("conversation_id"), payload.get("validated"), payload.get("corrections", "")
+                if not isinstance(conversation_id, str) or not isinstance(validated, bool) or not isinstance(corrections, str):
+                    raise ValueError("El cierre no es válido.")
+                with EXAMPLE_LOCK:
+                    self._json(close_example_conversation(expert_id, conversation_id, validated, corrections))
+            except (KeyError, ValueError, json.JSONDecodeError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
+            return
         if parsed.path == "/api/experts":
             try:
                 payload = self._payload(10_000)

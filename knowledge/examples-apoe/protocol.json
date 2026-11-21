@@ -1,0 +1,27 @@
+{
+  "id": "laetec-apoe-examples-dg-v1",
+  "title": "Ejemplos APOE y descomposición genética · LAETEC v1.0",
+  "opening": "Muchas gracias por participar. Le pediré que proponga tareas y respuestas estudiantiles que permitan ilustrar construcciones y mecanismos de APOE. Nos interesa cómo conectaría esos ejemplos en una descomposición genética y qué evidencia buscaría para evaluar esa propuesta. ¿Está de acuerdo con continuar bajo las condiciones de uso informadas por el equipo?",
+  "instructions": "Se entrevista un concepto focal por dominio. Las respuestas son evidencia atribuida; los ejemplos introducidos por el entrevistador se identifican como estímulos. Puede omitir un dominio o declarar un mecanismo no propuesto para el caso.",
+  "source": "Protocolo_Codex_Ejemplos_APOE_DG.md",
+  "domains": [
+    {"id":"AN","name":"Análisis","concept":"Límite de una sucesión","action":"En el estudio del límite de una sucesión, ¿qué tarea y qué producción estudiantil ilustrarían una acción? Puede situarla en la determinación de un índice a partir del cual los términos quedan dentro de una tolerancia dada.","interiorization":"Retomando esa acción, ¿cómo podría el estudiante interiorizarla en un proceso que le permita razonar sobre la relación entre tolerancias e índices?"},
+    {"id":"AL","name":"Álgebra lineal","concept":"Aplicación lineal dada por una matriz","action":"Para una aplicación lineal dada por una matriz, ¿qué tarea sobre la imagen de un vector y qué producción estudiantil ilustrarían una acción? Puede precisar qué instrucciones recibe para calcular el producto.","interiorization":"Retomando esa acción, ¿cómo podría el estudiante interiorizarla en un proceso que le permita anticipar la imagen al variar el vector de entrada?"},
+    {"id":"AA","name":"Álgebra abstracta","concept":"Clase lateral izquierda","action":"Para un grupo finito, un subgrupo y un elemento dado, ¿qué tarea y qué producción ilustrarían una acción al formar la clase lateral izquierda del subgrupo?","interiorization":"Retomando esa acción, ¿cómo podría el estudiante interiorizarla en un proceso que le permita razonar sobre la formación de la clase lateral sin enumerar todos sus elementos?"},
+    {"id":"AG","name":"Álgebra","concept":"Equivalencia de ecuaciones lineales","action":"Al transformar una ecuación lineal en otra equivalente mediante una operación indicada en ambos miembros, ¿qué producción estudiantil interpretaría como una acción?","interiorization":"Retomando esa acción, ¿cómo podría el estudiante interiorizarla en un proceso que le permita anticipar el efecto de la transformación sobre las soluciones?"},
+    {"id":"AR","name":"Aritmética","concept":"Equivalencia de fracciones","action":"Al generar una fracción equivalente a una dada mediante un factor indicado, ¿qué tarea y qué producción estudiantil ilustrarían una acción?","interiorization":"Retomando esa acción, ¿cómo podría el estudiante interiorizarla en un proceso que le permita anticipar qué cambia y qué se conserva al variar el factor?"}
+  ],
+  "deepening": [
+    {"id":"C2","label":"Proceso","prompt":"¿Qué producción, en una variante de la tarea, mostraría que el estudiante puede concebir y controlar la transformación como un todo dinámico?"},
+    {"id":"C3","label":"Objeto","prompt":"¿Qué tarea exigiría al estudiante operar sobre la totalidad del proceso que usted describió y qué producción sustentaría una interpretación de objeto?"},
+    {"id":"C4","label":"Esquema","prompt":"¿Qué construcciones tendría que relacionar el estudiante para resolver una tarea que exija movilizar el concepto en condiciones distintas de las iniciales?"},
+    {"id":"M2","label":"Coordinación","prompt":"¿Qué dos procesos identificaría como punto de partida y qué nuevo proceso podría construirse al coordinarlos en esta tarea?"},
+    {"id":"M3","label":"Reversión","prompt":"Si la tarea parte de un resultado, ¿cómo podría el estudiante revertir el proceso de referencia para razonar sobre sus condiciones de partida?"},
+    {"id":"M4","label":"Encapsulación","prompt":"En el ejemplo de objeto que propuso, ¿qué cambio de perspectiva permitiría tomar el proceso en su totalidad como entidad sobre la que se opera?"},
+    {"id":"M5","label":"Desencapsulación","prompt":"Frente al objeto ya construido, ¿qué demanda de la tarea llevaría al estudiante a recuperar el proceso subyacente y cómo podría observarse ese retorno?"},
+    {"id":"M6","label":"Tematización","prompt":"Si las relaciones descritas constituyen un esquema, ¿qué tarea permitiría tratar ese esquema como objeto y operar sobre él?"},
+    {"id":"M7","label":"Generalización","prompt":"¿A qué clase más amplia de casos podría extenderse la construcción descrita y qué producción mostraría que el estudiante reconoce las condiciones de esa extensión?"},
+    {"id":"DG1","label":"Articulación DG","prompt":"¿Cómo conectaría las construcciones y mecanismos propuestos en un fragmento de DG para este concepto?"},
+    {"id":"DG2","label":"Revisión DG","prompt":"¿Qué respuesta, estrategia alternativa o patrón de producciones le llevaría a revisar alguno de esos vínculos?"}
+  ]
+}
