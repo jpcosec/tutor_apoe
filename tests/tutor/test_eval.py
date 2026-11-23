@@ -11,7 +11,7 @@ from typing import Any
 
 import pytest
 import typer
-from mcp.client.client import Client
+from fastmcp import Client
 from typer.testing import CliRunner
 
 from tutor import authoring, eval as ev, mcp_server, world
@@ -214,7 +214,7 @@ def test_register_mcp_adds_tools(tmp_path: Path, kb_root: Path) -> None:
 
     async def go():
         async with Client(server) as client:
-            tools = {t.name: t for t in (await client.list_tools()).tools}
+            tools = {t.name: t for t in await client.list_tools()}
             assert {"eval_run", "explain_turn", "eval_atoms"} <= set(tools)
             assert tools["eval_run"].annotations.open_world_hint is True and tools["eval_atoms"].annotations.read_only_hint is True
             atoms = mcp_server.tool_result(await client.call_tool("eval_atoms", {"kb_id": "apos", "evals_dir": str(tmp_path)}))

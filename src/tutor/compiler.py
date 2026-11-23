@@ -985,7 +985,7 @@ def render_proposal(item: dict[str, Any]) -> str:
 
 
 def register_mcp(server: Any, state: Any, safe: Any, annotations: dict[str, Any]) -> None:
-    """Suma las tools del compilador al `MCPServer` de `tutor.mcp_server`."""
+    """Suma las tools del compilador al `FastMCP` de `tutor.mcp_server`."""
     root = state.root
 
     @server.tool(annotations=annotations["writes"])

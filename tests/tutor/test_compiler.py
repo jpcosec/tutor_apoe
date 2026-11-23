@@ -264,7 +264,7 @@ def test_register_cli(root: Path, monkeypatch: pytest.MonkeyPatch) -> None:
 
 
 def test_register_mcp(root: Path) -> None:
-    from mcp.client.client import Client
+    from fastmcp import Client
 
     from tutor import mcp_server
     from tutor.mcp_server import tool_result
@@ -273,7 +273,7 @@ def test_register_mcp(root: Path) -> None:
 
     async def go() -> Any:
         async with Client(server) as client:
-            names = {t.name for t in (await client.list_tools()).tools}
+            names = {t.name for t in await client.list_tools()}
             listed = tool_result(await client.call_tool("list_proposed", {"kb_id": KB, "status": "rejected"}))
             bad = tool_result(await client.call_tool("approve_atom", {"kb_id": KB, "atom_id": "atom-nada"}))
             rejected_again = tool_result(await client.call_tool("reject_atom", {"kb_id": KB, "atom_id": STATE["rejected"], "why": "sigue sobrando"}))
