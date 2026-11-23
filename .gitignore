@@ -18,3 +18,5 @@ visualizations/media/
 kbs/*/.cache/
 # Caché derivada de sldb (se regenera sola)
 .sldb_cache/
+superficie/node_modules/
+superficie/dist/

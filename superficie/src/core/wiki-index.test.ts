@@ -1,19 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { GraphDocument, ModelCatalogEntry, SchemaModel } from "./contract";
-import {
-  allowsMany,
-  buildWikiIndex,
-  businessName,
-  humanize,
-  newPageId,
-  newPagePayload,
-  pageLabel,
-  planNewPage,
-  slug,
-  templateTitle,
-  templateTraits,
-  typeLabel,
-} from "./wiki-index";
+import { allowsMany, buildWikiIndex, configPage, humanize, isConfigModel, pageLabel, templateTitle, tutorName, typeLabel } from "./wiki-index";
 
 const doc = (id: string, model_name: string, path: string, payload: Record<string, unknown> = {}): GraphDocument => ({
   id,
@@ -33,158 +20,80 @@ const model = (name: string, type: string): ModelCatalogEntry => ({
   documents: 0,
 });
 
-// Los templates y semánticas son los que entrega el store de la peluquería (`GET /schema`, `GET /models`).
+// Las tres formas de titular una página en un template: literal, por campo, y literal más campo.
 const schema: SchemaModel[] = [
-  {
-    id: "NegocioDoc",
-    model_ref: "p:NegocioDoc",
-    template: "---\nnombre: ⸢rev•nombre⸥\n---\n\n# ⸢render•nombre⸥\n\n⸢rev,markdown•descripcion⸥",
-    fields: [
-      { name: "nombre", kind: "string", required: true },
-      { name: "rubro", kind: "string", required: true },
-      { name: "lema", kind: "string", required: false, default: "" },
-      { name: "descripcion", kind: "string", required: true },
-    ],
-  },
-  {
-    id: "HorarioDoc",
-    model_ref: "p:HorarioDoc",
-    template: "---\ncerrado: ⸢rev,list•cerrado⸥\n---\n\n# Horario\n\n## Atención\n\n```yaml\n⸢rev,dict•atencion⸥\n```",
-    fields: [
-      { name: "cerrado", kind: "list", required: false },
-      { name: "atencion", kind: "unknown", required: true },
-    ],
-  },
-  {
-    id: "ServicioDoc",
-    model_ref: "p:ServicioDoc",
-    template: "---\nnombre: ⸢rev•nombre⸥\nprecio: ⸢rev•precio⸥\n---\n\n# ⸢render•nombre⸥\n\n⸢rev,markdown•descripcion⸥",
-    fields: [
-      { name: "nombre", kind: "string", required: true },
-      { name: "duracion_min", kind: "integer", required: true },
-      { name: "precio", kind: "unknown", required: true },
-      { name: "visible", kind: "boolean", required: false, default: true },
-      { name: "descripcion", kind: "string", required: true },
-    ],
-  },
-  { id: "ProfesionalDoc", model_ref: "p:ProfesionalDoc", template: "# ⸢render•nombre⸥", fields: [{ name: "nombre", kind: "string", required: true }] },
-  { id: "AsistenteDoc", model_ref: "p:AsistenteDoc", template: "# Asistente ⸢render•nombre⸥", fields: [{ name: "nombre", kind: "string", required: true }] },
-];
-
-const models = [
-  model("AsistenteDoc", "paquete.asistente"),
-  model("HorarioDoc", "negocio.horario"),
-  model("NegocioDoc", "negocio.informacion-general"),
-  model("ProfesionalDoc", "paquete.personal.profesional"),
-  model("ServicioDoc", "paquete.catalogo.servicio"),
-];
-
-const documents = [
-  doc("negocio", "NegocioDoc", "negocio.md", { nombre: "Peluquería Rayén" }),
-  doc("horario", "HorarioDoc", "horario.md", {}),
-  doc("balayage", "ServicioDoc", "servicios/balayage.md", { nombre: "Balayage" }),
-  doc("corte-de-pelo-hombre", "ServicioDoc", "servicios/corte-de-pelo-hombre.md", { nombre: "Corte de pelo hombre" }),
-  doc("rayen-soto", "ProfesionalDoc", "equipo/rayen-soto.md", { nombre: "Rayén Soto" }),
-  doc("asistente", "AsistenteDoc", "asistente.md", { nombre: "Rayo" }),
+  { id: "GlosarioDoc", model_ref: "p:GlosarioDoc", template: "---\nautor: ⸢rev•autor⸥\n---\n\n# Glosario\n\n⸢rev,markdown•texto⸥", fields: [{ name: "texto", kind: "string", required: true }] },
+  { id: "KnowledgeAtom", model_ref: "p:KnowledgeAtom", template: "---\ntitle: ⸢rev•title⸥\n---\n\n# ⸢render•title⸥\n\n⸢rev,markdown•answer⸥", fields: [{ name: "title", kind: "string", required: true }] },
+  { id: "AgentDoc", model_ref: "p:AgentDoc", template: "# Agente ⸢render•title⸥", fields: [{ name: "title", kind: "string", required: true }] },
 ];
 
 describe("wiki-index · rótulos", () => {
-  it("humaniza ids, tipos e identificadores", () => {
-    expect(humanize("identidad-visual")).toBe("Identidad visual");
-    expect(typeLabel("IdentidadVisualDoc")).toBe("Identidad visual");
-    expect(typeLabel("ServicioDoc")).toBe("Servicio");
-    expect(slug("  Peinado de Fiesta (niñas) ")).toBe("peinado-de-fiesta-ninas");
+  it("humaniza ids y tipos", () => {
+    expect(humanize("core-structures")).toBe("Core structures");
+    expect(typeLabel("TagNamespaceDoc")).toBe("Tag namespace");
+    expect(typeLabel("AgentDoc")).toBe("Agent");
   });
 
-  it("lee el título y los rasgos del template", () => {
-    expect(templateTitle(schema[1]!.template)).toEqual({ literal: "Horario", field: null });
-    expect(templateTitle(schema[0]!.template)).toEqual({ literal: "", field: "nombre" });
-    expect(templateTitle(schema[4]!.template)).toEqual({ literal: "Asistente", field: "nombre" });
+  it("lee el título del template", () => {
+    expect(templateTitle(schema[0]!.template)).toEqual({ literal: "Glosario", field: null });
+    expect(templateTitle(schema[1]!.template)).toEqual({ literal: "", field: "title" });
+    expect(templateTitle(schema[2]!.template)).toEqual({ literal: "Agente", field: "title" });
     expect(templateTitle(undefined)).toBeNull();
-    expect(templateTraits(schema[1]!.template).get("atencion")).toEqual(["rev", "dict"]);
   });
 
-  it("una página única se llama como su template o su tipo; una de varias, por su nombre", () => {
-    expect(pageLabel(documents[1]!, false, schema[1])).toBe("Horario");
-    expect(pageLabel(documents[0]!, false, schema[0])).toBe("Negocio");
-    expect(pageLabel(documents[5]!, false, schema[4])).toBe("Asistente");
-    expect(pageLabel(documents[2]!, true, schema[2])).toBe("Balayage");
-    expect(pageLabel(doc("sin-nombre", "ServicioDoc", "servicios/sin-nombre.md"), true, schema[2])).toBe("Sin nombre");
-    // Un store cualquiera: sin template, el `title` del documento.
+  it("una página única se llama como su template o su tipo; una de varias, por su título", () => {
+    const glosario = doc("glosario", "GlosarioDoc", "glosario.md");
+    const atom = doc("atom-accion", "KnowledgeAtom", "knowledge/atom-accion.md", { title: "La Acción" });
+    expect(pageLabel(glosario, false, schema[0])).toBe("Glosario");
+    expect(pageLabel(doc("suelto", "KnowledgeAtom", "suelto.md"), false, schema[1])).toBe("Knowledge atom");
+    expect(pageLabel(atom, true, schema[1])).toBe("La Acción");
+    expect(pageLabel(doc("child_of--a--b", "RelationDoc", "relations/child_of--a--b.md"), true)).toBe("Child of a b");
     expect(pageLabel(doc("informe-1", "InformeDoc", "informe-1.md", { title: "Informe renal" }), false)).toBe("Informe renal");
-  });
-
-  it("el nombre del negocio sale de su página NegocioDoc", () => {
-    expect(businessName(documents)).toBe("Peluquería Rayén");
-    expect(businessName(documents.slice(1))).toBeNull();
+    expect(allowsMany([glosario])).toBe(false);
+    expect(allowsMany([atom])).toBe(true);
   });
 });
 
-describe("wiki-index · grupos", () => {
-  it("agrupa por carpeta o por semántica, en el orden del schema, sin nada escrito a mano", () => {
-    const groups = buildWikiIndex(documents, models, schema);
-    expect(groups.map((g) => g.label)).toEqual(["Negocio", "Servicios", "Equipo", "Asistente"]);
-    expect(groups[0]!.pages.map((p) => p.label)).toEqual(["Negocio", "Horario"]);
-    expect(groups[1]!.pages.map((p) => p.label)).toEqual(["Balayage", "Corte de pelo hombre"]);
-  });
+// La base de un tutor: rutas, tipos y semánticas como los entrega el store de `kbs/apos`.
+const kb = [
+  doc("child_of", "RelationTypeDoc", "kgdb/relation_types/child_of.md", { name: "child_of" }),
+  doc("atom-accion", "KnowledgeAtom", "knowledge/core-structures/action/atom-accion.md", { title: "La Acción" }),
+  doc("chunk-0", "SourceChunk", "ingest/chunks/libro/chunk-0.md"),
+  doc("source-libro", "SourceDoc", "ingest/sources/source-libro.md", { title: "El libro" }),
+  doc("agent-tutor-apos", "AgentDoc", "agent/agent-tutor-apos.md", { title: "Tutor APOS", role: "tutor" }),
+  doc("branch-apos", "BranchNode", "taxonomy/branch-apos.md", { title: "APOS" }),
+];
 
-  it("solo los tipos con varias páginas ofrecen agregar otra", () => {
-    const groups = buildWikiIndex(documents, models, schema);
-    expect(groups[0]!.creatable).toEqual([]);
-    expect(groups[1]!.creatable).toEqual([{ model: "ServicioDoc", label: "servicio" }]);
-    expect(groups[2]!.creatable).toEqual([{ model: "ProfesionalDoc", label: "profesional" }]);
-    expect(groups[3]!.creatable).toEqual([]);
-    expect(allowsMany([documents[1]!])).toBe(false);
-    expect(allowsMany([documents[4]!])).toBe(true);
-  });
-
-  it("una wiki vacía ofrece la primera página de cada tipo", () => {
-    const groups = buildWikiIndex([], models, schema);
-    expect(groups.every((g) => g.pages.length === 0)).toBe(true);
-    expect(groups.flatMap((g) => g.creatable.map((c) => c.model))).toEqual([
-      "NegocioDoc",
-      "HorarioDoc",
-      "ServicioDoc",
-      "ProfesionalDoc",
-      "AsistenteDoc",
+describe("wiki-index · la base de un tutor", () => {
+  it("la configuración del tutor va primero y es lo único editable; el resto, por carpeta y con su rótulo", () => {
+    const groups = buildWikiIndex(kb, [model("AgentDoc", "governance.agent")], []);
+    expect(groups.map((g) => [g.label, g.editable, g.pages.length])).toEqual([
+      ["Configuración del tutor", true, 1],
+      ["Tipos de relación", false, 1],
+      ["Átomos de conocimiento", false, 1],
+      ["Fuentes y fragmentos", false, 2],
+      ["Ramas", false, 1],
     ]);
-    expect(groups[0]!.label).toBe("Negocio");
-    expect(groups[0]!.creatable.map((c) => c.label)).toEqual(["negocio", "horario"]);
+    expect(groups[0]!.pages).toEqual([{ id: "agent-tutor-apos", model: "AgentDoc", label: "Tutor APOS" }]);
+  });
+
+  it("una carpeta sin rótulo propio se humaniza; un tipo sin páginas no aparece", () => {
+    const groups = buildWikiIndex([doc("x", "OtroDoc", "otra-carpeta/x.md")], [model("AgentDoc", "governance.agent")], []);
+    expect(groups.map((g) => g.label)).toEqual(["Otra carpeta"]);
   });
 
   it("sin schema ni catálogo no falla: agrupa por el tipo del documento", () => {
     const groups = buildWikiIndex([doc("informe-1", "InformeDoc", "informe-1.md", { title: "Informe renal" })], []);
     expect(groups).toEqual([
-      { key: "Informe", label: "Informe", pages: [{ id: "informe-1", model: "InformeDoc", label: "Informe renal" }], creatable: [] },
+      { key: "Informe", label: "Informe", pages: [{ id: "informe-1", model: "InformeDoc", label: "Informe renal" }], editable: false },
     ]);
   });
-});
 
-describe("wiki-index · página nueva", () => {
-  it("pide los obligatorios; los que tienen estructura parten vacíos", () => {
-    const servicio = planNewPage(schema[2]);
-    expect(servicio.fields.map((f) => f.field.name)).toEqual(["nombre", "duracion_min", "precio", "descripcion"]);
-    expect(servicio.fields.find((f) => f.field.name === "descripcion")!.long).toBe(true);
-    expect(servicio.nameField).toBe("nombre");
-    const horario = planNewPage(schema[1]);
-    expect(horario.fields).toEqual([]);
-    expect(horario.preset).toEqual({ atencion: {} });
-    expect(horario.nameField).toBeNull();
-  });
-
-  it("arma el payload con el tipo de cada campo y sin validar: lo vacío no viaja", () => {
-    const plan = planNewPage(schema[2]);
-    expect(newPagePayload(plan, { nombre: " Corte ", duracion_min: "30", precio: "a cotizar", descripcion: "" })).toEqual({
-      nombre: "Corte",
-      duracion_min: 30,
-      precio: "a cotizar",
-    });
-    expect(newPagePayload(plan, { precio: "14000", duracion_min: "media hora" })).toEqual({ precio: 14000, duracion_min: "media hora" });
-  });
-
-  it("el id sale del nombre; sin campo de nombre, o con el nombre en blanco, del tipo", () => {
-    expect(newPageId("ServicioDoc", planNewPage(schema[2]), { nombre: "Corte de niña" })).toBe("corte-de-nina");
-    expect(newPageId("ServicioDoc", planNewPage(schema[2]), {})).toBe("servicio");
-    expect(newPageId("HorarioDoc", planNewPage(schema[1]), {})).toBe("horario");
+  it("el nombre del tutor y la página que se abre al entrar salen de su página de configuración", () => {
+    expect(isConfigModel("AgentDoc")).toBe(true);
+    expect(isConfigModel("KnowledgeAtom")).toBe(false);
+    expect(configPage(kb)?.id).toBe("agent-tutor-apos");
+    expect(tutorName(kb)).toBe("Tutor APOS");
+    expect(tutorName(kb.filter((d) => d.model_name !== "AgentDoc"))).toBeNull();
   });
 });

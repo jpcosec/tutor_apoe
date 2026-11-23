@@ -696,7 +696,7 @@
 .wb-ficha__sino { display: inline-flex; align-items: center; gap: 8px; padding: 3px 0; cursor: pointer; }
 .wb-ficha__sino input { width: 16px; height: 16px; accent-color: var(--wb-ink); }
 
-/* ---------- Wiki del negocio (lente Lectura): índice, página nueva, avisos ---------- */
+/* ---------- Wiki del tutor (lente Lectura): índice, avisos ---------- */
 
 .wb-pane-left-38--indice {
   width: 280px;
@@ -746,6 +746,13 @@
 }
 .wb-wiki-index__add { color: var(--wb-ink-muted); font-size: 13px; }
 .wb-wiki-index__add.is-active { color: var(--wb-ink); font-weight: 600; }
+.wb-wiki-index__nota { margin: 0 0 8px 0; padding: 0 8px; font-size: 12.5px; line-height: 1.4; color: var(--wb-ink-muted); }
+.wb-wiki-index__fold > summary { padding: 5px 8px; font-size: 14px; color: var(--wb-ink-body); cursor: pointer; border-radius: var(--wb-radius); }
+.wb-wiki-index__fold > summary:hover { background: var(--wb-stone-hover); color: var(--wb-ink); }
+.wb-wiki-index__fold > summary:focus-visible { outline: 1px solid var(--wb-ink); outline-offset: -1px; }
+.wb-wiki-index__fold > .wb-wiki-index__list { margin: 0 0 6px 12px; }
+.wb-wiki-index__count { color: var(--wb-ink-muted); font-size: 12px; }
+.wb-solo-lectura { margin: 6px 0 0 0; font-size: 12.5px; line-height: 1.45; color: var(--wb-ink-muted); }
 
 .wb-guardado { margin: 0; min-height: 1.4em; font-size: 12.5px; color: var(--wb-ink-muted); }
 
@@ -818,7 +825,7 @@
 .wb-quitar { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--wb-hairline); font-size: 13.5px; }
 .wb-quitar__confirmar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; color: var(--wb-ink); }
 
-/* Barra superior de la wiki: el nombre del negocio y la página abierta, sin maquinaria */
+/* Barra superior de la wiki: de quién es la configuración y la página abierta, sin maquinaria */
 .wb-topbar--wiki { font-family: var(--wb-font-sans); }
 .wb-wiki-nombre { font-family: var(--wb-font-sans); font-size: 14px; font-weight: 600; color: var(--wb-ink); white-space: nowrap; }
 .wb-wiki-pagina { font-family: var(--wb-font-sans); font-size: 13px; color: var(--wb-ink-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

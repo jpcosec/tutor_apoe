@@ -1,7 +1,7 @@
 /**
- * La lente Lectura como wiki de un negocio: índice de páginas por tipo, agregar y quitar páginas
- * por `POST /save`, títulos legibles y el rechazo de SLDB junto al campo que falló.
- * Las formas (templates, semánticas, rutas, mensajes de error) son las del store de la peluquería.
+ * La lente Lectura como wiki de configuración del tutor: índice con la configuración primero y el
+ * resto de la base plegado y en solo lectura, títulos legibles y el rechazo de un guardado junto al
+ * campo que falló. Las formas (template, rutas, semánticas) son las de la KB `kbs/apos`.
  */
 import { describe, expect, it, vi } from "vitest";
 import { fireEvent, render, screen, waitFor, within } from "@testing-library/react";
@@ -35,60 +35,76 @@ function segmentsOf(parts: (string | [path: string, text: string, over?: Partial
   });
 }
 
-const servicioPayload = { nombre: "Corte de pelo hombre", duracion_min: 30, precio: 14000, descripcion: "Corte a tijera o máquina." };
+const agentPayload = {
+  id: "agent-tutor-apos",
+  title: "Tutor APOS",
+  role: "tutor",
+  projection: "tutor",
+  on_failure: "closed",
+  policies: ["deny_if_no_context"],
+  summary: "Tutor de la teoría APOS.",
+  framing: "Eres un tutor experto en APOS.",
+  instructions: "Responde en español usando SOLO la información incluida abajo.",
+};
+const atomPayload = { id: "atom-accion", title: "La Acción es una estructura mental", answer: "APOS incluye la Acción." };
 
 const pages: Record<string, DocumentSegments> = {
-  "corte-de-pelo-hombre": {
-    id: "corte-de-pelo-hombre",
-    doc: "corte-de-pelo-hombre",
-    model: "ServicioDoc",
-    path: "servicios/corte-de-pelo-hombre.md",
+  "agent-tutor-apos": {
+    id: "agent-tutor-apos",
+    doc: "agent-tutor-apos",
+    model: "AgentDoc",
+    path: "agent/agent-tutor-apos.md",
     text: "",
     canonical: true,
-    payload: servicioPayload,
+    payload: agentPayload,
     segments: segmentsOf([
-      "---\nnombre: ",
-      ["nombre", "Corte de pelo hombre"],
-      "\nduracion_min: ",
-      ["duracion_min", "30", { value: 30, kind: "integer" }],
-      "\nprecio: ",
-      ["precio", "14000", { value: 14000, kind: "unknown" }],
+      "---\ntitle: ",
+      ["title", "Tutor APOS"],
+      "\nrole: ",
+      ["role", "tutor"],
+      "\non_failure: ",
+      ["on_failure", "closed", { kind: "enum" }],
+      "\nsummary: ",
+      ["summary", "Tutor de la teoría APOS."],
       "\n---\n\n# ",
-      ["nombre", "Corte de pelo hombre", { marker: "render", editable: false }],
-      "\n\n",
-      ["descripcion", "Corte a tijera o máquina.", { display: "block" }],
+      ["title", "Tutor APOS", { marker: "render", editable: false }],
+      "\n\n## Framing\n\n",
+      ["framing", "Eres un tutor experto en APOS.", { display: "block" }],
+      "\n\n## Instructions\n\n",
+      ["instructions", "Responde en español usando SOLO la información incluida abajo.", { display: "block" }],
     ]),
   },
-  horario: {
-    id: "horario",
-    doc: "horario",
-    model: "HorarioDoc",
-    path: "horario.md",
+  "atom-accion": {
+    id: "atom-accion",
+    doc: "atom-accion",
+    model: "KnowledgeAtom",
+    path: "knowledge/core-structures/action/atom-accion.md",
     text: "",
     canonical: true,
-    payload: { cerrado: [], atencion: { lun: ["10:00-19:00"] } },
+    payload: atomPayload,
     segments: segmentsOf([
-      "---\ncerrado:",
-      ["cerrado", "", { value: [], kind: "list" }],
-      "\n---\n\n# Horario\n\n## Atención\n\n```yaml\n",
-      ["atencion", "lun:\n- 10:00-19:00", { value: { lun: ["10:00-19:00"] }, display: "block" }],
-      "\n```",
+      "---\ntitle: ",
+      ["title", "La Acción es una estructura mental"],
+      "\n---\n\n# ",
+      ["title", "La Acción es una estructura mental", { marker: "render", editable: false }],
+      "\n\n## Respuesta\n\n",
+      ["answer", "APOS incluye la Acción.", { display: "block" }],
     ]),
   },
 };
 
 const documents: GraphDocument[] = [
-  { id: "negocio", model_name: "NegocioDoc", path: "negocio.md", payload: { nombre: "Peluquería Rayén" } },
-  { id: "horario", model_name: "HorarioDoc", path: "horario.md", payload: pages.horario!.payload },
-  { id: "balayage", model_name: "ServicioDoc", path: "servicios/balayage.md", payload: { nombre: "Balayage" } },
-  { id: "corte-de-pelo-hombre", model_name: "ServicioDoc", path: "servicios/corte-de-pelo-hombre.md", payload: servicioPayload },
-  { id: "rayen-soto", model_name: "ProfesionalDoc", path: "equipo/rayen-soto.md", payload: { nombre: "Rayén Soto" } },
+  { id: "child_of", model_name: "RelationTypeDoc", path: "kgdb/relation_types/child_of.md", payload: { name: "child_of" } },
+  { id: "atom-accion", model_name: "KnowledgeAtom", path: "knowledge/core-structures/action/atom-accion.md", payload: atomPayload },
+  { id: "atom-proceso", model_name: "KnowledgeAtom", path: "knowledge/core-structures/process/atom-proceso.md", payload: { title: "El Proceso" } },
+  { id: "branch-apos", model_name: "BranchNode", path: "taxonomy/branch-apos.md", payload: { title: "APOS" } },
+  { id: "agent-tutor-apos", model_name: "AgentDoc", path: "agent/agent-tutor-apos.md", payload: agentPayload },
 ];
 
 const catalog = (name: string, type: string): ModelCatalogEntry => ({
   name,
-  model_ref: `minegocio.paginas:${name}`,
-  path: "paginas.py",
+  model_ref: `kb_models:${name}`,
+  path: "kb_models.py",
   version: 1,
   canonical: false,
   family: null,
@@ -97,42 +113,20 @@ const catalog = (name: string, type: string): ModelCatalogEntry => ({
 });
 
 const models = [
-  catalog("HorarioDoc", "negocio.horario"),
-  catalog("NegocioDoc", "negocio.informacion-general"),
-  catalog("ProfesionalDoc", "paquete.personal.profesional"),
-  catalog("ServicioDoc", "paquete.catalogo.servicio"),
+  catalog("AgentDoc", "governance.agent"),
+  catalog("BranchNode", "knowledge.branch"),
+  catalog("KnowledgeAtom", "knowledge.atom"),
+  catalog("RelationTypeDoc", "relation.type"),
 ];
 
-const schema: SchemaResponse = {
-  models: [
-    { id: "NegocioDoc", model_ref: "p:NegocioDoc", template: "# ⸢render•nombre⸥", fields: [{ name: "nombre", kind: "string", required: true }] },
-    {
-      id: "HorarioDoc",
-      model_ref: "p:HorarioDoc",
-      template: "---\ncerrado: ⸢rev,list•cerrado⸥\n---\n\n# Horario\n\n```yaml\n⸢rev,dict•atencion⸥\n```",
-      fields: [
-        { name: "cerrado", kind: "list", required: false },
-        { name: "atencion", kind: "unknown", required: true },
-      ],
-    },
-    {
-      id: "ServicioDoc",
-      model_ref: "p:ServicioDoc",
-      template: "---\nnombre: ⸢rev•nombre⸥\n---\n\n# ⸢render•nombre⸥\n\n⸢rev,markdown•descripcion⸥",
-      fields: [
-        { name: "nombre", kind: "string", required: true, description: "Nombre del servicio como lo ve el cliente." },
-        { name: "duracion_min", kind: "integer", required: true, description: "Cuánto dura la atención, en minutos." },
-        { name: "precio", kind: "unknown", required: true },
-        { name: "visible", kind: "boolean", required: false, default: true },
-        { name: "descripcion", kind: "string", required: true },
-      ],
-    },
-    { id: "ProfesionalDoc", model_ref: "p:ProfesionalDoc", template: "# ⸢render•nombre⸥", fields: [{ name: "nombre", kind: "string", required: true }] },
-  ],
-};
+const titled = (id: string): SchemaResponse["models"][number] => ({ id, model_ref: `p:${id}`, template: "---\ntitle: ⸢rev•title⸥\n---\n\n# ⸢render•title⸥", fields: [{ name: "title", kind: "string", required: true }] });
+const schema: SchemaResponse = { models: [titled("AgentDoc"), titled("BranchNode"), titled("KnowledgeAtom"), { ...titled("RelationTypeDoc"), template: "# ⸢render•name⸥" }] };
+
+/** Como `sldb serve`: la autoridad es del modelo. Solo la configuración es `authored`. */
+const authorityOf = (name: string) => (name === "AgentDoc" ? "authored" : "generated");
 
 const RECHAZO =
-  "corte-de-pelo-hombre: 1 validation error for ServicioDoc\nduracion_min\n  Input should be greater than or equal to 5 [type=greater_than_equal, input_value=2, input_type=int]";
+  "agent-tutor-apos: 1 validation error for AgentDoc\non_failure\n  Input should be 'open' or 'closed' [type=literal_error, input_value='abierto', input_type=str]";
 
 function mount(over: { docId?: string; lens?: WorkbenchLens; docs?: GraphDocument[]; saveError?: Error } = {}) {
   const fake = {
@@ -142,7 +136,7 @@ function mount(over: { docId?: string; lens?: WorkbenchLens; docs?: GraphDocumen
       if (!page) throw new Error(`sin segmentos: ${id}`);
       return page;
     }),
-    describeModel: vi.fn(async (name: string) => ({ name, model_ref: `minegocio.paginas:${name}`, authority: "authored" }) as unknown as ModelDescription),
+    describeModel: vi.fn(async (name: string) => ({ name, model_ref: `kb_models:${name}`, authority: authorityOf(name) }) as unknown as ModelDescription),
     getEdges: vi.fn(async () => []),
     document: vi.fn(),
     save: vi.fn(async (_changes: unknown[]) => {
@@ -151,7 +145,7 @@ function mount(over: { docId?: string; lens?: WorkbenchLens; docs?: GraphDocumen
     }),
   };
   const props = {
-    docId: over.docId ?? "corte-de-pelo-hombre",
+    docId: over.docId ?? "agent-tutor-apos",
     lens: over.lens ?? ("lectura" as WorkbenchLens),
     documents: over.docs ?? documents,
     models,
@@ -173,28 +167,42 @@ const index = () => within(screen.getByTestId("wiki-index"));
 /** Espera a la página y al schema (los rótulos del índice salen de sus templates). */
 async function ready(title: string) {
   expect((await screen.findByRole("heading", { level: 1 })).textContent).toBe(title);
-  await index().findByRole("button", { name: "Horario" });
+  await index().findByRole("button", { name: "Tutor APOS" });
 }
 
 // ---------- 1. índice ----------
 
 describe("Wiki · índice del panel izquierdo", () => {
-  it("lectura: índice por tipo en vez del mapa, con la página abierta marcada", async () => {
+  it("lectura: la configuración del tutor primero y abierta; el resto de la base, plegado y en solo lectura", async () => {
     mount();
-    await ready("Corte de pelo hombre");
+    await ready("Tutor APOS");
     expect(screen.queryByTestId("topology-mindmap")).toBeNull();
-    expect(index().getAllByRole("heading", { level: 2 }).map((h) => h.textContent)).toEqual(["Negocio", "Servicios", "Equipo"]);
-    const negocio = within(screen.getByTestId("wiki-group-negocio"));
-    expect(negocio.getAllByRole("button").map((b) => b.textContent)).toEqual(["Negocio", "Horario"]);
-    const activa = index().getByRole("button", { current: "page" });
-    expect(activa.textContent).toBe("Corte de pelo hombre");
+    expect(index().getAllByRole("heading", { level: 2 }).map((h) => h.textContent)).toEqual(["Configuración del tutor", "La base · solo lectura"]);
+    expect(within(screen.getByTestId("wiki-group-agent")).getAllByRole("button").map((b) => b.textContent)).toEqual(["Tutor APOS"]);
+    expect(index().getByRole("button", { current: "page" }).textContent).toBe("Tutor APOS");
+    const base = within(screen.getByTestId("wiki-generated"));
+    expect(Array.from(screen.getByTestId("wiki-generated").querySelectorAll("summary")).map((s) => s.textContent)).toEqual([
+      "Ramas 1",
+      "Átomos de conocimiento 2",
+      "Tipos de relación 1",
+    ]);
+    expect((screen.getByTestId("wiki-group-knowledge") as HTMLDetailsElement).open).toBe(false);
+    expect(base.getByText(/Se genera desde los átomos fuente/)).toBeTruthy();
   });
 
-  it("elegir una página del índice navega a ella", async () => {
-    const { props } = mount();
-    await ready("Corte de pelo hombre");
-    fireEvent.click(index().getByRole("button", { name: "Balayage" }));
-    expect(props.onSelectDoc).toHaveBeenCalledWith("balayage");
+  it("aquí no se crean ni se quitan páginas", async () => {
+    mount();
+    await ready("Tutor APOS");
+    expect(screen.queryByRole("button", { name: /Agregar/ })).toBeNull();
+    expect(screen.queryByRole("button", { name: /Quitar/ })).toBeNull();
+  });
+
+  it("elegir una página del índice navega a ella; el grupo de la página abierta se despliega", async () => {
+    const { props } = mount({ docId: "atom-accion" });
+    await ready("La Acción es una estructura mental");
+    expect((screen.getByTestId("wiki-group-knowledge") as HTMLDetailsElement).open).toBe(true);
+    fireEvent.click(index().getByRole("button", { name: "El Proceso" }));
+    expect(props.onSelectDoc).toHaveBeenCalledWith("atom-proceso");
   });
 
   it("fierros: se conserva el mapa y no hay índice", async () => {
@@ -202,152 +210,52 @@ describe("Wiki · índice del panel izquierdo", () => {
     await screen.findByTestId("topology-mindmap");
     expect(screen.queryByTestId("wiki-index")).toBeNull();
   });
-
-  it("solo los tipos con varias páginas ofrecen «+ Agregar»", async () => {
-    mount();
-    await ready("Corte de pelo hombre");
-    expect(index().getByRole("button", { name: "+ Agregar servicio" })).toBeTruthy();
-    expect(index().getByRole("button", { name: "+ Agregar profesional" })).toBeTruthy();
-    expect(within(screen.getByTestId("wiki-group-negocio")).queryByRole("button", { name: /Agregar/ })).toBeNull();
-  });
 });
 
-// ---------- 2. crear y quitar ----------
+// ---------- 2. qué se edita y qué no ----------
 
-describe("Wiki · agregar una página", () => {
-  it("pide los campos obligatorios del tipo y crea con POST /save action=create", async () => {
+describe("Wiki · configuración editable, base en solo lectura", () => {
+  it("la página del tutor se edita en el lugar: el encuadre se guarda con POST /save action=update y el payload leído como expected", async () => {
     const { fake, props } = mount();
-    await ready("Corte de pelo hombre");
-    fireEvent.click(index().getByRole("button", { name: "+ Agregar servicio" }));
-    const form = within(screen.getByTestId("nueva-pagina"));
-    expect(form.getByRole("heading", { level: 1 }).textContent).toBe("Agregar servicio");
-    // `visible` no es obligatorio: no se pide. La ayuda de cada campo es la descripción del schema.
-    expect(form.queryByLabelText("Visible")).toBeNull();
-    expect(form.getByText("Nombre del servicio como lo ve el cliente.")).toBeTruthy();
-    fireEvent.change(form.getByLabelText("Nombre"), { target: { value: "Peinado de niña" } });
-    fireEvent.change(form.getByLabelText("Duración (minutos)"), { target: { value: "45" } });
-    fireEvent.change(form.getByLabelText("Precio"), { target: { value: "a cotizar" } });
-    fireEvent.change(form.getByLabelText("Descripción"), { target: { value: "Trenzas y moños." } });
-    fireEvent.click(form.getByRole("button", { name: "Crear página" }));
-    await waitFor(() => expect(props.onSelectDoc).toHaveBeenCalledWith("peinado-de-nina"));
-    expect(fake.save).toHaveBeenCalledWith([
-      {
-        id: "peinado-de-nina",
-        action: "create",
-        model: "ServicioDoc",
-        payload: { nombre: "Peinado de niña", duracion_min: 45, precio: "a cotizar", descripcion: "Trenzas y moños." },
-      },
-    ]);
-    expect(props.onDocumentsMutated).toHaveBeenCalled();
-    expect(screen.queryByTestId("nueva-pagina")).toBeNull();
+    await ready("Tutor APOS");
+    expect(screen.queryByTestId("prosa-solo-lectura")).toBeNull();
+    expect(screen.getByLabelText("Rol")).toBeTruthy();
+    fireEvent.click(await screen.findByRole("button", { name: "Eres un tutor experto en APOS." }));
+    const area = screen.getByRole("textbox", { name: "" });
+    fireEvent.change(area, { target: { value: "Eres un tutor paciente." } });
+    fireEvent.blur(area);
+    await waitFor(() => expect(fake.save).toHaveBeenCalled());
+    const [change] = fake.save.mock.calls[0]![0] as { id: string; action: string; model: string; payload: Record<string, unknown>; expected: unknown }[];
+    expect(change).toMatchObject({ id: "agent-tutor-apos", action: "update", model: "AgentDoc", expected: agentPayload });
+    expect(change!.payload.framing).toBe("Eres un tutor paciente.");
+    await waitFor(() => expect(props.onDocumentsMutated).toHaveBeenCalled()); // el índice relee el store
   });
 
-  it("el rechazo de SLDB se muestra tal cual y la página no se da por creada", async () => {
-    const error = new SldbHttpError("servicio: 1 validation error for ServicioDoc\nnombre\n  Field required", 422, null);
-    const { props } = mount({ saveError: error });
-    await ready("Corte de pelo hombre");
-    fireEvent.click(index().getByRole("button", { name: "+ Agregar servicio" }));
-    fireEvent.click(screen.getByRole("button", { name: "Crear página" }));
-    const alert = await screen.findByTestId("nueva-pagina-error");
-    expect(alert.getAttribute("role")).toBe("alert");
-    expect(alert.textContent).toContain("1 validation error for ServicioDoc");
-    expect(alert.textContent).toContain("Field required");
-    expect(props.onSelectDoc).not.toHaveBeenCalled();
-    expect(screen.getByTestId("nueva-pagina")).toBeTruthy();
-  });
-
-  it("cancelar vuelve a la página abierta sin escribir", async () => {
-    const { fake } = mount();
-    await ready("Corte de pelo hombre");
-    fireEvent.click(index().getByRole("button", { name: "+ Agregar servicio" }));
-    fireEvent.click(screen.getByRole("button", { name: "Cancelar" }));
-    expect(screen.queryByTestId("nueva-pagina")).toBeNull();
-    expect(screen.getByRole("heading", { level: 1 }).textContent).toBe("Corte de pelo hombre");
+  it("un átomo se lee, dice por qué no se edita y no ofrece controles", async () => {
+    const { fake } = mount({ docId: "atom-accion" });
+    await ready("La Acción es una estructura mental");
+    expect((await screen.findByTestId("prosa-solo-lectura")).textContent).toMatch(/se genera desde los átomos fuente/);
+    expect(screen.getByText("APOS incluye la Acción.")).toBeTruthy();
+    expect(screen.queryByRole("button", { name: "APOS incluye la Acción." })).toBeNull();
+    expect(screen.queryByRole("textbox")).toBeNull();
     expect(fake.save).not.toHaveBeenCalled();
-  });
-
-  it("wiki vacía: lo dice y ofrece la primera página de cada tipo; los obligatorios con estructura parten vacíos", async () => {
-    const { fake, props } = mount({ docId: "", docs: [] });
-    expect(screen.getByTestId("prosa-sin-paginas").textContent).toMatch(/todavía no tiene páginas/);
-    fireEvent.click(await index().findByRole("button", { name: "+ Agregar horario" }));
-    expect(index().getByRole("button", { name: "+ Agregar negocio" })).toBeTruthy();
-    fireEvent.click(screen.getByRole("button", { name: "Crear página" }));
-    await waitFor(() => expect(props.onSelectDoc).toHaveBeenCalledWith("horario"));
-    expect(fake.save).toHaveBeenCalledWith([{ id: "horario", action: "create", model: "HorarioDoc", payload: { atencion: {} } }]);
-  });
-});
-
-describe("Wiki · quitar una página", () => {
-  it("pide confirmación y quita con POST /save action=delete y el payload leído como expected", async () => {
-    const { fake, props } = mount();
-    await ready("Corte de pelo hombre");
-    fireEvent.click(await screen.findByRole("button", { name: "Quitar esta página" }));
-    expect(fake.save).not.toHaveBeenCalled();
-    expect(screen.getByText(/¿Quitar «Corte de pelo hombre» de la wiki\?/)).toBeTruthy();
-    fireEvent.click(screen.getByRole("button", { name: "Sí, quitar" }));
-    await waitFor(() => expect(props.onSelectDoc).toHaveBeenCalledWith("balayage"));
-    expect(fake.save).toHaveBeenCalledWith([
-      { id: "corte-de-pelo-hombre", action: "delete", model: "ServicioDoc", expected: servicioPayload },
-    ]);
-    expect(props.onDocumentsMutated).toHaveBeenCalled();
-  });
-
-  it("cancelar la confirmación no escribe nada", async () => {
-    const { fake } = mount();
-    await ready("Corte de pelo hombre");
-    fireEvent.click(await screen.findByRole("button", { name: "Quitar esta página" }));
-    fireEvent.click(within(screen.getByTestId("quitar-pagina")).getByRole("button", { name: "Cancelar" }));
-    expect(screen.getByRole("button", { name: "Quitar esta página" })).toBeTruthy();
-    expect(fake.save).not.toHaveBeenCalled();
-  });
-
-  it("si SLDB no la quita, muestra su mensaje", async () => {
-    mount({ saveError: new SldbHttpError("corte-de-pelo-hombre cambió en SLDB. Recarga para evitar sobrescribirlo.", 409, null) });
-    await ready("Corte de pelo hombre");
-    fireEvent.click(await screen.findByRole("button", { name: "Quitar esta página" }));
-    fireEvent.click(screen.getByRole("button", { name: "Sí, quitar" }));
-    expect((await screen.findByTestId("quitar-pagina-error")).textContent).toContain("cambió en SLDB");
-  });
-
-  it("una página única (horario) no se puede quitar desde aquí", async () => {
-    const { fake } = mount({ docId: "horario" });
-    await ready("Horario");
-    // Con la autoridad del modelo ya resuelta (que es lo que habilita quitar), sigue sin ofrecerse.
-    await waitFor(() => expect(fake.describeModel).toHaveBeenCalledWith("HorarioDoc"));
-    await screen.findByLabelText("Agregar a Atención: Lunes");
-    await new Promise((resolve) => setTimeout(resolve, 0));
-    expect(screen.queryByTestId("quitar-pagina")).toBeNull();
   });
 });
 
 // ---------- 3. se lee como la wiki ----------
 
 describe("Wiki · títulos y metadatos", () => {
-  it("una página única se titula con el título de su template, no con su id; sin metadatos en lectura", async () => {
-    mount({ docId: "horario" });
-    await ready("Horario");
-    expect(screen.queryByText(/HorarioDoc/)).toBeNull();
+  it("lectura: sin metadatos de sldb", async () => {
+    mount();
+    await ready("Tutor APOS");
+    expect(screen.queryByText(/AgentDoc/)).toBeNull();
     expect(screen.queryByText(/path:/)).toBeNull();
   });
 
   it("fierros: la línea de modelo y path sigue ahí", async () => {
-    mount({ docId: "horario", lens: "fierros" });
-    expect(await screen.findByText(/HorarioDoc ·/)).toBeTruthy();
-    expect(screen.getByText(/path: horario\.md/)).toBeTruthy();
-  });
-
-  it("una página con nombre se titula con él y el título se edita en el lugar", async () => {
-    const { fake } = mount();
-    await ready("Corte de pelo hombre");
-    const h1 = screen.getByRole("heading", { level: 1 });
-    fireEvent.click(await within(h1).findByRole("button", { name: "Corte de pelo hombre" }));
-    const area = within(h1).getByRole("textbox");
-    fireEvent.change(area, { target: { value: "Corte de pelo caballero" } });
-    fireEvent.blur(area);
-    await waitFor(() => expect(fake.save).toHaveBeenCalled());
-    const [change] = fake.save.mock.calls[0]![0] as { action: string; payload: Record<string, unknown> }[];
-    expect(change!.action).toBe("update");
-    expect(change!.payload.nombre).toBe("Corte de pelo caballero");
+    mount({ lens: "fierros" });
+    expect(await screen.findByText(/AgentDoc ·/)).toBeTruthy();
+    expect(screen.getByText(/path: agent\/agent-tutor-apos\.md/)).toBeTruthy();
   });
 });
 
@@ -356,31 +264,16 @@ describe("Wiki · títulos y metadatos", () => {
 describe("Wiki · rechazo de un guardado", () => {
   it("queda en la fila del campo que falló, legible y con el texto del servidor sin tocar", async () => {
     mount({ saveError: new SldbHttpError(RECHAZO, 422, null) });
-    await ready("Corte de pelo hombre");
-    const campo = await screen.findByLabelText("Duración (minutos)");
-    fireEvent.change(campo, { target: { value: "2" } });
+    await ready("Tutor APOS");
+    const campo = await screen.findByLabelText("Rol");
+    fireEvent.change(campo, { target: { value: "otro" } });
     fireEvent.blur(campo);
     const alert = await screen.findByTestId("prosa-save-error");
     expect(alert.getAttribute("role")).toBe("alert");
-    expect(alert.classList.contains("wb-mono")).toBe(false);
     expect(within(alert).getByText("No se guardó este cambio")).toBeTruthy();
     expect(alert.querySelector(".wb-aviso__mensaje")!.textContent).toBe(RECHAZO);
-    // Está en la misma fila de la ficha que el campo, no en el encabezado.
     expect(alert.closest("dd")).toBe(campo.closest("dd"));
-    expect(screen.getAllByTestId("prosa-save-error")).toHaveLength(1);
     fireEvent.click(within(alert).getByRole("button", { name: "Cerrar el aviso" }));
     expect(screen.queryByTestId("prosa-save-error")).toBeNull();
-  });
-
-  it("si falla el título (no está en la ficha), el aviso va bajo el título", async () => {
-    mount({ saveError: new SldbHttpError("nombre: String should have at least 1 character", 422, null) });
-    await ready("Corte de pelo hombre");
-    const h1 = screen.getByRole("heading", { level: 1 });
-    fireEvent.click(await within(h1).findByRole("button", { name: "Corte de pelo hombre" }));
-    const area = within(h1).getByRole("textbox");
-    fireEvent.change(area, { target: { value: "X" } });
-    fireEvent.blur(area);
-    const alert = await screen.findByTestId("prosa-save-error");
-    expect(alert.closest("header")).not.toBeNull();
   });
 });

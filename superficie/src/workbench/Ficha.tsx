@@ -1,7 +1,6 @@
 /**
- * La ficha de una página: los campos del encabezado (precio, duración, quiénes atienden) y los
- * bloques con estructura (el horario de la semana, los colores), como controles que se leen
- * sin saber de YAML.
+ * La ficha de una página: los campos del encabezado (rol, proyección, políticas) y los bloques
+ * con estructura (listas, grupos), como controles que se leen sin saber de YAML.
  *
  * No calcula ni valida: cada cambio es un `commit(path, valor)` del field, que el Workbench
  * manda a `POST /save`; el contrato del modelo lo valida SLDB y su rechazo se muestra tal cual.
@@ -12,27 +11,22 @@ import type { FrontmatterRow } from "../core/layout";
 import { rootOf } from "../core/paths";
 
 const ROTULOS: Record<string, string> = {
-  lun: "Lunes",
-  mar: "Martes",
-  mie: "Miércoles",
-  jue: "Jueves",
-  vie: "Viernes",
-  sab: "Sábado",
-  dom: "Domingo",
-  duracion_min: "Duración (minutos)",
-  direccion: "Dirección",
-  telefono: "Teléfono",
-  categoria: "Categoría",
-  descripcion: "Descripción",
-  atencion: "Atención",
-  tipografia: "Tipografía",
-  titulos: "Títulos",
-  presentacion: "Presentación",
-  quienes: "Quiénes lo hacen",
-  cerrado: "Días cerrados",
+  title: "Nombre",
+  role: "Rol",
+  framing: "Encuadre: quién es el tutor",
+  instructions: "Instrucciones: normas al responder",
+  projection: "Proyección (qué parte de la base ve)",
+  static: "Secciones fijas de sus instrucciones",
+  dynamic: "Lo que recibe en cada turno",
+  tools: "Herramientas",
+  on_failure: "Si el modelo falla",
+  policies: "Políticas",
+  tags: "Tags",
+  provenance: "Procedencia",
+  summary: "Resumen",
 };
 
-/** El nombre de un campo como se le muestra a una persona: `mensajes_al_dia` → «Mensajes al dia». */
+/** El nombre de un campo como se le muestra a una persona: `on_failure` → «Si el modelo falla»; sin rótulo propio, `five_wh` → «Five wh». */
 export function rotulo(clave: string): string {
   const conocido = ROTULOS[clave];
   if (conocido) return conocido;

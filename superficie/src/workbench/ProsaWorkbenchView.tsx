@@ -15,10 +15,10 @@ import type {
 } from "../core/contract";
 import { layoutSegments, type InlinePiece, type LayoutUnit } from "../core/layout";
 import { rootOf } from "../core/paths";
-import { buildWikiIndex, humanize, type WikiCreatable } from "../core/wiki-index";
+import { buildWikiIndex, humanize } from "../core/wiki-index";
+import { SOLO_LECTURA } from "../core/tutor";
 import { useSchema, useSldb } from "../react/context";
 import { AvisoGuardado } from "./AvisoGuardado";
-import { NuevaPagina } from "./NuevaPagina";
 import { WikiIndex } from "./WikiIndex";
 import { Ficha, ValorEditable, rotulo, tieneEstructura, valorDe, type CampoEsquema } from "./Ficha";
 import { useDocumentEditor } from "../react/useDocumentEditor";
@@ -92,16 +92,6 @@ export function ProsaWorkbenchView({
   const [hoveredRefDoc, setHoveredRefDoc] = useState<string | null>(null);
   const [modelDetail, setModelDetail] = useState<ModelDescription | null>(null);
   const [edges, setEdges] = useState<Edge[]>([]);
-  // Página nueva en curso (lente Lectura) y quitar la página abierta: ambas son operaciones de `POST /save`.
-  const [creating, setCreating] = useState<WikiCreatable | null>(null);
-  const [removal, setRemoval] = useState<
-    { status: "idle" } | { status: "confirming" } | { status: "removing" } | { status: "error"; message: string }
-  >({ status: "idle" });
-
-  useEffect(() => {
-    setRemoval({ status: "idle" });
-  }, [docId]);
-
   useEffect(() => {
     if (!data?.model) return;
     let active = true;
@@ -139,6 +129,12 @@ export function ProsaWorkbenchView({
     };
   }, [client, data?.model, data?.doc]);
 
+  // Tras un guardado se vuelve a leer el store: el índice y la barra muestran el nombre nuevo.
+  useEffect(() => {
+    if (save.status === "saved") void onDocumentsMutated?.();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [save.status]);
+
   const authority: AuthorityKind = modelDetail?.authority ?? "authored";
   /** `content_hash` del documento (`GET /documents`): el `expected` que compara `POST /save`. */
   const expectedVersion = useMemo(() => {
@@ -173,12 +169,6 @@ export function ProsaWorkbenchView({
   const wikiGroups = useMemo(() => buildWikiIndex(documents, models, schemaModels ?? []), [documents, models, schemaModels]);
 
   const isFierros = lens === "fierros";
-  const nuevaPagina = !isFierros ? creating : null;
-
-  const afterMutation = async (nextDoc: string | null) => {
-    await onDocumentsMutated?.();
-    if (nextDoc) onSelectDoc(nextDoc);
-  };
 
   // El panel izquierdo: en Lectura, el índice de la wiki; en Fierros, el mapa del documento.
   const left = isFierros ? (
@@ -200,12 +190,7 @@ export function ProsaWorkbenchView({
       <WikiIndex
         groups={wikiGroups}
         activeDoc={data?.doc ?? (docId || null)}
-        creating={nuevaPagina?.model ?? null}
-        onSelectDoc={(id) => {
-          setCreating(null);
-          onSelectDoc(id);
-        }}
-        onCreate={setCreating}
+        onSelectDoc={onSelectDoc}
       />
     </aside>
   );
@@ -217,31 +202,12 @@ export function ProsaWorkbenchView({
     </div>
   );
 
-  if (nuevaPagina) {
-    return frame(
-      <section className="wb-pane-right-62">
-        <div className="wb-editorial-sheet--lectura">
-          <NuevaPagina
-            key={nuevaPagina.model}
-            tipo={nuevaPagina}
-            schema={schemaModels?.find((m) => m.id === nuevaPagina.model)}
-            onCancel={() => setCreating(null)}
-            onCreated={(id) => {
-              setCreating(null);
-              void afterMutation(id);
-            }}
-          />
-        </div>
-      </section>,
-    );
-  }
-
   if (!docId) {
     return frame(
       <div style={{ padding: 32, color: "var(--wb-ink-muted)" }} data-testid="prosa-sin-paginas">
         {isFierros
           ? "No hay ningún documento abierto."
-          : "Esta wiki todavía no tiene páginas. Agrega la primera desde el índice de la izquierda."}
+          : "Esta base todavía no tiene páginas. Genérala con `tutor kb build`."}
       </div>,
     );
   }
@@ -292,20 +258,9 @@ export function ProsaWorkbenchView({
     ) : null;
   const avisoUnit = aviso && failedRoot ? units.findIndex((u) => rootsOfUnit(u, titleField).includes(failedRoot)) : -1;
 
-  // Quitar la página: solo en tipos con varias páginas (un servicio, una persona) y con autoridad para escribir.
-  const allowsMany = wikiGroups.some((g) => g.creatable.some((c) => c.model === data.model));
-  const canRemove =
-    !isFierros && allowsMany && modelDetail !== null && resolveFieldAuthority(data.model, data.doc, "", authority, modelRef).allowed;
-  const remove = async () => {
-    setRemoval({ status: "removing" });
-    try {
-      await client.save([{ id: data.id, action: "delete", model: data.model, expected: data.payload }]);
-      const next = documents.find((d) => d.id !== data.doc && d.model_name === data.model) ?? documents.find((d) => d.id !== data.doc);
-      await afterMutation(next?.id ?? null);
-    } catch (error) {
-      setRemoval({ status: "error", message: error instanceof Error ? error.message : String(error) });
-    }
-  };
+  // En Lectura, una página que no es de configuración dice por qué no se edita.
+  const soloLectura =
+    !isFierros && modelDetail !== null && !resolveFieldAuthority(data.model, data.doc, "", authority, modelRef).allowed;
 
   return frame(
       <section className="wb-pane-right-62">
@@ -350,6 +305,11 @@ export function ProsaWorkbenchView({
             ) : (
               <p className="wb-guardado" aria-live="polite" data-testid="prosa-save-status">
                 {save.status === "saving" ? "Guardando…" : save.status === "saved" ? "Guardado ✓" : " "}
+              </p>
+            )}
+            {soloLectura && (
+              <p className="wb-solo-lectura" data-testid="prosa-solo-lectura">
+                {SOLO_LECTURA}
               </p>
             )}
             {avisoUnit < 0 && aviso}
@@ -419,29 +379,6 @@ export function ProsaWorkbenchView({
                   </React.Fragment>
                 ))}
               </div>
-            </footer>
-          )}
-
-          {canRemove && (
-            <footer className="wb-quitar" data-testid="quitar-pagina">
-              {removal.status === "idle" || removal.status === "error" ? (
-                <button type="button" className="wb-accion wb-accion--tenue" onClick={() => setRemoval({ status: "confirming" })}>
-                  Quitar esta página
-                </button>
-              ) : (
-                <div className="wb-quitar__confirmar" role="group" aria-label="Confirmar quitar la página">
-                  <span>¿Quitar «{docTitle}» de la wiki? No se puede deshacer.</span>
-                  <button type="button" className="wb-accion wb-accion--principal" disabled={removal.status === "removing"} onClick={() => void remove()}>
-                    {removal.status === "removing" ? "Quitando…" : "Sí, quitar"}
-                  </button>
-                  <button type="button" className="wb-accion" disabled={removal.status === "removing"} onClick={() => setRemoval({ status: "idle" })}>
-                    Cancelar
-                  </button>
-                </div>
-              )}
-              {removal.status === "error" && (
-                <AvisoGuardado testId="quitar-pagina-error" titulo="No se pudo quitar la página" mensaje={removal.message} />
-              )}
             </footer>
           )}
         </div>

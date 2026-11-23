@@ -364,19 +364,19 @@ describe("WorkbenchShell", () => {
     expect((within(palette).getByRole("textbox") as HTMLInputElement).value).toBe("InformeDoc");
   });
 
-  it("wiki de un negocio en Lectura: la barra muestra el nombre del negocio y esconde la maquinaria", async () => {
+  it("base de un tutor en Lectura: la barra dice de quién es la configuración y esconde la maquinaria", async () => {
     const client = createFakeWorkbenchClient();
     (client.documents as ReturnType<typeof vi.fn>).mockResolvedValue([
-      { id: "negocio", model_name: "NegocioDoc", path: "negocio.md", payload: { nombre: "Peluquería Rayén" } },
-      { id: "horario", model_name: "HorarioDoc", path: "horario.md", payload: {} },
+      { id: "atom-accion", model_name: "KnowledgeAtom", path: "knowledge/atom-accion.md", payload: { title: "La Acción" } },
+      { id: "agent-tutor-apos", model_name: "AgentDoc", path: "agent/agent-tutor-apos.md", payload: { title: "Tutor APOS" } },
     ]);
-    window.history.replaceState(null, "", "#/workbench?doc=horario");
+    window.history.replaceState(null, "", "#/workbench");
     render(<WorkbenchShell client={client} />);
 
-    expect((await screen.findByTestId("wiki-business-name")).textContent).toBe("Peluquería Rayén");
-    expect(document.title).toBe("Peluquería Rayén");
+    expect((await screen.findByTestId("wiki-name")).textContent).toBe("Configuración · Tutor APOS");
+    expect(document.title).toBe("Configuración · Tutor APOS");
     expect(topbar().queryByText("sldb")).toBeNull();
-    expect(topbar().queryByText("HorarioDoc")).toBeNull();
+    expect(topbar().queryByText("AgentDoc")).toBeNull();
     expect(screen.queryByTestId("breadcrumb-doc-switch")).toBeNull();
     expect(screen.queryByTestId("wb-context-pill")).toBeNull();
     expect(screen.queryByTestId("sldb-sync-badge")).toBeNull();
@@ -386,14 +386,15 @@ describe("WorkbenchShell", () => {
 
     // Los fierros siguen a un clic (o tecla 2): ahí vuelve la barra de SLDB completa.
     fireEvent.click(screen.getByTestId("wiki-ver-estructura"));
-    expect(screen.queryByTestId("wiki-business-name")).toBeNull();
-    expect(screen.getByTestId("breadcrumb-doc-switch").textContent).toContain("horario");
-    expect(topbar().getByText("HorarioDoc")).toBeTruthy();
+    expect(screen.queryByTestId("wiki-name")).toBeNull();
+    // Sin página pedida, se abre la de configuración, no la primera del store.
+    expect(screen.getByTestId("breadcrumb-doc-switch").textContent).toContain("agent-tutor-apos");
+    expect(topbar().getByText("AgentDoc")).toBeTruthy();
     expect(screen.getByTestId("wb-context-pill").textContent).toBe("prosa · fierros visibles");
     expect(lens("[ Estructura / Fierros ]").getAttribute("aria-pressed")).toBe("true");
     expect(screen.getByTestId("sldb-sync-badge").textContent).toBe("[ Sincronizado con .sldb ]");
     fireEvent.click(lens("Lectura"));
-    expect(screen.getByTestId("wiki-business-name").textContent).toBe("Peluquería Rayén");
+    expect(screen.getByTestId("wiki-name").textContent).toBe("Configuración · Tutor APOS");
   });
 
   it("does not claim sync when the store does not answer", async () => {

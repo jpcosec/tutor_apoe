@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { createHttpClient, type SldbClient } from "../core/client";
 import type { GraphDocument, ModelCatalogEntry } from "../core/contract";
 import type { AssistantClient } from "../core/assistant";
-import { businessName } from "../core/wiki-index";
+import { configPage, isConfigModel, tutorName } from "../core/wiki-index";
 import { WorkbenchAssist } from "./WorkbenchAssist";
 import { SldbProvider } from "../react/context";
 import { ProsaWorkbenchView, type WorkbenchLens } from "../workbench/ProsaWorkbenchView";
@@ -100,8 +100,7 @@ export const WorkbenchShell: React.FC<WorkbenchShellProps> = ({
       .then((items: GraphDocument[]) => {
         setDocuments(items ?? []);
         setStoreStatus({ kind: "synced" });
-        const preferred =
-          items?.find((d: GraphDocument) => d.model_name.toLowerCase().includes("informe")) ?? items?.[0];
+        const preferred = configPage(items ?? []) ?? items?.[0];
         if (preferred) {
           setRoute((prev) => (prev.doc ? prev : { ...prev, doc: preferred.id }));
         }
@@ -159,22 +158,19 @@ export const WorkbenchShell: React.FC<WorkbenchShellProps> = ({
       const found = documents.find((d) => d.id === route.doc || d.id === clean);
       if (found) return found;
     }
-    return (
-      documents.find((d) => d.model_name.toLowerCase().includes("informe")) ??
-      documents[0] ??
-      null
-    );
+    return configPage(documents) ?? documents[0] ?? null;
   }, [documents, route.doc]);
 
-  // La wiki de un negocio (un store con su página `NegocioDoc`) se lee en Lectura sin maquinaria:
-  // la barra muestra el nombre del negocio; breadcrumb de SLDB, contrato, sync y ⌘K quedan en Fierros.
-  const negocio = useMemo(() => businessName(documents), [documents]);
-  const esWiki = negocio !== null || models.some((m) => m.name === "NegocioDoc");
+  // La base de un tutor (un store con su página de configuración) se lee en Lectura sin maquinaria:
+  // la barra muestra de quién es la configuración; breadcrumb de SLDB, contrato, sync y ⌘K quedan en Fierros.
+  const tutor = useMemo(() => tutorName(documents), [documents]);
+  const esWiki = tutor !== null || models.some((m) => isConfigModel(m.name));
   const wikiLectura = esWiki && route.view === "workbench" && route.lens === "lectura";
+  const wikiTitulo = tutor ? `Configuración · ${tutor}` : "Configuración del tutor";
 
   useEffect(() => {
-    if (typeof document !== "undefined" && negocio) document.title = negocio;
-  }, [negocio]);
+    if (typeof document !== "undefined" && esWiki) document.title = wikiTitulo;
+  }, [esWiki, wikiTitulo]);
 
   const handleSelectLens = (lens: WorkbenchLens | "esquema") => {
     if (lens === "esquema") {
@@ -336,8 +332,8 @@ export const WorkbenchShell: React.FC<WorkbenchShellProps> = ({
         <header className={`wb-topbar ${wikiLectura ? "wb-topbar--wiki" : ""}`} data-testid="wb-topbar">
           {wikiLectura ? (
             <div className="wb-topbar-left">
-              <span className="wb-wiki-nombre" data-testid="wiki-business-name">
-                {negocio ?? "La wiki de tu negocio"}
+              <span className="wb-wiki-nombre" data-testid="wiki-name">
+                {wikiTitulo}
               </span>
             </div>
           ) : (
@@ -502,26 +498,29 @@ export const WorkbenchShell: React.FC<WorkbenchShellProps> = ({
           />
         )}
 
-        <WorkbenchAssist
-          assistantClient={assistantClient}
-          context={{
-            view: route.view,
-            lens: route.view === "studio" ? null : route.lens,
-            doc: activeDocItem?.id ?? route.doc,
-            model: route.view === "studio" ? (route.model ?? activeDocItem?.model_name ?? null) : (activeDocItem?.model_name ?? null),
-            path: activeDocItem?.path ?? null,
-            spec: route.view === "diagram" ? route.spec : null,
-            node: route.view === "diagram" ? route.node : null,
-          }}
-          contextLabel={`${crumb.collection} / ${crumb.id} · ${contextPill}`}
-          onStoreChanged={() => {
-            refreshStore();
-            setViewEpoch((n) => n + 1);
-          }}
-          onTourGo={(step) => {
-            if (step.view) navigate(step.lens ? { view: step.view, lens: step.lens } : { view: step.view });
-          }}
-        />
+        {/* El asistente y el recorrido son del taller de sldb (`vite dev`): en la wiki del tutor no hay quién los atienda. */}
+        {!esWiki && (
+          <WorkbenchAssist
+            assistantClient={assistantClient}
+            context={{
+              view: route.view,
+              lens: route.view === "studio" ? null : route.lens,
+              doc: activeDocItem?.id ?? route.doc,
+              model: route.view === "studio" ? (route.model ?? activeDocItem?.model_name ?? null) : (activeDocItem?.model_name ?? null),
+              path: activeDocItem?.path ?? null,
+              spec: route.view === "diagram" ? route.spec : null,
+              node: route.view === "diagram" ? route.node : null,
+            }}
+            contextLabel={`${crumb.collection} / ${crumb.id} · ${contextPill}`}
+            onStoreChanged={() => {
+              refreshStore();
+              setViewEpoch((n) => n + 1);
+            }}
+            onTourGo={(step) => {
+              if (step.view) navigate(step.lens ? { view: step.view, lens: step.lens } : { view: step.view });
+            }}
+          />
+        )}
 
         {/* Command Palette Modal (⌘K) */}
         {paletteOpen && (

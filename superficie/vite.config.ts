@@ -6,12 +6,17 @@ import { assistantPlugin } from "./assistant/vite-plugin";
 const sldbTarget = process.env.SLDB_TARGET ?? "http://127.0.0.1:8085";
 const deskTarget = process.env.DESK_TARGET ?? "http://127.0.0.1:8091";
 
-export default defineConfig({
-  // Dentro del panel de un negocio la superficie se sirve bajo /panel/wiki/ (SUPERFICIE_BASE); sola, en la raíz.
-  base: process.env.SUPERFICIE_BASE ?? "/",
+export default defineConfig(({ command }) => ({
+  // Compilada, la superficie es la wiki de `tutor web`: se sirve bajo /wiki/ y queda dentro del paquete
+  // (src/tutor/static/wiki, versionada: quien usa el tutor no tiene Node). En `vite dev`, en la raíz.
+  base: process.env.SUPERFICIE_BASE ?? (command === "build" ? "/wiki/" : "/"),
   // El asistente (solo en `vite dev`) edita el mismo store que sirve `sldb serve`.
   plugins: [react(), assistantPlugin({ sldbTarget })],
-  build: { rollupOptions: { input: { main: "index.html" } } },
+  build: {
+    outDir: process.env.SUPERFICIE_OUT ?? "../src/tutor/static/wiki",
+    emptyOutDir: true,
+    rollupOptions: { input: { main: "index.html" } },
+  },
   server: {
     proxy: {
       "/sldb": { target: sldbTarget, changeOrigin: true, rewrite: (path) => path.replace(/^\/sldb/, "") },
@@ -23,4 +28,4 @@ export default defineConfig({
     globals: true,
     setupFiles: ["./src/test-setup.ts"],
   },
-});
+}));
