@@ -499,6 +499,40 @@ def write_kb(out: Path, plan: BuildPlan) -> dict[str, int]:
     return preserved
 
 
+_SIGNED_AT = re.compile(r"^  at: .*$", re.MULTILINE)
+
+
+def generated_texts(out: Path) -> dict[Path, str]:
+    """El texto de cada página generada, antes de regenerar: lo que `keep_signatures` compara después."""
+    out = out.resolve()
+    return {path: path.read_text(encoding="utf-8") for name in GENERATED_DIRS for path in (out / name).rglob("*.md")}
+
+
+def keep_signatures(out: Path, before: dict[Path, str]) -> int:
+    """Devuelve su firma anterior (`sldb.at`) a cada página que quedó igual, y pone el store al día.
+
+    sldb firma con la hora cada página que crea, así que un build que no cambia nada movía igual la
+    fecha de cientos de archivos versionados. Solo se toca la línea de la fecha, y solo cuando el
+    resto del texto es idéntico; una página que sí cambió conserva su firma nueva. Devuelve cuántas."""
+    from sldb.api import rebuild_edges, update_store_indexes
+
+    out = out.resolve()
+    kept = 0
+    for path, old in before.items():
+        if not path.is_file():
+            continue
+        new = path.read_text(encoding="utf-8")
+        if new != old and _SIGNED_AT.sub("", new, count=1) == _SIGNED_AT.sub("", old, count=1):
+            path.write_text(old, encoding="utf-8")
+            kept += 1
+    if kept:
+        store = out / ".sldb"
+        pythonpath = str((out / "..").resolve())
+        update_store_indexes(store, pythonpath=pythonpath, wait=True)
+        rebuild_edges(store, pythonpath, wait=True)
+    return kept
+
+
 def enrich(out: Path, *, anchor: bool = True, jev_client: Any | None = None, force_anchor: bool = False) -> dict[str, Any]:
     """Los pasos derivados sobre la KB ya escrita: esquema de las fuentes, anclaje de los átomos y
     cobertura de las ramas. Devuelve `{outlines, anchor, coverage}`."""
@@ -551,10 +585,13 @@ def build(
     atoms = read_atoms(atoms_dir)
     built = plan(atoms, atoms_dir, pack_dir, embedder.id())
     log.info("%d átomos leídos, %d documentos a escribir", len(atoms), len(built.docs))
+    before = generated_texts(out)
     preserved = write_kb(out, built)
     if preserved:
         log.info("conservados y registrados: %s", preserved)
     enrichment = enrich(out, anchor=anchor, jev_client=jev_client, force_anchor=force_anchor)
+    if kept := keep_signatures(out, before):
+        log.info("%d páginas sin cambios conservan su firma", kept)
     kb, report = validate(out, embedder)
     if report.is_valid and index:
         counts = kb.refresh_index()

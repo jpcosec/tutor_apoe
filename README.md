@@ -14,6 +14,9 @@ Desde octubre de 2026 el repo es además la base de dos piezas reutilizables:
 
 ## Arranque rápido
 
+La forma corta: `./install.sh` deja todo instalado en `.venv/` y comprobado (guía en
+[`install.md`](install.md)); los comandos quedan en `.venv/bin/`. A mano, en un entorno propio:
+
 ```bash
 ./scripts/bootstrap_deps.sh         # sldb y pron vía google `repo` → third_party/
 pip install -r requirements.txt     # paquetes vendoreados (runtime/) + tutor, editable
