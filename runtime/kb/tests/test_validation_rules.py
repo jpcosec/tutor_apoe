@@ -99,7 +99,9 @@ def test_v1_store_desalineado(build_kb: Builder) -> None:
     path = root / "notes" / "nota-a.md"
     path.write_text(path.read_text().replace("A.", "A modificada."))
 
-    assert rules_of(root) == {"V1"}
+    # Desde sldb 0.1.13 un documento cambiado por fuera también deja su arista desactualizada (V6).
+    rules = rules_of(root)
+    assert "V1" in rules and rules <= {"V1", "V6"}
 
 
 @pytest.mark.spec("01-V2")

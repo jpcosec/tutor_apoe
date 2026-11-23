@@ -39,6 +39,8 @@ RUN git -C /tmp/manifest init -q -b main \
 COPY requirements.txt pyproject.toml ./
 COPY runtime ./runtime
 COPY src ./src
+# `kb_models` (el esquema de las KBs) se instala con el tutor: tiene que estar antes del `pip install`.
+COPY kbs/kb_models ./kbs/kb_models
 RUN pip install -q -r requirements.txt
 
 # 3. Datos: la KB de APOS y la fuente de los átomos.
