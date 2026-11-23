@@ -1,6 +1,6 @@
 # tutor-mcp — servidor MCP del tutor
 
-Un servidor MCP (SDK oficial `mcp` 2.x) para hacer dos cosas desde cualquier cliente MCP
+Un servidor MCP (FastMCP, paquete `fastmcp`) para hacer dos cosas desde cualquier cliente MCP
 (Claude Desktop, Claude Code, Cursor…):
 
 1. **Crear, poblar y mantener KBs** sldb del tutor: desde el chat (`upsert_atom`) o desde una

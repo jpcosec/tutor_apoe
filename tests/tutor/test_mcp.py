@@ -1,4 +1,4 @@
-"""`tutor.mcp_server` con el cliente en proceso de la SDK `mcp`: las tools están, el flujo
+"""`tutor.mcp_server` con el cliente en proceso de FastMCP: las tools están, el flujo
 crear → poblar → buscar → turno → validar funciona en tmpdir, los recursos y prompts se leen, los
 errores vuelven como `{error, hint}`, la autoprueba termina en 0 y el transporte HTTP exige el Bearer."""
 
@@ -16,7 +16,7 @@ from typing import Any
 
 import httpx
 import pytest
-from mcp.client.client import Client
+from fastmcp import Client
 
 from tutor import mcp_server
 from tutor.mcp_server import tool_result
@@ -46,9 +46,9 @@ def server(tmp_path_factory: pytest.TempPathFactory):
 def test_list_tools_resources_prompts(server) -> None:
     async def go():
         async with Client(server) as client:
-            tools = (await client.list_tools()).tools
-            prompts = (await client.list_prompts()).prompts
-            templates = (await client.list_resource_templates()).resource_templates
+            tools = await client.list_tools()
+            prompts = await client.list_prompts()
+            templates = await client.list_resource_templates()
             return tools, prompts, templates
 
     tools, prompts, templates = run(go())
@@ -102,9 +102,9 @@ def test_full_flow(server) -> None:
             listed = await call(client, "list_kbs")
             assert "flujo" in {k["kb_id"] for k in listed["kbs"]}
             # recursos y prompts
-            atom_md = (await client.read_resource(f"tutor://flujo/atom/{b['id']}")).contents[0]
+            atom_md = (await client.read_resource(f"tutor://flujo/atom/{b['id']}"))[0]
             assert getattr(atom_md, "text", "").startswith("---\nid: " + b["id"])
-            agent_md = (await client.read_resource("tutor://flujo/agent/tutor")).contents[0]
+            agent_md = (await client.read_resource("tutor://flujo/agent/tutor"))[0]
             assert "Eres un tutor paciente." in getattr(agent_md, "text", "")
             prompt = await client.get_prompt("author_kb", {"kb_id": "flujo"})
             text = getattr(prompt.messages[0].content, "text", "")

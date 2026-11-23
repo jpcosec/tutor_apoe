@@ -14,7 +14,7 @@ dependencies = [
     "tutor-semantics",
     "tutor-context",
     "pydantic-ai-slim[google]>=1.0",
-    "mcp>=1.2",
+    "fastmcp>=4",
     "httpx",
     "pyyaml",
     "typer",

@@ -1,5 +1,5 @@
 """Servidor MCP del tutor: crear y poblar KBs sldb desde el chat (o desde ingesta) y levantar y
-probar tutores sobre ellas. Es el único módulo que importa la SDK de MCP; la lógica vive en
+probar tutores sobre ellas. Es el único módulo que importa FastMCP; la lógica vive en
 `tutor.authoring` (escritura), `tutor.ingest` (fuentes), `tutor.world` (lectura) y `tutor.agent`
 (turnos).
 
@@ -30,8 +30,7 @@ from functools import wraps
 from pathlib import Path
 from typing import Any
 
-from mcp.server.mcpserver import MCPServer
-from mcp.types import ToolAnnotations
+from fastmcp import FastMCP
 from pydantic import BaseModel, Field
 
 from tutor import authoring, ingest, world
@@ -145,14 +144,15 @@ def tool_result(result: Any) -> dict[str, Any]:
 # --------------------------------------------------------------------------------------------
 
 
-def build(kbs_root: Path | str | None = None) -> MCPServer:
-    """El `MCPServer` con todas las tools, recursos y prompts sobre `kbs_root`."""
+def build(kbs_root: Path | str | None = None) -> FastMCP:
+    """El `FastMCP` con todas las tools, recursos y prompts sobre `kbs_root`."""
     state = ServerState(root=Path(kbs_root).expanduser().resolve() if kbs_root else None)
-    server = MCPServer(SERVER_NAME, instructions=INSTRUCTIONS)
-    read_only = ToolAnnotations(read_only_hint=True, open_world_hint=False)
-    writes = ToolAnnotations(read_only_hint=False, destructive_hint=False, open_world_hint=False)
-    destructive = ToolAnnotations(read_only_hint=False, destructive_hint=True, open_world_hint=False)
-    calls_model = ToolAnnotations(read_only_hint=True, open_world_hint=True)
+    server = FastMCP(SERVER_NAME, instructions=INSTRUCTIONS)
+    # Anotaciones MCP como dicts (FastMCP las convierte a `ToolAnnotations`).
+    read_only = {"read_only_hint": True, "open_world_hint": False}
+    writes = {"read_only_hint": False, "destructive_hint": False, "open_world_hint": False}
+    destructive = {"read_only_hint": False, "destructive_hint": True, "open_world_hint": False}
+    calls_model = {"read_only_hint": True, "open_world_hint": True}
     root = state.root
 
     # -- KBs --------------------------------------------------------------------------
@@ -417,7 +417,7 @@ def build(kbs_root: Path | str | None = None) -> MCPServer:
         return SESSION_PROMPT.format(kb_id=kb_id, role=role, framing=framing or "(sin encuadre: usa upsert_tutor)", instructions=instructions or "(sin instrucciones)")
 
     # Módulos opcionales que suman tools: cada uno expone
-    # `register_mcp(server, state, safe, annotations: dict[str, ToolAnnotations])`.
+    # `register_mcp(server, state, safe, annotations: dict[str, dict[str, bool]])`.
     annotations = {"read_only": read_only, "writes": writes, "destructive": destructive, "calls_model": calls_model}
     for name in EXTENSIONS:
         try:
@@ -572,16 +572,16 @@ class BearerTokenMiddleware:
         await self.app(scope, receive, send)
 
 
-def http_app(server: MCPServer, host: str, token: str | None) -> Any:
+def http_app(server: FastMCP, host: str, token: str | None) -> Any:
     """La app Starlette del transporte streamable HTTP (en `/mcp`), con el Bearer si hay token."""
-    app = server.streamable_http_app(streamable_http_path=HTTP_PATH, host=host)
+    app = server.http_app(path=HTTP_PATH, transport="streamable-http")
     if token:
         return BearerTokenMiddleware(app, token)
     log.warning("%s no está definido: el servidor HTTP acepta cualquier cliente", ENV_TOKEN)
     return app
 
 
-def serve_http(server: MCPServer, address: str) -> None:
+def serve_http(server: FastMCP, address: str) -> None:
     import uvicorn
 
     host, _, port = address.rpartition(":")
@@ -618,7 +618,7 @@ def selftest(root: Path | None = None, out: Any = None) -> int:
 
 
 async def _selftest(base: Path, out: Any) -> int:
-    from mcp.client.client import Client
+    from fastmcp import Client
 
     server = build(base)
     failures = 0
@@ -632,7 +632,7 @@ async def _selftest(base: Path, out: Any) -> int:
         return result
 
     async with Client(server) as client:
-        tools = [t.name for t in (await client.list_tools()).tools]
+        tools = [t.name for t in await client.list_tools()]
         step("list_tools", tools, {"create_kb", "upsert_atom", "run_turn", "benchmark_tutor"} <= set(tools))
 
         async def call(name: str, **args: Any) -> dict[str, Any]:
@@ -673,7 +673,7 @@ async def _selftest(base: Path, out: Any) -> int:
         bench = await call("benchmark_tutor", kb_id="demo", questions=[{"question": "¿Qué es una acción?", "expected_atom_ids": [ids[0]]}, {"question": "¿Cómo se encapsula un proceso?", "expected_atom_ids": [ids[2]]}], k=3)
         step("benchmark_tutor", {m: v["metrics"] for m, v in (bench.get("methods") or {}).items()}, "methods" in bench)
         resource = await client.read_resource(f"tutor://demo/atom/{ids[0]}")
-        text = getattr(resource.contents[0], "text", "")
+        text = getattr(resource[0], "text", "")
         step("resource atom", text.splitlines()[0:2], text.startswith("---"))
         prompt = await client.get_prompt("author_kb", {"kb_id": "demo"})
         prompt_text = getattr(prompt.messages[0].content, "text", "")
@@ -708,7 +708,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.http:
         serve_http(server, args.http)
         return 0
-    server.run("stdio")
+    server.run("stdio", show_banner=False)
     return 0
 
 
