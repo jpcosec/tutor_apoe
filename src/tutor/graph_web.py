@@ -35,10 +35,12 @@ def router():
 
     @routes.get('/web/{filename}')
     def asset(filename: str):
-        types = {'mindmap.js': 'text/javascript', 'hierarchy.js': 'text/javascript', 'mindmap.css': 'text/css', 'theme.css': 'text/css', 'guided-tour.js': 'text/javascript', 'tour-plans.js': 'text/javascript'}
-        if filename not in types:
+        # Los estilos y scripts de `web/`: los del grafo y los de los módulos (Experto, Ejemplos, Bibliografía).
+        types = {'.js': 'text/javascript', '.css': 'text/css'}
+        target = web / filename
+        if target.suffix not in types or target.parent != web or not target.is_file():
             raise HTTPException(404, 'Archivo no encontrado.')
-        return FileResponse(web / filename, media_type=types[filename])
+        return FileResponse(target, media_type=types[target.suffix])
 
     @routes.get('/api/search')
     def search(q: str = ''):

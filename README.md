@@ -30,14 +30,17 @@ tutor web --kb kbs/apos --model test --port 8300     # UI de chat con la mesa po
 tutor-mcp --selftest                                 # MCP: crea una KB demo y la ejercita
 ```
 
-La interfaz de `tutor web` reúne **Conversación**, **Paquetes**, **Grafo APOS**, **Scratch** y
-**Configuración** en pestañas en <http://127.0.0.1:8300>. Cada vista permanece abierta al cambiar
+La interfaz de `tutor web` reúne en un solo menú **Conversación**, **Paquetes**, **Grafo APOS**,
+**Scratch**, **Experto**, **Ejemplos**, **Bibliografía** y **Configuración**, en <http://127.0.0.1:8300>. Cada vista permanece abierta al cambiar
 de pestaña, conservando sus formularios, selecciones y posición. Los enlaces
-`/#chat`, `/#packages`, `/#graph`, `/#scratch` y `/#config` permiten abrir una vista directamente;
+`/#chat`, `/#packages`, `/#graph`, `/#scratch`, `/#expert`, `/#examples`, `/#literature` y `/#config`
+permiten abrir una vista directamente;
 Atrás/Adelante y las flechas del teclado en la barra de pestañas también funcionan.
 El grafo es el mapa mental de la KB sldb, servido en `/graph` por el mismo servidor
 (`?highlight=atom-a,atom-b` resalta nodos; el chat tiene un enlace "ver en grafo" por
-turno). `web/` y `scripts/kb.py serve` son la versión legacy sobre `desk/atoms/*.md`.
+turno). Experto, Ejemplos y Bibliografía son los módulos de `scripts/kb.py` y `web/`: `tutor web`
+lanza ese visor por dentro y reenvía sus páginas y su API (`src/tutor/modules.py`), así que no hace
+falta abrirlo aparte. `scripts/kb.py serve` solo sigue sirviendo el mapa legacy sobre `desk/atoms/*.md`.
 
 `--model test` no usa red. Con una API key exportada: `--model google:gemini-2.5-flash`,
 `openai:gpt-4o-mini`, `openrouter:...`. Variables en `.env.example`.

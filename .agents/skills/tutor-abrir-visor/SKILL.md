@@ -22,11 +22,15 @@ Luego dale a la persona el enlace <http://127.0.0.1:8300> y explícale las pesta
 - **Paquetes**: subir una fuente (PDF o página) y prepararla por etapas.
 - **Grafo APOS**: el mapa de ramas y átomos; al elegir una tarjeta se puede editar.
 - **Scratch**: notas personales que quedan en ese navegador.
+- **Experto**: el protocolo de entrevista a especialistas en APOE, sus invitaciones y sesiones.
+- **Ejemplos**: entrevistas para reunir casos APOE y fragmentos de descomposición genética.
+- **Bibliografía**: el catálogo del libro y las investigaciones APOE.
 - **Configuración**: quién es el tutor y qué normas sigue al responder, como una página con
   campos. Se guarda al salir de cada campo y vale desde la pregunta siguiente. Los átomos y
   ramas se ven ahí, pero no se cambian (eso es en Grafo APOS o con `tutor-cargar-fuente`).
 
-Enlaces directos: `/#chat`, `/#packages`, `/#graph`, `/#scratch`, `/#config`. Para resaltar átomos en
+Enlaces directos: `/#chat`, `/#packages`, `/#graph`, `/#scratch`, `/#expert`, `/#examples`,
+`/#literature`, `/#config`. Para resaltar átomos en
 el grafo: `/graph?highlight=atom-a,atom-b`.
 
 ## Detalles

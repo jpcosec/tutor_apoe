@@ -104,6 +104,13 @@ conserve su carpeta en vez de regenerarla, como hace con `agent/`; (4) recompila
 (5) agrega un caso a `tests/tutor/test_wiki.py`. El porqué del diseño está en
 [`docs/decisiones/2026-11-wiki-de-configuracion.md`](docs/decisiones/2026-11-wiki-de-configuracion.md).
 
+**Agregar una pestaña al menú** (`src/tutor/static/app.html`): un `<button data-view="x">` en
+el `<nav>`, su `<section id="panel-x">` con el `iframe`, y la vista en `descriptions` y en los
+títulos del script de esa página; su ruta en `views` de `src/tutor/static/navigation.js`, para que
+los enlaces entre vistas cambien de pestaña. Si la página vive en `scripts/kb.py`, agrega su
+prefijo a `PAGES` o `APIS` en `src/tutor/modules.py`. Suma la vista al test
+`test_el_espacio_de_trabajo_tiene_todas_las_vistas_en_un_menu`.
+
 **Cambiar la interfaz de la wiki** (`superficie/`, React + Vite): edita, corre
 `cd superficie && npm ci && npm test && npm run build` y commitea también
 `src/tutor/static/wiki/`, que es lo compilado y va versionado para que funcione sin Node.
@@ -118,9 +125,13 @@ lo adaptado. La copia no se sincroniza con el original.
 
 ## Interfaz de la KB
 
-La interfaz para explorar y buscar la base es `scripts/kb.py`. No añade un
-chatbot ni usa un modelo de lenguaje: delega la búsqueda a `sldb find` y
-presenta los átomos fuente en un visor local.
+La interfaz es una sola: `tutor web` (<http://127.0.0.1:8300>), con todo en el mismo menú:
+Conversación, Paquetes, Grafo APOS, Scratch, Experto, Ejemplos, Bibliografía y Configuración.
+Una vista nueva se agrega ahí, como pestaña, no como una página aparte.
+
+`scripts/kb.py` busca en los átomos fuente con `sldb find` (sin chatbot ni modelo de
+lenguaje) y contiene los módulos Experto, Ejemplos y Bibliografía; `tutor web` lo lanza por
+dentro y reenvía sus páginas (`src/tutor/modules.py`).
 
 ## Skills para trabajar sin programar
 

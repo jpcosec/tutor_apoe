@@ -215,15 +215,23 @@ def web(
     port: Annotated[int, typer.Option("--port")] = 8300,
 ) -> None:
     """Sirve la UI web del tutor (`tutor.web`) con uvicorn, y con ella la wiki de configuración
-    (`tutor.wiki`): lanza el `sldb serve` de la KB solo para esta máquina y lo cierra al salir."""
+    (`tutor.wiki`) y los módulos Experto, Ejemplos y Bibliografía (`tutor.modules`): lanza el
+    `sldb serve` de la KB y el visor de módulos solo para esta máquina y los cierra al salir."""
+    import signal
+    import sys
+
     import uvicorn
 
-    from tutor import wiki
+    from tutor import modules, wiki, world
     from tutor.web import create_app
 
     application = create_app(kb, model=model, role=role, host=host)
-    with wiki.served(application.state.kb_root) as backend:
+    # uvicorn, al terminar por SIGTERM, vuelve a lanzar la señal: sin este manejador el proceso moría ahí
+    # mismo y dejaba sueltos el `sldb serve` y el visor de módulos. Con él, los `with` alcanzan a cerrarlos.
+    signal.signal(signal.SIGTERM, lambda *_: sys.exit(143))
+    with wiki.served(application.state.kb_root) as backend, modules.served(world.repo_root()) as viewer:
         application.state.wiki = backend
+        application.state.modules = viewer
         uvicorn.run(application, host=host, port=port)
 
 

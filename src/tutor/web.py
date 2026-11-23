@@ -19,7 +19,7 @@ from fastapi.responses import FileResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from tutor import authoring, wiki, world
+from tutor import authoring, modules, wiki, world
 from tutor.agent import Conversation, TurnResult
 from tutor.surface import SurfaceView
 
@@ -108,6 +108,7 @@ def create_app(kb_root: Path | str | None = None, model: str = "test", role: str
     app.state.kb = kb
     app.state.kb_root = root.resolve()
     app.state.wiki = wiki.Backend()
+    app.state.modules = modules.Backend()
     app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
     lock = Lock()
@@ -344,6 +345,7 @@ def create_app(kb_root: Path | str | None = None, model: str = "test", role: str
         return None
 
     app.include_router(wiki.router(lambda: app.state.wiki, host=host, model_of=page_model, after_save=reopen_kb))
+    app.include_router(modules.router(lambda: app.state.modules, host=host))
 
     from tutor.preload_web import router
 
