@@ -1,0 +1,14 @@
+.dup-box {
+  margin: 12px 0 0; padding: 8px 10px; border: 1px solid var(--rule); border-radius: var(--radius-m);
+  background: var(--sheet); color: var(--ink); font-size: 12px; line-height: 1.5;
+}
+.dup-box p { margin: 0 0 6px; }
+.dup-box--new { background: var(--action-soft); }
+.dup-box--not-indexed, .dup-box--unavailable { background: var(--warn-bg); border-color: var(--warn-border); }
+.dup-note { margin: 8px 0 0; color: var(--print); font-size: 12px; }
+.dup-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.dup-hit { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; overflow-wrap: anywhere; }
+.dup-hit a { color: var(--action); }
+.dup-hit__score { color: var(--print); font-variant-numeric: tabular-nums; }
+.dup-hit--duplicate { padding: 4px 6px; border: 1px solid var(--danger-border); background: var(--danger-bg); border-radius: var(--radius-s); }
+.dup-hit__flag { color: var(--danger); }

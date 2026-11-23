@@ -19,7 +19,7 @@ from fastapi.responses import FileResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from tutor import authoring, world
+from tutor import authoring, modules, wiki, world
 from tutor.agent import Conversation, TurnResult
 from tutor.surface import SurfaceView
 
@@ -96,7 +96,9 @@ def graph_node(document: Any) -> dict[str, Any]:
     return node
 
 
-def create_app(kb_root: Path | str | None = None, model: str = "test", role: str = "tutor") -> FastAPI:
+def create_app(kb_root: Path | str | None = None, model: str = "test", role: str = "tutor", host: str = "127.0.0.1") -> FastAPI:
+    """`host` es la interfaz en que escuchará el servidor: decide si la wiki de configuración se abre
+    sin clave (solo en loopback). `app.state.wiki` lo pone quien lanza el `sldb serve` (`tutor web`)."""
     root = Path(kb_root) if kb_root else world.kb_root_default()
     kb = world.open_kb(root)
     doc = world.agent(kb, role) or {}
@@ -105,6 +107,8 @@ def create_app(kb_root: Path | str | None = None, model: str = "test", role: str
     app = FastAPI(title=app_name)
     app.state.kb = kb
     app.state.kb_root = root.resolve()
+    app.state.wiki = wiki.Backend()
+    app.state.modules = modules.Backend()
     app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
     lock = Lock()
@@ -271,6 +275,7 @@ def create_app(kb_root: Path | str | None = None, model: str = "test", role: str
                 }
                 users[user_id].append(conversation_id)
                 chats[conversation_id] = Conversation(kb=app.state.kb, model=model, role=role)
+            chats[conversation_id].kb = app.state.kb  # la KB vigente: lo guardado en la wiki o el grafo vale desde este turno
             result: TurnResult = chats[conversation_id].ask(req.message)
             index_ = len(conv["turns"]) + 1
             turn = {
@@ -316,6 +321,31 @@ def create_app(kb_root: Path | str | None = None, model: str = "test", role: str
         if not found:
             raise HTTPException(status_code=404, detail="atom not found")
         return found
+
+    def page_model(name: str) -> str | None:
+        try:
+            document = app.state.kb.get(name)
+        except KeyError:
+            return None
+        return document.model if document.name == name else None
+
+    def reopen_kb() -> str | None:
+        """Tras un guardado por la wiki: la `KnowledgeBase` en memoria no ve lo escrito por `sldb serve`,
+        así que se vuelve a abrir. Devuelve por qué el tutor no podría seguir con lo guardado, si es el caso."""
+        wiki.forget_store_reads(app.state.kb_root / world.STORE_DIR)
+        try:
+            fresh = world.open_kb(app.state.kb_root, build_if_missing=False)
+        except Exception as error:  # la KB dejó de validar: se informa y se deshace el guardado
+            errors = [e.line() for e in getattr(getattr(error, "report", None), "errors", [])] or [str(error).strip() or type(error).__name__]
+            return f"la base deja de validar ({'; '.join(errors[:3])})."
+        if world.agent(fresh, role) is None:
+            return f"el rol «{role}» se queda sin su página de configuración."
+        with lock:
+            app.state.kb = fresh
+        return None
+
+    app.include_router(wiki.router(lambda: app.state.wiki, host=host, model_of=page_model, after_save=reopen_kb))
+    app.include_router(modules.router(lambda: app.state.modules, host=host))
 
     from tutor.preload_web import router
 

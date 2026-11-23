@@ -1,0 +1,205 @@
+.s2v-left-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  z-index: 1;
+}
+.s2v-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-family: var(--wb-font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--wb-ink-muted);
+}
+.s2v-diamond {
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--wb-ink);
+  transform: rotate(45deg);
+  display: inline-block;
+}
+.s2v-meta {
+  font-family: var(--wb-font-mono);
+  font-size: 11px;
+  color: var(--wb-ink-muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.s2v-select {
+  font-family: var(--wb-font-mono);
+  font-size: 11px;
+  background: var(--wb-paper);
+  color: var(--wb-ink);
+  border: 1px solid var(--wb-border);
+  border-radius: var(--wb-radius);
+  padding: 2px 4px;
+  max-width: 220px;
+}
+.s2v-canvas {
+  flex: 1;
+  min-height: 0;
+  margin: 16px 0;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(var(--wb-border) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+/* El SVG va a tamaño natural con margin:auto: centrado si cabe, scroll sin recorte si no. */
+.s2v-canvas {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.s2v-footer {
+  padding-top: 12px;
+  border-top: 1px solid var(--wb-hairline);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-family: var(--wb-font-mono);
+  font-size: 11px;
+  color: var(--wb-ink-muted);
+}
+.s2v-note {
+  font-family: var(--wb-font-mono);
+  font-size: 12px;
+  color: var(--wb-ink-muted);
+  padding: 12px 0;
+}
+.s2v-sheet {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.s2v-head {
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--wb-hairline);
+}
+.s2v-head-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--wb-font-mono);
+  font-size: 12px;
+  color: var(--wb-ink-muted);
+  margin-bottom: 8px;
+}
+.s2v-h1 {
+  font-family: var(--wb-font-serif);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--wb-ink);
+  margin: 0 0 8px;
+}
+.s2v-sub {
+  font-family: var(--wb-font-mono);
+  font-size: 12px;
+  color: var(--wb-ink-muted);
+}
+.s2v-section {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 40px;
+}
+.s2v-label {
+  font-family: var(--wb-font-mono);
+  font-size: 11px;
+  color: var(--wb-ink-muted);
+  padding-top: 4px;
+}
+.s2v-label small {
+  display: block;
+  font-size: 10px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+.s2v-body {
+  font-family: var(--wb-font-sans);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--wb-ink);
+  margin: 0;
+}
+.s2v-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.s2v-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: var(--wb-ink-muted);
+  cursor: pointer;
+}
+.s2v-link:hover {
+  color: var(--wb-ink);
+}
+.s2v-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--wb-hairline);
+  background: var(--wb-card);
+  font-family: var(--wb-font-mono);
+  font-size: 12px;
+}
+.s2v-list li {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--wb-hairline);
+}
+.s2v-list li:last-child {
+  border-bottom: none;
+}
+.s2v-h3 {
+  font-family: var(--wb-font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--wb-ink-muted);
+  margin: 0 0 12px;
+}
+.s2v-edge {
+  padding: 10px;
+  border: 1px solid var(--wb-hairline);
+  background: var(--wb-card);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-family: var(--wb-font-mono);
+  font-size: 12px;
+}
+.s2v-edge--in {
+  background: var(--wb-stone);
+}
+.s2v-edge-dir {
+  font-size: 10px;
+  color: var(--wb-ink-muted);
+}
+
+/* Barra del lienzo en una sola línea (notaciones y títulos de spec largos). */
+.s2v-meta,
+.s2v-meta > span { white-space: nowrap; }
+.s2v-select { max-width: 220px; text-overflow: ellipsis; }
+.s2v-title { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.s2v-title > span { overflow: hidden; text-overflow: ellipsis; }
+.s2v-meta { flex-shrink: 0; display: flex; align-items: center; gap: 6px; }

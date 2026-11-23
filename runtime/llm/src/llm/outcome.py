@@ -75,8 +75,9 @@ def outcome_of(result: Any, latency_ms: int, provider: str, model: str) -> RunOu
     messages: list[ModelMessage] = list(result.all_messages())
     usage = result.usage
     reported = bool(usage.input_tokens or usage.output_tokens)
+    # Un reintento llega como `RetryPromptPart` o, desde pydantic-ai 2.x, como retorno de tool con `outcome="retried"`.
     retries = sum(
-        isinstance(part, RetryPromptPart)
+        isinstance(part, RetryPromptPart) or getattr(part, "outcome", None) == "retried"
         for message in messages
         if isinstance(message, ModelRequest)
         for part in message.parts

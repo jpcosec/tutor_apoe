@@ -34,10 +34,13 @@ RUN git -C /tmp/manifest init -q -b main \
  && repo sync -q -j2 \
  && rm -rf .repo
 
-# 2. El workspace: paquetes vendoreados + paquete tutor, todo editable.
+# 2. El workspace: paquetes vendoreados + paquete tutor, todo editable. `src/tutor/static/wiki/`
+#    trae la interfaz de la wiki de configuración ya compilada: la imagen no necesita Node.
 COPY requirements.txt pyproject.toml ./
 COPY runtime ./runtime
 COPY src ./src
+# `kb_models` (el esquema de las KBs) se instala con el tutor: tiene que estar antes del `pip install`.
+COPY kbs/kb_models ./kbs/kb_models
 RUN pip install -q -r requirements.txt
 
 # 3. Datos: la KB de APOS y la fuente de los átomos.
@@ -49,5 +52,6 @@ COPY tests ./tests
 COPY benchmarks ./benchmarks
 # Reglas léxicas del runtime viejo: baseline `heuristic` del benchmark.
 COPY apps/kb_agent/packs/apos ./apps/kb_agent/packs/apos
+RUN test -f src/tutor/static/wiki/index.html
 
 CMD ["bash", "scripts/docker_smoke.sh"]

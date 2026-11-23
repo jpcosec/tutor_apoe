@@ -1,0 +1,13 @@
+.distill-sim-box {
+  margin: 8px 0; padding: 8px 10px; border: 1px solid var(--rule); border-radius: var(--radius-m);
+  background: var(--sheet); color: var(--ink); font-size: 12px; line-height: 1.5;
+}
+.distill-sim-box p { margin: 0 0 6px; }
+.distill-sim-box--not-indexed, .distill-sim-box--unavailable { background: var(--warn-bg); border-color: var(--warn-border); }
+.distill-sim-note { margin: 4px 0 0; color: var(--print); font-size: 12px; }
+.distill-sim-list { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-size: 12px; }
+.distill-sim-hit { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; overflow-wrap: anywhere; }
+.distill-sim-hit a { color: var(--action); font-family: var(--font-code); }
+.distill-sim-hit__score { color: var(--print); font-variant-numeric: tabular-nums; }
+.distill-sim-hit--duplicate { padding: 4px 6px; border: 1px solid var(--danger-border); background: var(--danger-bg); border-radius: var(--radius-s); }
+.distill-sim-hit__flag { color: var(--danger); font-weight: 600; }

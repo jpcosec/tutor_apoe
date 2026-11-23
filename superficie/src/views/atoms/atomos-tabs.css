@@ -1,0 +1,8 @@
+.at-tabs { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 4px 24px; padding: 8px 16px 0; background: var(--paper); border-bottom: 1px solid var(--rule); flex: none; }
+.at-tabs__crumb { padding-bottom: 8px; font-size: 13px; color: var(--print); }
+.at-tabs__crumb strong { color: var(--ink); }
+.at-tabs__nav { display: flex; gap: 4px; }
+.at-tabs__tab { margin-bottom: -1px; padding: 4px 12px 8px; border-bottom: 2px solid transparent; font-size: 14px; color: var(--print); text-decoration: none; }
+.at-tabs__tab:hover { color: var(--ink); }
+.at-tabs__tab.is-current { border-bottom-color: var(--ink); color: var(--ink); font-weight: 600; }
+.at-tabs__tab.is-off { opacity: 0.5; cursor: not-allowed; }

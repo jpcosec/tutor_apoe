@@ -1,0 +1,9 @@
+.tray-suggest { margin: 10px 0 0; font-size: 0.85rem; color: var(--print); }
+.tray-suggest--warn { padding: 6px 10px; background: var(--warn-bg); border: 1px solid var(--warn-border); border-radius: var(--radius-s); color: var(--ink); }
+.tray-suggest__list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 4px; color: var(--ink); }
+.tray-suggest__item { display: flex; gap: 10px; align-items: baseline; }
+.tray-suggest__score {
+  min-width: 3.2em; padding: 1px 6px; text-align: right;
+  font-family: var(--font-code); font-size: 0.78rem;
+  background: var(--action-soft); color: var(--action); border-radius: var(--radius-s);
+}

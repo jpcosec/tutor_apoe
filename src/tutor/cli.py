@@ -51,8 +51,8 @@ def kb_build(
     anchor: Annotated[bool, typer.Option("--anchor/--no-anchor", help="Anclar los átomos a los fragmentos de la fuente (Jev, cacheado).")] = True,
     force_anchor: Annotated[bool, typer.Option("--force-anchor", help="Ignorar la caché de anclaje y volver a preguntar a Jev.")] = False,
 ) -> None:
-    """Genera la KB desde los átomos (`tutor.kb_build`), conserva `ingest/` y `proposed/`, ancla y calcula
-    cobertura; exit 1 si no valida."""
+    """Genera la KB desde los átomos (`tutor.kb_build`), conserva `ingest/`, `proposed/` y la configuración
+    del tutor (`agent/`, si ya existe), ancla y calcula cobertura; exit 1 si no valida."""
     from tutor.kb_build import build
 
     report = build(atoms, out, pack_dir=pack if pack.is_dir() else None, embedder_name=embedder, index=not no_index, anchor=anchor, force_anchor=force_anchor)
@@ -214,12 +214,25 @@ def web(
     host: Annotated[str, typer.Option("--host")] = "127.0.0.1",
     port: Annotated[int, typer.Option("--port")] = 8300,
 ) -> None:
-    """Sirve la UI web del tutor (`tutor.web`) con uvicorn."""
+    """Sirve la UI web del tutor (`tutor.web`) con uvicorn, y con ella la wiki de configuración
+    (`tutor.wiki`) y los módulos Experto, Ejemplos y Bibliografía (`tutor.modules`): lanza el
+    `sldb serve` de la KB y el visor de módulos solo para esta máquina y los cierra al salir."""
+    import signal
+    import sys
+
     import uvicorn
 
+    from tutor import modules, wiki, world
     from tutor.web import create_app
 
-    uvicorn.run(create_app(kb, model=model, role=role), host=host, port=port)
+    application = create_app(kb, model=model, role=role, host=host)
+    # uvicorn, al terminar por SIGTERM, vuelve a lanzar la señal: sin este manejador el proceso moría ahí
+    # mismo y dejaba sueltos el `sldb serve` y el visor de módulos. Con él, los `with` alcanzan a cerrarlos.
+    signal.signal(signal.SIGTERM, lambda *_: sys.exit(143))
+    with wiki.served(application.state.kb_root) as backend, modules.served(world.repo_root()) as viewer:
+        application.state.wiki = backend
+        application.state.modules = viewer
+        uvicorn.run(application, host=host, port=port)
 
 
 def render_mesa_text(mesa: dict[str, Any], indent: str = "") -> str:

@@ -1,0 +1,49 @@
+{
+  "description": "Contrato de capas para @sldb/surface. Ningún paquete puede importar de una capa superior.",
+  "layers": [
+    {
+      "level": 0,
+      "name": "core",
+      "directories": ["src/core"],
+      "forbiddenExternalPackages": [
+        "react",
+        "react-dom",
+        "@xyflow/react",
+        "@codemirror/view",
+        "@codemirror/state",
+        "prosemirror-view",
+        "prosemirror-state",
+        "prosemirror-model"
+      ],
+      "rationale": "Contratos puros, cliente HTTP inyectable, cálculo de segmentos, offsets, similitud y autoridad. Independiente de React y de librerías visuales."
+    },
+    {
+      "level": 1,
+      "name": "react-primitives",
+      "directories": ["src/react"],
+      "forbidDirectFetch": true,
+      "rationale": "Primitivas React reutilizables: DocumentSurface, Transclusion, useDocumentEditor y registro de editores por tipo de field."
+    },
+    {
+      "level": 2,
+      "name": "domain-views",
+      "directories": ["src/workbench", "src/views"],
+      "forbidDirectFetch": true,
+      "rationale": "Las 4 vistas del SLDB Workbench (01 Prosa/Fierros, 02 Spec2Viz Inspector, 03 Source Anchoring, 04 Model Studio) y vistas auxiliares."
+    },
+    {
+      "level": 3,
+      "name": "app-shell",
+      "directories": ["src/app"],
+      "files": ["src/main.tsx"],
+      "forbidDirectFetch": true,
+      "rationale": "Cascarón de aplicación (WorkbenchShell, conmutador de lentes, Command Palette Cmd+K y router)."
+    }
+  ],
+  "forbiddenMockLiterals": [
+    "Dr. Valenzuela",
+    "clearance de creatinina < 30",
+    "Se considerará causal inmediata de exclusión",
+    "Comité Central para el ensayo Fase II"
+  ]
+}

@@ -1,0 +1,840 @@
+{
+ "tipos": {
+  "regla": "Regla",
+  "criterio": "Criterio",
+  "logistica": "Logística",
+  "paciente": "Dato del paciente",
+  "pregunta": "Pregunta"
+ },
+ "fuentes": [
+  {
+   "id": "prompt",
+   "title": "System prompt del asistente",
+   "paras": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "folleto",
+   "title": "Folleto del programa Levira Contigo",
+   "paras": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "paciente",
+   "title": "Mensaje de la paciente",
+   "paras": [
+    9,
+    10,
+    11
+   ]
+  }
+ ],
+ "fuenteCorta": {
+  "prompt": "System prompt",
+  "folleto": "Folleto",
+  "paciente": "Paciente"
+ },
+ "fuenteDescripcion": {
+  "prompt": "Instrucción de sistema del asistente. Sus átomos van a la base Programa.",
+  "folleto": "Folleto del programa de apoyo a pacientes. Sus átomos van a la base Programa.",
+  "paciente": "Mensaje recibido por el chat del programa. Sus átomos van a la base Paciente."
+ },
+ "parrafos": [
+  "Eres el asistente del programa de apoyo a pacientes Levira Contigo. Levira es un tratamiento inyectable semanal para el control del peso, de venta bajo receta médica. Respondes consultas de pacientes inscritos usando solo la información del folleto del programa y del directorio de la red.",
+  "Nunca sugieras formas de obtener Levira sin receta vigente ni indiques dosis, cambios de dosis o qué hacer con una dosis olvidada: eso lo define el médico tratante. Si el paciente describe dolor abdominal intenso, vómitos persistentes o signos de reacción alérgica, indícale acudir a un servicio de urgencia.",
+  "Cuando el paciente no pueda ver a su médico, ofrece primero la teleconsulta del programa y luego los centros de la red más cercanos a su ubicación. No compartas datos de otros pacientes. Responde en un tono cercano, en menos de 150 palabras, y cierra preguntando si necesita algo más.",
+  "Levira Contigo acompaña a las personas en tratamiento con Levira durante todo el año. Al inscribirte recibes recordatorios de dosis, material educativo sobre alimentación y actividad física, y un descuento de 30 % en farmacias adheridas.",
+  "Levira requiere receta médica, que tiene vigencia de 90 días. Si tu receta vence, puedes renovarla en una teleconsulta del programa, disponible de lunes a domingo de 8:00 a 22:00, sin costo para pacientes inscritos. El médico de la teleconsulta emite una receta electrónica válida en todo Chile.",
+  "Red de atención en temporada de verano: además de las farmacias adheridas en Santiago, el programa cuenta con puntos en la costa y el sur. En Pucón, Farmacia del Lago (O'Higgins 480) atiende todos los días de 9:00 a 21:00 y tiene stock de Levira. En Villarrica, el Centro Médico Villarrica Sur ofrece consultas presenciales con médicos del programa los días hábiles. En La Serena, Farmacia Avenida del Mar atiende de lunes a sábado.",
+  "Guarda Levira refrigerado entre 2 y 8 °C antes de abrirlo. Una vez en uso, el lápiz puede mantenerse a temperatura ambiente hasta por 30 días. Si viajas, llévalo en tu equipaje de mano y nunca en la bodega del avión.",
+  "Los efectos más frecuentes son náuseas, diarrea y disminución del apetito, que suelen bajar con las semanas. Si olvidas una dosis, no dupliques la siguiente y consulta a tu médico o al programa.",
+  "Para reclamos o sugerencias, escribe a contacto@leviracontigo.cl. Programa sin costo para pacientes con receta vigente de Levira.",
+  "Hola, me llamo Carolina y estoy inscrita en el programa hace ocho meses. Mi doctora de cabecera es la Dra. Fuentes en Providencia, pero estoy de vacaciones en Pucón hasta el 20 de febrero y ella anda fuera del país.",
+  "Me di cuenta de que mi receta venció la semana pasada y me queda solo un lápiz, que alcanza para la dosis de este domingo. Después no tengo cómo comprar más.",
+  "¿Hay algún lugar cerca de Pucón donde me puedan hacer una receta nueva y comprar Levira? Ah, y el lápiz lo tengo en el refri de la cabaña, ¿está bien así? Gracias."
+ ],
+ "atomos": [
+  {
+   "id": "p1",
+   "type": "regla",
+   "text": "Responder solo con el folleto y el directorio de la red",
+   "tags": [
+    "Asistente"
+   ],
+   "anchor": [
+    0,
+    "Respondes consultas de pacientes inscritos usando solo la información del folleto del programa y del directorio de la red"
+   ],
+   "conf": 0.94,
+   "status": "confirmado"
+  },
+  {
+   "id": "p2",
+   "type": "regla",
+   "text": "Nunca sugerir obtener Levira sin receta vigente",
+   "tags": [
+    "Asistente"
+   ],
+   "anchor": [
+    1,
+    "Nunca sugieras formas de obtener Levira sin receta vigente"
+   ],
+   "conf": 0.97,
+   "status": "confirmado"
+  },
+  {
+   "id": "p3",
+   "type": "regla",
+   "text": "No indicar dosis ni qué hacer con dosis olvidadas",
+   "tags": [
+    "Asistente"
+   ],
+   "anchor": [
+    1,
+    "ni indiques dosis, cambios de dosis o qué hacer con una dosis olvidada"
+   ],
+   "conf": 0.9,
+   "status": "confirmado"
+  },
+  {
+   "id": "p4",
+   "type": "regla",
+   "text": "Dolor abdominal intenso, vómitos o alergia: derivar a urgencia",
+   "tags": [
+    "Asistente"
+   ],
+   "anchor": [
+    1,
+    "Si el paciente describe dolor abdominal intenso, vómitos persistentes o signos de reacción alérgica, indícale acudir a un servicio de urgencia"
+   ],
+   "conf": 0.92,
+   "status": "propuesto"
+  },
+  {
+   "id": "p5",
+   "type": "regla",
+   "text": "Sin acceso a su médico: ofrecer teleconsulta y luego centros cercanos",
+   "tags": [
+    "Asistente"
+   ],
+   "anchor": [
+    2,
+    "Cuando el paciente no pueda ver a su médico, ofrece primero la teleconsulta del programa y luego los centros de la red más cercanos a su ubicación"
+   ],
+   "conf": 0.88,
+   "status": "confirmado"
+  },
+  {
+   "id": "p6",
+   "type": "regla",
+   "text": "No compartir datos de otros pacientes",
+   "tags": [
+    "Asistente"
+   ],
+   "anchor": [
+    2,
+    "No compartas datos de otros pacientes"
+   ],
+   "conf": 0.96,
+   "status": "propuesto"
+  },
+  {
+   "id": "p7",
+   "type": "regla",
+   "text": "Tono cercano, menos de 150 palabras, cerrar ofreciendo ayuda",
+   "tags": [
+    "Asistente"
+   ],
+   "anchor": [
+    2,
+    "Responde en un tono cercano, en menos de 150 palabras, y cierra preguntando si necesita algo más"
+   ],
+   "conf": 0.85,
+   "status": "propuesto"
+  },
+  {
+   "id": "f1",
+   "type": "criterio",
+   "text": "Beneficios: recordatorios, material educativo y 30 % de descuento",
+   "tags": [
+    "Beneficios"
+   ],
+   "anchor": [
+    3,
+    "recibes recordatorios de dosis, material educativo sobre alimentación y actividad física, y un descuento de 30 % en farmacias adheridas"
+   ],
+   "conf": 0.87,
+   "status": "propuesto"
+  },
+  {
+   "id": "f2",
+   "type": "criterio",
+   "text": "La receta de Levira dura 90 días",
+   "tags": [
+    "Receta"
+   ],
+   "anchor": [
+    4,
+    "Levira requiere receta médica, que tiene vigencia de 90 días"
+   ],
+   "conf": 0.95,
+   "status": "confirmado"
+  },
+  {
+   "id": "fB",
+   "type": "criterio",
+   "text": "Receta vencida: se renueva gratis en teleconsulta del programa",
+   "tags": [
+    "Receta"
+   ],
+   "anchor": [
+    4,
+    "Si tu receta vence, puedes renovarla en una teleconsulta del programa, disponible de lunes a domingo de 8:00 a 22:00, sin costo para pacientes inscritos"
+   ],
+   "conf": 0.91,
+   "status": "propuesto"
+  },
+  {
+   "id": "f3",
+   "type": "logistica",
+   "text": "Teleconsulta de lunes a domingo, 8:00 a 22:00",
+   "tags": [
+    "Receta"
+   ],
+   "anchor": [
+    4,
+    "disponible de lunes a domingo de 8:00 a 22:00"
+   ],
+   "conf": 0.93,
+   "status": "propuesto"
+  },
+  {
+   "id": "f4",
+   "type": "criterio",
+   "text": "La receta de teleconsulta es electrónica y válida en todo Chile",
+   "tags": [
+    "Receta"
+   ],
+   "anchor": [
+    4,
+    "emite una receta electrónica válida en todo Chile"
+   ],
+   "conf": 0.9,
+   "status": "propuesto"
+  },
+  {
+   "id": "f5",
+   "type": "logistica",
+   "text": "Farmacia del Lago, Pucón: O'Higgins 480, 9:00 a 21:00, con stock",
+   "tags": [
+    "Red"
+   ],
+   "anchor": [
+    5,
+    "En Pucón, Farmacia del Lago (O'Higgins 480) atiende todos los días de 9:00 a 21:00 y tiene stock de Levira"
+   ],
+   "conf": 0.94,
+   "status": "propuesto"
+  },
+  {
+   "id": "f6",
+   "type": "logistica",
+   "text": "Centro Médico Villarrica Sur: consultas presenciales días hábiles",
+   "tags": [
+    "Red"
+   ],
+   "anchor": [
+    5,
+    "En Villarrica, el Centro Médico Villarrica Sur ofrece consultas presenciales con médicos del programa los días hábiles"
+   ],
+   "conf": 0.89,
+   "status": "propuesto"
+  },
+  {
+   "id": "f7",
+   "type": "logistica",
+   "text": "Farmacia Avenida del Mar, La Serena, lunes a sábado",
+   "tags": [
+    "Red"
+   ],
+   "anchor": [
+    5,
+    "En La Serena, Farmacia Avenida del Mar atiende de lunes a sábado"
+   ],
+   "conf": 0.92,
+   "status": "propuesto"
+  },
+  {
+   "id": "f8",
+   "type": "criterio",
+   "text": "Antes de abrir, refrigerar entre 2 y 8 °C",
+   "tags": [
+    "Cuidados"
+   ],
+   "anchor": [
+    6,
+    "Guarda Levira refrigerado entre 2 y 8 °C antes de abrirlo"
+   ],
+   "conf": 0.95,
+   "status": "propuesto"
+  },
+  {
+   "id": "f9",
+   "type": "criterio",
+   "text": "En uso, hasta 30 días a temperatura ambiente",
+   "tags": [
+    "Cuidados"
+   ],
+   "anchor": [
+    6,
+    "el lápiz puede mantenerse a temperatura ambiente hasta por 30 días"
+   ],
+   "conf": 0.9,
+   "status": "propuesto"
+  },
+  {
+   "id": "f10",
+   "type": "criterio",
+   "text": "Al viajar, llevarlo en el equipaje de mano",
+   "tags": [
+    "Cuidados"
+   ],
+   "anchor": [
+    6,
+    "Si viajas, llévalo en tu equipaje de mano y nunca en la bodega del avión"
+   ],
+   "conf": 0.93,
+   "status": "propuesto"
+  },
+  {
+   "id": "f11",
+   "type": "criterio",
+   "text": "Efectos frecuentes: náuseas, diarrea, menos apetito",
+   "tags": [
+    "Cuidados"
+   ],
+   "anchor": [
+    7,
+    "Los efectos más frecuentes son náuseas, diarrea y disminución del apetito"
+   ],
+   "conf": 0.88,
+   "status": "propuesto"
+  },
+  {
+   "id": "f12",
+   "type": "criterio",
+   "text": "Dosis olvidada: no duplicar y consultar",
+   "tags": [
+    "Cuidados"
+   ],
+   "anchor": [
+    7,
+    "Si olvidas una dosis, no dupliques la siguiente y consulta a tu médico o al programa"
+   ],
+   "conf": 0.66,
+   "status": "propuesto"
+  },
+  {
+   "id": "f13",
+   "type": "logistica",
+   "text": "Contacto: contacto@leviracontigo.cl",
+   "tags": [
+    "Beneficios"
+   ],
+   "anchor": [
+    8,
+    "escribe a contacto@leviracontigo.cl"
+   ],
+   "conf": 0.97,
+   "status": "propuesto"
+  },
+  {
+   "id": "c1",
+   "type": "paciente",
+   "text": "Inscrita en el programa hace ocho meses",
+   "tags": [
+    "Perfil"
+   ],
+   "anchor": [
+    9,
+    "estoy inscrita en el programa hace ocho meses"
+   ],
+   "conf": 0.95,
+   "status": "confirmado"
+  },
+  {
+   "id": "c2",
+   "type": "paciente",
+   "text": "Médica de cabecera: Dra. Fuentes, Providencia",
+   "tags": [
+    "Perfil"
+   ],
+   "anchor": [
+    9,
+    "Mi doctora de cabecera es la Dra. Fuentes en Providencia"
+   ],
+   "conf": 0.91,
+   "status": "propuesto"
+  },
+  {
+   "id": "c3",
+   "type": "paciente",
+   "text": "Su médica está fuera del país",
+   "tags": [
+    "Situación"
+   ],
+   "anchor": [
+    9,
+    "ella anda fuera del país"
+   ],
+   "conf": 0.84,
+   "status": "propuesto"
+  },
+  {
+   "id": "c4",
+   "type": "paciente",
+   "text": "De vacaciones en Pucón hasta el 20 de febrero",
+   "tags": [
+    "Situación"
+   ],
+   "anchor": [
+    9,
+    "estoy de vacaciones en Pucón hasta el 20 de febrero"
+   ],
+   "conf": 0.96,
+   "status": "confirmado"
+  },
+  {
+   "id": "c5",
+   "type": "paciente",
+   "text": "Su receta venció la semana pasada",
+   "tags": [
+    "Tratamiento"
+   ],
+   "anchor": [
+    10,
+    "mi receta venció la semana pasada"
+   ],
+   "conf": 0.93,
+   "status": "propuesto"
+  },
+  {
+   "id": "c6",
+   "type": "paciente",
+   "text": "Le queda un lápiz, justo para la dosis del domingo",
+   "tags": [
+    "Tratamiento"
+   ],
+   "anchor": [
+    10,
+    "me queda solo un lápiz, que alcanza para la dosis de este domingo"
+   ],
+   "conf": 0.79,
+   "status": "propuesto"
+  },
+  {
+   "id": "c8",
+   "type": "paciente",
+   "text": "Guarda el lápiz en el refrigerador",
+   "tags": [
+    "Tratamiento"
+   ],
+   "anchor": [
+    11,
+    "el lápiz lo tengo en el refri de la cabaña"
+   ],
+   "conf": 0.64,
+   "status": "propuesto"
+  },
+  {
+   "id": "c7",
+   "type": "pregunta",
+   "text": "¿Dónde renovar la receta y comprar Levira cerca de Pucón?",
+   "tags": [
+    "Intención"
+   ],
+   "anchor": [
+    11,
+    "¿Hay algún lugar cerca de Pucón donde me puedan hacer una receta nueva y comprar Levira?"
+   ],
+   "conf": 0.95,
+   "status": "propuesto"
+  },
+  {
+   "id": "c9",
+   "type": "pregunta",
+   "text": "¿Está bien guardarlo en el refrigerador?",
+   "tags": [
+    "Intención"
+   ],
+   "anchor": [
+    11,
+    "¿está bien así?"
+   ],
+   "conf": 0.58,
+   "status": "propuesto"
+  }
+ ],
+ "bases": [
+  {
+   "id": "Programa",
+   "groups": [
+    "Asistente",
+    "Cuidados",
+    "Beneficios",
+    "Receta",
+    "Red"
+   ]
+  },
+  {
+   "id": "Paciente",
+   "groups": [
+    "Perfil",
+    "Situación",
+    "Tratamiento",
+    "Intención"
+   ]
+  }
+ ],
+ "tiposRelacion": [
+  "cumple",
+  "activa",
+  "consulta por",
+  "cerca de",
+  "detalla",
+  "restringe"
+ ],
+ "relaciones": [
+  {
+   "id": "r1",
+   "source": "c5",
+   "target": "fB",
+   "type": "activa"
+  },
+  {
+   "id": "r2",
+   "source": "c3",
+   "target": "p5",
+   "type": "activa"
+  },
+  {
+   "id": "r3",
+   "source": "c1",
+   "target": "fB",
+   "type": "cumple"
+  },
+  {
+   "id": "r4",
+   "source": "c4",
+   "target": "f5",
+   "type": "cerca de"
+  },
+  {
+   "id": "r5",
+   "source": "c4",
+   "target": "f6",
+   "type": "cerca de"
+  },
+  {
+   "id": "r6",
+   "source": "c7",
+   "target": "fB",
+   "type": "consulta por"
+  },
+  {
+   "id": "r7",
+   "source": "c7",
+   "target": "f5",
+   "type": "consulta por"
+  },
+  {
+   "id": "r8",
+   "source": "c9",
+   "target": "f9",
+   "type": "consulta por"
+  },
+  {
+   "id": "r9",
+   "source": "c8",
+   "target": "f8",
+   "type": "cumple"
+  },
+  {
+   "id": "r10",
+   "source": "c6",
+   "target": "p3",
+   "type": "activa"
+  },
+  {
+   "id": "r11",
+   "source": "f3",
+   "target": "fB",
+   "type": "detalla"
+  },
+  {
+   "id": "r12",
+   "source": "f4",
+   "target": "fB",
+   "type": "detalla"
+  },
+  {
+   "id": "r13",
+   "source": "p2",
+   "target": "g:Red",
+   "type": "restringe",
+   "inherited": true
+  }
+ ],
+ "informe": {
+  "title": "Salida del sistema: consulta de paciente",
+  "published": "v1",
+  "sections": [
+   {
+    "id": "s1",
+    "title": "Respuesta al paciente",
+    "slot": "Mensaje de respuesta",
+    "query": "responder las preguntas de la paciente respetando las reglas del asistente",
+    "filters": [
+     [
+      "Base",
+      "Paciente"
+     ],
+     [
+      "Distancia",
+      "1 salto"
+     ],
+     [
+      "Tag",
+      "Asistente"
+     ]
+    ],
+    "mode": "prosa",
+    "items": [
+     [
+      "c7",
+      "regla"
+     ],
+     [
+      "c5",
+      "regla"
+     ],
+     [
+      "c3",
+      "regla"
+     ],
+     [
+      "p5",
+      "regla"
+     ],
+     [
+      "fB",
+      "regla"
+     ],
+     [
+      "f3",
+      "regla"
+     ],
+     [
+      "c1",
+      "regla"
+     ],
+     [
+      "f4",
+      "regla"
+     ],
+     [
+      "c4",
+      "regla"
+     ],
+     [
+      "f5",
+      "regla"
+     ],
+     [
+      "f6",
+      "regla"
+     ],
+     [
+      "c9",
+      "regla"
+     ],
+     [
+      "c8",
+      "regla"
+     ],
+     [
+      "f8",
+      "regla"
+     ],
+     [
+      "f9",
+      "regla"
+     ],
+     [
+      "p7",
+      "regla"
+     ]
+    ]
+   },
+   {
+    "id": "s2",
+    "title": "Acceso a receta",
+    "slot": "Cómo renovar la receta",
+    "query": "cómo renovar una receta vencida estando fuera de Santiago",
+    "filters": [
+     [
+      "Tag",
+      "Receta"
+     ],
+     [
+      "Relación",
+      "activa, detalla"
+     ]
+    ],
+    "mode": "tabla",
+    "items": [
+     [
+      "fB",
+      "regla"
+     ],
+     [
+      "f4",
+      "regla"
+     ],
+     [
+      "f3",
+      "regla"
+     ]
+    ]
+   },
+   {
+    "id": "s3",
+    "title": "Puntos cercanos",
+    "slot": "Red de atención cerca de la paciente",
+    "query": "farmacias y centros de la red cerca de su ubicación",
+    "filters": [
+     [
+      "Tag",
+      "Red"
+     ],
+     [
+      "Relación",
+      "cerca de"
+     ]
+    ],
+    "mode": "viñetas",
+    "items": [
+     [
+      "f5",
+      "regla"
+     ],
+     [
+      "f6",
+      "regla"
+     ],
+     [
+      "f7",
+      "excluido"
+     ]
+    ]
+   },
+   {
+    "id": "s4",
+    "title": "Reglas aplicadas",
+    "slot": "Restricciones del system prompt",
+    "query": "reglas del asistente que condicionan esta respuesta",
+    "filters": [
+     [
+      "Tag",
+      "Asistente"
+     ]
+    ],
+    "mode": "viñetas",
+    "items": [
+     [
+      "p4",
+      "nuevo"
+     ],
+     [
+      "p1",
+      "regla"
+     ],
+     [
+      "p2",
+      "regla"
+     ],
+     [
+      "p3",
+      "regla"
+     ],
+     [
+      "p5",
+      "regla"
+     ],
+     [
+      "p7",
+      "regla"
+     ],
+     [
+      "p6",
+      "excluido"
+     ]
+    ]
+   }
+  ]
+ },
+ "frases": {
+  "s1": [
+   {
+    "text": "Hola, Carolina. Como tu receta venció y la Dra. Fuentes está fuera del país, lo más rápido es una teleconsulta del programa: es gratis para ti y funciona todos los días de 8:00 a 22:00.",
+    "from": [
+     "c5",
+     "c3",
+     "p5",
+     "fB",
+     "f3",
+     "c1"
+    ]
+   },
+   {
+    "text": "El médico te emite una receta electrónica válida en todo Chile.",
+    "from": [
+     "f4"
+    ]
+   },
+   {
+    "text": "Con ella puedes comprar Levira en Farmacia del Lago, O'Higgins 480 en Pucón, abierta todos los días de 9:00 a 21:00. Si prefieres consulta presencial, el Centro Médico Villarrica Sur atiende los días hábiles.",
+    "from": [
+     "c7",
+     "c4",
+     "f5",
+     "f6"
+    ]
+   },
+   {
+    "text": "Sobre el lápiz: tenerlo en el refri está bien, y si ya lo empezaste también puede quedar a temperatura ambiente hasta 30 días.",
+    "from": [
+     "c9",
+     "c8",
+     "f8",
+     "f9"
+    ]
+   },
+   {
+    "text": "¿Necesitas algo más?",
+    "from": [
+     "p7"
+    ]
+   }
+  ]
+ }
+}

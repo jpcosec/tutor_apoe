@@ -6,7 +6,9 @@ Idempotente: borra lo que generó la vez anterior (los directorios de documentos
 y lo vuelve a escribir con la API pública de sldb (`init_store`, `init_relations`,
 `add_model`, `create_document`, `update_store_indexes`, `rebuild_edges`), igual que hace
 `kb.portable.build_store`. Lo que NO genera (`ingest/**`: fuentes y fragmentos; `proposed/**`:
-átomos propuestos) lo conserva y lo vuelve a registrar en el store. Luego:
+átomos propuestos) lo conserva y lo vuelve a registrar en el store. `agent/**` (el rol del tutor) se
+siembra desde el pack solo si falta: después es texto de personas, que se edita en la wiki de
+configuración (`tutor.wiki`), y cada corrida lo conserva igual. Luego:
 
 1. esquema de cada fuente (`SourceOutline`, `tutor.outline`): capítulos/secciones → páginas y fragmentos;
 2. anclaje (`tutor.anchor`, salvo `--no-anchor`): cada átomo `book` queda con los fragmentos que lo
@@ -26,7 +28,8 @@ Qué produce (ver `kbs/README.md`):
 - `relations/`: un `RelationDoc` `child_of--<hijo>--<padre>` por `parent_id`, con el tipo
   `child_of` declarado en `kgdb/relation_types/child_of.md`;
 - `categories/`: un `TagNamespaceDoc` por namespace de tag (de `tag-namespaces.yaml` o propio);
-- `agent/agent-tutor-apos.md`: el rol `tutor` (persona e instrucciones del pack `apos`);
+- `agent/agent-tutor-apos.md`: el rol `tutor`, sembrado con la persona e instrucciones del pack `apos`
+  la primera vez (para volver a sembrarlo, borra `agent/` antes de generar);
 - `projections/projection-tutor.md`: la `ProjectionDoc` de pron que el rol ve.
 """
 
@@ -82,7 +85,9 @@ AGENT_NAME = f"agent-{ROLE}-apos"
 PROJECTION_NAME = f"projection-{ROLE}"
 ROOT_BRANCH = "branch-apos"
 ACTOR = "tutor kb_build"
-GENERATED_DIRS = ("knowledge", "sources", "taxonomy", "relations", "kgdb", "sldb", "categories", "agent", "projections")
+GENERATED_DIRS = ("knowledge", "sources", "taxonomy", "relations", "kgdb", "sldb", "categories", "projections")
+#: Carpetas que se siembran una vez y después son de personas (`authored`): si ya tienen páginas, se conservan.
+SEEDED_DIRS = ("agent",)
 #: Carpetas que el build conserva y vuelve a registrar (no son función de desk/atoms).
 PRESERVED_DIRS = ("ingest", "proposed")
 FRONTMATTER = re.compile(r"\A---\n(.*?)\n---\n(.*)\Z", re.S)
@@ -449,13 +454,15 @@ def model_for_path(relative: str) -> str | None:
 
 def write_kb(out: Path, plan: BuildPlan) -> dict[str, int]:
     """Limpia lo generado antes, escribe `kb.yaml` y `tag-namespaces.yaml`, arma el store y los `.md`,
-    y vuelve a registrar lo conservado (`ingest/`, `proposed/`). Devuelve cuántos conservados registró."""
+    y vuelve a registrar lo conservado (`ingest/`, `proposed/` y, si ya existe, `agent/`). Devuelve
+    cuántos conservados registró."""
     from sldb.api import add_model, create_document, init_relations, init_store, rebuild_edges, track_document_file, update_store_indexes
 
     out = out.resolve()
     pythonpath = str((out / plan.manifest["kb"]["pythonpath"]).resolve())
     for name in GENERATED_DIRS:
         shutil.rmtree(out / name, ignore_errors=True)
+    kept = [path for name in SEEDED_DIRS for path in sorted((out / name).rglob("*.md"))]  # antes de sembrar
     out.mkdir(parents=True, exist_ok=True)
     (out / "kb.yaml").write_text(
         "# Lo que esta KB declara de sí misma (contrato kb_version 1, lo lee runtime/kb).\n"
@@ -474,20 +481,56 @@ def write_kb(out: Path, plan: BuildPlan) -> dict[str, int]:
     for ref in MODEL_REFS:
         add_model(store, ref, pythonpath=pythonpath, actor=ACTOR)
     for doc in plan.docs:
+        if out / doc.path in kept:
+            continue  # ya lo escribió una persona: no se pisa con el pack
         create_document(store, doc.model, out / doc.path, doc.payload, name=doc.doc_name, pythonpath=pythonpath, actor=ACTOR)
     preserved: dict[str, int] = {}
-    for folder in PRESERVED_DIRS:
-        for path in sorted((out / folder).rglob("*.md")) if (out / folder).is_dir() else []:
-            relative = path.relative_to(out).as_posix()
-            model = model_for_path(relative)
-            if model is None:
-                log.warning("conservado sin modelo conocido, se omite: %s", relative)
-                continue
-            track_document_file(store, model, path, pythonpath=pythonpath, actor=ACTOR)
-            preserved[model] = preserved.get(model, 0) + 1
+    conserved = [path for folder in PRESERVED_DIRS for path in sorted((out / folder).rglob("*.md"))]
+    for path in (*conserved, *kept):
+        relative = path.relative_to(out).as_posix()
+        model = model_for_path(relative)
+        if model is None:
+            log.warning("conservado sin modelo conocido, se omite: %s", relative)
+            continue
+        track_document_file(store, model, path, pythonpath=pythonpath, actor=ACTOR)
+        preserved[model] = preserved.get(model, 0) + 1
     update_store_indexes(store, pythonpath=pythonpath, wait=True)
     rebuild_edges(store, pythonpath, wait=True)
     return preserved
+
+
+_SIGNED_AT = re.compile(r"^  at: .*$", re.MULTILINE)
+
+
+def generated_texts(out: Path) -> dict[Path, str]:
+    """El texto de cada página generada, antes de regenerar: lo que `keep_signatures` compara después."""
+    out = out.resolve()
+    return {path: path.read_text(encoding="utf-8") for name in GENERATED_DIRS for path in (out / name).rglob("*.md")}
+
+
+def keep_signatures(out: Path, before: dict[Path, str]) -> int:
+    """Devuelve su firma anterior (`sldb.at`) a cada página que quedó igual, y pone el store al día.
+
+    sldb firma con la hora cada página que crea, así que un build que no cambia nada movía igual la
+    fecha de cientos de archivos versionados. Solo se toca la línea de la fecha, y solo cuando el
+    resto del texto es idéntico; una página que sí cambió conserva su firma nueva. Devuelve cuántas."""
+    from sldb.api import rebuild_edges, update_store_indexes
+
+    out = out.resolve()
+    kept = 0
+    for path, old in before.items():
+        if not path.is_file():
+            continue
+        new = path.read_text(encoding="utf-8")
+        if new != old and _SIGNED_AT.sub("", new, count=1) == _SIGNED_AT.sub("", old, count=1):
+            path.write_text(old, encoding="utf-8")
+            kept += 1
+    if kept:
+        store = out / ".sldb"
+        pythonpath = str((out / "..").resolve())
+        update_store_indexes(store, pythonpath=pythonpath, wait=True)
+        rebuild_edges(store, pythonpath, wait=True)
+    return kept
 
 
 def enrich(out: Path, *, anchor: bool = True, jev_client: Any | None = None, force_anchor: bool = False) -> dict[str, Any]:
@@ -542,10 +585,13 @@ def build(
     atoms = read_atoms(atoms_dir)
     built = plan(atoms, atoms_dir, pack_dir, embedder.id())
     log.info("%d átomos leídos, %d documentos a escribir", len(atoms), len(built.docs))
+    before = generated_texts(out)
     preserved = write_kb(out, built)
     if preserved:
         log.info("conservados y registrados: %s", preserved)
     enrichment = enrich(out, anchor=anchor, jev_client=jev_client, force_anchor=force_anchor)
+    if kept := keep_signatures(out, before):
+        log.info("%d páginas sin cambios conservan su firma", kept)
     kb, report = validate(out, embedder)
     if report.is_valid and index:
         counts = kb.refresh_index()

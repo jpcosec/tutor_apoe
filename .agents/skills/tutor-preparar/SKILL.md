@@ -14,25 +14,22 @@ haciendo y no le pidas que escriba comandos. Ejecuta todo desde la raíz del rep
 
 ## Pasos
 
-1. Trae lo último: `git pull --ff-only origin main`. Si falla porque hay cambios locales sin
-   guardar, no los descartes: usa la skill `tutor-guardar-cambios` o pregunta.
-2. Comprueba si ya está instalado: `tutor --help`. Si responde, salta al paso 4.
-3. Instala (tarda unos minutos):
-   ```bash
-   ./scripts/bootstrap_deps.sh        # trae sldb y pron a third_party/ (necesita la herramienta `repo`)
-   pip install -r requirements.txt    # instala el tutor y sus paquetes
-   ```
-   Si `repo` no existe o `bootstrap_deps.sh` no puede descargar, detente y dile a la persona
-   que le pida ayuda a JP: es un problema de acceso, no algo que debas rodear.
-4. Reconstruye y valida la base (unos 2 minutos, no usa internet):
-   ```bash
-   export TUTOR_EMBEDDER=hash
-   tutor kb build
-   tutor kb validate --kb kbs/apos
-   ```
-   Debe terminar con `KB válida`. Si la validación lista errores `hash_d no calza`, es que la
-   base derivada quedó vieja: `tutor kb build` lo arregla.
-5. Prueba una pregunta sin gastar nada: `tutor ask --kb kbs/apos --model test "¿Qué es una acción?"`.
+1. Trae lo último: `git pull --ff-only`. Si falla porque hay cambios locales sin guardar, no
+   los descartes: usa la skill `tutor-guardar-cambios` o pregunta.
+2. Comprueba si ya está instalado: `./install.sh --check`. Si termina con `Todo en orden.`,
+   salta al paso 4.
+3. Instala (tarda entre 5 y 10 minutos): `./install.sh`. Crea `.venv/`, trae sldb y pron a
+   `third_party/`, construye la base y la valida. Debe terminar con `Instalación lista.`.
+   Si no puede descargar, detente y dile a la persona que le pida ayuda a JP: es un problema
+   de acceso, no algo que debas rodear. Los mensajes de error más comunes están en
+   `install.md`.
+4. Prueba una pregunta sin gastar nada:
+   `.venv/bin/tutor ask --kb kbs/apos --model test "¿Qué es una acción?"`.
+
+Los comandos del tutor quedan en `.venv/bin/` (`.venv/bin/tutor`, `.venv/bin/tutor-mcp`).
+Si la validación lista errores `hash_d no calza`, la base derivada quedó vieja:
+`TUTOR_EMBEDDER=hash .venv/bin/tutor kb build` la reconstruye. Reconstruir no modifica
+archivos versionados si los átomos no cambiaron.
 
 ## Qué decirle al terminar
 
