@@ -351,3 +351,31 @@ def test_kb_build_siembra_el_rol_una_vez_y_despues_conserva_lo_editado(tmp_path:
     # Sin la página (alguien borró `agent/`), se vuelve a sembrar desde el pack.
     page.unlink()
     assert world.agent(build(), "tutor")["framing"] == "Persona nueva del pack."
+
+
+def test_kb_build_no_mueve_la_firma_de_las_paginas_que_no_cambian(tmp_path: Path) -> None:
+    """Un build que no cambia nada deja los `.md` generados byte a byte: sin fechas nuevas que commitear."""
+    import time
+
+    atoms, out, pack = tmp_path / "atoms", tmp_path / "kbs" / "mini", tmp_path / "pack"
+    (atoms / "branches").mkdir(parents=True)
+    pack.mkdir()
+    (atoms / "tag-namespaces.yaml").write_text((world.repo_root() / "desk" / "atoms" / "tag-namespaces.yaml").read_text(encoding="utf-8"), encoding="utf-8")
+    (atoms / "branches" / "branch-mini.md").write_text(BRANCH_MD, encoding="utf-8")
+    (atoms / "atom-a.md").write_text(ATOM_MD.format(id="atom-a", title="A"), encoding="utf-8")
+
+    def build() -> dict[Path, str]:
+        report = kb_build.build(atoms, out, pack_dir=pack, embedder_name="hash", index=False, anchor=False)
+        assert report.is_valid, [e.line() for e in report.errors]
+        return kb_build.generated_texts(out)
+
+    first = build()
+    assert first
+    time.sleep(1.1)  # la firma lleva la hora al segundo
+    assert build() == first
+
+    (atoms / "atom-b.md").write_text(ATOM_MD.format(id="atom-b", title="B"), encoding="utf-8")
+    time.sleep(1.1)
+    third = build()
+    page = out.resolve() / "knowledge" / "atom-a.md"
+    assert third[page] == first[page] and len(third) > len(first)

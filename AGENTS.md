@@ -29,15 +29,11 @@ cambios sin commitear de otra sesión: no lo toques.
 git fetch origin
 git worktree add -b <rama> ../tutor_apoe.wt/<rama> origin/dev
 cd ../tutor_apoe.wt/<rama>
-python3 -m venv .venv                      # Python 3.12 o más
-git clone --depth 1 https://github.com/jpcosec/sldb third_party/sldb
-git clone --depth 1 -b master https://github.com/jpcosec/pron third_party/pron
-.venv/bin/pip install -r requirements.txt
+./install.sh                               # .venv/, sldb y pron, base construida y validada (5–10 min)
 export TUTOR_EMBEDDER=hash                 # sin red ni claves
-.venv/bin/tutor kb build                   # crea kbs/apos/.sldb (derivado, ~1 min)
-.venv/bin/tutor kb validate --kb kbs/apos  # debe decir "KB válida"
 ```
 
+Debe terminar con `Instalación lista.`. Detalle y errores comunes en [`install.md`](install.md).
 `third_party/sldb`, `third_party/pron`, `.venv/` y `kbs/*/.sldb/` están ignorados por git.
 
 ### 2. Probar
@@ -50,9 +46,9 @@ export TUTOR_EMBEDDER=hash                 # sin red ni claves
 | `superficie/` | `cd superficie && npm ci && npm test && npm run build` |
 | Instalación, dependencias, `docker/` o antes de cerrar un trabajo grande | la prueba aislada, abajo |
 
-Los tests regeneran la base y dejan cientos de `.md` de `kbs/apos/` con la fecha cambiada.
-Antes de commitear, descártalos con `git checkout -- kbs` (si tu cambio toca `kbs/`,
-regenera con `tutor kb build` y agrega solo lo tuyo).
+`tutor kb build` y los tests no deben dejar archivos modificados en `kbs/apos/` si no
+cambiaste átomos: el build conserva la firma de cada página que queda igual. Si
+`git status` muestra cambios ahí que no esperabas, míralos antes de commitear.
 
 Prueba aislada (instala desde cero, construye la base, MCP, wiki y todos los tests; ~15 min).
 Debe terminar en `SMOKE OK`:
