@@ -31,8 +31,9 @@ Para comprobar más adelante una instalación que ya existe: `./install.sh --che
 .venv/bin/tutor web --kb kbs/apos --model test --port 8300
 ```
 
-Y abrir <http://127.0.0.1:8300> en el navegador. Las pestañas son Conversación, Paquetes,
-Grafo APOS, Scratch y Configuración (la wiki donde se cambia cómo responde el tutor).
+Y abrir <http://127.0.0.1:8300> en el navegador. Todo está en un solo menú: Conversación,
+Paquetes, Grafo APOS, Scratch, Experto, Ejemplos, Bibliografía y Configuración (la wiki donde
+se cambia cómo responde el tutor).
 
 Con Codex u otro agente: ábrelo en esta carpeta y pide lo que necesites con tus palabras
 ("abre el visor", "qué dice la base sobre encapsulación", "carga este PDF", "guarda los
