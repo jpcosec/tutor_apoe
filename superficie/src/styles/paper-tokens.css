@@ -1,0 +1,825 @@
+/**
+ * Sistema de Diseño Monocromático Editorial ("Mundo de Papel con Fierros Ocultables") — Stitch 1:1.
+ * Superficie cálida (#FAF9F6 / #F4F3EF), tinta (#1A1A1A / #2C2C2A / #73726E / #9C9A94),
+ * filetes de 1px (#E6E4DD / #D4D2CC) y radios estrictos de 0–2px. Sin colores de semáforo.
+ */
+
+:root {
+  --wb-paper: #FAF9F6;
+  --wb-stone: #F4F3EF;
+  --wb-stone-hover: #EFECE6;
+  --wb-tint: #EFECE6;
+  --wb-card: #FFFFFF;
+  --wb-hairline: #E6E4DD;
+  --wb-border: #D4D2CC;
+  --wb-ink: #1A1A1A;
+  --wb-ink-body: #2C2C2A;
+  --wb-ink-muted: #73726E;
+  --wb-ink-tertiary: #9C9A94;
+  --wb-radius: 2px;
+
+  --wb-font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --wb-font-serif: "Newsreader", Georgia, Cambria, serif;
+  --wb-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Aliases internos sin colores semáforo */
+  --bg-canvas: var(--wb-paper);
+  --bg-sidebar: var(--wb-stone);
+  --ink-primary: var(--wb-ink);
+  --ink-secondary: var(--wb-ink-muted);
+  --ink-muted: var(--wb-ink-tertiary);
+  --border-hairline: var(--wb-hairline);
+  --font-serif: var(--wb-font-serif);
+  --font-sans: var(--wb-font-sans);
+  --font-mono: var(--wb-font-mono);
+  --radius-sm: 2px;
+  --radius-md: 2px;
+}
+
+::selection {
+  background-color: #E6E4DD;
+  color: #1A1A1A;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4D2CC;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #73726E;
+}
+
+.wb-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--wb-paper);
+  color: var(--wb-ink);
+  font-family: var(--wb-font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.wb-mono {
+  font-family: var(--wb-font-mono);
+}
+
+.wb-serif {
+  font-family: var(--wb-font-serif);
+}
+
+/* =========================================================================
+ * CABECERA UNIFICADA STITCH (44px, breadcrumb + lentes con corchetes + acciones)
+ * ========================================================================= */
+.wb-topbar {
+  height: 44px;
+  min-height: 44px;
+  border-bottom: 1px solid var(--wb-hairline);
+  background-color: var(--wb-paper);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--wb-font-mono);
+  font-size: 12px;
+  z-index: 30;
+  user-select: none;
+}
+
+.wb-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.wb-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--wb-font-mono);
+  font-size: 12px;
+  color: var(--wb-ink-muted);
+}
+
+.wb-breadcrumb-root {
+  color: var(--wb-ink);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.wb-breadcrumb-sep {
+  color: var(--wb-border);
+}
+
+.wb-breadcrumb-active {
+  color: var(--wb-ink);
+  font-weight: 600;
+}
+
+.wb-breadcrumb-switch {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font-family: var(--wb-font-mono);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.wb-breadcrumb-switch:hover {
+  text-decoration: underline;
+}
+
+.wb-context-pill {
+  font-family: var(--wb-font-mono);
+  font-size: 10.5px;
+  color: var(--wb-ink-muted);
+  background-color: var(--wb-card);
+  border: 1px solid var(--wb-border);
+  padding: 2px 7px;
+  border-radius: var(--wb-radius);
+}
+
+/* Selector de 3 Lentes estilo Stitch: Lectura · [ Estructura / Fierros ] · Esquema */
+.wb-lens-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--wb-font-mono);
+  font-size: 12px;
+}
+
+.wb-lens-dot {
+  color: var(--wb-border);
+}
+
+.wb-lens-link {
+  border: 1px solid transparent;
+  background: transparent;
+  font-family: var(--wb-font-mono);
+  font-size: 12px;
+  color: var(--wb-ink-muted);
+  padding: 2px 8px;
+  border-radius: var(--wb-radius);
+  cursor: pointer;
+  transition: color 120ms ease, background-color 120ms ease, border-color 120ms ease;
+}
+
+.wb-lens-link:hover {
+  color: var(--wb-ink);
+}
+
+.wb-lens-link.active {
+  color: var(--wb-ink);
+  font-weight: 500;
+  background-color: var(--wb-stone);
+  border-color: var(--wb-border);
+}
+
+.wb-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--wb-font-mono);
+  font-size: 11px;
+  color: var(--wb-ink-muted);
+}
+
+/* =========================================================================
+ * SPLITS DE 2 PANELES (38% / 62% y 48% / 52%)
+ * ========================================================================= */
+.wb-split-38-62 {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.wb-pane-left-38 {
+  width: 38%;
+  min-width: 340px;
+  max-width: 560px;
+  background-color: var(--wb-stone);
+  border-right: 1px solid var(--wb-hairline);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.wb-pane-right-62 {
+  flex: 1;
+  background-color: var(--wb-paper);
+  overflow-y: auto;
+  position: relative;
+}
+
+.wb-split-48-52 {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.wb-pane-left-48 {
+  width: 48%;
+  background-color: var(--wb-stone);
+  border-right: 1px solid var(--wb-hairline);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px 32px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.wb-pane-right-52 {
+  width: 52%;
+  flex: 1;
+  background-color: var(--wb-paper);
+  padding: 40px 44px;
+  overflow-y: auto;
+}
+
+/* Hoja editorial derecha (max-w-2xl = 672px) con espacio izquierdo para la canaleta marginal */
+.wb-editorial-sheet {
+  max-width: 672px;
+  margin: 0 auto;
+  padding: 48px 48px 96px 140px;
+}
+
+.wb-editorial-sheet--lectura {
+  max-width: 672px;
+  margin: 0 auto;
+  padding: 48px 48px 96px 48px;
+}
+
+/* =========================================================================
+ * CANALETA MARGINAL DE FIERROS (1 sola línea silenciosa en el margen izquierdo)
+ * ========================================================================= */
+.wb-block-with-gutter {
+  position: relative;
+  padding-left: 20px;
+  border-left: 1px solid var(--wb-border);
+  margin-bottom: 28px;
+}
+
+.wb-block-with-gutter--editable {
+  border-left-color: var(--wb-ink);
+}
+
+.wb-block-with-gutter--lectura {
+  position: relative;
+  padding-left: 0;
+  border-left: none;
+  margin-bottom: 24px;
+}
+
+.wb-marginal-gutter {
+  position: absolute;
+  left: -148px;
+  top: 2px;
+  width: 136px;
+  text-align: right;
+  padding-right: 8px;
+  font-family: var(--wb-font-mono);
+  font-size: 9.5px;
+  line-height: 1.35;
+  color: var(--wb-ink-muted);
+  user-select: none;
+  pointer-events: none;
+}
+
+.wb-marginal-gutter__sub {
+  display: block;
+  font-size: 8.5px;
+  color: var(--wb-ink-tertiary);
+  margin-top: 2px;
+}
+
+/* =========================================================================
+ * BLOQUES DE TRANSCLUSIÓN, TABLAS Y PROSA
+ * ========================================================================= */
+.wb-transclusion-card {
+  background-color: rgba(244, 243, 239, 0.65);
+  border: 1px solid var(--wb-border);
+  border-left: 2px solid var(--wb-ink);
+  border-radius: var(--wb-radius);
+  padding: 14px 16px;
+}
+
+.wb-transclusion-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--wb-font-mono);
+  font-size: 10px;
+  color: var(--wb-ink-muted);
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--wb-hairline);
+}
+
+.wb-transclusion-card__quote {
+  font-family: var(--wb-font-serif);
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--wb-ink);
+  margin: 0;
+}
+
+/* Papel cuadriculado de 24px para el Studio UML (Vista 04) */
+.wb-paper-grid {
+  background-size: 24px 24px;
+  background-image:
+    linear-gradient(to right, rgba(230, 228, 221, 0.55) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(230, 228, 221, 0.55) 1px, transparent 1px);
+}
+
+/* Botones, Chips e Inputs Monocromáticos */
+.wb-btn {
+  font-family: var(--wb-font-mono);
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: var(--wb-radius);
+  border: 1px solid var(--wb-border);
+  background-color: var(--wb-card);
+  color: var(--wb-ink);
+  cursor: pointer;
+  transition: border-color 100ms ease, background-color 100ms ease;
+}
+
+.wb-btn:hover:not(:disabled) {
+  border-color: var(--wb-ink);
+  background-color: var(--wb-stone);
+}
+
+.wb-btn-primary,
+.wb-btn--primary {
+  background-color: var(--wb-ink);
+  color: var(--wb-paper);
+  border-color: var(--wb-ink);
+}
+
+.wb-btn-primary:hover:not(:disabled),
+.wb-btn--primary:hover:not(:disabled) {
+  background-color: #000000;
+}
+
+.wb-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.wb-chip {
+  font-family: var(--wb-font-mono);
+  font-size: 9.5px;
+  padding: 1px 5px;
+  border-radius: var(--wb-radius);
+  border: 1px solid var(--wb-border);
+  background-color: var(--wb-paper);
+  color: var(--wb-ink-muted);
+  display: inline-flex;
+  align-items: center;
+}
+
+.wb-chip--ink {
+  background-color: var(--wb-ink);
+  color: var(--wb-paper);
+  border-color: var(--wb-ink);
+}
+
+.wb-chip--wash {
+  background-color: var(--wb-tint);
+  color: var(--wb-ink);
+  border-color: var(--wb-border);
+}
+
+.wb-input,
+.wb-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 8px;
+  border-radius: 0;
+  border: 1px solid var(--wb-border);
+  background-color: var(--wb-paper);
+  color: var(--wb-ink);
+  font-family: var(--wb-font-mono);
+  font-size: 12px;
+  outline: none;
+}
+
+.wb-input:focus,
+.wb-textarea:focus {
+  border-color: var(--wb-ink);
+}
+
+.wb-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--wb-font-mono);
+  font-size: 11.5px;
+  background-color: var(--wb-card);
+}
+
+.wb-table th {
+  background-color: var(--wb-paper);
+  font-family: var(--wb-font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--wb-hairline);
+  color: var(--wb-ink-muted);
+}
+
+.wb-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--wb-hairline);
+  color: var(--wb-ink-body);
+}
+
+/* Anclaje en ProseMirror (Vista 03): negro 2px + lavado #EFECE6 */
+.wb-pm-anchored-span {
+  background-color: rgba(239, 236, 230, 0.55);
+  border-bottom: 2px solid #1A1A1A;
+  padding: 1px 2px;
+}
+
+.wb-pm-anchor-sup {
+  font-family: var(--wb-font-mono);
+  font-size: 9px;
+  color: var(--wb-ink-muted);
+  background-color: var(--wb-card);
+  border: 1px solid var(--wb-border);
+  padding: 0 4px;
+  margin-left: 3px;
+  vertical-align: baseline;
+  user-select: none;
+}
+
+/* Riel de estado inferior de 24px (Vista 04) */
+.wb-bottom-rail {
+  height: 24px;
+  min-height: 24px;
+  border-top: 1px solid var(--wb-hairline);
+  background-color: var(--wb-stone);
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--wb-font-mono);
+  font-size: 9.5px;
+  color: var(--wb-ink-muted);
+  user-select: none;
+}
+
+/* Command Palette (⌘K) */
+.wb-palette-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(26, 26, 26, 0.32);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 80px;
+  z-index: 100;
+}
+
+.wb-palette-modal {
+  width: 580px;
+  max-width: 92vw;
+  background-color: var(--wb-paper);
+  border: 1px solid var(--wb-ink);
+  border-radius: var(--wb-radius);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+  overflow: hidden;
+}
+
+.wb-palette-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid var(--wb-hairline);
+  background-color: var(--wb-paper);
+  padding: 12px 16px;
+  font-family: var(--wb-font-mono);
+  font-size: 12.5px;
+  color: var(--wb-ink);
+  outline: none;
+}
+
+.wb-tree-group-label {
+  font-family: var(--wb-font-mono);
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--wb-ink-muted);
+  padding: 6px 8px 3px;
+}
+
+.wb-tree-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: var(--wb-radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.wb-tree-item:hover {
+  background-color: var(--wb-stone);
+  border-color: var(--wb-border);
+}
+
+/* =========================================================================
+ * Topbar sin quiebres de línea (desk real: ids largos y nombres de modelo largos)
+ * ========================================================================= */
+.wb-topbar { gap: 16px; }
+.wb-topbar-left { flex: 1 1 auto; overflow: hidden; }
+.wb-topbar-right { flex: 0 0 auto; }
+.wb-breadcrumb { min-width: 0; white-space: nowrap; }
+.wb-breadcrumb > span { flex-shrink: 0; }
+.wb-breadcrumb-switch {
+  min-width: 0;
+  max-width: 34ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wb-context-pill,
+.wb-lens-link,
+.wb-topbar-right > * { white-space: nowrap; }
+.wb-context-pill { flex-shrink: 0; }
+.wb-topbar-right .wb-lens-link[title^="Abrir el contrato"] {
+  max-width: 26ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Markdown de un field en la hoja editorial */
+.wb-prose-md > :first-child { margin-top: 0; }
+.wb-prose-md > :last-child { margin-bottom: 0; }
+.wb-prose-md p,
+.wb-prose-md ul,
+.wb-prose-md ol,
+.wb-prose-md blockquote,
+.wb-prose-md pre,
+.wb-prose-md table { margin: 0 0 0.9em; }
+.wb-prose-md h1,
+.wb-prose-md h2,
+.wb-prose-md h3,
+.wb-prose-md h4 {
+  font-family: var(--wb-font-serif);
+  font-weight: 500;
+  color: var(--wb-ink);
+  margin: 1.2em 0 0.5em;
+  line-height: 1.3;
+}
+.wb-prose-md h2 { font-size: 1.25em; }
+.wb-prose-md h3 { font-size: 1.1em; }
+.wb-prose-md blockquote {
+  border-left: 1px solid var(--wb-border);
+  padding-left: 12px;
+  color: var(--wb-ink-muted);
+}
+.wb-prose-md code {
+  font-family: var(--wb-font-mono);
+  font-size: 0.86em;
+  background: var(--wb-stone);
+  padding: 0 3px;
+  border-radius: var(--wb-radius);
+}
+.wb-prose-md pre {
+  background: var(--wb-stone);
+  border: 1px solid var(--wb-hairline);
+  padding: 10px 12px;
+  overflow-x: auto;
+}
+.wb-prose-md pre code { background: transparent; padding: 0; }
+.wb-prose-md table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.86em;
+  display: block;
+  overflow-x: auto;
+}
+.wb-prose-md th,
+.wb-prose-md td {
+  border: 1px solid var(--wb-hairline);
+  padding: 4px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+.wb-prose-md th {
+  background: var(--wb-stone);
+  font-family: var(--wb-font-mono);
+  font-weight: 500;
+  font-size: 0.92em;
+}
+.wb-prose-md a { color: var(--wb-ink); text-decoration: underline; text-underline-offset: 2px; }
+
+/* ---------- Ficha: los campos del encabezado y los bloques con estructura ---------- */
+
+.wb-ficha {
+  display: grid;
+  grid-template-columns: minmax(8rem, max-content) 1fr;
+  gap: 0 20px;
+  margin: 0 0 32px 0;
+  padding: 6px 0;
+  border-top: 1px solid var(--wb-hairline);
+  border-bottom: 1px solid var(--wb-hairline);
+  font-size: 14.5px;
+}
+.wb-ficha--anidada { margin: 0; padding: 0; border: none; }
+.wb-ficha__fila { display: contents; }
+.wb-ficha dt { padding: 7px 0; color: var(--wb-ink-muted); }
+.wb-ficha dd { margin: 0; padding: 4px 0; min-width: 0; color: var(--wb-ink); }
+.wb-ficha__fierro { display: block; font-family: var(--wb-font-mono); font-size: 9.5px; color: var(--wb-ink-tertiary); }
+.wb-ficha__ayuda { display: block; margin-top: 1px; font-size: 11.5px; line-height: 1.4; color: var(--wb-ink-tertiary); }
+.wb-ficha__valor { display: inline-block; padding: 3px 0; }
+.wb-ficha__valor--tenue { color: var(--wb-ink-tertiary); }
+.wb-ficha__input {
+  font: inherit;
+  color: inherit;
+  width: 100%;
+  max-width: 28rem;
+  min-height: 28px;
+  padding: 3px 6px;
+  margin-left: -6px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--wb-radius);
+}
+.wb-ficha__input:hover { border-color: var(--wb-border); }
+.wb-ficha__input:focus-visible { outline: none; border-color: var(--wb-ink); background: var(--wb-paper); }
+.wb-ficha__input--agregar { width: 16rem; max-width: 100%; margin-left: 0; color: var(--wb-ink-muted); }
+.wb-ficha__lista { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; }
+.wb-ficha__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 4px 2px 8px;
+  border: 1px solid var(--wb-border);
+  border-radius: var(--wb-radius);
+}
+.wb-ficha__quitar {
+  border: none;
+  background: none;
+  cursor: pointer;
+  min-width: 22px;
+  min-height: 22px;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--wb-ink-muted);
+}
+.wb-ficha__quitar:hover, .wb-ficha__quitar:focus-visible { color: var(--wb-ink); }
+.wb-ficha__sino { display: inline-flex; align-items: center; gap: 8px; padding: 3px 0; cursor: pointer; }
+.wb-ficha__sino input { width: 16px; height: 16px; accent-color: var(--wb-ink); }
+
+/* ---------- Wiki del negocio (lente Lectura): índice, página nueva, avisos ---------- */
+
+.wb-pane-left-38--indice {
+  width: 280px;
+  min-width: 240px;
+  max-width: 320px;
+  overflow-y: auto;
+}
+.wb-wiki-index { padding: 28px 16px 48px 20px; font-family: var(--wb-font-sans); }
+.wb-wiki-index__group { margin-bottom: 22px; }
+.wb-wiki-index__title {
+  margin: 0 0 4px 0;
+  padding: 0 8px;
+  font-family: var(--wb-font-sans);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--wb-ink-muted);
+}
+.wb-wiki-index__list { list-style: none; margin: 0; padding: 0; }
+.wb-wiki-index__page,
+.wb-wiki-index__add {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 8px;
+  border: 0;
+  border-left: 2px solid transparent;
+  border-radius: var(--wb-radius);
+  background: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: left;
+  color: var(--wb-ink-body);
+  cursor: pointer;
+}
+.wb-wiki-index__page:hover,
+.wb-wiki-index__add:hover { background: var(--wb-stone-hover); color: var(--wb-ink); }
+.wb-wiki-index__page:focus-visible,
+.wb-wiki-index__add:focus-visible { outline: 1px solid var(--wb-ink); outline-offset: -1px; }
+.wb-wiki-index__page.is-active {
+  background: var(--wb-card);
+  border-left-color: var(--wb-ink);
+  color: var(--wb-ink);
+  font-weight: 600;
+}
+.wb-wiki-index__add { color: var(--wb-ink-muted); font-size: 13px; }
+.wb-wiki-index__add.is-active { color: var(--wb-ink); font-weight: 600; }
+
+.wb-guardado { margin: 0; min-height: 1.4em; font-size: 12.5px; color: var(--wb-ink-muted); }
+
+.wb-aviso {
+  position: relative;
+  display: block;
+  margin: 8px 0 4px;
+  padding: 10px 34px 10px 12px;
+  border: 1px solid #b3261e;
+  border-left-width: 3px;
+  border-radius: var(--wb-radius);
+  background: #fdf3f2;
+  color: var(--wb-ink);
+  font-family: var(--wb-font-sans);
+  font-size: 13.5px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.wb-aviso__titulo { display: block; font-weight: 600; color: #8c1d18; }
+.wb-aviso__mensaje { display: block; white-space: pre-wrap; overflow-wrap: anywhere; }
+.wb-aviso__cerrar {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  border: 0;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--wb-ink-muted);
+  cursor: pointer;
+}
+.wb-aviso__cerrar:hover, .wb-aviso__cerrar:focus-visible { color: var(--wb-ink); }
+
+.wb-accion {
+  padding: 7px 14px;
+  border: 1px solid var(--wb-border);
+  border-radius: var(--wb-radius);
+  background: var(--wb-card);
+  font-family: var(--wb-font-sans);
+  font-size: 13.5px;
+  color: var(--wb-ink);
+  cursor: pointer;
+}
+.wb-accion:hover:not(:disabled) { border-color: var(--wb-ink); }
+.wb-accion:disabled { opacity: 0.5; cursor: not-allowed; }
+.wb-accion--principal { background: var(--wb-ink); border-color: var(--wb-ink); color: var(--wb-paper); }
+.wb-accion--tenue { border-color: transparent; background: transparent; padding-left: 0; color: var(--wb-ink-muted); text-decoration: underline; text-underline-offset: 3px; }
+.wb-accion--tenue:hover:not(:disabled) { border-color: transparent; color: var(--wb-ink); }
+
+.wb-nueva__titulo { margin: 0 0 6px 0; font-size: 30px; font-weight: 500; letter-spacing: -0.015em; line-height: 1.25; color: var(--wb-ink); }
+.wb-nueva__ayuda { margin: 0 0 28px 0; font-size: 14px; color: var(--wb-ink-muted); }
+.wb-nueva__campo { margin-bottom: 18px; }
+.wb-nueva__campo label { display: block; margin-bottom: 4px; font-size: 14px; font-weight: 600; color: var(--wb-ink); }
+.wb-nueva__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px 10px;
+  border: 1px solid var(--wb-border);
+  border-radius: var(--wb-radius);
+  background: var(--wb-card);
+  font-family: var(--wb-font-sans);
+  font-size: 15px;
+  color: var(--wb-ink);
+}
+.wb-nueva__input:focus-visible { outline: none; border-color: var(--wb-ink); }
+.wb-nueva__nota { display: block; margin-top: 3px; font-size: 12px; line-height: 1.4; color: var(--wb-ink-tertiary); }
+.wb-nueva__acciones { display: flex; gap: 10px; margin-top: 24px; }
+
+.wb-quitar { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--wb-hairline); font-size: 13.5px; }
+.wb-quitar__confirmar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; color: var(--wb-ink); }
+
+/* Barra superior de la wiki: el nombre del negocio y la página abierta, sin maquinaria */
+.wb-topbar--wiki { font-family: var(--wb-font-sans); }
+.wb-wiki-nombre { font-family: var(--wb-font-sans); font-size: 14px; font-weight: 600; color: var(--wb-ink); white-space: nowrap; }
+.wb-wiki-pagina { font-family: var(--wb-font-sans); font-size: 13px; color: var(--wb-ink-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.wb-topbar--wiki .wb-lens-link { font-family: var(--wb-font-sans); }

@@ -1,0 +1,235 @@
+{
+ "documents": [
+  {
+   "id": "acta",
+   "model_name": "ActaDoc",
+   "path": "docs/acta.md",
+   "version": "v-acta",
+   "semantic_tags": [],
+   "payload": {
+    "title": "Acta 14/09",
+    "body": "Reunión del 14/09. Decidimos reemplazar el lote nocturno por una cola de eventos. Tomás será responsable de la ingesta. Riesgo: el proveedor no soporta el volumen. Pendiente: definir el esquema de eventos."
+   }
+  },
+  {
+   "id": "a1",
+   "model_name": "AtomDoc",
+   "path": "docs/atoms/a1.md",
+   "version": "v-a1",
+   "semantic_tags": [],
+   "payload": {
+    "kind": "entidad",
+    "status": "confirmado",
+    "source": "ActaDoc:acta",
+    "source_field": "body",
+    "start": 0,
+    "end": 17,
+    "tags": [
+     "reuniones"
+    ],
+    "text": "Reunión del 14/09",
+    "quote": "Reunión del 14/09",
+    "conf": 0.9
+   }
+  },
+  {
+   "id": "a2",
+   "model_name": "AtomDoc",
+   "path": "docs/atoms/a2.md",
+   "version": "v-a2",
+   "semantic_tags": [],
+   "payload": {
+    "kind": "decision",
+    "status": "confirmado",
+    "source": "ActaDoc:acta",
+    "source_field": "body",
+    "start": 19,
+    "end": 80,
+    "tags": [
+     "infra.ingesta",
+     "arquitectura"
+    ],
+    "text": "Reemplazar el lote por una cola",
+    "quote": "Decidimos reemplazar el lote nocturno por una cola de eventos",
+    "conf": 0.9
+   }
+  },
+  {
+   "id": "a3",
+   "model_name": "AtomDoc",
+   "path": "docs/atoms/a3.md",
+   "version": "v-a3",
+   "semantic_tags": [],
+   "payload": {
+    "kind": "hecho",
+    "status": "propuesto",
+    "source": "ActaDoc:acta",
+    "source_field": "body",
+    "start": 89,
+    "end": 125,
+    "tags": [
+     "infra.ingesta"
+    ],
+    "text": "Tomás responsable de la ingesta",
+    "quote": "Tomás será responsable de la ingesta",
+    "conf": 0.9
+   }
+  },
+  {
+   "id": "a4",
+   "model_name": "AtomDoc",
+   "path": "docs/atoms/a4.md",
+   "version": "v-a4",
+   "semantic_tags": [],
+   "payload": {
+    "kind": "riesgo",
+    "status": "propuesto",
+    "source": "ActaDoc:acta",
+    "source_field": "body",
+    "start": 128,
+    "end": 162,
+    "tags": [
+     "infra.proveedores"
+    ],
+    "text": "Proveedor no soporta el volumen",
+    "quote": "el proveedor no soporta la carga",
+    "conf": 0.9
+   }
+  },
+  {
+   "id": "a5",
+   "model_name": "AtomDoc",
+   "path": "docs/atoms/a5.md",
+   "version": "v-a5",
+   "semantic_tags": [],
+   "payload": {
+    "kind": "pendiente",
+    "status": "propuesto",
+    "source": "ActaDoc:acta",
+    "source_field": "body",
+    "start": 175,
+    "end": 204,
+    "tags": [
+     "infra"
+    ],
+    "text": "Definir esquema de eventos",
+    "quote": "definir el esquema de eventos",
+    "conf": 0.9
+   }
+  },
+  {
+   "id": "a6",
+   "model_name": "AtomDoc",
+   "path": "docs/atoms/a6.md",
+   "version": "v-a6",
+   "semantic_tags": [],
+   "payload": {
+    "kind": "hecho",
+    "status": "descartado",
+    "source": "ActaDoc:acta",
+    "source_field": "body",
+    "start": 120,
+    "end": 140,
+    "tags": [
+     "infra.proveedores"
+    ],
+    "text": "Proveedor (descartado)",
+    "quote": "Riesgo: el proveedor",
+    "conf": 0.4
+   }
+  },
+  {
+   "id": "motiva",
+   "model_name": "RelationTypeDoc",
+   "path": "docs/relations/motiva.md",
+   "version": "v1",
+   "semantic_tags": [],
+   "payload": {
+    "name": "motiva",
+    "source_types": [
+     "AtomDoc"
+    ],
+    "target_types": [
+     "AtomDoc"
+    ],
+    "cardinality": "many-to-many",
+    "description": "A motiva B"
+   }
+  },
+  {
+   "id": "cubre",
+   "model_name": "RelationTypeDoc",
+   "path": "docs/relations/cubre.md",
+   "version": "v1",
+   "semantic_tags": [],
+   "payload": {
+    "name": "cubre",
+    "source_types": [
+     "InformeAvanceDoc"
+    ],
+    "target_types": [],
+    "cardinality": "one-to-many",
+    "description": "Un informe cubre algo"
+   }
+  },
+  {
+   "id": "inf1",
+   "model_name": "InformeAvanceDoc",
+   "path": "docs/inf1.md",
+   "version": "v1",
+   "semantic_tags": [],
+   "payload": {
+    "resumen": [
+     "docs/atoms/a1.md"
+    ],
+    "resumen_query": "kind:hecho",
+    "resumen_pins": [],
+    "resumen_excluidos": [],
+    "resumen_modo": "prosa",
+    "decisiones": [
+     "docs/atoms/a2.md"
+    ],
+    "decisiones_query": "kind:decision",
+    "decisiones_pins": [
+     "docs/atoms/a2.md"
+    ],
+    "decisiones_excluidos": [],
+    "decisiones_modo": "viñetas",
+    "riesgos": [],
+    "riesgos_query": "kind:riesgo",
+    "riesgos_pins": [],
+    "riesgos_excluidos": [
+     "docs/atoms/a6.md"
+    ],
+    "riesgos_modo": "tabla",
+    "pendientes": []
+   }
+  }
+ ],
+ "edges": [
+  {
+   "id": "e1",
+   "source": "AtomDoc:a5",
+   "target": "AtomDoc:a2",
+   "type": "motiva",
+   "origin": "relation",
+   "relationDoc": "r1"
+  },
+  {
+   "id": "e2",
+   "source": "AtomDoc:a3",
+   "target": "ActaDoc:acta",
+   "type": "source",
+   "origin": "reference",
+   "relationDoc": null
+  },
+  {
+   "id": "e3",
+   "source": "semantic_tag/infra",
+   "target": "AtomDoc:a2",
+   "type": "motiva",
+   "origin": "relation",
+   "relationDoc": "r2"
+  }
+ ]
+}
