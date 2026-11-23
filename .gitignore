@@ -1,7 +1,8 @@
 __pycache__/
 *.pyc
 .deskops.log
-.sldb/runtime/cache/
+# Estado derivado del store de la raíz (aristas, secciones, journal, locks): sldb lo regenera.
+.sldb/runtime/
 
 # KBs sldb de kbs/: los .md se versionan; el store, los índices y los vectores son derivados
 # (`python -m tutor.kb_build` los regenera; store_index.yaml lleva rutas absolutas).
