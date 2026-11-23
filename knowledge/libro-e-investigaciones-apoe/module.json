@@ -1,0 +1,18 @@
+{
+  "id": "apoe-books-and-research",
+  "title": "Libro APOE e investigaciones APOE",
+  "description": "Catálogo trazable de libros, capítulos, artículos, tesis e investigaciones para orientar la curaduría de la base del Tutor APOE.",
+  "collections": [
+    {
+      "id": "book",
+      "title": "Libro APOE",
+      "description": "Fuentes monográficas y capítulos de referencia."
+    },
+    {
+      "id": "research",
+      "title": "Investigaciones APOE",
+      "description": "Artículos, tesis, informes y estudios empíricos."
+    }
+  ],
+  "sources": []
+}

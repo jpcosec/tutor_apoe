@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Libro APOE e investigaciones APOE</title>
+  <link rel="stylesheet" href="/web/literature.css">
+</head>
+<body>
+  <main>
+    <a class="back" href="/">← Visor de conocimiento</a>
+    <header>
+      <p class="eyebrow">MÓDULO DE FUENTES</p>
+      <h1>Libro APOE e investigaciones APOE</h1>
+      <p id="description">Cargando catálogo…</p>
+    </header>
+    <section class="card">
+      <p class="eyebrow">AGREGAR FUENTE</p>
+      <h2>Registrar una referencia trazable</h2>
+      <p>El catálogo organiza fuentes; no agrega afirmaciones al tutor hasta que la fuente sea revisada y sus átomos sean aprobados.</p>
+      <form id="source-form">
+        <label>Tipo de fuente<select id="source-type"><option value="book">Libro APOE o capítulo</option><option value="research">Investigación APOE</option></select></label>
+        <label>Título<input id="title" required placeholder="Título de libro, artículo, tesis o informe"></label>
+        <label>Autoría<input id="authors" placeholder="Apellido, Nombre; Apellido, Nombre"></label>
+        <label>Año<input id="year" inputmode="numeric" pattern="[0-9]{4}" placeholder="2026"></label>
+        <label>Tema o dominio<input id="topic" placeholder="Ej.: interiorización, funciones, álgebra lineal"></label>
+        <label>Cita bibliográfica<textarea id="citation" rows="3" placeholder="Referencia en el estilo que utilice el proyecto"></textarea></label>
+        <label>Ubicación<input id="location" placeholder="Ruta del archivo, DOI, URL o repositorio"></label>
+        <label>Notas de curaduría<textarea id="notes" rows="3" placeholder="Alcance, secciones prioritarias o verificación pendiente"></textarea></label>
+        <button>Guardar referencia</button>
+      </form>
+    </section>
+    <section class="collection"><div><p class="eyebrow">COLECCIÓN 1</p><h2>Libro APOE</h2><p>Fuentes monográficas y capítulos de referencia.</p></div><div id="books" class="catalog"></div></section>
+    <section class="collection"><div><p class="eyebrow">COLECCIÓN 2</p><h2>Investigaciones APOE</h2><p>Artículos, tesis, informes y estudios empíricos.</p></div><div id="research" class="catalog"></div></section>
+    <p id="status" class="status" role="status"></p>
+  </main>
+  <script type="module" src="/web/literature.js"></script>
+</body>
+</html>

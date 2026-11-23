@@ -143,7 +143,7 @@ function App() {
   };
 
   return html`<main className="shell">
-    <header><div><p className="eyebrow">VISOR DE CONOCIMIENTO · SLDB</p><h1>Tutor APOE</h1><p className="subtitle">Átomos fuente, jerarquía y procedencia.</p></div>
+    <header><div><p className="eyebrow">VISOR DE CONOCIMIENTO · SLDB</p><h1>Tutor APOE</h1><p className="subtitle">Átomos fuente, jerarquía y procedencia.</p><p className="module-links"><a href="/bibliografia">Libro APOE e investigaciones</a> · <a href="/expert">Módulo experto</a> · <a href="/examples">Módulo de ejemplos</a></p></div>
       <div className="help">${status}<br/><span>Selecciona un átomo para editar su fuente Markdown.</span></div></header>
     <section className="tutor"><div><p className="eyebrow">CONSULTA GUIADA</p><h2>Pregúntale al Tutor APOE</h2><p>Relaciona tu pregunta con átomos fuente y muestra la procedencia. No genera respuestas fuera de la base.</p></div>
       <form className="tutor-form" onSubmit=${askTutor}><input value=${question} onInput=${event => setQuestion(event.target.value)} placeholder="Ej.: Dame ejemplos de acciones en el dominio del análisis" aria-label="Pregunta para el Tutor APOE"/><button disabled=${asking}>${asking ? 'Consultando…' : 'Preguntar'}</button></form>

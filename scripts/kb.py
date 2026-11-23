@@ -40,6 +40,8 @@ EXPERT_LOCK = Lock()
 EXAMPLES_MODULE = ROOT / "knowledge" / "examples-apoe"
 EXAMPLE_EXPERTS = EXAMPLES_MODULE / "experts"
 EXAMPLE_LOCK = Lock()
+LITERATURE_MODULE = ROOT / "knowledge" / "libro-e-investigaciones-apoe"
+LITERATURE_LOCK = Lock()
 # Prefer the CLI installed alongside this Python (e.g. the project venv).
 SLDB = str(Path(sys.executable).with_name("sldb"))
 if not Path(SLDB).is_file():
@@ -516,6 +518,60 @@ def _read_json(path: Path, default: object) -> object:
 def _write_json(path: Path, data: object) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+DEFAULT_LITERATURE_MODULE = {
+    "id": "apoe-books-and-research",
+    "title": "Libro APOE e investigaciones APOE",
+    "description": "Catálogo trazable de libros, capítulos, artículos, tesis e investigaciones para orientar la curaduría de la base del Tutor APOE.",
+    "collections": [
+        {"id": "book", "title": "Libro APOE", "description": "Fuentes monográficas y capítulos de referencia."},
+        {"id": "research", "title": "Investigaciones APOE", "description": "Artículos, tesis, informes y estudios empíricos."},
+    ],
+    "sources": [],
+}
+
+
+def literature_module() -> dict[str, object]:
+    data = _read_json(LITERATURE_MODULE / "module.json", DEFAULT_LITERATURE_MODULE)
+    if not isinstance(data, dict):
+        return dict(DEFAULT_LITERATURE_MODULE)
+    collections = data.get("collections")
+    sources = data.get("sources")
+    if not isinstance(collections, list) or not isinstance(sources, list):
+        return dict(DEFAULT_LITERATURE_MODULE)
+    return data
+
+
+def add_literature_source(data: dict[str, object]) -> dict[str, object]:
+    title = data.get("title")
+    source_type = data.get("source_type")
+    if not isinstance(title, str) or not title.strip():
+        raise ValueError("Indica el título de la fuente.")
+    if source_type not in {"book", "research"}:
+        raise ValueError("El tipo debe ser libro o investigación.")
+    def text(name: str) -> str:
+        value = data.get(name, "")
+        if not isinstance(value, str):
+            raise ValueError(f"{name} debe ser texto.")
+        return value.strip()
+    year = text("year")
+    if year and not re.fullmatch(r"[0-9]{4}", year):
+        raise ValueError("El año debe tener cuatro dígitos.")
+    source = {
+        "id": f"source-{uuid4().hex[:10]}", "title": title.strip(), "source_type": source_type,
+        "authors": text("authors"), "year": year, "topic": text("topic"),
+        "citation": text("citation"), "location": text("location"), "notes": text("notes"),
+        "created_at": _now(),
+    }
+    with LITERATURE_LOCK:
+        module = literature_module()
+        sources = module.get("sources")
+        assert isinstance(sources, list)
+        sources.append(source)
+        module["sources"] = sources
+        _write_json(LITERATURE_MODULE / "module.json", module)
+    return source
 
 
 def expert_protocol() -> dict[str, object]:
@@ -1091,12 +1147,15 @@ class Handler(BaseHTTPRequestHandler):
         if parsed.path == "/examples" or parsed.path.startswith("/examples/"):
             self._file(WEB / "examples.html", "text/html; charset=utf-8")
             return
+        if parsed.path == "/bibliografia":
+            self._file(WEB / "literature.html", "text/html; charset=utf-8")
+            return
         if parsed.path == "/visualizations/matrix-vector":
             self._file(WEB / "matrix_vector_geogebra.html", "text/html; charset=utf-8")
             return
         if parsed.path.startswith("/web/"):
             filename = parsed.path.removeprefix("/web/")
-            content_types = {"theme.css": "text/css; charset=utf-8", "hierarchy.js": "text/javascript; charset=utf-8", "mindmap.js": "text/javascript; charset=utf-8", "mindmap.css": "text/css; charset=utf-8", "expert.js": "text/javascript; charset=utf-8", "expert.css": "text/css; charset=utf-8", "examples.js": "text/javascript; charset=utf-8", "examples.css": "text/css; charset=utf-8", "matrix_vector_geogebra.js": "text/javascript; charset=utf-8", "matrix_vector_geogebra.css": "text/css; charset=utf-8"}
+            content_types = {"theme.css": "text/css; charset=utf-8", "hierarchy.js": "text/javascript; charset=utf-8", "mindmap.js": "text/javascript; charset=utf-8", "mindmap.css": "text/css; charset=utf-8", "expert.js": "text/javascript; charset=utf-8", "expert.css": "text/css; charset=utf-8", "examples.js": "text/javascript; charset=utf-8", "examples.css": "text/css; charset=utf-8", "literature.js": "text/javascript; charset=utf-8", "literature.css": "text/css; charset=utf-8", "matrix_vector_geogebra.js": "text/javascript; charset=utf-8", "matrix_vector_geogebra.css": "text/css; charset=utf-8"}
             if filename in content_types:
                 self._file(WEB / filename, content_types[filename])
                 return
@@ -1105,6 +1164,10 @@ class Handler(BaseHTTPRequestHandler):
             return
         if parsed.path == "/api/examples-protocol":
             self._json(examples_protocol())
+            return
+        if parsed.path == "/api/literature":
+            with LITERATURE_LOCK:
+                self._json(literature_module())
             return
         if parsed.path.startswith("/api/examples/") and parsed.path.endswith("/export"):
             expert_id = unquote(parsed.path.removeprefix("/api/examples/").removesuffix("/export").rstrip("/"))
@@ -1162,6 +1225,12 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:  # noqa: N802 - API de BaseHTTPRequestHandler
         parsed = urlparse(self.path)
+        if parsed.path == "/api/literature":
+            try:
+                self._json({"source": add_literature_source(self._payload(30_000))}, HTTPStatus.CREATED)
+            except (ValueError, json.JSONDecodeError) as error:
+                self._json({"detail": str(error)}, HTTPStatus.BAD_REQUEST)
+            return
         if parsed.path == "/api/examples":
             try:
                 payload = self._payload(10_000)
