@@ -5,7 +5,7 @@ description = "Spec 01: acceso de solo lectura a una KB sldb (validación, consu
 requires-python = ">=3.12"
 dependencies = [
     "tutor-ontology",
-    "sldb",
+    "structuredLanguageDB",  # el paquete se importa como `sldb`
     "pron",
     "pydantic>=2.7",
     "pyyaml>=6.0",

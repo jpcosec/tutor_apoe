@@ -15,8 +15,16 @@ visualizations/media/
 # Borradores, fuentes y KBs precargadas desde la interfaz local
 .local/
 # Índice derivado de fragmentos del compilador (`tutor.compiler`): se regenera por hash.
-kbs/*/.cache/
+kbs/*/.cache/*
+# …salvo el anclaje: guarda lo que Jev ya confirmó, y sin él `tutor kb build` sin red deja los átomos sin anclar.
+!kbs/*/.cache/anchors.json
 # Caché derivada de sldb (se regenera sola)
 .sldb_cache/
 superficie/node_modules/
 superficie/dist/
+
+# Instalación local (./install.sh)
+.venv/
+third_party/.repo/
+third_party/sldb/
+third_party/pron/

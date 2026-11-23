@@ -39,4 +39,5 @@ requires = ["hatchling>=1.25"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/tutor"]
+# `kb_models` (el esquema de las KBs, en kbs/) se instala junto al tutor: lo importan kb_build, authoring, etc.
+packages = ["src/tutor", "kbs/kb_models"]

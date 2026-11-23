@@ -90,7 +90,8 @@ def test_el_plazo_de_la_tool_lo_aplica_pydantic_ai() -> None:
     ).run_sync("x")
 
     parts = [p for m in result.all_messages() for p in getattr(m, "parts", [])]
-    retries = [p for p in parts if isinstance(p, RetryPromptPart)]
+    # El aviso llega como `RetryPromptPart` o, desde pydantic-ai 2.x, como `ToolReturnPart` con `outcome="retried"`.
+    retries = [p for p in parts if isinstance(p, RetryPromptPart) or getattr(p, "outcome", None) == "retried"]
     assert (result.output, recorded) == ("listo", [])
     assert "Timed out" in str(retries[0].content)
 

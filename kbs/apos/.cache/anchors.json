@@ -1,0 +1,2807 @@
+{
+"0054e47e87fc4cc94d340e466bed036095f746a18512f5272667aefd7d4de2ba": {
+"atom_id": "atom-function-genetic-decomposition-begins-with-actions-on-elements",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-87": 0.9,
+"source-arnon-et-al-2014-apos-theory-chunk-88": 0.19
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-87",
+0.3011
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-88",
+0.1845
+]
+]
+},
+"00cb1972fdecf262dfbf823ca531302f7e7f4b280c61d5dd11e903a6efc6cca7": {
+"atom_id": "atom-cognitive-path-and-genetic-decomposition-are-not-the-same",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-81": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-83": 0.07,
+"source-arnon-et-al-2014-apos-theory-chunk-84": 0.95,
+"source-arnon-et-al-2014-apos-theory-chunk-85": 0.25,
+"source-arnon-et-al-2014-apos-theory-chunk-86": 0.18,
+"source-arnon-et-al-2014-apos-theory-chunk-87": 0.06
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-84",
+0.3801
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-85",
+0.3611
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-86",
+0.3374
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-87",
+0.3367
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-83",
+0.3353
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-81",
+0.293
+]
+]
+},
+"04785594871c4c810ddc5276b4d005755b67c2f472bce6b73db3def5c96142c5": {
+"atom_id": "atom-totality-is-treated-as-a-possible-additional-stage",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-344": 0.78,
+"source-arnon-et-al-2014-apos-theory-chunk-351": 0.42,
+"source-arnon-et-al-2014-apos-theory-chunk-353": 0.73,
+"source-arnon-et-al-2014-apos-theory-chunk-363": 0.53,
+"source-arnon-et-al-2014-apos-theory-chunk-366": 0.73,
+"source-arnon-et-al-2014-apos-theory-chunk-395": 0.02
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-353",
+0.2963
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-344",
+0.2923
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-363",
+0.2841
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-351",
+0.2624
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-366",
+0.2621
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-395",
+0.257
+]
+]
+},
+"063edd07cf5409a66c21b600bb754650a7afbc29a949d8928f6db9b0ed280b72": {
+"atom_id": "atom-apos-research-relies-on-collaborative-triangulation",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-230": 0.81,
+"source-arnon-et-al-2014-apos-theory-chunk-234": 0.92,
+"source-arnon-et-al-2014-apos-theory-chunk-235": 0.49,
+"source-arnon-et-al-2014-apos-theory-chunk-240": 0.73,
+"source-arnon-et-al-2014-apos-theory-chunk-241": 0.04,
+"source-arnon-et-al-2014-apos-theory-chunk-242": 0.04
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-235",
+0.2718
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-234",
+0.2507
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-230",
+0.2403
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-242",
+0.2308
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-240",
+0.1993
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-241",
+0.1899
+]
+]
+},
+"0b0f309009c31fafad96bf7da46bad8422da7fbe31f52880b73ca8cd11cb413e": {
+"atom_id": "atom-genetic-decompositions-are-not-unique",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-117": 0.43,
+"source-arnon-et-al-2014-apos-theory-chunk-118": 0.14,
+"source-arnon-et-al-2014-apos-theory-chunk-120": 0.15,
+"source-arnon-et-al-2014-apos-theory-chunk-84": 0.24,
+"source-arnon-et-al-2014-apos-theory-chunk-85": 0.74,
+"source-arnon-et-al-2014-apos-theory-chunk-87": 0.23
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-117",
+0.3381
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-85",
+0.2911
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-118",
+0.2609
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-87",
+0.254
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-120",
+0.2314
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-84",
+0.2302
+]
+]
+},
+"0dbf57ea536acfd97086d34407eca5365b92bf231b2e47a6a886ad223f7b0161": {
+"atom_id": "atom-mental-construction-in-apos-is-spiral-and-enriching",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-77": 0.23,
+"source-arnon-et-al-2014-apos-theory-chunk-78": 0.14
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-78",
+0.2697
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-77",
+0.2572
+]
+]
+},
+"0ebd07d6f89fc88652159f2d05fbc35e05dcb87637b6f903d46209435f3fe6aa": {
+"atom_id": "atom-isetl-functions-as-a-pedagogical-tool-in-apos-instruction",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-155": 0.74,
+"source-arnon-et-al-2014-apos-theory-chunk-156": 0.29,
+"source-arnon-et-al-2014-apos-theory-chunk-159": 0.1,
+"source-arnon-et-al-2014-apos-theory-chunk-166": 0.26,
+"source-arnon-et-al-2014-apos-theory-chunk-167": 0.66,
+"source-arnon-et-al-2014-apos-theory-chunk-168": 0.12
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-155",
+0.3
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-167",
+0.2814
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-166",
+0.2656
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-168",
+0.2303
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-156",
+0.2301
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-159",
+0.2128
+]
+]
+},
+"0f9622c6a47ec0ff2fda6409324b96bd383783ac2bc5a76ad3963a82d0e3a58c": {
+"atom_id": "atom-ace-cycle-is-the-main-apos-instructional-pattern",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-152": 0.5,
+"source-arnon-et-al-2014-apos-theory-chunk-153": 0.61,
+"source-arnon-et-al-2014-apos-theory-chunk-154": 0.63
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-154",
+0.3334
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-152",
+0.3009
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-153",
+0.2777
+]
+]
+},
+"124b56e61365f482e39b9c3168e6422dbdd8ce7cb164b43d55100fa0fd1f4f6f": {
+"atom_id": "atom-repeating-decimals-and-infinity-are-key-sites-for-totality",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-18": 0.02,
+"source-arnon-et-al-2014-apos-theory-chunk-23": 0.03,
+"source-arnon-et-al-2014-apos-theory-chunk-346": 0.15,
+"source-arnon-et-al-2014-apos-theory-chunk-353": 0.21,
+"source-arnon-et-al-2014-apos-theory-chunk-364": 0.04,
+"source-arnon-et-al-2014-apos-theory-chunk-365": 0.04
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-364",
+0.2931
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-353",
+0.2617
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-365",
+0.241
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-23",
+0.2397
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-18",
+0.2373
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-346",
+0.2342
+]
+]
+},
+"15d0bc7719ce66ba46589fbcbf24c65a8b047fa01db66c20f7ba84089050d2db": {
+"atom_id": "atom-a-stage-cannot-be-skipped-without-loss-of-coherence",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-340": 0.96
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-340",
+0.184
+]
+]
+},
+"15ff561af4b6c8a90f5d53d81efab7a90b1058673e2984996bef27663244436c": {
+"atom_id": "atom-apos-is-a-living-and-revisable-body-of-ideas",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-15": 0.03,
+"source-arnon-et-al-2014-apos-theory-chunk-23": 0.22,
+"source-arnon-et-al-2014-apos-theory-chunk-30": 0.04,
+"source-arnon-et-al-2014-apos-theory-chunk-41": 0.05,
+"source-arnon-et-al-2014-apos-theory-chunk-43": 0.03,
+"source-arnon-et-al-2014-apos-theory-chunk-53": 0.06
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-53",
+0.1819
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-41",
+0.1631
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-23",
+0.1387
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-43",
+0.1385
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-30",
+0.1279
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-15",
+0.1275
+]
+]
+},
+"1b7941063238164ab8626d1c7cb93f6eca34f6684ecd541ff66133eaab4c59e0": {
+"atom_id": "atom-schema-coherence-determines-what-falls-within-its-scope",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-26": 0.04,
+"source-arnon-et-al-2014-apos-theory-chunk-281": 0.07,
+"source-arnon-et-al-2014-apos-theory-chunk-291": 0.84,
+"source-arnon-et-al-2014-apos-theory-chunk-322": 0.18,
+"source-arnon-et-al-2014-apos-theory-chunk-59": 0.04,
+"source-arnon-et-al-2014-apos-theory-chunk-63": 0.04
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-63",
+0.2003
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-281",
+0.1886
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-322",
+0.1851
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-291",
+0.1776
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-59",
+0.1662
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-26",
+0.1647
+]
+]
+},
+"200449c1d6a1c3b187a754043dcc39c101c5ed3b4f3968c9d7c8b82d853b6273": {
+"atom_id": "atom-process-is-a-core-mental-structure-in-apos",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-65": 0.38,
+"source-arnon-et-al-2014-apos-theory-chunk-66": 0.56,
+"source-arnon-et-al-2014-apos-theory-chunk-67": 0.34
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-66",
+0.3113
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-67",
+0.2322
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-65",
+0.0544
+]
+]
+},
+"22181ca5c8e5cee41d01a28c6bcd1c90585f525b7d2a9b9113726ad60d296d5a": {
+"atom_id": "atom-isetl-syntax-stays-close-to-standard-mathematical-notation",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-156": 0.67,
+"source-arnon-et-al-2014-apos-theory-chunk-157": 0.44,
+"source-arnon-et-al-2014-apos-theory-chunk-158": 0.17,
+"source-arnon-et-al-2014-apos-theory-chunk-159": 0.11
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-156",
+0.237
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-159",
+0.2346
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-157",
+0.1322
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-158",
+0.0457
+]
+]
+},
+"2229456c23f98291872680fddfff7def477a744712b914ca14e55360500cec8c": {
+"atom_id": "atom-apos-book-derives-from-collaborative-authorship",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-3": 0.21,
+"source-arnon-et-al-2014-apos-theory-chunk-4": 0.8
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-4",
+0.246
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-3",
+0.1228
+]
+]
+},
+"2ad343419b9802aac8f002e5bd0a5ad6ec9a5bdf9f31c8fbb0c549f3733d1f42": {
+"atom_id": "atom-span-construction-starts-from-actions-on-linear-combinations",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-106": 0.27,
+"source-arnon-et-al-2014-apos-theory-chunk-107": 0.67,
+"source-arnon-et-al-2014-apos-theory-chunk-108": 0.08
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-108",
+0.3917
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-106",
+0.3028
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-107",
+0.2178
+]
+]
+},
+"2d5fc4d18e77bc9954368fdf343c70e6069426f46b20c761c6d652f6ed94615d": {
+"atom_id": "atom-genetic-decomposition-guides-both-research-and-teaching",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-123": 0.13,
+"source-arnon-et-al-2014-apos-theory-chunk-125": 0.19,
+"source-arnon-et-al-2014-apos-theory-chunk-142": 0.14,
+"source-arnon-et-al-2014-apos-theory-chunk-144": 0.17,
+"source-arnon-et-al-2014-apos-theory-chunk-150": 0.36,
+"source-arnon-et-al-2014-apos-theory-chunk-85": 0.35
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-125",
+0.3453
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-150",
+0.3167
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-142",
+0.3104
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-123",
+0.3035
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-85",
+0.3002
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-144",
+0.2931
+]
+]
+},
+"2d6efe9c5f307ae4a3514f71c7a2a6b9394ebbeae5c40c75e78c4d2c2e8456c6": {
+"atom_id": "atom-exercises-reinforce-constructions-from-activities-and-discussion",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-152": 0.15,
+"source-arnon-et-al-2014-apos-theory-chunk-153": 0.92,
+"source-arnon-et-al-2014-apos-theory-chunk-154": 0.74
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-152",
+0.2991
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-154",
+0.2902
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-153",
+0.2567
+]
+]
+},
+"2dea9b9e92f8d61b46d4a3203e1138f972c21c8d5f6b524bb690063a406e8a76": {
+"atom_id": "atom-encapsulation-is-reported-as-one-of-the-most-difficult-mechanisms",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-68": 0.2,
+"source-arnon-et-al-2014-apos-theory-chunk-69": 0.49,
+"source-arnon-et-al-2014-apos-theory-chunk-70": 0.63
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-68",
+0.26
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-70",
+0.2593
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-69",
+0.2506
+]
+]
+},
+"3199b0d6d910e17a1695a25fcf575b8d9d0f501ba5412c849fd87f0ecc3ba447": {
+"atom_id": "atom-early-group-activities-develop-set-as-process",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-167": 0.22,
+"source-arnon-et-al-2014-apos-theory-chunk-171": 0.9,
+"source-arnon-et-al-2014-apos-theory-chunk-172": 0.34,
+"source-arnon-et-al-2014-apos-theory-chunk-177": 0.08,
+"source-arnon-et-al-2014-apos-theory-chunk-193": 0.03,
+"source-arnon-et-al-2014-apos-theory-chunk-222": 0.01
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-171",
+0.3041
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-167",
+0.2852
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-222",
+0.2725
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-177",
+0.2454
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-193",
+0.2218
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-172",
+0.2216
+]
+]
+},
+"350c02286cc02a807e32e9cf14ea5ed02167d12ed661df84749466960fa1e9d5": {
+"atom_id": "atom-spanning-set-and-span-require-prerequisites-in-vector-space-variable-and-solution-set",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-101": 0.12,
+"source-arnon-et-al-2014-apos-theory-chunk-102": 0.14,
+"source-arnon-et-al-2014-apos-theory-chunk-103": 0.11,
+"source-arnon-et-al-2014-apos-theory-chunk-104": 0.37,
+"source-arnon-et-al-2014-apos-theory-chunk-105": 0.93
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-102",
+0.3324
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-105",
+0.3308
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-103",
+0.3281
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-104",
+0.3112
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-101",
+0.1967
+]
+]
+},
+"383f57a8fc0e307a2171d3d7e96445b34b5a43a101a7fe2535794f7625d2d223": {
+"atom_id": "atom-schema-is-a-coherent-framework-of-linked-structures",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-266": 0.26,
+"source-arnon-et-al-2014-apos-theory-chunk-267": 0.89,
+"source-arnon-et-al-2014-apos-theory-chunk-269": 0.31,
+"source-arnon-et-al-2014-apos-theory-chunk-270": 0.62,
+"source-arnon-et-al-2014-apos-theory-chunk-271": 0.45,
+"source-arnon-et-al-2014-apos-theory-chunk-273": 0.2
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-269",
+0.2563
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-270",
+0.228
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-267",
+0.2068
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-271",
+0.1945
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-273",
+0.1651
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-266",
+0.1601
+]
+]
+},
+"3c8c02ab9eb53c261c87a0681b30575a530deecd58c799225a11b445f104f39d": {
+"atom_id": "atom-action-is-a-core-mental-structure-in-apos",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-62": 0.78,
+"source-arnon-et-al-2014-apos-theory-chunk-63": 0.67,
+"source-arnon-et-al-2014-apos-theory-chunk-64": 0.89
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-63",
+0.2322
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-62",
+0.1093
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-64",
+0.0918
+]
+]
+},
+"3cff57e8b19d66b4910579fe197413d68f6219562d45229354bea790d4c45d1a": {
+"atom_id": "atom-genetic-decomposition-does-not-imply-linear-learning",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-81": 0.05,
+"source-arnon-et-al-2014-apos-theory-chunk-82": 0.09,
+"source-arnon-et-al-2014-apos-theory-chunk-83": 0.07,
+"source-arnon-et-al-2014-apos-theory-chunk-85": 0.88,
+"source-arnon-et-al-2014-apos-theory-chunk-89": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-90": 0.06
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-82",
+0.2811
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-90",
+0.2483
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-85",
+0.2385
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-83",
+0.2229
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-89",
+0.2195
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-81",
+0.1982
+]
+]
+},
+"421d11a82333a221744e25ad517360d726cab42c5a9fb79571f75c323b411e8e": {
+"atom_id": "atom-apos-book-targets-researchers-teachers-and-graduate-students",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-3": 0.2,
+"source-arnon-et-al-2014-apos-theory-chunk-4": 0.13
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-4",
+0.1745
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-3",
+0.1645
+]
+]
+},
+"48c4e3803ac02a50925caa60941f52d9e6266fc6cd79cf722097abdafeca1ad6": {
+"atom_id": "atom-schema-is-a-core-mental-structure-in-apos",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-60": 0.76,
+"source-arnon-et-al-2014-apos-theory-chunk-61": 0.72,
+"source-arnon-et-al-2014-apos-theory-chunk-66": 0.09,
+"source-arnon-et-al-2014-apos-theory-chunk-67": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-73": 0.04,
+"source-arnon-et-al-2014-apos-theory-chunk-78": 0.5
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-78",
+0.2508
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-61",
+0.2402
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-67",
+0.2219
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-66",
+0.2204
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-73",
+0.2055
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-60",
+0.2044
+]
+]
+},
+"4bc73e58c000907eb5e4d20a93ef7022c982eadb4383c257e3642097c3fce1ce": {
+"atom_id": "atom-group-axiom-checking-coordinates-general-property-checking-with-specific-axioms",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-170": 0.96,
+"source-arnon-et-al-2014-apos-theory-chunk-171": 0.87,
+"source-arnon-et-al-2014-apos-theory-chunk-172": 0.07,
+"source-arnon-et-al-2014-apos-theory-chunk-181": 0.82,
+"source-arnon-et-al-2014-apos-theory-chunk-183": 0.31,
+"source-arnon-et-al-2014-apos-theory-chunk-184": 0.05
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-170",
+0.3092
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-171",
+0.3059
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-181",
+0.2185
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-183",
+0.1931
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-172",
+0.1909
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-184",
+0.1874
+]
+]
+},
+"4c015e1f0e89bd86cb8be68ac9e02aa56359a220189233349e5d8a67a45193a3": {
+"atom_id": "atom-computer-activities-support-encapsulation-when-processes-become-program-inputs-or-outputs",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-166": 0.25,
+"source-arnon-et-al-2014-apos-theory-chunk-167": 0.85,
+"source-arnon-et-al-2014-apos-theory-chunk-168": 0.42
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-167",
+0.3605
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-168",
+0.2976
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-166",
+0.2248
+]
+]
+},
+"50265cdf3505757f93f27c2a246e6d194e99b1faa39682a483499a22518c1048": {
+"atom_id": "atom-process-allows-mental-control-without-executing-each-step",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-65": 0.78,
+"source-arnon-et-al-2014-apos-theory-chunk-66": 0.5,
+"source-arnon-et-al-2014-apos-theory-chunk-67": 0.53
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-66",
+0.2564
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-67",
+0.1498
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-65",
+0.067
+]
+]
+},
+"5693a218b5035757c1b6e761484a33bf2714e526ec77e4fd32e590afb9f6a5e6": {
+"atom_id": "atom-stages-and-levels-organize-developmental-analysis-in-apos",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-18": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-20": 0.52,
+"source-arnon-et-al-2014-apos-theory-chunk-22": 0.17,
+"source-arnon-et-al-2014-apos-theory-chunk-367": 0.08,
+"source-arnon-et-al-2014-apos-theory-chunk-387": 0.08,
+"source-arnon-et-al-2014-apos-theory-chunk-390": 0.37
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-367",
+0.2627
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-387",
+0.2579
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-18",
+0.2491
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-22",
+0.2406
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-20",
+0.2384
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-390",
+0.2347
+]
+]
+},
+"57c174814b9639aaeb4982d5e1f0d7a67c86e97261438e70f10743385a14c2e8": {
+"atom_id": "atom-transforming-computer-procedures-can-help-students-move-from-process-to-object",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-156": 0.02,
+"source-arnon-et-al-2014-apos-theory-chunk-167": 0.69,
+"source-arnon-et-al-2014-apos-theory-chunk-168": 0.68,
+"source-arnon-et-al-2014-apos-theory-chunk-181": 0.18,
+"source-arnon-et-al-2014-apos-theory-chunk-337": 0.14,
+"source-arnon-et-al-2014-apos-theory-chunk-338": 0.94
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-338",
+0.3345
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-337",
+0.3198
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-168",
+0.2986
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-167",
+0.2585
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-181",
+0.244
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-156",
+0.2393
+]
+]
+},
+"59ba48aa0907908150de12b7cf05ae5923909c41c9b6b2f558e5ccc076179b24": {
+"atom_id": "atom-interviews-are-the-primary-data-source-in-apos-research",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-230": 0.63,
+"source-arnon-et-al-2014-apos-theory-chunk-231": 0.52,
+"source-arnon-et-al-2014-apos-theory-chunk-232": 0.23,
+"source-arnon-et-al-2014-apos-theory-chunk-233": 0.18,
+"source-arnon-et-al-2014-apos-theory-chunk-234": 0.08,
+"source-arnon-et-al-2014-apos-theory-chunk-242": 0.14
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-234",
+0.2822
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-230",
+0.2318
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-232",
+0.2048
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-231",
+0.2028
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-233",
+0.196
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-242",
+0.1908
+]
+]
+},
+"5db702ce8657e43abb2586b0cc338b188bd8b243eb9f1a18050273634be895e0": {
+"atom_id": "atom-encapsulation-treats-a-process-as-a-static-entity",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-68": 0.88,
+"source-arnon-et-al-2014-apos-theory-chunk-69": 0.77,
+"source-arnon-et-al-2014-apos-theory-chunk-70": 0.57
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-68",
+0.2777
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-70",
+0.2155
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-69",
+0.1767
+]
+]
+},
+"5ea369fddf4197d00c50b54efaccdd4523a5c39949c4409fec7bf381525afab6": {
+"atom_id": "atom-levels-may-appear-or-not-appear-in-observable-data",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-340": 0.54
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-340",
+0.1254
+]
+]
+},
+"5eaff816d4a203d841e922039c183b77dfda9b7102869ab66a6f724825b0c2f0": {
+"atom_id": "atom-isetl-supports-function-as-input-output-and-transformable-entity",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-164": 0.26,
+"source-arnon-et-al-2014-apos-theory-chunk-165": 0.56,
+"source-arnon-et-al-2014-apos-theory-chunk-166": 0.35,
+"source-arnon-et-al-2014-apos-theory-chunk-167": 0.36,
+"source-arnon-et-al-2014-apos-theory-chunk-168": 0.05
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-167",
+0.272
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-166",
+0.2692
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-164",
+0.2484
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-165",
+0.2354
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-168",
+0.2152
+]
+]
+},
+"6122e15faebe8cd9ea11a754d2ed39c720a09b145240a571602e8c4c0bf0329d": {
+"atom_id": "atom-induction-genetic-decomposition-requires-function-and-logic-schemas",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-89": 0.47,
+"source-arnon-et-al-2014-apos-theory-chunk-90": 0.26,
+"source-arnon-et-al-2014-apos-theory-chunk-91": 0.29,
+"source-arnon-et-al-2014-apos-theory-chunk-92": 0.2,
+"source-arnon-et-al-2014-apos-theory-chunk-93": 0.49,
+"source-arnon-et-al-2014-apos-theory-chunk-95": 0.25
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-90",
+0.307
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-89",
+0.293
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-95",
+0.2704
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-93",
+0.2304
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-91",
+0.222
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-92",
+0.2065
+]
+]
+},
+"61cf108ccb69d6e606996272aa8f16535576a5fbae6aa5a62471a3d85d11a4b9": {
+"atom_id": "atom-the-book-ends-with-faq-conclusions-and-bibliographic-synthesis",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-11": 0.05,
+"source-arnon-et-al-2014-apos-theory-chunk-447": 0.21,
+"source-arnon-et-al-2014-apos-theory-chunk-456": 0.02,
+"source-arnon-et-al-2014-apos-theory-chunk-457": 0.05,
+"source-arnon-et-al-2014-apos-theory-chunk-5": 0.04,
+"source-arnon-et-al-2014-apos-theory-chunk-8": 0.04
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-456",
+0.2197
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-8",
+0.1928
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-11",
+0.1769
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-447",
+0.1738
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-457",
+0.1684
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-5",
+0.1435
+]
+]
+},
+"62456fda7e91e7525f1425cc3567dbb0bb8269a7b336d9fe8ccbe011f9fe8203": {
+"atom_id": "atom-genetic-decomposition-targets-a-generic-student-not-a-specific-one",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-81": 0.23,
+"source-arnon-et-al-2014-apos-theory-chunk-82": 0.17,
+"source-arnon-et-al-2014-apos-theory-chunk-83": 0.16,
+"source-arnon-et-al-2014-apos-theory-chunk-84": 0.08,
+"source-arnon-et-al-2014-apos-theory-chunk-85": 0.88,
+"source-arnon-et-al-2014-apos-theory-chunk-86": 0.32
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-85",
+0.4307
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-83",
+0.3492
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-81",
+0.3078
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-86",
+0.3047
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-84",
+0.2969
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-82",
+0.2566
+]
+]
+},
+"62c856bb5b462ba51a2aa6bf11cc5e4b4db3e2cb3e7ac87b19a4f9845249b962": {
+"atom_id": "atom-apos-is-a-constructivist-theory-of-learning-mathematics",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-16": 0.49,
+"source-arnon-et-al-2014-apos-theory-chunk-17": 0.38,
+"source-arnon-et-al-2014-apos-theory-chunk-18": 0.34,
+"source-arnon-et-al-2014-apos-theory-chunk-19": 0.16,
+"source-arnon-et-al-2014-apos-theory-chunk-23": 0.11,
+"source-arnon-et-al-2014-apos-theory-chunk-24": 0.2
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-23",
+0.2227
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-19",
+0.2204
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-16",
+0.1924
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-18",
+0.1755
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-17",
+0.1692
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-24",
+0.135
+]
+]
+},
+"641768d6023a794f933a543cdb8d544b49c3e95b5a8ad30d585984d8fc1ec446": {
+"atom_id": "atom-classroom-discussion-helps-students-reflect-on-activity-work",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-152": 0.18,
+"source-arnon-et-al-2014-apos-theory-chunk-153": 0.72,
+"source-arnon-et-al-2014-apos-theory-chunk-154": 0.43
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-154",
+0.2717
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-152",
+0.2493
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-153",
+0.2259
+]
+]
+},
+"6b54429c873bd34be422dcbeebf51cefa58047793214271599ae0caebbce7132": {
+"atom_id": "atom-reflective-abstraction-is-piagets-main-mechanism-for-logico-mathematical-structures",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-28": 0.96,
+"source-arnon-et-al-2014-apos-theory-chunk-29": 0.42
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-28",
+0.3428
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-29",
+0.1822
+]
+]
+},
+"71dca6c6849f82645b0ef7e5ec93047b48c4776ef774abedb2eb3d4f197c910a": {
+"atom_id": "atom-totality-is-proposed-to-explain-difficulties-between-process-and-object",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-343": 0.31,
+"source-arnon-et-al-2014-apos-theory-chunk-344": 0.89,
+"source-arnon-et-al-2014-apos-theory-chunk-345": 0.39,
+"source-arnon-et-al-2014-apos-theory-chunk-346": 0.5,
+"source-arnon-et-al-2014-apos-theory-chunk-349": 0.77,
+"source-arnon-et-al-2014-apos-theory-chunk-350": 0.57
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-344",
+0.2887
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-346",
+0.2655
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-349",
+0.26
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-345",
+0.2531
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-343",
+0.1901
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-350",
+0.1245
+]
+]
+},
+"74e912c2e22e86fa1732f5631f0c5a22708dbcad26ee2887e7cccfea64471bf3": {
+"atom_id": "atom-schema-development-in-apos-uses-the-intra-inter-trans-triad",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-274": 0.59,
+"source-arnon-et-al-2014-apos-theory-chunk-275": 0.2,
+"source-arnon-et-al-2014-apos-theory-chunk-276": 0.57,
+"source-arnon-et-al-2014-apos-theory-chunk-277": 0.37,
+"source-arnon-et-al-2014-apos-theory-chunk-278": 0.23,
+"source-arnon-et-al-2014-apos-theory-chunk-279": 0.92
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-276",
+0.2212
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-274",
+0.2154
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-279",
+0.1871
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-277",
+0.1176
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-275",
+0.0837
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-278",
+0.0693
+]
+]
+},
+"758c4664c7c9a92e8a2717d5c6457050d69968818e3fed2baba5d0d7b304da5d": {
+"atom_id": "atom-genetic-decomposition-begins-as-a-preliminary-hypothesis",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-81": 0.95,
+"source-arnon-et-al-2014-apos-theory-chunk-82": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-83": 0.32,
+"source-arnon-et-al-2014-apos-theory-chunk-85": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-86": 0.09,
+"source-arnon-et-al-2014-apos-theory-chunk-90": 0.05
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-83",
+0.3297
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-82",
+0.3152
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-85",
+0.2962
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-90",
+0.2463
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-81",
+0.2372
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-86",
+0.2267
+]
+]
+},
+"787faec54a7f27579e289089e7e4ceb00dbc2abfc4ce5db51746e3f197adeb97": {
+"atom_id": "atom-reversal-is-central-for-inverses-and-related-constructions",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-71": 0.17,
+"source-arnon-et-al-2014-apos-theory-chunk-72": 0.41,
+"source-arnon-et-al-2014-apos-theory-chunk-73": 0.29,
+"source-arnon-et-al-2014-apos-theory-chunk-74": 0.33
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-73",
+0.3181
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-72",
+0.2248
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-74",
+0.2087
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-71",
+0.1592
+]
+]
+},
+"7a6df9e38f10a9d51535adbc59962194c00929c02cf881257dca801ded0ae1c2": {
+"atom_id": "atom-object-is-a-core-mental-structure-in-apos",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-68": 0.74,
+"source-arnon-et-al-2014-apos-theory-chunk-69": 0.68,
+"source-arnon-et-al-2014-apos-theory-chunk-70": 0.51
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-70",
+0.2218
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-68",
+0.096
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-69",
+0.0486
+]
+]
+},
+"7e7bbec308902197e3148d198ac535a6acae343f003aad9eb21f60e47d8464d3": {
+"atom_id": "atom-function-object-conception-supports-sets-operations-and-limits-of-functions",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-87": 0.07,
+"source-arnon-et-al-2014-apos-theory-chunk-88": 0.82
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-88",
+0.1567
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-87",
+0.1555
+]
+]
+},
+"7ec95170e0f179217268cc588e838406a3c06a298aed9c969f9af20c6100972f": {
+"atom_id": "atom-genetic-decompositions-can-also-emerge-from-student-data",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-100": 0.91,
+"source-arnon-et-al-2014-apos-theory-chunk-101": 0.44,
+"source-arnon-et-al-2014-apos-theory-chunk-96": 0.19,
+"source-arnon-et-al-2014-apos-theory-chunk-97": 0.51,
+"source-arnon-et-al-2014-apos-theory-chunk-98": 0.9,
+"source-arnon-et-al-2014-apos-theory-chunk-99": 0.84
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-100",
+0.3274
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-96",
+0.2681
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-97",
+0.2398
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-98",
+0.2378
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-101",
+0.2215
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-99",
+0.2204
+]
+]
+},
+"7f983d8c79ce83b1df093acfc81afd711f6a4855ccc4677b713d40d8b94334bd": {
+"atom_id": "atom-textbook-analysis-can-inform-preliminary-genetic-decompositions",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-100": 0.75,
+"source-arnon-et-al-2014-apos-theory-chunk-101": 0.11,
+"source-arnon-et-al-2014-apos-theory-chunk-104": 0.11,
+"source-arnon-et-al-2014-apos-theory-chunk-97": 0.69,
+"source-arnon-et-al-2014-apos-theory-chunk-98": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-99": 0.48
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-100",
+0.3651
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-97",
+0.2836
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-101",
+0.2782
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-99",
+0.2729
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-98",
+0.2595
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-104",
+0.2435
+]
+]
+},
+"81085788aedeb10555d463687699a73198631eb74ef3add92e55500a9c5f3342": {
+"atom_id": "atom-historical-development-can-inform-genetic-decomposition-design",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-100": 0.11,
+"source-arnon-et-al-2014-apos-theory-chunk-101": 0.28,
+"source-arnon-et-al-2014-apos-theory-chunk-96": 0.11,
+"source-arnon-et-al-2014-apos-theory-chunk-97": 0.74,
+"source-arnon-et-al-2014-apos-theory-chunk-98": 0.92,
+"source-arnon-et-al-2014-apos-theory-chunk-99": 0.83
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-100",
+0.372
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-98",
+0.3376
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-97",
+0.3354
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-101",
+0.3033
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-99",
+0.2828
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-96",
+0.2688
+]
+]
+},
+"87f3401759ef7f10045f6b5b20564168ca0cee6d162030aa671cabf200816dd4": {
+"atom_id": "atom-apos-is-rooted-in-piagets-work",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-15": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-23": 0.23,
+"source-arnon-et-al-2014-apos-theory-chunk-29": 0.37,
+"source-arnon-et-al-2014-apos-theory-chunk-30": 0.58,
+"source-arnon-et-al-2014-apos-theory-chunk-51": 0.02,
+"source-arnon-et-al-2014-apos-theory-chunk-53": 0.21
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-53",
+0.2723
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-15",
+0.2337
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-29",
+0.2226
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-30",
+0.222
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-51",
+0.2214
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-23",
+0.2166
+]
+]
+},
+"8c1c4c963a7a37a3a5cfb30f689564cce80ce0e90b0bd067bc2623f256d93982": {
+"atom_id": "atom-apos-has-applications-in-elementary-and-postsecondary-mathematics",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-17": 0.05,
+"source-arnon-et-al-2014-apos-theory-chunk-22": 0.59,
+"source-arnon-et-al-2014-apos-theory-chunk-23": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-367": 0.39,
+"source-arnon-et-al-2014-apos-theory-chunk-369": 0.62,
+"source-arnon-et-al-2014-apos-theory-chunk-411": 0.12
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-369",
+0.2088
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-22",
+0.2013
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-411",
+0.1935
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-367",
+0.179
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-17",
+0.1673
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-23",
+0.1622
+]
+]
+},
+"95421428e33c919abb82f8b7946b9adc5eed3eea0c57b77b9face25b38be583c": {
+"atom_id": "atom-process-language-about-repeating-decimals-can-block-object-construction",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-345": 0.61,
+"source-arnon-et-al-2014-apos-theory-chunk-346": 0.71,
+"source-arnon-et-al-2014-apos-theory-chunk-347": 0.55,
+"source-arnon-et-al-2014-apos-theory-chunk-348": 0.38,
+"source-arnon-et-al-2014-apos-theory-chunk-349": 0.4,
+"source-arnon-et-al-2014-apos-theory-chunk-350": 0.53
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-345",
+0.2318
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-349",
+0.2046
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-348",
+0.1445
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-346",
+0.1388
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-350",
+0.1023
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-347",
+-0.0253
+]
+]
+},
+"98501b2ed63f2bcd3ddbe1a8d89c22e9ff65b339e30b66c38677e2d5076fe973": {
+"atom_id": "atom-writing-computer-procedures-can-help-students-move-from-action-to-process",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-151": 0.12,
+"source-arnon-et-al-2014-apos-theory-chunk-167": 0.79,
+"source-arnon-et-al-2014-apos-theory-chunk-168": 0.87,
+"source-arnon-et-al-2014-apos-theory-chunk-171": 0.4,
+"source-arnon-et-al-2014-apos-theory-chunk-337": 0.95,
+"source-arnon-et-al-2014-apos-theory-chunk-338": 0.89
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-168",
+0.3203
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-337",
+0.3104
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-338",
+0.2857
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-151",
+0.2553
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-167",
+0.2523
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-171",
+0.235
+]
+]
+},
+"9943e563875791fb6ce24eeef7ca8895bbdd31f13020b474d1864e3c5ffa9798": {
+"atom_id": "atom-infinite-processes-make-the-process-to-object-transition-especially-difficult",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-343": 0.11,
+"source-arnon-et-al-2014-apos-theory-chunk-344": 0.93,
+"source-arnon-et-al-2014-apos-theory-chunk-345": 0.07,
+"source-arnon-et-al-2014-apos-theory-chunk-346": 0.21,
+"source-arnon-et-al-2014-apos-theory-chunk-348": 0.13,
+"source-arnon-et-al-2014-apos-theory-chunk-349": 0.17
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-349",
+0.2415
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-344",
+0.2387
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-345",
+0.1954
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-343",
+0.171
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-346",
+0.1698
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-348",
+0.1078
+]
+]
+},
+"9cfa84b3c3b67259af88a39dd4ab1c388ab409f88d25a41bb24f6d2fa1e80bf6": {
+"atom_id": "atom-piaget-locates-properties-in-actions-on-objects-not-in-objects-alone",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-30": 0.57,
+"source-arnon-et-al-2014-apos-theory-chunk-32": 0.93,
+"source-arnon-et-al-2014-apos-theory-chunk-33": 0.85,
+"source-arnon-et-al-2014-apos-theory-chunk-37": 0.29,
+"source-arnon-et-al-2014-apos-theory-chunk-38": 0.28,
+"source-arnon-et-al-2014-apos-theory-chunk-39": 0.31
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-30",
+0.2188
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-33",
+0.2109
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-39",
+0.1861
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-38",
+0.183
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-37",
+0.162
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-32",
+0.1601
+]
+]
+},
+"9eb4b232b6f964426547ba44bac9b9034a2747c73aac5d1870b1b955f9350ad3": {
+"atom_id": "atom-span-and-spanning-set-must-be-differentiated-as-distinct-objects",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-106": 0.07,
+"source-arnon-et-al-2014-apos-theory-chunk-107": 0.86,
+"source-arnon-et-al-2014-apos-theory-chunk-108": 0.82
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-107",
+0.3416
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-106",
+0.3141
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-108",
+0.2829
+]
+]
+},
+"a5a5a9f4e0f6fc977a4713e67269d64d45e3a6002cabf87dc062537007bece6a": {
+"atom_id": "atom-apos-developed-through-recognizable-historical-periods",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-17": 0.92,
+"source-arnon-et-al-2014-apos-theory-chunk-27": 0.88,
+"source-arnon-et-al-2014-apos-theory-chunk-32": 0.02,
+"source-arnon-et-al-2014-apos-theory-chunk-34": 0.03,
+"source-arnon-et-al-2014-apos-theory-chunk-43": 0.16,
+"source-arnon-et-al-2014-apos-theory-chunk-53": 0.37
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-53",
+0.2741
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-27",
+0.2685
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-34",
+0.2397
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-17",
+0.2374
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-43",
+0.2327
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-32",
+0.202
+]
+]
+},
+"aa9fb17379bf28e2a782c705fe827176d8e938077a1f1d1258497659049560c0": {
+"atom_id": "atom-schemas-can-develop-interact-and-be-thematized",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-265": 0.82,
+"source-arnon-et-al-2014-apos-theory-chunk-266": 0.16,
+"source-arnon-et-al-2014-apos-theory-chunk-276": 0.13,
+"source-arnon-et-al-2014-apos-theory-chunk-284": 0.17,
+"source-arnon-et-al-2014-apos-theory-chunk-297": 0.19,
+"source-arnon-et-al-2014-apos-theory-chunk-316": 0.38
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-284",
+0.2502
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-297",
+0.223
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-265",
+0.2146
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-266",
+0.2135
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-316",
+0.2023
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-276",
+0.2013
+]
+]
+},
+"aac602ab35f7b2f6d760fc6cce20b809742739f3042220064d0942b4ec90677a": {
+"atom_id": "atom-computer-activities-support-interiorization-by-generalizing-specific-actions",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-166": 0.15,
+"source-arnon-et-al-2014-apos-theory-chunk-167": 0.61,
+"source-arnon-et-al-2014-apos-theory-chunk-168": 0.94
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-167",
+0.343
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-168",
+0.3402
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-166",
+0.2389
+]
+]
+},
+"ab2939087b76838bef3cc9ea0106668e1778eb77b3e7d97327c0ace0a75acac6": {
+"atom_id": "atom-apos-book-presents-framework-for-research-and-curriculum-development",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-17": 0.52,
+"source-arnon-et-al-2014-apos-theory-chunk-18": 0.64,
+"source-arnon-et-al-2014-apos-theory-chunk-23": 0.19,
+"source-arnon-et-al-2014-apos-theory-chunk-3": 0.19,
+"source-arnon-et-al-2014-apos-theory-chunk-5": 0.27,
+"source-arnon-et-al-2014-apos-theory-chunk-8": 0.24
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-18",
+0.2507
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-17",
+0.2339
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-23",
+0.2338
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-3",
+0.2296
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-5",
+0.2264
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-8",
+0.2041
+]
+]
+},
+"ab416b7af2c798ab08747e36cda8f37117618470c4e9e0d34428a3d7b7d52417": {
+"atom_id": "atom-apos-interviews-use-prompting-to-probe-construction-in-progress",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-230": 0.13,
+"source-arnon-et-al-2014-apos-theory-chunk-232": 0.63,
+"source-arnon-et-al-2014-apos-theory-chunk-233": 0.92,
+"source-arnon-et-al-2014-apos-theory-chunk-234": 0.05,
+"source-arnon-et-al-2014-apos-theory-chunk-241": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-242": 0.13
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-233",
+0.309
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-230",
+0.2757
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-232",
+0.2618
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-242",
+0.2326
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-241",
+0.2308
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-234",
+0.2229
+]
+]
+},
+"b4a5e7a7a58e48af97c02f8ebdd093f038247d442ed9449e16949b7cdf1e49df": {
+"atom_id": "atom-interiorization-translates-material-actions-into-processes",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-32": 0.76,
+"source-arnon-et-al-2014-apos-theory-chunk-34": 0.94,
+"source-arnon-et-al-2014-apos-theory-chunk-66": 0.88,
+"source-arnon-et-al-2014-apos-theory-chunk-67": 0.59,
+"source-arnon-et-al-2014-apos-theory-chunk-71": 0.04,
+"source-arnon-et-al-2014-apos-theory-chunk-77": 0.08
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-34",
+0.3182
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-66",
+0.3142
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-67",
+0.2933
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-77",
+0.292
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-32",
+0.2803
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-71",
+0.2606
+]
+]
+},
+"bac8e0d880813b09f5bb0b13609950ee0ec70f41d34aff8a5b764f9cdd4bac4f": {
+"atom_id": "atom-group-concept-is-modeled-as-coordination-of-set-operation-and-axiom-schemas",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-170": 0.83,
+"source-arnon-et-al-2014-apos-theory-chunk-171": 0.63,
+"source-arnon-et-al-2014-apos-theory-chunk-176": 0.08,
+"source-arnon-et-al-2014-apos-theory-chunk-180": 0.9,
+"source-arnon-et-al-2014-apos-theory-chunk-181": 0.7,
+"source-arnon-et-al-2014-apos-theory-chunk-182": 0.8
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-181",
+0.2891
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-170",
+0.2854
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-171",
+0.2388
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-182",
+0.2359
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-176",
+0.2281
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-180",
+0.2278
+]
+]
+},
+"bae56c2fe083b78705ac789589239513edb49c2a51b721ebd27b2422a0a6ee29": {
+"atom_id": "atom-imagination-plays-a-substantial-role-in-young-childrens-interiorization",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-370": 0.47,
+"source-arnon-et-al-2014-apos-theory-chunk-372": 0.46,
+"source-arnon-et-al-2014-apos-theory-chunk-402": 0.11,
+"source-arnon-et-al-2014-apos-theory-chunk-404": 0.2,
+"source-arnon-et-al-2014-apos-theory-chunk-405": 0.17,
+"source-arnon-et-al-2014-apos-theory-chunk-414": 0.11
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-370",
+0.2875
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-372",
+0.2789
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-405",
+0.2735
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-402",
+0.2597
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-404",
+0.253
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-414",
+0.2477
+]
+]
+},
+"c18105985e380f7cd6da2c0f5728bf7ca9289bc27d0471f84ceb00468cb2cba7": {
+"atom_id": "atom-apos-research-uses-multiple-data-collection-modes",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-230": 0.89,
+"source-arnon-et-al-2014-apos-theory-chunk-234": 0.11,
+"source-arnon-et-al-2014-apos-theory-chunk-235": 0.11,
+"source-arnon-et-al-2014-apos-theory-chunk-246": 0.02,
+"source-arnon-et-al-2014-apos-theory-chunk-251": 0.15,
+"source-arnon-et-al-2014-apos-theory-chunk-253": 0.11
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-234",
+0.1783
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-253",
+0.1732
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-235",
+0.1567
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-246",
+0.1462
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-230",
+0.1268
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-251",
+0.1181
+]
+]
+},
+"c1ce49ee98a14433139ab8599152978543bd41d906aa16863a8511e8ae76dd5d": {
+"atom_id": "atom-genetic-decomposition-may-include-prerequisites-and-performance-differences",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-82": 0.65,
+"source-arnon-et-al-2014-apos-theory-chunk-83": 0.92,
+"source-arnon-et-al-2014-apos-theory-chunk-84": 0.1,
+"source-arnon-et-al-2014-apos-theory-chunk-85": 0.16,
+"source-arnon-et-al-2014-apos-theory-chunk-86": 0.28,
+"source-arnon-et-al-2014-apos-theory-chunk-87": 0.13
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-83",
+0.3801
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-87",
+0.3397
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-86",
+0.3361
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-85",
+0.3127
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-84",
+0.308
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-82",
+0.2923
+]
+]
+},
+"cba7571c1ae2f077120d21a75983013eca7a5ecfd4efb50eef01008dfdbcae13": {
+"atom_id": "atom-apos-links-theory-methodology-and-pedagogy-as-a-paradigm",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-227": 0.66,
+"source-arnon-et-al-2014-apos-theory-chunk-228": 0.28
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-227",
+0.0276
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-228",
+0.0115
+]
+]
+},
+"cfbb7e4134371aa8c409f20446ecf6d06d00f26609deb5d8ac549d41acd89b77": {
+"atom_id": "atom-apos-based-elementary-instruction-can-support-abstract-concepts-beyond-regular-syllabi",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-22": 0.94,
+"source-arnon-et-al-2014-apos-theory-chunk-370": 0.14,
+"source-arnon-et-al-2014-apos-theory-chunk-371": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-372": 0.17,
+"source-arnon-et-al-2014-apos-theory-chunk-378": 0.08,
+"source-arnon-et-al-2014-apos-theory-chunk-412": 0.25
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-371",
+0.3276
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-370",
+0.2976
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-22",
+0.278
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-372",
+0.2704
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-378",
+0.2567
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-412",
+0.249
+]
+]
+},
+"d020b573c2c410f83abf454c4926592f3d94a8f391bbb14def8df8894edd502d": {
+"atom_id": "atom-reflective-abstraction-has-reflection-and-reorganization-components",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-28": 0.09,
+"source-arnon-et-al-2014-apos-theory-chunk-29": 0.95
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-29",
+0.2672
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-28",
+0.1634
+]
+]
+},
+"d1995b4d0d50891fb3c5901eb46d65712365337fd2dce40daf0a9177a460abe1": {
+"atom_id": "atom-annotated-bibliography-materializes-the-breadth-of-apos-research",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-15": 0.12,
+"source-arnon-et-al-2014-apos-theory-chunk-19": 0.02,
+"source-arnon-et-al-2014-apos-theory-chunk-21": 0.03,
+"source-arnon-et-al-2014-apos-theory-chunk-22": 0.02,
+"source-arnon-et-al-2014-apos-theory-chunk-5": 0.12,
+"source-arnon-et-al-2014-apos-theory-chunk-8": 0.02
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-5",
+0.189
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-21",
+0.1691
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-8",
+0.1653
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-22",
+0.1395
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-15",
+0.1308
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-19",
+0.1289
+]
+]
+},
+"d20d3de9f2ed1a871e79bec423522514e7827a3bea44ab8077a1ca1e3f4ed8a8": {
+"atom_id": "atom-levels-are-content-specific-while-stages-are-general",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-339": 0.13,
+"source-arnon-et-al-2014-apos-theory-chunk-340": 0.12,
+"source-arnon-et-al-2014-apos-theory-chunk-341": 0.72,
+"source-arnon-et-al-2014-apos-theory-chunk-342": 0.91
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-341",
+0.1966
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-342",
+0.1248
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-340",
+0.1048
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-339",
+0.0642
+]
+]
+},
+"d29985b33c98c09d61db115ee93719a5461a2b47817acf18fffd754bca113c43": {
+"atom_id": "atom-coordination-combines-processes-to-build-new-objects-or-processes",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-71": 0.79,
+"source-arnon-et-al-2014-apos-theory-chunk-72": 0.27,
+"source-arnon-et-al-2014-apos-theory-chunk-73": 0.1,
+"source-arnon-et-al-2014-apos-theory-chunk-74": 0.04
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-71",
+0.2739
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-73",
+0.188
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-72",
+0.1637
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-74",
+0.0112
+]
+]
+},
+"d5689baea62b74a670cfc3b89165a60e547d2d0f48dda84b1e42a1d1f7926e95": {
+"atom_id": "atom-apos-book-is-not-the-last-word-on-apos",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-18": 0.04,
+"source-arnon-et-al-2014-apos-theory-chunk-19": 0.03,
+"source-arnon-et-al-2014-apos-theory-chunk-20": 0.04,
+"source-arnon-et-al-2014-apos-theory-chunk-21": 0.22,
+"source-arnon-et-al-2014-apos-theory-chunk-22": 0.02,
+"source-arnon-et-al-2014-apos-theory-chunk-24": 0.86
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-20",
+0.2121
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-22",
+0.2003
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-19",
+0.1582
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-21",
+0.1575
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-18",
+0.1376
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-24",
+0.1292
+]
+]
+},
+"d7e6f9377286f50214f7cf69bd712249a1b48ddd25f8d35561452ffe64180a2b": {
+"atom_id": "atom-research-cycle-centers-on-two-evaluative-questions",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-229": 0.24,
+"source-arnon-et-al-2014-apos-theory-chunk-230": 0.88,
+"source-arnon-et-al-2014-apos-theory-chunk-232": 0.15,
+"source-arnon-et-al-2014-apos-theory-chunk-234": 0.05,
+"source-arnon-et-al-2014-apos-theory-chunk-241": 0.13,
+"source-arnon-et-al-2014-apos-theory-chunk-248": 0.13
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-234",
+0.297
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-230",
+0.2521
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-232",
+0.2417
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-229",
+0.241
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-248",
+0.2403
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-241",
+0.2325
+]
+]
+},
+"da29ab9b4ca244821559c367adc3fcbb2303b697aa86d5670b1d6568de7e2770": {
+"atom_id": "atom-genetic-decomposition-acts-as-a-lens-for-explaining-performance-differences",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-109": 0.92,
+"source-arnon-et-al-2014-apos-theory-chunk-110": 0.84,
+"source-arnon-et-al-2014-apos-theory-chunk-111": 0.3,
+"source-arnon-et-al-2014-apos-theory-chunk-112": 0.19,
+"source-arnon-et-al-2014-apos-theory-chunk-114": 0.16,
+"source-arnon-et-al-2014-apos-theory-chunk-115": 0.3
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-111",
+0.3694
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-110",
+0.3131
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-109",
+0.2892
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-112",
+0.2787
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-115",
+0.2222
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-114",
+0.2168
+]
+]
+},
+"db8da1d06bfdcf499e953acc63da72f6f2e754e61a53f2a8cab15032aa4770e0": {
+"atom_id": "atom-apos-book-is-structured-around-theory-research-pedagogy-and-synthesis",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-15": 0.15,
+"source-arnon-et-al-2014-apos-theory-chunk-19": 0.09,
+"source-arnon-et-al-2014-apos-theory-chunk-20": 0.1,
+"source-arnon-et-al-2014-apos-theory-chunk-23": 0.17,
+"source-arnon-et-al-2014-apos-theory-chunk-5": 0.13,
+"source-arnon-et-al-2014-apos-theory-chunk-8": 0.14
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-8",
+0.2277
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-23",
+0.2069
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-19",
+0.2052
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-15",
+0.2011
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-20",
+0.1976
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-5",
+0.1864
+]
+]
+},
+"dd7b16be506da4a5af57fb114459326758603888616cc6055bdef6929ebca0ec": {
+"atom_id": "atom-rumec-was-a-major-community-in-apos-development",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-49": 0.23,
+"source-arnon-et-al-2014-apos-theory-chunk-50": 0.07,
+"source-arnon-et-al-2014-apos-theory-chunk-51": 0.32,
+"source-arnon-et-al-2014-apos-theory-chunk-52": 0.29
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-50",
+0.2342
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-51",
+0.2268
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-49",
+0.2017
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-52",
+0.1192
+]
+]
+},
+"e1aeebb2c41dd7598268591fcba70690b74eb82d9edbea5cbaf83eaef423886b": {
+"atom_id": "atom-isetl-can-treat-certain-data-types-as-first-class-objects",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-164": 0.87,
+"source-arnon-et-al-2014-apos-theory-chunk-165": 0.84
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-164",
+0.2509
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-165",
+0.1598
+]
+]
+},
+"e25fc06c309cf24fdfcb351a1ee1c414a07745f731b25f0fb0d1d909edd8fc24": {
+"atom_id": "atom-theoretical-models-increase-reliability-of-data-analysis",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-109": 0.26,
+"source-arnon-et-al-2014-apos-theory-chunk-110": 0.87,
+"source-arnon-et-al-2014-apos-theory-chunk-111": 0.44,
+"source-arnon-et-al-2014-apos-theory-chunk-112": 0.03,
+"source-arnon-et-al-2014-apos-theory-chunk-114": 0.04,
+"source-arnon-et-al-2014-apos-theory-chunk-115": 0.23
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-111",
+0.3625
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-109",
+0.3587
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-110",
+0.3015
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-112",
+0.2565
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-114",
+0.2471
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-115",
+0.2143
+]
+]
+},
+"ea39b9e9d5fe334e449e446079b154e4218903584750ad6486f1bf9378321441": {
+"atom_id": "atom-apos-uses-specific-mechanisms-to-explain-construction",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-60": 0.13,
+"source-arnon-et-al-2014-apos-theory-chunk-61": 0.15,
+"source-arnon-et-al-2014-apos-theory-chunk-63": 0.12,
+"source-arnon-et-al-2014-apos-theory-chunk-65": 0.12,
+"source-arnon-et-al-2014-apos-theory-chunk-68": 0.21,
+"source-arnon-et-al-2014-apos-theory-chunk-71": 0.23
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-61",
+0.3593
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-71",
+0.2807
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-68",
+0.265
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-65",
+0.2646
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-60",
+0.2592
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-63",
+0.2478
+]
+]
+},
+"ea989a70e4e5a2b7f0b76f78764db0452a13bd2cdaac43aba4f5cfd831f25ece": {
+"atom_id": "atom-action-requires-explicit-step-by-step-external-guidance",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-62": 0.23,
+"source-arnon-et-al-2014-apos-theory-chunk-63": 0.91,
+"source-arnon-et-al-2014-apos-theory-chunk-64": 0.26
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-63",
+0.1156
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-64",
+0.0393
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-62",
+-0.0305
+]
+]
+},
+"f5c7cc3ccf8dc35c1032acf7e1fa4793cbc19cedf4411a5f57abd3f0e61f3050": {
+"atom_id": "atom-elementary-school-apos-work-relies-on-concrete-objects-for-action",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-22": 0.93,
+"source-arnon-et-al-2014-apos-theory-chunk-368": 0.81,
+"source-arnon-et-al-2014-apos-theory-chunk-369": 0.07,
+"source-arnon-et-al-2014-apos-theory-chunk-370": 0.73,
+"source-arnon-et-al-2014-apos-theory-chunk-412": 0.23,
+"source-arnon-et-al-2014-apos-theory-chunk-414": 0.52
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-368",
+0.2592
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-412",
+0.2397
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-370",
+0.2352
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-414",
+0.2321
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-22",
+0.2224
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-369",
+0.2116
+]
+]
+},
+"f708c40a66555d56b29ffd3710ac44c271ef3d5d59d7cfe15f9b438b7a84a3b8": {
+"atom_id": "atom-reflective-abstraction-is-a-foundational-idea-for-apos",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-28": 0.4,
+"source-arnon-et-al-2014-apos-theory-chunk-29": 0.53,
+"source-arnon-et-al-2014-apos-theory-chunk-30": 0.65,
+"source-arnon-et-al-2014-apos-theory-chunk-34": 0.72,
+"source-arnon-et-al-2014-apos-theory-chunk-36": 0.6,
+"source-arnon-et-al-2014-apos-theory-chunk-39": 0.77
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-34",
+0.2631
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-28",
+0.2293
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-30",
+0.2218
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-39",
+0.2038
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-29",
+0.1658
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-36",
+0.1552
+]
+]
+},
+"f89b951f2f454475bd6749202d4c27088ff4ccc47a343fc8c335fcff1bdcd0da": {
+"atom_id": "atom-apos-defines-four-core-mental-structures",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-16": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-61": 0.8,
+"source-arnon-et-al-2014-apos-theory-chunk-66": 0.15,
+"source-arnon-et-al-2014-apos-theory-chunk-67": 0.11,
+"source-arnon-et-al-2014-apos-theory-chunk-73": 0.03,
+"source-arnon-et-al-2014-apos-theory-chunk-77": 0.41
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-61",
+0.296
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-66",
+0.2333
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-77",
+0.2277
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-16",
+0.2246
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-73",
+0.2242
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-67",
+0.2239
+]
+]
+},
+"fc32a4ef34ab43d9854bd9651d75fccb0b5fdba9659bc2a5bf0a9ecb983191d2": {
+"atom_id": "atom-apos-is-demonstrated-through-multiple-mathematical-domains",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-106": 0.07,
+"source-arnon-et-al-2014-apos-theory-chunk-114": 0.04,
+"source-arnon-et-al-2014-apos-theory-chunk-120": 0.05,
+"source-arnon-et-al-2014-apos-theory-chunk-121": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-218": 0.08,
+"source-arnon-et-al-2014-apos-theory-chunk-8": 0.09
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-121",
+0.2581
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-114",
+0.2359
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-8",
+0.2335
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-120",
+0.2297
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-218",
+0.2191
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-106",
+0.217
+]
+]
+},
+"fc6283dceb506f8409364a7777d5ff081dff3da986e3a43bc74a11d2339b11df": {
+"atom_id": "atom-ace-activities-prioritize-reflective-abstraction-over-answer-getting",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-152": 0.86,
+"source-arnon-et-al-2014-apos-theory-chunk-153": 0.36,
+"source-arnon-et-al-2014-apos-theory-chunk-154": 0.34
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-152",
+0.2063
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-154",
+0.2003
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-153",
+0.1256
+]
+]
+},
+"fcc2b905acb8a98009aa5faa21a1fd599e0eecf372e45e26e587bc929749f19c": {
+"atom_id": "atom-genetic-decomposition-is-a-central-tool-in-apos",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-81": 0.4,
+"source-arnon-et-al-2014-apos-theory-chunk-82": 0.34,
+"source-arnon-et-al-2014-apos-theory-chunk-83": 0.46,
+"source-arnon-et-al-2014-apos-theory-chunk-84": 0.4,
+"source-arnon-et-al-2014-apos-theory-chunk-85": 0.38,
+"source-arnon-et-al-2014-apos-theory-chunk-86": 0.56
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-85",
+0.3205
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-86",
+0.3192
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-83",
+0.3079
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-81",
+0.2768
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-82",
+0.2339
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-84",
+0.2204
+]
+]
+},
+"fde75c04742299481970f6252c7f40c93556049f0a02e3086a3b3c4bd76bb242": {
+"atom_id": "atom-de-encapsulation-recovers-the-underlying-process-of-an-object",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-71": 0.93,
+"source-arnon-et-al-2014-apos-theory-chunk-72": 0.17,
+"source-arnon-et-al-2014-apos-theory-chunk-73": 0.28,
+"source-arnon-et-al-2014-apos-theory-chunk-74": 0.22
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-71",
+0.2406
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-73",
+0.1677
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-72",
+0.1618
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-74",
+0.0734
+]
+]
+},
+"febfa317c9be89a7365805f8a15e4c0aa65ca5d646b7cde41ab581f2c3a356e8": {
+"atom_id": "atom-thematization-turns-a-schema-into-an-object",
+"nouls": {
+"source-arnon-et-al-2014-apos-theory-chunk-265": 0.78,
+"source-arnon-et-al-2014-apos-theory-chunk-298": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-300": 0.08,
+"source-arnon-et-al-2014-apos-theory-chunk-307": 0.06,
+"source-arnon-et-al-2014-apos-theory-chunk-310": 0.05,
+"source-arnon-et-al-2014-apos-theory-chunk-319": 0.95
+},
+"ranked": [
+[
+"source-arnon-et-al-2014-apos-theory-chunk-300",
+0.1883
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-307",
+0.1836
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-265",
+0.1795
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-310",
+0.1707
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-319",
+0.1655
+],
+[
+"source-arnon-et-al-2014-apos-theory-chunk-298",
+0.1626
+]
+]
+}
+}
