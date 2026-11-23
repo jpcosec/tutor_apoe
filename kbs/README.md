@@ -6,7 +6,7 @@ esquema compartido vive en `kb_models/` (pythonpath `kbs/`).
 ```
 kbs/
 ├── kb_models/          esquema: KnowledgeAtom, SourceAtom, BranchNode, AgentDoc, TagNamespaceDoc
-└── apos/               la KB de la teoría APOS (generada; .md versionados, .sldb/ derivado)
+└── apos/               la KB de la teoría APOS (generada salvo agent/; .md versionados, .sldb/ derivado)
     ├── kb.yaml         contrato kb_version 1: modelos, categorías, política de índice (embedder)
     ├── tag-namespaces.yaml
     ├── knowledge/**    89 KnowledgeAtom, misma ruta relativa e id que en desk/atoms/apos/
@@ -15,7 +15,7 @@ kbs/
     ├── relations/      151 RelationDoc `child_of--<hijo>--<padre>` (uno por parent_id)
     ├── kgdb/relation_types/child_of.md
     ├── categories/     6 TagNamespaceDoc (agent, domain, layer, node, system, topic)
-    ├── agent/agent-tutor-apos.md      rol `tutor`: persona e instrucciones del pack apos
+    ├── agent/agent-tutor-apos.md      rol `tutor`: FUENTE (authored); se edita en la wiki de `tutor web`
     ├── projections/projection-tutor.md ProjectionDoc: KnowledgeAtom + BranchNode + child_of
     ├── sldb/relation_types/           tipos estructurales que escribe sldb (init_relations)
     └── .sldb/          DERIVADO, fuera de git: store, índices, aristas, caché de vectores
@@ -32,15 +32,22 @@ python -m pytest tests/tutor -q
 
 `kb_build` borra lo generado la vez anterior (documentos y `.sldb/`), reescribe los `.md`
 con la API de sldb, arma el store, valida con `kb` (V0–V13) y refresca el índice de
-embeddings. Dos corridas producen bytes idénticos. `tutor.world.open_kb()` lo invoca solo
+embeddings. Lo que no genera lo conserva y lo vuelve a registrar: `ingest/`, `proposed/` y, si ya
+existe, `agent/`. Dos corridas producen bytes idénticos. `tutor.world.open_kb()` lo invoca solo
 si falta `.sldb/` (p. ej. en un contenedor recién clonado).
 
 ## Qué es fuente y qué es derivado
 
-- **Fuente**: `desk/atoms/**` (los átomos editados por personas) y `apps/kb_agent/packs/apos/`
-  (persona y política del rol).
-- **Generado y versionado**: los `.md` de `kbs/apos/`, `kb.yaml`, `tag-namespaces.yaml`.
-  Se versionan para que cualquier consumidor los lea sin sldb y para revisar diffs.
+- **Fuente**: `desk/atoms/**` (los átomos editados por personas) y `kbs/apos/agent/**` (el rol del
+  tutor: encuadre, instrucciones, políticas). El rol es un `AgentDoc`, `authority: authored`: se edita
+  en la wiki de configuración de `tutor web` (pestaña Configuración, `tutor.wiki`) o con
+  `sldb fields update`, nunca a mano, y se commitea como cualquier fuente.
+- **Semilla**: `apps/kb_agent/packs/apos/` (persona y política). `kb_build` escribe el rol con ella
+  solo cuando `agent/` no existe; después manda lo que haya en `agent/`. Para volver a sembrar, borra
+  `kbs/apos/agent/` y regenera.
+- **Generado y versionado**: los demás `.md` de `kbs/apos/` (`authority: generated`), `kb.yaml`,
+  `tag-namespaces.yaml`. Se versionan para que cualquier consumidor los lea sin sldb y para revisar
+  diffs. En la wiki se ven, pero no se editan: el servidor lo rechaza.
 - **Derivado, ignorado por git** (`.gitignore`: `kbs/*/.sldb/`): el store `.sldb/`
   (`core/store_index.yaml` lleva rutas absolutas de la máquina), `runtime/` (journal,
   aristas, locks) y los vectores en `.sldb/runtime/cache/corpus/docs.*.json`.

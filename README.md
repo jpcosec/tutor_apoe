@@ -27,10 +27,10 @@ tutor web --kb kbs/apos --model test --port 8300     # UI de chat con la mesa po
 tutor-mcp --selftest                                 # MCP: crea una KB demo y la ejercita
 ```
 
-La interfaz de `tutor web` reúne **Conversación**, **Paquetes**, **Grafo APOS** y **Scratch**
-en pestañas en <http://127.0.0.1:8300>. Cada vista permanece abierta al cambiar
+La interfaz de `tutor web` reúne **Conversación**, **Paquetes**, **Grafo APOS**, **Scratch** y
+**Configuración** en pestañas en <http://127.0.0.1:8300>. Cada vista permanece abierta al cambiar
 de pestaña, conservando sus formularios, selecciones y posición. Los enlaces
-`/#chat`, `/#packages`, `/#graph` y `/#scratch` permiten abrir una vista directamente;
+`/#chat`, `/#packages`, `/#graph`, `/#scratch` y `/#config` permiten abrir una vista directamente;
 Atrás/Adelante y las flechas del teclado en la barra de pestañas también funcionan.
 El grafo es el mapa mental de la KB sldb, servido en `/graph` por el mismo servidor
 (`?highlight=atom-a,atom-b` resalta nodos; el chat tiene un enlace "ver en grafo" por
@@ -55,6 +55,34 @@ docker compose up -d                        # MCP por HTTP en :8200, KBs en un v
 
 Benchmark de retrieval (20 preguntas, `benchmarks/`): `python -m benchmarks.run --k 5`.
 Mapa del código: `runtime/<paquete>/README.md`, `kbs/README.md`, `docs/mcp.md`.
+
+## Configuración del tutor (wiki)
+
+La pestaña **Configuración** de `tutor web` (o directo en <http://127.0.0.1:8300/wiki/>) es una wiki donde se ve y
+se edita, como un documento con campos, lo que el tutor lee en cada turno: quién es (*encuadre*), qué normas sigue
+al responder (*instrucciones*), qué parte de la base ve y sus políticas. Un cambio se guarda al salir del campo y
+vale desde el turno siguiente, sin reiniciar.
+
+- **Se edita**: la página del rol del tutor (`kbs/apos/agent/agent-tutor-apos.md`, un `AgentDoc`). Es texto de
+  personas: `tutor kb build` la siembra desde `apps/kb_agent/packs/apos/` la primera vez y después la conserva.
+  Para volver al texto del pack, borra `kbs/apos/agent/` y regenera.
+- **Se ve, no se edita**: átomos, ramas, relaciones, categorías y fuentes. Se generan desde `desk/atoms/` y se
+  cambian ahí, con deskops; el servidor rechaza cualquier intento de cambiarlos por la wiki.
+- **Acceso**: sin clave solo en esta máquina (`--host 127.0.0.1`, el valor por defecto). Con otro `--host` hay que
+  definir `TUTOR_WIKI_KEY` (16 caracteres o más); el navegador la pide como contraseña, con cualquier usuario.
+- **No hay nada más que levantar**: `tutor web` lanza el `sldb serve` de la base solo para esta máquina y lo cierra
+  al salir. Si algo falta, `/wiki/` lo dice y el resto del tutor sigue funcionando.
+
+La interfaz es una copia adaptada de la superficie de sldb ([`superficie/`](superficie), ver
+[`superficie/ORIGEN.md`](superficie/ORIGEN.md)) y va compilada dentro del paquete (`src/tutor/static/wiki/`), así que
+no hace falta Node para usarla. Solo para cambiarla:
+
+```bash
+cd superficie && npm ci && npm test && npm run build   # reescribe src/tutor/static/wiki/; se commitea
+```
+
+El porqué del diseño está en
+[`docs/decisiones/2026-11-wiki-de-configuracion.md`](docs/decisiones/2026-11-wiki-de-configuracion.md).
 
 ## Consulta simple de la KB
 
