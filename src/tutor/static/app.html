@@ -17,12 +17,14 @@
 <button id="tab-packages" role="tab" aria-controls="panel-packages" aria-selected="false" tabindex="-1" data-view="packages"><span class="icon" aria-hidden="true">▤</span>Paquetes</button>
 <button id="tab-graph" role="tab" aria-controls="panel-graph" aria-selected="false" tabindex="-1" data-view="graph"><span class="icon" aria-hidden="true">⌘</span>Grafo APOS</button>
 <button id="tab-scratch" role="tab" aria-controls="panel-scratch" aria-selected="false" tabindex="-1" data-view="scratch"><span class="icon" aria-hidden="true">✎</span>Scratch</button>
+<button id="tab-config" role="tab" aria-controls="panel-config" aria-selected="false" tabindex="-1" data-view="config"><span class="icon" aria-hidden="true">⚙</span>Configuración</button>
 </nav><div class="view-info" id="viewInfo"></div><button id="startGuide" class="tour-launch">? Recorrido guiado</button></header>
 <main id="workspace" class="workspace" tabindex="-1">
 <section id="panel-chat" class="panel" role="tabpanel" aria-labelledby="tab-chat"><div class="loading" role="status"><strong>Abriendo la conversación…</strong><span>Tu espacio de diálogo y contexto.</span></div><iframe title="Conversación con el tutor" data-src="/chat?embed=1" hidden></iframe></section>
 <section id="panel-packages" class="panel" role="tabpanel" aria-labelledby="tab-packages" hidden><div class="loading" role="status"><strong>Abriendo tus paquetes…</strong><span>Fuentes, átomos y grafos revisables.</span></div><iframe title="Biblioteca y precarga de paquetes" data-src="/packages?embed=1" hidden></iframe></section>
 <section id="panel-graph" class="panel" role="tabpanel" aria-labelledby="tab-graph" hidden><div class="loading" role="status"><strong>Abriendo el grafo APOS…</strong><span>El visor de átomos y su jerarquía de carpetas.</span></div><iframe title="Grafo de la base de conocimiento APOS" data-src="/graph?embed=1" hidden></iframe></section>
 <section id="panel-scratch" class="panel" role="tabpanel" aria-labelledby="tab-scratch" hidden><div class="loading" role="status"><strong>Abriendo tu scratch…</strong><span>Un espacio libre para tus notas e ideas.</span></div><iframe title="Scratch de notas personales" data-src="/scratch?embed=1" hidden></iframe></section>
+<section id="panel-config" class="panel" role="tabpanel" aria-labelledby="tab-config" hidden><div class="loading" role="status"><strong>Abriendo la configuración…</strong><span>Quién es el tutor y qué normas sigue al responder.</span></div><iframe title="Configuración del tutor" data-src="/wiki/" hidden></iframe></section>
 </main>
 <script src="/web/guided-tour.js"></script>
 <script src="/web/tour-plans.js"></script>
@@ -33,7 +35,7 @@
   const guide = new GuidedTour();
   let activeView = 'chat';
   const tabs = [...document.querySelectorAll('[role=tab]')];
-  const descriptions = {chat:'Conversa e inspecciona el contexto de cada respuesta.',packages:'Incorpora fuentes y prepara nuevos cuerpos teóricos.',graph:'Explora y edita los átomos fuente de APOS.',scratch:'Escribe y guarda tus ideas en este navegador.'};
+  const descriptions = {chat:'Conversa e inspecciona el contexto de cada respuesta.',packages:'Incorpora fuentes y prepara nuevos cuerpos teóricos.',graph:'Explora y edita los átomos fuente de APOS.',scratch:'Escribe y guarda tus ideas en este navegador.',config:'Edita el encuadre y las instrucciones del tutor; valen desde el turno siguiente.'};
   function activate(view, focus = false) {
     if (!descriptions[view]) view = 'chat';
     if (view !== activeView) guide.close();
@@ -55,7 +57,7 @@
       if (focus) tab.focus();
     });
     document.getElementById('viewInfo').textContent = descriptions[view];
-    document.title = {chat:'Conversación',packages:'Paquetes',graph:'Grafo APOS',scratch:'Scratch'}[view]+' · Tutor';
+    document.title = {chat:'Conversación',packages:'Paquetes',graph:'Grafo APOS',scratch:'Scratch',config:'Configuración'}[view]+' · Tutor';
   }
   function navigate(view, focus = false) {
     if (!descriptions[view]) return;

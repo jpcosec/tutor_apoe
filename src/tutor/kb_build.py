@@ -6,7 +6,9 @@ Idempotente: borra lo que generó la vez anterior (los directorios de documentos
 y lo vuelve a escribir con la API pública de sldb (`init_store`, `init_relations`,
 `add_model`, `create_document`, `update_store_indexes`, `rebuild_edges`), igual que hace
 `kb.portable.build_store`. Lo que NO genera (`ingest/**`: fuentes y fragmentos; `proposed/**`:
-átomos propuestos) lo conserva y lo vuelve a registrar en el store. Luego:
+átomos propuestos) lo conserva y lo vuelve a registrar en el store. `agent/**` (el rol del tutor) se
+siembra desde el pack solo si falta: después es texto de personas, que se edita en la wiki de
+configuración (`tutor.wiki`), y cada corrida lo conserva igual. Luego:
 
 1. esquema de cada fuente (`SourceOutline`, `tutor.outline`): capítulos/secciones → páginas y fragmentos;
 2. anclaje (`tutor.anchor`, salvo `--no-anchor`): cada átomo `book` queda con los fragmentos que lo
@@ -26,7 +28,8 @@ Qué produce (ver `kbs/README.md`):
 - `relations/`: un `RelationDoc` `child_of--<hijo>--<padre>` por `parent_id`, con el tipo
   `child_of` declarado en `kgdb/relation_types/child_of.md`;
 - `categories/`: un `TagNamespaceDoc` por namespace de tag (de `tag-namespaces.yaml` o propio);
-- `agent/agent-tutor-apos.md`: el rol `tutor` (persona e instrucciones del pack `apos`);
+- `agent/agent-tutor-apos.md`: el rol `tutor`, sembrado con la persona e instrucciones del pack `apos`
+  la primera vez (para volver a sembrarlo, borra `agent/` antes de generar);
 - `projections/projection-tutor.md`: la `ProjectionDoc` de pron que el rol ve.
 """
 
@@ -82,7 +85,9 @@ AGENT_NAME = f"agent-{ROLE}-apos"
 PROJECTION_NAME = f"projection-{ROLE}"
 ROOT_BRANCH = "branch-apos"
 ACTOR = "tutor kb_build"
-GENERATED_DIRS = ("knowledge", "sources", "taxonomy", "relations", "kgdb", "sldb", "categories", "agent", "projections")
+GENERATED_DIRS = ("knowledge", "sources", "taxonomy", "relations", "kgdb", "sldb", "categories", "projections")
+#: Carpetas que se siembran una vez y después son de personas (`authored`): si ya tienen páginas, se conservan.
+SEEDED_DIRS = ("agent",)
 #: Carpetas que el build conserva y vuelve a registrar (no son función de desk/atoms).
 PRESERVED_DIRS = ("ingest", "proposed")
 FRONTMATTER = re.compile(r"\A---\n(.*?)\n---\n(.*)\Z", re.S)
@@ -449,13 +454,15 @@ def model_for_path(relative: str) -> str | None:
 
 def write_kb(out: Path, plan: BuildPlan) -> dict[str, int]:
     """Limpia lo generado antes, escribe `kb.yaml` y `tag-namespaces.yaml`, arma el store y los `.md`,
-    y vuelve a registrar lo conservado (`ingest/`, `proposed/`). Devuelve cuántos conservados registró."""
+    y vuelve a registrar lo conservado (`ingest/`, `proposed/` y, si ya existe, `agent/`). Devuelve
+    cuántos conservados registró."""
     from sldb.api import add_model, create_document, init_relations, init_store, rebuild_edges, track_document_file, update_store_indexes
 
     out = out.resolve()
     pythonpath = str((out / plan.manifest["kb"]["pythonpath"]).resolve())
     for name in GENERATED_DIRS:
         shutil.rmtree(out / name, ignore_errors=True)
+    kept = [path for name in SEEDED_DIRS for path in sorted((out / name).rglob("*.md"))]  # antes de sembrar
     out.mkdir(parents=True, exist_ok=True)
     (out / "kb.yaml").write_text(
         "# Lo que esta KB declara de sí misma (contrato kb_version 1, lo lee runtime/kb).\n"
@@ -474,17 +481,19 @@ def write_kb(out: Path, plan: BuildPlan) -> dict[str, int]:
     for ref in MODEL_REFS:
         add_model(store, ref, pythonpath=pythonpath, actor=ACTOR)
     for doc in plan.docs:
+        if out / doc.path in kept:
+            continue  # ya lo escribió una persona: no se pisa con el pack
         create_document(store, doc.model, out / doc.path, doc.payload, name=doc.doc_name, pythonpath=pythonpath, actor=ACTOR)
     preserved: dict[str, int] = {}
-    for folder in PRESERVED_DIRS:
-        for path in sorted((out / folder).rglob("*.md")) if (out / folder).is_dir() else []:
-            relative = path.relative_to(out).as_posix()
-            model = model_for_path(relative)
-            if model is None:
-                log.warning("conservado sin modelo conocido, se omite: %s", relative)
-                continue
-            track_document_file(store, model, path, pythonpath=pythonpath, actor=ACTOR)
-            preserved[model] = preserved.get(model, 0) + 1
+    conserved = [path for folder in PRESERVED_DIRS for path in sorted((out / folder).rglob("*.md"))]
+    for path in (*conserved, *kept):
+        relative = path.relative_to(out).as_posix()
+        model = model_for_path(relative)
+        if model is None:
+            log.warning("conservado sin modelo conocido, se omite: %s", relative)
+            continue
+        track_document_file(store, model, path, pythonpath=pythonpath, actor=ACTOR)
+        preserved[model] = preserved.get(model, 0) + 1
     update_store_indexes(store, pythonpath=pythonpath, wait=True)
     rebuild_edges(store, pythonpath, wait=True)
     return preserved

@@ -51,8 +51,8 @@ def kb_build(
     anchor: Annotated[bool, typer.Option("--anchor/--no-anchor", help="Anclar los átomos a los fragmentos de la fuente (Jev, cacheado).")] = True,
     force_anchor: Annotated[bool, typer.Option("--force-anchor", help="Ignorar la caché de anclaje y volver a preguntar a Jev.")] = False,
 ) -> None:
-    """Genera la KB desde los átomos (`tutor.kb_build`), conserva `ingest/` y `proposed/`, ancla y calcula
-    cobertura; exit 1 si no valida."""
+    """Genera la KB desde los átomos (`tutor.kb_build`), conserva `ingest/`, `proposed/` y la configuración
+    del tutor (`agent/`, si ya existe), ancla y calcula cobertura; exit 1 si no valida."""
     from tutor.kb_build import build
 
     report = build(atoms, out, pack_dir=pack if pack.is_dir() else None, embedder_name=embedder, index=not no_index, anchor=anchor, force_anchor=force_anchor)
@@ -214,12 +214,17 @@ def web(
     host: Annotated[str, typer.Option("--host")] = "127.0.0.1",
     port: Annotated[int, typer.Option("--port")] = 8300,
 ) -> None:
-    """Sirve la UI web del tutor (`tutor.web`) con uvicorn."""
+    """Sirve la UI web del tutor (`tutor.web`) con uvicorn, y con ella la wiki de configuración
+    (`tutor.wiki`): lanza el `sldb serve` de la KB solo para esta máquina y lo cierra al salir."""
     import uvicorn
 
+    from tutor import wiki
     from tutor.web import create_app
 
-    uvicorn.run(create_app(kb, model=model, role=role), host=host, port=port)
+    application = create_app(kb, model=model, role=role, host=host)
+    with wiki.served(application.state.kb_root) as backend:
+        application.state.wiki = backend
+        uvicorn.run(application, host=host, port=port)
 
 
 def render_mesa_text(mesa: dict[str, Any], indent: str = "") -> str:

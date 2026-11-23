@@ -1,7 +1,8 @@
 """El documento que gobierna el rol del tutor (adaptado de `AgentDoc` del esquema de referencia).
 
 Tag semántico `type.governance.agent`: `kb` lo excluye de toda proyección y del índice;
-lo cambian personas, no agentes. Declara quién es el tutor (`framing`, de persona.md), qué
+lo cambian personas, no agentes: por eso es `authored` (texto escrito con intención, que se
+edita en la wiki de configuración de `tutor web`) y no `generated` como el resto de la KB. Declara quién es el tutor (`framing`, de persona.md), qué
 normas sigue al responder (`instructions`, de prompt_policy.md) y qué proyección de la KB ve.
 """
 
@@ -29,6 +30,7 @@ class AgentDoc(StructuredNLDoc):
     """Un agente del runtime: su encuadre, sus normas, lo que ve y cómo falla."""
 
     __family__ = "agent"
+    __authority__ = "authored"
     __semantics__ = {"type": ["governance", "agent"], "workspace": ["knowledge"]}
     __template__ = """---
 id: ⸢rev•id⸥
