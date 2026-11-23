@@ -1,0 +1,52 @@
+/* Vista 04 · Esquema / Model Studio. Solo tokens --wb-*, radio 0-2px, monocromo. */
+.ms-root { display: flex; flex-direction: column; flex: 1; min-height: 0; height: 100%; background: var(--wb-paper); color: var(--wb-ink); }
+.ms-pane-head { height: 32px; min-height: 32px; border-bottom: 1px solid var(--wb-hairline); padding: 0 14px; display: flex; align-items: center; justify-content: space-between; font-family: var(--wb-font-mono); }
+.ms-pane-title { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--wb-ink-muted); font-weight: 500; }
+.ms-pane-meta { font-size: 9px; color: var(--wb-ink-tertiary); }
+.ms-canvas { flex: 1; overflow: auto; padding: 20px; position: relative; }
+.ms-diagram { position: relative; }
+.ms-svg { position: absolute; left: 0; top: 0; pointer-events: none; }
+.ms-box { position: absolute; background: var(--wb-card); border: 1px solid var(--wb-hairline); font-family: var(--wb-font-mono); cursor: pointer; box-sizing: border-box; overflow: hidden; }
+.ms-box:hover { border-color: var(--wb-border); }
+.ms-box--root { border-color: var(--wb-ink); cursor: default; }
+.ms-box-head { height: 24px; box-sizing: border-box; padding: 0 8px; border-bottom: 1px solid var(--wb-hairline); display: flex; align-items: center; justify-content: space-between; font-size: 10.5px; font-weight: 600; background: var(--wb-paper); }
+.ms-box--root .ms-box-head { background: var(--wb-card); border-bottom-color: var(--wb-ink); font-weight: 700; }
+.ms-stereo { font-size: 8.5px; font-weight: 400; color: var(--wb-ink-muted); }
+.ms-extends { height: 16px; box-sizing: border-box; padding: 0 8px; font-size: 9px; font-style: italic; color: var(--wb-ink-muted); background: var(--wb-paper); border-bottom: 1px solid var(--wb-hairline); line-height: 16px; }
+.ms-fields { padding: 7px 8px 0; font-size: 9.5px; }
+.ms-field-row { height: 15px; line-height: 15px; display: flex; justify-content: space-between; white-space: nowrap; }
+.ms-glyph { color: var(--wb-ink-muted); }
+.ms-type { color: var(--wb-ink-muted); }
+.ms-badge { font-size: 8.5px; color: var(--wb-ink-tertiary); background: var(--wb-stone); padding: 0 4px; border-radius: 2px; }
+.ms-left-foot { height: 40px; min-height: 40px; border-top: 1px solid var(--wb-hairline); padding: 0 14px; display: flex; align-items: center; justify-content: space-between; font-family: var(--wb-font-mono); font-size: 9.5px; color: var(--wb-ink-muted); background: var(--wb-stone); }
+.ms-right { padding: 28px 32px; display: flex; flex-direction: column; gap: 28px; }
+.ms-title { margin: 0; font-family: var(--wb-font-serif); font-size: 24px; font-weight: 600; letter-spacing: -0.01em; }
+.ms-title code { font-family: var(--wb-font-mono); font-size: 19px; font-weight: 500; }
+.ms-subtitle { margin: 4px 0 0; font-family: var(--wb-font-mono); font-size: 11px; color: var(--wb-ink-muted); }
+.ms-contract-head { border-bottom: 1px solid var(--wb-hairline); padding-bottom: 14px; display: flex; flex-direction: column; gap: 6px; }
+.ms-head-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.ms-section { display: flex; flex-direction: column; gap: 10px; }
+.ms-section-head { display: flex; justify-content: space-between; align-items: center; font-family: var(--wb-font-mono); }
+.ms-section-title { font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.ms-section-title span { color: var(--wb-ink-muted); margin-right: 6px; }
+.ms-section-meta { font-size: 10px; color: var(--wb-ink-muted); }
+.ms-table-wrap { border: 1px solid var(--wb-hairline); background: var(--wb-card); overflow-x: auto; }
+.ms-table-wrap table { width: 100%; border-collapse: collapse; text-align: left; }
+.ms-table-wrap th { padding: 8px 12px; font-family: var(--wb-font-mono); font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: var(--wb-ink-muted); background: var(--wb-paper); border-bottom: 1px solid var(--wb-hairline); }
+.ms-table-wrap td { padding: 8px 12px; font-family: var(--wb-font-mono); font-size: 11px; border-bottom: 1px solid var(--wb-hairline); vertical-align: top; }
+.ms-table-wrap tr:last-child td { border-bottom: 0; }
+.ms-marker { background: var(--wb-tint); padding: 0 4px; border-radius: 2px; font-size: 10.5px; }
+.ms-muted { color: var(--wb-ink-muted); }
+.ms-desc { font-family: var(--wb-font-sans); font-size: 12px; color: var(--wb-ink-muted); }
+.ms-add { display: grid; grid-template-columns: 1.2fr 1fr 1.4fr 1fr auto; gap: 8px; align-items: center; }
+.ms-notice { border: 1px solid var(--wb-border); background: var(--wb-stone); padding: 8px 12px; font-family: var(--wb-font-mono); font-size: 11px; }
+.ms-editor { border: 1px solid var(--wb-hairline); background: var(--wb-stone); min-height: 160px; font-family: var(--wb-font-mono); font-size: 12px; }
+.ms-card { background: var(--wb-card); border: 1px solid var(--wb-hairline); border-radius: 2px; padding: 14px; display: flex; flex-direction: column; gap: 10px; font-family: var(--wb-font-mono); font-size: 11px; }
+.ms-card ul { margin: 0; padding-left: 16px; }
+.ms-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.ms-metrics { border-top: 1px solid var(--wb-hairline); padding-top: 10px; display: flex; gap: 18px; color: var(--wb-ink-muted); font-size: 10px; }
+.ms-metrics b { color: var(--wb-ink); }
+.ms-status { font-family: var(--wb-font-mono); font-size: 11px; color: var(--wb-ink-body); }
+
+/* Encabezados de la tabla de campos en una línea */
+.ms-table-wrap th { white-space: nowrap; }

@@ -1,8 +1,8 @@
 ---
 sldb:
   by: tutor kb_build
-  at: '2026-11-16T02:20:59Z'
-  authority: generated
+  at: '2026-11-23T02:57:15Z'
+  authority: authored
   via: create_document
 id: agent-tutor-apos
 title: Tutor APOS
