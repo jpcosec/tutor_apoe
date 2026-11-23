@@ -345,8 +345,42 @@ def form():
     doc.save(OUT / "Ficha_individual_juicio_experto_APOE.docx")
 
 
+def questions():
+    doc = base_doc("Doce preguntas de validación experta", "Preguntas organizadas en cuatro capas para el Tutor APOE")
+    para(doc, "Estas doce preguntas permiten revisar la organización conceptual y los criterios interpretativos del Tutor APOE. Cada capa contiene tres preguntas. Las respuestas deben justificarse con argumentos, ejemplos o reservas teóricas cuando corresponda.")
+    grouped = [
+        ("Capa 1 Conceptual", "Delimita la teoría y sus construcciones.", ITEMS[:3]),
+        ("Capa 2 Operativa", "Establece qué evidencias y condiciones permiten interpretar una construcción.", ITEMS[3:6]),
+        ("Capa 3 Contrastiva", "Exige alternativas y evidencia discriminante para evitar inferencias apresuradas.", ITEMS[6:9]),
+        ("Capa 4 Genética", "Organiza hipótesis revisables de una descomposición genética.", ITEMS[9:12]),
+    ]
+    for layer, purpose, entries in grouped:
+        heading(doc, layer)
+        p = doc.add_paragraph()
+        p.paragraph_format.space_after = Pt(8)
+        r = p.add_run(purpose)
+        r.italic = True
+        for code, focus, statement, source in entries:
+            p = doc.add_paragraph(style="List Number")
+            p.paragraph_format.space_before = Pt(4)
+            p.paragraph_format.space_after = Pt(4)
+            run = p.add_run(f"{code}. {focus}. ")
+            run.bold = True
+            p.add_run("¿" + statement + "?")
+            p = doc.add_paragraph()
+            p.paragraph_format.left_indent = Inches(0.28)
+            p.paragraph_format.space_after = Pt(9)
+            r = p.add_run(f"Trazabilidad: {source}")
+            r.font.size = Pt(9)
+            r.font.color.rgb = RGBColor(89, 89, 89)
+    heading(doc, "Orientación de respuesta")
+    para(doc, "Para cada pregunta, indique si la formulación es pertinente, clara y coherente con APOE. Al terminar cada capa, señale si sus tres preguntas son suficientes y proponga una modificación si fuera necesaria.")
+    doc.save(OUT / "Doce_preguntas_validacion_experta_APOE.docx")
+
+
 if __name__ == "__main__":
     OUT.mkdir(parents=True, exist_ok=True)
     protocol()
     profile()
     form()
+    questions()
